@@ -7,7 +7,7 @@ https://creativecommons.org/licenses/by/4.0/
 You can share and adapt them, including commercially, as long as you give credit:
 "The Median Canadian (CC BY 4.0)" with a link to the source page.
 
-The code in this repository is licensed separately under the MIT licence (see LICENSE).
+The code in this repository is licensed separately under the Apache License, Version 2.0 (see LICENSE and NOTICE).
 
 ## Data
 
