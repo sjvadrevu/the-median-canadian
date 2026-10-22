@@ -1,0 +1,12 @@
+link,predictors,r2_within,spearman_within_year_median,n
+climate -> drought (d1_area_max_apr_sep),previous block only,0.2076984016495459,0.5883023863863074,1181
+climate -> drought (d1_area_max_apr_sep),all earlier blocks,0.2076984016495459,0.5883023863863074,1181
+drought -> weather (ext_anom_median),previous block only,0.053554782020660996,0.15288164979823268,1242
+climate+drought -> weather (ext_anom_median),all earlier blocks,0.08870286727127341,0.4001372297695513,1242
+weather -> ignition (log_n_lightning),previous block only,-0.04750948130656463,0.8875691914369341,1265
+climate+drought+weather -> ignition (log_n_lightning),all earlier blocks,0.042897785326954097,0.9006179378936219,1265
+fuel -> outcome (y),previous block only,-0.04916500662101986,0.7177882884221579,1265
+climate+drought+weather+ignition+fuel -> outcome (y),all earlier blocks,0.2650264355878582,0.7889280594882384,1265
+"drought -> log_n_lightning (P_all, 177 areas)",that block only,-0.05079623607920403,0.8434725669659308,4071
+"drought -> y (P_all, 177 areas)",that block only,0.01815749709660508,0.6476745709080849,4071
+"fuel -> y (P_all, 177 areas)",that block only,-0.08140898332343727,0.664502514686166,4071

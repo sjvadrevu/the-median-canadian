@@ -1,0 +1,4 @@
+season,period,wildfire_events,first_nations_affected,people_evacuated,communities_evacuated,source,note
+2024,"2024-04-01 to September 30, 2024",91,84,15469,26.0,"Question Period note ISC-2025-QP-00780 (ISC), dated 2025-05-26",'over' N people
+2025,"2025-04-01 to August 20, 2025",119,95,44852,60.0,"Question Period note ISC-2025-QP-00808 (ISC), dated 2025-09-04",'over' N people
+2026,"2026-04-01 to October 2, 2026",87,83,8805,,"ISC 'Wildfire evacuation information for Indigenous peoples', date modified 2026-10-05","label reads 'First Nations on reserve and eligible under EMAP evacuated'; value is people (ISC); 87 still evacuated on October 2, 2026"

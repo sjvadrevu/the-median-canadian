@@ -1,0 +1,11 @@
+event,official,official_what,footprints_inside,footprints_within_500m,flagged_inside,flagged_within_500m,flagged_500_1000m,old_rule_within_500m,no_data,ratio_flagged_to_official
+jasper2024,567.0,"official destroyed polygons, whole layer (Municipality of Jasper); 374 of them overlap a Microsoft footprint",105,1337,56,417,0,16,0,0.74
+tantallon2023,200.0,"approx. structures lost (151 homes), HRFE",364,1297,238,241,0,124,0,1.21
+barrington2023,230.0,"structures destroyed (+59 damaged), HRFE citing Barrington AAR",203,680,57,72,0,23,0,0.31
+mcdougall2023,200.0,"approx. structures impacted (destroyed or damaged), CORE/RDCO",405,3537,275,302,1,63,3,1.51
+bushcreek2023,185.0,structures lost: CSRD 176 (approx.) + TNRD 9; Little Shuswap Lake Band not published,318,1449,182,229,7,58,0,1.24
+denare2025,400.0,"approx. permanent residences destroyed in the SHOE fire region (about half in Denare Beach), SK/SPSA",490,1180,346,355,0,48,0,0.89
+baldrange2026,150.0,"approx. structures damaged or destroyed (preliminary), District of Summerland",738,1369,167,168,3,44,0,1.12
+enterprise2023,,no official count found,61,247,57,105,0,56,0,
+lacdubonnet2025,,no official count found,40,151,35,50,1,27,2,
+bradleycreek2026,,no official count published by OKIB,35,252,6,101,17,20,0,

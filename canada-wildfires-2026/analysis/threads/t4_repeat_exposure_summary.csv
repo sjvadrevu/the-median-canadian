@@ -1,0 +1,73 @@
+basis,unit,years_ge,count,exactly,total,share,people
+all outlines,"reserves (all 3,322)",1,1595,864,3322,0.48013245033112584,206638.0
+all outlines,populated reserves (2021 count > 0),1,450,198,765,0.5882352941176471,206638.0
+all outlines,First Nation communities (638 ISC points),1,299,164,638,0.46865203761755486,
+all outlines,people on reserve (DA points),1,866,452,1706,0.5561566225720765,189066.0
+all outlines,people off reserve (DA points),1,10017,6186,56226,0.16658580711627705,6105708.0
+all outlines,"reserves (all 3,322)",2,731,459,3322,0.22004816375677302,127932.0
+all outlines,populated reserves (2021 count > 0),2,252,145,765,0.32941176470588235,127932.0
+all outlines,First Nation communities (638 ISC points),2,135,90,638,0.2115987460815047,
+all outlines,people on reserve (DA points),2,414,266,1706,0.3078914314121741,104668.0
+all outlines,people off reserve (DA points),2,3831,3118,56226,0.06429338293131376,2356483.0
+all outlines,"reserves (all 3,322)",3,272,206,3322,0.08187838651414811,61943.0
+all outlines,populated reserves (2021 count > 0),3,107,81,765,0.13986928104575164,61943.0
+all outlines,First Nation communities (638 ISC points),3,45,38,638,0.07053291536050156,
+all outlines,people on reserve (DA points),3,148,116,1706,0.10172348367853014,34581.0
+all outlines,people off reserve (DA points),3,713,692,56226,0.01091729434904424,400141.0
+all outlines,"reserves (all 3,322)",4,66,66,3322,0.019867549668874173,16668.0
+all outlines,populated reserves (2021 count > 0),4,26,26,765,0.03398692810457516,16668.0
+all outlines,First Nation communities (638 ISC points),4,7,7,638,0.0109717868338558,
+all outlines,people on reserve (DA points),4,32,32,1706,0.013719624298796003,4664.0
+all outlines,people off reserve (DA points),4,21,21,56226,0.00024986337728087637,9158.0
+fires >= 200 ha,"reserves (all 3,322)",1,872,617,3322,0.2624924744130042,114267.0
+fires >= 200 ha,populated reserves (2021 count > 0),1,231,150,765,0.30196078431372547,114267.0
+fires >= 200 ha,First Nation communities (638 ISC points),1,129,101,638,0.20219435736677116,
+fires >= 200 ha,people on reserve (DA points),1,394,289,1706,0.26516174389838537,90142.0
+fires >= 200 ha,people off reserve (DA points),1,1411,1266,56226,0.022338899100540953,818766.0
+fires >= 200 ha,"reserves (all 3,322)",2,255,166,3322,0.07676098735701385,38680.0
+fires >= 200 ha,populated reserves (2021 count > 0),2,81,50,765,0.10588235294117647,38680.0
+fires >= 200 ha,First Nation communities (638 ISC points),2,28,19,638,0.0438871473354232,
+fires >= 200 ha,people on reserve (DA points),2,105,73,1706,0.0674185397307259,22919.0
+fires >= 200 ha,people off reserve (DA points),2,145,99,56226,0.001893755952944489,69410.0
+fires >= 200 ha,"reserves (all 3,322)",3,89,88,3322,0.02679108970499699,7874.0
+fires >= 200 ha,populated reserves (2021 count > 0),3,31,31,765,0.040522875816993466,7874.0
+fires >= 200 ha,First Nation communities (638 ISC points),3,9,9,638,0.014106583072100314,
+fires >= 200 ha,people on reserve (DA points),3,32,32,1706,0.01048092225055964,3563.0
+fires >= 200 ha,people off reserve (DA points),3,46,43,56226,0.0005402429278814843,19801.0
+fires >= 200 ha,"reserves (all 3,322)",4,1,1,3322,0.00030102347983142685,0.0
+fires >= 200 ha,populated reserves (2021 count > 0),4,0,0,765,0.0,0.0
+fires >= 200 ha,First Nation communities (638 ISC points),4,0,0,638,0.0,
+fires >= 200 ha,people on reserve (DA points),4,0,0,1706,0.0,0.0
+fires >= 200 ha,people off reserve (DA points),4,3,3,56226,4.436316351372625e-05,1626.0
+fires >= 1000 ha,"reserves (all 3,322)",1,700,536,3322,0.2107164358819988,84872.0
+fires >= 1000 ha,populated reserves (2021 count > 0),1,173,129,765,0.2261437908496732,84872.0
+fires >= 1000 ha,First Nation communities (638 ISC points),1,89,77,638,0.13949843260188088,
+fires >= 1000 ha,people on reserve (DA points),1,305,242,1706,0.1879300252095155,63887.0
+fires >= 1000 ha,people off reserve (DA points),1,1007,920,56226,0.015022578558404541,550608.0
+fires >= 1000 ha,"reserves (all 3,322)",2,164,147,3322,0.049367850692354005,17665.0
+fires >= 1000 ha,populated reserves (2021 count > 0),2,44,41,765,0.05751633986928104,17665.0
+fires >= 1000 ha,First Nation communities (638 ISC points),2,12,11,638,0.018808777429467086,
+fires >= 1000 ha,people on reserve (DA points),2,63,57,1706,0.03322537659839212,11295.0
+fires >= 1000 ha,people off reserve (DA points),2,87,54,56226,0.0010841691442465807,39737.0
+fires >= 1000 ha,"reserves (all 3,322)",3,17,17,3322,0.005117399157134257,366.0
+fires >= 1000 ha,populated reserves (2021 count > 0),3,3,3,765,0.00392156862745098,366.0
+fires >= 1000 ha,First Nation communities (638 ISC points),3,1,1,638,0.001567398119122257,
+fires >= 1000 ha,people on reserve (DA points),3,6,6,1706,0.0010766257490050037,366.0
+fires >= 1000 ha,people off reserve (DA points),3,33,31,56226,0.00042428754969370047,15551.0
+fires >= 1000 ha,"reserves (all 3,322)",4,0,0,3322,0.0,0.0
+fires >= 1000 ha,populated reserves (2021 count > 0),4,0,0,765,0.0,0.0
+fires >= 1000 ha,First Nation communities (638 ISC points),4,0,0,638,0.0,
+fires >= 1000 ha,people on reserve (DA points),4,0,0,1706,0.0,0.0
+fires >= 1000 ha,people off reserve (DA points),4,2,2,56226,2.2890955835188393e-05,839.0
+all outlines,"population centres (1,026)",1,368,210,1026,0.3586744639376218,11463639.0
+all outlines,"population centres (1,026)",2,158,109,1026,0.1539961013645224,8267074.0
+all outlines,"population centres (1,026)",3,49,44,1026,0.04775828460038986,1768440.0
+all outlines,"population centres (1,026)",4,5,5,1026,0.004873294346978557,53934.0
+fires >= 200 ha,"population centres (1,026)",1,76,65,1026,0.07407407407407407,1395333.0
+fires >= 200 ha,"population centres (1,026)",2,11,8,1026,0.010721247563352826,134012.0
+fires >= 200 ha,"population centres (1,026)",3,3,3,1026,0.0029239766081871343,78205.0
+fires >= 200 ha,"population centres (1,026)",4,0,0,1026,0.0,0.0
+fires >= 1000 ha,"population centres (1,026)",1,57,51,1026,0.05555555555555555,787077.0
+fires >= 1000 ha,"population centres (1,026)",2,6,4,1026,0.005847953216374269,94143.0
+fires >= 1000 ha,"population centres (1,026)",3,2,2,1026,0.001949317738791423,73199.0
+fires >= 1000 ha,"population centres (1,026)",4,0,0,1026,0.0,0.0

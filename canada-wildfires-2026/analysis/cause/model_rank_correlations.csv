@@ -1,0 +1,89 @@
+panel,block,predictor,spearman_within_area,n
+P_all,climate,snowfall_pct,-0.12414640634033378,3604
+P_all,climate,snow_cover_days_anom,-0.03355615598393834,3612
+P_all,climate,max_snow_depth_pct,-0.03437486299774627,3739
+P_all,climate,melt_anom_days,-0.13876303379721322,2815
+P_all,climate,t_amj_anom_c,0.20561154165705595,4005
+P_all,climate,p_amj_pct,-0.21220628773500264,3924
+P_all,climate,p_jja_prev_pct,-0.04405392135067825,3937
+P_all,climate,p_son_prev_pct,-0.109199424749018,3956
+P_all,climate,p_ndjfm_pct,-0.1005611027555063,3884
+P_all,climate,p_12m_pct,-0.225324433008584,3743
+P_all,climate,months_since_wet,0.10631724551968172,4006
+P_all,climate,swe_apr1_pct,-0.08624936809118508,2757
+P_all,climate,oni_djf,-0.005475439082385551,4071
+P_all,climate,oni_mam,0.0060770239044873175,4071
+P_all,climate,pdo_djf,-0.06977792324052379,4071
+P_all,climate,pdo_mam,-0.14267289315123446,4071
+P_all,climate,ao_djf,-0.101094040880421,4071
+P_all,climate,ao_mam,-0.013356792906622063,4071
+P_all,climate,ao_jfm,-0.05109325872661966,4071
+P_all,climate,nao_djf,0.014680366656859437,4071
+P_all,climate,nao_mam,-0.0589347749786956,4071
+P_all,drought,d1_area_mean_apr_jun,0.21819648183255533,3879
+P_all,drought,d1_area_max_apr_sep,0.26435332457152433,3879
+P_all,drought,d2_area_max_apr_sep,0.22405556372672703,3879
+P_all,ignition,log_n_lightning,0.440984888689058,4071
+P_all,ignition,log_n_human,0.16394741975566576,4071
+P_all,ignition,start_p10_doy,0.01854319320124626,2521
+P_all,fuel,prior10_share,0.09938482413649072,4071
+P_all,fuel,prior20_share,-0.020820430312523328,4071
+P_stn,climate,snowfall_pct,-0.14129924238624697,1154
+P_stn,climate,snow_cover_days_anom,-0.031270064695550506,1140
+P_stn,climate,max_snow_depth_pct,-0.05902440239318745,1179
+P_stn,climate,melt_anom_days,-0.16678693386643942,954
+P_stn,climate,t_amj_anom_c,0.2378590221621177,1258
+P_stn,climate,p_amj_pct,-0.2724822331677535,1239
+P_stn,climate,p_jja_prev_pct,-0.09235013598593238,1233
+P_stn,climate,p_son_prev_pct,-0.17044838401851298,1240
+P_stn,climate,p_ndjfm_pct,-0.1339276067709848,1238
+P_stn,climate,p_12m_pct,-0.30406771638675495,1207
+P_stn,climate,months_since_wet,0.09822957914255763,1255
+P_stn,climate,swe_apr1_pct,-0.099356908582857,1053
+P_stn,climate,oni_djf,-0.041538036399191,1265
+P_stn,climate,oni_mam,-0.007692989363991992,1265
+P_stn,climate,pdo_djf,-0.10660504302553146,1265
+P_stn,climate,pdo_mam,-0.20136087488978102,1265
+P_stn,climate,ao_djf,-0.1334541169917231,1265
+P_stn,climate,ao_mam,0.016113393300875942,1265
+P_stn,climate,ao_jfm,-0.0380268053515502,1265
+P_stn,climate,nao_djf,0.038606905133666256,1265
+P_stn,climate,nao_mam,-0.028166251305499875,1265
+P_stn,drought,d1_area_mean_apr_jun,0.2964215254724816,1181
+P_stn,drought,d1_area_max_apr_sep,0.3814569521255629,1181
+P_stn,drought,d2_area_max_apr_sep,0.3730066201364161,1181
+P_stn,weather,ext_anom_median,0.4151100645765918,1242
+P_stn,ignition,log_n_lightning,0.43572468718103247,1265
+P_stn,ignition,log_n_human,0.22316836902022644,1265
+P_stn,ignition,start_p10_doy,0.06740462298844577,1075
+P_stn,fuel,prior10_share,0.16811184123396797,1265
+P_stn,fuel,prior20_share,0.06499229635817286,1265
+2026 across areas (levels),climate,snowfall_pct,-0.12721891726642498,125
+2026 across areas (levels),climate,snow_cover_days_anom,-0.2930701725891546,127
+2026 across areas (levels),climate,max_snow_depth_pct,0.1509491183031351,155
+2026 across areas (levels),climate,melt_anom_days,0.27117580080806697,74
+2026 across areas (levels),climate,t_amj_anom_c,0.08560577399840213,175
+2026 across areas (levels),climate,p_amj_pct,-0.4306922937412785,171
+2026 across areas (levels),climate,p_jja_prev_pct,-0.06560237008806354,159
+2026 across areas (levels),climate,p_son_prev_pct,-0.07779107074352754,175
+2026 across areas (levels),climate,p_ndjfm_pct,0.019234505105790493,165
+2026 across areas (levels),climate,p_12m_pct,-0.1109451005146951,156
+2026 across areas (levels),climate,months_since_wet,0.1881112331683847,177
+2026 across areas (levels),climate,oni_djf,,177
+2026 across areas (levels),climate,oni_mam,,177
+2026 across areas (levels),climate,pdo_djf,,177
+2026 across areas (levels),climate,pdo_mam,,177
+2026 across areas (levels),climate,ao_djf,,177
+2026 across areas (levels),climate,ao_mam,,177
+2026 across areas (levels),climate,ao_jfm,,177
+2026 across areas (levels),climate,nao_djf,,177
+2026 across areas (levels),climate,nao_mam,,177
+2026 across areas (levels),drought,d1_area_mean_apr_jun,0.45926140052754466,177
+2026 across areas (levels),drought,d1_area_max_apr_sep,0.48587530191876704,177
+2026 across areas (levels),drought,d2_area_max_apr_sep,0.619255748131012,177
+2026 across areas (levels),weather,ext_anom_median,0.4591874038696613,53
+2026 across areas (levels),ignition,log_n_lightning,0.7234534945065124,177
+2026 across areas (levels),ignition,log_n_human,-0.12273695307121048,177
+2026 across areas (levels),ignition,start_p10_doy,0.5073376419043371,124
+2026 across areas (levels),fuel,prior10_share,0.5223418603121982,177
+2026 across areas (levels),fuel,prior20_share,0.5371723808347112,177

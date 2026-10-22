@@ -1,0 +1,19 @@
+level,threshold,units_over,units_total,pcs_in_units,pc_pop
+NHN work unit,0.05,168,1341,43,142136
+WSC sub-sub-drainage area,0.05,142,971,41,134959
+"NHN work unit, 2023 alone",0.05,82,1341,20,78283
+"NHN work unit, 2024 alone",0.05,27,1341,3,4273
+"NHN work unit, 2025 alone",0.05,38,1341,13,38944
+"NHN work unit, 2026 alone",0.05,23,1341,1,4434
+NHN work unit,0.1,110,1341,29,106904
+WSC sub-sub-drainage area,0.1,100,971,30,108086
+"NHN work unit, 2023 alone",0.1,47,1341,14,43676
+"NHN work unit, 2024 alone",0.1,10,1341,0,0
+"NHN work unit, 2025 alone",0.1,23,1341,11,34732
+"NHN work unit, 2026 alone",0.1,10,1341,1,4434
+NHN work unit,0.2,47,1341,8,20401
+WSC sub-sub-drainage area,0.2,42,971,8,20401
+"NHN work unit, 2023 alone",0.2,21,1341,3,5138
+"NHN work unit, 2024 alone",0.2,3,1341,0,0
+"NHN work unit, 2025 alone",0.2,6,1341,2,6421
+"NHN work unit, 2026 alone",0.2,4,1341,0,0

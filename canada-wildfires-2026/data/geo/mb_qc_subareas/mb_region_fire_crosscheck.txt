@@ -1,0 +1,5 @@
+region       EAST  EAST/WEST  NORTH  WEST  WEST/NORTH
+fire_prefix                                          
+EA             28          8      2     0           0
+NO              0          0    227     0           1
+WE              0          0      2    33          17

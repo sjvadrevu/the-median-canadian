@@ -1,0 +1,30 @@
+address,query,lon,lat,score,precision,index_right,building_class,dnbr_building_max,dnbr_ring_median,dist_m
+11709 Mott Street,"11709 Mott Street, Summerland, BC",-119.6919573,49.603012,100,CIVIC_NUMBER,1310.0,damaged surroundings,248.5,195.8,45.55540421833814
+20245 Garnet Valley Road,"20245 Garnet Valley Road, Summerland, BC",-119.7032078,49.6305143,100,CIVIC_NUMBER,1266.0,unburned,76.5,92.0,15.183923169717932
+13420 Mott Street,"13420 Mott Street, Summerland, BC",-119.6929947,49.6033432,100,CIVIC_NUMBER,1207.0,damaged surroundings,339.4,147.4,20.991662110881283
+21207 Garnet Valley Road,"21207 Garnet Valley Road, Summerland, BC",-119.7048991,49.6352993,100,CIVIC_NUMBER,,,,,
+13221 Durick Avenue,"13221 Durick Avenue, Summerland, BC",-119.6919679,49.6027326,100,CIVIC_NUMBER,1180.0,damaged surroundings,248.5,155.8,42.286356324191125
+21603 Garnet Valley Road,"21603 Garnet Valley Road, Summerland, BC",-119.7051818,49.6360742,100,CIVIC_NUMBER,,,,,
+13410 Durick Avenue,"13410 Durick Avenue, Summerland, BC",-119.6926519,49.6029079,100,CIVIC_NUMBER,1310.0,damaged surroundings,248.5,195.8,6.673011240893479
+22797 Garnet Valley Road,"22797 Garnet Valley Road, Summerland, BC",-119.7103087,49.640733,100,CIVIC_NUMBER,1404.0,unburned,62.3,-1.0,40.100156765530585
+12407 Blagborne Avenue,"12407 Blagborne Avenue, Summerland, BC",-119.6924825,49.5990868,100,CIVIC_NUMBER,,,,,
+23411 Garnet Valley Road,"23411 Garnet Valley Road, Summerland, BC",-119.7110534,49.6440181,100,CIVIC_NUMBER,,,,,
+12406 Blagborne Avenue,"12406 Blagborne Avenue, Summerland, BC",-119.6931516,49.5988638,100,CIVIC_NUMBER,,,,,
+25600 Garnet Valley Road,"25600 Garnet Valley Road, Summerland, BC",-119.7283117,49.6509216,100,CIVIC_NUMBER,,,,,
+13611 Cartwright Avenue,"13611 Cartwright Avenue, Summerland, BC",-119.6961334,49.603941,100,CIVIC_NUMBER,1681.0,unburned,118.1,-17.8,21.705053691835882
+26405 Garnet Valley Road,"26405 Garnet Valley Road, Summerland, BC",-119.7343665,49.6598043,100,CIVIC_NUMBER,,,,,
+14605 Cartwright Avenue,"14605 Cartwright Avenue, Summerland, BC",-119.6980409,49.6082513,100,CIVIC_NUMBER,1428.0,damaged surroundings,345.8,277.0,23.877742196882938
+27006 Garnet Valley Road,"27006 Garnet Valley Road, Summerland, BC",-119.7380004,49.6569074,100,CIVIC_NUMBER,987.0,damaged surroundings,494.2,258.5,59.45902606076014
+14806 Garnet Avenue,"14806 Garnet Avenue, Summerland, BC",-119.6965339,49.6084076,100,CIVIC_NUMBER,1112.0,damaged surroundings,324.6,49.9,29.026018318341315
+27218 Garnet Valley Road,"27218 Garnet Valley Road, Summerland, BC",-119.7394205,49.6591294,100,CIVIC_NUMBER,996.0,damaged surroundings,124.2,126.5,17.59658397726314
+14810 Garnet Avenue,"14810 Garnet Avenue, Summerland, BC",-119.6951675,49.6087527,100,CIVIC_NUMBER,1116.0,unburned,-41.0,-61.0,53.47549284944106
+27413 Garnet Valley Road,"27413 Garnet Valley Road, Summerland, BC",-119.7377375,49.6592401,100,CIVIC_NUMBER,,,,,
+14612/14614 Garnet Avenue,"14612 Garnet Avenue, Summerland, BC",-119.6955079,49.6076887,100,CIVIC_NUMBER,1032.0,unburned,84.6,37.1,29.853548528077482
+28000 Garnet Valley Road,"28000 Garnet Valley Road, Summerland, BC",-119.7437097,49.6616158,100,CIVIC_NUMBER,1177.0,damaged surroundings,644.7,255.1,38.36202641812231
+14904 Denike Street,"14904 Denike Street, Summerland, BC",-119.7123424,49.5979002,100,CIVIC_NUMBER,,,,,
+28818 Garnet Valley Road,"28818 Garnet Valley Road, Summerland, BC",-119.7470341,49.6651662,100,CIVIC_NUMBER,1427.0,damaged surroundings,275.9,312.7,27.941253324116413
+18420 Garnet Valley Road,"18420 Garnet Valley Road, Summerland, BC",-119.700915,49.6240417,100,CIVIC_NUMBER,1398.0,unburned,249.1,64.8,23.936977048128487
+25208/25210 Wildhorse Road,"25208 Wildhorse Road, Summerland, BC",-119.721583,49.6512464,100,CIVIC_NUMBER,1651.0,unburned,-21.4,-54.8,12.211488064745945
+19008 Garnet Valley Road,"19008 Garnet Valley Road, Summerland, BC",-119.710039,49.6257717,100,CIVIC_NUMBER,,,,,
+25804/25808 Wildhorse Road,"25804 Wildhorse Road, Summerland, BC",-119.7234422,49.6539974,99,BLOCK,,,,,
+19154 Garnet Valley Road,"19154 Garnet Valley Road, Summerland, BC",-119.7104562,49.6266808,100,CIVIC_NUMBER,,,,,

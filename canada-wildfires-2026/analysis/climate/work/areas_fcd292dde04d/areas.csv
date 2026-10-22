@@ -1,0 +1,187 @@
+fma_id,agency,area_name,province,area_level
+1,BC Wildfire Service,Cariboo Fire Centre,BC,fire centre
+2,BC Wildfire Service,Coastal Fire Centre,BC,fire centre
+3,BC Wildfire Service,Kamloops Fire Centre,BC,fire centre
+4,BC Wildfire Service,Northwest Fire Centre,BC,fire centre
+5,BC Wildfire Service,Prince George Fire Centre,BC,fire centre
+6,BC Wildfire Service,Southeast Fire Centre,BC,fire centre
+7,Alberta Wildfire,Calgary Forest Area,AB,forest area
+8,Alberta Wildfire,Edson Forest Area,AB,forest area
+9,Alberta Wildfire,Fort McMurray Forest Area,AB,forest area
+10,Alberta Wildfire,Grande Prairie Forest Area,AB,forest area
+11,Alberta Wildfire,High Level Forest Area,AB,forest area
+12,Alberta Wildfire,Lac La Biche Forest Area,AB,forest area
+13,Alberta Wildfire,Peace River Forest Area,AB,forest area
+14,Alberta Wildfire,Rocky Mountain House Forest Area,AB,forest area
+15,Alberta Wildfire,Slave Lake Forest Area,AB,forest area
+16,Alberta Wildfire,Whitecourt Forest Area,AB,forest area
+17,Saskatchewan Public Safety Agency,Big River,SK,protection area
+18,Saskatchewan Public Safety Agency,Buffalo Narrows,SK,protection area
+19,Saskatchewan Public Safety Agency,Cypress Hills,SK,protection area
+20,Saskatchewan Public Safety Agency,Denare Beach,SK,protection area
+21,Saskatchewan Public Safety Agency,Dorintosh,SK,protection area
+22,Saskatchewan Public Safety Agency,Hudson Bay,SK,protection area
+23,Saskatchewan Public Safety Agency,La Ronge,SK,protection area
+24,Saskatchewan Public Safety Agency,Lower Fishing Lake,SK,protection area
+25,Saskatchewan Public Safety Agency,Prince Albert,SK,protection area
+26,Saskatchewan Public Safety Agency,Stony Rapids,SK,protection area
+27,Saskatchewan Public Safety Agency,Weyakwin,SK,protection area
+28,Saskatchewan Public Safety Agency,Île-à-la-Crosse,SK,protection area
+29,Ontario Forest Fires (MNR AFFES),Chapleau,ON,fire management headquarters area
+30,Ontario Forest Fires (MNR AFFES),Cochrane,ON,fire management headquarters area
+31,Ontario Forest Fires (MNR AFFES),Dryden,ON,fire management headquarters area
+32,Ontario Forest Fires (MNR AFFES),Fort Frances,ON,fire management headquarters area
+33,Ontario Forest Fires (MNR AFFES),Haliburton,ON,fire management headquarters area
+34,Ontario Forest Fires (MNR AFFES),Kenora,ON,fire management headquarters area
+35,Ontario Forest Fires (MNR AFFES),Nipigon,ON,fire management headquarters area
+36,Ontario Forest Fires (MNR AFFES),North Bay,ON,fire management headquarters area
+37,Ontario Forest Fires (MNR AFFES),Red Lake,ON,fire management headquarters area
+38,Ontario Forest Fires (MNR AFFES),Sioux Lookout,ON,fire management headquarters area
+39,Ontario Forest Fires (MNR AFFES),Sudbury,ON,fire management headquarters area
+40,Ontario Forest Fires (MNR AFFES),Thunder Bay,ON,fire management headquarters area
+41,Ontario Forest Fires (MNR AFFES),Timmins,ON,fire management headquarters area
+42,Ontario Forest Fires (MNR AFFES),Wawa,ON,fire management headquarters area
+43,GNWT Forest Management Division (ECC),Deh Cho,NT,administrative region
+44,GNWT Forest Management Division (ECC),Inuvik,NT,administrative region
+45,GNWT Forest Management Division (ECC),North Slave,NT,administrative region
+46,GNWT Forest Management Division (ECC),Sahtu,NT,administrative region
+47,GNWT Forest Management Division (ECC),South Slave,NT,administrative region
+48,Yukon Wildland Fire Management,Beaver Creek,YT,fire district
+49,Yukon Wildland Fire Management,Carmacks,YT,fire district
+50,Yukon Wildland Fire Management,Dawson,YT,fire district
+51,Yukon Wildland Fire Management,Haines Junction,YT,fire district
+52,Yukon Wildland Fire Management,Ivvavik National Park,YT,fire district
+53,Yukon Wildland Fire Management,Kluane National Park,YT,fire district
+54,Yukon Wildland Fire Management,Mayo,YT,fire district
+55,Yukon Wildland Fire Management,Old Crow,YT,fire district
+56,Yukon Wildland Fire Management,Ross River,YT,fire district
+57,Yukon Wildland Fire Management,Teslin,YT,fire district
+58,Yukon Wildland Fire Management,Vuntut National Park,YT,fire district
+59,Yukon Wildland Fire Management,Watson Lake,YT,fire district
+60,Yukon Wildland Fire Management,Whitehorse,YT,fire district
+61,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 01,NL,forest management district
+62,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 02,NL,forest management district
+63,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 03,NL,forest management district
+64,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 04,NL,forest management district
+65,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 05,NL,forest management district
+66,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 050,NL,forest management district
+67,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 06,NL,forest management district
+68,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 07,NL,forest management district
+69,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 08,NL,forest management district
+70,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 09,NL,forest management district
+71,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 10,NL,forest management district
+72,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 11,NL,forest management district
+73,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 12,NL,forest management district
+74,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 13,NL,forest management district
+75,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 14,NL,forest management district
+76,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 15,NL,forest management district
+77,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 16,NL,forest management district
+78,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 17,NL,forest management district
+79,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 18,NL,forest management district
+80,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 19a,NL,forest management district
+81,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 19b,NL,forest management district
+82,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 19c,NL,forest management district
+83,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 20,NL,forest management district
+84,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 21,NL,forest management district
+85,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 22,NL,forest management district
+86,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 23,NL,forest management district
+87,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 24,NL,forest management district
+88,NL Forestry and Agrifoods Agency (Wildfire),NL outside mapped areas,NL,remainder
+89,"PEI Forests, Fish and Wildlife",Prince Edward Island (whole province/territory),PE,province
+90,NS Department of Natural Resources (Wildfire),Nova Scotia (whole province/territory),NS,province
+91,NB Department of Natural Resources (Forest Fire),New Brunswick (whole province/territory),NB,province
+93,Ontario Forest Fires (MNR AFFES),ON outside mapped areas,ON,remainder
+95,Saskatchewan Public Safety Agency,SK outside mapped areas,SK,remainder
+96,Alberta Wildfire,AB outside mapped areas,AB,remainder
+97,Yukon Wildland Fire Management,YT outside mapped areas,YT,remainder
+98,GNWT Forest Management Division (ECC),NT outside mapped areas,NT,remainder
+99,Government of Nunavut (no organised wildfire suppression),Nunavut (whole province/territory),NU,province
+1001,Manitoba Wildfire Service,Area 1 (East),MB,fire and travel restriction area
+1002,Manitoba Wildfire Service,Area 2 (East),MB,fire and travel restriction area
+1003,Manitoba Wildfire Service,Area 3 (East),MB,fire and travel restriction area
+1004,Manitoba Wildfire Service,Area 4 (East),MB,fire and travel restriction area
+1005,Manitoba Wildfire Service,Area 5 (East),MB,fire and travel restriction area
+1006,Manitoba Wildfire Service,Area 6 (West),MB,fire and travel restriction area
+1007,Manitoba Wildfire Service,Area 7 (West),MB,fire and travel restriction area
+1008,Manitoba Wildfire Service,Area 8 (East/West),MB,fire and travel restriction area
+1009,Manitoba Wildfire Service,Area 9 (West),MB,fire and travel restriction area
+1010,Manitoba Wildfire Service,Area 10 (West),MB,fire and travel restriction area
+1011,Manitoba Wildfire Service,Area 11 (West),MB,fire and travel restriction area
+1012,Manitoba Wildfire Service,Area 12 (West),MB,fire and travel restriction area
+1013,Manitoba Wildfire Service,Area 13 (West),MB,fire and travel restriction area
+1014,Manitoba Wildfire Service,Area 14 (West/North),MB,fire and travel restriction area
+1015,Manitoba Wildfire Service,Area 15 (North),MB,fire and travel restriction area
+1016,Manitoba Wildfire Service,Area 16 (North),MB,fire and travel restriction area
+1017,Manitoba Wildfire Service,Area 17 (North),MB,fire and travel restriction area
+1018,Manitoba Wildfire Service,Area 18 (North),MB,fire and travel restriction area
+1019,Manitoba Wildfire Service,Area 19 (North),MB,fire and travel restriction area
+1020,Manitoba Wildfire Service,Area 20 (North),MB,fire and travel restriction area
+1021,Manitoba Wildfire Service,Area 21 (North),MB,fire and travel restriction area
+1022,Manitoba Wildfire Service,Area 22 (North),MB,fire and travel restriction area
+1023,Manitoba Wildfire Service,Southern Manitoba outside fire and travel restriction areas,MB,remainder
+2001,SOPFEU,01 Matagami,QC,fire danger zone (ZDI)
+2002,SOPFEU,02 La Sarre-Amos,QC,fire danger zone (ZDI)
+2003,SOPFEU,03 Quévillon-Waswanipi,QC,fire danger zone (ZDI)
+2004,SOPFEU,04 Rouyn-Noranda,QC,fire danger zone (ZDI)
+2005,SOPFEU,05 Val d'Or-Senneterre,QC,fire danger zone (ZDI)
+2006,SOPFEU,06 Mégiscane-Gouin,QC,fire danger zone (ZDI)
+2007,SOPFEU,07 Témiscamingue,QC,fire danger zone (ZDI)
+2008,SOPFEU,08 Maganasipi-Dumoine,QC,fire danger zone (ZDI)
+2009,SOPFEU,10 Réserve La Vérendrye,QC,fire danger zone (ZDI)
+2010,SOPFEU,11 Parent-Windigo,QC,fire danger zone (ZDI)
+2011,SOPFEU,12 Pontiac,QC,fire danger zone (ZDI)
+2012,SOPFEU,13 Outaouais-Labelle,QC,fire danger zone (ZDI)
+2013,SOPFEU,14 Manawan,QC,fire danger zone (ZDI)
+2014,SOPFEU,15 Gatineau,QC,fire danger zone (ZDI)
+2015,SOPFEU,16 Laurentides,QC,fire danger zone (ZDI)
+2016,SOPFEU,17 Nord de Montréal,QC,fire danger zone (ZDI)
+2017,SOPFEU,20 Montérégie,QC,fire danger zone (ZDI)
+2018,SOPFEU,21 Estrie,QC,fire danger zone (ZDI)
+2019,SOPFEU,22 Centre du Québec,QC,fire danger zone (ZDI)
+2020,SOPFEU,23 Beauce-Appalaches,QC,fire danger zone (ZDI)
+2021,SOPFEU,24 Maskinongé - Les Chenaux,QC,fire danger zone (ZDI)
+2022,SOPFEU,25 St-Maurice-Mastigouche,QC,fire danger zone (ZDI)
+2023,SOPFEU,26 La Tuque,QC,fire danger zone (ZDI)
+2024,SOPFEU,27 Portneuf,QC,fire danger zone (ZDI)
+2025,SOPFEU,28 Québec,QC,fire danger zone (ZDI)
+2026,SOPFEU,29 Charlevoix,QC,fire danger zone (ZDI)
+2027,SOPFEU,30 Réserve Laurentides,QC,fire danger zone (ZDI)
+2028,SOPFEU,31 Saguenay,QC,fire danger zone (ZDI)
+2029,SOPFEU,32 Lac Saint-Jean,QC,fire danger zone (ZDI)
+2030,SOPFEU,33 Réserve Ashuapmushuan,QC,fire danger zone (ZDI)
+2031,SOPFEU,34 Rivière Mistassini,QC,fire danger zone (ZDI)
+2032,SOPFEU,35 Monts-Valin,QC,fire danger zone (ZDI)
+2033,SOPFEU,36 Chibougamau-Rte du Nord,QC,fire danger zone (ZDI)
+2034,SOPFEU,37 Lac Albanel,QC,fire danger zone (ZDI)
+2035,SOPFEU,38 Chute-des-Passes,QC,fire danger zone (ZDI)
+2036,SOPFEU,40 Forestville-Labrieville,QC,fire danger zone (ZDI)
+2037,SOPFEU,41 Baie-Comeau-Manicouagan,QC,fire danger zone (ZDI)
+2038,SOPFEU,42 Sept-Iles,QC,fire danger zone (ZDI)
+2039,SOPFEU,43 Manic 5-nord SM3,QC,fire danger zone (ZDI)
+2040,SOPFEU,44 Minganie,QC,fire danger zone (ZDI)
+2041,SOPFEU,45 Kamouraska-RDL-Témis,QC,fire danger zone (ZDI)
+2042,SOPFEU,46 Rimouski-Matapédia,QC,fire danger zone (ZDI)
+2043,SOPFEU,47 Matane-Chics-Chocs,QC,fire danger zone (ZDI)
+2044,SOPFEU,48 Baie des Chaleurs,QC,fire danger zone (ZDI)
+2045,SOPFEU,49 Gaspé,QC,fire danger zone (ZDI)
+2046,SOPFEU,50 Waskaganish,QC,fire danger zone (ZDI)
+2047,SOPFEU,51 Eastmain,QC,fire danger zone (ZDI)
+2048,SOPFEU,52 Wemindji,QC,fire danger zone (ZDI)
+2049,SOPFEU,53 Chisasibi,QC,fire danger zone (ZDI)
+2050,SOPFEU,54 Némaska,QC,fire danger zone (ZDI)
+2051,SOPFEU,55 Sarcelle,QC,fire danger zone (ZDI)
+2052,SOPFEU,56 Radisson,QC,fire danger zone (ZDI)
+2053,SOPFEU,57 LG-3,QC,fire danger zone (ZDI)
+2054,SOPFEU,58 LG-4,QC,fire danger zone (ZDI)
+2055,SOPFEU,59 Laforge-2,QC,fire danger zone (ZDI)
+2056,SOPFEU,60 Île d'Anticosti,QC,fire danger zone (ZDI)
+2057,SOPFEU,61 Îles de la Madeleine,QC,fire danger zone (ZDI)
+2058,SOPFEU,62 Tichégami,QC,fire danger zone (ZDI)
+2059,SOPFEU,63 Monts-Otish,QC,fire danger zone (ZDI)
+2060,SOPFEU,64 Caniapiscau,QC,fire danger zone (ZDI)
+2061,SOPFEU,65 Fermont-Scherfferville,QC,fire danger zone (ZDI)
+2062,SOPFEU,66 Rivière Moisie,QC,fire danger zone (ZDI)
+2063,SOPFEU,67 Rivière Romaine,QC,fire danger zone (ZDI)
+2064,SOPFEU,68 Rivière du Petit Mécatina,QC,fire danger zone (ZDI)
+2065,SOPFEU,69 Le Golfe-du-St-Laurent,QC,fire danger zone (ZDI)
+2066,SOPFEU,"Far north outside SOPFEU fire danger zones (northern zone, no ZDI)",QC,remainder

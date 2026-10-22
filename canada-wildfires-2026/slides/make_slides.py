@@ -1,0 +1,625 @@
+#!/usr/bin/env python3
+"""Week 2 carousel: Canada's wildfires, 2023 to 2026 (The Median Canadian).
+
+One command rebuilds everything:
+    python3 make_slides.py
+
+Steps: load numbers (verified_numbers.json if present, else the draft readings
+below), read chart series from the analysis CSVs, write slides.html, render
+each slide with Playwright Chromium (/opt/pw-browsers) to
+the-median-canadian-wildfires-n-of-9.png, and print a fit report
+(content bottom vs wordmark top, overflow, one-line source line, banned words).
+"""
+import html
+import json
+import os
+import re
+import sys
+
+import pandas as pd
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+BASE = os.path.abspath(os.path.join(HERE, ".."))
+AN = os.path.join(BASE, "analysis")
+VERIFIED = os.path.join(BASE, "story", "verified_numbers.json")
+N_SLIDES = 9
+
+# ---------------------------------------------------------------- numbers
+# Keys are dotted paths into verified_numbers.json (claim id, then field).
+# Values here are the fallback readings of the draft and analysis files.
+DEFAULTS = {
+    "C1.share_pct.2023": 2.61, "C1.share_pct.2024": 0.93,
+    "C1.share_pct.2025": 1.39, "C1.share_pct.2026": 1.04,
+    "C1.share_pct.1989": 0.81, "S1.official_2026_ha": 4500984.5,
+    "C2.union_pct": 5.95, "C2.one_in": 17,
+    "C4.distinct_land_scaled_mha": 35.79,
+    "C6.warming_c": 1.15, "C6.lo": 0.80, "C6.hi": 1.49,
+    "C7.stations": 236,
+    "C8.pct_per_degree": 43.6,
+    "C9.ratio": 1.53, "C9.lo": 1.37, "C9.hi": 1.76, "C9.share_attributable": 0.347,
+    "C10.pct_of_normal": 84.0,
+    "C12.d1_max_pct.2023": 55.4, "C12.d1_max_pct.2024": 54.6,
+    "C12.d1_max_pct.2025": 75.1, "C12.d1_max_pct.2026": 56.7,
+    "C12.mean_2003_2022": 14.8, "C12.max_2003_2022": 34.9,
+    "C13.lightning_2026_nfd": 2960, "C13.lightning_mean_1991_2020": 3245,
+    "C13.human_2026": 2190,
+    "C15.ratio_after": 16.3, "C15.beyond_calibration": 5.2,
+    "C16.popw_pm25": 67.0, "C16.previous_high": 52.5,
+    "C18.2023.aqbat": 379, "C18.2023.chen": 988,
+    "C18.2026.aqbat": 98, "C18.2026.chen": 253,
+    "C19.direct_deaths.2023": 1, "C19.direct_deaths.2024": 1,
+    "C19.direct_deaths.2025": 2, "C19.direct_deaths.2026": 3,
+    "C20.pooled_ratio_lo": 114, "C20.pooled_ratio_hi": 297,
+    "C21.ratio": 30.6, "C21.on_reserve_pct": 3.3, "C21.off_reserve_pct": 0.11,
+    "C23.flagged.2023": 844, "C23.flagged.2024": 417,
+    "C23.flagged.2025": 405, "C23.flagged.2026": 517,
+    "C23.total": 2183, "C23.precision": 0.836, "C23.recall": 0.832,
+    "C25.roads_km": 9503, "C25.rail_km": 686,
+    "C27.timber_2023_nominal_b": 7.44, "C27.stumpage_collected_2023_b": 1.03,
+    "C27.ratio": 7.2,
+    "C28.mean_2016_2022_b": 1.05, "C28.mean_2023_2025_b": 2.15, "C28.ratio": 2.04,
+    "C31.managed_wildfire_2023_mt": 870, "C31.national_total_2023_mt": 686.9,
+    "C32.share_1990s_pct": 2.3, "C32.share_2023_2026_pct": 7.5,
+}
+
+
+def flatten(d, prefix=""):
+    out = {}
+    for k, v in d.items():
+        key = f"{prefix}.{k}" if prefix else str(k)
+        if isinstance(v, dict):
+            out.update(flatten(v, key))
+        else:
+            out[key] = v
+    return out
+
+
+NUM = dict(DEFAULTS)
+NUM_SOURCE = {k: "draft" for k in DEFAULTS}
+if os.path.exists(VERIFIED):
+    ver = flatten(json.load(open(VERIFIED)))
+    for k in DEFAULTS:
+        if k in ver and isinstance(ver[k], (int, float)):
+            NUM[k] = ver[k]
+            NUM_SOURCE[k] = "verified"
+
+
+def V(key):
+    return NUM[key]
+
+
+# ---------------------------------------------------------------- formatting
+def f1(x):
+    return f"{x:.1f}"
+
+
+def fint(x):
+    return f"{int(round(x)):,}"
+
+
+def ratio_words(x):
+    words = {2: "twice", 3: "three times", 4: "four times", 5: "five times",
+             6: "six times", 7: "seven times", 8: "eight times", 9: "nine times",
+             10: "ten times"}
+    return words.get(int(round(x)), f"{int(round(x))} times")
+
+
+def esc(s):
+    return html.escape(str(s), quote=True)
+
+
+# ---------------------------------------------------------------- series
+def series():
+    s = {}
+    fs = pd.read_csv(os.path.join(AN, "forest/canada_forest_share_by_year.csv"), index_col=0)
+    s["forest"] = (fs["share_forest_burned"] * 100).to_dict()
+    nb = pd.read_csv(os.path.join(AN, "forest/nbac_totals_by_year_admin.csv")).set_index("YEAR").CANADA
+    area = {int(y): v / 1e6 for y, v in nb.items() if y <= 2025}
+    area[2026] = V("S1.official_2026_ha") / 1e6
+    s["area"] = area
+    ser = pd.Series(area).sort_index()
+    r4 = ser.rolling(4).sum()
+    s["area_run"] = float(r4.loc[2026])
+    s["area_prior_max"] = float(r4.loc[:2022].max())
+    s["area_prior_end"] = int(r4.loc[:2022].idxmax())
+    ag = pd.read_csv(os.path.join(BASE, "data/smoke-cost/fire_area_count_by_agency_year.csv"))
+    ag4 = ag.groupby("year").area_burned_ha.sum().rolling(4).sum() / 1e6
+    s["agency_run"], s["agency_prior_max"] = float(ag4.loc[2026]), float(ag4.loc[:2022].max())
+    s["agency_prior_end"] = int(ag4.loc[:2022].idxmax())
+    cs = pd.read_csv(os.path.join(AN, "climate-change/climate_series.csv"))
+    t = cs[(cs.scope == "Canada") & (cs.variable == "t_mjja")]
+    s["temp"] = dict(zip(t.year.astype(int), t.value))
+    rd = pd.read_csv(os.path.join(AN, "cause/run_national_drivers.csv"))
+    d = rd[rd.year >= 2003]
+    s["drought"] = dict(zip(d.year.astype(int), d.drought_d1_area_max_apr_sep_forest_weighted * 100))
+    base = rd[(rd.year >= 1991) & (rd.year <= 2020)]
+    s["fires_avg"] = float((base.n_lightning_fires + base.n_human_fires).mean())
+    r = rd[rd.year >= 2023]
+    s["fires"] = dict(zip(r.year.astype(int), r.n_lightning_fires + r.n_human_fires))
+    mc = pd.read_csv(os.path.join(AN, "cause/run_model_check.csv"))
+    mc = mc[(mc.model == "P_all") & mc.scheme.str.startswith("train")]
+    s["model"] = {int(y): (a * 100, p * 100) for y, a, p in zip(mc.year, mc.actual, mc.predicted)}
+    hd = pd.read_csv(os.path.join(AN, "health/modelled_acute_deaths_national.csv"))
+    lo = hd[hd.coefficient.str.startswith("AQBAT")].set_index("year").net_c
+    hi = hd[hd.coefficient.str.startswith("Chen")].set_index("year").net_c
+    s["smoke"] = {y: (lo[y], hi[y]) for y in range(2023, 2027)}
+    ct = pd.read_csv(os.path.join(AN, "economic-value/cost_tally_by_year.csv"))
+    ct = ct[(ct.year >= 2016) & (ct.year <= 2025)]
+    s["firefight"] = dict(zip(ct.year.astype(int), ct.A_provincial_firefighting / 1e9))
+    inv = pd.read_csv(os.path.join(AN, "threads/t1_official_inventory_lines.csv"))
+    s["co2"] = {int(y): (n / 1000, w / 1000) for y, n, w in zip(
+        inv.year, inv.national_total_excl_lulucf_kt, inv.nir_wildfire_direct_immediate_kt_co2e)}
+    rb = pd.read_csv(os.path.join(AN, "threads/t2_reburn_by_period.csv"))
+    rb = rb[(rb.k == 15) & (rb.basis == "SCANFI BS/JP")]
+    s["reburn"] = dict(zip(rb.period, rb.reburn_share * 100))
+    return s
+
+
+def consistency(s):
+    """Warn when chart series disagree with the numbers dict."""
+    warn = []
+    for y in (2023, 2024, 2025, 2026):
+        if abs(s["forest"][y] - V(f"C1.share_pct.{y}")) > 0.006:
+            warn.append(f"forest {y}: chart {s['forest'][y]:.3f} vs {V(f'C1.share_pct.{y}')}")
+        if abs(s["drought"][y] - V(f"C12.d1_max_pct.{y}")) > 0.06:
+            warn.append(f"drought {y}: chart {s['drought'][y]:.2f} vs {V(f'C12.d1_max_pct.{y}')}")
+    for y in (2023, 2026):
+        lo, hi = s["smoke"][y]
+        if round(lo) != V(f"C18.{y}.aqbat") or round(hi) != V(f"C18.{y}.chen"):
+            warn.append(f"smoke {y}: chart {lo:.0f}-{hi:.0f}")
+    return warn
+
+
+# ---------------------------------------------------------------- SVG charts
+TEXT, MUTED, GRID, FIRE, FOREST, NEUTRAL = "#1b2330", "#677080", "#dfe3e8", "#b3332a", "#1f7a45", "#b9bfc9"
+FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif"
+
+
+def tw(text, size, bold=True):
+    return len(text) * size * (0.58 if bold else 0.53)
+
+
+def label_el(x, y, text, size=24, color=TEXT, anchor="middle", weight=700):
+    return (f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" font-weight="{weight}" fill="{color}" '
+            f'text-anchor="{anchor}" stroke="#fff" stroke-width="7" stroke-linejoin="round" '
+            f'paint-order="stroke">{esc(text)}</text>')
+
+
+def place_labels(items, size, W=928):
+    """items: (x, y_bottom, text, color). Push labels up until no overlap."""
+    placed, out = [], []
+    for x, yb, text, color in sorted(items, key=lambda i: i[1], reverse=True):
+        w, h = tw(text, size), size * 1.05
+        x = min(x, W - 10 - w / 2)
+        y = yb
+        while any(abs(x - px) < (w + pw) / 2 + 4 and abs(y - py) < (h + ph) / 2 + 2 for px, py, pw, ph in placed):
+            y -= 2
+        placed.append((x, y, w, h))
+        out.append(label_el(x, y, text, size, color))
+    return out
+
+
+def bars(cats, values, *, W=928, H=360, ymin=0.0, ymax=None, colors=None, labels=None,
+         ticks=None, grid=None, gridfmt=str, refs=(), group=None, lsize=24, ranges=None,
+         bar_frac=0.72, tick_size=21, fan=None):
+    """Vertical bar chart. values: list per category (or list of lists for groups)."""
+    left, right, top, bottom = 76, 8, 44, 36
+    pw, ph = W - left - right, H - top - bottom
+    n = len(cats)
+    ymax = ymax or max(max(v) if isinstance(v, (list, tuple)) else v for v in values) * 1.12
+    sy = lambda v: top + ph * (ymax - v) / (ymax - ymin)
+    slot = pw / n
+    el = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
+          f'font-family="{FONT}">']
+    for g in grid or []:
+        el.append(f'<line x1="{left}" x2="{W - right}" y1="{sy(g):.1f}" y2="{sy(g):.1f}" stroke="{GRID}" stroke-width="2"/>')
+        el.append(f'<text x="{left - 10}" y="{sy(g) + 7:.1f}" font-size="20" fill="{MUTED}" text-anchor="end">{esc(gridfmt(g))}</text>')
+    labs = []
+    for i, c in enumerate(cats):
+        x0 = left + i * slot
+        vals = values[i] if group else [values[i]]
+        k = len(vals)
+        bw = slot * bar_frac / k
+        start = x0 + (slot - bw * k) / 2
+        for j, v in enumerate(vals):
+            col = (group[j] if group else (colors[i] if colors else NEUTRAL))
+            bx = start + j * bw
+            y1, y0 = sy(max(v, 0)), sy(min(v, 0))
+            if ranges and ranges[i][j] is not None:  # light extension to high value
+                hy = sy(ranges[i][j])
+                el.append(f'<rect x="{bx:.1f}" y="{hy:.1f}" width="{bw:.1f}" height="{y1 - hy:.1f}" fill="{NEUTRAL}"/>')
+            el.append(f'<rect x="{bx:.1f}" y="{y1:.1f}" width="{bw:.1f}" height="{max(y0 - y1, 1.5):.1f}" fill="{col}"/>')
+            lab = labels[i][j] if group and labels else (labels[i] if labels else None)
+            if lab:
+                ytop = sy(ranges[i][j]) if ranges and ranges[i][j] is not None else y1
+                lc = TEXT if not group else (group[j] if group[j] != NEUTRAL else MUTED)
+                labs.append((bx + bw / 2, ytop - 9, lab, lc))
+        if ticks is None or c in ticks:
+            cx = x0 + slot / 2
+            anc = "end" if cx + tw(c, tick_size, False) / 2 > W else "middle"
+            tx = W - 2 if anc == "end" else cx
+            el.append(f'<text x="{tx:.1f}" y="{H - 8}" font-size="{tick_size}" fill="{MUTED}" text-anchor="{anc}">{esc(c)}</text>')
+    # zero line
+    el.append(f'<line x1="{left}" x2="{W - right}" y1="{sy(0):.1f}" y2="{sy(0):.1f}" stroke="{TEXT}" stroke-width="2"/>')
+    for r in refs:
+        i0, i1 = r.get("span", (0, n - 1))
+        xa, xb = left + i0 * slot, left + (i1 + 1) * slot
+        y = sy(r["value"])
+        el.append(f'<line x1="{xa:.1f}" x2="{xb:.1f}" y1="{y:.1f}" y2="{y:.1f}" stroke="{r.get("color", FOREST)}" '
+                  f'stroke-width="3" stroke-dasharray="9 7"/>')
+        if r.get("label"):
+            anchor = r.get("anchor", "start")
+            lx = xa + 6 if anchor == "start" else xb - 6
+            el.append(label_el(lx, y - 10 + r.get("dy", 0), r["label"], 21, r.get("color", FOREST), anchor, 600))
+    for idx, txt, col in fan or []:  # bracket over a run of bars with one label above it
+        x0b = left + idx[0] * slot + slot * (1 - bar_frac) / 2
+        x1b = left + idx[-1] * slot + slot * (1 + bar_frac) / 2
+        yb = sy(max(values[i] for i in idx)) - 12
+        el.append(f'<path d="M{x0b:.1f},{yb + 8:.1f} V{yb:.1f} H{x1b:.1f} V{yb + 8:.1f}" fill="none" stroke="{col}" stroke-width="2"/>')
+        w = tw(txt, lsize)
+        cx = min(max((x0b + x1b) / 2, left + w / 2), W - 10 - w / 2)
+        el.append(label_el(cx, yb - 12, txt, lsize, col))
+    el.extend(place_labels(labs, lsize, W))
+    el.append("</svg>")
+    return "".join(el)
+
+
+def hbars(rows, W=928, row_h=58, vmax=None, fmt=str):
+    """Horizontal bars: rows of (label, value, color)."""
+    lw = 230
+    vmax = vmax or max(r[1] for r in rows) * 1.25
+    H = row_h * len(rows)
+    el = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">']
+    for i, (lab, v, col) in enumerate(rows):
+        y = i * row_h
+        bw = (W - lw - 110) * v / vmax
+        el.append(f'<text x="0" y="{y + row_h * 0.62:.1f}" font-size="24" fill="{TEXT}">{esc(lab)}</text>')
+        el.append(f'<rect x="{lw}" y="{y + 10}" width="{bw:.1f}" height="{row_h - 20}" fill="{col}"/>')
+        el.append(label_el(lw + bw + 10, y + row_h * 0.64, fmt(v), 24, TEXT, "start"))
+    el.append(f'<line x1="{lw}" x2="{lw}" y1="0" y2="{H}" stroke="{TEXT}" stroke-width="2"/>')
+    el.append("</svg>")
+    return "".join(el)
+
+
+# ---------------------------------------------------------------- slides
+def legend(items):
+    return '<div class="legend">' + "".join(
+        f'<span><i style="background:{c}"></i>{esc(t)}</span>' for t, c in items) + "</div>"
+
+
+def build(s):
+    yrs = list(range(1972, 2027))
+    run = {2023, 2024, 2025, 2026}
+    slides = []
+
+    # 1 Result -------------------------------------------------------------
+    pe = s["area_prior_end"]
+    prior = set(range(pe - 3, pe + 1))
+    ratio = s["area_run"] / s["area_prior_max"]
+    ch1 = bars([str(y) for y in yrs], [s["area"][y] for y in yrs], H=330, ymax=17.5,
+               colors=[FIRE if y in run else (MUTED if y in prior else NEUTRAL) for y in yrs],
+               fan=[([yrs.index(y) for y in sorted(prior)], f"{pe - 3} to {pe}: {f1(s['area_prior_max'])}", MUTED),
+                    ([yrs.index(y) for y in sorted(run)], f"2023 to 2026: {f1(s['area_run'])}", FIRE)],
+               ticks={"1972", "1980", "1990", "2000", "2010", "2020"}, grid=[5, 10, 15],
+               gridfmt=lambda g: f"{g}", bar_frac=0.78, lsize=22)
+    more = "more than twice" if 2 <= ratio < 3 else f"{ratio_words(ratio)}"
+    slides.append(dict(
+        kicker="Canada's wildfires, 2023 to 2026",
+        head=f"Canada's last four fire seasons burned {more} the area of any four years since 1972",
+        body=f'''
+<div class="statrow">
+  <div><div class="big fire">{f1(s["area_run"])}</div><div class="statcap">million hectares burned in 2023 to 2026</div></div>
+  <div><div class="big" style="color:{MUTED}">{f1(s["area_prior_max"])}</div><div class="statcap">in {pe - 3} to {pe}, the most in any earlier four years</div></div>
+</div>
+<div class="note">Area burned each year, million hectares, 1972 to 2026</div>
+<div class="chart">{ch1}</div>
+<p class="body sm">That includes about {round(V("C2.union_pct"))}% of Canada's forest, 1 hectare in every {int(V("C2.one_in"))}.</p>
+<p class="foot">1972 to 2025: NBAC satellite-mapped burned area; 2026: official agency total ({f1(V("S1.official_2026_ha") / 1e6)} million ha). Official agency totals since 1990 show the same: {f1(s["agency_run"])} vs {f1(s["agency_prior_max"])} million ha ({s["agency_prior_end"] - 3} to {s["agency_prior_end"]}).</p>''',
+        source="NRCan NBAC, National Fire Database and CWFIS · Canada, 1972 to 2026 · Oct 2026 · CC BY 4.0"))
+
+    # 2 Climate ------------------------------------------------------------
+    ty = list(range(1950, 2027))
+    tlab = [("+" + f1(s["temp"][y]) + "°C") if y == 2023 else None for y in ty]
+    ch2 = bars([str(y) for y in ty], [s["temp"][y] for y in ty], H=300, ymin=-1.5, ymax=2.6,
+               colors=[FIRE if y in run else NEUTRAL for y in ty], labels=tlab,
+               ticks={"1950", "1970", "1990", "2010", "2026"}, grid=[-1, 1, 2],
+               gridfmt=lambda g: f"{g:+d}°C", bar_frac=0.8, lsize=22,
+               refs=[dict(value=V("C6.warming_c"), span=(66, 76), color=TEXT)])
+    share = V("C9.share_attributable")
+    third = "about a third" if 0.29 <= share <= 0.38 else f"about {round(share * 100)}%"
+    slides.append(dict(
+        kicker="Climate",
+        head="The fire season is more than a degree warmer than in 1961 to 1990",
+        body=f'''
+<div class="bigrow"><div class="big fire">+{f1(V("C6.warming_c"))}°C</div>
+<div class="bigcap">May to August, 2016 to 2026 vs 1961 to 1990. All {fint(V("C7.stations"))} long-record weather stations warmed.</div></div>
+<div class="note">May to August temperature vs 1961 to 1990; dashed line: 2016 to 2026 average</div>
+<div class="chart">{ch2}</div>
+<p class="body">Each extra degree has gone with about {round(V("C8.pct_per_degree"))}% more area burned. On that link, warming alone accounts for {third} of what burned in 2023 to 2026.</p>
+<p class="foot">Statistical counterfactual, not a physical attribution: the 1972 to 2025 link between fire-season temperature and area burned within each area, rerun with temperatures set back to 1961 to 1990. Warming multiplied expected area burned by {V("C9.ratio"):.2f} (range {V("C9.lo"):.2f} to {V("C9.hi"):.2f}).</p>''',
+        source="ECCC homogenized climate data and station records · forested Canada, 1950 to 2026 · Oct 2026 · CC BY 4.0"))
+
+    # 3 Drought ------------------------------------------------------------
+    dy = list(range(2003, 2027))
+    dlab = [f"{round(V(f'C12.d1_max_pct.{y}'))}%" if y in run else
+            (f"{round(s['drought'][y])}%" if abs(s["drought"][y] - V("C12.max_2003_2022")) < 0.1 else None) for y in dy]
+    ch3 = bars([str(y) for y in dy], [s["drought"][y] for y in dy], H=320, ymax=85,
+               colors=[FIRE if y in run else NEUTRAL for y in dy], labels=dlab,
+               ticks={"2003", "2008", "2013", "2018", "2023"}, grid=[25, 50, 75],
+               gridfmt=lambda g: f"{g}%", lsize=24,
+               refs=[dict(value=V("C12.mean_2003_2022"), span=(0, 19),
+                          label=f"2003 to 2022 average {round(V('C12.mean_2003_2022'))}%")])
+    slides.append(dict(
+        kicker="Drought",
+        head="On top of the heat came the driest four years since 1950",
+        body=f'''
+<div class="bigrow"><div class="big">{round(V("C10.pct_of_normal"))}%</div>
+<div class="bigcap">of normal April to September rain, 2023 to 2026 average. Rain shows no long-term trend since 1950.</div></div>
+<div class="note">Share of forest in moderate or worse drought, April to September, 2003 to 2026</div>
+<div class="chart">{ch3}</div>
+<p class="body">Every year from 2023 to 2026 had more forest in drought than any year from 2003 to 2022, when the highest was {round(V("C12.max_2003_2022"))}%.</p>
+<p class="foot">Drought map: AAFC Canadian Drought Monitor; the territories were assessed only from 2015. Rain: forested-region weather stations, % of each station's 1961 to 1990 average.</p>''',
+        source="AAFC Canadian Drought Monitor; ECCC climate data · Canada, 1950 to 2026 · Oct 2026 · CC BY 4.0"))
+
+    # 4 Expected vs actual -------------------------------------------------
+    ry = [2023, 2024, 2025, 2026]
+    ch4a = bars([str(y) for y in ry], [s["fires"][y] for y in ry], H=200, ymax=8200,
+                colors=[NEUTRAL] * 4, labels=[fint(s["fires"][y]) for y in ry], grid=[4000, 8000],
+                gridfmt=lambda g: f"{g // 1000}k", bar_frac=0.5,
+                refs=[dict(value=s["fires_avg"], span=(0, 3))])
+    ch4b = bars([str(y) for y in ry], [list(s["model"][y]) for y in ry], H=230, ymax=3.0,
+                group=[FIRE, NEUTRAL], grid=[1, 2, 3], gridfmt=lambda g: f"{g}%",
+                labels=[[f"{s['model'][y][0]:.1f}%", f"{s['model'][y][1]:.2f}%"] for y in ry], bar_frac=0.6)
+    slides.append(dict(
+        kicker="Expected vs actual",
+        head="Fewer fires, yet far more burned than expected",
+        body=f'''
+<div class="note">Fires started by lightning and people; dashed line: 1991 to 2020 average, {fint(s["fires_avg"])}</div>
+<div class="chart">{ch4a}</div>
+<p class="body sm">In 2026 lightning started {fint(V("C13.lightning_2026_nfd"))} fires (average {fint(V("C13.lightning_mean_1991_2020"))}) and people {fint(V("C13.human_2026"))}, the fewest in 37 years.</p>
+{legend([("Forest burned", FIRE), ("Expected from 2003 to 2022 conditions", NEUTRAL)])}
+<div class="chart">{ch4b}</div>
+<p class="body sm">In all, about {round(V("C15.ratio_after"))} times as much burned as expected.</p>
+<p class="foot">Expected: area-by-area model of drought, fire weather, fire counts and past burns, trained on 2003 to 2022. It under-predicts ordinary years too; beyond that usual miss the gap is about {round(V("C15.beyond_calibration"))} times.</p>''',
+        source="NRCan Fire Database, CWFIS; AAFC Drought Monitor · Canada, 1991 to 2026 · Oct 2026 · CC BY 4.0"))
+
+    # 5 People -------------------------------------------------------------
+    direct = {y: int(V(f"C19.direct_deaths.{y}")) for y in ry}
+    sm = {y: (V(f"C18.{y}.aqbat"), V(f"C18.{y}.chen")) if y in (2023, 2026) else
+          (round(s["smoke"][y][0]), round(s["smoke"][y][1])) for y in ry}
+    ch5 = bars([str(y) for y in ry], [[sm[y][0], direct[y]] for y in ry], H=290, ymax=1100,
+               group=[MUTED, FIRE], ranges=[[sm[y][1], None] for y in ry],
+               labels=[[f"{fint(sm[y][0])} to {fint(sm[y][1])}", str(direct[y])] for y in ry],
+               grid=[500, 1000], gridfmt=lambda g: fint(g), bar_frac=0.62)
+    lo_r, hi_r = V("C20.pooled_ratio_lo"), V("C20.pooled_ratio_hi")
+    lo_w, hi_w = int(round(lo_r, -2)), int(round(hi_r, -2))
+    slides.append(dict(
+        kicker="People",
+        head="Smoke is estimated to kill far more people than the flames do",
+        body=f'''
+{legend([("Smoke deaths, low estimate", MUTED), ("high estimate", NEUTRAL), ("Deaths in the fires", FIRE)])}
+<div class="chart">{ch5}</div>
+<p class="body">That is roughly {lo_w} to {hi_w} smoke deaths for every death in the fires, 2023 to 2026. July 16, 2026 was the smokiest day in the 2018 to 2026 record.</p>
+<p class="body sm">People on reserves were about {round(V("C21.ratio"))} times as likely as others to live within 10 km of a fire of 1,000 hectares or more in two or more of the four years.</p>
+<p class="foot">Smoke deaths are modelled, not counted: short-term deaths from fire-season fine particles, using Health Canada's coefficient (low) and a wildfire-specific study coefficient (high). Provinces with monitor data only; 2025 and 2026 exclude MB, NL, NT and NU. Deaths in the fires: TSB aviation records and federal statements.</p>''',
+        source="NAPS and AirNow PM2.5; StatCan; TSB; Public Safety Canada · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
+
+    # 6 Property -----------------------------------------------------------
+    cover = {2023: "4 events", 2024: "Jasper", 2025: "2 events", 2026: "all fires"}
+    ch6 = bars([f"{y}: {cover[y]}" for y in ry], [V(f"C23.flagged.{y}") for y in ry], H=320, ymax=1000,
+               colors=[FIRE] * 4, labels=[fint(V(f"C23.flagged.{y}")) for y in ry],
+               grid=[500, 1000], gridfmt=lambda g: fint(g), bar_frac=0.5, tick_size=22)
+    total = int(round(V("C23.total"), -2))
+    slides.append(dict(
+        kicker="Property",
+        head=f"At the fires we checked, about {fint(total)} buildings were likely destroyed",
+        body=f'''
+<div class="note">Buildings likely destroyed at the events checked, by year</div>
+<div class="chart">{ch6}</div>
+<div class="statrow">
+  <div><div class="stat">{fint(V("C25.roads_km"))} km</div><div class="statcap">of roads inside burned areas, 2023 to 2026</div></div>
+  <div><div class="stat">{fint(V("C25.rail_km"))} km</div><div class="statcap">of railway inside burned areas, 2023 to 2026</div></div>
+</div>
+<p class="foot">Our estimate from Sentinel-2 imagery, buildings flagged within 500 m of a fire. Counts cover only the events checked, not national totals: 4 events in 2023, Jasper in 2024 (the event the method was calibrated on), 2 events in 2025, all 2026 fires. On Jasper's official damage map, {round(V("C23.precision") * 100)}% of flagged buildings were destroyed and {round(V("C23.recall") * 100)}% of destroyed buildings were found. Roads and rail: length inside burned areas, not damage.</p>''',
+        source="Sentinel-2; Microsoft footprints; StatCan roads; NRCan rail · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
+
+    # 7 Economy ------------------------------------------------------------
+    fy = list(range(2016, 2026))
+    ch7 = bars([str(y) for y in fy], [s["firefight"][y] for y in fy], H=300, ymax=2.9,
+               colors=[FIRE if y in run else NEUTRAL for y in fy],
+               labels=[f"${s['firefight'][y]:.1f}B" if y in run or y == 2021 else None for y in fy],
+               grid=[1, 2], gridfmt=lambda g: f"${g}B", bar_frac=0.66, lsize=22,
+               refs=[dict(value=V("C28.mean_2016_2022_b"), span=(0, 6),
+                          label=f"2016 to 2022 average ${V('C28.mean_2016_2022_b'):.2f}B", dy=-38)])
+    slides.append(dict(
+        kicker="Economy",
+        head=f"Fire burned timber worth {ratio_words(V('C27.ratio'))} the stumpage Canada collected in 2023",
+        body=f'''
+<div class="statrow">
+  <div><div class="stat fire">${f1(V("C27.timber_2023_nominal_b"))}B</div><div class="statcap">standing timber burned in 2023, at Crown stumpage rates</div></div>
+  <div><div class="stat">${f1(V("C27.stumpage_collected_2023_b"))}B</div><div class="statcap">stumpage Crown forests raised in 2023</div></div>
+</div>
+<div class="note">Provincial firefighting cost, BC, Ontario, Alberta and Saskatchewan, 2025 dollars</div>
+<div class="chart">{ch7}</div>
+<p class="body sm">Firefighting cost about {ratio_words(V("C28.ratio"))} as much a year in 2023 to 2025 as in 2016 to 2022.</p>
+<p class="foot">Timber is valued standing, not as lost harvest; much burned forest lies outside harvest plans. 2022 excludes Alberta (not published); 2026 is left out because only BC has reported.</p>''',
+        source="National Forestry Database; BC, ON, AB, SK public accounts · 2016 to 2025 · Oct 2026 · CC BY 4.0"))
+
+    # 8 Environment --------------------------------------------------------
+    cy = list(range(2016, 2025))
+    ch8 = bars([str(y) for y in cy], [list(s["co2"][y]) for y in cy], H=300, ymax=1000,
+               group=[NEUTRAL, FIRE], grid=[500, 1000], gridfmt=lambda g: fint(g),
+               labels=[[fint(s["co2"][y][0]) if y == 2023 else None, fint(s["co2"][y][1])] for y in cy],
+               bar_frac=0.78, lsize=21)
+    rb = s["reburn"]
+    ch8b = hbars([("1990s", rb["1990-1999"], NEUTRAL), ("2023 to 2026", rb["2023-2026"], FIRE)],
+                 row_h=56, vmax=10, fmt=lambda v: f"{f1(v)}%")
+    slides.append(dict(
+        kicker="Environment",
+        head="Wildfire CO₂ is left out of Canada's emissions total, and in 2023 it was bigger",
+        body=f'''
+{legend([("Canada's counted emissions", NEUTRAL), ("Managed-forest wildfire, not counted", FIRE)])}
+<div class="note">Million tonnes of CO₂ equivalent, 2016 to 2024</div>
+<div class="chart">{ch8}</div>
+<div class="sub">Black spruce and jack pine forest is burning again sooner</div>
+<div class="note">Share of burned area that had already burned within 15 years</div>
+<div class="chart">{ch8b}</div>
+<p class="foot">Official inventory (NIR 2026): wildfire in managed forest is a memo item outside the total; fires in unmanaged forest are not estimated. Rounded to 2 significant figures; 2025 and 2026 not yet reported.</p>''',
+        source="ECCC National Inventory Report 2026; NBAC; SCANFI · Canada, 1990 to 2026 · Oct 2026 · CC BY 4.0"))
+
+    # 9 Bottom line --------------------------------------------------------
+    slides.append(dict(
+        kicker="Bottom line",
+        head="Hotter is the trend, dry was the luck, and most of the cost is not counted",
+        body='''
+<div class="explore"><div class="ex1">Explore the full story and the data</div>
+<div class="ex2">Link in bio · sjvadrevu.github.io/canada-wildfires-2026</div></div>
+<div class="brand"><img src="logo.png" alt="The Median Canadian"><div class="tagline">A curious Canadian explaining Canada through numbers, every week.</div></div>
+<div class="sources"><b>Data sources.</b> NRCan Canadian Wildland Fire Information System (NBAC, M3 outlines, National Fire Database, CNFDB), Land Cover 2020 and SCANFI; ECCC homogenized climate data, climate stations and National Inventory Report 2026; AAFC Canadian Drought Monitor; NAPS and AirNow air quality; Statistics Canada 2021 Census and road network; NRCan rail network; Transportation Safety Board; Public Safety Canada; Health Canada AQBAT and Chen et al. 2021 coefficients; Copernicus Sentinel-2; Microsoft building footprints (ODbL); National Forestry Database; provincial public accounts (BC, ON, AB, SK).</div>
+<div class="sources"><b>Licence.</b> Analysis and charts CC BY 4.0, The Median Canadian. Source data under the Open Government Licence (Canada) and each source's own licence.</div>''',
+        source=None, last=True))
+    return slides
+
+
+CSS = f"""
+:root {{ --text:{TEXT}; --muted:{MUTED}; --grid:{GRID}; --fire:{FIRE}; --forest:{FOREST}; --neutral:{NEUTRAL}; }}
+* {{ box-sizing:border-box; margin:0; padding:0; }}
+body {{ background:#fff; font-family:{FONT}; color:var(--text); }}
+.slide {{ position:relative; width:1080px; height:1350px; background:#fff; overflow:hidden; }}
+.content {{ position:absolute; top:86px; left:76px; right:76px; }}
+.kicker {{ font-size:27px; font-weight:700; text-transform:uppercase; letter-spacing:0.09em; color:#677080; }}
+h1 {{ font-size:74px; font-weight:800; line-height:1.07; letter-spacing:-0.022em; color:#1b2330; margin-top:18px; }}
+h1.four {{ font-size:60px; }}
+.body {{ font-size:33px; line-height:1.42; margin-top:22px; }}
+.body.sm {{ margin-top:14px; }}
+.bigrow {{ display:flex; align-items:center; gap:30px; margin-top:26px; }}
+.big {{ font-size:128px; font-weight:800; line-height:1; letter-spacing:-0.03em; white-space:nowrap; }}
+.fire {{ color:var(--fire); }}
+.bigcap {{ font-size:30px; line-height:1.3; color:var(--text); }}
+.note {{ font-size:24px; color:var(--muted); margin-top:26px; line-height:1.3; }}
+.chart {{ margin-top:8px; line-height:0; }}
+.legend {{ display:flex; gap:28px; flex-wrap:wrap; margin-top:26px; font-size:24px; color:var(--text); }}
+.legend i {{ display:inline-block; width:22px; height:22px; margin-right:10px; vertical-align:-3px; }}
+.statrow {{ display:flex; gap:40px; margin-top:24px; }}
+.statrow > div {{ flex:1; }}
+.stat {{ font-size:88px; font-weight:800; line-height:1.05; letter-spacing:-0.02em; white-space:nowrap; }}
+.statcap {{ font-size:27px; line-height:1.3; margin-top:4px; }}
+.sub {{ font-size:33px; font-weight:700; margin-top:24px; line-height:1.25; }}
+.foot {{ font-size:21px; line-height:1.38; color:var(--muted); margin-top:20px; }}
+.footer-logo {{ position:absolute; left:76px; bottom:64px; height:78px; }}
+.pagenum {{ position:absolute; right:76px; bottom:64px; height:78px; line-height:78px; font-size:27px; font-weight:700; color:var(--muted); }}
+.source {{ position:absolute; left:76px; right:76px; bottom:22px; font-size:18px; color:#8a919c; white-space:nowrap; overflow:hidden; }}
+.explore {{ margin-top:48px; border:3px solid var(--grid); border-radius:22px; padding:34px 38px; }}
+.ex1 {{ font-size:40px; font-weight:800; line-height:1.15; }}
+.ex2 {{ font-size:28px; color:var(--muted); margin-top:12px; }}
+.brand {{ margin-top:52px; }}
+.brand img {{ height:110px; display:block; }}
+.tagline {{ font-size:30px; line-height:1.35; margin-top:14px; }}
+.sources {{ font-size:20px; line-height:1.42; color:var(--muted); margin-top:30px; }}
+.sources b {{ color:var(--text); }}
+"""
+
+
+def page(slides):
+    out = [f"<!doctype html><html lang='en'><head><meta charset='utf-8'><title>Wildfires carousel</title><style>{CSS}</style></head><body>"]
+    for i, sl in enumerate(slides, 1):
+        out.append(f'<section class="slide" id="s{i}"><div class="content">')
+        out.append(f'<div class="kicker">{esc(sl["kicker"])}</div><h1>{esc(sl["head"])}</h1>{sl["body"]}</div>')
+        if not sl.get("last"):
+            out.append('<img class="footer-logo" src="logo.png" alt="The Median Canadian">')
+        out.append(f'<div class="pagenum">{"Swipe →" if i == 1 else f"{i}/{N_SLIDES}"}</div>')
+        if sl["source"]:
+            out.append(f'<div class="source">{esc(sl["source"])}</div>')
+        out.append("</section>")
+    out.append("""<script>
+for (const h of document.querySelectorAll('h1')) {
+  const lines = Math.round(h.getBoundingClientRect().height / (74 * 1.07));
+  if (lines >= 4) h.classList.add('four');
+}
+</script></body></html>""")
+    return "".join(out)
+
+
+MEASURE = """(id) => {
+  const s = document.getElementById(id), top = s.getBoundingClientRect().top;
+  const c = s.querySelector('.content');
+  let bottom = 0, right = 0;
+  for (const e of c.querySelectorAll('*')) {
+    const r = e.getBoundingClientRect();
+    if (r.height === 0 && r.width === 0) continue;
+    bottom = Math.max(bottom, r.bottom - top); right = Math.max(right, r.right - s.getBoundingClientRect().left);
+  }
+  const logo = s.querySelector('.footer-logo'), pn = s.querySelector('.pagenum'), src = s.querySelector('.source');
+  const h = s.querySelector('h1');
+  return {
+    bottom, right,
+    logoTop: logo ? logo.getBoundingClientRect().top - top : null,
+    pageTop: pn.getBoundingClientRect().top - top,
+    logoLoaded: logo ? (logo.complete && logo.naturalWidth > 0) : true,
+    headLines: Math.round(h.getBoundingClientRect().height / parseFloat(getComputedStyle(h).lineHeight)),
+    headSize: getComputedStyle(h).fontSize,
+    srcOneLine: src ? (src.scrollWidth <= src.clientWidth + 1) : true,
+    srcTop: src ? src.getBoundingClientRect().top - top : null,
+    logoBottom: logo ? logo.getBoundingClientRect().bottom - top : null,
+  };
+}"""
+
+BANNED = [r"\bnow\b", r"\btoday\b", r"\bcurrently\b", "\u2014", r"\bAI\b"]
+
+
+def main():
+    s = series()
+    warns = consistency(s)
+    slides = build(s)
+    html_text = page(slides)
+    out_html = os.path.join(HERE, "slides.html")
+    open(out_html, "w").write(html_text)
+
+    visible = re.sub(r"<script.*?</script>|<style.*?</style>|<[^>]+>", " ", html_text, flags=re.S)
+    for pat in BANNED:
+        for m in re.finditer(pat, visible):
+            warns.append(f"banned text {pat!r}: ...{visible[max(0, m.start() - 40):m.end() + 40]}...")
+
+    os.environ.setdefault("PLAYWRIGHT_BROWSERS_PATH", "/opt/pw-browsers")
+    from playwright.sync_api import sync_playwright
+    report, ok = [], True
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        pg = b.new_page(viewport={"width": 1080, "height": 1350}, device_scale_factor=1)
+        pg.goto("file://" + out_html)
+        pg.wait_for_load_state("networkidle")
+        for i in range(1, N_SLIDES + 1):
+            m = pg.evaluate(MEASURE, f"s{i}")
+            limit = m["logoTop"] if m["logoTop"] is not None else m["pageTop"]
+            gap = limit - m["bottom"]
+            issues = []
+            if gap < 18:
+                issues.append(f"content too close to footer (gap {gap:.0f}px)")
+            if m["right"] > 1080 - 76 + 1:
+                issues.append(f"content wider than margin (right {m['right']:.0f})")
+            if not m["srcOneLine"]:
+                issues.append("source line wraps or clips")
+            if not m["logoLoaded"]:
+                issues.append("logo not loaded")
+            if m["srcTop"] is not None and m["logoBottom"] is not None and m["srcTop"] < m["logoBottom"]:
+                issues.append("source line overlaps logo")
+            ok &= not issues
+            report.append(f"slide {i}: content bottom {m['bottom']:.0f}, footer top {limit:.0f}, gap {gap:.0f}px, "
+                          f"heading {m['headLines']} lines at {m['headSize']}" + (f"  !! {'; '.join(issues)}" if issues else "  ok"))
+            pg.locator(f"#s{i}").screenshot(path=os.path.join(HERE, f"the-median-canadian-wildfires-{i}-of-{N_SLIDES}.png"))
+        b.close()
+
+    nver = sum(1 for v in NUM_SOURCE.values() if v == "verified")
+    print(f"numbers: {nver} of {len(NUM)} from verified_numbers.json" if os.path.exists(VERIFIED)
+          else "numbers: verified_numbers.json not found, using draft readings")
+    missing = [k for k, v in NUM_SOURCE.items() if v == "draft"]
+    if os.path.exists(VERIFIED) and missing:
+        print("  not in verified file (draft value kept):", ", ".join(missing))
+    print("\n".join(report))
+    for w in warns:
+        print("WARNING:", w)
+    sys.exit(0 if ok and not warns else 1)
+
+
+if __name__ == "__main__":
+    main()

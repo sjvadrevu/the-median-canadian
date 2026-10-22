@@ -1,0 +1,285 @@
+old_fma_id,old_area_name,old_agency,province,new_fma_id,new_area_name,relation,share_of_old_area,overlap_km2
+1,Cariboo Fire Centre,BC Wildfire Service,BC,1,Cariboo Fire Centre,unchanged,1.0,82480.06193643727
+2,Coastal Fire Centre,BC Wildfire Service,BC,2,Coastal Fire Centre,unchanged,1.0,131243.6304571539
+3,Kamloops Fire Centre,BC Wildfire Service,BC,3,Kamloops Fire Centre,unchanged,1.0,71577.47732705738
+4,Northwest Fire Centre,BC Wildfire Service,BC,4,Northwest Fire Centre,unchanged,1.0,243355.9501030622
+5,Prince George Fire Centre,BC Wildfire Service,BC,5,Prince George Fire Centre,unchanged,1.0,336629.0636173712
+6,Southeast Fire Centre,BC Wildfire Service,BC,6,Southeast Fire Centre,unchanged,1.0,82296.52046313902
+7,Calgary Forest Area,Alberta Wildfire,AB,7,Calgary Forest Area,unchanged,1.0,12710.797089024412
+8,Edson Forest Area,Alberta Wildfire,AB,8,Edson Forest Area,unchanged,1.0,29499.209889164253
+9,Fort McMurray Forest Area,Alberta Wildfire,AB,9,Fort McMurray Forest Area,unchanged,1.0,60810.25580177208
+10,Grande Prairie Forest Area,Alberta Wildfire,AB,10,Grande Prairie Forest Area,unchanged,1.0,38306.29583858418
+11,High Level Forest Area,Alberta Wildfire,AB,11,High Level Forest Area,unchanged,1.0,82679.70909772521
+12,Lac La Biche Forest Area,Alberta Wildfire,AB,12,Lac La Biche Forest Area,unchanged,1.0,40282.96533006914
+13,Peace River Forest Area,Alberta Wildfire,AB,13,Peace River Forest Area,unchanged,1.0,53155.53970434171
+14,Rocky Mountain House Forest Area,Alberta Wildfire,AB,14,Rocky Mountain House Forest Area,unchanged,1.0,21060.119333111626
+15,Slave Lake Forest Area,Alberta Wildfire,AB,15,Slave Lake Forest Area,unchanged,1.0,56231.46333197583
+16,Whitecourt Forest Area,Alberta Wildfire,AB,16,Whitecourt Forest Area,unchanged,1.0,16567.920995455912
+17,Big River,Saskatchewan Public Safety Agency,SK,17,Big River,unchanged,1.0,25410.160027584203
+18,Buffalo Narrows,Saskatchewan Public Safety Agency,SK,18,Buffalo Narrows,unchanged,1.0,51545.656655684536
+19,Cypress Hills,Saskatchewan Public Safety Agency,SK,19,Cypress Hills,unchanged,1.0,107309.17439925236
+20,Denare Beach,Saskatchewan Public Safety Agency,SK,20,Denare Beach,unchanged,1.0,24109.025602298087
+21,Dorintosh,Saskatchewan Public Safety Agency,SK,21,Dorintosh,unchanged,1.0,33045.08601450903
+22,Hudson Bay,Saskatchewan Public Safety Agency,SK,22,Hudson Bay,unchanged,1.0,101102.32928393733
+23,La Ronge,Saskatchewan Public Safety Agency,SK,23,La Ronge,unchanged,1.0,75255.51272098167
+24,Lower Fishing Lake,Saskatchewan Public Safety Agency,SK,24,Lower Fishing Lake,unchanged,1.0,14844.961555418737
+25,Prince Albert,Saskatchewan Public Safety Agency,SK,25,Prince Albert,unchanged,1.0,72439.5409427983
+26,Stony Rapids,Saskatchewan Public Safety Agency,SK,26,Stony Rapids,unchanged,1.0,92643.48655494532
+27,Weyakwin,Saskatchewan Public Safety Agency,SK,27,Weyakwin,unchanged,1.0,9595.280136992422
+28,Île-à-la-Crosse,Saskatchewan Public Safety Agency,SK,28,Île-à-la-Crosse,unchanged,1.0,40873.82041487552
+29,Chapleau,Ontario Forest Fires (MNR AFFES),ON,29,Chapleau,unchanged,1.0,40350.42565073961
+30,Cochrane,Ontario Forest Fires (MNR AFFES),ON,30,Cochrane,unchanged,1.0,295585.5892357179
+31,Dryden,Ontario Forest Fires (MNR AFFES),ON,31,Dryden,unchanged,1.0,22823.489764454487
+32,Fort Frances,Ontario Forest Fires (MNR AFFES),ON,32,Fort Frances,unchanged,1.0,22844.65702299294
+33,Haliburton,Ontario Forest Fires (MNR AFFES),ON,33,Haliburton,unchanged,1.0,40386.157464014614
+34,Kenora,Ontario Forest Fires (MNR AFFES),ON,34,Kenora,unchanged,1.0,17348.33596384151
+35,Nipigon,Ontario Forest Fires (MNR AFFES),ON,35,Nipigon,unchanged,1.0,135969.88698785036
+36,North Bay,Ontario Forest Fires (MNR AFFES),ON,36,North Bay,unchanged,1.0,21543.73926608155
+37,Red Lake,Ontario Forest Fires (MNR AFFES),ON,37,Red Lake,unchanged,1.0,66363.58736419774
+38,Sioux Lookout,Ontario Forest Fires (MNR AFFES),ON,38,Sioux Lookout,unchanged,1.0,109636.47738670216
+39,Sudbury,Ontario Forest Fires (MNR AFFES),ON,39,Sudbury,unchanged,1.0,27273.416082875265
+40,Thunder Bay,Ontario Forest Fires (MNR AFFES),ON,40,Thunder Bay,unchanged,1.0,40785.817114124504
+41,Timmins,Ontario Forest Fires (MNR AFFES),ON,41,Timmins,unchanged,1.0,31333.35363235072
+42,Wawa,Ontario Forest Fires (MNR AFFES),ON,42,Wawa,unchanged,1.0,34986.996497506174
+43,Deh Cho,GNWT Forest Management Division (ECC),NT,43,Deh Cho,unchanged,1.0,158316.5792239258
+44,Inuvik,GNWT Forest Management Division (ECC),NT,44,Inuvik,unchanged,1.0,377254.72380604176
+45,North Slave,GNWT Forest Management Division (ECC),NT,45,North Slave,unchanged,1.0,320732.9964631299
+46,Sahtu,GNWT Forest Management Division (ECC),NT,46,Sahtu,unchanged,1.0,280114.63463359396
+47,South Slave,GNWT Forest Management Division (ECC),NT,47,South Slave,unchanged,1.0,207818.52892536108
+48,Beaver Creek,Yukon Wildland Fire Management,YT,48,Beaver Creek,unchanged,1.0,25491.339693665435
+49,Carmacks,Yukon Wildland Fire Management,YT,49,Carmacks,unchanged,1.0,29589.941128681978
+50,Dawson,Yukon Wildland Fire Management,YT,50,Dawson,unchanged,1.0,66806.9279186766
+51,Haines Junction,Yukon Wildland Fire Management,YT,51,Haines Junction,unchanged,1.0,17331.889479449746
+52,Ivvavik National Park,Yukon Wildland Fire Management,YT,52,Ivvavik National Park,unchanged,1.0,9696.179305589987
+53,Kluane National Park,Yukon Wildland Fire Management,YT,53,Kluane National Park,unchanged,1.0,22030.52268472774
+54,Mayo,Yukon Wildland Fire Management,YT,54,Mayo,unchanged,1.0,78152.38476414295
+55,Old Crow,Yukon Wildland Fire Management,YT,55,Old Crow,unchanged,1.0,71103.5114679774
+56,Ross River,Yukon Wildland Fire Management,YT,56,Ross River,unchanged,1.0,48779.42432045742
+57,Teslin,Yukon Wildland Fire Management,YT,57,Teslin,unchanged,1.0,26607.63544910308
+58,Vuntut National Park,Yukon Wildland Fire Management,YT,58,Vuntut National Park,unchanged,1.0,4344.008915947124
+59,Watson Lake,Yukon Wildland Fire Management,YT,59,Watson Lake,unchanged,1.0,56169.29829383019
+60,Whitehorse,Yukon Wildland Fire Management,YT,60,Whitehorse,unchanged,1.0,26461.987700107566
+61,Forest Management District 01,NL Forestry and Agrifoods Agency (Wildfire),NL,61,Forest Management District 01,unchanged,1.0,9664.158920982116
+62,Forest Management District 02,NL Forestry and Agrifoods Agency (Wildfire),NL,62,Forest Management District 02,unchanged,1.0,4762.725423348127
+63,Forest Management District 03,NL Forestry and Agrifoods Agency (Wildfire),NL,63,Forest Management District 03,unchanged,1.0,6843.29566603945
+64,Forest Management District 04,NL Forestry and Agrifoods Agency (Wildfire),NL,64,Forest Management District 04,unchanged,1.0,3022.3918532285925
+65,Forest Management District 05,NL Forestry and Agrifoods Agency (Wildfire),NL,65,Forest Management District 05,unchanged,1.0,5768.588956302868
+66,Forest Management District 050,NL Forestry and Agrifoods Agency (Wildfire),NL,66,Forest Management District 050,unchanged,1.0,2325.434234613421
+67,Forest Management District 06,NL Forestry and Agrifoods Agency (Wildfire),NL,67,Forest Management District 06,unchanged,1.0,4518.538251407939
+68,Forest Management District 07,NL Forestry and Agrifoods Agency (Wildfire),NL,68,Forest Management District 07,unchanged,1.0,12347.785342370278
+69,Forest Management District 08,NL Forestry and Agrifoods Agency (Wildfire),NL,69,Forest Management District 08,unchanged,1.0,2819.2634310345006
+70,Forest Management District 09,NL Forestry and Agrifoods Agency (Wildfire),NL,70,Forest Management District 09,unchanged,1.0,6190.552619845725
+71,Forest Management District 10,NL Forestry and Agrifoods Agency (Wildfire),NL,71,Forest Management District 10,unchanged,1.0,2018.3942819009073
+72,Forest Management District 11,NL Forestry and Agrifoods Agency (Wildfire),NL,72,Forest Management District 11,unchanged,1.0,2967.9726596922983
+73,Forest Management District 12,NL Forestry and Agrifoods Agency (Wildfire),NL,73,Forest Management District 12,unchanged,1.0,4854.358039808691
+74,Forest Management District 13,NL Forestry and Agrifoods Agency (Wildfire),NL,74,Forest Management District 13,unchanged,1.0,2764.1457707010295
+75,Forest Management District 14,NL Forestry and Agrifoods Agency (Wildfire),NL,75,Forest Management District 14,unchanged,1.0,14974.029578803273
+76,Forest Management District 15,NL Forestry and Agrifoods Agency (Wildfire),NL,76,Forest Management District 15,unchanged,1.0,5601.237610747253
+77,Forest Management District 16,NL Forestry and Agrifoods Agency (Wildfire),NL,77,Forest Management District 16,unchanged,1.0,6788.053645321086
+78,Forest Management District 17,NL Forestry and Agrifoods Agency (Wildfire),NL,78,Forest Management District 17,unchanged,1.0,6405.279439756678
+79,Forest Management District 18,NL Forestry and Agrifoods Agency (Wildfire),NL,79,Forest Management District 18,unchanged,1.0,6152.411475177722
+80,Forest Management District 19a,NL Forestry and Agrifoods Agency (Wildfire),NL,80,Forest Management District 19a,unchanged,1.0,20591.254020620097
+81,Forest Management District 19b,NL Forestry and Agrifoods Agency (Wildfire),NL,81,Forest Management District 19b,unchanged,1.0,29575.144577743642
+82,Forest Management District 19c,NL Forestry and Agrifoods Agency (Wildfire),NL,82,Forest Management District 19c,unchanged,1.0,21010.893267515778
+83,Forest Management District 20,NL Forestry and Agrifoods Agency (Wildfire),NL,83,Forest Management District 20,unchanged,1.0,20581.826583682523
+84,Forest Management District 21,NL Forestry and Agrifoods Agency (Wildfire),NL,84,Forest Management District 21,unchanged,1.0,19174.042457449174
+85,Forest Management District 22,NL Forestry and Agrifoods Agency (Wildfire),NL,85,Forest Management District 22,unchanged,1.0,79926.41259370196
+86,Forest Management District 23,NL Forestry and Agrifoods Agency (Wildfire),NL,86,Forest Management District 23,unchanged,1.0,24687.18088815831
+87,Forest Management District 24,NL Forestry and Agrifoods Agency (Wildfire),NL,87,Forest Management District 24,unchanged,1.0,76420.32651122447
+88,NL outside mapped areas,NL Forestry and Agrifoods Agency (Wildfire),NL,88,NL outside mapped areas,unchanged,1.0,3975.5154127015157
+89,Prince Edward Island (whole province/territory),"PEI Forests, Fish and Wildlife",PE,89,Prince Edward Island (whole province/territory),unchanged,1.0,5735.936485313038
+90,Nova Scotia (whole province/territory),NS Department of Natural Resources (Wildfire),NS,90,Nova Scotia (whole province/territory),unchanged,1.0,55401.980347429875
+91,New Brunswick (whole province/territory),NB Department of Natural Resources (Forest Fire),NB,91,New Brunswick (whole province/territory),unchanged,1.0,72725.17063638792
+92,Quebec (whole province/territory),SOPFEU,QC,2001,01 Matagami,split,0.017784958008272043,26834.056832524595
+92,Quebec (whole province/territory),SOPFEU,QC,2002,02 La Sarre-Amos,split,0.009288364877747545,14014.343519662836
+92,Quebec (whole province/territory),SOPFEU,QC,2003,03 Quévillon-Waswanipi,split,0.013082635113824445,19739.162386566437
+92,Quebec (whole province/territory),SOPFEU,QC,2004,04 Rouyn-Noranda,split,0.0031345103181271965,4729.36894085656
+92,Quebec (whole province/territory),SOPFEU,QC,2005,05 Val d'Or-Senneterre,split,0.007060996056949114,10653.675392333056
+92,Quebec (whole province/territory),SOPFEU,QC,2006,06 Mégiscane-Gouin,split,0.01439631311757849,21721.248045468616
+92,Quebec (whole province/territory),SOPFEU,QC,2007,07 Témiscamingue,split,0.008666361045738603,13075.860214253127
+92,Quebec (whole province/territory),SOPFEU,QC,2008,08 Maganasipi-Dumoine,split,0.0028534486220795755,4305.301280889091
+92,Quebec (whole province/territory),SOPFEU,QC,2009,10 Réserve La Vérendrye,split,0.014898561539574178,22479.04363281887
+92,Quebec (whole province/territory),SOPFEU,QC,2010,11 Parent-Windigo,split,0.008492479959942546,12813.507335141336
+92,Quebec (whole province/territory),SOPFEU,QC,2011,12 Pontiac,split,0.007972954608921917,12029.644208293317
+92,Quebec (whole province/territory),SOPFEU,QC,2012,13 Outaouais-Labelle,split,0.007770843423404703,11724.697576643397
+92,Quebec (whole province/territory),SOPFEU,QC,2013,14 Manawan,split,0.008491967106899749,12812.733539235227
+92,Quebec (whole province/territory),SOPFEU,QC,2014,15 Gatineau,split,0.003989017022914061,6018.654047369549
+92,Quebec (whole province/territory),SOPFEU,QC,2015,16 Laurentides,split,0.007895273708040785,11912.438775023445
+92,Quebec (whole province/territory),SOPFEU,QC,2016,17 Nord de Montréal,split,0.00428349951349574,6462.971086789982
+92,Quebec (whole province/territory),SOPFEU,QC,2017,20 Montérégie,split,0.004038068485272795,6092.6632031989
+92,Quebec (whole province/territory),SOPFEU,QC,2018,21 Estrie,split,0.006040038095788929,9113.247580209556
+92,Quebec (whole province/territory),SOPFEU,QC,2019,22 Centre du Québec,split,0.008264738337550134,12469.889338654255
+92,Quebec (whole province/territory),SOPFEU,QC,2020,23 Beauce-Appalaches,split,0.007627488435600181,11508.402666743512
+92,Quebec (whole province/territory),SOPFEU,QC,2021,24 Maskinongé - Les Chenaux,split,0.0029971949761177126,4522.186686631038
+92,Quebec (whole province/territory),SOPFEU,QC,2022,25 St-Maurice-Mastigouche,split,0.00416386666382727,6282.468288551859
+92,Quebec (whole province/territory),SOPFEU,QC,2023,26 La Tuque,split,0.006796429864007824,10254.496251508028
+92,Quebec (whole province/territory),SOPFEU,QC,2024,27 Portneuf,split,0.002877731468725858,4341.939393088105
+92,Quebec (whole province/territory),SOPFEU,QC,2025,28 Québec,split,0.0036206244129976806,5462.8209536630375
+92,Quebec (whole province/territory),SOPFEU,QC,2026,29 Charlevoix,split,0.0024633637152829376,3716.7387128120436
+92,Quebec (whole province/territory),SOPFEU,QC,2027,30 Réserve Laurentides,split,0.008328230366210549,12565.686512012404
+92,Quebec (whole province/territory),SOPFEU,QC,2028,31 Saguenay,split,0.003637574477835979,5488.3953184141
+92,Quebec (whole province/territory),SOPFEU,QC,2029,32 Lac Saint-Jean,split,0.00648331763444685,9782.070544397011
+92,Quebec (whole province/territory),SOPFEU,QC,2030,33 Réserve Ashuapmushuan,split,0.007526544664218503,11356.098067717445
+92,Quebec (whole province/territory),SOPFEU,QC,2031,34 Rivière Mistassini,split,0.009533080720403986,14383.572326759699
+92,Quebec (whole province/territory),SOPFEU,QC,2032,35 Monts-Valin,split,0.006898437217283993,10408.405589605705
+92,Quebec (whole province/territory),SOPFEU,QC,2033,36 Chibougamau-Rte du Nord,split,0.016806608796391623,25357.917370095493
+92,Quebec (whole province/territory),SOPFEU,QC,2034,37 Lac Albanel,split,0.011074703430398554,16709.58239634007
+92,Quebec (whole province/territory),SOPFEU,QC,2035,38 Chute-des-Passes,split,0.010802480204327133,16298.850275626819
+92,Quebec (whole province/territory),SOPFEU,QC,2036,40 Forestville-Labrieville,split,0.00847833949459248,12792.172111821408
+92,Quebec (whole province/territory),SOPFEU,QC,2037,41 Baie-Comeau-Manicouagan,split,0.018806921687947658,28376.00207908837
+92,Quebec (whole province/territory),SOPFEU,QC,2038,42 Sept-Iles,split,0.005738670924378783,8658.54289092574
+92,Quebec (whole province/territory),SOPFEU,QC,2039,43 Manic 5-nord SM3,split,0.025955526503013884,39161.86211831505
+92,Quebec (whole province/territory),SOPFEU,QC,2040,44 Minganie,split,0.0043411360561469384,6549.933465920319
+92,Quebec (whole province/territory),SOPFEU,QC,2041,45 Kamouraska-RDL-Témis,split,0.006635821220457154,10012.168916980232
+92,Quebec (whole province/territory),SOPFEU,QC,2042,46 Rimouski-Matapédia,split,0.0058759171049644725,8865.620793958762
+92,Quebec (whole province/territory),SOPFEU,QC,2043,47 Matane-Chics-Chocs,split,0.007487320232892414,11296.915998300236
+92,Quebec (whole province/territory),SOPFEU,QC,2044,48 Baie des Chaleurs,split,0.005909836277914848,8916.798256072492
+92,Quebec (whole province/territory),SOPFEU,QC,2045,49 Gaspé,split,0.0031141858555639476,4698.703263531987
+92,Quebec (whole province/territory),SOPFEU,QC,2046,50 Waskaganish,split,0.016805542425135503,25356.30842241746
+92,Quebec (whole province/territory),SOPFEU,QC,2047,51 Eastmain,split,0.00493316263802274,7443.186907229064
+92,Quebec (whole province/territory),SOPFEU,QC,2048,52 Wemindji,split,0.004300627993886237,6488.814646051666
+92,Quebec (whole province/territory),SOPFEU,QC,2049,53 Chisasibi,split,0.00976107727675902,14727.574969217741
+92,Quebec (whole province/territory),SOPFEU,QC,2050,54 Némaska,split,0.01373687682207097,20726.286403003793
+92,Quebec (whole province/territory),SOPFEU,QC,2051,55 Sarcelle,split,0.016640888069345494,25107.876891742115
+92,Quebec (whole province/territory),SOPFEU,QC,2052,56 Radisson,split,0.01175208720714385,17731.62331171131
+92,Quebec (whole province/territory),SOPFEU,QC,2053,57 LG-3,split,0.026867511778204286,40537.871254434605
+92,Quebec (whole province/territory),SOPFEU,QC,2054,58 LG-4,split,0.020182504518120568,30451.490130594386
+92,Quebec (whole province/territory),SOPFEU,QC,2055,59 Laforge-2,split,0.020096036861380985,30321.027184657378
+92,Quebec (whole province/territory),SOPFEU,QC,2056,60 Île d'Anticosti,split,0.005257029832376759,7931.839773063433
+92,Quebec (whole province/territory),SOPFEU,QC,2057,61 Îles de la Madeleine,split,0.00012871636500835285,194.20806348283887
+92,Quebec (whole province/territory),SOPFEU,QC,2058,62 Tichégami,split,0.017721623110350384,26738.49673901628
+92,Quebec (whole province/territory),SOPFEU,QC,2059,63 Monts-Otish,split,0.015216927032011844,22959.39549609645
+92,Quebec (whole province/territory),SOPFEU,QC,2060,64 Caniapiscau,split,0.01733956575332259,26162.046188669206
+92,Quebec (whole province/territory),SOPFEU,QC,2061,65 Fermont-Scherfferville,split,0.020770485050638467,31338.638867108966
+92,Quebec (whole province/territory),SOPFEU,QC,2062,66 Rivière Moisie,split,0.017238303975277106,26009.261779182765
+92,Quebec (whole province/territory),SOPFEU,QC,2063,67 Rivière Romaine,split,0.024880550673344177,37539.93180543321
+92,Quebec (whole province/territory),SOPFEU,QC,2064,68 Rivière du Petit Mécatina,split,0.0252409802644096,38083.75024606572
+92,Quebec (whole province/territory),SOPFEU,QC,2065,69 Le Golfe-du-St-Laurent,split,0.0043974301804814205,6634.870395826259
+92,Quebec (whole province/territory),SOPFEU,QC,2066,"Far north outside SOPFEU fire danger zones (northern zone, no ZDI)",split,0.3443456908046503,519550.95045988745
+93,ON outside mapped areas,Ontario Forest Fires (MNR AFFES),ON,93,ON outside mapped areas,unchanged,1.0,78577.57572473995
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1001,Area 1 (East),split,0.010720173318089712,6965.470293436543
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1002,Area 2 (East),split,0.012483972132284867,8111.504772482093
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1003,Area 3 (East),split,0.01082245643625391,7031.92910897552
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1004,Area 4 (East),split,0.039834553290424866,25882.641013700755
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1005,Area 5 (East),split,0.02120152298428145,13775.764079618462
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1006,Area 6 (West),split,0.0002987933072723297,194.14200161960972
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1007,Area 7 (West),split,0.0016868842730333165,1096.0589855810888
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1008,Area 8 (East/West),split,0.046951184608948475,30506.697226940192
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1009,Area 9 (West),split,0.018219782264611694,11838.367566584215
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1010,Area 10 (West),split,0.00578294433842421,3757.488410184469
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1011,Area 11 (West),split,0.003276099868364063,2128.657404532299
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1012,Area 12 (West),split,0.03222330006806425,20937.2024799119
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1013,Area 13 (West),split,0.019235828271704593,12498.547030961712
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1014,Area 14 (West/North),split,0.03109777093671193,20205.885970727973
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1015,Area 15 (North),split,0.025892371949107006,16823.65968223474
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1016,Area 16 (North),split,0.012034803692446848,7819.655999928995
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1017,Area 17 (North),split,0.13653688589062538,88715.32151673813
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1018,Area 18 (North),split,0.14681126492155783,95391.1354051856
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1019,Area 19 (North),split,0.08937152496550507,58069.46247556353
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1020,Area 20 (North),split,0.011890972601812936,7726.201243242131
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1021,Area 21 (North),split,0.14700797980642943,95518.95159305802
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1022,Area 22 (North),split,0.027036290632331105,17566.924867384223
+94,Manitoba (whole province/territory),Manitoba Wildfire Service,MB,1023,Southern Manitoba outside fire and travel restriction areas,split,0.14958263944171424,97191.84574067635
+95,SK outside mapped areas,Saskatchewan Public Safety Agency,SK,95,SK outside mapped areas,unchanged,1.0,4033.519583160686
+96,AB outside mapped areas,Alberta Wildfire,AB,96,AB outside mapped areas,unchanged,1.0,251937.51417076995
+97,YT outside mapped areas,Yukon Wildland Fire Management,YT,97,YT outside mapped areas,unchanged,1.0,1275.8509027432078
+98,NT outside mapped areas,GNWT Forest Management Division (ECC),NT,98,NT outside mapped areas,unchanged,1.0,4494.969376666872
+99,Nunavut (whole province/territory),Government of Nunavut (no organised wildfire suppression),NU,99,Nunavut (whole province/territory),unchanged,1.0,2092670.5318557038
+100,Torngat Mountains National Park Of Canada,Parks Canada,NL,87,Forest Management District 24,park removed; area lies inside this row,0.9663448658002182,9386.111543171572
+100,Torngat Mountains National Park Of Canada,Parks Canada,NL,88,NL outside mapped areas,park removed; area lies inside this row,0.029457623455696587,286.122014342111
+100,Torngat Mountains National Park Of Canada,Parks Canada,NL,2066,"Far north outside SOPFEU fire danger zones (northern zone, no ZDI)",park removed; area lies inside this row,1.1216069517177256e-05,0.10894172804138105
+101,Rouge National Urban Park,Parks Canada,ON,93,ON outside mapped areas,park removed; area lies inside this row,1.0,45.33912858135538
+102,Waterton Lakes National Park Of Canada,Parks Canada,AB,6,Southeast Fire Centre,park removed; area lies inside this row,0.0004118538743006605,0.204561723895843
+102,Waterton Lakes National Park Of Canada,Parks Canada,AB,7,Calgary Forest Area,park removed; area lies inside this row,0.0004947605489120512,0.2457402421501039
+102,Waterton Lakes National Park Of Canada,Parks Canada,AB,96,AB outside mapped areas,park removed; area lies inside this row,0.9987206199394261,496.0497507812479
+103,Fathom Five National Marine Park Of Canada,Parks Canada,ON,93,ON outside mapped areas,park removed; area lies inside this row,0.01584194956899767,1.58317079630577
+104,Qausuittuq National Park Of Canada,Parks Canada,NU,99,Nunavut (whole province/territory),park removed; area lies inside this row,0.8925437928357022,9848.823857270016
+105,Tuktut Nogait National Park Of Canada,Parks Canada,NT,44,Inuvik,park removed; area lies inside this row,0.9979059622156529,17060.76025109091
+105,Tuktut Nogait National Park Of Canada,Parks Canada,NT,46,Sahtu,park removed; area lies inside this row,5.722545463393231e-05,0.9783584813958779
+105,Tuktut Nogait National Park Of Canada,Parks Canada,NT,98,NT outside mapped areas,park removed; area lies inside this row,0.00032365445319320306,5.533378133012771
+105,Tuktut Nogait National Park Of Canada,Parks Canada,NT,99,Nunavut (whole province/territory),park removed; area lies inside this row,0.0017128938499508584,29.284594356661813
+106,Prince Albert National Park Of Canada,Parks Canada,SK,17,Big River,park removed; area lies inside this row,0.00010331874394091174,0.40878932452371275
+106,Prince Albert National Park Of Canada,Parks Canada,SK,25,Prince Albert,park removed; area lies inside this row,1.2651144893010728e-05,0.050055321793528146
+106,Prince Albert National Park Of Canada,Parks Canada,SK,27,Weyakwin,park removed; area lies inside this row,0.00043182103610766215,1.7085363500599215
+106,Prince Albert National Park Of Canada,Parks Canada,SK,95,SK outside mapped areas,park removed; area lies inside this row,0.9994618093997488,3954.4549456140594
+107,Wapusk National Park Of Canada,Parks Canada,MB,99,Nunavut (whole province/territory),park removed; area lies inside this row,0.00012197874420265277,1.4002811489995175
+107,Wapusk National Park Of Canada,Parks Canada,MB,1019,Area 19 (North),park removed; area lies inside this row,0.9290916257644802,10665.706535639367
+108,Auyuittuq National Park Of Canada,Parks Canada,NU,99,Nunavut (whole province/territory),park removed; area lies inside this row,0.9555001270308928,18630.451096034725
+109,Gwaii Haanas National Park Reserve Of Canada,Parks Canada,BC,2,Coastal Fire Centre,park removed; area lies inside this row,0.9845527866956755,1266.2143696993503
+110,Ukkusiksalik National Park Of Canada,Parks Canada,NU,99,Nunavut (whole province/territory),park removed; area lies inside this row,0.8549689147110809,17860.864731187317
+111,Forillon National Park Of Canada,Parks Canada,QC,2045,49 Gaspé,park removed; area lies inside this row,0.9746729328491993,239.9124800192619
+112,NãÃTsâIhchâOh National Park Reserve Of Canada,Parks Canada,NT,43,Deh Cho,park removed; area lies inside this row,0.0020523695355001885,10.05543591476656
+112,NãÃTsâIhchâOh National Park Reserve Of Canada,Parks Canada,NT,46,Sahtu,park removed; area lies inside this row,0.9797502676459363,4800.215486724269
+112,NãÃTsâIhchâOh National Park Reserve Of Canada,Parks Canada,NT,56,Ross River,park removed; area lies inside this row,5.782159737453438e-06,0.02832927291270503
+112,NãÃTsâIhchâOh National Park Reserve Of Canada,Parks Canada,NT,97,YT outside mapped areas,park removed; area lies inside this row,0.01817645499701677,89.05422499150313
+112,NãÃTsâIhchâOh National Park Reserve Of Canada,Parks Canada,NT,98,NT outside mapped areas,park removed; area lies inside this row,7.477591764861866e-06,0.03663591935456682
+113,La Mauricie National Park Of Canada,Parks Canada,QC,2022,25 St-Maurice-Mastigouche,park removed; area lies inside this row,0.9999999999999998,535.5803419743353
+114,Aulavik National Park Of Canada,Parks Canada,NT,44,Inuvik,park removed; area lies inside this row,0.9942572512880582,12114.588910299863
+115,Fundy National Park Of Canada,Parks Canada,NB,91,New Brunswick (whole province/territory),park removed; area lies inside this row,0.9997237302459536,204.49673409767186
+116,Yoho National Park Of Canada,Parks Canada,BC,6,Southeast Fire Centre,park removed; area lies inside this row,0.9989342521518354,1293.1403504025202
+116,Yoho National Park Of Canada,Parks Canada,BC,96,AB outside mapped areas,park removed; area lies inside this row,0.001021857636690107,1.3228151297489859
+117,Gulf Islands National Park Reserve Of Canada,Parks Canada,BC,2,Coastal Fire Centre,park removed; area lies inside this row,0.7929607129909133,27.79767089863987
+118,Terra Nova National Park Of Canada,Parks Canada,NL,65,Forest Management District 05,park removed; area lies inside this row,0.0005792411919638628,0.2328332359250475
+118,Terra Nova National Park Of Canada,Parks Canada,NL,66,Forest Management District 050,park removed; area lies inside this row,0.9934006441843656,399.30980352292096
+118,Terra Nova National Park Of Canada,Parks Canada,NL,88,NL outside mapped areas,park removed; area lies inside this row,0.002078022010979936,0.8352869164907699
+119,Saguenay-St. Lawrence Marine Park,Parks Canada,QC,2026,29 Charlevoix,park removed; area lies inside this row,0.04453520159190812,55.599503077580486
+119,Saguenay-St. Lawrence Marine Park,Parks Canada,QC,2028,31 Saguenay,park removed; area lies inside this row,0.08600200196909928,107.36829299606966
+119,Saguenay-St. Lawrence Marine Park,Parks Canada,QC,2036,40 Forestville-Labrieville,park removed; area lies inside this row,0.03148703548724782,39.30965761689087
+120,Nahanni National Park Reserve Of Canada,Parks Canada,NT,43,Deh Cho,park removed; area lies inside this row,0.9800301480555403,29462.72529838082
+120,Nahanni National Park Reserve Of Canada,Parks Canada,NT,46,Sahtu,park removed; area lies inside this row,0.013043346340037195,392.12317187448207
+120,Nahanni National Park Reserve Of Canada,Parks Canada,NT,59,Watson Lake,park removed; area lies inside this row,2.7066520904688085e-06,0.08137029986066445
+120,Nahanni National Park Reserve Of Canada,Parks Canada,NT,97,YT outside mapped areas,park removed; area lies inside this row,0.006587891895253661,198.05232480897936
+120,Nahanni National Park Reserve Of Canada,Parks Canada,NT,98,NT outside mapped areas,park removed; area lies inside this row,0.0003362051490498686,10.107362482685676
+121,Riding Mountain National Park Of Canada,Parks Canada,MB,1023,Southern Manitoba outside fire and travel restriction areas,park removed; area lies inside this row,1.0000000000000002,3060.0146667340177
+122,Kootenay National Park Of Canada,Parks Canada,BC,6,Southeast Fire Centre,park removed; area lies inside this row,0.9990745339766252,1381.2320739452368
+122,Kootenay National Park Of Canada,Parks Canada,BC,96,AB outside mapped areas,park removed; area lies inside this row,0.0008636785672559871,1.1940455872944393
+123,Kejimkujik National Park Of Canada,Parks Canada,NS,90,Nova Scotia (whole province/territory),park removed; area lies inside this row,0.9960032090656055,402.01913366695067
+124,Mingan Archipelago National Park Reserve Of Canada,Parks Canada,QC,2040,44 Minganie,park removed; area lies inside this row,0.9593912684680076,91.69340383372102
+125,Mount Revelstoke National Park Of Canada,Parks Canada,BC,6,Southeast Fire Centre,park removed; area lies inside this row,1.0000000000000004,263.2108159101569
+126,Elk Island National Park Of Canada,Parks Canada,AB,96,AB outside mapped areas,park removed; area lies inside this row,1.0,192.93569750797533
+127,Point Pelee National Park Of Canada,Parks Canada,ON,93,ON outside mapped areas,park removed; area lies inside this row,0.9989063427852152,14.974326556744643
+128,Jasper National Park Of Canada,Parks Canada,AB,5,Prince George Fire Centre,park removed; area lies inside this row,0.0003319426215017966,3.729788316796384
+128,Jasper National Park Of Canada,Parks Canada,AB,6,Southeast Fire Centre,park removed; area lies inside this row,0.0001841980017368768,2.06969370714488
+128,Jasper National Park Of Canada,Parks Canada,AB,8,Edson Forest Area,park removed; area lies inside this row,0.000620911694479973,6.976715353262084
+128,Jasper National Park Of Canada,Parks Canada,AB,14,Rocky Mountain House Forest Area,park removed; area lies inside this row,0.0001046844293892054,1.176259800322873
+128,Jasper National Park Of Canada,Parks Canada,AB,96,AB outside mapped areas,park removed; area lies inside this row,0.9942932125512168,11172.121226449373
+129,Prince Edward Island National Park Of Canada,Parks Canada,PE,89,Prince Edward Island (whole province/territory),park removed; area lies inside this row,0.9506863535661183,16.065694273663574
+130,Kouchibouguac National Park Of Canada,Parks Canada,NB,91,New Brunswick (whole province/territory),park removed; area lies inside this row,0.8292014846272603,197.0931837960567
+131,Vuntut National Park Of Canada,Parks Canada,YT,52,Ivvavik National Park,park removed; area lies inside this row,9.23660509517504e-06,0.04013677566342354
+131,Vuntut National Park Of Canada,Parks Canada,YT,55,Old Crow,park removed; area lies inside this row,0.0002778014533189078,1.207159394165127
+131,Vuntut National Park Of Canada,Parks Canada,YT,58,Vuntut National Park,park removed; area lies inside this row,0.9993012881432921,4342.367266879172
+131,Vuntut National Park Of Canada,Parks Canada,YT,97,YT outside mapped areas,park removed; area lies inside this row,0.00039486311191332503,1.7158395294939355
+132,Ivvavik National Park Of Canada,Parks Canada,YT,52,Ivvavik National Park,park removed; area lies inside this row,0.9920051939689064,9694.306061444779
+132,Ivvavik National Park Of Canada,Parks Canada,YT,55,Old Crow,park removed; area lies inside this row,1.7486017449503348e-05,0.17088096512180437
+132,Ivvavik National Park Of Canada,Parks Canada,YT,58,Vuntut National Park,park removed; area lies inside this row,1.5484910282152069e-06,0.015132527583711485
+132,Ivvavik National Park Of Canada,Parks Canada,YT,97,YT outside mapped areas,park removed; area lies inside this row,0.0009987026064644168,9.75975608826516
+133,Kluane National Park Reserve Of Canada,Parks Canada,YT,48,Beaver Creek,park removed; area lies inside this row,8.660691780844809e-07,0.014015588462919596
+133,Kluane National Park Reserve Of Canada,Parks Canada,YT,51,Haines Junction,park removed; area lies inside this row,1.2507595892053377e-05,0.20241029368028618
+133,Kluane National Park Reserve Of Canada,Parks Canada,YT,53,Kluane National Park,park removed; area lies inside this row,0.9944197839180163,16092.684976512146
+133,Kluane National Park Reserve Of Canada,Parks Canada,YT,97,YT outside mapped areas,park removed; area lies inside this row,5.007461338946372e-05,0.8103569454564601
+134,Kluane National Park Of Canada,Parks Canada,YT,51,Haines Junction,park removed; area lies inside this row,1.977458934761918e-05,0.11623409948216984
+134,Kluane National Park Of Canada,Parks Canada,YT,53,Kluane National Park,park removed; area lies inside this row,0.9999802254106525,5877.836396869525
+135,Sirmilik National Park Of Canada,Parks Canada,NU,99,Nunavut (whole province/territory),park removed; area lies inside this row,0.9881938075162934,21968.3890028294
+136,Pacific Rim National Park Reserve Of Canada,Parks Canada,BC,2,Coastal Fire Centre,park removed; area lies inside this row,0.5612218191360814,289.6123168784304
+137,Cape Breton Highlands National Park Of Canada,Parks Canada,NS,90,Nova Scotia (whole province/territory),park removed; area lies inside this row,0.9993653627762993,950.5933664042822
+138,Wood Buffalo National Park Of Canada,Parks Canada,AB,9,Fort McMurray Forest Area,park removed; area lies inside this row,0.0013862694953341726,63.147592117679395
+138,Wood Buffalo National Park Of Canada,Parks Canada,AB,11,High Level Forest Area,park removed; area lies inside this row,2.5933956223976e-07,0.011813481398395881
+138,Wood Buffalo National Park Of Canada,Parks Canada,AB,47,South Slave,park removed; area lies inside this row,0.20260001717496884,9228.87165205618
+138,Wood Buffalo National Park Of Canada,Parks Canada,AB,96,AB outside mapped areas,park removed; area lies inside this row,0.7938200226138648,36160.229429836516
+138,Wood Buffalo National Park Of Canada,Parks Canada,AB,98,NT outside mapped areas,park removed; area lies inside this row,0.0021940525483155585,99.94386796514442
+139,Gros Morne National Park Of Canada,Parks Canada,NL,66,Forest Management District 050,park removed; area lies inside this row,0.9893337925059229,1788.6894491104263
+139,Gros Morne National Park Of Canada,Parks Canada,NL,76,Forest Management District 15,park removed; area lies inside this row,0.00020903909216497333,0.3779371749346884
+139,Gros Morne National Park Of Canada,Parks Canada,NL,77,Forest Management District 16,park removed; area lies inside this row,1.3248337474709635e-05,0.023952645344544343
+139,Gros Morne National Park Of Canada,Parks Canada,NL,88,NL outside mapped areas,park removed; area lies inside this row,0.00016488821753700455,0.29811355603654777
+140,Thaidene Nene National Park Reserve Of Canada,Parks Canada,NT,45,North Slave,park removed; area lies inside this row,1.0000000000000004,14066.683987960954
+141,Glacier National Park Of Canada,Parks Canada,BC,6,Southeast Fire Centre,park removed; area lies inside this row,0.9999999999999991,1353.885989672963
+142,Georgian Bay Islands National Park Of Canada,Parks Canada,ON,33,Haliburton,park removed; area lies inside this row,0.4870230766456988,12.28715679680512
+142,Georgian Bay Islands National Park Of Canada,Parks Canada,ON,39,Sudbury,park removed; area lies inside this row,0.0013085111394924586,0.03301256616430594
+142,Georgian Bay Islands National Park Of Canada,Parks Canada,ON,93,ON outside mapped areas,park removed; area lies inside this row,0.5047945045408782,12.735514033910002
+143,Grasslands National Park Of Canada,Parks Canada,SK,19,Cypress Hills,park removed; area lies inside this row,0.9998730390358083,413.2223683609769
+144,Banff National Park Of Canada,Parks Canada,AB,6,Southeast Fire Centre,park removed; area lies inside this row,0.0007820140953633394,5.359342565487679
+144,Banff National Park Of Canada,Parks Canada,AB,7,Calgary Forest Area,park removed; area lies inside this row,0.0014177883187927811,9.716465893401821
+144,Banff National Park Of Canada,Parks Canada,AB,14,Rocky Mountain House Forest Area,park removed; area lies inside this row,0.0011902613662419356,8.157165506322626
+144,Banff National Park Of Canada,Parks Canada,AB,96,AB outside mapped areas,park removed; area lies inside this row,0.9949319432560284,6818.523022629108
+145,Quttinirpaaq National Park Of Canada,Parks Canada,NU,99,Nunavut (whole province/territory),park removed; area lies inside this row,0.9352702812682927,35377.95478609744
+146,Thousand Islands National Park Of Canada,Parks Canada,ON,93,ON outside mapped areas,park removed; area lies inside this row,0.980076291830722,8.29482072800144

@@ -1,0 +1,25 @@
+{
+ "burn_sample_areas": 154,
+ "burn_sample_by_region": {
+  "Quebec": 61,
+  "Prairies": 44,
+  "North": 16,
+  "Ontario": 15,
+  "Atlantic": 12,
+  "BC": 6
+ },
+ "n_burn_tests": 294,
+ "burn_p05": 76,
+ "burn_q10": 56,
+ "n_chain_tests": 399,
+ "chain_p05": 86,
+ "chain_q10": 59,
+ "national_share_top6": {
+  "2023": 0.02612,
+  "2025": 0.01386,
+  "2026": 0.01041,
+  "2024": 0.0093,
+  "2021": 0.00767,
+  "1995": 0.00649
+ }
+}

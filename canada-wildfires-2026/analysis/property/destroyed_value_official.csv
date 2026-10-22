@@ -1,0 +1,8 @@
+event,official_count,counted,what,publisher,value_basis,n_da,local_avg_value,local_median_value,value_src,proxy_value_avg_cad,proxy_value_median_cad
+jasper2024,370,buildings,"townsite buildings destroyed (Municipality of Jasper layer, Value_Type 'Jasper')",Municipality of Jasper,each destroyed polygon at its own DA,6,744519.0,677427.0,DA,275472000.0,250648000.0
+tantallon2023,151,homes,homes lost (of ~200 structures),HRFE / HRM,mean DA value over flagged footprints,6,415656.0,406954.0,DA,62763996.0,61450108.0
+barrington2023,230,structures,structures destroyed (+59 damaged),HRFE citing Barrington AAR,mean DA value over flagged footprints,4,214944.0,171667.0,DA,49437222.0,39483333.0
+mcdougall2023,200,structures,"structures impacted (destroyed or damaged, approx.)",CORE / RDCO,mean DA value over flagged footprints,11,1142561.0,893340.0,CD;DA,228512211.0,178667987.0
+bushcreek2023,185,structures,structures lost: CSRD 176 + TNRD 9 (approx.),"CSRD, TNRD",mean DA value over flagged footprints,10,566117.0,451881.0,CD;DA,104731557.0,83598051.0
+denare2025,400,homes,permanent residences destroyed in the SHOE fire region (approx.),Gov. of Saskatchewan / SPSA,mean DA value over flagged footprints,7,213621.0,197566.0,CD;DA,85448563.0,79026479.0
+baldrange2026,150,structures,"structures damaged or destroyed (approx., preliminary)",District of Summerland,mean DA value over flagged footprints,8,776713.0,741725.0,DA,116507018.0,111258772.0

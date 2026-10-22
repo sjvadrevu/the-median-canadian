@@ -1,0 +1,103 @@
+# Reproducing the analysis
+
+There are three levels. Most people only need the first.
+
+| Level | What you get | Needs | Time |
+|---|---|---|---|
+| 1. Rebuild the page numbers | `data/story.json` from the verified values and the analysis CSVs in this repo | Python 3 standard library | seconds |
+| 2. Recompute a claim | Any published number, from the CSV named in METHODOLOGY.md section 2 | pandas | minutes |
+| 3. Rerun an analysis | Every CSV, from the raw public data | Full environment below, about 25 GB of downloads and intermediates | hours |
+
+## 1. Rebuild the page numbers
+
+```
+python scripts/build_story_json.py --src .
+```
+
+Run from the repo root, this writes `data/story.json` identical (apart from the build timestamp) to the published one. Map and city files:
+
+```
+python scripts/fma_union.py .
+MAPSHAPER=/path/to/mapshaper python scripts/build_map.py --src .
+python scripts/build_cities.py --src .
+```
+
+`fma_union.py` needs the forest grids from a level 3 run of `analysis/forest` (its output, `site-build/fma_union_2023_2026.csv`, is in the repo). `build_map.py` needs mapshaper and `analysis/threads/raw/bc_water/WLS_COMMUNITY_WS_PUB_SVW.geojson` (downloaded by the threads scripts).
+
+## 2. Recompute a claim
+
+Every claim in METHODOLOGY.md section 2 names the output file it is read from. All of those files are in the repo, so a claim can be checked with a few lines of pandas and no downloads.
+
+## 3. Rerun an analysis
+
+### Environment
+
+- Python 3.13.16 (the version used). Packages with the exact versions used: `pip install -r requirements.txt`.
+- GDAL comes with the rasterio and pyogrio wheels. Behind a proxy, set `CURL_CA_BUNDLE` (and `SSL_CERT_FILE`) for GDAL's HTTP reads of Sentinel-2 (losses and property scripts).
+- Map building only: Node.js (22.22.0 used) and mapshaper 0.6.102: `npm install mapshaper@0.6.102`, then set `MAPSHAPER` to `node_modules/.bin/mapshaper`.
+- Carousel PNGs only: `python -m playwright install chromium`. `slides/make_slides.py` sets `PLAYWRIGHT_BROWSERS_PATH` to `/opt/pw-browsers` if it is unset (the path in the original container); set it to your own browser path. The slides also need `logo.png` (and `logo-dark.png` for the photo version) next to the script: copy them from the repo root. The photo version (`make_slides_photo.py`) expects licensed stock photos in `slides/photos_v2/`; those are not redistributable and are not in the repo.
+- Memory and disk: the forest grids are 475 to 950 MB each, the wildlife overlay reads a 1.7 GB NBAC GeoPackage, and the full set of raw downloads and intermediates is about 24 GB (`methods/skipped_files.csv`). The original runs used a shared 2-core machine; the scripts set single-threaded BLAS where noted.
+
+### Paths
+
+All scripts find the repo root from their own location (`analysis/<topic>/scripts/` is three levels below it). Scripts that had absolute paths now read the environment variable `WILDFIRE_ROOT` and default to the repo root. Set `WILDFIRE_ROOT` only if you keep data somewhere else with the same layout. The cause and climate scripts also take `AREA_FILE`; use the fma_v2 layer:
+
+```
+export AREA_FILE=$PWD/data/geo/fma_v2.gpkg
+```
+
+### Download the raw data
+
+```
+python scripts/download_data.py --list
+python scripts/download_data.py
+```
+
+This fetches every dataset with a plain file URL (79 rows of `data/sources.csv`) into `data/raw/` and links each file to the path the scripts read. Use `--max-mb 500` to skip the largest files, or `--only <word>` to pick rows. Unzip archives where the scripts read unpacked files (for example the NBAC zip into `data/fire/raw/nbac/shp/`). Datasets that are queries or per-station or per-day requests are fetched by the analysis scripts themselves (status "fetch script" in `data/SOURCES.md`); the rest are web pages or documents listed with their URL ("manual").
+
+Live feeds change after the access dates (2026-10-20 to 2026-10-22). The official 2026 totals and fire lists used are kept in the repo as dated snapshots (`data/fire/reference/`, `season/`), so the scaling to official totals is reproducible even after the feeds update.
+
+### Order to run
+
+Each topic's `results.md` names its run order; dependencies between topics are:
+
+| Step | Run | Depends on | Known runtime |
+|---|---|---|---|
+| 1 | `data/geo/scripts/build_fma_all.py`, `data/geo/mb_qc_subareas/scripts/build_mb_qc_subareas.py`, `data/geo/scripts/build_fma_v2.py`, `data/geo/scripts/forest_fraction.py` | downloads | not recorded |
+| 2 | `data/smoke-cost/scripts/build_pm25.py`, `build_fire.py`, `build_spending.py` (AirNow off-season days: `airnow_fetch.sh`) | downloads | not recorded |
+| 3 | `analysis/forest`: 01, 02b, 02, 03, `03 2026`, 04, 05, 06, 07, 08 | 1, 2 | not recorded |
+| 4 | `analysis/weather`: `scripts/run_all.sh` | 1 | not recorded |
+| 5 | `analysis/people`: 00, 00b | 3 | 18 to 100 s per year and band (logs) |
+| 6 | `analysis/outline-check`: 01, 03, 02, 04 | 5 | not recorded |
+| 7 | `analysis/people`: 00c, 01, 02y (per year and threshold), 02, 03, 04, 06, 07 | 6 | as step 5 |
+| 8 | `analysis/wildlife`: 01 to 07 | 3 | not recorded |
+| 9 | `analysis/climate`: `scripts/run_all.sh` with `AREA_FILE` | 3, 4 | not recorded |
+| 10 | `analysis/cause`: `scripts/run_all.sh` with `AREA_FILE` | 3, 4, 9 | 06 about 35 min; 09 about 2 min |
+| 11 | `analysis/climate-change`: `scripts/run_all.sh` | 3, 4, 9, 10 | 09 bootstrap about 6 min |
+| 12 | `analysis/health`: 01 to 08 | 2, 7 | not recorded |
+| 13 | `analysis/economy`: 01, 01b, 02 (x3), `02b_run_scanfi_1622.sh`, 03, 04 (x2), 05, 05b, 06, 06b, 07, 07b, 07c, 08, 08b, 09 | 3 | not recorded |
+| 14 | `analysis/losses`: 01 to 10, then 12, 13, 11 | 6, 12 | not recorded |
+| 15 | `analysis/property`: 00 to 15 (`run_checks*.sh` run the event checks) | 6, 13 | not recorded |
+| 16 | `analysis/economic-value`: 02, 03, 05, 04, 04b, 06, 07, 08, 09, 10 | 7, 12, 13, 14 | not recorded |
+| 17 | `analysis/threads`: t1a, t1a2, t1b, t2a, t2b, t2, t3a, t3, t3b, t4, t5, t6, t6b | 3, 7, 13 | not recorded |
+| 18 | Level 1 commands above | all | seconds |
+
+Known issues before rerunning (details in METHODOLOGY.md section 8 and `analysis/REBUILD.md` section 3):
+- `analysis/economy/scripts/01_cells.py` reads a Parks Canada scaling row removed in the rebuild; apply the same change as `07c_timber_carbon_by_area_v2.py`.
+- `analysis/losses/scripts/03_tsb.py` double counts deaths by summing the TSB injuries table; the published values use occurrence-level TotalFatalCount.
+- Running cause without `AREA_FILE` mixes fma_all areas with the fma_v2 scaling file.
+
+### Compare
+
+After a rerun, `git diff --stat analysis/` shows which outputs changed. Differences are expected where live sources have been revised since the access date.
+
+## Updating the analysis copy in this repo
+
+The analysis was produced in a working folder and copied in with one rerunnable command, which applies the same size and path rules every time:
+
+```
+python scripts/sync_analysis.py --src /path/to/wildfire
+python scripts/build_sources.py
+```
+
+`sync_analysis.py` copies scripts, `results.md`, `manifest.csv` and top-level outputs (files over 20 MB, `raw/` and `work/` are skipped and listed in `methods/skipped_files.csv`), rewrites machine-specific paths, and copies `story/`, `slides/` and the dated snapshots. `--topics response wainwright` adds those two analyses when they are finished. `build_sources.py` then regenerates `data/sources.csv` and `data/SOURCES.md` from all manifests.

@@ -1,0 +1,8 @@
+version,n
+"raw rows, WFS archive (294 daily files, 1352431 rows; to 2026-10-20 UTC)",1352194.0
+primary: one per sensor per 1 km cell per UTC day,454066.0
+"VIIRS-I only, one per 1 km cell per UTC day",228890.0
+"any sensor, one per 1 km cell per UTC day",313876.0
+"primary rule without SLSTR (VIIRS-I + MODIS only, the old file's sensors)",319467.0
+"primary rule, inside province polygons",321515.0
+share of raw rows where StatCan province = file prov column,0.7412

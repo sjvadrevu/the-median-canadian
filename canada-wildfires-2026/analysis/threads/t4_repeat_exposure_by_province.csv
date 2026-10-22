@@ -1,0 +1,106 @@
+basis,unit,prov,total,ge2,ge3,eq4,people_ge2
+all outlines,reserves,AB,152.0,57.0,11.0,1.0,14850.0
+all outlines,reserves,BC,1602.0,399.0,154.0,57.0,37306.0
+all outlines,reserves,MB,420.0,127.0,62.0,7.0,39844.0
+all outlines,reserves,NB,32.0,1.0,1.0,0.0,295.0
+all outlines,reserves,NL,3.0,0.0,0.0,0.0,0.0
+all outlines,reserves,NS,43.0,15.0,2.0,0.0,3298.0
+all outlines,reserves,NT,3.0,2.0,1.0,1.0,5.0
+all outlines,reserves,ON,203.0,12.0,2.0,0.0,4377.0
+all outlines,reserves,PE,6.0,0.0,0.0,0.0,0.0
+all outlines,reserves,QC,32.0,6.0,3.0,0.0,5182.0
+all outlines,reserves,SK,826.0,112.0,36.0,0.0,22775.0
+all outlines,on-reserve people,AB,44218.0,9671.0,957.0,0.0,
+all outlines,on-reserve people,BC,83865.0,32374.0,7700.0,1168.0,
+all outlines,on-reserve people,MB,56844.0,34051.0,16871.0,3496.0,
+all outlines,on-reserve people,NB,8989.0,295.0,295.0,0.0,
+all outlines,on-reserve people,NL,3034.0,0.0,0.0,0.0,
+all outlines,on-reserve people,NS,12732.0,2188.0,924.0,0.0,
+all outlines,on-reserve people,NT,264.0,5.0,0.0,0.0,
+all outlines,on-reserve people,ON,50435.0,2008.0,651.0,0.0,
+all outlines,on-reserve people,PE,610.0,0.0,0.0,0.0,
+all outlines,on-reserve people,QC,23214.0,2949.0,1550.0,0.0,
+all outlines,on-reserve people,SK,55746.0,21127.0,5633.0,0.0,
+all outlines,off-reserve people,AB,4218417.0,116347.0,2637.0,0.0,
+all outlines,off-reserve people,BC,4917014.0,534331.0,164478.0,7532.0,
+all outlines,off-reserve people,MB,1285309.0,29374.0,12751.0,0.0,
+all outlines,off-reserve people,NB,766621.0,32939.0,26913.0,1626.0,
+all outlines,off-reserve people,NL,507516.0,1407.0,0.0,0.0,
+all outlines,off-reserve people,NS,956651.0,408599.0,36651.0,0.0,
+all outlines,off-reserve people,NT,40806.0,4076.0,0.0,0.0,
+all outlines,off-reserve people,NU,36858.0,0.0,0.0,0.0,
+all outlines,off-reserve people,ON,14173507.0,19752.0,0.0,0.0,
+all outlines,off-reserve people,PE,153721.0,0.0,0.0,0.0,
+all outlines,off-reserve people,QC,8478619.0,1197033.0,152546.0,0.0,
+all outlines,off-reserve people,SK,1076759.0,12615.0,4165.0,0.0,
+all outlines,off-reserve people,YT,40232.0,10.0,0.0,0.0,
+fires >= 200 ha,reserves,AB,152.0,9.0,1.0,0.0,1317.0
+fires >= 200 ha,reserves,BC,1602.0,142.0,62.0,0.0,11210.0
+fires >= 200 ha,reserves,MB,420.0,39.0,5.0,0.0,10975.0
+fires >= 200 ha,reserves,NB,32.0,1.0,1.0,0.0,295.0
+fires >= 200 ha,reserves,NL,3.0,0.0,0.0,0.0,0.0
+fires >= 200 ha,reserves,NS,43.0,0.0,0.0,0.0,0.0
+fires >= 200 ha,reserves,NT,3.0,2.0,1.0,1.0,5.0
+fires >= 200 ha,reserves,ON,203.0,6.0,0.0,0.0,1773.0
+fires >= 200 ha,reserves,PE,6.0,0.0,0.0,0.0,0.0
+fires >= 200 ha,reserves,QC,32.0,0.0,0.0,0.0,0.0
+fires >= 200 ha,reserves,SK,826.0,56.0,19.0,0.0,13105.0
+fires >= 200 ha,on-reserve people,AB,44218.0,0.0,0.0,0.0,
+fires >= 200 ha,on-reserve people,BC,83865.0,3208.0,618.0,0.0,
+fires >= 200 ha,on-reserve people,MB,56844.0,6912.0,476.0,0.0,
+fires >= 200 ha,on-reserve people,NB,8989.0,295.0,295.0,0.0,
+fires >= 200 ha,on-reserve people,NL,3034.0,0.0,0.0,0.0,
+fires >= 200 ha,on-reserve people,NS,12732.0,0.0,0.0,0.0,
+fires >= 200 ha,on-reserve people,NT,264.0,5.0,0.0,0.0,
+fires >= 200 ha,on-reserve people,ON,50435.0,651.0,0.0,0.0,
+fires >= 200 ha,on-reserve people,PE,610.0,0.0,0.0,0.0,
+fires >= 200 ha,on-reserve people,QC,23214.0,0.0,0.0,0.0,
+fires >= 200 ha,on-reserve people,SK,55746.0,11848.0,2174.0,0.0,
+fires >= 200 ha,off-reserve people,AB,4218417.0,9373.0,532.0,0.0,
+fires >= 200 ha,off-reserve people,BC,4917014.0,31868.0,3422.0,0.0,
+fires >= 200 ha,off-reserve people,MB,1285309.0,4411.0,106.0,0.0,
+fires >= 200 ha,off-reserve people,NB,766621.0,16791.0,15201.0,1626.0,
+fires >= 200 ha,off-reserve people,NL,507516.0,0.0,0.0,0.0,
+fires >= 200 ha,off-reserve people,NS,956651.0,0.0,0.0,0.0,
+fires >= 200 ha,off-reserve people,NT,40806.0,433.0,0.0,0.0,
+fires >= 200 ha,off-reserve people,NU,36858.0,0.0,0.0,0.0,
+fires >= 200 ha,off-reserve people,ON,14173507.0,0.0,0.0,0.0,
+fires >= 200 ha,off-reserve people,PE,153721.0,0.0,0.0,0.0,
+fires >= 200 ha,off-reserve people,QC,8478619.0,0.0,0.0,0.0,
+fires >= 200 ha,off-reserve people,SK,1076759.0,6524.0,540.0,0.0,
+fires >= 200 ha,off-reserve people,YT,40232.0,10.0,0.0,0.0,
+fires >= 1000 ha,reserves,AB,152.0,6.0,1.0,0.0,957.0
+fires >= 1000 ha,reserves,BC,1602.0,99.0,11.0,0.0,5214.0
+fires >= 1000 ha,reserves,MB,420.0,20.0,0.0,0.0,3816.0
+fires >= 1000 ha,reserves,NB,32.0,1.0,1.0,0.0,295.0
+fires >= 1000 ha,reserves,NL,3.0,0.0,0.0,0.0,0.0
+fires >= 1000 ha,reserves,NS,43.0,0.0,0.0,0.0,0.0
+fires >= 1000 ha,reserves,NT,3.0,1.0,1.0,0.0,0.0
+fires >= 1000 ha,reserves,ON,203.0,4.0,0.0,0.0,1186.0
+fires >= 1000 ha,reserves,PE,6.0,0.0,0.0,0.0,0.0
+fires >= 1000 ha,reserves,QC,32.0,0.0,0.0,0.0,0.0
+fires >= 1000 ha,reserves,SK,826.0,33.0,3.0,0.0,6197.0
+fires >= 1000 ha,on-reserve people,AB,44218.0,0.0,0.0,0.0,
+fires >= 1000 ha,on-reserve people,BC,83865.0,1968.0,71.0,0.0,
+fires >= 1000 ha,on-reserve people,MB,56844.0,3816.0,0.0,0.0,
+fires >= 1000 ha,on-reserve people,NB,8989.0,295.0,295.0,0.0,
+fires >= 1000 ha,on-reserve people,NL,3034.0,0.0,0.0,0.0,
+fires >= 1000 ha,on-reserve people,NS,12732.0,0.0,0.0,0.0,
+fires >= 1000 ha,on-reserve people,NT,264.0,0.0,0.0,0.0,
+fires >= 1000 ha,on-reserve people,ON,50435.0,651.0,0.0,0.0,
+fires >= 1000 ha,on-reserve people,PE,610.0,0.0,0.0,0.0,
+fires >= 1000 ha,on-reserve people,QC,23214.0,0.0,0.0,0.0,
+fires >= 1000 ha,on-reserve people,SK,55746.0,4565.0,0.0,0.0,
+fires >= 1000 ha,off-reserve people,AB,4218417.0,1340.0,532.0,0.0,
+fires >= 1000 ha,off-reserve people,BC,4917014.0,17499.0,0.0,0.0,
+fires >= 1000 ha,off-reserve people,MB,1285309.0,1142.0,106.0,0.0,
+fires >= 1000 ha,off-reserve people,NB,766621.0,16791.0,14913.0,839.0,
+fires >= 1000 ha,off-reserve people,NL,507516.0,0.0,0.0,0.0,
+fires >= 1000 ha,off-reserve people,NS,956651.0,0.0,0.0,0.0,
+fires >= 1000 ha,off-reserve people,NT,40806.0,37.0,0.0,0.0,
+fires >= 1000 ha,off-reserve people,NU,36858.0,0.0,0.0,0.0,
+fires >= 1000 ha,off-reserve people,ON,14173507.0,0.0,0.0,0.0,
+fires >= 1000 ha,off-reserve people,PE,153721.0,0.0,0.0,0.0,
+fires >= 1000 ha,off-reserve people,QC,8478619.0,0.0,0.0,0.0,
+fires >= 1000 ha,off-reserve people,SK,1076759.0,2918.0,0.0,0.0,
+fires >= 1000 ha,off-reserve people,YT,40232.0,10.0,0.0,0.0,

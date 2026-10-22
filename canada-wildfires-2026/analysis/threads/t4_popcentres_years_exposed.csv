@@ -1,0 +1,1027 @@
+PCUID,name,PRUID,pop,within10_2023,within10_2024,within10_2025,within10_2026,n_years,within10_2023_min200,within10_2024_min200,within10_2025_min200,within10_2026_min200,n_years_min200,within10_2023_min1000,within10_2024_min1000,within10_2025_min1000,within10_2026_min1000,n_years_min1000
+0001,Acton,35,9377,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0002,Acton Vale,24,5220,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0003,Airdrie,48,73578,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0005,Alençon,24,1585,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0006,Alexandria,35,2906,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0007,Alfred,35,1086,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0008,Alliston,35,23253,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0009,Alma,24,20274,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0010,Almonte,35,6098,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0011,Altona,46,4227,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0012,Amherst,12,9548,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0014,Amherstburg,35,15177,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0015,Amos,24,9281,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0016,Amqui,24,4560,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0018,Angus - Borden CFB-BFC,35,14503,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0019,Antigonish,12,5620,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0020,Armstrong,59,5323,True,True,False,True,3,False,True,False,True,2,False,False,False,True,1
+0021,Arnprior,35,11305,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0022,Arthur,35,2628,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0023,Asbestos,24,5623,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0024,Ashcroft,59,1182,False,True,True,False,2,False,True,False,False,1,False,True,False,False,1
+0025,Assiniboia,47,2333,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0028,Atikokan,35,1929,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0030,Aylmer,35,7975,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0031,Ayr,35,5383,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0036,Baie-Comeau,24,9100,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0037,Baie-Saint-Paul,24,4308,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0038,Golden,35,1143,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0040,Banff,48,8305,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0041,Barraute,24,1090,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0042,Barrhead,48,4055,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0043,Barrie,35,154676,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0044,Barry's Bay,35,1084,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0045,Bathurst,13,15985,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0046,Bay Roberts,10,6897,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0047,Beauceville,24,3598,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0050,Beaupré,24,6342,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0051,Beausejour,46,3123,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0052,Beaverlodge,48,2251,False,False,False,True,1,False,False,False,False,0,False,False,False,False,0
+0053,Beaverton,35,3347,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0054,Gentilly,24,1634,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0056,Bedford,24,2548,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0058,Beeton,35,4151,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0061,Belleville,35,75052,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0063,Beloeil,24,52959,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0067,Berthierville,24,4677,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0069,Berwick,12,2455,True,True,True,False,3,False,False,True,False,1,False,False,False,False,0
+0071,Biggar,47,2045,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0072,Bishop's Falls,10,3006,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0074,Blairmore,48,1522,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0075,Blenheim,35,4487,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0076,Blind River,35,2174,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0077,Bobcaygeon,35,3576,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0078,Boissevain,46,1567,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0079,Saint-Martin,24,1672,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0080,Bolton,35,26795,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0081,Bonaventure,24,1447,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0082,Bonavista,10,2979,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0083,Bonnyville,48,6359,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0084,Botwood,10,2741,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0086,Bow Island,48,1829,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0087,Bowmanville - Newcastle,35,56742,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0088,Bracebridge,35,9884,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0089,Bradford,35,38128,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0091,Brandon,46,50532,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0092,Brantford,35,104413,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0094,Bridgenorth - Chemong Park Area,35,3072,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0096,Bridgewater,12,8790,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+0097,Brighton,35,5847,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0098,Brockville,35,22293,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0101,Brooks,48,14904,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0105,Bouctouche,13,1944,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0107,Burgeo,10,1176,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0110,Burns Lake,59,2117,True,False,True,False,2,True,False,False,False,1,True,False,False,False,1
+0111,Cabano,24,2419,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0114,Caledonia,35,12179,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0115,Calgary,48,1305550,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0119,Campbell River,59,38108,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0121,Campbellford,35,3372,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0122,Campbellton,13,8833,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0123,Camrose,48,18454,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0125,Canmore,48,13268,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0126,Cannington,35,1839,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0127,Canora,47,1763,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0129,Cap-aux-Meules,24,2516,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0133,Capreol,35,2919,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0134,Caraquet,13,3190,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0135,Carberry,46,1823,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0136,Carbonear,10,6235,False,False,True,False,1,False,False,True,False,1,False,False,True,False,1
+0137,Cardinal,35,1770,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0138,Cardston,48,3519,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0140,Carleton Place,35,13940,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0141,Carlyle,47,1519,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0142,Carman,46,2970,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0143,Carnduff,47,1125,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0144,Casselman,35,3970,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0146,Castlegar,59,10029,True,False,True,True,3,False,False,False,False,0,False,False,False,False,0
+0149,Causapscal,24,1013,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0150,Cayuga,35,1720,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0154,Chandler,24,2189,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0155,Channel-Port aux Basques,10,3127,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0156,Chapais,24,1289,True,True,False,False,2,True,False,False,False,1,False,False,False,False,0
+0157,Chapleau,35,1144,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0159,Charlottetown,11,52390,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0161,Chase,59,2377,True,False,True,False,2,True,False,False,False,1,True,False,False,False,1
+0162,Château-Richer,24,2482,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0167,Chatham,35,45171,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0169,Chemainus,59,4033,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0170,Chesley,35,1879,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0171,Chester,12,1371,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0172,Chesterville,35,1564,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0175,Chibougamau,24,6491,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0176,Chicoutimi - Jonquière,24,103934,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0177,Chilliwack,59,81622,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0182,Clarenville-Shoal Harbour,10,6143,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0183,Claresholm,48,3434,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0186,Clermont,24,2693,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0187,Clinton,35,3113,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0188,Coaldale,48,8592,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0189,Coaticook,24,6333,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0190,Cobourg,35,19830,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0191,Cochrane,48,31638,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0192,Cochrane,35,3774,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0193,Colborne,35,1474,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0198,Collingwood,35,22983,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0201,Contrecoeur,24,7768,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0204,Corner Brook,10,19129,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0205,Cornwall,35,47286,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0207,Courtenay,59,48917,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0208,Cowansville,24,13334,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0209,Crabtree,24,2802,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0210,Cranbrook,59,20008,True,False,False,False,1,True,False,False,False,1,True,False,False,False,1
+0212,Creston,59,5459,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0213,Cumberland,59,4190,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0214,Dalhousie,13,2372,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0215,Dauphin,46,8034,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0217,Dawson Creek,59,11706,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0218,Deep River,35,3860,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0219,Deer Lake,10,4346,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0220,Dégelis,24,1751,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0221,Delhi,35,5344,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0225,Deseronto,35,1598,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0226,Devon,48,6545,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0227,Didsbury,48,5024,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0229,Digby,12,2001,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0230,Disraeli,24,2228,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+0231,Dolbeau,24,10849,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0233,Donnacona,24,8952,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0237,Drayton Valley,48,6970,True,False,False,False,1,True,False,False,False,1,True,False,False,False,1
+0238,Dresden,35,2401,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0239,Drumheller,48,6497,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0240,Drummondville,24,72089,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0241,Dryden,35,5355,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0243,Duncan,59,24358,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0244,Dundalk,35,2803,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0246,Dunnville,35,5907,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0248,Durham,35,2755,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0250,East Angus,24,3678,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0251,East Broughton,24,1866,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0252,Edmonton,48,1151635,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0253,Edmundston,13,13125,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0254,Edson,48,8166,True,False,False,False,1,True,False,False,False,1,True,False,False,False,1
+0256,Eganville,35,1149,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0257,Elliot Lake,35,10998,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0258,Elmira,35,10790,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0259,Elmvale,35,2520,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0260,Embrun,35,8680,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0262,Enderby,59,3028,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0264,Englehart,35,1371,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0265,Erin,35,2725,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0266,Les Escoumins,24,1274,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0267,Espanola,35,3986,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0268,Essex,35,8233,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0269,Esterhazy,47,2191,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0270,Estevan,47,10629,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0272,Exeter,35,4863,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0274,Fairview,48,2427,True,True,False,False,2,True,False,False,False,1,False,False,False,False,0
+0276,Farnham,24,7869,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0277,Fenelon Falls,35,2490,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0278,Fergus,35,23209,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0279,Ferme-Neuve,24,1663,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0280,Fernie,59,5519,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0282,Flin Flon,"46,47",4722,True,True,True,False,3,False,True,True,False,2,False,False,True,False,1
+0283,Foam Lake,47,1070,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0285,Forest,35,2429,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0286,Forestville,24,2193,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0290,Fort Frances,35,7159,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0291,Fort Macleod,48,3038,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0292,Fort McMurray,48,68002,True,True,True,False,3,False,True,False,False,1,False,True,False,False,1
+0293,Fort Nelson,59,2611,True,True,False,False,2,False,True,False,False,1,False,True,False,False,1
+0294,Fort Qu'Appelle,47,1866,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0297,Fort St. James,59,1497,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0298,Fort St. John,59,21123,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0299,Fort-Coulonge,24,2263,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0301,Fox Creek,48,1426,True,False,True,False,2,True,False,False,False,1,True,False,False,False,1
+0302,Saint-Apollinaire,24,4933,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0303,Frankford,35,3079,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0305,Fredericton,13,64614,False,True,True,True,3,False,True,True,True,3,False,True,True,True,3
+0306,Iqaluit,62,6991,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0310,Gananoque,35,5383,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0311,Gander,10,9918,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0314,Georgetown,35,44058,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0315,Geraldton,35,1761,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0316,Gibsons,59,9603,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0317,Gimli,46,2345,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0318,Glace Bay,12,16915,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+0321,Glencoe,35,2158,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0324,Goderich,35,7728,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0326,Golden,59,3640,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0328,Granby,24,62624,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0329,Grand Bank,10,2071,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0330,Grand Centre,48,7514,False,True,False,False,1,False,True,False,False,1,False,False,False,False,0
+0331,Grand Falls / Grand-Sault,13,4349,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0332,Grand Falls-Windsor,10,11986,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0333,Grand Forks,59,4166,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0335,Grande Cache,48,3037,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0336,Grande Prairie,48,63172,True,False,True,False,2,True,False,False,False,1,True,False,False,False,1
+0337,Grande-Rivière,24,1330,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0339,Gravenhurst,35,5789,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0342,Grimshaw,48,2519,False,True,False,False,1,False,True,False,False,1,False,False,False,False,0
+0343,Guelph,35,144356,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0346,Hagersville,35,3059,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0347,Haileybury,35,3247,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0348,Halifax,12,348634,True,False,True,False,2,True,False,False,False,1,False,False,False,False,0
+0349,Hamilton,35,729560,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0350,Hampton,13,3499,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0351,Hanna,48,2234,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0352,Hanover,35,7761,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0353,Hantsport,12,1542,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0354,Happy Valley-Goose Bay,10,6996,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0359,Harriston,35,1887,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0360,Harrow,35,2562,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0363,Havelock,35,1055,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0364,Havre-Saint-Pierre,24,2890,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0365,Hawkesbury,"24,35",11755,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0366,Hay River,61,2380,True,False,False,False,1,True,False,False,False,1,True,False,False,False,1
+0367,Hearst,35,3537,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0368,Saint-Bruno,24,1868,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0371,High Level,48,3461,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0372,High Prairie,48,2065,True,False,False,False,1,True,False,False,False,1,True,False,False,False,1
+0373,High River,48,14119,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0374,Hinton,48,9191,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0376,Hope,59,4434,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0379,Hudson,24,24245,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0380,Hudson Bay,47,1332,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0381,Humboldt,47,5313,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0382,Huntingdon,24,2673,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0383,Huntsville,35,6639,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0385,Indian Head,47,1819,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0386,Ingersoll,35,13607,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0387,Innisfail,48,7016,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0388,Inuvik,61,3001,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0389,Invermere,59,3340,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0390,Inverness,12,1228,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0391,Iroquois,35,1406,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0392,Iroquois Falls,35,2866,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0394,Wawa,35,2431,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0396,Joliette,24,49246,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0397,Kamloops,59,92442,True,True,True,False,3,True,False,False,False,1,True,False,False,False,1
+0398,Kamsack,47,1659,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0399,Kanata,35,137118,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0400,Kapuskasing,35,7092,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0403,Kelowna,59,181380,True,False,True,False,2,True,False,False,False,1,True,False,False,False,1
+0405,Kemptville,35,4051,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0406,Kenora,35,10974,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0407,Kensington,11,1743,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0408,Kentville,12,14905,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0410,Killarney,46,2499,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0411,Kimberley,59,4908,True,False,False,True,2,False,False,False,True,1,False,False,False,True,1
+0412,Kincardine,35,9343,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0413,Kindersley,47,2938,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0415,Kingston,35,127943,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0416,Kingston - Greenwood,12,7118,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+0418,Kirkland Lake,35,6180,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0419,Kitchener,35,522888,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0420,Kitimat,59,6727,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0423,L'Assomption,24,16443,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0424,L'Épiphanie,24,7607,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0427,L'Orignal,35,1359,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0430,La Malbaie,24,3534,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0432,La Pocatière,24,3921,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0434,La Sarre,24,5629,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0435,La Tuque,24,7464,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0437,Labelle,24,1244,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0438,Labrador City,10,9011,False,True,False,True,2,False,True,False,False,1,False,True,False,False,1
+0439,Lac la Biche,48,2138,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0442,Lac-Etchemin,24,1769,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0443,Lac-Mégantic,24,5808,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0444,Lachute,24,11221,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0445,Lacolle,24,1729,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0446,Lacombe,48,12835,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0447,Ladysmith,59,11194,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0449,Lake Cowichan,59,3181,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0450,Lakefield,35,2943,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0455,Lanigan,47,1277,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0458,Laurentides,24,15768,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0460,Lavaltrie,24,11301,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0463,Leamington,35,35730,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0464,Lebel-sur-Quévillon,24,1931,True,False,False,False,1,True,False,False,False,1,True,False,False,False,1
+0465,Leduc,48,33505,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0467,Lethbridge,48,92563,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0469,Lewisporte,10,2064,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0470,Lillooet,59,1652,True,True,False,True,3,True,False,False,True,2,False,False,False,True,1
+0472,Lindsay,35,22367,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0473,Linière,24,1400,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0474,Listowel,35,9539,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0475,Little Current,35,1210,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0477,Liverpool,12,2546,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0478,Lloydminster,"47,48",31582,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0480,London,35,423369,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0481,Longlac,35,1316,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0485,Louiseville,24,5577,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0487,Lucan,35,3089,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0488,Luceville,24,1118,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0489,Lucknow,35,1154,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0490,Lunenburg,12,2405,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0492,Macamic,24,1352,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0493,Mackenzie,59,2856,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0494,Madoc,35,1489,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0495,Magog,24,22222,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0496,Magrath,48,2308,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0498,Malartic,24,2996,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0499,Manitouwadge,35,1682,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0500,Maniwaki,24,4094,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0501,Manning,48,1027,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0502,Maple Creek,47,2151,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0504,Marathon,35,3022,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0505,Marieville,24,10015,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0506,Markdale,35,1206,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0508,Marmora,35,1499,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0509,Marystown,10,2671,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0514,Matagami,24,1340,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+0515,Matane,24,10371,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0516,Mattawa,35,1721,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0517,Mayerthorpe,48,1171,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0521,Meadow Lake,47,5141,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0522,Meaford,35,5078,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0523,Medicine Hat,48,63382,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0524,Melfort,47,5718,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0527,Melville,47,4075,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0529,Merritt,59,5248,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0530,Middleton,12,1429,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0531,Midland,35,26246,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0532,Milton,35,124579,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0533,Milverton,35,1797,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0534,Minnedosa,46,2407,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0538,Mitchell,35,4868,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0539,Moncton,13,119785,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0540,Mont-Joli,24,5730,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0541,Mont-Laurier,24,7634,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0544,Montague,11,1896,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0546,Montmagny,24,8881,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0547,Montréal,24,3675219,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0549,Moose Jaw,47,32813,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0551,Moosomin,47,2478,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0553,Morden,46,9103,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0554,Morinville,48,10385,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0555,Morris,46,1801,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0556,Morrisburg,35,2398,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0557,Mount Brydges,35,2656,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0558,Mount Forest,35,5040,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0564,Notre-Dame-du-Bon-Conseil,24,1149,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0565,Notre-Dame-du-Lac,24,1207,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0567,Nakusp,59,1112,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0568,Nanaimo,59,106079,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0569,Napanee,35,8173,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0570,Napierville,24,4740,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0572,Neepawa,46,4938,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0574,Nelson,59,11198,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0577,New Glasgow,12,19316,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+0578,New Hamburg,35,14379,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0580,New Richmond,24,1886,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0581,New Waterford,12,6723,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+0587,Nicolet,24,6083,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0588,Nipawin,47,4147,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0591,Normandin,24,1880,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0594,North Battleford,47,13649,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0595,North Bay,35,51433,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0599,Norwich,35,3038,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0600,Norwood,35,1585,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0606,Okotoks,48,30214,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0607,Olds,48,8983,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0608,Oliver,59,5708,True,True,True,False,3,True,False,False,False,1,True,False,False,False,1
+0609,Orangeville,35,34177,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0610,Orillia,35,33379,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0611,Ormstown,24,1785,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0612,Oromocto,13,8585,False,True,True,True,3,False,True,True,True,3,False,True,True,True,3
+0613,Orono,35,1104,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0614,Oshawa,35,335949,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0615,Osoyoos,59,4859,True,True,True,False,3,True,False,False,False,1,True,False,False,False,1
+0616,Ottawa - Gatineau,"24,35",1068821,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0618,Outlook,47,2112,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0619,Owen Sound,35,22318,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0620,Oxbow,47,1051,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0622,Palmerston,35,2989,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0623,Papineauville,24,1126,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0624,Paris,35,14956,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0625,Parkhill,35,1707,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0626,Parksville,59,27330,False,False,True,False,1,False,False,True,False,1,False,False,False,False,0
+0628,Parry Sound,35,6788,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0629,Peace River,48,4264,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0631,Pembroke,35,16571,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0632,Penticton,59,36893,True,True,True,True,4,False,False,False,True,1,False,False,False,True,1
+0634,Perth,35,6486,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0636,Peterborough,35,84793,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0639,Petrolia,35,5632,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0641,Picton,35,4508,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0642,Pictou,12,2643,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0643,Picture Butte,48,1808,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0644,Pierreville,24,1863,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0645,Pinawa,46,1512,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0646,Pincher Creek,48,3463,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0651,Plessisville,24,7028,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0652,Ponoka,48,7032,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0653,Pont-Rouge,24,6579,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0654,Port Alberni,59,21711,True,True,True,False,3,True,False,True,False,2,False,False,True,False,1
+0658,Port Dover,35,7871,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0659,Port Elgin,35,9619,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0661,Port Hawkesbury,12,2998,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0662,Port Hope,35,13012,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0665,Port Perry,35,9553,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0666,Port Stanley,35,3008,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0668,Port-Cartier,24,5400,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0669,Portage la Prairie,46,12944,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0670,Portneuf,24,2107,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0672,Powassan,35,1241,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0673,Powell River,59,13116,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0675,Prescott,35,4078,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0677,Price,24,1640,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0678,Prince Albert,47,36768,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0679,Prince George,59,67339,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0680,Prince Rupert,59,11814,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0681,Princeton,59,2826,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+0682,Princeville,24,4396,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0683,Provost,48,1834,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0685,Québec,24,733156,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0687,Quesnel,59,12110,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0692,Rawdon,24,5680,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0693,Raymond,48,3942,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0694,Red Deer,48,99846,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0697,Redwater,48,1802,False,False,True,False,1,False,False,True,False,1,False,False,True,False,1
+0698,Regina,47,224996,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0699,Renfrew,35,8337,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0700,Revelstoke,59,7709,True,False,True,False,2,True,False,False,False,1,True,False,False,False,1
+0704,Richmond,35,4228,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0705,Richmond,24,3079,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0706,Ridgetown,35,2797,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0707,Rigaud,24,3038,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0708,Rimbey,48,2258,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0709,Rimouski,24,38708,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0712,Rivière-du-Loup,24,19081,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0715,Roberval,24,8056,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0716,Roblin,46,1603,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0719,Rockland,35,13625,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0720,Rocky Mountain House,48,6518,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0724,Rosetown,47,2384,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0726,Rosthern,47,1475,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0728,Rouyn-Noranda,24,23186,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0729,Roxton Falls,24,1042,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0730,Russell,46,1622,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0732,Sackville,13,3798,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0734,Saint John,13,63447,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0735,Salisbury,13,1546,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0736,Salmon Arm,59,16065,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0737,Sarnia,35,73944,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0738,Saskatoon,47,264637,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0739,Sault Ste. Marie,35,64923,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0744,Seaforth,35,2673,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0745,Selkirk,46,9761,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0746,Senneterre,24,2212,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0748,Sept-Îles,24,21352,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0749,Shaunavon,47,1769,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0750,Shawinigan,24,38930,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0752,Shawville,24,1329,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0753,Shediac,13,8563,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0754,Shelburne,12,1439,True,False,True,False,2,True,False,False,False,1,True,False,False,False,1
+0755,Shelburne,35,8989,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0756,Shellbrook,47,1330,False,False,False,True,1,False,False,False,True,1,False,False,False,True,1
+0758,Sherbrooke,24,151157,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0759,Shilo CFB-BFC,46,1362,True,False,False,False,1,True,False,False,False,1,False,False,False,False,0
+0760,Shippagan,13,2189,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0762,Simcoe,35,16121,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0763,Sioux Lookout,35,3781,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0764,Slave Lake,48,6542,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0765,Smithers,59,5316,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0766,Smiths Falls,35,9517,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0767,Smithville,35,6456,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0770,Sorel,24,36650,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0771,Souris,46,1935,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0776,Sparwood,59,3990,True,False,False,False,1,True,False,False,False,1,True,False,False,False,1
+0778,Springdale,10,2182,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0779,Springhill,12,2654,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0780,Spruce Grove,48,39348,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0781,Squamish,59,22221,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0784,Saint Andrews,13,1715,True,False,False,False,1,True,False,False,False,1,False,False,False,False,0
+0786,St. Anthony,10,1986,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0788,St. Catharines - Niagara Falls,35,242460,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0792,St. John's,10,185565,False,False,True,False,1,False,False,True,False,1,False,False,False,False,0
+0795,St. Marys,35,7271,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0796,St. Paul,48,5685,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0797,Saint-Quentin,13,2141,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0798,St. Stephen,13,3389,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0799,St. Thomas,35,45732,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0800,Saint-Agapit,24,3168,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0801,Saint-Alexis-des-Monts,24,1503,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0802,Saint-Ambroise,24,1651,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0803,Saint-André-Avellin,24,1642,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0805,Saint-Anselme,24,2729,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0807,Saint-Basile-Sud,24,1444,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0811,Saint-Césaire,24,3869,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0815,Saint-Damase,24,1139,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0816,Saint-Damien-de-Buckland,24,1206,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0819,Saint-Donat-de-Montcalm,24,1512,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0822,Saint-Fabien,24,1067,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0823,Saint-Félicien,24,6751,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0824,Saint-Félix-de-Valois,24,3544,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0825,Saint-Gabriel,24,3068,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0826,Saint-Gédéon,24,1439,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0828,Saint-Georges,24,27402,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0830,Saint-Germain-de-Grantham,24,3436,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0831,Saint-Henri-de-Lévis,24,1761,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0832,Saint-Honoré,24,2394,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0834,Saint-Hyacinthe,24,50616,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0835,Saint-Jacques,24,2647,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0836,Saint-Jean-sur-Richelieu,24,88083,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0840,Saint-Jean-Port-Joli,24,1381,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0841,Métabetchouan,24,2222,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0842,Saint-Jérôme,24,100859,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0844,Saint-Joseph-de-Beauce,24,3494,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0846,Saint-Joseph-de-Lanoraie,24,2850,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0847,Saint-Jovite,24,6206,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0849,Saint-Marc-des-Carrières,24,2005,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0850,Saint-Michel-des-Saints,24,1106,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0852,Saint-Pacôme,24,1145,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0854,Saint-Pascal,24,2534,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0855,Saint-Pie,24,3189,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0857,Saint-Prosper,24,2006,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0858,Saint-Raphaël,24,1093,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0859,Saint-Raymond,24,3057,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0861,Saint-Rémi,24,7025,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0863,Saint-Sauveur-des-Monts,24,8854,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0866,Saint-Tite,24,2190,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0871,Stayner,35,4699,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0872,Ste. Anne,46,2891,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0874,Sainte-Adèle,24,6019,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0876,Sainte-Anne-des-Monts,24,3370,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0877,Sainte-Claire,24,2226,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0878,Sainte-Croix,24,1424,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0881,Sainte-Madeleine,24,1989,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0882,Sainte-Marie,24,10716,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0883,Sainte-Martine,24,4412,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0885,Sainte-Thècle,24,1302,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0887,Steinbach,46,17589,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0888,Stephenville,10,7344,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0889,Stephenville Crossing,10,1038,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0890,Stettler,48,5595,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0892,Stirling,35,2074,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0894,Stonewall,46,5046,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0895,Stony Mountain,46,2160,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0897,Stratford,35,32878,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0898,Strathmore,48,13851,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0899,Strathroy,35,16056,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0901,Sturgeon Falls,35,6939,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0904,Sudbury,35,92093,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0905,Summerside,11,14952,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0907,Sussex,13,5447,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0908,Sutton,35,8477,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0910,Swan Hills,48,1191,False,False,True,False,1,False,False,True,False,1,False,False,True,False,1
+0911,Swan River,46,3989,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0912,Swift Current,47,16304,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0913,Cape Breton - Sydney,12,30960,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+0914,Sydney Mines,12,12353,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+0915,Sylvan Lake,48,16142,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0916,Taber,48,8978,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0919,Tavistock,35,3171,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0920,Témiscaming,24,1308,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0922,Terrace,59,14633,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+0925,Thamesford,35,2622,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0927,The Pas,46,7302,True,False,True,False,2,False,False,True,False,1,False,False,True,False,1
+0928,Thessalon,35,1147,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0929,Thetford Mines,24,17046,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0930,Thompson,46,12329,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0932,Thornbury,35,3474,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0934,Three Hills,48,2902,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0935,Thunder Bay,35,95266,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0936,Thurso,24,2833,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0938,Tilbury,35,4687,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0939,Tillsonburg,35,18573,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0943,Tisdale,47,2878,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0944,Toronto,35,5647656,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0945,Tottenham,35,9609,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0946,Tracadie-Sheila,13,4528,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0952,Trois-Pistoles,24,3031,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0953,Trois-Rivières,24,128057,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0955,Truro,12,23583,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+0957,Tweed,35,1541,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0959,Ucluelet,59,1940,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0960,Unity,47,2406,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0963,Uxbridge,35,11794,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0965,Val-d'Or,24,25473,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0968,Valcourt,24,1805,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0969,Vallée-Jonction,24,1213,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0970,Valley East,35,17251,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0971,Salaberry-de-Valleyfield,24,41655,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0972,Valleyview,48,1280,True,False,True,False,2,True,False,False,False,1,True,False,False,False,1
+0973,Vancouver,59,2426160,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0974,Vanderhoof,59,1967,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+0975,Vankleek Hill,35,1781,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0976,Varennes,24,20591,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0980,Vegreville,48,5383,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0981,Verchères,24,4359,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0982,Vermilion,48,3552,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0983,Vernon,59,51896,False,False,True,True,2,False,False,False,True,1,False,False,False,True,1
+0984,Victoria,59,363222,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+0987,Victoriaville,24,46322,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+0989,Ville-Marie,24,2017,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0991,Virden,46,2904,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0993,Vulcan,48,1558,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0994,Wabana,10,1091,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0995,Wadena,47,1127,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0996,Wainwright,48,6461,True,True,False,False,2,True,True,False,False,2,False,True,False,False,1
+0998,Walkerton,35,4724,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+0999,Wallaceburg,35,10323,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1000,Warwick,24,3239,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1003,Waterford,35,4227,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1004,Waterloo,24,4727,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1006,Watford,35,1563,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1007,Watrous,47,1817,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1011,West Lorne,35,1385,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1012,Westlock,48,4820,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1015,Wetaskiwin,48,12438,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1016,Weyburn,47,10883,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1017,Wheatley,35,3060,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1020,Stouffville,35,36753,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1021,White Rock,59,109167,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1022,Whitecourt,48,9195,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1023,Whitehorse,60,24513,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1026,Wiarton,35,1996,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1027,Wilkie,47,1124,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1028,Williams Lake,59,11906,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1029,Winchester,35,2417,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1030,Windsor,12,5514,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+1032,Windsor,35,306519,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1033,Windsor,24,4981,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1034,Wingham,35,2981,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1035,Winkler,46,15335,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1036,Winnipeg,46,758515,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1037,Wolfville,12,5057,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+1038,Woodstock,13,4602,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1039,Woodstock,35,46296,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1040,Wynyard,47,1667,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1041,Wyoming,35,2348,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1042,Yamachiche,24,1222,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1043,Yarmouth,12,7848,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1044,Yellowknife,61,19673,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1045,Yorkton,47,15969,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1047,One Hundred Mile House,59,1706,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1048,Abbotsford,59,132300,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1051,Buckingham,24,17407,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1061,Fermont,24,2151,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1062,Fort Erie,35,15372,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1063,Crystal Beach,35,9531,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1064,Gaspé,24,2803,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1066,Rivière-au-Renard,24,1045,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1067,Keswick - Elmhurst Beach,35,27145,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1071,Nobleton,35,6507,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1072,Port-Alfred-Bagotville,24,13350,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1075,Beamsville,35,13323,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1083,Mississauga Beach,35,5293,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1084,Dowling,35,1449,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1086,Petawawa,35,14382,False,True,True,False,2,False,True,False,False,1,False,False,False,False,0
+1087,Port Hardy,59,3393,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1098,Sooke,59,11583,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1099,Timmins,35,28874,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1100,Porcupine,35,5832,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1102,Lively,35,5569,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1105,Chatham - Douglastown,13,11594,False,False,True,False,1,False,False,True,False,1,False,False,True,False,1
+1117,Summerland,59,9860,True,True,True,True,4,False,False,False,True,1,False,False,False,True,1
+1123,Daveluyville,24,1345,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1127,Les Coteaux,24,19582,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1128,Paisley,35,1061,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1129,Grand Valley,35,2720,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1132,Creemore,35,1194,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1133,Niverville,46,5593,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1137,Warman,47,12362,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1138,Nanton,48,1984,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1139,Black Diamond,48,2574,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1140,Carstairs,48,3660,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1141,Gibbons,48,2989,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1143,Elkford,59,1908,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1144,Logan Lake,59,1356,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1145,Maskinongé,24,1409,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1147,Colchester,35,2334,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1148,Saint-Cyrille-de-Wendover,24,1315,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1151,Jarvis,35,1214,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1153,Lumsden,47,1800,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1154,Sainte-Justine,24,1079,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1158,St. Leonard,13,1043,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1159,Wellington,35,1526,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1164,Sundre,48,1781,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1165,Tofield,48,1811,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1170,Dutton,35,1658,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1171,Salmo,59,1140,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1173,Blackfalds,48,10315,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1174,Jasper,48,4029,True,True,False,False,2,False,True,False,False,1,False,True,False,False,1
+1175,Lumby,59,1484,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1176,Southampton,35,3993,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1177,Châteauguay,24,75891,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+1179,Sainte-Anne-des-Plaines,24,11269,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1184,Sainte-Julienne,24,3469,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1186,Danville,24,1652,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1188,La Ronge,47,5317,False,False,True,False,1,False,False,True,False,1,False,False,True,False,1
+1190,Port McNeill,59,2234,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1197,Wembley,48,1432,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1198,Penhold,48,3359,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1199,Lamont,48,1328,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1200,Elk Point,48,1394,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1201,Millet,48,1847,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1202,Beaumont,48,20779,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1203,Pasadena,10,2769,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1205,Brownsburg,24,1315,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1209,Rockwood,35,5488,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1211,Pilot Butte,47,2364,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1212,Dalmeny,47,1703,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1213,Martensville,47,10499,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1214,Bon Accord,48,1451,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1216,Crossfield,48,3579,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1217,Lions Bay,59,1390,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1218,Aldergrove,59,13105,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1219,Sicamous,59,2041,False,True,False,False,1,False,True,False,False,1,False,False,False,False,0
+1221,Houston,59,2085,True,False,False,False,1,True,False,False,False,1,False,False,False,False,0
+1225,Lac du Bonnet,46,1064,False,True,True,False,2,False,False,True,False,1,False,False,True,False,1
+1230,Langham,47,1349,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1231,Macklin,47,1098,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1235,Saint-Éphrem-de-Tring,24,1373,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1238,Le Bic,24,1132,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1239,Belmont,35,1275,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1240,Tumbler Ridge,59,2389,True,False,True,False,2,True,False,False,False,1,True,False,False,False,1
+1241,Hastings,35,1388,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1242,Sexsmith,48,2275,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1243,Hensall,35,1126,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1245,St. Jacobs,35,1959,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1248,Cookstown,35,1647,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1249,Coalhurst,48,2818,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1252,Lac-Lapierre,24,2533,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1254,St. Adolphe,46,1595,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1255,Carlisle,35,1858,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1257,Rossland,59,3645,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1258,Stony Plain,48,17253,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1261,Saint-Sulpice,24,1769,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1262,Duck Lake,59,12725,True,False,True,True,3,True,False,False,True,2,True,False,False,True,2
+1264,Osgoode,35,2535,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1267,Lake Echo,12,2365,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+1269,Vineland,35,4395,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1272,Mount Albert,35,5695,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1277,Saint-Alexandre,24,1466,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1279,Bassano,48,1186,False,False,True,False,1,False,False,True,False,1,False,False,False,False,0
+1284,Hauterive,24,11147,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1286,Laurier-Station,24,1856,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1287,Kingsey Falls,24,1419,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1297,Grand Bend,35,3031,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1299,Wellesley,35,3536,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1300,Sechelt,59,9434,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1301,Mildmay,35,1222,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1302,Two Hills,48,1379,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1305,Wikwemikong,35,1417,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1306,Russell,35,6135,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1307,Omemee,35,1060,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1308,Millbrook,35,1739,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1309,Whistler,59,9974,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1311,Athabasca,48,1181,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1312,Stoney Point,35,1394,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1313,Burford,35,1058,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1314,Cultus Lake,59,1164,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1315,St. George,35,3354,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1317,Drayton,35,2279,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1318,Filion,24,3572,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1319,Caledon,35,1466,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1320,Rankin Inlet,62,2698,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1321,Constance Bay,35,2263,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1322,Munster,35,1145,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1323,Metcalfe,35,1811,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1325,Kent,59,3936,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1326,Saint-Denis,24,1048,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1327,Amigo Beach,35,1924,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1328,White City,47,4713,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1329,Balgonie,47,1736,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1330,Everett,35,1570,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1331,Wasaga Beach,35,22194,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1332,Rougemont,24,1668,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1333,Roxton Pond,24,2701,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1334,Lac-Alouette,24,4687,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1335,Saint-Liboire,24,1844,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1337,Carleton,24,1198,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1338,Betsiamites,24,2104,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1339,Mistissini,24,3190,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1340,Chisasibi,24,3565,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1341,Notre-Dame-du-Mont-Carmel,24,1126,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1342,Saint-Roch-de-l'Achigan,24,2136,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1343,Hayes Subdivision,12,1044,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1346,Clairmont,48,2808,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1347,La Crète,48,2911,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+1350,Blind Bay,59,2369,True,True,False,False,2,True,False,False,False,1,True,False,False,False,1
+1351,Pemberton,59,2970,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1352,McEwen,13,1445,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1353,Brookside,12,1439,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1356,Caledon East,35,4568,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1357,Schomberg,35,2656,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1358,Saint Grégoire,24,1651,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1359,Bromont,24,5345,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1360,Calmar,48,1883,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1361,Les Cèdres,24,2214,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1362,Oka,24,1299,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1363,Saint-Augustin,24,11769,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1365,Oakbank,46,5041,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1367,Langdon,48,5193,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1368,Chestermere,48,21425,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1369,Irricana,48,1135,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1370,Ballantrae,35,3224,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1371,Virgil,35,3008,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1373,Lorette,46,3230,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1374,Regina Beach,47,1790,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1375,Crofton,59,1446,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1376,Roberts Creek,59,1927,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1377,Harrison Hot Springs,59,1552,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1379,Stanley Mission 157,47,1987,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1386,Waskaganish,24,1807,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+1387,Bowden,48,1275,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1389,Red Lake,35,1263,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1390,Moosonee,35,1471,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1392,Cambridge Bay,62,1403,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1393,Arviat,62,2766,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1394,Still Water Lake,12,3379,True,False,True,False,2,True,False,False,False,1,False,False,False,False,0
+1395,Starlight Village,13,2222,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1396,Maliotenam,24,1458,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1397,Ville Lambert,24,2544,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+1398,Sainte-Catherine-de-la-Jacques-Cartier,24,1757,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1399,Domaine-Ouellet,24,3391,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1400,Lac-Simon,24,1134,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1402,Manotick Station,35,5873,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1403,Bath,35,1825,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1404,Binbrook,35,10791,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1406,Ilderton,35,2250,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1407,Nobleford,48,1438,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1408,Aldergrove East,59,4496,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1409,Miller's Landing,59,1437,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1410,Cowichan Bay,59,2799,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1411,Mitchell,46,3136,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1413,St. Theresa Point,46,1083,False,True,True,False,2,False,False,True,False,1,False,False,False,False,0
+1414,Grunthal,46,1782,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1416,Blumenort,46,1738,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1421,Birch Hills,47,1066,False,True,False,False,1,False,True,False,False,1,False,False,False,False,0
+1423,Pelican Narrows,47,2133,True,True,True,False,3,False,False,True,False,1,False,False,True,False,1
+1424,Welcome Beach,59,1116,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1426,Factory Island,35,1530,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1428,St. Clements,35,1240,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1429,New Dundee,35,1174,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1430,Thornton,35,1046,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1431,Sunderland,35,1490,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1432,Saint-Charles,24,1357,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1433,Manawan,24,1597,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1434,Terrasse-des-Pins,24,4395,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1435,Domaine-C.-L.-C.,24,1662,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1436,Saint-Michel,24,1745,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1437,L'Ange-Gardien,24,1720,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1438,Saint-Alexandre,24,1342,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1439,Baker Lake,62,1653,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1443,Osler,47,1251,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1444,Massey Drive,10,1606,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1446,Centreville,12,1159,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+1447,Enfield - Lantz,12,6583,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1449,Eskasoni 3,12,2575,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1450,Port Williams,12,1030,True,False,True,False,2,False,False,False,False,0,False,False,False,False,0
+1451,New Maryland,13,2179,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1452,Quispamsis - Rothesay,13,24881,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1453,Richibucto 15,13,1464,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1454,Saint-Antoine,13,1383,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1455,Wells,13,1263,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1456,Angers,24,7259,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1457,Beaumont,24,1209,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1458,Black Lake,24,3266,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1459,Bromptonville,24,3862,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1460,Cap-Saint-Ignace,24,1160,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1462,Évain,24,2329,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1463,Fossambault-sur-le-Lac,24,3367,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1464,Godefroy,24,1463,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1465,Inukjuak,24,1671,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1466,Kuujjuaq,24,1958,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1467,Lac-Connelly,24,1272,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1468,LeBlanc,24,1186,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1469,Maria,24,1421,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1470,Melocheville,24,3039,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1471,Neuville,24,2543,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+1472,Obedjiwan,24,1259,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1473,Parc-Boutin,24,1246,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1475,Puvirnituq,24,1456,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1477,Saint-Amable,24,11199,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1478,Saint-Ambroise-de-Kildare,24,1883,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1479,Saint-Bernard,24,1223,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1480,Saint-Boniface,24,1365,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1481,Saint-Chrysostome,24,1171,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1482,Sainte-Agathe-des-Monts - Val-David,24,12136,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1483,Sainte-Brigitte-de-Laval,24,4872,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1484,Saint-Elzéar,24,1152,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1485,Saint-Jean-Baptiste,24,1822,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1486,Saint-Léonard-d'Aston,24,1469,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1487,Saint-Michel-de-Bellechasse,24,1243,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1488,Saint-Polycarpe,24,1365,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1489,Saint-Prime,24,1069,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1490,Saint-Thomas,24,1589,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1491,Salluit,24,1107,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1492,Shannon,24,3131,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1493,Stanstead,24,1483,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1494,Stoneham,24,1905,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1495,Val-Maher,24,1674,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1497,Attawapiskat 91A,35,1586,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1498,Azilda,35,4793,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1499,Bayfield,35,1394,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1500,Bourget,35,1175,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1502,Chalk River,35,1061,False,True,True,False,2,False,True,False,False,1,False,False,False,False,0
+1503,Chelmsford,35,6199,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1504,Chippawa,35,6077,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1505,Claremont,35,1215,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1507,Coniston,35,1782,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1508,Corunna,35,6266,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1509,Dorchester,35,4355,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1510,Haliburton Village,35,1078,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1511,Ingleside,35,1487,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1512,Innisfil,35,29464,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1513,King,35,8396,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1514,Limoges,35,2213,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1515,Long Sault,35,2154,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1516,Marchmont - Bass Lake,35,1902,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1517,McGregor,35,1536,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1518,New Liskeard,35,4232,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1520,Oro Station - Hawkestone,35,1806,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1521,Palgrave,35,1107,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1522,Plattsville,35,1520,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1523,Port Colborne,35,15441,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1524,Port Rowan,35,1357,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1525,Stevensville,35,1316,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1526,Tay,35,6188,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1528,Welland - Pelham,35,69302,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1529,Wendover,35,2176,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1530,Arborg,46,1279,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1531,Cross Lake 19A,46,1826,True,True,True,False,3,True,False,True,False,2,True,False,True,False,2
+1532,Ile des Chênes,46,1572,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1533,La Salle,46,2471,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1534,Landmark,46,1284,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1535,Oak Bluff,46,1442,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1536,St-Pierre-Jolys,46,1305,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1537,Teulon,46,1087,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1538,Battleford,47,3651,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1539,Delisle,47,1024,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1540,Alberta Beach - Val Quentin,48,1103,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1542,Cold Lake,48,7201,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1543,Coleman,48,1441,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1546,Fort Saskatchewan,48,26831,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1547,Heritage Pointe,48,1974,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1548,Lancaster Park,48,1253,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1549,Legal,48,1164,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1550,Redcliff,48,5385,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1551,Springbrook,48,1534,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1552,Turner Valley,48,2409,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1553,Vauxhall,48,1286,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1554,Westlake,48,2040,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1556,Fairwinds,59,1207,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1557,Cobble Hill,59,3610,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1558,Keremeos,59,1791,True,False,True,False,2,True,False,False,False,1,True,False,False,False,1
+1559,Ladner,59,23016,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1560,Mission,59,36193,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1561,Naramata,59,1012,True,True,True,True,4,False,False,False,True,1,False,False,False,True,1
+1562,Okanagan Falls,59,2202,True,True,True,False,3,True,False,False,False,1,True,False,False,False,1
+1563,Peachland,59,5006,True,True,True,True,4,True,False,True,True,3,True,False,False,True,2
+1564,Puntledge,59,1185,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1565,Rayleigh,59,1933,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1566,Rosedale,59,2232,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1567,Shawnigan - Mill Bay,59,7285,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1568,Telkwa,59,1288,True,True,False,False,2,False,False,False,False,0,False,False,False,False,0
+1569,Trail - Fruitvale,59,12863,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1570,Tsawwassen,59,23940,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1572,Fort Smith,61,1749,True,False,True,False,2,True,False,False,False,1,True,False,False,False,1
+1573,Gjoa Haven,62,1110,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1574,Howie Centre,12,1106,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1575,Placentia,10,1338,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1577,Sheshatshiu,10,1049,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1578,Indian Brook 14,12,2332,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1579,Ayer's Cliff,24,1087,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1580,Montagnac,24,1041,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1581,Mont-Saint-Grégoire,24,1021,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1582,Rivière-Beaudette,24,1854,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1583,Saint-Étienne-des-Grès,24,1455,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1584,Saint-Jean-de-Matha,24,1121,True,True,True,False,3,False,False,False,False,0,False,False,False,False,0
+1585,Saint-Roch-de-Richelieu,24,1031,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1586,Scott,24,1433,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1587,Venise-en-Québec,24,1069,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1588,Wemindji,24,1324,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1589,Whapmagoostui - Kuujjuarapik,24,1411,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1590,Big Bay Point,35,1670,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1591,Carp,35,1477,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1592,Craigleith and Swiss Meadows,35,1259,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1593,Horseshoe Valley,35,1127,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1594,Innerkip,35,1342,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1595,Kasabonika Lake,35,1060,False,True,False,True,2,False,False,False,True,1,False,False,False,True,1
+1596,Merrickville,35,1036,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1597,Sandy Lake 88,35,1601,False,False,True,False,1,False,False,True,False,1,False,False,True,False,1
+1598,Tiny Beaches North,35,1065,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1599,Chemawawin 2,46,1163,True,True,True,True,4,False,False,False,True,1,False,False,False,False,0
+1600,Cross Lake 19,46,1387,True,True,True,False,3,True,False,True,False,2,True,False,True,False,2
+1601,La Broquerie,46,1332,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1602,Nelson House 170,46,1351,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1603,St. Andrews,46,1001,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1604,Wasagamack,46,1689,False,True,True,False,2,False,False,False,False,0,False,False,False,False,0
+1605,Caronport,47,1008,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1606,Davidson,47,1039,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1607,La Loche,47,2009,True,False,False,False,1,True,False,False,False,1,True,False,False,False,1
+1608,Sandy Bay - Wapaskokimaw 202,47,1104,False,True,True,False,2,False,True,False,False,1,False,True,False,False,1
+1609,Waldheim,47,1113,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1610,Cardiff,48,1033,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1611,Carriage Lane Estates,48,1094,False,False,True,False,1,False,False,False,False,0,False,False,False,False,0
+1612,Stirling,48,1134,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1613,Barriere,59,1273,True,False,False,False,1,False,False,False,False,0,False,False,False,False,0
+1614,Mile 108 Recreational Ranch,59,1043,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0
+1615,Tofino,59,2217,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1616,Yarrow,59,1378,False,False,False,False,0,False,False,False,False,0,False,False,False,False,0
+1617,Dawson,60,1092,False,True,False,False,1,False,False,False,False,0,False,False,False,False,0

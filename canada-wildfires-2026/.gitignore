@@ -1,0 +1,13 @@
+# Raw downloads and intermediates (regenerate with scripts/download_data.py and the analysis scripts;
+# see methods/skipped_files.csv)
+data/raw/
+data/*/raw/
+data/geo/*/raw/
+analysis/*/raw/
+analysis/*/work/*
+!analysis/climate/work/areas_fcd292dde04d/
+analysis/_before_rebuild/
+__pycache__/
+*.pyc
+*.part
+node_modules/

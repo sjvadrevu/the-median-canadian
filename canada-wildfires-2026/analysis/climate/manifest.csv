@@ -1,0 +1,13 @@
+path,source,url,downloaded,bytes,sha256_16,description
+raw/indices/oni.ascii.txt,NOAA CPC,https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt,2026-10-21,23025,5d6fa3a2f857d916,"Oceanic Nino Index, 3-month seasons, ERSSTv5, 1950-JAS 2026"
+raw/indices/pdo.timeseries.ersstv5.csv,NOAA PSL,https://psl.noaa.gov/pdo/data/pdo.timeseries.ersstv5.csv,2026-10-21,43702,5eea2fc79331a37d,"PDO index from ERSSTv5, monthly 1854-2026-07 (NCEI ersst.v5.pdo.dat returned HTTP 503)"
+raw/indices/monthly.ao.index.b50.current.ascii,NOAA CPC,https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/monthly.ao.index.b50.current.ascii,2026-10-21,19341,3e3968f080a3822a,Arctic Oscillation monthly 1950-2026-09
+raw/indices/norm.nao.monthly.b5001.current.ascii,NOAA CPC,https://www.cpc.ncep.noaa.gov/products/precip/CWlink/pna/norm.nao.monthly.b5001.current.ascii,2026-10-21,19341,0f0e6be989132c40,North Atlantic Oscillation monthly 1950-2026-09
+raw/indices/pdo.data,NOAA PSL,https://psl.noaa.gov/data/correlation/pdo.data,2026-10-21,7514,c7aef29bb9ab991f,"Mantua PDO (ends 2025-07); downloaded, not used"
+raw/eccc/climate_stations.json,ECCC MSC GeoMet,https://api.weather.gc.ca/collections/climate-stations/items?f=json&limit=10000,2026-10-21,8375274,491cdf1a9b6685b9,"Climate station inventory, 8435 stations"
+raw/canswe/CanSWE-CanEEN_1928-2025_v8.nc,ECCC / Zenodo record 19075529,https://zenodo.org/records/19075529/files/CanSWE-CanEEN_1928-2025_v8.nc,2026-10-21,14447540,5e67226147076df6,"CanSWE v8 snow water equivalent, 2963 stations, 1928-2025"
+raw/canswe/ReadMe_CanSWE_v8.pdf,ECCC / Zenodo record 19075529,https://zenodo.org/records/19075529/files/ReadMe_CanSWE_v8.pdf,2026-10-21,432029,f51a70699c1d795d,CanSWE v8 readme
+raw/eccc/daily/<CLIMATE_IDENTIFIER>.csv.gz,ECCC MSC GeoMet,https://api.weather.gc.ca/collections/climate-daily/items?f=csv&CLIMATE_IDENTIFIER=<id>&datetime=1990-06-01/2026-10-21&properties=...,2026-10-21,113886452,,"1591 files, one per climate ID; daily Tmax, Tmin, Tmean, total precip, rain, snow, snow on ground with flags, 1990-06-01 to 2026-10-21"
+../forest/work/burn_YYYY.npy,"analysis/forest (NBAC 1972-2025, CWFIS M3 2026)",,reused,,,"240 m burned-cell indices, reused for the outcome"
+../weather/work/fma_simple.gpkg,analysis/weather,,reused,,,"500 m simplified non-park areas, reused for station lookup (default area file only)"
+,NOAA PSL THREDDS (NCEP/NCAR R1 uwnd 10 hPa),https://psl.noaa.gov/thredds/ncss/grid/Datasets/ncep.reanalysis/Monthlies/pressure/uwnd.mon.mean.nc,2026-10-21 failed,,,HTTP 503 all day (also the PSL time-series CGI returned no data); polar vortex uses the AO Jan-Mar proxy
