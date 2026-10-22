@@ -182,6 +182,23 @@ details.how[open] summary::after{content:"\2212"}
 .foot a{color:inherit}
 .foot .sig2{display:flex;align-items:center;gap:8px;margin-top:12px;color:var(--text)}
 .foot .sig2 img{height:22px;width:auto;flex:none;display:block}
+/* citations */
+sup.cite{font-size:.66em;line-height:0;vertical-align:super;white-space:nowrap;font-weight:600;color:var(--muted);margin-left:1px;letter-spacing:0}
+sup.cite a{display:inline-block;padding:8px 2px;margin:-8px 0;color:var(--muted);text-decoration:none;border-radius:4px}
+sup.cite a:hover,sup.cite a:focus-visible{color:var(--accent);text-decoration:underline}
+.chart .ttl sup.cite{font-weight:600}
+.srcs{font-size:.72rem;color:var(--muted);margin:8px 0 0;line-height:1.6}
+.srcs a{display:inline-block;padding:5px 2px;margin:-5px 0;color:var(--muted)}
+.srcs a:hover,.srcs a:focus-visible{color:var(--accent)}
+.refsec{margin-top:16px;padding-top:12px;border-top:1px solid var(--line)}
+.refsec h3{font-size:1.05rem;margin:0}
+.refsec .lead3{margin-top:4px}
+ol.refs{margin:10px 0 0;padding-left:30px;font-size:.78rem;line-height:1.5}
+ol.refs li{margin:0 0 9px;padding:2px 4px;scroll-margin-top:16px;overflow-wrap:anywhere;border-radius:6px}
+ol.refs li::marker{color:var(--muted);font-variant-numeric:tabular-nums;font-weight:600}
+ol.refs .m{color:var(--muted)}
+ol.refs a{word-break:break-all}
+ol.refs li:target{background:var(--glow)}
 .bl{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
 .bl li{position:relative;padding-left:16px;font-size:.93rem;line-height:1.5}
 .bl li::before{content:"";position:absolute;left:2px;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--fire)}
@@ -208,13 +225,13 @@ details.how[open] summary::after{content:"\2212"}
       <article class="ch" id="c1"><span class="chN">1</span><span class="chK">The result</span>
         <h2 class="chH">Canada's last four fire seasons burned more than twice the area of any four years since 1972</h2>
         <div class="kf">
-          <div><b data-n="C1b.ha_2023_2026_mha" data-f="mha1"></b><span>hectares burned in 2023 to 2026, adding up each year</span></div>
-          <div><b data-n="C1b.ratio" data-f="x1"></b><span>the largest earlier four years, <span data-n="C1b.prev_max_mha" data-f="mha1"></span> hectares in 1993 to 1996</span></div>
-          <div><b data-n="C2.one_in" data-f="oneIn"></b><span>hectares of Canada's forest burned at least once in the four years</span></div>
+          <div><b data-n="C1b.ha_2023_2026_mha" data-f="mha1"></b><span>hectares burned in 2023 to 2026, adding up each year<sup class="cite" data-cite="nbac,cwfif"></sup></span></div>
+          <div><b data-n="C1b.ratio" data-f="x1"></b><span>the largest earlier four years, <span data-n="C1b.prev_max_mha" data-f="mha1"></span> hectares in 1993 to 1996<sup class="cite" data-cite="nbac"></sup></span></div>
+          <div><b data-n="C2.one_in" data-f="oneIn"></b><span>hectares of Canada's forest burned at least once in the four years<sup class="cite" data-cite="nbac,cwfis-m3,cwfif,landcover"></sup></span></div>
         </div>
-        <p class="chP">On the fire agencies' own official totals, which start in 1990, the four years add up to <b data-n="C1b.official_2023_2026_mha" data-f="mha1"></b> hectares against <span data-n="C1b.official_prev_max_mha" data-f="mha1"></span> in 1993 to 1996, <b data-n="C1b.official_ratio" data-f="x1"></b> as much. Counting land that burned twice only once, the fires covered <b data-n="C4.distinct_land_scaled_mha" data-f="mha1"></b> hectares, about the size of Germany. 2023 was the biggest single year on record and 2025 the second; 2026, at <span data-n="C5.official_2026_mha" data-f="mha2"></span> hectares, ranks <span data-n="C1b.rank_by_ha.2026" data-f="ord"></span> since 1972.</p>
+        <p class="chP">On the fire agencies' own official totals, which start in 1990, the four years add up to <b data-n="C1b.official_2023_2026_mha" data-f="mha1"></b> hectares against <span data-n="C1b.official_prev_max_mha" data-f="mha1"></span> in 1993 to 1996, <b data-n="C1b.official_ratio" data-f="x1"></b> as much.<sup class="cite" data-cite="nfd-fire,cwfif,ciffc"></sup> Counting land that burned twice only once, the fires covered <b data-n="C4.distinct_land_scaled_mha" data-f="mha1"></b> hectares, about the size of Germany.<sup class="cite" data-cite="nbac,cwfis-m3,cwfif,un-dyb"></sup> 2023 was the biggest single year on record and 2025 the second; 2026, at <span data-n="C5.official_2026_mha" data-f="mha2"></span> hectares, ranks <span data-n="C1b.rank_by_ha.2026" data-f="ord"></span> since 1972.<sup class="cite" data-cite="nbac,nfd-fire,cwfif"></sup></p>
         <div class="chart" id="chForest"></div>
-        <p class="fnote">1972 to 2025: National Burned Area Composite, mapped from satellite images. 2026: official agency total as of October 20, 2026, including national parks. Official totals since 1990 come from the National Forestry Database.</p>
+        <p class="fnote">1972 to 2025: National Burned Area Composite, mapped from satellite images. 2026: official agency total as of October 20, 2026, including national parks. Official totals since 1990 come from the National Forestry Database.<sup class="cite" data-cite="nbac,cwfif,nfd-fire"></sup></p>
       </article>
     </div>
   </section>
@@ -223,7 +240,7 @@ details.how[open] summary::after{content:"\2212"}
   <section class="panel" id="explore">
     <span class="tag">Explore the map</span>
     <h2><span data-n="C35.records_scaled" data-f="int"></span> fire areas burned more of their forest in 2026 than in any year since 1972</h2>
-    <p class="lead3">Canada's <span data-n="X.fma_areas" data-f="int"></span> fire management areas, each coloured by the share of its forest that burned compared with its own 1991 to 2020 average. Areas where less than 0.1% of the forest burned stay grey. Tap an area for its numbers.</p>
+    <p class="lead3">Canada's <span data-n="X.fma_areas" data-f="int"></span> fire management areas, each coloured by the share of its forest that burned compared with its own 1991 to 2020 average. Areas where less than 0.1% of the forest burned stay grey.<sup class="cite" data-cite="fma-bc,fma-ab,fma-sk,fma-mb,fma-on,fma-qc,fma-nl,fma-nt,fma-yt,statcan-geo,landcover,nbac,cwfis-m3"></sup> Tap an area for its numbers.</p>
     <div class="seg" id="yearSeg" role="tablist" style="margin-top:10px"></div>
     <div class="mapwrap" id="mapWrap">
       <svg id="map" role="img" aria-label="Map of Canada's fire management areas"></svg>
@@ -235,7 +252,7 @@ details.how[open] summary::after{content:"\2212"}
     <div id="layerNotes"></div>
     <div class="card" id="areaCard" hidden></div>
     <div class="chips picks" id="areaPicks"></div>
-    <p class="fnote">Shares of forest burned are from satellite-mapped outlines. Hectares for 2026 are scaled to each province's official total; province totals include national parks inside them. 2023 to 2025 hectares are as mapped by satellite.</p>
+    <p class="fnote">Shares of forest burned are from satellite-mapped outlines. Hectares for 2026 are scaled to each province's official total; province totals include national parks inside them. 2023 to 2025 hectares are as mapped by satellite.<sup class="cite" data-cite="nbac,cwfis-m3,cwfif"></sup></p>
   </section>
 
   <!-- 2 to 4: causes -->
@@ -243,21 +260,21 @@ details.how[open] summary::after{content:"\2212"}
     <div class="story2">
       <article class="ch" id="c2"><span class="chN">2</span><span class="chK">Climate</span>
         <h2 class="chH">Fire seasons from 2016 to 2026 were <span data-n="C6.warming_c" data-f="deg"></span> warmer than in 1961 to 1990</h2>
-        <p class="chP">Every one of <b data-n="C7.stations" data-f="int"></b> long-record weather stations near Canada's forests shows May to August warming. Within the same area, each extra 1&nbsp;°C in a fire season goes with about <b data-n="C8.pct_per_degree" data-f="pct0"></b> more area burned (range <span data-n="C8.lo" data-f="pct0"></span> to <span data-n="C8.hi" data-f="pct0"></span>). With the warming taken out, the same model expects less burning in 2023 to 2026: the warmth that actually happened goes with <b data-n="C9.ratio" data-f="x2"></b> as much area burned (range <span data-n="C9.lo" data-f="d2"></span> to <span data-n="C9.hi" data-f="d2"></span>), or about <b data-n="C9.share_attributable" data-f="frac"></b> of it.</p>
+        <p class="chP">Every one of <b data-n="C7.stations" data-f="int"></b> long-record weather stations near Canada's forests shows May to August warming.<sup class="cite" data-cite="ahccd,eccc-daily,cccr,ipcc"></sup> Within the same area, each extra 1&nbsp;°C in a fire season goes with about <b data-n="C8.pct_per_degree" data-f="pct0"></b> more area burned (range <span data-n="C8.lo" data-f="pct0"></span> to <span data-n="C8.hi" data-f="pct0"></span>).<sup class="cite" data-cite="ahccd,eccc-daily,nbac,cwfis-m3,cwfif"></sup> With the warming taken out, the same model expects less burning in 2023 to 2026: the warmth that actually happened goes with <b data-n="C9.ratio" data-f="x2"></b> as much area burned (range <span data-n="C9.lo" data-f="d2"></span> to <span data-n="C9.hi" data-f="d2"></span>), or about <b data-n="C9.share_attributable" data-f="frac"></b> of it.<sup class="cite" data-cite="ahccd,eccc-daily,nbac,cwfif"></sup></p>
         <div class="chart" id="chTemp"></div>
-        <p class="fnote">This is a statistical comparison across <span data-n="X.climate_areas" data-f="int"></span> forested areas and 1972 to 2025, not a physical climate model. Canada's value is the forest-weighted average of area values.</p>
+        <p class="fnote">This is a statistical comparison across <span data-n="X.climate_areas" data-f="int"></span> forested areas and 1972 to 2025, not a physical climate model. Canada's value is the forest-weighted average of area values.<sup class="cite" data-cite="landcover"></sup></p>
       </article>
       <article class="ch" id="c3"><span class="chN">3</span><span class="chK">Drought</span>
         <h2 class="chH">2023 to 2026 brought the driest four fire seasons since 1950</h2>
-        <p class="chP">April to September rain near Canada's forests averaged <b data-n="C10.pct_of_normal" data-f="pct0"></b> of normal over the four years, the driest of <span data-n="C10.of_windows" data-f="int"></span> four-year stretches since 1950. Fire-season rain shows no long-term trend, so this dry run came on top of the warming rather than from it. Drought maps agree: in every one of the four years, more than half the forest was in moderate drought or worse at some point in the season. In 2003 to 2022 the highest share was <b data-n="C12.max_2003_2022" data-f="pct1"></b>.</p>
+        <p class="chP">April to September rain near Canada's forests averaged <b data-n="C10.pct_of_normal" data-f="pct0"></b> of normal over the four years, the driest of <span data-n="C10.of_windows" data-f="int"></span> four-year stretches since 1950.<sup class="cite" data-cite="ahccd,eccc-daily"></sup> Fire-season rain shows no long-term trend, so this dry run came on top of the warming rather than from it.<sup class="cite" data-cite="ahccd,eccc-daily"></sup> Drought maps agree: in every one of the four years, more than half the forest was in moderate drought or worse at some point in the season. In 2003 to 2022 the highest share was <b data-n="C12.max_2003_2022" data-f="pct1"></b>.<sup class="cite" data-cite="cdm,landcover"></sup></p>
         <div class="chart" id="chDrought"></div>
-        <p class="fnote">Moderate drought or worse is category D1 or higher on Agriculture and Agri-Food Canada's Canadian Drought Monitor, which starts in 2003. Shares are weighted by forest area.</p>
+        <p class="fnote">Moderate drought or worse is category D1 or higher on Agriculture and Agri-Food Canada's Canadian Drought Monitor, which starts in 2003. Shares are weighted by forest area.<sup class="cite" data-cite="cdm,landcover"></sup></p>
       </article>
       <article class="ch" id="c4"><span class="chN">4</span><span class="chK">Expected against actual</span>
         <h2 class="chH">The usual drivers predicted only one-<span data-n="C15.ratio_after" data-f="nth"></span> of the forest that burned</h2>
-        <p class="chP">It was not more lightning or more careless people. In 2026, people started <b data-n="C13.human_2026" data-f="int"></b> fires, the fewest in <span data-n="X.human_rank_years" data-f="int"></span> years, and lightning fires were below their 1991 to 2020 average. Lightning still did the damage: it started <b data-n="C14.fire_share_pct" data-f="pct1"></b> of 2026's fires but <b data-n="C14.area_share_pct" data-f="pct1"></b> of the area burned. A model trained on 2003 to 2022, using drought, fire weather, the number of fires and recent burning, expected <b data-n="C15.predicted_pct" data-f="pct2"></b> of the forest in the modelled areas to burn over 2023 to 2026. In fact <b data-n="C15.actual_pct" data-f="pct2"></b> burned, <b data-n="C15.ratio_after" data-f="x1"></b> as much. The model also under-predicts ordinary years, but even after allowing for that the miss is about <span data-n="C15.beyond_calibration" data-f="x1"></span>.</p>
+        <p class="chP">It was not more lightning or more careless people. In 2026, people started <b data-n="C13.human_2026" data-f="int"></b> fires, the fewest in <span data-n="X.human_rank_years" data-f="int"></span> years, and lightning fires were below their 1991 to 2020 average.<sup class="cite" data-cite="cwfif,nfd-fire,cnfdb"></sup> Lightning still did the damage: it started <b data-n="C14.fire_share_pct" data-f="pct1"></b> of 2026's fires but <b data-n="C14.area_share_pct" data-f="pct1"></b> of the area burned.<sup class="cite" data-cite="cwfif"></sup> A model trained on 2003 to 2022, using drought, fire weather, the number of fires and recent burning, expected <b data-n="C15.predicted_pct" data-f="pct2"></b> of the forest in the modelled areas to burn over 2023 to 2026. In fact <b data-n="C15.actual_pct" data-f="pct2"></b> burned, <b data-n="C15.ratio_after" data-f="x1"></b> as much. The model also under-predicts ordinary years, but even after allowing for that the miss is about <span data-n="C15.beyond_calibration" data-f="x1"></span>.<sup class="cite" data-cite="cdm,cwfis-fwi,vanwagner,cnfdb,nbac,cwfis-m3,cwfif"></sup></p>
         <div class="chart" id="chModel"></div>
-        <p class="fnote">Expected values for 2003 to 2022 come from fits that leave each year out. The model covers <span data-n="X.model_areas" data-f="int"></span> forested fire areas, so its shares differ slightly from Canada-wide figures.</p>
+        <p class="fnote">Expected values for 2003 to 2022 come from fits that leave each year out. The model covers <span data-n="X.model_areas" data-f="int"></span> forested fire areas, so its shares differ slightly from Canada-wide figures.<sup class="cite" data-cite="nbac,landcover"></sup></p>
       </article>
     </div>
   </section>
@@ -266,7 +283,7 @@ details.how[open] summary::after{content:"\2212"}
   <section class="panel" id="replay">
     <span class="tag">Season replay</span>
     <h2><span data-n="C37.peak5_share_pct" data-f="pct1"></span> of 2026's satellite fire detections came in five weeks, <span data-n="X.peak_start" data-f="dmd"></span> to <span data-n="X.peak_end" data-f="dmd"></span></h2>
-    <p class="lead3">Weekly heat detections from satellites in 2026, with each fire's outline appearing in the week it was first seen. Press play or drag the slider.</p>
+    <p class="lead3">Weekly heat detections from satellites in 2026, with each fire's outline appearing in the week it was first seen.<sup class="cite" data-cite="cwfis-hotspots,cwfis-m3"></sup> Press play or drag the slider.</p>
     <div class="chips" id="rpChips"></div>
     <div class="rp">
       <div>
@@ -284,14 +301,14 @@ details.how[open] summary::after{content:"\2212"}
     <div class="story2">
       <article class="ch" id="c5"><span class="chN">5</span><span class="chK">People</span>
         <h2 class="chH">Smoke caused roughly <span data-n="C20.pooled_ratio_lo" data-f="r100"></span> to <span data-n="C20.pooled_ratio_hi" data-f="r100"></span> deaths for every death in the fires themselves</h2>
-        <p class="chP">Breathing wildfire smoke for a few days raises the risk of dying, mostly for older people and people with heart or lung disease. Applying published risk estimates to daily smoke levels gives <b data-n="C18.2026.aqbat" data-f="int"></b> to <b data-n="C18.2026.chen" data-f="int"></b> deaths in 2026 and <b data-n="C18.2023.aqbat" data-f="int"></b> to <b data-n="C18.2023.chen" data-f="int"></b> in 2023. Federal records show <b data-n="C19.direct_deaths.2026" data-f="int"></b> direct wildfire deaths in 2026, all in one firefighting air crash west of Fort Simpson, Northwest Territories, on June 24. July 16, 2026 was the smokiest day for Canadians in the 2018 to 2026 record: fine smoke particles averaged <b data-n="C16.popw_pm25" data-f="d1"></b> micrograms per cubic metre of air, above the previous high of <span data-n="C16.previous_high" data-f="d1"></span> on June 25, 2023. That day helped give <b data-n="C17.ontario_people_gt100" data-f="mil1"></b> Ontarians at least one day above 100, the most in any year since 2018.</p>
+        <p class="chP">Breathing wildfire smoke for a few days raises the risk of dying, mostly for older people and people with heart or lung disease.<sup class="cite" data-cite="chen2021"></sup> Applying published risk estimates to daily smoke levels gives <b data-n="C18.2026.aqbat" data-f="int"></b> to <b data-n="C18.2026.chen" data-f="int"></b> deaths in 2026 and <b data-n="C18.2023.aqbat" data-f="int"></b> to <b data-n="C18.2023.chen" data-f="int"></b> in 2023.<sup class="cite" data-cite="naps,airnow,statcan-da,statcan-deaths,statcan-popest,aqbat,matz2026,chen2021"></sup> Federal records show <b data-n="C19.direct_deaths.2026" data-f="int"></b> direct wildfire deaths in 2026, all in one firefighting air crash west of Fort Simpson, Northwest Territories, on June 24.<sup class="cite" data-cite="tsb"></sup> July 16, 2026 was the smokiest day for Canadians in the 2018 to 2026 record: fine smoke particles averaged <b data-n="C16.popw_pm25" data-f="d1"></b> micrograms per cubic metre of air, above the previous high of <span data-n="C16.previous_high" data-f="d1"></span> on June 25, 2023.<sup class="cite" data-cite="naps,airnow,statcan-da,statcan-geo"></sup> That day helped give <b data-n="C17.ontario_people_gt100" data-f="mil1"></b> Ontarians at least one day above 100, the most in any year since 2018.<sup class="cite" data-cite="naps,airnow,statcan-da"></sup></p>
         <div class="chart" id="chDeaths"></div>
-        <p class="fnote">Smoke deaths are modelled, not counted, for provinces with air monitor data; 2025 and 2026 leave out Manitoba, Newfoundland and Labrador, the Northwest Territories and Nunavut. The low figure uses Health Canada's coefficient, the high one a wildfire-specific study (Chen and others, 2021). Direct deaths are mostly firefighting aviation deaths in Transportation Safety Board records, plus <span data-n="X.direct_2025_public_safety" data-f="int"></span> deaths in 2025 named by Public Safety Canada.</p>
+        <p class="fnote">Smoke deaths are modelled, not counted, for provinces with air monitor data; 2025 and 2026 leave out Manitoba, Newfoundland and Labrador, the Northwest Territories and Nunavut. The low figure uses Health Canada's coefficient, the high one a wildfire-specific study (Chen and others, 2021).<sup class="cite" data-cite="aqbat,matz2026,chen2021"></sup> Direct deaths are mostly firefighting aviation deaths in Transportation Safety Board records, plus <span data-n="X.direct_2025_public_safety" data-f="int"></span> deaths in 2025 named by Public Safety Canada.<sup class="cite" data-cite="tsb,cdd"></sup></p>
         <div class="sub">
           <h3>People on reserves were <span data-n="C21.ratio" data-f="x0"></span> as likely as other Canadians to live near large fires year after year</h3>
-          <p class="chP">Share of people living within 10 km of a fire of 1,000 hectares or more in at least two of the four years. <span data-n="C22.communities" data-f="int"></span> First Nation communities were within 10 km of a mapped fire of any size in all four years, among them Chemawawin Cree Nation, Kanaka Bar and Lake St. Martin.</p>
+          <p class="chP">Share of people living within 10 km of a fire of 1,000 hectares or more in at least two of the four years.<sup class="cite" data-cite="al-ta,statcan-da,nbac,cwfis-m3"></sup> <span data-n="C22.communities" data-f="int"></span> First Nation communities were within 10 km of a mapped fire of any size in all four years, among them Chemawawin Cree Nation, Kanaka Bar and Lake St. Martin.<sup class="cite" data-cite="isc-fn,nbac,cwfis-m3"></sup></p>
           <div class="chart" id="chReserve"></div>
-          <p class="fnote">People are counted at 2021 Census dissemination areas; on-reserve counts are lower bounds because some reserves were not fully counted. Living near a fire is not the same as being evacuated.</p>
+          <p class="fnote">People are counted at 2021 Census dissemination areas; on-reserve counts are lower bounds because some reserves were not fully counted. Living near a fire is not the same as being evacuated.<sup class="cite" data-cite="statcan-da,census-profile"></sup></p>
         </div>
       </article>
     </div>
@@ -301,7 +318,7 @@ details.how[open] summary::after{content:"\2212"}
   <section class="panel" id="city">
     <span class="tag">Find your city</span>
     <h2>Smoke reached cities hundreds of kilometres from the nearest fire. Look up yours.</h2>
-    <p class="lead3">Any of <span data-n="X.places" data-f="int"></span> population centres and smoke monitor towns: the nearest 2026 wildfire, smoky days from 2018 to 2026, and a 2026 smoke calendar.</p>
+    <p class="lead3">Any of <span data-n="X.places" data-f="int"></span> population centres and smoke monitor towns: the nearest 2026 wildfire, smoky days from 2018 to 2026, and a 2026 smoke calendar.<sup class="cite" data-cite="statcan-popctr,cwfis-m3,naps,airnow"></sup></p>
     <div class="search">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="cq" type="search" placeholder="Search a city or town" autocomplete="off" aria-label="Search a city or town">
@@ -316,55 +333,55 @@ details.how[open] summary::after{content:"\2212"}
     <div class="story2">
       <article class="ch" id="c6"><span class="chN">6</span><span class="chK">Homes and property</span>
         <h2 class="chH">Our satellite check flags about <span data-n="C23.total" data-f="r100"></span> buildings likely destroyed at the fires we checked</h2>
-        <p class="chP">Canada has no national count of buildings lost to wildfire, so we built one from before-and-after Sentinel-2 satellite images. Tested on Jasper's official building-by-building damage list, <b data-n="C23.precision" data-f="pct100"></b> of the buildings it flags were really destroyed, and it finds <b data-n="C23.recall" data-f="pct100"></b> of those that were. At Bald Range near Summerland, BC in 2026 it flags <b data-n="C24.flagged" data-f="int"></b>, against about <span data-n="C24.official_approx" data-f="int"></span> damaged or destroyed in the official count. Where official counts exist, the homes and buildings lost at <span data-n="C26.events" data-f="word"></span> events were worth about <b data-n="C26.value_cad_m" data-f="musd"></b> (census home values).</p>
+        <p class="chP">Canada has no national count of buildings lost to wildfire, so we built one from before-and-after Sentinel-2 satellite images.<sup class="cite" data-cite="sentinel2,msbuildings"></sup> Tested on Jasper's official building-by-building damage list, <b data-n="C23.precision" data-f="pct100"></b> of the buildings it flags were really destroyed, and it finds <b data-n="C23.recall" data-f="pct100"></b> of those that were.<sup class="cite" data-cite="jasper-damage"></sup> At Bald Range near Summerland, BC in 2026 it flags <b data-n="C24.flagged" data-f="int"></b>, against about <span data-n="C24.official_approx" data-f="int"></span> damaged or destroyed in the official count.<sup class="cite" data-cite="summerland"></sup> Where official counts exist, the homes and buildings lost at <span data-n="C26.events" data-f="word"></span> events were worth about <b data-n="C26.value_cad_m" data-f="musd"></b> (census home values).<sup class="cite" data-cite="jasper-damage,hrfe,rdco,csrd,tnrd,mnp-sk,summerland,census-profile"></sup></p>
         <div class="chart" id="chBuild"></div>
-        <p class="fnote">Each year covers different fires: four 2023 events, Jasper in 2024 (the test set itself), two 2025 events and every 2026 fire. These are not national totals.</p>
+        <p class="fnote">Each year covers different fires: four 2023 events, Jasper in 2024 (the test set itself), two 2025 events and every 2026 fire. These are not national totals.<sup class="cite" data-cite="sentinel2,msbuildings,cwfis-m3"></sup></p>
         <div class="sub">
           <h3><span data-n="C25.roads_km" data-f="int"></span> km of roads ran through land that burned from 2023 to 2026</h3>
-          <p class="chP">Kilometres of road inside each year's burned area, with <b data-n="C25.rail_km" data-f="int"></b> km of railway over the four years.</p>
+          <p class="chP">Kilometres of road inside each year's burned area, with <b data-n="C25.rail_km" data-f="int"></b> km of railway over the four years.<sup class="cite" data-cite="nrn,nrwn,nbac,cwfis-m3"></sup></p>
           <div class="chart" id="chRoads"></div>
         </div>
       </article>
       <article class="ch" id="c7"><span class="chN">7</span><span class="chK">Money</span>
         <h2 class="chH">Provincial firefighting bills about doubled, to <span data-n="C28.mean_2023_2025_b" data-f="b2"></span> a year</h2>
-        <p class="chP">British Columbia, Ontario, Alberta and Saskatchewan spent <b data-n="C28.mean_2016_2022_b" data-f="b2"></b> a year fighting fires in 2016 to 2022 and <b data-n="C28.mean_2023_2025_b" data-f="b2"></b> a year in 2023 to 2025, in 2025 dollars.</p>
+        <p class="chP">British Columbia, Ontario, Alberta and Saskatchewan spent <b data-n="C28.mean_2016_2022_b" data-f="b2"></b> a year fighting fires in 2016 to 2022 and <b data-n="C28.mean_2023_2025_b" data-f="b2"></b> a year in 2023 to 2025, in 2025 dollars.<sup class="cite" data-cite="bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi"></sup></p>
         <div class="chart" id="chCost"></div>
-        <p class="fnote">Each province's own definition. *2022 has no Alberta figure. 2026 is not complete for any province except British Columbia.</p>
+        <p class="fnote">Each province's own definition. *2022 has no Alberta figure. 2026 is not complete for any province except British Columbia.<sup class="cite" data-cite="bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi"></sup></p>
         <div class="sub">
           <h3>Counting timber and smoke deaths, the 2023 to 2026 bill runs from <span data-n="C29.all_components_aqbat_b" data-f="b1"></span> to <span data-n="C29.all_components_chen_b" data-f="b1"></span></h3>
           <div class="kf four">
-            <div><b data-n="C29.documented_spending_losses_b" data-f="b2"></b><span>at least, in firefighting, federal aid and insured losses</span></div>
-            <div><b data-n="C27.timber_2023_nominal_b" data-f="b2"></b><span>value of timber burned in 2023 at Crown prices, <span data-n="C27.ratio" data-f="x1"></span> what Canada collected that year</span></div>
-            <div><b data-n="C30.years_of_2024_harvest" data-f="d1"></b><span>years of Canada's 2024 timber harvest stood on the land that burned</span></div>
-            <div><b data-n="C39.jasper_change_pct" data-f="pct1s"></b><span>Jasper National Park visits in 2024 to 2025 against before COVID; all national parks <span data-n="C39.network_change_pct" data-f="pct1s"></span></span></div>
+            <div><b data-n="C29.documented_spending_losses_b" data-f="b2"></b><span>at least, in firefighting, federal aid and insured losses<sup class="cite" data-cite="bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi,grants,cdd,catiq"></sup></span></div>
+            <div><b data-n="C27.timber_2023_nominal_b" data-f="b2"></b><span>value of timber burned in 2023 at Crown prices, <span data-n="C27.ratio" data-f="x1"></span> what Canada collected that year<sup class="cite" data-cite="nfd-revenue,bc-budget,knn2011,nbac"></sup></span></div>
+            <div><b data-n="C30.years_of_2024_harvest" data-f="d1"></b><span>years of Canada's 2024 timber harvest stood on the land that burned<sup class="cite" data-cite="nfd-harvest,knn2011,nbac,cwfis-m3"></sup></span></div>
+            <div><b data-n="C39.jasper_change_pct" data-f="pct1s"></b><span>Jasper National Park visits in 2024 to 2025 against before COVID; all national parks <span data-n="C39.network_change_pct" data-f="pct1s"></span><sup class="cite" data-cite="parks-attendance"></sup></span></div>
           </div>
-          <p class="fnote">The range comes from the two smoke-death estimates, each valued at the federal value of a statistical life. Timber is valued at what the Crown charges for standing trees; much of it was in remote forest that would not have been cut, so it is a measure of size, not a cash loss.</p>
+          <p class="fnote">The range comes from the two smoke-death estimates, each valued at the federal value of a statistical life.<sup class="cite" data-cite="aqbat,chen2021,matz2026"></sup> Timber is valued at what the Crown charges for standing trees; much of it was in remote forest that would not have been cut, so it is a measure of size, not a cash loss.<sup class="cite" data-cite="nfd-revenue,bc-budget"></sup></p>
         </div>
       </article>
       <article class="ch" id="c8"><span class="chN">8</span><span class="chK">Environment</span>
         <h2 class="chH">In 2023, fires in managed forests alone gave off more carbon than everything else Canada counts</h2>
-        <p class="chP">Canada's managed-forest fires released <b data-n="C31.managed_wildfire_2023_mt" data-f="int"></b> million tonnes of carbon dioxide and other greenhouse gases in 2023, <b data-n="C31.share_pct" data-f="pct0"></b> of the <span data-n="C31.national_total_2023_mt" data-f="d1"></span> million tonnes in the national total. None of it is in that total: the official inventory lists these emissions as a side note and does not estimate fires in the unmanaged far north at all.</p>
+        <p class="chP">Canada's managed-forest fires released <b data-n="C31.managed_wildfire_2023_mt" data-f="int"></b> million tonnes of carbon dioxide and other greenhouse gases in 2023, <b data-n="C31.share_pct" data-f="pct0"></b> of the <span data-n="C31.national_total_2023_mt" data-f="d1"></span> million tonnes in the national total.<sup class="cite" data-cite="nir2026"></sup> None of it is in that total: the official inventory lists these emissions as a side note and does not estimate fires in the unmanaged far north at all.<sup class="cite" data-cite="nir2026"></sup></p>
         <div class="chart" id="chCO2"></div>
-        <p class="fnote">Official National Inventory Report figures (published rounded to two digits), direct emissions from managed-forest fires. The national total excludes land use and forestry.</p>
+        <p class="fnote">Official National Inventory Report figures (published rounded to two digits), direct emissions from managed-forest fires. The national total excludes land use and forestry.<sup class="cite" data-cite="nir2026"></sup></p>
         <div class="sub">
           <h3>Forests are burning again before they can grow back</h3>
-          <p class="chP">In black spruce and jack pine forest, <b data-n="C32.share_2023_2026_pct" data-f="pct1"></b> of the area burned in 2023 to 2026 had already burned within the previous 15 years, against <b data-n="C32.share_1990s_pct" data-f="pct1"></b> in the 1990s. That is <span data-n="C32.ha_per_year_2023_2026" data-f="int"></span> hectares a year, against <span data-n="C32.ha_per_year_1990s" data-f="int"></span>. These forests need decades between fires to grow seed again.</p>
+          <p class="chP">In black spruce and jack pine forest, <b data-n="C32.share_2023_2026_pct" data-f="pct1"></b> of the area burned in 2023 to 2026 had already burned within the previous 15 years, against <b data-n="C32.share_1990s_pct" data-f="pct1"></b> in the 1990s. That is <span data-n="C32.ha_per_year_2023_2026" data-f="int"></span> hectares a year, against <span data-n="C32.ha_per_year_1990s" data-f="int"></span>.<sup class="cite" data-cite="scanfi,nbac,cwfis-m3"></sup> These forests need decades between fires to grow seed again.</p>
           <div class="chart" id="chReburn"></div>
         </div>
         <div class="sub">
           <h3><span data-n="C33.ranges_over_35pct" data-f="int"></span> of <span data-n="C33.of_ranges" data-f="int"></span> boreal caribou ranges have had more than a third of their land burned since 1987</h3>
-          <p class="chP">Woodland caribou need old forest with lichen, which takes decades to return after fire. All of these ranges were already past 35% before 2026; 2026 added a little more in several.</p>
+          <p class="chP">Woodland caribou need old forest with lichen, which takes decades to return after fire. All of these ranges were already past 35% before 2026; 2026 added a little more in several.<sup class="cite" data-cite="caribou,nbac,cwfis-m3"></sup></p>
           <div class="chart" id="chCaribou"></div>
         </div>
       </article>
       <article class="ch" id="c9"><span class="chN">9</span><span class="chK">Bottom line</span>
         <h2 class="chH">A warmer climate set the stage, a rare drought ran four years, and the costs reached far beyond the forest</h2>
         <ul class="bl">
-          <li>2023 to 2026 burned <span data-n="C1b.ha_2023_2026_mha" data-f="mha1"></span> hectares, <span data-n="C1b.ratio" data-f="x1"></span> the largest earlier four years, and 1 hectare in every <span data-n="C2.one_in" data-f="int"></span> of Canada's forest.</li>
-          <li>Fire seasons from 2016 to 2026 were <span data-n="C6.warming_c" data-f="deg"></span> warmer than in 1961 to 1990, and 2023 to 2026 were the driest four since 1950.</li>
-          <li>Known drivers predicted only one-<span data-n="C15.ratio_after" data-f="nth"></span> of what burned, so these fires behaved in ways the past did not prepare us for.</li>
-          <li>Smoke caused roughly <span data-n="C20.pooled_ratio_lo" data-f="r100"></span> to <span data-n="C20.pooled_ratio_hi" data-f="r100"></span> deaths for every death in the flames, and people on reserves lived near large fires again and again.</li>
-          <li>The bill for 2023 to 2026 runs from <span data-n="C29.all_components_aqbat_b" data-f="b1"></span> to <span data-n="C29.all_components_chen_b" data-f="b1"></span>, and none of the fires' carbon is in Canada's emissions total.</li>
+          <li>2023 to 2026 burned <span data-n="C1b.ha_2023_2026_mha" data-f="mha1"></span> hectares, <span data-n="C1b.ratio" data-f="x1"></span> the largest earlier four years, and 1 hectare in every <span data-n="C2.one_in" data-f="int"></span> of Canada's forest.<sup class="cite" data-cite="nbac,cwfif,landcover"></sup></li>
+          <li>Fire seasons from 2016 to 2026 were <span data-n="C6.warming_c" data-f="deg"></span> warmer than in 1961 to 1990, and 2023 to 2026 were the driest four since 1950.<sup class="cite" data-cite="ahccd,eccc-daily,cccr,ipcc"></sup></li>
+          <li>Known drivers predicted only one-<span data-n="C15.ratio_after" data-f="nth"></span> of what burned, so these fires behaved in ways the past did not prepare us for.<sup class="cite" data-cite="cdm,cwfis-fwi,cnfdb,nbac"></sup></li>
+          <li>Smoke caused roughly <span data-n="C20.pooled_ratio_lo" data-f="r100"></span> to <span data-n="C20.pooled_ratio_hi" data-f="r100"></span> deaths for every death in the flames, and people on reserves lived near large fires again and again.<sup class="cite" data-cite="aqbat,chen2021,tsb,al-ta"></sup></li>
+          <li>The bill for 2023 to 2026 runs from <span data-n="C29.all_components_aqbat_b" data-f="b1"></span> to <span data-n="C29.all_components_chen_b" data-f="b1"></span>, and none of the fires' carbon is in Canada's emissions total.<sup class="cite" data-cite="bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi,grants,catiq,nfd-revenue,matz2026,nir2026"></sup></li>
         </ul>
       </article>
     </div>
@@ -376,15 +393,15 @@ details.how[open] summary::after{content:"\2212"}
       <summary>How we did this</summary>
       <h3>Data sources</h3>
       <ul>
-        <li>Natural Resources Canada, Canadian Forest Service: National Burned Area Composite (fire outlines 1972 to 2025), Canadian Wildland Fire Information System (2026 fire outlines, satellite heat detections, fire weather), National Forestry Database (official area burned and fire causes), Land Cover of Canada 2020, SCANFI tree species maps, National Hydro Network watersheds.</li>
-        <li>Canadian Interagency Forest Fire Centre and provincial and territorial fire agencies: 2026 official totals, fire lists and area boundaries (BC Wildfire Service, Alberta Wildfire, Saskatchewan Public Safety Agency, Manitoba Wildfire Service, Ontario Ministry of Natural Resources, SOPFEU, Newfoundland and Labrador, Northwest Territories, Yukon), and Parks Canada.</li>
-        <li>Environment and Climate Change Canada: homogenized climate station records, daily climate data, National Air Pollution Surveillance validated air data, National Inventory Report 2026, boreal caribou ranges.</li>
-        <li>Agriculture and Agri-Food Canada: Canadian Drought Monitor. Statistics Canada: 2021 Census, population centres, boundaries.</li>
-        <li>Health Canada (Air Quality Benefits Assessment Tool risk coefficients); Chen and others, Lancet Planetary Health, 2021; US Environmental Protection Agency AirNow (real-time Canadian air data for 2024 to 2026).</li>
-        <li>Transportation Safety Board, Public Safety Canada, Indigenous Services Canada, Canadian Disaster Database; Copernicus Sentinel-2 imagery (European Space Agency); Microsoft building footprints; Municipality of Jasper and District of Summerland damage counts; CatIQ insured loss estimates; Province of British Columbia community watersheds; provincial public accounts for firefighting costs.</li>
+        <li>Natural Resources Canada, Canadian Forest Service: National Burned Area Composite (fire outlines 1972 to 2025), Canadian Wildland Fire Information System (2026 fire outlines, satellite heat detections, fire weather), National Forestry Database (official area burned and fire causes), Land Cover of Canada 2020, SCANFI tree species maps, National Hydro Network watersheds.<sup class="cite" data-cite="nbac,cwfis-m3,cwfis-hotspots,cwfis-fwi,nfd-fire,cnfdb,landcover,scanfi,nhn,knn2011"></sup></li>
+        <li>Canadian Interagency Forest Fire Centre and provincial and territorial fire agencies: 2026 official totals, fire lists and area boundaries (BC Wildfire Service, Alberta Wildfire, Saskatchewan Public Safety Agency, Manitoba Wildfire Service, Ontario Ministry of Natural Resources, SOPFEU, Newfoundland and Labrador, Northwest Territories, Yukon), and Parks Canada.<sup class="cite" data-cite="cwfif,ciffc,fma-bc,fma-ab,fma-sk,fma-mb,fma-on,fma-qc,fma-nl,fma-nt,fma-yt,statcan-geo"></sup></li>
+        <li>Environment and Climate Change Canada: homogenized climate station records, daily climate data, National Air Pollution Surveillance validated air data, National Inventory Report 2026, boreal caribou ranges.<sup class="cite" data-cite="ahccd,eccc-daily,naps,nir2026,caribou"></sup></li>
+        <li>Agriculture and Agri-Food Canada: Canadian Drought Monitor. Statistics Canada: 2021 Census, population centres, boundaries.<sup class="cite" data-cite="cdm,statcan-geo,statcan-popctr,statcan-da,statcan-pt,census-profile,statcan-deaths,statcan-popest"></sup></li>
+        <li>Health Canada (Air Quality Benefits Assessment Tool risk coefficients); Chen and others, Lancet Planetary Health, 2021; US Environmental Protection Agency AirNow (real-time Canadian air data for 2024 to 2026).<sup class="cite" data-cite="aqbat,matz2026,chen2021,airnow"></sup></li>
+        <li>Transportation Safety Board, Public Safety Canada, Indigenous Services Canada, Canadian Disaster Database; Copernicus Sentinel-2 imagery (European Space Agency); Microsoft building footprints; Municipality of Jasper and District of Summerland damage counts; CatIQ insured loss estimates; Province of British Columbia community watersheds; provincial public accounts for firefighting costs.<sup class="cite" data-cite="tsb,cdd,isc-fn,al-ta,sentinel2,msbuildings,jasper-damage,summerland,catiq,bc-watersheds,bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi"></sup></li>
       </ul>
       <h3>What we did, in plain words</h3>
-      <p>We laid every mapped fire outline from 1972 to 2026 over a 240 m grid of Canada's forest and added up, for each of <span data-n="X.fma_areas" data-f="int"></span> fire management areas, how much forest burned each year. Each area is compared with its own 1991 to 2020 average and its own record. For warming and drought we built fire-season temperature and rain records from long-running weather stations, then compared each area's burning with its own climate year by year. Smoke exposure comes from daily air monitor readings near where people live. Building losses come from satellite images taken before and after each fire.</p>
+      <p>We laid every mapped fire outline from 1972 to 2026 over a 240 m grid of Canada's forest and added up, for each of <span data-n="X.fma_areas" data-f="int"></span> fire management areas, how much forest burned each year. Each area is compared with its own 1991 to 2020 average and its own record. For warming and drought we built fire-season temperature and rain records from long-running weather stations, then compared each area's burning with its own climate year by year. Smoke exposure comes from daily air monitor readings near where people live. Building losses come from satellite images taken before and after each fire.<sup class="cite" data-cite="nbac,cwfis-m3,landcover,ahccd,eccc-daily,cwfis-fwi,vanwagner,naps,airnow,sentinel2"></sup></p>
       <h3>Caveats</h3>
       <ul>
         <li><b>Mapped outlines against official totals.</b> 2026 outlines are drawn around satellite heat detections and include unburned patches, so they cover about <span data-n="X.outline_excess_pct" data-f="pct0"></span> more land than the official total. Hectares for 2026 are scaled down to official totals province by province; shares of forest burned use the mapped outlines.</li>
@@ -396,9 +413,14 @@ details.how[open] summary::after{content:"\2212"}
       </ul>
       <p>Farm, grass and military-range burns with no agency fire report are left out of the distance to the nearest wildfire. All numbers on this page come from one file, <a href="data/story.json">data/story.json</a>.</p>
     </details>
+    <div class="refsec" id="references">
+      <h3>References</h3>
+      <p class="lead3">Datasets and publications behind the numbers. Small numbers in the text link here.</p>
+      <ol class="refs" id="refList"><li class="m">Loading the reference list. It is also in <a href="data/references.json">data/references.json</a>.</li></ol>
+    </div>
   </section>
 
-  <div class="foot">Sources: Natural Resources Canada, Environment and Climate Change Canada, Statistics Canada, Agriculture and Agri-Food Canada, Health Canada, provincial and territorial fire agencies and others, listed in How we did this. Every analysis on this page is our own, built from the raw public data.<div class="sig2"><img src="logo-icon.png" alt="" width="627" height="618"><span><b>The Median Canadian</b> · A curious Canadian explaining Canada through numbers, every week.</span></div><div style="margin-top:6px">Text, charts and images: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>, share and adapt with credit. Code: <a href="https://github.com/sjvadrevu/canada-wildfires-2026/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a>. Data belongs to its publishers: Natural Resources Canada, Environment and Climate Change Canada, Statistics Canada, Agriculture and Agri-Food Canada, Health Canada and the other sources listed above, each under its own licence.</div></div>
+  <div class="foot">Sources: Natural Resources Canada, Environment and Climate Change Canada, Statistics Canada, Agriculture and Agri-Food Canada, Health Canada, provincial and territorial fire agencies and others, listed in the <a href="#references">References</a>. Every analysis on this page is our own, built from the raw public data.<div class="sig2"><img src="logo-icon.png" alt="" width="627" height="618"><span><b>The Median Canadian</b> · A curious Canadian explaining Canada through numbers, every week.</span></div><div style="margin-top:6px">Text, charts and images: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>, share and adapt with credit. Code: <a href="https://github.com/sjvadrevu/canada-wildfires-2026/blob/main/LICENSE" target="_blank" rel="noopener">Apache 2.0</a>. Data belongs to its publishers: Natural Resources Canada, Environment and Climate Change Canada, Statistics Canada, Agriculture and Agri-Food Canada, Health Canada and the other sources listed above, each under its own licence.</div></div>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
@@ -412,6 +434,40 @@ const PROV = {BC:"British Columbia",AB:"Alberta",SK:"Saskatchewan",MB:"Manitoba"
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 const MON3 = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 let ST = null;
+
+/* ---------- references and citations (list in data/references.json) ---------- */
+const REF = {list: [], num: {}};
+const refNums = keys => [...new Set(String(keys || "").split(",").map(k => REF.num[k.trim()]).filter(Boolean))].sort((a, b) => a - b);
+// runs of three or more consecutive numbers collapse to first–last
+function refRuns(nums, fmt) {
+  const out = [];
+  for (let i = 0; i < nums.length;) {
+    let j = i; while (j + 1 < nums.length && nums[j + 1] === nums[j] + 1) j++;
+    if (j - i >= 2) { out.push(fmt(nums[i]) + "–" + fmt(nums[j])); i = j + 1; } else { out.push(fmt(nums[i])); i++; }
+  }
+  return out.join(", ");
+}
+const refA = (n, t) => `<a href="#ref-${n}" aria-label="Reference ${n}">${t}</a>`;
+function citeHTML(keys) {
+  const nums = refNums(keys);
+  return nums.length ? `<sup class="cite" data-cite="${esc(keys)}">${refRuns(nums, n => refA(n, n))}</sup>` : "";
+}
+function srcsHTML(keys) {
+  const nums = refNums(keys);
+  return nums.length ? `<p class="srcs" data-cite="${esc(keys)}">Sources: ${refRuns(nums, n => refA(n, "[" + n + "]"))}</p>` : "";
+}
+function fillCites(root) {
+  root.querySelectorAll("sup.cite[data-cite]").forEach(el => { const n = refNums(el.dataset.cite); el.innerHTML = n.length ? refRuns(n, k => refA(k, k)) : ""; });
+}
+function renderRefs() {
+  const dl = s => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s); return m ? dateLong(s) : s; };
+  const link = u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>`;
+  $("#refList").innerHTML = REF.list.map((r, i) => `<li id="ref-${i + 1}">${esc(r.publisher)}. <i>${esc(r.title)}</i>. ${esc(r.version)}. ${link(r.url)}${(r.links || []).map(l => ` <span class="m">(${esc(l.label)}:</span> ${link(l.url)}<span class="m">)</span>`).join("")}. <span class="m">Licence: ${esc(r.licence)}. Accessed ${esc(dl(r.accessed))}.</span></li>`).join("");
+}
+const refsReady = fetch("data/references.json").then(r => r.json()).then(d => {
+  REF.list = d.references; REF.list.forEach((r, i) => { REF.num[r.id] = i + 1; });
+  renderRefs(); fillCites(document);
+}).catch(e => { console.error(e); });
 
 /* ---------- number formatting ---------- */
 const nf = (v, d) => Number(v).toLocaleString("en-CA", {minimumFractionDigits: d, maximumFractionDigits: d});
@@ -502,7 +558,7 @@ function vbars(el, data, o = {}) {
   const labs = data.filter(d => d.lab != null).sort((a, b) => (b.prio || 0) - (a.prio || 0) || Math.abs(b.v) - Math.abs(a.v))
     .map(d => ({x: x(d.k) + x.bandwidth() / 2, y: d.v >= 0 ? y(d.v) - 4 : y(0) - 4, t: d.lab, cls: d.cls}));
   const P = placeLabels(labs, W, 10.5, obst);
-  el.innerHTML = (o.title ? `<div class="ttl">${o.title}</div>` : "") + (o.legend || "") +
+  el.innerHTML = (o.title ? `<div class="ttl">${o.title}${o.cite ? citeHTML(o.cite) : ""}</div>` : "") + (o.legend || "") +
     `<svg viewBox="0 ${Math.min(0, P.top - 2)} ${W} ${H - Math.min(0, P.top - 2)}" role="img" aria-label="${esc(o.aria || o.title || "chart")}">${g}${P.svg}</svg>` + (o.cap ? `<div class="cap">${o.cap}</div>` : "");
 }
 // horizontal rows. rows: [{label, bars:[{v, fill, h}], text, hl}]
@@ -528,7 +584,7 @@ function hrows(el, rows, o = {}) {
     if (r.text) g += `<text class="lab ${r.hl ? "hot" : ""} ${r.tm ? "m" : ""}" x="${(end + 4).toFixed(1)}" y="${yy + rh / 2 + 4}">${esc(r.text)}</text>`;
   });
   g += `<line class="base" x1="${labW}" x2="${labW}" y1="${top}" y2="${H - 4}"/>`;
-  el.innerHTML = (o.title ? `<div class="ttl">${o.title}</div>` : "") + (o.legend || "") +
+  el.innerHTML = (o.title ? `<div class="ttl">${o.title}${o.cite ? citeHTML(o.cite) : ""}</div>` : "") + (o.legend || "") +
     `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.aria || o.title || "chart")}">${g}</svg>` + (o.cap ? `<div class="cap">${o.cap}</div>` : "");
 }
 const sw = (c, t, extra = "") => `<span><i style="background:${c};${extra}"></i>${t}</span>`;
@@ -540,13 +596,13 @@ function drawCharts() {
   const hs = S.hectares, top4 = new Set([2023, 2024, 2025, 2026]);
   const prevMax = [...hs].filter(d => !top4.has(d[0])).sort((a, b) => b[1] - a[1])[0];
   vbars($("#chForest"), hs.map(([k, v]) => ({k, v: v / 1e6, hl: top4.has(k), lab: (k === 2023 || k === 2025 || k === prevMax[0]) ? nf(v / 1e6, 1) : null, cls: top4.has(k) ? "hot" : "m", prio: top4.has(k) ? 2 : 1, title: `${k}: ${nf(v / 1e6, 2)} million hectares`})),
-    {title: "Area burned in Canada each year, millions of hectares, 1972 to 2026", tick: t => nf(t, 0), xt: [1972, 1980, 1990, 2000, 2010, 2026], h: 200, pad: 0.12,
+    {cite: "nbac,cwfif", title: "Area burned in Canada each year, millions of hectares, 1972 to 2026", tick: t => nf(t, 0), xt: [1972, 1980, 1990, 2000, 2010, 2026], h: 200, pad: 0.12,
      legend: `<div class="lg">${sw("var(--fire)", "2023 to 2026")}${sw("var(--fireSoft)", "Earlier years")}</div>`});
   // 2. temperature anomaly
   const ta = S.temp_anom, w = C.C6 && C.C6.warming_c;
   const hotY = [...ta].sort((a, b) => b[1] - a[1])[0];
   vbars($("#chTemp"), ta.map(([k, v]) => ({k, v, fill: v >= 0 ? (k >= 2016 ? "var(--fire)" : "var(--fireSoft)") : "var(--cool)", lab: k === hotY[0] ? (v > 0 ? "+" : "") + nf(v, 2) + " °C" : null, cls: "hot", title: `${k}: ${v > 0 ? "+" : ""}${nf(v, 2)} °C against 1961 to 1990`})),
-    {title: "May to August temperature against the 1961 to 1990 average, °C", tick: t => (t > 0 ? "+" : "") + t, xt: [1950, 1970, 1990, 2010, 2026], h: 200, pad: 0.1,
+    {cite: "ahccd,eccc-daily", title: "May to August temperature against the 1961 to 1990 average, °C", tick: t => (t > 0 ? "+" : "") + t, xt: [1950, 1970, 1990, 2010, 2026], h: 200, pad: 0.1,
      extra: (x, y) => w == null ? "" : `<line class="ref" x1="${x(2016)}" x2="${x(2026) + x.bandwidth()}" y1="${y(w)}" y2="${y(w)}"/>`,
      legend: `<div class="lg">${sw("var(--fire)", "Warmer, 2016 to 2026")}${sw("var(--fireSoft)", "Warmer, earlier")}${sw("var(--cool)", "Cooler")}${w == null ? "" : sw("transparent", "2016 to 2026 average, +" + nf(w, 2) + "\u00a0\u00b0C", "border-top:2px dashed var(--text);border-radius:0;height:0;vertical-align:3px")}</div>`});
   // 3. drought rows (verified values for 2023 to 2026 come from the claim when present)
@@ -554,10 +610,10 @@ function drawCharts() {
   const dr = S.drought.map(([k, v]) => [k, c12[k] != null ? c12[k] : v]);
   const dmaxEarly = Math.max(...dr.filter(d => d[0] < 2023).map(d => d[1]));
   hrows($("#chDrought"), dr.map(([k, v]) => ({label: String(k), hl: k >= 2023, bars: [{v, fill: k >= 2023 ? "var(--fire)" : "var(--fireSoft)", title: `${k}: ${nf(v, 1)}%`}], text: (k >= 2023 || v === dmaxEarly) ? nf(v, 1) + "%" : nf(v, 0) + "%", tm: !(k >= 2023 || v === dmaxEarly)})),
-    {title: "Share of forest in moderate drought or worse at some point, April to September", labW: 40, rh: 15, max: 100, txtW: 40});
+    {cite: "cdm,landcover", title: "Share of forest in moderate drought or worse at some point, April to September", labW: 40, rh: 15, max: 100, txtW: 40});
   // 4. model expected vs actual
   hrows($("#chModel"), S.model.map(([k, a, p]) => ({label: String(k), hl: k >= 2023, bars: [{v: a, fill: k >= 2023 ? "var(--fire)" : "var(--fireSoft)", title: `${k}: ${nf(a, 2)}% burned`}, {v: p, fill: "var(--text)", h: 4, title: `${k}: ${nf(p, 2)}% expected`}], text: nf(a / p, 0) + "×", tm: k < 2023})),
-    {title: "Share of forest burned: actual against expected, with how many times more burned", labW: 40, rh: 15, txtW: 36,
+    {cite: "cdm,cwfis-fwi,vanwagner,cnfdb,nbac,cwfis-m3,cwfif", title: "Share of forest burned: actual against expected, with how many times more burned", labW: 40, rh: 15, txtW: 36,
      legend: `<div class="lg">${sw("var(--fire)", "Actual")}${sw("var(--text)", "Expected", "height:4px;vertical-align:2px")}</div>`});
   // 5. smoke deaths vs direct deaths
   const dd = S.deaths, dRows = [];
@@ -565,40 +621,40 @@ function drawCharts() {
     dRows.push({label: y + " smoke", hl: false, bars: [{v: c, fill: "var(--fireSoft)", title: `${y}: up to ${c} modelled smoke deaths`}, {v: a, fill: "var(--fire)", title: `${y}: at least ${a}`}], text: `${a} to ${c}`});
     dRows.push({label: "fires", m: true, bars: [{v: d, fill: "var(--text)", title: `${y}: ${d} direct deaths`}], text: d == null ? "n/a" : String(d)});
   });
-  hrows($("#chDeaths"), dRows, {title: "Deaths each year: modelled from smoke, and recorded in the fires", labW: 80, rh: 17, txtW: 64,
+  hrows($("#chDeaths"), dRows, {cite: "naps,airnow,statcan-deaths,aqbat,matz2026,chen2021,tsb,cdd", title: "Deaths each year: modelled from smoke, and recorded in the fires", labW: 80, rh: 17, txtW: 64,
     legend: `<div class="lg">${sw("var(--fire)", "Smoke, low estimate")}${sw("var(--fireSoft)", "Smoke, high estimate")}${sw("var(--text)", "Direct, in the fires")}</div>`});
   // 5b. reserves
   const r = C.C21 || {};
   hrows($("#chReserve"), [{label: "On reserve", hl: true, bars: [{v: r.on_reserve_pct, fill: "var(--fire)"}], text: F.pct1(r.on_reserve_pct)},
     {label: "Off reserve", bars: [{v: r.off_reserve_pct, fill: "var(--fireSoft)"}], text: F.pct2(r.off_reserve_pct)}],
-    {title: "Near a fire of 1,000 ha or more in 2 or more of the 4 years", labW: 82, rh: 24, txtW: 48});
+    {cite: "al-ta,statcan-da,nbac,cwfis-m3", title: "Near a fire of 1,000 ha or more in 2 or more of the 4 years", labW: 82, rh: 24, txtW: 48});
   // 6. buildings
   const c23 = C.C23 || {}, cov = c23.coverage || {};
   const covTxt = {"4 events": "4 events", "Jasper in-sample": "Jasper only", "2 events": "2 events", "all outlines": "all fires"};
   hrows($("#chBuild"), ["2023", "2024", "2025", "2026"].map(y => ({label: `${y}, ${covTxt[cov[y]] || cov[y] || ""}`, hl: y === "2026", bars: [{v: (c23.flagged || {})[y], fill: y === "2026" ? "var(--fire)" : "var(--fireSoft)"}], text: F.int((c23.flagged || {})[y])})),
-    {title: "Buildings flagged as likely destroyed, by the fires checked", labW: 118, rh: 22, txtW: 44});
+    {cite: "sentinel2,msbuildings,jasper-damage,cwfis-m3", title: "Buildings flagged as likely destroyed, by the fires checked", labW: 118, rh: 22, txtW: 44});
   // 6b. roads
   vbars($("#chRoads"), S.roads.map(([k, v]) => ({k, v: v / 1000, hl: k >= 2023, lab: nf(v / 1000, 1), cls: k >= 2023 ? "hot" : "m", title: `${k}: ${nf(v, 0)} km`})),
-    {title: "Thousands of kilometres of road inside burned areas", tick: t => nf(t, 0), xlab: k => "'" + String(k).slice(2), padL: 36, h: 180});
+    {cite: "nrn,nbac,cwfis-m3", title: "Thousands of kilometres of road inside burned areas", tick: t => nf(t, 0), xlab: k => "'" + String(k).slice(2), padL: 36, h: 180});
   // 7. cost
   vbars($("#chCost"), S.firefighting.map(([k, v, miss]) => ({k, v, hl: k >= 2023, pattern: miss.length > 0, lab: nf(v, 2) + (miss.length ? "*" : ""), cls: k >= 2023 ? "hot" : "m", title: `${k}: $${nf(v, 2)} billion${miss.length ? " (no " + miss.join(", ") + " figure)" : ""}`})),
-    {title: "Firefighting in BC, ON, AB and SK, billions of 2025 dollars", tick: t => nf(t, 1), xlab: k => "'" + String(k).slice(2), h: 180});
+    {cite: "bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi", title: "Firefighting in BC, ON, AB and SK, billions of 2025 dollars", tick: t => nf(t, 1), xlab: k => "'" + String(k).slice(2), h: 180});
   // 8. CO2
   const co = [];
   S.co2.forEach(([y, wf, nat]) => {
     co.push({label: String(y), hl: y === 2023, bars: [{v: wf, fill: y === 2023 ? "var(--fire)" : "var(--fireSoft)", title: `${y}: ${wf} Mt from managed-forest fires`}], text: nf(wf, 0)});
     co.push({label: "", m: true, bars: [{v: nat, fill: "var(--cool)", h: 5, title: `${y}: national total ${nf(nat, 1)} Mt`}], text: nf(nat, 0), tm: true});
   });
-  hrows($("#chCO2"), co, {title: "Million tonnes of greenhouse gases a year", labW: 40, rh: 12, txtW: 40,
+  hrows($("#chCO2"), co, {cite: "nir2026", title: "Million tonnes of greenhouse gases a year", labW: 40, rh: 12, txtW: 40,
     legend: `<div class="lg">${sw("var(--fire)", "Managed-forest fires (not counted)")}${sw("var(--cool)", "Canada's national total")}</div>`});
   // 8b. reburn
   vbars($("#chReburn"), S.reburn.map(([k, v]) => ({k: k.replace("-", " to ").replace("1987 to 1989", "1987 to 89"), v, hl: k.startsWith("2023"), lab: nf(v, 1) + "%", cls: k.startsWith("2023") ? "hot" : "m"})),
-    {title: "Share of burned black spruce and jack pine forest that had burned in the previous 15 years", tick: t => t + "%", xlab: k => ({"1987 to 89": "'87\u201389", "1990 to 1999": "1990s", "2000 to 2009": "2000s", "2010 to 2019": "2010s", "2020 to 2022": "'20\u201322", "2023 to 2026": "'23\u201326"})[k] || k, h: 170});
+    {cite: "scanfi,nbac,cwfis-m3", title: "Share of burned black spruce and jack pine forest that had burned in the previous 15 years", tick: t => t + "%", xlab: k => ({"1987 to 89": "'87\u201389", "1990 to 1999": "1990s", "2000 to 2009": "2000s", "2010 to 2019": "2010s", "2020 to 2022": "'20\u201322", "2023 to 2026": "'23\u201326"})[k] || k, h: 170});
   // 8c. caribou
   const cb = S.caribou;
   const cbW = Math.min(190, widthOf($("#chCaribou")) * 0.56);
   hrows($("#chCaribou"), cb.map(([n, p, v]) => ({label: (() => { const nn = n.replace("Saskatchewan", "Sask.").replace("Manitoba North Conservation Unit", "Manitoba North").trim(); return tw(nn + " (" + p + ")", 11) <= cbW - 8 ? nn + " (" + p + ")" : nn; })(), bars: [{v, fill: "var(--forest)", title: `${n}: ${nf(v, 1)}% burned 1987 to 2026`}], text: nf(v, 0) + "%"})),
-    {title: "Share of each range burned by fire, 1987 to 2026", labW: cbW, rh: 19, max: 100, txtW: 34});
+    {cite: "caribou,nbac,cwfis-m3", title: "Share of each range burned by fire, 1987 to 2026", labW: cbW, rh: 19, max: 100, txtW: 34});
 }
 
 /* ---------- map ---------- */
@@ -661,10 +717,10 @@ async function initMap() {
   $("#legend").innerHTML = `<span style="color:var(--text);font-weight:600">Forest burned against its own 1991 to 2020 average:</span>` + BINS.map(b => `<span><i style="background:var(${b.c})"></i>${b.t}</span>`).join("");
   // layers
   const LAYERS = [
-    {k: "fires", t: "2026 fire outlines", c: "var(--fire)", note: () => `Outlines drawn around 2026 satellite heat detections. Red: wildfire. Light red: unclear. Grey: likely farm burn, military range or industrial heat.`},
-    {k: "reburn", t: "Burned before", c: "var(--amber)", note: () => `Parts of the 2026 fires that had already burned since 1972. Darkest: within the previous 10 years. In black spruce and jack pine forest, <b>${F.pct1(getv("C32.share_2023_2026_pct"))}</b> of the area burned in 2023 to 2026 had burned within 15 years, against <b>${F.pct1(getv("C32.share_1990s_pct"))}</b> in the 1990s.`},
-    {k: "caribou", t: "Caribou ranges", c: "var(--forest)", note: () => `Federal boreal caribou ranges. <b>${F.int(getv("C33.ranges_over_35pct"))}</b> of ${F.int(getv("C33.of_ranges"))} have had more than 35% of their land burned since 1987. Tap a range.`},
-    {k: "ws", t: "Drinking-water watersheds, BC", c: "var(--water)", note: () => `<b>${F.int(getv("C38.bc_watersheds_over_10pct"))}</b> of British Columbia's ${F.int(getv("C38.bc_watersheds_total"))} designated drinking-water watersheds were more than 10% burned in 2023 to 2026 (circled; zoom into southern BC). Across Canada, ${F.int(getv("C38.pop_centres"))} towns with ${F.int(getv("C38.people"))} people sit in watersheds more than 10% burned.`},
+    {k: "fires", t: "2026 fire outlines", c: "var(--fire)", note: () => `Outlines drawn around 2026 satellite heat detections. Red: wildfire. Light red: unclear. Grey: likely farm burn, military range or industrial heat.${citeHTML("cwfis-m3,cwfis-hotspots,dfrp,ab-dnd")}`},
+    {k: "reburn", t: "Burned before", c: "var(--amber)", note: () => `Parts of the 2026 fires that had already burned since 1972. Darkest: within the previous 10 years. In black spruce and jack pine forest, <b>${F.pct1(getv("C32.share_2023_2026_pct"))}</b> of the area burned in 2023 to 2026 had burned within 15 years, against <b>${F.pct1(getv("C32.share_1990s_pct"))}</b> in the 1990s.${citeHTML("nbac,cwfis-m3,scanfi")}`},
+    {k: "caribou", t: "Caribou ranges", c: "var(--forest)", note: () => `Federal boreal caribou ranges. <b>${F.int(getv("C33.ranges_over_35pct"))}</b> of ${F.int(getv("C33.of_ranges"))} have had more than 35% of their land burned since 1987.${citeHTML("caribou,nbac,cwfis-m3")} Tap a range.`},
+    {k: "ws", t: "Drinking-water watersheds, BC", c: "var(--water)", note: () => `<b>${F.int(getv("C38.bc_watersheds_over_10pct"))}</b> of British Columbia's ${F.int(getv("C38.bc_watersheds_total"))} designated drinking-water watersheds were more than 10% burned in 2023 to 2026 (circled; zoom into southern BC). Across Canada, ${F.int(getv("C38.pop_centres"))} towns with ${F.int(getv("C38.people"))} people sit in watersheds more than 10% burned.${citeHTML("bc-watersheds,nhn,statcan-popctr,nbac,cwfis-m3")}`},
   ];
   $("#layerChips").innerHTML = LAYERS.map(l => `<button type="button" class="chip" data-k="${l.k}" aria-pressed="false"><i style="background:${l.c}"></i>${l.t}</button>`).join("");
   $("#layerChips").onclick = async e => {
@@ -731,7 +787,7 @@ function sparkHist(a, yr) {
   const mx = data.reduce((p, q) => q.v > p.v ? q : p, data[0]);
   data.forEach(d => { if (hl.includes(d.k) || d === mx) { d.lab = nf(d.v, d.v >= 10 ? 1 : 2) + "%"; d.cls = hl.includes(d.k) ? "hot" : "m"; d.prio = hl.includes(d.k) ? 2 : 1; } });
   $("#areaCard").appendChild(el);
-  vbars(el, data, {title: "Share of its forest burned each year, 1972 to 2026, on mapped outlines", tick: t => t + "%", xt: [1972, 1990, 2010, 2026], h: 150, pad: .12,
+  vbars(el, data, {cite: "nbac,cwfis-m3,landcover", title: "Share of its forest burned each year, 1972 to 2026, on mapped outlines", tick: t => t + "%", xt: [1972, 1990, 2010, 2026], h: 150, pad: .12,
     extra: (x, y, W) => a.avg > 0 ? `<line class="ref" x1="${x(1991)}" x2="${x(2020) + x.bandwidth()}" y1="${y(a.avg)}" y2="${y(a.avg)}"/>` : "",
     cap: a.avg > 0 ? `Dashed line: its 1991 to 2020 average, ${nf(a.avg, a.avg < 0.1 ? 3 : 2)}% a year.` : "It had no forest burned in 1991 to 2020."});
 }
@@ -763,23 +819,26 @@ function renderCard(quiet) {
     </div>
     <p class="fnote" style="color:var(--text)">${rec}.</p>`;
   sparkHist(a, yr);
+  card.insertAdjacentHTML("beforeend", srcsHTML("nbac,cwfis-m3,cwfif,landcover," + (FMAREF[a.p] || "statcan-geo")));
   if (!quiet) { card.classList.remove("flash"); void card.offsetWidth; card.classList.add("flash"); }
 }
 const CLS = {w: "Wildfire", u: "Wildfire (not in agency lists)", c: "Unclear: mostly natural land, few detections", a: "Likely farm or grass burn", m: "Military range", i: "Possible industrial or urban heat"};
+const FMAREF = {BC: "fma-bc", AB: "fma-ab", SK: "fma-sk", MB: "fma-mb", ON: "fma-on", QC: "fma-qc", NL: "fma-nl", NT: "fma-nt", YT: "fma-yt"};
+const COSTREF = {BC: "bcws-cost,bc-budget", ON: "on-pa", AB: "ab-ar", SK: "sk-auditor,cpi"};
 function fireCard(p) {
   const c = $("#areaCard"); c.hidden = false;
   c.innerHTML = `<div class="hd"><div><b>2026 fire outline</b><span>${esc(PROV[p.p] || p.p)} · ${esc(CLS[p.c])}</span></div><span class="badge">2026</span></div>
-  <div class="stats"><div><b>${nf(p.ha, 0)}</b><span>hectares, scaled to the official total</span></div><div><b>${dateShort(p.d1)}</b><span>first detected</span></div><div><b>${dateShort(p.d2)}</b><span>last detected</span></div></div>`;
+  <div class="stats"><div><b>${nf(p.ha, 0)}</b><span>hectares, scaled to the official total</span></div><div><b>${dateShort(p.d1)}</b><span>first detected</span></div><div><b>${dateShort(p.d2)}</b><span>last detected</span></div></div>${srcsHTML("cwfis-m3,cwfif,dfrp,ab-dnd")}`;
 }
 function caribouCard(p) {
   const c = $("#areaCard"); c.hidden = false;
   c.innerHTML = `<div class="hd"><div><b>${esc(p.n)} caribou range</b><span>${esc(PROV[p.p] || p.p)}</span></div><span class="badge ${p.s > 35 ? "" : "no"}">${p.s > 35 ? "Over 35%" : "Under 35%"}</span></div>
-  <div class="stats"><div><b>${nf(p.s, 1)}%</b><span>of the range burned in 1987 to 2026</span></div><div><b>${nf(p.s25, 1)}%</b><span>in 1987 to 2025, before 2026</span></div><div><b>${pctS(p.b26)}</b><span>burned in 2026</span></div></div>`;
+  <div class="stats"><div><b>${nf(p.s, 1)}%</b><span>of the range burned in 1987 to 2026</span></div><div><b>${nf(p.s25, 1)}%</b><span>in 1987 to 2025, before 2026</span></div><div><b>${pctS(p.b26)}</b><span>burned in 2026</span></div></div>${srcsHTML("caribou,nbac,cwfis-m3")}`;
 }
 function wsCard(p) {
   const c = $("#areaCard"); c.hidden = false;
   c.innerHTML = `<div class="hd"><div><b>${esc(p.n)}</b><span>British Columbia drinking-water watershed${p.w ? " · " + esc(p.w) : ""}</span></div><span class="badge">${nf(p.s, 0)}% burned</span></div>
-  <p class="fnote" style="color:var(--text)">${nf(p.s, 1)}% of this watershed burned in 2023 to 2026. A burned watershed does not always mean the water supply was affected.</p>`;
+  <p class="fnote" style="color:var(--text)">${nf(p.s, 1)}% of this watershed burned in 2023 to 2026. A burned watershed does not always mean the water supply was affected.</p>${srcsHTML("bc-watersheds,nbac,cwfis-m3")}`;
 }
 
 /* ---------- season replay ---------- */
@@ -821,7 +880,7 @@ function drawReplay() {
   const data = wk.map((k, j) => ({k, v: vals[j], fill: j === i ? "var(--fire)" : (k >= PK.start && k <= PK.end ? "var(--fireSoft)" : "var(--fireDim)"),
     lab: j === mi ? nf(vals[j], 0) : null, cls: "m", title: `Week of ${dateShort(k)}: ${nf(vals[j], 0)}`}));
   const firstOfMonth = wk.filter((k, j) => j === 0 || k.slice(5, 7) !== wk[j - 1].slice(5, 7)).filter(k => ["01", "04", "07", "10"].includes(k.slice(5, 7)) && k > "2026");
-  vbars($("#chHot"), data, {title: `Satellite fire detections per week, ${RP.prov === "CAN" ? "Canada" : PROV[RP.prov]}, 2026`, tick: t => t >= 1000 ? nf(t / 1000, 0) + "k" : t, xt: firstOfMonth, xlab: k => MON3[+k.slice(5, 7) - 1], h: 170, pad: .15, padL: 34,
+  vbars($("#chHot"), data, {cite: "cwfis-hotspots", title: `Satellite fire detections per week, ${RP.prov === "CAN" ? "Canada" : PROV[RP.prov]}, 2026`, tick: t => t >= 1000 ? nf(t / 1000, 0) + "k" : t, xt: firstOfMonth, xlab: k => MON3[+k.slice(5, 7) - 1], h: 170, pad: .15, padL: 34,
     under: (x, y) => { const a = x(PK.start), b = x(PK.end) != null ? x(PK.end) : x(wk.filter(k => k <= PK.end).slice(-1)[0]); return a == null ? "" : `<rect class="shade" x="${a - 1}" y="${y.range()[1] - 6}" width="${b + x.bandwidth() - a + 2}" height="${y.range()[0] - y.range()[1] + 6}" fill="var(--track)" />`; }});
   const end = addDays(wk[i], 6);
   $("#rpNow").innerHTML = `Week of <b>${dateShort(wk[i])} to ${dateShort(end)}</b>: <b>${nf(vals[i], 0)}</b> detections. Busiest five weeks: ${dateShort(PK.start)} to ${dateShort(PK.end)}, ${nf(PK.share, 1)}% of ${nf(PK.total, 0)}.`;
@@ -902,7 +961,12 @@ function renderCity(p) {
   h += `<h3>Firefighting cost per resident</h3>`;
   if (p.cost) h += `<p class="line"><b style="font-size:1.4rem">$${nf(p.cost.pr, 2)}</b> per ${esc(PROV[p.cost.p] || p.cost.p)} resident in the ${p.cost.yr} season (${esc(p.cost.def.charAt(0).toLowerCase() + p.cost.def.slice(1))}; ${esc(p.cost.st)}). Provinces count costs differently, so compare a province with its own past, not with others.</p>`;
   else h += `<p class="line">No comparable figure published for this province or territory.</p>`;
-  h += `</div>`;
+  const keys = [];
+  if (f && f.km != null) keys.push("cwfis-m3,cwfif,dfrp,ab-dnd");
+  if (sm) keys.push("naps,airnow");
+  if (p.pop) keys.push("statcan-popctr");
+  if (p.cost) keys.push((COSTREF[p.cost.p] || "") + ",statcan-pt");
+  h += srcsHTML(keys.join(",")) + `</div>`;
   out.innerHTML = h;
   if (sm) cityChart(sm);
   out.querySelector(".card").classList.add("flash");
@@ -924,7 +988,7 @@ function cityChart(sm) {
   });
   g += `<line class="base" x1="${padL}" x2="${W - 4}" y1="${yS(0)}" y2="${yS(0)}"/>`;
   const P = placeLabels(labs, W);
-  el.innerHTML = `<div class="ttl">Days with smoke above each level</div><div class="lg">${sw("var(--c3)", "Above 27")}${sw("var(--c5)", "Above 60")}${sw("var(--c6)", "Above 100")}${sw("transparent", "Dashed: real-time, not yet validated", "border:1.5px dashed var(--amber)")}${sw("var(--c3)", "Faded: too few readings", "opacity:.35")}</div><svg viewBox="0 ${Math.min(0, P.top - 2)} ${W} ${H - Math.min(0, P.top - 2)}" role="img" aria-label="Smoky days by year">${g}${P.svg}</svg>`;
+  el.innerHTML = `<div class="ttl">Days with smoke above each level${citeHTML("naps,airnow")}</div><div class="lg">${sw("var(--c3)", "Above 27")}${sw("var(--c5)", "Above 60")}${sw("var(--c6)", "Above 100")}${sw("transparent", "Dashed: real-time, not yet validated", "border:1.5px dashed var(--amber)")}${sw("var(--c3)", "Faded: too few readings", "opacity:.35")}</div><svg viewBox="0 ${Math.min(0, P.top - 2)} ${W} ${H - Math.min(0, P.top - 2)}" role="img" aria-label="Smoky days by year">${g}${P.svg}</svg>`;
 }
 function calendarHTML(cal) {
   const start = new Date(CITY.cal.start + "T12:00:00"), v = cal.v;
@@ -947,7 +1011,7 @@ function calendarHTML(cal) {
 }
 
 /* ---------- boot ---------- */
-fetch("data/story.json").then(r => r.json()).then(d => {
+Promise.all([fetch("data/story.json").then(r => r.json()), refsReady]).then(([d]) => {
   ST = d;
   fillNumbers();
   drawCharts();

@@ -1,0 +1,716 @@
+{
+ "note": "Reference list for index.html. Entries are numbered in this order; the page cites them by id with data-cite=\"id1,id2\". Add new entries anywhere and the numbers update.",
+ "references": [
+  {
+   "id": "nbac",
+   "publisher": "Natural Resources Canada, Canadian Forest Service",
+   "title": "National Burned Area Composite (NBAC), fire outlines 1972 to 2025",
+   "version": "Release of May 13, 2026",
+   "url": "https://cwfis.cfs.nrcan.gc.ca/downloads/nbac/NBAC_1972to2025_20260513_shp.zip",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "nfd-fire",
+   "publisher": "Canadian Council of Forest Ministers, National Forestry Database",
+   "title": "Forest fire statistics: area burned and number of fires by cause, month and size class",
+   "version": "Updated August 10, 2026",
+   "url": "http://nfdp.ccfm.org/en/download.php",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "cwfif",
+   "publisher": "Natural Resources Canada, Canadian Wildland Fire Information System",
+   "title": "Reported fire statistics, year to date by agency (official 2026 totals, including Parks Canada)",
+   "version": "2026 season, as of October 20, 2026",
+   "url": "https://api.cwfif.nrcan.gc.ca/reported-fire-stats/ytd/by-agency",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "ciffc",
+   "publisher": "Canadian Interagency Forest Fire Centre",
+   "title": "National wildland fire situation reports",
+   "version": "2026 season",
+   "url": "https://ciffc.net/summary",
+   "licence": "CIFFC terms of use",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "cwfis-m3",
+   "publisher": "Natural Resources Canada, Canadian Forest Service (CWFIS)",
+   "title": "FireM3 fire perimeters and daily progression, 2026 (drawn from satellite heat detections)",
+   "version": "File of October 20, 2026",
+   "url": "https://cwfis.cfs.nrcan.gc.ca/downloads/hotspots/perimeters.shp",
+   "links": [
+    {
+     "label": "progression.shp",
+     "url": "https://cwfis.cfs.nrcan.gc.ca/downloads/hotspots/progression.shp"
+    }
+   ],
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "cwfis-hotspots",
+   "publisher": "Natural Resources Canada, Canadian Forest Service (CWFIS)",
+   "title": "Satellite fire hotspots, 2026 (from NASA FIRMS VIIRS and MODIS and other sensors)",
+   "version": "Daily, January 1 to October 20, 2026",
+   "url": "https://cwfis.cfs.nrcan.gc.ca/downloads/hotspots/",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "cnfdb",
+   "publisher": "Natural Resources Canada, Canadian Forest Service, with fire agencies",
+   "title": "Canadian National Fire Database (CNFDB), fire points",
+   "version": "Version 20260811",
+   "url": "https://cwfis.cfs.nrcan.gc.ca/downloads/nfdb/fire_pnt/current_version/NFDB_point_txt.zip",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "cwfis-fwi",
+   "publisher": "Natural Resources Canada, Canadian Forest Service (CWFIS), from Meteorological Service of Canada stations",
+   "title": "Station fire weather observations, 1990 to 2026",
+   "version": "Version 3.0 archives plus 2026 daily files",
+   "url": "https://cwfis.cfs.nrcan.gc.ca/downloads/fwi_obs/",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "vanwagner",
+   "publisher": "Canadian Forestry Service",
+   "title": "Van Wagner, C.E. Development and structure of the Canadian Forest Fire Weather Index System. Forestry Technical Report 35",
+   "version": "1987",
+   "url": "https://ostrnrcan-dostrncan.canada.ca/entities/publication/d96e56aa-e836-4394-ba29-3afe91c3aa6c",
+   "licence": "Crown copyright, Government of Canada",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "landcover",
+   "publisher": "Natural Resources Canada, Canada Centre for Remote Sensing",
+   "title": "Land Cover of Canada 2020, 30 m",
+   "version": "2020",
+   "url": "https://datacube-prod-data-public.s3.ca-central-1.amazonaws.com/store/land/landcover/landcover-2020-classification.tif",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "un-dyb",
+   "publisher": "United Nations Statistics Division",
+   "title": "Demographic Yearbook 2023, Table 3: population and surface area (used for the comparison with Germany)",
+   "version": "2023",
+   "url": "https://unstats.un.org/unsd/demographic-social/products/dyb/documents/dyb2023/table03.xls",
+   "licence": "United Nations terms of use",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "fma-bc",
+   "publisher": "Province of British Columbia (BC Data Catalogue)",
+   "title": "BC Wildfire Service fire centres (WHSE_LEGAL_ADMIN_BOUNDARIES.DRP_MOF_FIRE_CENTRES_SP)",
+   "version": "Downloaded 2026",
+   "url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=WHSE_LEGAL_ADMIN_BOUNDARIES.DRP_MOF_FIRE_CENTRES_SP&outputFormat=json&count=1",
+   "licence": "Open Government Licence - British Columbia",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "fma-ab",
+   "publisher": "Government of Alberta",
+   "title": "Alberta Wildfire forest area boundaries",
+   "version": "Downloaded 2026",
+   "url": "https://geospatial.alberta.ca/mimas/rest/services/wildfire/wildfire_forest_area_boundary/MapServer",
+   "licence": "Open Government Licence - Alberta",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "fma-sk",
+   "publisher": "Saskatchewan Public Safety Agency",
+   "title": "SPSA protection areas",
+   "version": "Downloaded 2026",
+   "url": "https://gis.saskatchewan.ca/arcgis/rest/services/SPSA/ProtectionAreas/MapServer/1",
+   "licence": "Not stated on the service",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "fma-mb",
+   "publisher": "Manitoba Wildfire Service",
+   "title": "Fire and travel restriction areas (web map file)",
+   "version": "2025",
+   "url": "https://www.gov.mb.ca/conservation_fire/Restrictions/MB_TravelRestrictionAreas_2025.js",
+   "licence": "Not stated for the file",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "fma-on",
+   "publisher": "Ontario Ministry of Natural Resources, Land Information Ontario",
+   "title": "Fire management headquarters areas (LIO_Open09, layer 53)",
+   "version": "Downloaded 2026",
+   "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/53",
+   "licence": "Open Government Licence - Ontario",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "fma-qc",
+   "publisher": "SOPFEU",
+   "title": "Zones de danger d'incendie (fire danger zones)",
+   "version": "Retrieved October 21, 2026",
+   "url": "https://www.sopfeu.qc.ca/layers/zdi.json",
+   "licence": "Not stated on sopfeu.qc.ca",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "fma-nl",
+   "publisher": "Government of Newfoundland and Labrador, Forestry and Agrifoods Agency",
+   "title": "Forest management districts, Newfoundland and Labrador",
+   "version": "Downloaded 2026",
+   "url": "https://services8.arcgis.com/aCyQID5qQcyrJMm2/arcgis/rest/services/FFA_ForestManagementDistricts_NL/FeatureServer/6",
+   "licence": "Not stated on the service",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "fma-nt",
+   "publisher": "Government of the Northwest Territories (served by Indigenous Services Canada)",
+   "title": "NWT administrative regions",
+   "version": "Downloaded 2026",
+   "url": "https://data.sac-isc.gc.ca/geomatics/rest/services/AGOL_FEATURE_SERVICES/NT_Administrative_Regions/FeatureServer/0",
+   "licence": "Not recorded",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "fma-yt",
+   "publisher": "Government of Yukon (GeoYukon)",
+   "title": "Fire districts",
+   "version": "Downloaded 2026",
+   "url": "https://open.yukon.ca/data/fire-districts",
+   "licence": "Open Government Licence - Yukon",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "statcan-geo",
+   "publisher": "Statistics Canada",
+   "title": "2021 Census cartographic boundary files: provinces, population centres, dissemination areas, metropolitan areas",
+   "version": "2021 Census",
+   "url": "https://geo.statcan.gc.ca/geo_wa/rest/services/2021/Cartographic_boundary_files/MapServer",
+   "licence": "Statistics Canada Open Licence",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "statcan-popctr",
+   "publisher": "Statistics Canada",
+   "title": "Population and dwelling counts: population centres (table 98-10-0011-01)",
+   "version": "2021 Census",
+   "url": "https://www150.statcan.gc.ca/n1/tbl/csv/98100011-eng.zip",
+   "licence": "Statistics Canada Open Licence",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "statcan-da",
+   "publisher": "Statistics Canada",
+   "title": "Population and dwelling counts: dissemination areas (table 98-10-0015-01)",
+   "version": "2021 Census",
+   "url": "https://www150.statcan.gc.ca/n1/tbl/csv/98100015-eng.zip",
+   "licence": "Statistics Canada Open Licence",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "statcan-pt",
+   "publisher": "Statistics Canada",
+   "title": "Population and dwelling counts: Canada, provinces and territories (table 98-10-0001-01)",
+   "version": "2021 Census",
+   "url": "https://www150.statcan.gc.ca/n1/tbl/csv/98100001-eng.zip",
+   "licence": "Statistics Canada Open Licence",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "census-profile",
+   "publisher": "Statistics Canada",
+   "title": "Census Profile by dissemination area: population, age, low income and dwelling values (SDMX API)",
+   "version": "2021 Census",
+   "url": "https://api.statcan.gc.ca/census-recensement/profile/sdmx/rest/data/STC_CP,DF_DA,1.3/A5..1.1474+1475.1",
+   "links": [
+    {
+     "label": "population and age",
+     "url": "https://api.statcan.gc.ca/census-recensement/profile/sdmx/rest/data/STC_CP,DF_DA/A5..1.1+8+10+24+321+326.1"
+    }
+   ],
+   "licence": "Statistics Canada Open Licence",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "ahccd",
+   "publisher": "Environment and Climate Change Canada",
+   "title": "Adjusted and Homogenized Canadian Climate Data (AHCCD): monthly mean temperature (third generation) and adjusted monthly precipitation",
+   "version": "Temperature to 2023, precipitation to 2017",
+   "url": "https://eccc-opendata-01.collab.science.gc.ca/CDAS/products/AHCCD/Homog_monthly_mean_temp_Gen3.zip",
+   "links": [
+    {
+     "label": "precipitation",
+     "url": "https://eccc-opendata-01.collab.science.gc.ca/CDAS/products/AHCCD/Adj_monthly_total_prec.zip"
+    }
+   ],
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "eccc-daily",
+   "publisher": "Environment and Climate Change Canada, Meteorological Service of Canada (GeoMet)",
+   "title": "Daily and hourly climate observations (climate-daily, climate-hourly)",
+   "version": "1950 to October 2026",
+   "url": "https://api.weather.gc.ca/collections/climate-daily",
+   "links": [
+    {
+     "label": "climate-hourly",
+     "url": "https://api.weather.gc.ca/collections/climate-hourly"
+    }
+   ],
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "ipcc",
+   "publisher": "Intergovernmental Panel on Climate Change, Working Group I",
+   "title": "Summary for Policymakers. In: Climate Change 2021: The Physical Science Basis (Sixth Assessment Report)",
+   "version": "2021",
+   "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/",
+   "links": [
+    {
+     "label": "doi:10.1017/9781009157896.001",
+     "url": "https://doi.org/10.1017/9781009157896.001"
+    }
+   ],
+   "licence": "IPCC copyright; Cambridge University Press terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cccr",
+   "publisher": "Environment and Climate Change Canada and Natural Resources Canada (Bush, E. and Lemmen, D.S., editors)",
+   "title": "Canada's Changing Climate Report",
+   "version": "2019",
+   "url": "https://changingclimate.ca/CCCR2019/",
+   "links": [
+    {
+     "label": "Government of Canada Publications",
+     "url": "https://publications.gc.ca/site/eng/9.870430/publication.html"
+    }
+   ],
+   "licence": "Crown copyright, Government of Canada",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cdm",
+   "publisher": "Agriculture and Agri-Food Canada",
+   "title": "Canadian Drought Monitor, monthly areas of drought, April to September 2003 to 2026",
+   "version": "Monthly releases to September 2026",
+   "url": "https://open.canada.ca/data/en/dataset/292646cd-619f-4200-afb1-8b2c52f984a2",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "naps",
+   "publisher": "Environment and Climate Change Canada",
+   "title": "National Air Pollution Surveillance (NAPS) program, validated hourly PM2.5, 2018 to 2024",
+   "version": "2018 to 2024",
+   "url": "https://data-donnees.az.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "airnow",
+   "publisher": "US Environmental Protection Agency, AirNow (data from Canadian federal and provincial monitors)",
+   "title": "Daily PM2.5 files, real-time, not validated",
+   "version": "2024 to October 19, 2026",
+   "url": "https://files.airnowtech.org/airnow/2026/20261019/daily_data.dat",
+   "links": [
+    {
+     "label": "monitor locations",
+     "url": "https://files.airnowtech.org/airnow/2026/20261019/Monitoring_Site_Locations_V2.dat"
+    }
+   ],
+   "licence": "US federal data, public domain",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "statcan-deaths",
+   "publisher": "Statistics Canada",
+   "title": "Provisional weekly death counts, by age group and sex (table 13-10-0768-01) and by selected grouped causes (13-10-0810-01)",
+   "version": "Release current at October 21, 2026",
+   "url": "https://www150.statcan.gc.ca/n1/tbl/csv/13100768-eng.zip",
+   "links": [
+    {
+     "label": "13-10-0810-01",
+     "url": "https://www150.statcan.gc.ca/n1/tbl/csv/13100810-eng.zip"
+    }
+   ],
+   "licence": "Statistics Canada Open Licence",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "statcan-popest",
+   "publisher": "Statistics Canada",
+   "title": "Population estimates on July 1, by age and gender (table 17-10-0005-01)",
+   "version": "Release current at October 21, 2026",
+   "url": "https://www150.statcan.gc.ca/n1/tbl/csv/17100005-eng.zip",
+   "licence": "Statistics Canada Open Licence",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "aqbat",
+   "publisher": "Health Canada",
+   "title": "Air Quality Benefits Assessment Tool (AQBAT): acute all-cause mortality, 0.7% per 10 micrograms per cubic metre of PM2.5",
+   "version": "Coefficients as tabulated in Matz and others, 2026",
+   "url": "https://health-infobase.canada.ca/aqbat/",
+   "licence": "Government of Canada terms and conditions",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "matz2026",
+   "publisher": "GeoHealth (American Geophysical Union)",
+   "title": "Matz, C.J. and others. Health Impact Analysis of Wildfire Smoke-PM2.5 in Canada (2019 to 2023). Volume 10, e2025GH001565 (AQBAT coefficients, Table S1; value of a statistical life, Table S2)",
+   "version": "2026",
+   "url": "https://doi.org/10.1029/2025GH001565",
+   "licence": "CC BY-NC 4.0",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "chen2021",
+   "publisher": "The Lancet Planetary Health",
+   "title": "Chen, G. and others. Mortality risk attributable to wildfire-related PM2.5 pollution: a global time series study in 749 locations. 5(9): e579 to e587",
+   "version": "2021",
+   "url": "https://doi.org/10.1016/S2542-5196(21)00200-X",
+   "licence": "CC BY-NC-ND 4.0",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "tsb",
+   "publisher": "Transportation Safety Board of Canada",
+   "title": "Air transportation occurrence data (ASIS), from January 1995",
+   "version": "Release current at October 21, 2026",
+   "url": "https://open.canada.ca/data/dataset/a376864b-18f2-49d8-9b98-1b7268ffb3c0",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "cdd",
+   "publisher": "Public Safety Canada",
+   "title": "Canadian Disaster Database, full extract",
+   "version": "Modified February 10, 2026",
+   "url": "https://open.canada.ca/data/dataset/1c3d15f9-9cfa-4010-8462-0d67e493d9b9",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "al-ta",
+   "publisher": "Natural Resources Canada, Surveyor General Branch",
+   "title": "Aboriginal Lands of Canada Legislative Boundaries (reserve boundaries)",
+   "version": "Downloaded 2026",
+   "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/vector/geobase_al_ta/shp_eng/AL_TA_CA_SHP_eng.zip",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "isc-fn",
+   "publisher": "Indigenous Services Canada",
+   "title": "First Nations location",
+   "version": "Downloaded 2026",
+   "url": "https://data.sac-isc.gc.ca/geomatics/rest/directories/arcgisoutput/DonneesOuvertes_OpenData/Premiere_Nation_First_Nation/Premiere_Nation_First_Nation_GPKG.zip",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "sentinel2",
+   "publisher": "European Space Agency, Copernicus (via Element 84 Earth Search on AWS Open Data)",
+   "title": "Sentinel-2 Level-2A imagery",
+   "version": "Scenes 2023 to 2026",
+   "url": "https://earth-search.aws.element84.com/v1",
+   "licence": "Copernicus Sentinel data terms (free and open)",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "msbuildings",
+   "publisher": "Microsoft",
+   "title": "Global ML Building Footprints, Canada tiles",
+   "version": "Release of February 3, 2026",
+   "url": "https://minedbuildings.z5.web.core.windows.net/global-buildings/dataset-links.csv",
+   "licence": "ODbL 1.0",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "jasper-damage",
+   "publisher": "Municipality of Jasper",
+   "title": "Damage Assessment Structures, 2024 Jasper wildfire",
+   "version": "Layer last edited August 28, 2026",
+   "url": "https://services7.arcgis.com/1glZz4XajYW77W8H/arcgis/rest/services/Damage_Assessment_Structures/FeatureServer/0",
+   "licence": "Public item, no licence stated",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "summerland",
+   "publisher": "District of Summerland",
+   "title": "Bald Range Wildfire FAQ (preliminary damage assessment)",
+   "version": "Read October 21, 2026",
+   "url": "https://www.summerland.ca/city-services/eoc/bald-range-wildfire-home/bald-range-wildfire-faq",
+   "licence": "Municipal public information",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "hrfe",
+   "publisher": "Halifax Regional Municipality, Halifax Regional Fire and Emergency",
+   "title": "Post Incident Analysis, wildland urban interface wildfires of May 2023 (report to Committee of the Whole)",
+   "version": "August 20, 2024",
+   "url": "https://www.halifax.ca/sites/default/files/documents/city-hall/regional-council/240820cow4.pdf",
+   "licence": "Municipal public document",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "rdco",
+   "publisher": "City of Kelowna for the Central Okanagan Regional Emergency Program",
+   "title": "McDougall Creek Wildfire Debris Waste Management Plan",
+   "version": "2023",
+   "url": "https://www.rdco.com/media/k3apxusq/debris-management-plan-mcdougall-creek-wildfire.pdf",
+   "licence": "Public document",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "csrd",
+   "publisher": "Columbia Shuswap Regional District",
+   "title": "Updated Structure Loss Summary for North Shuswap",
+   "version": "September 5, 2023",
+   "url": "https://www.csrd.bc.ca/CivicAlerts.aspx?AID=1724",
+   "licence": "Public notice",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "tnrd",
+   "publisher": "Thompson-Nicola Regional District",
+   "title": "TNRD confirms structural impacts on 11 properties due to Bush Creek East fire",
+   "version": "August 23, 2023",
+   "url": "https://www.tnrd.ca/tnrd-confirms-structural-impacts-on-11-properties-due-to-bush-creek-east-fire/",
+   "licence": "Public notice",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "mnp-sk",
+   "publisher": "Government of Saskatchewan (MNP)",
+   "title": "Review of the 2025 Saskatchewan Wildfire Season",
+   "version": "June 2026",
+   "url": "https://www.saskatchewan.ca/-/media/news-release-backgrounders/2026/jun/mnp-2025-wildfire-report.pdf",
+   "licence": "Government of Saskatchewan terms",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "nrn",
+   "publisher": "Statistics Canada (GeoBase)",
+   "title": "National Road Network (NRN), road segments, by province and territory",
+   "version": "Current editions, downloaded October 2026",
+   "url": "https://geo.statcan.gc.ca/nrn_rrn/",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "nrwn",
+   "publisher": "Natural Resources Canada (GeoBase)",
+   "title": "National Railway Network (NRWN), track",
+   "version": "Current editions, downloaded October 2026",
+   "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/vector/geobase_nrwn_rfn/",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "bcws-cost",
+   "publisher": "BC Wildfire Service",
+   "title": "Wildfire averages (wildfire costs by fire year) and wildfire season summaries",
+   "version": "Read October 20, 2026",
+   "url": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status/about-bcws/wildfire-statistics/wildfire-averages",
+   "links": [
+    {
+     "label": "season summaries",
+     "url": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status/about-bcws/wildfire-history/wildfire-season-summary"
+    }
+   ],
+   "licence": "Open Government Licence - British Columbia",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "bc-budget",
+   "publisher": "BC Ministry of Finance",
+   "title": "Budget and Fiscal Plan 2026/27 to 2028/29 (fire management forecast; stumpage rates, Table A5)",
+   "version": "2026",
+   "url": "https://www.bcbudget.gov.bc.ca/2026/pdf/2026_Budget_and_Fiscal_Plan.pdf",
+   "links": [
+    {
+     "label": "2026 Estimates",
+     "url": "https://www.bcbudget.gov.bc.ca/2026/pdf/2026_Estimates.pdf"
+    }
+   ],
+   "licence": "Open Government Licence - British Columbia",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "on-pa",
+   "publisher": "Ontario Treasury Board Secretariat",
+   "title": "Public Accounts of Ontario: ministry statements and schedules (Emergency Forest Firefighting)",
+   "version": "2016-17 to 2025-26",
+   "url": "https://data.ontario.ca/dataset/public-accounts-ministry-statements-and-schedules",
+   "licence": "Open Government Licence - Ontario",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "ab-ar",
+   "publisher": "Government of Alberta",
+   "title": "Ministry annual reports (Agriculture and Forestry; Forestry and Parks), wildfire program lines",
+   "version": "2016-17 to 2025-26",
+   "url": "https://open.alberta.ca/dataset/2dedbb29-e005-4802-bf6e-03bf77536add",
+   "links": [
+    {
+     "label": "Agriculture and Forestry reports",
+     "url": "https://open.alberta.ca/dataset/3bd2d2b9-6ccd-4d8d-a8a2-a5c15da00c2a"
+    }
+   ],
+   "licence": "Open Government Licence - Alberta",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "sk-auditor",
+   "publisher": "Provincial Auditor of Saskatchewan",
+   "title": "2026 Report Volume 1, Chapter 5: Saskatchewan Public Safety Agency, resource planning for wildfire response",
+   "version": "2026",
+   "url": "https://auditor.sk.ca/pub/publications/public_reports/2026/Volume%201/ch-05----saskatchewan-public-safety-agencyresource-planning-for-wildfire-response.pdf",
+   "licence": "Crown copyright, Saskatchewan",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "cpi",
+   "publisher": "Statistics Canada, via the Bank of Canada Valet API",
+   "title": "Consumer Price Index, all items, Canada (vector v41690973)",
+   "version": "To September 2026",
+   "url": "https://www.bankofcanada.ca/valet/observations/V41690973/json",
+   "licence": "Statistics Canada Open Licence",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "grants",
+   "publisher": "Government of Canada",
+   "title": "Proactive Disclosure: Grants and Contributions (NRCan wildland fire programs; Disaster Financial Assistance orders)",
+   "version": "Modified October 21, 2026",
+   "url": "https://open.canada.ca/data/dataset/432527ab-7aac-45b5-81d6-7597107a7013",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "catiq",
+   "publisher": "Catastrophe Indices and Quantification Inc. (CatIQ)",
+   "title": "Public insured loss estimates: Jasper 2024 (final) and Bald Range 2026",
+   "version": "Read October 21, 2026",
+   "url": "https://public.catiq.com/",
+   "licence": "CatIQ terms of use",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "nfd-revenue",
+   "publisher": "Canadian Council of Forest Ministers, National Forestry Database",
+   "title": "Statement of Revenues from the Sale of Timber from Provincial Crown Land",
+   "version": "To 2024",
+   "url": "http://national-forestry-database.ca/download/data/csv/NFD%20-%20Statement%20of%20Revenues%20from%20the%20Sale%20of%20Timber%20from%20Provincial%20Crown%20Land%20-%20EN%20FR.csv",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "nfd-harvest",
+   "publisher": "Canadian Council of Forest Ministers, National Forestry Database",
+   "title": "Net merchantable volume of roundwood harvested by category and ownership",
+   "version": "To 2024",
+   "url": "http://national-forestry-database.ca/download/data/csv/NFD%20-%20Net%20Merchantable%20Volume%20of%20Roundwood%20Harvested%20by%20Category%20and%20Ownership%20-%20EN%20FR.csv",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "knn2011",
+   "publisher": "Natural Resources Canada, Canadian Forest Service (Beaudoin and others)",
+   "title": "Canada's forest attributes 2011, 250 m (kNN): merchantable volume",
+   "version": "2011, version 1",
+   "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/canada-forests-attributes_attributs-forests-canada/2011-attributes_attributs-2011/",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "parks-attendance",
+   "publisher": "Parks Canada",
+   "title": "Parks Canada attendance, 2001-02 to 2025-26",
+   "version": "Eight annual files",
+   "url": "https://open.canada.ca/data/dataset/eaa1ff9c-a07c-4292-911c-612f39d81afb",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "nir2026",
+   "publisher": "Environment and Climate Change Canada",
+   "title": "National Inventory Report 1990 to 2024 (2026 submission): Chapter 6 tables and greenhouse gas emissions by IPCC sector",
+   "version": "2026",
+   "url": "https://data-donnees.az.ec.gc.ca/api/file?path=%2Fsubstances%2Fmonitor%2Fcanada-s-official-greenhouse-gas-inventory%2FE-LULUCF%2FEN_Ch6_Tables_FullTimeSeries.xlsx",
+   "links": [
+    {
+     "label": "by IPCC sector",
+     "url": "https://data-donnees.az.ec.gc.ca/api/file?path=%2Fsubstances%2Fmonitor%2Fcanada-s-official-greenhouse-gas-inventory%2FA-IPCC-Sector%2FGHG_IPCC_Can_Prov_Terr.csv"
+    }
+   ],
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "scanfi",
+   "publisher": "Natural Resources Canada, Canadian Forest Service (Guindon and others)",
+   "title": "SCANFI version 2: black spruce and jack pine crown closure, 1985 to 2020",
+   "version": "Version 2, January 19, 2026",
+   "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "caribou",
+   "publisher": "Environment and Climate Change Canada",
+   "title": "Boreal caribou ranges (51 ranges, federal recovery strategy)",
+   "version": "Disturbance footprint updated for 2020",
+   "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/STB_DGST/DisturbanceFootprintUpdatedFor2020/MapServer/4",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "bc-watersheds",
+   "publisher": "Province of British Columbia (BC Data Catalogue)",
+   "title": "Community watersheds (designated drinking-water watersheds, WLS_COMMUNITY_WS_PUB_SVW)",
+   "version": "Downloaded October 2026",
+   "url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=WHSE_WATER_MANAGEMENT.WLS_COMMUNITY_WS_PUB_SVW&outputFormat=json&count=1",
+   "licence": "Open Government Licence - British Columbia",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "nhn",
+   "publisher": "Natural Resources Canada",
+   "title": "National Hydro Network (NHN), work unit index",
+   "version": "Edition 2",
+   "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/vector/geobase_nhn_rhn/index/NHN_INDEX_WORKUNIT_LIMIT_2.zip",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "dfrp",
+   "publisher": "Treasury Board of Canada Secretariat",
+   "title": "Directory of Federal Real Property (used to flag military ranges)",
+   "version": "Downloaded October 2026",
+   "url": "https://map-carte.tbs-sct.gc.ca/dfrp-rbif/oddo/dfrp-rbif.zip",
+   "licence": "Open Government Licence - Canada",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "ab-dnd",
+   "publisher": "Government of Alberta",
+   "title": "Military bases and training grounds (DND air weapons range and bases)",
+   "version": "Downloaded October 2026",
+   "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/military_base_and_training_ground/MapServer",
+   "licence": "Open Government Licence - Alberta",
+   "accessed": "2026-10-21"
+  }
+ ]
+}
