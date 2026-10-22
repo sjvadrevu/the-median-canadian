@@ -2,8 +2,8 @@
 firefighting / fire-management flights and other flights whose TSB summary describes wildfire work.
 Coded set: aircraft OperationTypeID = 'FIRE FIGHTING / FIRE MANAGEMENT'.
 Text set (not coded): summary matches wildfire-work keywords; listed in tsb_wildfire_text_matches.csv for checking.
-Counts: fatalities / serious / minor from the INJURIES table summed per occurrence (all persons on the aircraft
-and on the ground as TSB records them). Output written to analysis/losses/."""
+Counts: fatalities / serious / minor are TSB's occurrence-level totals (OCCURRENCE table); the INJURIES table
+repeats rows and is used only where a total is missing. Output written to analysis/losses/."""
 import os, re
 import pandas as pd
 
@@ -42,8 +42,10 @@ acs = ac.groupby("OccNo").agg(aircraft=("AircraftTypeID_DisplayEng", lambda s: "
                               operator_type=("OperatorTypeID_DisplayEng", lambda s: "; ".join(sorted(set(map(str, s))))),
                               damage=("DamageLevelID_DisplayEng", lambda s: "; ".join(sorted(set(map(str, s))))))
 sel = sel.merge(acs, left_on="OccNo", right_index=True, how="left")
-for c in ["FatalCount", "SeriousCount", "MinorCount"]:
-    sel[c] = sel[c].fillna(0).astype(int)
+# The INJURIES table repeats person rows (it double-counted 2024 and 2026), so use the occurrence-level
+# totals TSB publishes on the OCCURRENCE table; fall back to the injuries sum only where a total is missing.
+for c, tot in [("FatalCount", "TotalFatalCount"), ("SeriousCount", "TotalSeriousCount"), ("MinorCount", "TotalMinorCount")]:
+    sel[c] = pd.to_numeric(sel[tot], errors="coerce").fillna(sel[c]).fillna(0).astype(int)
 sel = sel[sel.CountryID_DisplayEng.fillna("CANADA").str.upper() == "CANADA"]
 cols = ["OccNo", "OccDate", "year", "set", "OccTypeID_DisplayEng", "OccClassID_DisplayEng", "ProvinceID_DisplayEng", "Location", "Latitude", "Longitude",
         "aircraft", "make_model", "operation", "operator_type", "damage", "FatalCount", "SeriousCount", "MinorCount", "TotalFatalCount", "Summary"]
