@@ -711,6 +711,42 @@
    "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/military_base_and_training_ground/MapServer",
    "licence": "Open Government Licence - Alberta",
    "accessed": "2026-10-21"
+  },
+  {
+   "id": "hc-smoke",
+   "publisher": "Health Canada",
+   "title": "Wildfire smoke and your health",
+   "version": "Page modified October 6, 2026",
+   "url": "https://www.canada.ca/en/health-canada/services/publications/healthy-living/wildfire-smoke-health.html",
+   "licence": "Government of Canada terms of use",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "fortin2026",
+   "publisher": "Journal of Ecology",
+   "title": "Fortin S., Boucher Y., Bergeron Y. and others. Ecological factors shaping post-fire resilience in mature black spruce forests of eastern North America",
+   "version": "Vol. 114, e70260, 2026",
+   "url": "https://doi.org/10.1111/1365-2745.70260",
+   "licence": "Journal article",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "best2024",
+   "publisher": "Landscape Ecology",
+   "title": "Best I.N., Brown L., Elkin C. and others. Cut vs. fire: a comparative study of the temporal effects of timber harvest and wildfire on ecological indicators of the boreal forest",
+   "version": "Vol. 39, article 81, 2024",
+   "url": "https://doi.org/10.1007/s10980-024-01882-4",
+   "licence": "Journal article",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "caaqs",
+   "publisher": "Canadian Council of Ministers of the Environment (as published by the Government of Alberta)",
+   "title": "Canadian Ambient Air Quality Standards: PM2.5 24-hour standard, 27 micrograms per cubic metre from 2020",
+   "version": "Page read October 22, 2026",
+   "url": "https://www.alberta.ca/canadian-ambient-air-quality-standards",
+   "licence": "Government of Alberta terms of use",
+   "accessed": "2026-10-22"
   }
  ]
 }
