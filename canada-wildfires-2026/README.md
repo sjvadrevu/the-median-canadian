@@ -1,0 +1,1 @@
+# canada-wildfires-2026
