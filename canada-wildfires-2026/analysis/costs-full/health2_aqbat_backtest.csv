@@ -1,0 +1,33 @@
+outcome,year,hc_central,predicted_central,hc_over_predicted
+Respiratory emergency room visits,2019,220,331.0,0.665
+Respiratory emergency room visits,2020,330,423.5,0.779
+Respiratory emergency room visits,2021,1200,722.9,1.66
+Respiratory emergency room visits,2022,210,349.7,0.6
+Cardiac emergency room visits,2019,74,118.8,0.623
+Cardiac emergency room visits,2020,120,152.0,0.79
+Cardiac emergency room visits,2021,420,259.3,1.619
+Cardiac emergency room visits,2022,74,125.5,0.59
+Respiratory hospital admissions,2019,43,68.1,0.631
+Respiratory hospital admissions,2020,66,87.2,0.757
+Respiratory hospital admissions,2021,230,148.8,1.545
+Respiratory hospital admissions,2022,42,72.0,0.583
+Cardiac hospital admissions,2019,56,89.5,0.625
+Cardiac hospital admissions,2020,93,114.6,0.812
+Cardiac hospital admissions,2021,320,195.6,1.636
+Cardiac hospital admissions,2022,56,94.6,0.592
+Asthma symptom days,2019,140000,215558.7,0.649
+Asthma symptom days,2020,230000,259026.3,0.888
+Asthma symptom days,2021,780000,462124.8,1.688
+Asthma symptom days,2022,140000,226035.6,0.619
+Child acute bronchitis episodes,2019,2800,4363.7,0.642
+Child acute bronchitis episodes,2020,4600,5234.8,0.879
+Child acute bronchitis episodes,2021,15000,9317.2,1.61
+Child acute bronchitis episodes,2022,2800,4575.4,0.612
+Restricted activity days,2019,870000,1351131.9,0.644
+Restricted activity days,2020,1500000,1731118.8,0.866
+Restricted activity days,2021,4700000,2933213.9,1.602
+Restricted activity days,2022,850000,1428175.2,0.595
+Acute respiratory symptom days,2019,1600000,2360560.4,0.678
+Acute respiratory symptom days,2020,2700000,3029460.4,0.891
+Acute respiratory symptom days,2021,8700000,5143587.7,1.691
+Acute respiratory symptom days,2022,1600000,2495408.9,0.641

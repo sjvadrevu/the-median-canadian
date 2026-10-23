@@ -510,7 +510,7 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
         <h2 class="chH">The fires cost at least $<span data-n="@c4.per_canadian" data-f="f10"></span> per Canadian</h2>
         <p class="reveal">Yearly firefighting costs doubled, to <span data-n="@c4.firefight_2023_2025_b" data-f="overb"></span>.<sup class="cite" data-cite="bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi"></sup></p>
         <div class="receipt" id="receipt"></div>
-        <p class="fnote">Each cost counted once, estimates at their low end; 2026 from government forecasts. Costs with no public record are not included. Evacuations include Indigenous Services Canada's estimate for on-reserve emergency response. Per Canadian: the total divided by Canada's population on July 1, 2026, rounded down.<sup class="cite" data-cite="statcan-popest"></sup></p>
+        <p class="fnote">Each cost counted once, estimates at their low end. 2026: government forecasts and estimates from area burned. Costs with no public record are not included. Evacuations include the low end of an estimate for Indigenous Services Canada's on-reserve emergency response. Per Canadian: the total divided by Canada's population on July 1, 2026, rounded down.<sup class="cite" data-cite="statcan-popest"></sup></p>
         <details class="how2" id="billHow"><summary>How the bill was counted</summary><div id="billDetail"></div></details>
         <div class="sub">
           <h3>Firefighting costs each year in BC, Ontario, Alberta and Saskatchewan</h3>
@@ -934,7 +934,7 @@ function hcTable() {
 }
 
 /* chapter 4: the bill */
-const BIL = v => v >= 1e9 ? "$" + nf(v / 1e9, 1) + "B" : v >= 1e7 ? "$" + nf(v / 1e6, 0) + "M" : v > 0 ? "$" + nf(v / 1e6, 1) + "M" : "$0";
+const BIL = v => v >= 1e9 ? "$" + nf(v / 1e9, 1) + "B" : v >= 1e7 ? "$" + nf(v / 1e6, 0) + "M" : v >= 1e5 ? "$" + nf(v / 1e6, 1) + "M" : v > 0 ? "$" + nf(v / 1e3, 0) + "K" : "$0";
 function receipt() {
   const el = $("#receipt"); if (!el) return;
   const c = CH.c4, cites = CH.cites || {};
@@ -946,7 +946,7 @@ function receipt() {
 function billDetail() {
   const el = $("#billDetail"); if (!el) return;
   const c = CH.c4, cites = CH.cites || {};
-  let h = `<p>Every line below is in the total once. Official spending is counted in full. Estimates are counted at the low end of their range, except Indigenous Services Canada's on-reserve response, an estimate counted at its central value. Firefighting for 2026 uses government forecasts and budgets, since final costs are not yet published. Trees and firefighting are in 2025 dollars.</p>`;
+  let h = `<p>Every line below is in the total once. Official spending is counted in full and every estimate at the low end of its range. Final 2026 costs are not yet published, so firefighting for 2026 uses government forecasts and budgets and, where there is no forecast or a season ran far past its budget, estimates from the area burned. Trees, firefighting, evacuations and health care are in 2025 dollars; homes and buildings at 2021 census values; other losses as reported.</p>`;
   c.items.forEach(i => {
     const L = c.lines.filter(l => l.cat === i.key).sort((a, b) => b.counted - a.counted);
     h += `<h4>${esc(i.label)} <span>$${nf(i.b, 1)}B</span></h4><ul class="bl2">` + L.map(l => {
@@ -961,7 +961,7 @@ function billDetail() {
     <li>Insured losses run about ${nf(c.insured_ratio, 1)} times the census home values used here, for the ${c.insured_events} events where both exist. They are industry figures and are not added.${citeHTML(cites.bill_insured || "")}</li>
     <li>Lost wages and lost business output overlap, so only the larger of the two is counted.</li></ul>`;
   const groups = [...new Set(c.not_found.map(x => x.group))];
-  h += `<h4>Still without a public record</h4><p>These costs are real but no government or agency has published a figure, so they are not in the total.</p>` +
+  h += `<h4>Still without a public record</h4><p>No government or agency has published these costs, so they are not in the total. Where a published figure is missing but official data allow an estimate, the line above says estimate.</p>` +
     groups.map(g => `<div class="nfg">${esc(g)}</div><ul class="nf">` + c.not_found.filter(x => x.group === g).map(x => `<li>${esc(x.text)}</li>`).join("") + `</ul>`).join("");
   el.innerHTML = h;
   fillCites(el);

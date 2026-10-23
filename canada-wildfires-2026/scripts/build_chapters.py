@@ -21,6 +21,7 @@ Usage: python scripts/build_chapters.py   (needs pandas, pyproj; Playwright Chro
 import json
 import math
 import os
+import re
 import sys
 
 import pandas as pd
@@ -119,12 +120,7 @@ def main():
     bs = json.load(open(os.path.join(AN, "costs-full/bill_summary.json")))
     sl = bs["slide"]
     vtot = sum(s["value"].values()) / 1000
-    receipt = [("trees", "Trees burned, 2023 to 2026", sl["trees_2023_2026"] / 1e9),
-               ("fight", "Firefighting, 2023 to 2025", sl["firefighting_response_2023_2025"] / 1e9),
-               ("fight26", "Firefighting, 2026 forecasts", sl["firefighting_2026_forecasts"] / 1e9),
-               ("build", "Homes, buildings and repairs", vtot + sl["buildings_infrastructure_extra"] / 1e9),
-               ("evac", "Evacuations and hospital care", sl["evacuations_health_incl_isc"] / 1e9),
-               ("work", "Lost work and business", sl["lost_work_and_output"] / 1e9)]
+    receipt = [(k, lab, sl[k] / 1e9 + (vtot if k == "build" else 0)) for k, lab in ms.BILL_LINES]
     total = sum(v for _, _, v in receipt)
     pop = population_2026()
     ff_ratio = V("C28.mean_2023_2025_b") / V("C28.mean_2016_2022_b")
@@ -140,7 +136,8 @@ def main():
     out["c4"] = dict(items=[dict(key=k, label=lab, b=round(v, 3)) for k, lab, v in receipt],
                      total_b=total, per_canadian=total * 1e9 / pop["value"],
                      population_2026=pop["value"], population_source=pop["source"],
-                     isc_estimate_b=sl["isc_estimate"] / 1e9, lines=lines, not_found=not_found(),
+                     isc_low_b=sl["isc_estimate_low"] / 1e9, isc_central_b=sl["isc_estimate_central"] / 1e9,
+                     lines=lines, not_found=not_found(),
                      dfaa_b=dfaa_total() / 1e9,
                      insured_ratio=float(ins_all.insured_cad / ins_all.bill_building_value_cad), insured_events=int(len(ins) - 1),
                      firefight_2023_2025_b=V("C28.mean_2023_2025_b"), firefight_2016_2022_b=V("C28.mean_2016_2022_b"),
@@ -261,60 +258,165 @@ def bill_lines(cb, vtot):
                 basis = "; ".join(x for x in (r.get("basis", ""), r.get("dollars_basis", "")) if x)
             else:
                 basis = r.get("method", "")
-            d = dict(basis=str(basis), source=str(r.get("source_name", "")), urls=split_urls(r.get("url")))
+            d = dict(basis=str(basis), source=str(r.get("source_name", "")), urls=split_urls(r.get("url")),
+                     notes=str(r.get("notes", "")))
             info[(f, str(r["item"]))] = d
             info[(f, f'{r["item"]} ({r.get("period", "")})')] = d
             info[(f, f'{r["item"]} ({r.get("period", "")}), estimate')] = d
-    # lost wages and lost output overlap: the floor keeps the larger group
-    wages = cb.loc[cb.cat == "wages", "low"].sum()
-    output = cb.loc[cb.cat == "output", "low"].sum()
-    keep_work = "output" if output >= wages else "wages"
+    # combine_bill.py sets, for each line, the receipt line it belongs to, the amount counted in the floor and a note
     out = [dict(cat="build", label="Homes and buildings destroyed (official counts and a satellite check, at census home values)",
                 counted=vtot * 1e9, low=vtot * 1e9, high=vtot * 1e9, note="",
-                basis="Buildings destroyed x 2021 Census average value of owner-occupied dwellings",
-                source="analysis/property (official damage counts; Sentinel-2 check)",
+                basis="buildings destroyed x 2021 census home values (average value of owner-occupied dwellings)",
+                source="",
                 refs=["jasper-damage", "hrfe", "rdco", "csrd", "tnrd", "mnp-sk", "summerland", "census-profile", "sentinel2", "msbuildings"])]
-    for _, r in cb.iterrows():
-        cat, item = r["cat"], str(r["item"])
-        isc = "Indigenous Services Canada" in item and item.endswith("estimate")
-        if cat == "trees":
-            k, counted, note = "trees", r["low"], ""
-        elif cat == "fight_2026":
-            k, counted, note = "fight26", r["ref"], "government forecast or budget"
-        elif isc:
-            k, counted, note = "evac", r["central"], "estimate; mostly First Nations evacuations"
-        elif cat == "fight":
-            k, counted, note = "fight", r["low"], ""
-        elif cat == "build":
-            k, counted, note = "build", r["low"], ""
-        elif cat in ("evac", "health"):
-            k, counted, note = "evac", r["low"], ""
-        elif cat in ("wages", "output"):
-            k = "work"
-            counted = r["low"] if cat == keep_work else 0.0
-            note = "" if cat == keep_work else "not added: overlaps lost output, the larger of the two is counted"
-        else:
-            continue
-        if counted == 0 and not note:
-            note = "not added: estimate starts at zero or appears only in the high case"
+    for _, r in cb.fillna({"note": ""}).iterrows():
+        cat, item, k = r["cat"], str(r["item"]), r["line"]
+        counted, note = float(r["counted"]), str(r["note"])
+        if counted == 0 and r["high"] <= 0:
+            continue  # a correction to the high case only (nothing to show beside the floor)
         src = str(r["src"])
         d = info.get((src, item), {})
         if src.startswith("economic-value"):
             d = dict(basis="Provincial public accounts (2025 dollars)" if cat == "fight" else
                      "Timber volume burned x provincial Crown stumpage price (2025 dollars)",
                      source="analysis/economic-value/cost_tally_by_year.csv", urls=[])
-        if re.search(r"death", d.get("basis", "") + d.get("source", ""), flags=re.I):
-            # the page shows no modelled smoke deaths; these lines scale Health Canada's 2023 hospital cost by smoke exposure
-            d = dict(d, basis="Health Canada's 2023 hospital cost, scaled to this year by smoke exposure where people live",
-                     source="Health Canada estimates for 2023 and air monitor smoke levels")
         refs = ({"trees": ["nfd-revenue", "bc-budget", "knn2011", "nbac", "cwfis-m3", "cpi"],
                  "fight": ["bcws-cost", "bc-budget", "on-pa", "ab-ar", "sk-auditor", "cpi"]}.get(cat, [])
                 if src.startswith("economic-value") else [])
         refs += [by_url[u] for u in d.get("urls", []) if u in by_url and by_url[u] not in refs]
-        out.append(dict(cat=k, label=item, counted=float(counted), low=float(r["low"] if cat != "fight_2026" else r["ref"]),
-                        high=float(r["high"] if cat != "fight_2026" else r["ref"]), note=note,
-                        basis=d.get("basis", ""), source=d.get("source", src), refs=refs))
+        out.append(dict(cat=k, label=plain_label(item), counted=counted, low=float(r["low"]), high=float(r["high"]),
+                        note=note, basis=(d.get("basis", "") if src.startswith("economic-value") else plain_basis(item, d.get("basis", ""))),
+                        source="", refs=refs, item=item))
+    # lines whose rows cite the program rows they are built from: borrow those rows' citations
+    def refs_of(prefix):
+        return [x for l in out if l.get("item", "").startswith(prefix) for x in l["refs"]]
+    borrow = {"Lost work and wages of evacuated workers": ["Lost work and wages of evacuated workers (2025)"],
+              "Evacuations 2026 off reserve": ["Evacuations: Alberta Emergency Evacuation Payments (2025",
+                                               "Evacuations and local emergency response: BC EMCR payments for interface fires (2023",
+                                               "Evacuations: Manitoba evacuee related costs"]}
+    for l in out:
+        for pre, srcs in borrow.items():
+            if l.get("item", "").startswith(pre) and not l["refs"]:
+                l["refs"] = list(dict.fromkeys(x for s in srcs for x in refs_of(s)))
+    for l in out:
+        l.pop("item", None)
+        assert l["refs"], ("no citation", l["label"])
+        assert l["basis"], ("no basis", l["label"])
+    for l in out:  # nothing internal (file names, research rounds, working labels) reaches the page
+        for f in ("label", "note", "basis", "source"):
+            assert not re.search(JARGON, l[f]), (f, l[f])
     return out
+
+
+# Words from the research files that mean nothing to a reader (file names, research rounds, working labels)
+JARGON = (r"gov_|econ_|health_|gov2|econ2|health2|tier [ABC]\b|first.round|second round|this round|\.csv\b|"
+          r"\bbill lines?\b|in the bill|not in bill|already in|already counted|replaces|\(revised\)|\bQ1\b|"
+          r"\bETSP\b|\bEIDS\b|\bAQBAT\b|\bMWS\b|\bHRM\b|AS-471|\bdeaths?\b")
+
+
+def plain_label(t):
+    """A bill line's label from the research files, in plain words for the page."""
+    import re
+    subs = [(r"Indigenous Services Canada EMAP response, wildfire share \(refined range; replaces the gov_ tier C rows\)",
+             "Indigenous Services Canada: on-reserve emergency response, wildfire share (estimate)"),
+            (r"\s*\(revised\)", ""), (r" already in gov_(costs\.csv)?", ""), (r"forecast at Q1", "first-quarter forecast"),
+            (r"the Q1 forecast", "the first-quarter forecast"),
+            (r": actual-based figure \(estimate \+ \$15M wildfire overrun\) minus the forecast",
+             ": actual spending above the forecast (wildfire overrun)"),
+            (r" beyond the 59\.8M already counted", " beyond the Jasper response line"), (r"\bMWS\b", "Manitoba Wildfire Service"),
+            (r"\bECC Forest Management", "Forest Management"), (r"Nova Scotia DNR", "Nova Scotia Natural Resources"),
+            (r"DNR Forest Protection", "Natural Resources Forest Protection"),
+            (r"\(separate from the Fire Management vote in the bill\)", "(separate from the Fire Management vote)"),
+            (r"minus the early estimate used in the bill", "above the early estimate"),
+            (r"^Buildings not in the bill: ", "Buildings beyond our satellite count: "), (r"\s*\(not in bill\)", ""),
+            (r": official count above flagged count", ": official count above ours"), (r"Halifax \(HRM\)", "Halifax"),
+            (r"\s*\(Quebec AS-471, CIHI provincial ED and stay costs\)", " (Quebec and provincial unit costs)"),
+            (r", rebuilt with AQBAT and our exposure", ", estimated from smoke exposure"),
+            (r"\(rebuilt counts\)", "(estimated counts)"), (r"\bGNWT\b", "Northwest Territories government"),
+            (r"BC EMCR payments", "BC emergency management payments"),
+            (r"\bSPSA\b", "Saskatchewan Public Safety Agency"), (r"Saskatchewan Saskatchewan", "Saskatchewan"),
+            (r"Alberta HARP programs", "Alberta Hazard Assistance and Resilience Program"),
+            (r": ISC wildfire", ": Indigenous Services Canada wildfire"), (r"\bED visits\b", "emergency visits"),
+            (r"Ontario MNR Public Protection", "Ontario Natural Resources, public protection"),
+            (r"mostly the EMO account", "mostly emergency management"), (r"\(TNRD Electoral Area E, ", "(Thompson-Nicola Area E, "),
+            (r"^Buildings above the bill count: ", "Buildings beyond our satellite count: "),
+            (r", satellite re-count on the official perimeter", ", satellite count on the official fire perimeter"),
+            (r"\(Okanagan Indian Band IR 1\)", "(Okanagan Indian Band reserve)"),
+            (r" \(estimate; annual report due spring 2027\)", ""),
+            (r" \(estimate; budget line printed as a graphic and not readable\)", "")]
+    for a, b in subs:
+        t = re.sub(a, b, t)
+    # period suffixes from the research files, e.g. "(FY2023-24 (2023 season))", "(2023 (May-Sep))", "(2024 season)"
+    per = [(r" \(FY(20\d\d)-(\d\d) \(20\d\d season\)\)$", r" (\1-\2)"),
+           (r" \((20\d\d) season \(calendar year\)\)$", r" (\1)"), (r" \((20\d\d) \(FY(20\d\d)-(\d\d)\)\)$", r" (\2-\3)"),
+           (r" \((20\d\d) \(May-Sep\)\)$", r" (May to September \1)"), (r" \((20\d\d) season\)$", r" (\1)"),
+           (r" \((20\d\d) fires\)$", r" (\1)"), (r" \((20\d\d) season \(spent to June 2026\)\)$", r" (\1, spent to June 2026)"),
+           (r" \((20\d\d) \(FY(20\d\d)-(\d\d)[^()]*\)\)$", r" (\2-\3)")]
+    for a, b in per:
+        t = re.sub(a, b, t)
+    t = re.sub(r",? \(estimate\)(?= \(| ?$)|, estimate(?= \(| ?$)", "", t)  # the note says estimate
+    t = re.sub(r"(, (?:FY)?(20\d\d)-(\d\d)) \(\2-\3\)$", r"\1", t)  # "..., FY2024-25 (2024-25)" -> once
+    return t
+
+
+BASIS = [  # (where to match: "i" item, "b" the research file's basis, pattern, phrase shown on the page);
+    # first match wins
+    ("i", r"insured value", "insured value (industry data), not added"),
+    ("i", r"satellite", "satellite count x 2021 census home values"),
+    ("i", r"^Buildings|official count x census", "official count x 2021 census home values"),
+    ("i", r"^GDP lost", "drop in Statistics Canada output data"),
+    ("i", r"shut in|shut-ins", "production shut in x prices, from official data"),
+    ("i", r"fee revenue forgone", "fewer visits x Parks Canada fees"),
+    ("i", r"^Lost work|employed per resident", "estimate: evacuees x share employed x days away x daily earnings"),
+    ("i", r"physician", "estimate: one doctor's assessment per visit, at physician fee rates"),
+    ("i", r"rebuilt with AQBAT|estimated from smoke exposure", "estimate: Health Canada's 2023 counts scaled by each year's smoke, x hospital costs"),
+    ("i", r"re-costed 2023 hospital cost|provincial unit costs", "provincial hospital costs applied to Health Canada's 2023 counts"),
+    ("b", r"AQBAT counts .* cost per visit", "Health Canada's 2023 counts x CIHI cost per visit"),
+    ("b", r"AQBAT admissions", "Health Canada's 2023 counts x CIHI cost per hospital stay"),
+    ("b", r"AS-471", "audited hospital financial reports"),
+    ("b", r"commitment to match", "estimate: province's matching pledge x donations counted"),
+    ("b", r"evacuee count x|evacuee counts x", "estimate: 2026 evacuees x cost per evacuee in earlier years"),
+    ("b", r"area burned|similar seasons|past seasons", "estimate from past costs and area burned"),
+    ("b", r"per-resident cost", "estimate: cost per resident in nearby towns x population"),
+    ("b", r"peak-person-day", "estimate from the 2023 cost per deployment"),
+    ("b", r"no hazard split", "estimate: wildfire share of all emergency response costs"),
+    ("b", r"scaled from the 2023 season", "estimate scaled from the 2023 season"),
+    ("b", r"official unit costs", "estimate from official repair costs per pole and tower"),
+    ("b", r"insects and disease", "estimate: fire share of forest protection spending"),
+    ("b", r"Supplementary Estimates and Q3", "estimate from budget documents"),
+    ("b", r"audited statements and the 2026 Financial Plan", "estimate from audited statements"),
+    ("b", r"municipal project estimate", "municipal estimate approved for provincial aid"),
+    ("b", r"not readable; 2025-26 Estimate used|base budget proxy", "estimate: base budget"),
+    ("b", r"own season estimate", "Parks Canada's own estimate, less amounts counted in other lines"),
+    ("b", r"estimated event cost", "the territory's estimated event cost"),
+    ("b", r"minus (?:estimate|forecast)", "official spending above the earlier figure"),
+    ("b", r"^actual \(low\); committed", "official spending (low end); amounts committed"),
+    ("b", r"^actual \(low\); estimate", "official spending (low end)"),
+    ("b", r"^forecast", "government forecast"),
+    ("b", r"agreement values", "federal agreements (amounts committed)"),
+    ("b", r"^allocation", "federal funding allocated"),
+    ("b", r"appropriation", "amount approved by the legislature"),
+    ("b", r"^commitment", "amount committed"),
+    ("b", r"Emergency and Disaster Management Act", "official payments by event"),
+    ("b", r"^approved", "approved provincial funding"),
+    ("b", r"official statement", "official statement"),
+    ("b", r"official program total|official amount paid|official grant|official FY|audited year-end|contract disclosure",
+     "official spending"),
+    ("b", r"audited", "audited spending"),
+    ("b", r"^actual", "official spending"),
+    ("b", r"^forecast", "government forecast"),
+    ("b", r"^budget", "budget"),
+    ("b", r"estimat|ESTIMATE", "estimate from official data"),
+    ("b", r"^computed", "computed from official data"),
+]
+
+
+def plain_basis(item, raw):
+    """How a bill line's figure was found, as a short plain phrase (the research files hold the full method)."""
+    for where, pat, phrase in BASIS:
+        if re.search(pat, item if where == "i" else str(raw).strip()):
+            return phrase
+    return ""
 
 
 def dfaa_total():
@@ -329,43 +431,13 @@ def dfaa_total():
 
 
 def not_found():
-    """Specific items still without a public record, from the 'Not found' sections of the notes files
-    (gov*_notes.md, econ*_notes.md, health*_notes.md, so later research rounds are picked up when re-run).
-    For the page each item is shortened: asides that mention news reports and figures quoted from the news are
-    dropped (news is used only to find documents), and industry insured-loss gaps are left out (not part of the bill)."""
-    import re
-    label = {"gov": "Firefighting and emergency response", "econ": "Property, infrastructure and the economy",
-             "health": "Health care, evacuations and work"}
-    res = []
-    for f in sorted(os.listdir(os.path.join(AN, "costs-full"))):
-        m0 = re.fullmatch(r"(gov|econ|health)\d*_notes\.md", f)
-        if not m0:
-            continue
-        t = open(os.path.join(AN, "costs-full", f), encoding="utf-8").read()
-        m = re.search(r"^## (?:\d+\. )?(?:Not found|Could not find)[^\n]*\n(.*?)(?=^## |\Z)", t, flags=re.S | re.M)
-        if not m:
-            continue
-        head = None
-        for line in m.group(1).splitlines():
-            s = line.strip()
-            h = re.match(r"^\*\*(.+?)\*\*\s*$", s) or re.match(r"^([A-Z][^:]{2,40}):\s*$", s)
-            if h:
-                head = h.group(1)
-                continue
-            b = re.match(r"^- (.+)$", s)
-            if not b or b.group(1).lower().startswith("access notes") or (head or "").lower().startswith("insured"):
-                continue
-            x = b.group(1)
-            pre = re.match(r"^([^:()]{2,60}):\s", x)
-            access = r"\b(news|media|told|CBC|cited from|premier|briefing|HTTP|WebFetch|curl|downloads?|readable|refused|blocks)\b"
-            x = re.sub(r"\s*\([^()]*" + access + r"[^()]*\)", "", x, flags=re.I)
-            parts = re.split(r"(?<=[.;])\s+", x)
-            x = " ".join(p for p in parts if not re.search(access + r"|the bill flags", p, flags=re.I)).strip()
-            x = re.sub(r"\s+", " ", x).strip(" ;")
-            if x and pre and not x.startswith(pre.group(1)):
-                x = f"{pre.group(1)}: {x}"
-            if x:
-                res.append(dict(file=f, group=label[m0.group(1)] + (f": {head}" if head else ""), text=x))
+    """Costs still without a public record after both research rounds (analysis/costs-full/still_open.csv, kept by
+    hand from the 'still open' items in gov2_notes.md, econ2_notes.md and health2_notes.md). Items with an estimate in
+    the bill are not listed here; their lines are marked as estimates."""
+    so = pd.read_csv(os.path.join(AN, "costs-full", "still_open.csv"))
+    res = [dict(file=r["from"], group=r["group"], text=r["item"]) for _, r in so.iterrows()]
+    for x in res:
+        assert not re.search(JARGON, x["text"]), x["text"]
     return res
 
 

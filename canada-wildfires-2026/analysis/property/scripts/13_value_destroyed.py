@@ -57,7 +57,24 @@ for ev in ["jasper2024", "tantallon2023", "barrington2023", "mcdougall2023", "bu
     if not os.path.exists(f): print("missing", ev); continue
     a = pd.read_csv(f); er.append(est_row(ev, int(ev[-4:]), a[a.likely_destroyed & (a.dist_fire_m.fillna(1e9) <= 500)]))
 a26 = pd.read_csv(os.path.join(P, "work", "apply_2026.csv"))
-s26 = a26[a26.likely_destroyed & (a26.dist <= 500)]
+# Quality screen for the 2026 outlines (the same screen the second cost round applies to its new satellite counts,
+# costs-full/scripts/econ2_sat_04_apply.py): (1) a cluster with a dNBR scene offset beyond +-100 has an unstable pre/post
+# match; (2) a fire whose 500-1000 m band has more than 26% as many flags as its 0-500 m band fails the false-positive
+# check; (3) fires under 10 ha cannot supply the burn context. The check events above all pass (offsets within 100,
+# band ratios 0 to 0.03). The flags that fail are listed in work/screen_fail_2026.csv.
+outl26 = gpd.read_file(os.path.join(W, "analysis", "outline-check", "outline_class_2026.geojson"))[["fire_uid", "area_ha"]]
+a26["offset_ok"] = a26.dnbr_offset.abs() <= 100
+ok26 = a26[a26.offset_ok & a26.likely_destroyed]
+qa26 = pd.DataFrame({"f500": ok26[ok26.dist <= 500].groupby("aoi").size(),
+                     "f1000": ok26[(ok26.dist > 500) & (ok26.dist <= 1000)].groupby("aoi").size()}).fillna(0)
+a26["fp_ok"] = a26.aoi.map(qa26.f1000 <= 0.26 * qa26.f500).fillna(True).astype(bool)
+a26["area_ok"] = a26.aoi.map(outl26.set_index("fire_uid").area_ha).fillna(0) >= 10
+a26["qa_pass"] = a26.offset_ok & a26.fp_ok & a26.area_ok
+s26_all = a26[a26.likely_destroyed & (a26.dist <= 500)]
+s26_all[~s26_all.qa_pass][["aoi", "x", "y", "lon", "lat", "dnbr_offset", "offset_ok", "fp_ok", "area_ok"]].to_csv(
+    os.path.join(P, "work", "screen_fail_2026.csv"), index=False)
+s26 = s26_all[s26_all.qa_pass]
+print("2026 flags within 500 m:", len(s26_all), "passing the quality screen:", len(s26))
 for fid, g in s26.groupby("aoi"): er.append(est_row(f"2026 outline {fid}", 2026, g))
 er.append(est_row("2026 all outlines", 2026, s26))
 e = pd.DataFrame(er).round({"proxy_value_avg_cad": 0, "proxy_value_median_cad": 0}); e.to_csv(os.path.join(P, "destroyed_value_estimates.csv"), index=False)

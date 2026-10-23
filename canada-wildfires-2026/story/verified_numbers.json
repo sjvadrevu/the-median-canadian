@@ -21,7 +21,7 @@
   "C20": {"status": "corrected", "pooled_ratio_lo": 114, "pooled_ratio_hi": 297, "by_year": {"2023": [379, 988], "2024": [99, 260], "2025": [109, 289], "2026": [33, 84]}, "wording": "roughly 100 to 300 to one"},
   "C21": {"status": "confirmed", "on_reserve_pct": 3.3, "off_reserve_pct": 0.11, "ratio": 30.6},
   "C22": {"status": "confirmed", "communities": 7, "basis": "all outlines, any size", "names": ["Chemawawin Cree Nation", "Kanaka Bar", "Lake St. Martin", "Little Saskatchewan", "Penticton", "Siska", "Skuppah"]},
-  "C23": {"status": "corrected", "flagged": {"2023": 844, "2024": 417, "2025": 405, "2026": 517}, "total": 2183, "precision": 0.836, "recall": 0.832, "coverage": {"2023": "4 events", "2024": "Jasper in-sample", "2025": "2 events", "2026": "all outlines"}},
+  "C23": {"status": "corrected", "flagged": {"2023": 844, "2024": 417, "2025": 405, "2026": 488}, "total": 2154, "precision": 0.836, "recall": 0.832, "coverage": {"2023": "4 events", "2024": "Jasper in-sample", "2025": "2 events", "2026": "all outlines"}, "note_2026": "488 after the quality screen of 2026-10-23 (517 before); analysis/property/results.md"},
   "C24": {"status": "confirmed", "flagged": 168, "band_lo": 154, "band_hi": 185, "official_approx": 150},
   "C25": {"status": "confirmed", "roads_km": 9503, "rail_km": 686},
   "C26": {"status": "corrected", "value_cad_m": 923, "events": 7, "wording": "dwelling value (census proxy) of structures lost or damaged at seven events with official counts"},

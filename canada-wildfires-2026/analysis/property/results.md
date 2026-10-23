@@ -7,13 +7,14 @@ Original analysis from raw official data (government pages and layers, Statistic
 | Measure | 2023 | 2024 | 2025 | 2026 |
 |---|---|---|---|---|
 | Official structures destroyed, listed events | 615 + about 200 impacted | 358 (townsite) | about 400 homes (SHOE region); about 700 structures SK season | about 150 damaged or destroyed (Bald Range) |
-| Our satellite estimate, flagged within 500 m | 844 (4 events) | 417 (Jasper, in-sample) | 405 (2 events) | 517 (all 2026 outlines) |
+| Our satellite estimate, flagged within 500 m | 844 (4 events) | 417 (Jasper, in-sample) | 405 (2 events) | 488 after the quality screen (517 before; all 2026 outlines) |
 | Value of destroyed dwellings, proxy (official counts) | $445 M | $275 M | $85 M | $117 M |
 | Value of dwellings exposed (DA point inside fire) | $1.56 B | $0.69 B | $2.04 B | $1.17 B |
 | Insured loss, industry, listed events | over $945 M | $1.304 B | over $369 M | $293 M |
 | Roads inside burned area | 4,512 km | 755 km | 3,025 km | 1,280 km |
 
 - 2026: the rule flags 517 buildings within 500 m of a 2026 fire outline (calibration band 475 to 569). Bald Range alone: 168 flagged vs about 150 official (damaged or destroyed, preliminary).
+- Quality screen (added 2026-10-23; the same screen the second cost round applies to its new satellite counts): 29 of the 517 flags fail it, 23 on FOR_FIRE_014 (scene offsets beyond 100) and 6 on three small or noisy outlines. The bill counts the 488 that pass, worth $268 M (destroyed_value_estimates.csv; the failures are listed in work/screen_fail_2026.csv). The by-fire table below is before the screen. The 2023 to 2025 check events all pass.
 - Rule accuracy on Jasper (structure-level truth, 5-fold spatial CV): precision 0.836, recall 0.832. On six other events with official counts only, flagged/official ranged 0.31 to 1.51.
 - 2023 to 2026 union: 15,510 dwellings ($5.3 B, census proxy) in DAs whose representative point lies inside a fire; 486,438 dwellings ($174 B) in DAs touched by a fire.
 

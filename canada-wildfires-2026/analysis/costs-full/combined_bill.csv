@@ -1,100 +1,163 @@
-cat,item,low,central,high,src,ref
-trees,"Timber burned at Crown stumpage, 2023 to 2026",12971356067.373177,12971356067.373177,12971356067.373177,economic-value/cost_tally_by_year.csv,
-fight,"Firefighting, BC, AB, SK and ON, 2023 to 2025",6446739072.666205,6446739072.666205,6446739072.666205,economic-value/cost_tally_by_year.csv,
-fight,"Quebec forest firefighting (SOPFEU total expenses, net of out-of-province billings) (2023 season (calendar year))",259710230.94,259710230.94,259710230.94,gov_costs.csv,
-fight,"Quebec forest firefighting (SOPFEU total expenses, net of out-of-province billings) (2024 season (calendar year))",155122589.52,155122589.52,155122589.52,gov_costs.csv,
-fight,"Quebec forest firefighting (SOPFEU total expenses, net of out-of-province billings) (2025 season (calendar year))",133798617.0,133798617.0,133798617.0,gov_costs.csv,
-fight,Manitoba wildfire spending: Manitoba Wildfire Service + Wildfire Suppression appropriations (FY2023-24 (2023 season)),55918650.51,55918650.51,55918650.51,gov_costs.csv,
-fight,Manitoba wildfire spending: MWS + Wildfire Suppression + suppression paid from Emergency Expenditures (FY2024-25 (2024 season)),81389409.08,81389409.08,81389409.08,gov_costs.csv,
-fight,"Manitoba total wildfire suppression and Wildfire Service cost, 2025 season (FY2025-26 (2025 season))",229000000.0,229000000.0,229000000.0,gov_costs.csv,
-fight,"NWT wildfire program: ECC Forest Management (fire presuppression, suppression, forest resources) (FY2023-24 (2023 season))",156988980.43,156988980.43,156988980.43,gov_costs.csv,
-fight,NWT wildfire program: ECC Forest Management (FY2024-25 (2024 season)),91498652.06,91498652.06,91498652.06,gov_costs.csv,
-fight,NWT wildfire program: ECC Forest Management (FY2025-26 (2025 season)),112085000.0,112085000.0,112085000.0,gov_costs.csv,
-fight,Yukon Wildland Fire Management (Fire Management O&M) (FY2023-24 (2023 season)),40033109.64,40033109.64,40033109.64,gov_costs.csv,
-fight,Yukon Wildland Fire Management (Fire Management O&M) (FY2024-25 (2024 season)),48432297.07,48432297.07,48432297.07,gov_costs.csv,
-fight,Yukon Wildland Fire Management (Fire Management O&M) (FY2025-26 (2025 season)),63927000.0,63927000.0,63927000.0,gov_costs.csv,
-fight,"Nova Scotia DNR Fleet and Forest Protection (wildfire prevention, detection, suppression, air services) (FY2023-24 (2023 season))",23529954.49,23529954.49,23529954.49,gov_costs.csv,
-fight,"Nova Scotia DNR Fleet and Forest Protection (wildfire prevention, detection, suppression, air services) (FY2024-25 (2024 season))",9511099.16,9511099.16,9511099.16,gov_costs.csv,
-fight,"Nova Scotia DNR Fleet and Forest Protection (wildfire prevention, detection, suppression, air services) (FY2025-26 (2025 season))",40881000.0,40881000.0,40881000.0,gov_costs.csv,
-fight,Newfoundland and Labrador Fire Suppression and Communications (gross amount voted) (FY2023-24 (2023 season)),3936742.39,3936742.39,3936742.39,gov_costs.csv,
-fight,Newfoundland and Labrador Fire Suppression and Communications (gross amount voted) (FY2024-25 (2024 season)),12135888.98,12135888.98,12135888.98,gov_costs.csv,
-fight,Newfoundland and Labrador Fire Suppression and Communications (gross amount voted) (FY2025-26 (2025 season)),32500200.0,32500200.0,32500200.0,gov_costs.csv,
-fight,BC Ministry of Forests 'Fire Preparedness' core business (separate from the Fire Management vote in the bill) (FY2023-24 (2023 season)),42728248.77,42728248.77,42728248.77,gov_costs.csv,
-fight,BC Ministry of Forests 'Fire Preparedness' core business (separate from the Fire Management vote in the bill) (FY2024-25 (2024 season)),43109225.37,43109225.37,43109225.37,gov_costs.csv,
-fight,BC Ministry of Forests 'Fire Preparedness' core business (separate from the Fire Management vote in the bill) (FY2025-26 (2025 season)),57891000.0,57891000.0,57891000.0,gov_costs.csv,
-fight,"BC Fire Management vote, 2025-26 official actual minus the early estimate used in the bill (FY2025-26 (2025 season))",135112000.0,135112000.0,135112000.0,gov_costs.csv,
-fight,"Ontario MNR Public Protection: 'Public safety and emergency response' (base fire program, net of recoveries) (FY2023-24 (2023 season))",34698218.11,34698218.11,34698218.11,gov_costs.csv,
-fight,"Ontario MNR Public Protection: 'Public safety and emergency response' (base fire program, net of recoveries) (FY2024-25 (2024 season))",34518818.57,34518818.57,34518818.57,gov_costs.csv,
-fight,"Ontario MNR Public Protection: 'Public safety and emergency response' (base fire program, net of recoveries) (FY2025-26 (2025 season))",34453000.0,34453000.0,34453000.0,gov_costs.csv,
-fight_2026,"BC Fire Management, 2026-27 forecast (FY2026-27 (2026 season))",0.0,0.0,0.0,gov_costs.csv,829263501.91
-fight_2026,"BC Fire Preparedness, 2026-27 budget (FY2026-27 (2026 season))",0.0,0.0,0.0,gov_costs.csv,46137294.43
-fight_2026,"Alberta wildfire spending, 2026-27 forecast at Q1 (FY2026-27 (2026 season))",0.0,0.0,0.0,gov_costs.csv,267260895.02
-fight_2026,"Ontario Emergency Forest Firefighting, 2026-27 forecast at Q1 (FY2026-27 (2026 season))",0.0,0.0,0.0,gov_costs.csv,146340617.98
-fight_2026,"Manitoba Wildfire Service + Wildfire Suppression, 2026-27 budget (FY2026-27 (2026 season))",0.0,0.0,0.0,gov_costs.csv,55266022.18
-fight_2026,"NWT ECC Forest Management, 2026-27 budget (FY2026-27 (2026 season))",0.0,0.0,0.0,gov_costs.csv,64021093.56
-fight_2026,"Nova Scotia Fleet and Forest Protection, 2026-27 budget (FY2026-27 (2026 season))",0.0,0.0,0.0,gov_costs.csv,20630124.72
-fight_2026,"NL Fire Suppression and Communications, 2026-27 budget (gross) (FY2026-27 (2026 season))",0.0,0.0,0.0,gov_costs.csv,11532421.18
-fight,"Parks Canada wildfire response, 2023 season (FY2023-24 (2023 season))",39606736.33,39606736.33,39606736.33,gov_costs.csv,
-fight,"Parks Canada incident response and emergency operations, 2024-25 (Jasper; includes other 2024-25 fires) (FY2024-25 (2024 season))",61039249.82,61039249.82,61039249.82,gov_costs.csv,
-fight,"Alberta Disaster Recovery Program: Jasper incident response (municipal emergency operations, structural protection, mutual aid, transitional housing) (2024 season (spent to June 2026))",26028442.65,26028442.65,26028442.65,gov_costs.csv,
-fight,"Department of National Defence Operation LENTUS, actual incremental cost (FY2023-24 (2023 season))",9254390.88,9254390.88,9254390.88,gov_costs.csv,
-fight,"Public Safety Canada wildfire agreements: Red Cross matching (AB 2023, NS 2023) and United Way NWT 2023 match (2023 season)",13440853.41,13440853.41,13440853.41,gov_costs.csv,
-fight,"Public Safety Canada wildfire agreements: Humanitarian Workforce deployments (NL July 2024, Jasper Team Rubicon) and United Way NWT 2024 (2024 season)",4923425.67,4923425.67,4923425.67,gov_costs.csv,
-fight,Public Safety Canada wildfire agreements: Humanitarian Workforce deployments (Manitoba and NL 2025) (2025 season),3032836.8,3032836.8,3032836.8,gov_costs.csv,
-fight,Crown-Indigenous Relations: support to Indigenous governments affected by the 2023 NWT wildfires (FY2023-24 (2023 season)),9405293.59,9405293.59,9405293.59,gov_costs.csv,
-fight,"Indigenous Services Canada EMAP response costs reimbursed, all hazards (FY2023-24 (2023 season)), estimate",0.0,322400275.18,322400275.18,gov_costs.csv,
-fight,"Indigenous Services Canada EMAP response costs reimbursed, all hazards (FY2024-25 (2024 season)), estimate",0.0,250424731.27,250424731.27,gov_costs.csv,
-fight,"Indigenous Services Canada EMAP response costs reimbursed, all hazards (FY2025-26 (2025 season)), estimate",0.0,619292944.01,619292944.01,gov_costs.csv,
-build,Kingston wildfire NL 2025: property losses with no official count (insured value used),0.0,70000000.0,70000000.0,econ_costs.csv,
-build,Buildings not in the bill: Barrington Lake NS 2023: official count above flagged count,24007333.0,33961222.0,33961222.0,econ_costs.csv,
-build,"Buildings not in the bill: SHOE fire, Denare Beach region SK 2025: official count above flagged count",3190879.0,9612963.0,12176415.0,econ_costs.csv,
-build,Buildings not in the bill: Enterprise NT 2023 (not in bill),7344000.0,7803000.0,8537400.0,econ_costs.csv,
-build,"Buildings not in the bill: Hay River NT 2023, Patterson Road and Paradise Gardens (not in bill)",2030000.0,2718000.0,3020000.0,econ_costs.csv,
-build,Buildings not in the bill: Behchoko NT 2023 (not in bill),800000.0,944000.0,5192000.0,econ_costs.csv,
-build,Buildings not in the bill: Saskatchewan 2025 structures outside the SHOE region (not in bill),51840000.0,63475200.0,76038000.0,econ_costs.csv,
-build,"Jasper National Park: Parks Canada hazard management (danger trees, road safety) in re-entry and initial recovery",20200000.0,20200000.0,20200000.0,econ_costs.csv,
-build,"Jasper National Park: Parks Canada rebuild of park infrastructure (roads, campgrounds, trails, visitor and heritage assets, staff housing, hazard and contamination management, recovery staffing)",53700000.0,133042460.0,685400000.0,econ_costs.csv,
-build,"Jasper townsite: water and wastewater repairs (curb stops, service lines, mains) damaged by the fire and firefighting",5135000.0,5645000.0,9645000.0,econ_costs.csv,
-build,Halifax (HRM) municipal costs of the 2023 wildfires (capital remediation of damaged assets and extraordinary operating costs),13700000.0,13700000.0,13700000.0,econ_costs.csv,
-build,"Kelowna Glenmore Landfill repairs after the McDougall Creek fire (gas collection system, burnt waste)",1400000.0,1400000.0,1400000.0,econ_costs.csv,
-build,"BC Hydro wildfire response and repair costs, 2024 season",15000000.0,15000000.0,15000000.0,econ_costs.csv,
-build,"Manitoba Hydro wildfire restoration, 2025 season",24000000.0,32000000.0,32000000.0,econ_costs.csv,
-build,"SaskPower wildfire supports and recovery in Denare Beach and Creighton, 2025",8500000.0,8500000.0,8500000.0,econ_costs.csv,
-output,"Alberta natural gas production shut in by wildfires, May-June 2023",63984000.0,114698342.0,169446155.0,econ_costs.csv,
-output,"Alberta light and medium crude oil shut in by wildfires, May-June 2023",121211341.0,163145605.0,226017453.0,econ_costs.csv,
-output,"Alberta pentanes plus (natural gas liquids) lost with the gas shut-ins, May-June 2023",60828743.0,134521333.0,259808306.0,econ_costs.csv,
-output,"Alberta in situ bitumen shut in by wildfires, late May-June 2025",0.0,162708622.0,620494890.0,econ_costs.csv,
-output,"GDP lost: Iron ore mining, Canada (Quebec and Labrador) (2023-06)",0.0,25700583.0,51401167.0,econ_costs.csv,
-output,"GDP lost: Rail transportation, Canada (2023-06)",21688042.0,43376083.0,43376083.0,econ_costs.csv,
-output,"GDP lost: Accommodation services, Canada (2023-05, 2023-06, 2023-07, 2023-08, 2023-09)",0.0,144760646.0,289521292.0,econ_costs.csv,
-output,"GDP lost: Forestry and logging, Canada (2023-05, 2023-06, 2023-07, 2023-08, 2023-09)",0.0,26418917.0,52837833.0,econ_costs.csv,
-output,"GDP lost: Rail transportation, Canada (Jasper) (2024-07)",0.0,10830278.0,21660556.0,econ_costs.csv,
-output,"GDP lost: Iron ore mining, Canada (Labrador and northern Quebec) (2024-07)",7328958.0,14657917.0,14657917.0,econ_costs.csv,
-output,"GDP lost: Accommodation services, Canada (western tourist destinations) (2024-07)",0.0,11932708.0,23865417.0,econ_costs.csv,
-output,"Parks Canada fee revenue forgone, Prince Albert National Park (77,000 to 93,000 fewer visits)",354366.0,509439.0,888641.0,econ_costs.csv,
-health,Health care: extra respiratory and cardiac emergency visits from wildfire smoke (Health Canada count x CIHI cost) (2023 (May-Sep)),381101.0,1117186.0,1542781.0,health_costs.csv,
-health,Health care: extra respiratory and cardiac hospital admissions from wildfire smoke (Health Canada count x CIHI cost) (2023 (May-Sep)),1699017.0,7075477.0,13131413.0,health_costs.csv,
-health,"Health care: smoke-related emergency visits and admissions, scaled from Health Canada 2023 (2024 (May-Sep))",506673.0,1995562.0,3574327.0,health_costs.csv,
-health,"Health care: smoke-related emergency visits and admissions, scaled from Health Canada 2023 (2025 (May-Sep))",1256918.0,4950441.0,8866925.0,health_costs.csv,
-health,"Health care: smoke-related emergency visits and admissions, scaled from Health Canada 2023 (2026 (May-Sep))",565268.0,2226341.0,3987685.0,health_costs.csv,
-evac,Evacuations: Alberta Emergency Evacuation Payments (2023 (FY2023-24)),49221036.0,49221036.0,49221036.0,health_costs.csv,
-evac,Evacuations: Alberta Emergency Evacuation Payments (2024 (FY2024-25)),12861113.0,12861113.0,12861113.0,health_costs.csv,
-evac,Evacuations: Alberta costs of hosting Northwest Territories evacuees (2023 (FY2023-24)),46294945.0,46294945.0,46294945.0,health_costs.csv,
-evac,Evacuations and response: Alberta 2023 wildfire Disaster Recovery Program costs not itemized above (high case only) (2023 (FY2023-24)),0.0,0.0,133659672.0,health_costs.csv,
-evac,"Evacuations: NWT Evacuation Travel Support Program (partial, to 2023-09-05) (2023)",2612582.0,2612582.0,2612582.0,health_costs.csv,
-evac,Evacuations and response: GNWT wildfire emergency costs not itemized above (high case only) (2023),0.0,0.0,164279128.0,health_costs.csv,
-evac,Evacuations and response: GNWT wildfire emergency costs not itemized above (high case only) (2024),0.0,0.0,7553352.0,health_costs.csv,
-evac,Evacuations and response: GNWT wildfire emergency costs not itemized above (high case only) (2025),0.0,0.0,9500000.0,health_costs.csv,
-evac,Evacuations and local emergency response: BC EMCR payments for interface fires (2023 fires),123408913.0,123408913.0,123408913.0,health_costs.csv,
-evac,Evacuations and local emergency response: BC EMCR payments for interface fires (2024 fires),20446668.0,20446668.0,20446668.0,health_costs.csv,
-evac,Evacuations and local emergency response: BC EMCR payments for interface fires (2025 fires),5354000.0,5354000.0,5354000.0,health_costs.csv,
-evac,Evacuations: Saskatchewan Public Safety Agency evacuation support (2023 (FY2023-24)),930079.0,930079.0,930079.0,health_costs.csv,
-evac,Evacuations: SPSA hotels for community evacuations and food support for self-evacuees (2025),16200000.0,16200000.0,16200000.0,health_costs.csv,
-evac,Evacuations: Saskatchewan direct payments to evacuated adults (2025),9800500.0,9800500.0,9800500.0,health_costs.csv,
-evac,Evacuations: Saskatchewan funding to the Canadian Red Cross for evacuees (2025),15000000.0,15000000.0,15000000.0,health_costs.csv,
-evac,Evacuations: Manitoba evacuee related costs (Emergency Expenditures) (2025 (FY2025-26)),80000000.0,80000000.0,80000000.0,health_costs.csv,
-evac,Evacuations: Manitoba contract with the Canadian Red Cross for evacuee services (2024),50462.0,50462.0,50462.0,health_costs.csv,
-wages,Lost work and wages of evacuated workers (2023),133759811.0,265456284.0,382257049.0,health_costs.csv,
-wages,Lost work and wages of evacuated workers (2024),19774404.0,41095546.0,93990762.0,health_costs.csv,
-wages,Lost work and wages of evacuated workers (2025),82578110.0,118912478.0,171014063.0,health_costs.csv,
-wages,Lost work and wages of evacuated workers (2026),11622143.0,20753827.0,35321381.0,health_costs.csv,
+line,cat,item,low,central,high,src,note,counted
+trees,trees,"Timber burned at Crown stumpage, 2023 to 2026",12971356067.373177,12971356067.373177,12971356067.373177,economic-value/cost_tally_by_year.csv,,12971356067.373177
+fight,fight,"Firefighting, BC, AB, SK and ON, 2023 to 2025",6446739072.666205,6446739072.666205,6446739072.666205,economic-value/cost_tally_by_year.csv,,6446739072.666205
+fight,fight,"Quebec forest firefighting (SOPFEU total expenses, net of out-of-province billings) (2023 season (calendar year))",259710230.94,259710230.94,259710230.94,gov_costs.csv,,259710230.94
+fight,fight,"Quebec forest firefighting (SOPFEU total expenses, net of out-of-province billings) (2024 season (calendar year))",155122589.52,155122589.52,155122589.52,gov_costs.csv,,155122589.52
+fight,fight,"Quebec forest firefighting (SOPFEU total expenses, net of out-of-province billings) (2025 season (calendar year))",133798617.0,133798617.0,133798617.0,gov_costs.csv,,133798617.0
+fight,fight,Manitoba wildfire spending: Manitoba Wildfire Service + Wildfire Suppression appropriations (FY2023-24 (2023 season)),55918650.51,55918650.51,55918650.51,gov_costs.csv,,55918650.51
+fight,fight,Manitoba wildfire spending: MWS + Wildfire Suppression + suppression paid from Emergency Expenditures (FY2024-25 (2024 season)),81389409.08,81389409.08,81389409.08,gov_costs.csv,,81389409.08
+fight,fight,"Manitoba total wildfire suppression and Wildfire Service cost, 2025 season (FY2025-26 (2025 season))",229000000.0,229000000.0,229000000.0,gov_costs.csv,,229000000.0
+fight,fight,"NWT wildfire program: ECC Forest Management (fire presuppression, suppression, forest resources) (FY2023-24 (2023 season))",156988980.43,156988980.43,156988980.43,gov_costs.csv,,156988980.43
+fight,fight,NWT wildfire program: ECC Forest Management (FY2024-25 (2024 season)),91498652.06,91498652.06,91498652.06,gov_costs.csv,,91498652.06
+fight,fight,NWT wildfire program: ECC Forest Management (FY2025-26 (2025 season)),112085000.0,112085000.0,112085000.0,gov_costs.csv,,112085000.0
+fight,fight,Yukon Wildland Fire Management (Fire Management O&M) (FY2023-24 (2023 season)),40033109.64,40033109.64,40033109.64,gov_costs.csv,,40033109.64
+fight,fight,Yukon Wildland Fire Management (Fire Management O&M) (FY2024-25 (2024 season)),48432297.07,48432297.07,48432297.07,gov_costs.csv,,48432297.07
+fight,fight,Yukon Wildland Fire Management (Fire Management O&M) (FY2025-26 (2025 season)),63927000.0,63927000.0,63927000.0,gov_costs.csv,,63927000.0
+fight,fight,"Nova Scotia DNR Fleet and Forest Protection (wildfire prevention, detection, suppression, air services) (FY2023-24 (2023 season))",23529954.49,23529954.49,23529954.49,gov_costs.csv,,23529954.49
+fight,fight,"Nova Scotia DNR Fleet and Forest Protection (wildfire prevention, detection, suppression, air services) (FY2024-25 (2024 season))",9511099.16,9511099.16,9511099.16,gov_costs.csv,,9511099.16
+fight,fight,"Nova Scotia DNR Fleet and Forest Protection (wildfire prevention, detection, suppression, air services) (FY2025-26 (2025 season))",40881000.0,40881000.0,40881000.0,gov_costs.csv,,40881000.0
+fight,fight,Newfoundland and Labrador Fire Suppression and Communications (gross amount voted) (FY2023-24 (2023 season)),3936742.39,3936742.39,3936742.39,gov_costs.csv,,3936742.39
+fight,fight,Newfoundland and Labrador Fire Suppression and Communications (gross amount voted) (FY2024-25 (2024 season)),12135888.98,12135888.98,12135888.98,gov_costs.csv,,12135888.98
+fight,fight,Newfoundland and Labrador Fire Suppression and Communications (gross amount voted) (FY2025-26 (2025 season)),32500200.0,32500200.0,32500200.0,gov_costs.csv,,32500200.0
+fight,fight,BC Ministry of Forests 'Fire Preparedness' core business (separate from the Fire Management vote in the bill) (FY2023-24 (2023 season)),42728248.77,42728248.77,42728248.77,gov_costs.csv,,42728248.77
+fight,fight,BC Ministry of Forests 'Fire Preparedness' core business (separate from the Fire Management vote in the bill) (FY2024-25 (2024 season)),43109225.37,43109225.37,43109225.37,gov_costs.csv,,43109225.37
+fight,fight,BC Ministry of Forests 'Fire Preparedness' core business (separate from the Fire Management vote in the bill) (FY2025-26 (2025 season)),57891000.0,57891000.0,57891000.0,gov_costs.csv,,57891000.0
+fight,fight,"BC Fire Management vote, 2025-26 official actual minus the early estimate used in the bill (FY2025-26 (2025 season))",135112000.0,135112000.0,135112000.0,gov_costs.csv,,135112000.0
+fight,fight,"Ontario MNR Public Protection: 'Public safety and emergency response' (base fire program, net of recoveries) (FY2023-24 (2023 season))",34698218.11,34698218.11,34698218.11,gov_costs.csv,,34698218.11
+fight,fight,"Ontario MNR Public Protection: 'Public safety and emergency response' (base fire program, net of recoveries) (FY2024-25 (2024 season))",34518818.57,34518818.57,34518818.57,gov_costs.csv,,34518818.57
+fight,fight,"Ontario MNR Public Protection: 'Public safety and emergency response' (base fire program, net of recoveries) (FY2025-26 (2025 season))",34453000.0,34453000.0,34453000.0,gov_costs.csv,,34453000.0
+fight26,fight_2026,"BC Fire Management, 2026-27 forecast (FY2026-27 (2026 season))",829263501.91,829263501.91,829263501.91,gov_costs.csv,,829263501.91
+fight26,fight_2026,"BC Fire Preparedness, 2026-27 budget (FY2026-27 (2026 season))",46137294.43,46137294.43,46137294.43,gov_costs.csv,,46137294.43
+fight26,fight_2026,"Alberta wildfire spending, 2026-27 forecast at Q1 (FY2026-27 (2026 season))",267260895.02,267260895.02,267260895.02,gov_costs.csv,,267260895.02
+fight26,fight_2026,"Ontario Emergency Forest Firefighting, 2026-27 forecast at Q1 (FY2026-27 (2026 season))",146340617.98,146340617.98,146340617.98,gov_costs.csv,,146340617.98
+fight26,fight_2026,"Manitoba Wildfire Service + Wildfire Suppression, 2026-27 budget (FY2026-27 (2026 season))",55266022.18,55266022.18,55266022.18,gov_costs.csv,,55266022.18
+fight26,fight_2026,"NWT ECC Forest Management, 2026-27 budget (FY2026-27 (2026 season))",64021093.56,64021093.56,64021093.56,gov_costs.csv,,64021093.56
+fight26,fight_2026,"Nova Scotia Fleet and Forest Protection, 2026-27 budget (FY2026-27 (2026 season))",20630124.72,20630124.72,20630124.72,gov_costs.csv,,20630124.72
+fight26,fight_2026,"NL Fire Suppression and Communications, 2026-27 budget (gross) (FY2026-27 (2026 season))",11532421.18,11532421.18,11532421.18,gov_costs.csv,,11532421.18
+fight,fight,"Parks Canada wildfire response, 2023 season (FY2023-24 (2023 season))",39606736.33,39606736.33,39606736.33,gov_costs.csv,,39606736.33
+fight,fight,"Parks Canada incident response and emergency operations, 2024-25 (Jasper; includes other 2024-25 fires) (FY2024-25 (2024 season))",61039249.82,61039249.82,61039249.82,gov_costs.csv,,61039249.82
+fight,fight,"Alberta Disaster Recovery Program: Jasper incident response (municipal emergency operations, structural protection, mutual aid, transitional housing) (2024 season (spent to June 2026))",26028442.65,26028442.65,26028442.65,gov_costs.csv,,26028442.65
+fight,fight,"Department of National Defence Operation LENTUS, actual incremental cost (FY2023-24 (2023 season))",9254390.88,9254390.88,9254390.88,gov_costs.csv,,9254390.88
+evac,evac,"Public Safety Canada wildfire agreements: Red Cross matching (AB 2023, NS 2023) and United Way NWT 2023 match (2023 season)",13440853.41,13440853.41,13440853.41,gov_costs.csv,,13440853.41
+evac,evac,"Public Safety Canada wildfire agreements: Humanitarian Workforce deployments (NL July 2024, Jasper Team Rubicon) and United Way NWT 2024 (2024 season)",4923425.67,4923425.67,4923425.67,gov_costs.csv,,4923425.67
+evac,evac,Public Safety Canada wildfire agreements: Humanitarian Workforce deployments (Manitoba and NL 2025) (2025 season),3032836.8,3032836.8,3032836.8,gov_costs.csv,,3032836.8
+evac,evac,Crown-Indigenous Relations: support to Indigenous governments affected by the 2023 NWT wildfires (FY2023-24 (2023 season)),9405293.59,9405293.59,9405293.59,gov_costs.csv,,9405293.59
+fight,fight,"New Brunswick wildfire program: DNR Forest Protection component, fire share, net of out-of-province fire recoveries (FY2023-24 (2023 season))",5389653.19,8827237.0,12264820.8,gov2_costs.csv,,5389653.19
+fight,fight,"New Brunswick wildfire program: DNR Forest Protection component, fire share, net of out-of-province fire recoveries (FY2024-25 (2024 season))",8518540.22,12813490.25,17108440.28,gov2_costs.csv,,8518540.22
+fight,fight,"New Brunswick wildfire program: DNR Forest Protection component, fire share, net of out-of-province fire recoveries (FY2025-26 (2025 season))",23654736.86,28572368.43,33490000.0,gov2_costs.csv,,23654736.86
+fight26,fight_2026,"New Brunswick wildfire program, 2026-27 budget (Forest Protection fire share, net of budgeted recoveries) (FY2026-27 (2026 season))",12540628.53,18540485.77,24540343.02,gov2_costs.csv,,12540628.53
+fight,fight,"Prince Edward Island Forest Fire Protection (Forests, Fish and Wildlife Division) (FY2023-24 (2023 season))",818574.35,993408.37,993408.37,gov2_costs.csv,,818574.35
+fight,fight,Prince Edward Island Forest Fire Protection (FY2024-25 (2024 season)),968155.77,968155.77,968155.77,gov2_costs.csv,,968155.77
+fight,fight,Prince Edward Island Forest Fire Protection (FY2025-26 (2025 season)),1170000.0,1170000.0,2479000.0,gov2_costs.csv,,1170000.0
+fight26,fight_2026,"Prince Edward Island Forest Fire Protection, 2026-27 (FY2026-27 (2026 season))",925360.39,1141456.68,1141456.68,gov2_costs.csv,,925360.39
+fight,fight,Nova Scotia Fleet and Forest Protection 2023-24: actual-based figure (estimate + $15M wildfire overrun) minus the forecast already in gov_costs.csv (FY2023-24 (2023 season)),347995.99,347995.99,347995.99,gov2_costs.csv,,347995.99
+fight,fight,"Nova Scotia Public Works wildfire-related costs, 2025-26 additional appropriation (FY2025-26 (2025 season))",1100000.0,1100000.0,1100000.0,gov2_costs.csv,,1100000.0
+fight,fight,Manitoba Emergency Expenditures 2023-24: wildfire suppression share (FY2023-24 (2023 season)),0.0,0.0,30305957.0,gov2_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
+fight26,fight_2026,Manitoba 2026 wildfire costs above the budget already in gov_ (estimate) (FY2026-27 (2026 season)),652650.8,26123369.85,35355696.39,gov2_costs.csv,,652650.8
+fight26,fight_2026,Quebec SOPFEU 2026 season cost (estimate; annual report due spring 2027) (2026 season (calendar year)),155734296.9,175712435.22,195690573.54,gov2_costs.csv,,155734296.9
+fight26,fight_2026,Saskatchewan SPSA 2026 season wildfire cost (estimate) (2026 season (calendar year)),17300000.0,38200000.0,73200000.0,gov2_costs.csv,,17300000.0
+fight,fight,Parks Canada 2024 season: suppression and response beyond the 59.8M already counted (2024 season),7859567.1,31234123.8,55221114.3,gov2_costs.csv,,7859567.1
+fight,fight,"Parks Canada wildfire response, 2025 season (estimate) (FY2025-26 (2025 season))",2581752.68,14694534.88,26807317.07,gov2_costs.csv,,2581752.68
+fight26,fight_2026,"Parks Canada wildfire response, 2026 season (estimate) (FY2026-27 (2026 season))",4582688.04,15668619.84,26754551.65,gov2_costs.csv,,4582688.04
+fight,fight,"Department of National Defence Operation LENTUS wildfire deployments, FY2024-25 (estimate) (FY2024-25 (2024 season))",263190.46,636356.21,1272712.41,gov2_costs.csv,,263190.46
+fight,fight,"Department of National Defence Operation LENTUS wildfire deployments, FY2025-26 (estimate) (FY2025-26 (2025 season))",313788.98,858197.19,2114398.88,gov2_costs.csv,,313788.98
+fight26,fight_2026,"Department of National Defence Operation LENTUS wildfire deployments, FY2026-27 (estimate) (FY2026-27 (2026 season))",32620.81,78872.38,157744.75,gov2_costs.csv,,32620.81
+evac,evac,"Public Safety Canada: match of Red Cross donations for the 2025 Saskatchewan, Manitoba and NL wildfires (2025 season)",1564823.0,1564823.0,1564823.0,gov2_costs.csv,,1564823.0
+evac,isc,"Indigenous Services Canada EMAP response, wildfire share (refined range; replaces the gov_ tier C rows) (FY2023-24 (2023 season))",208851817.84,322400392.16,364455419.69,gov2_costs.csv,mostly First Nations evacuations,208851817.84
+evac,isc,"Indigenous Services Canada EMAP response, wildfire share (refined range; replaces the gov_ tier C rows) (FY2024-25 (2024 season))",167261570.55,250424672.12,298888018.02,gov2_costs.csv,mostly First Nations evacuations,167261570.55
+evac,isc,"Indigenous Services Canada EMAP response, wildfire share (refined range; replaces the gov_ tier C rows) (FY2025-26 (2025 season))",414483856.34,619292944.01,687307585.0,gov2_costs.csv,mostly First Nations evacuations,414483856.34
+evac,evac,City of West Kelowna 2023 McDougall Creek response (provincial reimbursements in the audited statements) (2023 season (calendar year)),0.0,0.0,2445377.22,gov2_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
+evac,evac,Town of Hay River 2023 wildfire civil emergency costs (2023 season (calendar year)),998263.59,998263.59,0.0,gov2_costs.csv,,998263.59
+evac,evac,City of Yellowknife 2023 wildfire response costs (claimed under disaster financial assistance) (2023 season),13941785.25,13941785.25,0.0,gov2_costs.csv,,13941785.25
+evac,evac,Regional Municipality of Wood Buffalo 2023 Rocky River fire response (Disaster Recovery Program) (2023 season),4518782.26,8569270.6,0.0,gov2_costs.csv,,4518782.26
+evac,evac,Regional Municipality of Wood Buffalo 2024 MWF-017 fire response (Beacon Hill and Abasand evacuation; Disaster Recovery Program) (2024 season),248066.31,2716926.8,2716926.8,gov2_costs.csv,,248066.31
+evac,evac,"City of Flin Flon 2025 wildfire emergency response (protective services above budget, mostly the EMO account) (2025 season (calendar year))",440569.0,826310.5,1212052.0,gov2_costs.csv,,440569.0
+evac,evac,Northern Village of Denare Beach and Town of Creighton 2025 (Wolf fire): local emergency response (estimate) (2025 season),169627.98,599147.16,1303700.86,gov2_costs.csv,,169627.98
+evac,evac,Hamlet of Enterprise 2023: hamlet response costs (estimate) (2023 season),6688.8,23625.68,0.0,gov2_costs.csv,,6688.8
+evac,evac,Shelburne County 2023 Barrington Lake wildfire: municipal fire and emergency costs above budget (Municipality of Barrington and Municipality of the District of Shelburne) (FY2023-24 (2023 season)),456068.08,456068.08,635316.32,gov2_costs.csv,,456068.08
+fight26,fight_2026,Ontario Emergency Forest Firefighting 2026-27 above the Q1 forecast already in gov_ (estimate) (FY2026-27 (2026 season)),118159382.02,149159382.02,177359382.02,gov2_costs.csv,,118159382.02
+fight26,fight_2026,NWT 2026-27 wildfire costs above the budget already in gov_ (estimate) (FY2026-27 (2026 season)),27477556.44,37770731.44,48063906.44,gov2_costs.csv,,27477556.44
+fight26,fight_2026,Yukon Fire Management 2026-27 (estimate; budget line printed as a graphic and not readable) (FY2026-27 (2026 season)),25476922.86,30060310.45,34569357.02,gov2_costs.csv,,25476922.86
+fight26,fight_2026,Newfoundland and Labrador fire suppression 2026-27 above the budget already in gov_ (estimate) (FY2026-27 (2026 season)),0.0,4875547.94,20174905.36,gov2_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
+build,build,Kingston wildfire NL 2025: property losses with no official count (insured value used),0.0,70000000.0,70000000.0,econ_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
+build,build,Buildings not in the bill: Barrington Lake NS 2023: official count above flagged count,24007333.0,33961222.0,33961222.0,econ_costs.csv,,24007333.0
+build,build,"Buildings not in the bill: SHOE fire, Denare Beach region SK 2025: official count above flagged count",3190879.0,9612963.0,12176415.0,econ_costs.csv,,3190879.0
+build,build,Buildings not in the bill: Enterprise NT 2023 (not in bill),7344000.0,7803000.0,8537400.0,econ_costs.csv,,7344000.0
+build,build,"Buildings not in the bill: Hay River NT 2023, Patterson Road and Paradise Gardens (not in bill)",2030000.0,2718000.0,3020000.0,econ_costs.csv,,2030000.0
+build,build,Buildings not in the bill: Behchoko NT 2023 (not in bill),800000.0,944000.0,5192000.0,econ_costs.csv,,800000.0
+build,build,Buildings not in the bill: Saskatchewan 2025 structures outside the SHOE region (not in bill),51840000.0,63475200.0,76038000.0,econ_costs.csv,,51840000.0
+build,build,"Jasper National Park: Parks Canada hazard management (danger trees, road safety) in re-entry and initial recovery",20200000.0,20200000.0,20200000.0,econ_costs.csv,,20200000.0
+build,build,"Jasper National Park: Parks Canada rebuild of park infrastructure (roads, campgrounds, trails, visitor and heritage assets, staff housing, hazard and contamination management, recovery staffing)",53700000.0,133042460.0,685400000.0,econ_costs.csv,,53700000.0
+build,build,"Jasper townsite: water and wastewater repairs (curb stops, service lines, mains) damaged by the fire and firefighting",5135000.0,5645000.0,9645000.0,econ_costs.csv,,5135000.0
+build,build,Halifax (HRM) municipal costs of the 2023 wildfires (capital remediation of damaged assets and extraordinary operating costs),13700000.0,13700000.0,13700000.0,econ_costs.csv,,13700000.0
+build,build,"Kelowna Glenmore Landfill repairs after the McDougall Creek fire (gas collection system, burnt waste)",1400000.0,1400000.0,1400000.0,econ_costs.csv,,1400000.0
+build,build,"BC Hydro wildfire response and repair costs, 2024 season",15000000.0,15000000.0,15000000.0,econ_costs.csv,,15000000.0
+build,build,"Manitoba Hydro wildfire restoration, 2025 season",24000000.0,32000000.0,32000000.0,econ_costs.csv,,24000000.0
+build,build,"SaskPower wildfire supports and recovery in Denare Beach and Creighton, 2025",8500000.0,8500000.0,8500000.0,econ_costs.csv,,8500000.0
+work,output,"Alberta natural gas production shut in by wildfires, May-June 2023",63984000.0,114698342.0,169446155.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+work,output,"Alberta light and medium crude oil shut in by wildfires, May-June 2023",121211341.0,163145605.0,226017453.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+work,output,"Alberta pentanes plus (natural gas liquids) lost with the gas shut-ins, May-June 2023",60828743.0,134521333.0,259808306.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+work,output,"Alberta in situ bitumen shut in by wildfires, late May-June 2025",0.0,162708622.0,620494890.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+work,output,"GDP lost: Iron ore mining, Canada (Quebec and Labrador) (2023-06)",0.0,25700583.0,51401167.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+work,output,"GDP lost: Rail transportation, Canada (2023-06)",21688042.0,43376083.0,43376083.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+work,output,"GDP lost: Accommodation services, Canada (2023-05, 2023-06, 2023-07, 2023-08, 2023-09)",0.0,144760646.0,289521292.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+work,output,"GDP lost: Forestry and logging, Canada (2023-05, 2023-06, 2023-07, 2023-08, 2023-09)",0.0,26418917.0,52837833.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+work,output,"GDP lost: Rail transportation, Canada (Jasper) (2024-07)",0.0,10830278.0,21660556.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+work,output,"GDP lost: Iron ore mining, Canada (Labrador and northern Quebec) (2024-07)",7328958.0,14657917.0,14657917.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+work,output,"GDP lost: Accommodation services, Canada (western tourist destinations) (2024-07)",0.0,11932708.0,23865417.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+work,output,"Parks Canada fee revenue forgone, Prince Albert National Park (77,000 to 93,000 fewer visits)",354366.0,509439.0,888641.0,econ_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+build,build,"Buildings above the bill count: Bradley Creek wildfire BC 2026 (Okanagan Indian Band IR 1), satellite re-count on the official perimeter",10153398.0,11334757.0,20752087.0,econ2_costs.csv,,10153398.0
+build,build,"Buildings above the bill count: Pear Lake wildfire BC 2026 (TNRD Electoral Area E, Big Bar complex), satellite re-count on the official perimeter",0.0,0.0,2829555.0,econ2_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
+build,build,"Buildings not in the bill: Katl'odeeche First Nation NT 2023 (Hay River Dene Reserve 1), satellite count",1324503.0,2180000.0,2449438.0,econ2_costs.csv,,1324503.0
+build,build,"Buildings not in the bill: other Newfoundland 2025 fires (Trinity Bay area in July, Grand Falls-Windsor area and Holyrood area in August), satellite count",4945695.0,7906000.0,8883146.0,econ2_costs.csv,,4945695.0
+build,build,"Buildings not in the bill: Long Lake wildfire NS 2025 (West Dalhousie, Annapolis County), provincial count",3153846.0,3892308.0,6033077.0,econ2_costs.csv,,3153846.0
+build,build,"Buildings not in the bill: Manitoba 2025 fires outside Lac du Bonnet (Leaf Rapids and Lynn Lake areas, Pinaymootang, Nopiming and others), satellite count",13454197.0,15303200.0,73371512.0,econ2_costs.csv,,13454197.0
+build,build,"Buildings not in the bill: Alberta 2023 fires (Peace country, Edson area, Grande Prairie area, East Prairie, Fox Lake, Sturgeon Lake and others), satellite count",25743046.0,42949000.0,138545161.0,econ2_costs.csv,,25743046.0
+build,build,"Buildings not in the bill: Quebec 2023 fires (chalets, camps and homes), satellite count",12374172.0,20684000.0,66722581.0,econ2_costs.csv,,12374172.0
+build,build,"BC Hydro wildfire repair and restoration, 2023 season (about 200 transmission structures and over 1,200 distribution poles)",52631579.0,79672515.0,85080702.0,econ2_costs.csv,,52631579.0
+build,build,"Fire department equipment damaged or lost fighting the 2025 Kingston wildfire (23 fire departments, provincial reimbursement)",307674.0,307674.0,307674.0,econ2_costs.csv,,307674.0
+build,build,"Saskatchewan 2025 wildfire recovery task team: cleanup, debris removal, landfills and temporary housing",18000000.0,29930000.0,29930000.0,econ2_costs.csv,,18000000.0
+work,output,"GDP lost: Sawmills and wood preservation, Canada (2023-05 to 2023-09)",0.0,32183042.0,64366083.0,econ2_costs.csv,"not added in the floor: overlaps lost wages, the larger of the two is counted",0.0
+evac,health,Health care: extra respiratory and cardiac emergency visits from wildfire smoke (Health Canada count x CIHI cost) (2023 (May-Sep)),381101.0,1117186.0,1542781.0,health_costs.csv,,381101.0
+evac,health,Health care: extra respiratory and cardiac hospital admissions from wildfire smoke (Health Canada count x CIHI cost) (2023 (May-Sep)),1699017.0,7075477.0,13131413.0,health_costs.csv,,1699017.0
+evac,evac,Evacuations: Alberta Emergency Evacuation Payments (2023 (FY2023-24)),49221036.0,49221036.0,49221036.0,health_costs.csv,,49221036.0
+evac,evac,Evacuations: Alberta Emergency Evacuation Payments (2024 (FY2024-25)),12861113.0,12861113.0,12861113.0,health_costs.csv,,12861113.0
+evac,evac,Evacuations: Alberta costs of hosting Northwest Territories evacuees (2023 (FY2023-24)),46294945.0,46294945.0,46294945.0,health_costs.csv,,46294945.0
+evac,evac,Evacuations and response: Alberta 2023 wildfire Disaster Recovery Program costs not itemized above (high case only) (2023 (FY2023-24)),0.0,0.0,133659672.0,health_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
+evac,evac,Evacuations and response: GNWT wildfire emergency costs not itemized above (high case only) (2023),0.0,0.0,164279128.0,health_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
+evac,evac,Evacuations and response: GNWT wildfire emergency costs not itemized above (high case only) (2024),0.0,0.0,7553352.0,health_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
+evac,evac,Evacuations and response: GNWT wildfire emergency costs not itemized above (high case only) (2025),0.0,0.0,9500000.0,health_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
+evac,evac,Evacuations and local emergency response: BC EMCR payments for interface fires (2023 fires),123408913.0,123408913.0,123408913.0,health_costs.csv,,123408913.0
+evac,evac,Evacuations and local emergency response: BC EMCR payments for interface fires (2024 fires),20446668.0,20446668.0,20446668.0,health_costs.csv,,20446668.0
+evac,evac,Evacuations and local emergency response: BC EMCR payments for interface fires (2025 fires),5354000.0,5354000.0,5354000.0,health_costs.csv,,5354000.0
+evac,evac,Evacuations: Saskatchewan Public Safety Agency evacuation support (2023 (FY2023-24)),930079.0,930079.0,930079.0,health_costs.csv,,930079.0
+evac,evac,Evacuations: SPSA hotels for community evacuations and food support for self-evacuees (2025),16200000.0,16200000.0,16200000.0,health_costs.csv,,16200000.0
+evac,evac,Evacuations: Saskatchewan direct payments to evacuated adults (2025),9800500.0,9800500.0,9800500.0,health_costs.csv,,9800500.0
+evac,evac,Evacuations: Saskatchewan funding to the Canadian Red Cross for evacuees (2025),15000000.0,15000000.0,15000000.0,health_costs.csv,,15000000.0
+evac,evac,Evacuations: Manitoba evacuee related costs (Emergency Expenditures) (2025 (FY2025-26)),80000000.0,80000000.0,80000000.0,health_costs.csv,,80000000.0
+evac,evac,Evacuations: Manitoba contract with the Canadian Red Cross for evacuee services (2024),50462.0,50462.0,50462.0,health_costs.csv,,50462.0
+work,wages,Lost work and wages of evacuated workers (2025),82578110.0,118912478.0,171014063.0,health_costs.csv,,82578110.0
+evac,health,"Health care: 2023 hospital cost adjustment for provincial unit costs (Quebec AS-471, CIHI provincial ED and stay costs) (2023 (May-Sep))",97448.0,93467.0,557211.0,health2_costs.csv,,97448.0
+evac,health,Health care: physician fees for smoke-related ED visits and hospital stays (Health Canada counts) (2023 (May-Sep)),525374.0,1350141.0,2873793.0,health2_costs.csv,,525374.0
+evac,health,"Health care: smoke-related ED visits and hospital stays, rebuilt with AQBAT and our exposure (hospital cost) (2024 (May-Sep))",664371.0,3179871.0,7472267.0,health2_costs.csv,,664371.0
+evac,health,Health care: physician fees for smoke-related ED visits and hospital stays (rebuilt counts) (2024 (May-Sep)),159908.0,519782.0,1432544.0,health2_costs.csv,,159908.0
+evac,health,"Health care: smoke-related ED visits and hospital stays, rebuilt with AQBAT and our exposure (hospital cost) (2025 (May-Sep))",1059923.0,5521343.0,13131389.0,health2_costs.csv,,1059923.0
+evac,health,Health care: physician fees for smoke-related ED visits and hospital stays (rebuilt counts) (2025 (May-Sep)),252141.0,866565.0,2406445.0,health2_costs.csv,,252141.0
+evac,health,"Health care: smoke-related ED visits and hospital stays, rebuilt with AQBAT and our exposure (hospital cost) (2026 (May-Sep))",618432.0,3097125.0,7267003.0,health2_costs.csv,,618432.0
+evac,health,Health care: physician fees for smoke-related ED visits and hospital stays (rebuilt counts) (2026 (May-Sep)),152276.0,506810.0,1374934.0,health2_costs.csv,,152276.0
+evac,evac,Evacuations: Alberta Emergency Evacuation Payments (2025 (FY2025-26)),4600000.0,4600000.0,4600000.0,health2_costs.csv,,4600000.0
+evac,evac,Evacuations and response: Alberta HARP programs approved for the 2025 wildfires (high case only) (2025 (FY2025-26)),0.0,0.0,37100000.0,health2_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
+evac,evac,Evacuations and relief: Government of Alberta match of Red Cross 2023 Alberta Fires Appeal donations (2023 (FY2023-24)),7733241.0,7969701.0,7969701.0,health2_costs.csv,,7733241.0
+evac,evac,Evacuations and relief: Government of Nova Scotia match of Red Cross 2023 Nova Scotia and Atlantic Canada Fires Appeal donations (2023 (FY2023-24)),4807150.0,5230576.0,5230576.0,health2_costs.csv,,4807150.0
+evac,evac,"Evacuations: Quebec emergency evacuation benefit (1,500 per evacuated principal residence, each evacuation) (2023 (FY2023-24))",13085898.0,13085898.0,13968429.0,health2_costs.csv,,13085898.0
+evac,evac,"Evacuations: NWT Evacuation Travel Support Program, final (2023 (FY2023-24))",6385149.0,6385149.0,6385149.0,health2_costs.csv,,6385149.0
+evac,evac,Evacuations and relief: GNWT grant to United Way NWT for fire relief (2023 (FY2023-24)),418013.0,418013.0,0.0,health2_costs.csv,,418013.0
+evac,evac,"Evacuations: NWT Emergency Evacuation Relief Program, FY2024-25 (Fort Good Hope 2024 evacuation) (2024 (FY2024-25))",216393.0,216393.0,0.0,health2_costs.csv,,216393.0
+evac,evac,Evacuations and response: high-case adjustment to the first-round GNWT 2023 remainder (final ETSP and EIDS larger than the partial 3.1 M) (2023),0.0,0.0,-6995448.0,health2_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
+evac,isc,"Evacuations and response on reserve 2026: ISC wildfire response cost, estimate (2026 (FY2026-27))",0.0,127984751.0,137103829.0,health2_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case; mostly First Nations evacuations,0.0
+evac,evac,"Evacuations 2026 off reserve (BC, NWT): evacuee support and local response, estimate (2026)",16704773.0,42096928.0,50180346.0,health2_costs.csv,,16704773.0
+work,wages,Lost work and wages of evacuated workers (revised) (2023),179278386.0,265811196.0,338884918.0,health2_costs.csv,,179278386.0
+work,wages,Lost work and wages of evacuated workers (revised) (2024),33783899.0,47899123.0,93161046.0,health2_costs.csv,,33783899.0
+work,wages,Lost work and wages of evacuated workers (revised) (2026),14389078.0,31548977.0,50866818.0,health2_costs.csv,,14389078.0
+evac,health,Health care (health system costs of evacuations): Quebec health establishments' extra costs of the 2023 forest-fire emergency (2023 (FY2023-24)),1941484.0,1941484.0,1941484.0,health2_costs.csv,,1941484.0
+evac,health,Health care (health system costs of evacuations): Alberta Health Services costs reimbursed for the 2023 northwest Alberta wildfire (2023 (FY2023-24)),164955.0,164955.0,164955.0,health2_costs.csv,,164955.0

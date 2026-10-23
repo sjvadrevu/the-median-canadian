@@ -44,6 +44,20 @@ def industry(text):
     return bool(re.search(r"\bINDUSTRY\b|CatIQ|Insurance Bureau|\bIBC\b", text or ""))
 
 
+# News sites, Wikipedia and unofficial Hansard mirrors are used only to find official documents, so they are never
+# cited as sources on the page.
+NEWS = (r"ctvnews|ctv\.ca|cbc\.ca|radio-canada|globalnews|citynews|thestar|theglobeandmail|nationalpost|cp24|saltwire|"
+        r"chronicleherald|lapresse|ledevoir|journaldemontreal|calgaryherald|edmontonjournal|vancouversun|"
+        r"winnipegfreepress|cabinradio|nnsl|panow|sasktoday|castanet|infonews|kelownanow|reuters|bloomberg|apnews|"
+        r"narcity|thenarwhal|cfjctoday|ground\.news|turtleislandnews|mbcradio|1059theregion|vocm|tbnewswatch|"
+        r"kenoraonline|cheknews|timescolonist|theprovince|financialpost|aptnnews|theweathernetwork|pentictonherald|"
+        r"vernonmatters|infotel|okanaganedge|everythinggp|mymcmurray|lakelandtoday|baytoday|insauga|opennwt|wikipedia")
+
+
+def is_news(u):
+    return bool(re.search(NEWS, u, flags=re.I))
+
+
 def main():
     meta = {}  # url -> (publisher, title, coverage, accessed)
     for kind in ("gov", "econ", "health"):
@@ -77,7 +91,7 @@ def main():
     have.update(u for _, u in alias.values())
     seen, n, new = set(), {"gov": 0, "econ": 0, "health": 0}, []
     for group, u, title, pub, acc, ind in used:
-        if u in seen or u in have:
+        if u in seen or u in have or is_news(u):
             continue
         seen.add(u)
         n[group] += 1

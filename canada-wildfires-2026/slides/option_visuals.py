@@ -139,10 +139,10 @@ def loss_map(W=928):
     return "".join(el), vals, other
 
 
-def receipt(items, total_label, W=560):
-    """A paper bill: items (label, dollars in billions)."""
-    rows = len(items)
-    H = 140 + rows * 64 + 110
+def receipt(items, total_label, W=560, unknown=()):
+    """A paper bill: items (label, dollars in billions); unknown: costs not yet counted, shown with a question mark."""
+    rows = len(items) + len(unknown)
+    H = 140 + rows * 58 + 110
     el = _svg(W, H)
     el.append(f'<path d="M0,0 H{W} V{H - 14} ' + " ".join(f"L{W - (i + 0.5) * W / 14:.1f},{H if i % 2 == 0 else H - 14}" for i in range(14)) +
               f' L0,{H - 14} Z" fill="#f4efe6"/>')
@@ -150,15 +150,19 @@ def receipt(items, total_label, W=560):
     el.append(f'<text x="{W / 2}" y="52" font-size="30" font-weight="800" fill="{ink}" text-anchor="middle">WILDFIRE BILL</text>')
     el.append(f'<text x="{W / 2}" y="84" font-size="20" fill="#5b6575" text-anchor="middle">Canada, 2023 to 2026</text>')
     el.append(f'<line x1="30" x2="{W - 30}" y1="106" y2="106" stroke="{ink}" stroke-dasharray="4 4"/>')
-    y = 150
+    y = 148
     for lab, v in items:
-        el.append(f'<text x="34" y="{y}" font-size="24" fill="{ink}">{lab}</text>')
-        el.append(f'<text x="{W - 34}" y="{y}" font-size="26" font-weight="700" fill="{ink}" text-anchor="end">${v:.1f}B</text>')
-        y += 64
-    el.append(f'<line x1="30" x2="{W - 30}" y1="{y - 34}" y2="{y - 34}" stroke="{ink}" stroke-width="2"/>')
+        el.append(f'<text x="34" y="{y}" font-size="23" fill="{ink}">{lab}</text>')
+        el.append(f'<text x="{W - 34}" y="{y}" font-size="25" font-weight="700" fill="{ink}" text-anchor="end">${v:.1f}B</text>')
+        y += 58
+    for lab in unknown:
+        el.append(f'<text x="34" y="{y}" font-size="23" fill="#7a8290">{lab}</text>')
+        el.append(f'<text x="{W - 34}" y="{y}" font-size="25" font-weight="700" fill="#7a8290" text-anchor="end">?</text>')
+        y += 58
+    el.append(f'<line x1="30" x2="{W - 30}" y1="{y - 32}" y2="{y - 32}" stroke="{ink}" stroke-width="2"/>')
     tot = sum(v for _, v in items)
-    el.append(f'<text x="34" y="{y + 12}" font-size="28" font-weight="800" fill="{ink}">{total_label}</text>')
-    el.append(f'<text x="{W - 34}" y="{y + 12}" font-size="36" font-weight="800" fill="#c0392b" text-anchor="end">${tot:.1f}B</text>')
+    el.append(f'<text x="34" y="{y + 12}" font-size="26" font-weight="800" fill="{ink}">{total_label}</text>')
+    el.append(f'<text x="{W - 34}" y="{y + 12}" font-size="36" font-weight="800" fill="#c0392b" text-anchor="end">${tot:.1f}B{"+" if unknown else ""}</text>')
     el.append("</svg>")
     return "".join(el), tot
 
@@ -183,7 +187,7 @@ def emissions_line(W=928, H=520):
         el.append(f'<polyline points="{" ".join(f"{sx(i):.1f},{sy(v):.1f}" for i, v in enumerate(vals))}" fill="none" stroke="{col}" stroke-width="{w}" stroke-linejoin="round"/>')
     i23 = yrs.index(2023)
     el.append(f'<circle cx="{sx(i23):.1f}" cy="{sy(wf[i23]):.1f}" r="9" fill="{FIRE}"/>')
-    el.append(_lab(sx(i23), sy(wf[i23]) - 18, f"Wildfires {wf[i23]:,.0f}", 24, FIRE))
+    el.append(_lab(sx(i23), sy(wf[i23]) - 18, "2023", 24, FIRE))
     el.append(_lab(sx(len(yrs) - 1) + 8, sy(nat[-1]) + 8, "Official total", 21, "#c3cad4", "start"))
     el.append(_lab(sx(len(yrs) - 1) + 8, sy(wf[-1]) + 8, "Wildfires", 21, FIRE, "start"))
     el.append("</svg>")
@@ -482,3 +486,68 @@ def timeline(W=928, row=74):
                   f'<text x="{xl + 262}" y="{y + 28:.0f}" font-size="22" fill="{MUTED}">{r["who"]}</text>')
     el.append("</svg>")
     return "".join(el)
+
+
+def budget_circles(W=928, R=104, per_row=4):
+    """Outer circle: average yearly fire spending 2023-24 to 2025-26. Filled inner circle: 2026-27 budget. Area to scale."""
+    import math
+    sc = pd.read_csv(os.path.join(READY, "scorecard.csv")).sort_values("avg_actual_m", ascending=False)
+    vmax = sc["avg_actual_m"].max()
+    cw = W / per_row
+    radii = [R * math.sqrt(v / vmax) for v in sc["avg_actual_m"]]
+    row_r = [max(radii[i:i + per_row]) for i in range(0, len(radii), per_row)]
+    bases, y = [], 0
+    for rr in row_r:
+        y += 2 * rr + 4
+        bases.append(y)
+        y += 70
+    H = y
+    el = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H:.0f}" viewBox="0 0 {W} {H:.0f}" font-family="{FONT}">',
+          '<defs><pattern id="hatch2" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
+          '<line x1="0" y1="0" x2="0" y2="10" stroke="#6b7480" stroke-width="3"/></pattern></defs>']
+    for k, (_, r) in enumerate(sc.iterrows()):
+        cx = cw * (k % per_row) + cw / 2
+        base = bases[k // per_row]
+        ro = R * math.sqrt(r["avg_actual_m"] / vmax)
+        cy = base - ro
+        el.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{ro:.1f}" fill="rgba(255,255,255,0.06)" stroke="{MUTED}" stroke-width="2.5"/>')
+        if pd.isna(r["budget_2026_27_m"]):
+            el.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{ro:.1f}" fill="url(#hatch2)"/>')
+            pct, sub = "No line", f'${r["avg_actual_m"]:.0f}M spent'
+        else:
+            ri = R * math.sqrt(r["budget_2026_27_m"] / vmax)
+            el.append(f'<circle cx="{cx:.1f}" cy="{base - ri:.1f}" r="{ri:.1f}" fill="{FIRE}"/>')
+            pct, sub = f'{r["budget_pct"]:.0f}%', f'${r["budget_2026_27_m"]:.0f}M of ${r["avg_actual_m"]:.0f}M'
+        el.append(f'<text x="{cx:.1f}" y="{base + 30:.0f}" font-size="27" font-weight="800" fill="{TEXT}" text-anchor="middle">{r["prov"]} '
+                  f'<tspan fill="{FIRE}">{pct}</tspan></text>'
+                  f'<text x="{cx:.1f}" y="{base + 56:.0f}" font-size="20" fill="{MUTED}" text-anchor="middle">{sub}</text>')
+    el.append("</svg>")
+    return "".join(el)
+
+
+def circles_legend():
+    return (f'<div class="legend"><span><i style="background:transparent;border:2.5px solid {MUTED};border-radius:50%"></i>Spent on fires in a typical recent year</span>'
+            f'<span><i style="background:{FIRE};border-radius:50%"></i>Budget for 2026-27</span></div>')
+
+
+def journey(stops, W=928, row=78):
+    """Opener: the route through the carousel, one stop per slide."""
+    H = row * len(stops) + 8
+    xl = 30
+    el = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">',
+          f'<line x1="{xl}" y1="{row / 2}" x2="{xl}" y2="{H - row / 2}" stroke="{FIRE}" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>']
+    for k, s in enumerate(stops):
+        y = row / 2 + k * row
+        el.append(f'<circle cx="{xl}" cy="{y:.0f}" r="22" fill="{FIRE}"/>'
+                  f'<text x="{xl}" y="{y + 9:.0f}" font-size="24" font-weight="800" fill="#11151b" text-anchor="middle">{k + 2}</text>'
+                  f'<text x="{xl + 50}" y="{y + 12:.0f}" font-size="34" font-weight="700" fill="{TEXT}">{s}</text>')
+    el.append("</svg>")
+    return "".join(el)
+
+
+def population(year):
+    """Canada population on July 1 (StatCan table 17-10-0005-01, downloaded for the health analysis)."""
+    d = pd.read_csv(os.path.join(AN, "health/raw/deaths/17100005/17100005.csv"), dtype=str,
+                    usecols=["REF_DATE", "GEO", "Gender", "Age group", "VALUE"])
+    d = d[(d.GEO == "Canada") & (d["Age group"] == "All ages") & d.Gender.str.startswith("Total") & (d.REF_DATE == str(year))]
+    return float(d.VALUE.iloc[0])

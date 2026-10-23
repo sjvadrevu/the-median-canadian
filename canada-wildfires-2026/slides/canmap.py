@@ -5,7 +5,8 @@ import os
 
 from pyproj import Transformer
 
-BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "map", "base.json")
+_REL = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "map", "base.json")
+BASE = _REL
 _T = Transformer.from_crs(4326, 3978, always_xy=True)
 
 

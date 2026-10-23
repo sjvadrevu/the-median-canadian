@@ -1,0 +1,105 @@
+outcome,year,prov,share,imputed,cov_share,popw_mean_increment
+Respiratory emergency room visits,2023,AB,0.2844706781774281,False,0.889,17.466
+Respiratory emergency room visits,2023,BC,0.08016413189428089,False,0.947,3.922
+Respiratory emergency room visits,2023,MB,0.032894863202246764,False,0.653,8.696
+Respiratory emergency room visits,2023,NB,0.005666369556654477,False,0.782,2.158
+Respiratory emergency room visits,2023,NL,0.003327369335603005,False,0.657,2.293
+Respiratory emergency room visits,2023,NS,0.006165305251020068,False,0.765,1.921
+Respiratory emergency room visits,2023,NT,0.004537339781863848,False,0.599,43.344
+Respiratory emergency room visits,2023,NU,0.0,False,0.0,
+Respiratory emergency room visits,2023,ON,0.34763014764760575,False,0.944,5.992
+Respiratory emergency room visits,2023,PE,0.000780016050462899,False,0.97,1.203
+Respiratory emergency room visits,2023,QC,0.18444702650234104,False,0.921,5.451
+Respiratory emergency room visits,2023,SK,0.0495904885759404,False,0.589,17.279
+Respiratory emergency room visits,2023,YT,0.00032626402455271006,False,0.775,2.419
+Respiratory emergency room visits,2024,AB,0.32832828150438764,False,0.888,7.592
+Respiratory emergency room visits,2024,BC,0.06041852774918015,False,0.948,1.113
+Respiratory emergency room visits,2024,MB,0.05720002953710524,False,0.718,5.189
+Respiratory emergency room visits,2024,NB,0.007539886873892776,False,0.801,1.06
+Respiratory emergency room visits,2024,NL,0.0066316278034243385,False,0.656,1.73
+Respiratory emergency room visits,2024,NS,0.005620714196832314,False,0.774,0.654
+Respiratory emergency room visits,2024,NT,0.003002789987599504,False,0.582,11.005
+Respiratory emergency room visits,2024,NU,0.0,False,0.0,
+Respiratory emergency room visits,2024,ON,0.27357873088918533,False,0.948,1.771
+Respiratory emergency room visits,2024,PE,0.0011231264700022415,False,0.909,0.699
+Respiratory emergency room visits,2024,QC,0.19735516819685364,False,0.925,2.191
+Respiratory emergency room visits,2024,SK,0.058746847944162406,False,0.585,7.763
+Respiratory emergency room visits,2024,YT,0.0004542688473744097,False,0.749,1.315
+Respiratory emergency room visits,2025,AB,0.18548918906096526,False,0.888,7.646
+Respiratory emergency room visits,2025,BC,0.05274051839537455,False,0.931,1.763
+Respiratory emergency room visits,2025,MB,0.051453656851459605,True,0.003,60.838
+Respiratory emergency room visits,2025,NB,0.005071019573849173,False,0.592,1.718
+Respiratory emergency room visits,2025,NL,0.005611023835749803,True,0.018,3.871
+Respiratory emergency room visits,2025,NS,0.004994268275132313,False,0.773,1.037
+Respiratory emergency room visits,2025,NT,0.0007029815098244424,True,0.0,
+Respiratory emergency room visits,2025,NU,0.0,False,0.0,
+Respiratory emergency room visits,2025,ON,0.43216584892794807,False,0.94,5.036
+Respiratory emergency room visits,2025,PE,0.0012513923191718886,False,0.958,1.318
+Respiratory emergency room visits,2025,QC,0.20895401527210392,False,0.919,4.167
+Respiratory emergency room visits,2025,SK,0.05136011524007185,False,0.601,11.797
+Respiratory emergency room visits,2025,YT,0.00020597073834919356,False,0.699,1.14
+Respiratory emergency room visits,2026,AB,0.19708545503834204,False,0.883,4.724
+Respiratory emergency room visits,2026,BC,0.13204915772348563,False,0.927,2.569
+Respiratory emergency room visits,2026,MB,0.028970183653751425,True,0.0,
+Respiratory emergency room visits,2026,NB,0.007430009349655542,False,0.803,1.075
+Respiratory emergency room visits,2026,NL,0.0036163898035465867,True,0.018,3.147
+Respiratory emergency room visits,2026,NS,0.006571523509429635,False,0.77,0.793
+Respiratory emergency room visits,2026,NT,0.0007801874522779508,True,0.0,
+Respiratory emergency room visits,2026,NU,0.0,False,0.0,
+Respiratory emergency room visits,2026,ON,0.5076021358536073,False,0.937,3.435
+Respiratory emergency room visits,2026,PE,0.001041405181085558,False,0.922,0.66
+Respiratory emergency room visits,2026,QC,0.10008730464983276,False,0.925,1.147
+Respiratory emergency room visits,2026,SK,0.014459223706575153,False,0.564,2.039
+Respiratory emergency room visits,2026,YT,0.0003070240784103829,False,0.749,0.917
+Respiratory hospital admissions,2023,AB,0.2844706781774281,False,0.889,17.466
+Respiratory hospital admissions,2023,BC,0.08016413189428089,False,0.947,3.922
+Respiratory hospital admissions,2023,MB,0.032894863202246764,False,0.653,8.696
+Respiratory hospital admissions,2023,NB,0.005666369556654477,False,0.782,2.158
+Respiratory hospital admissions,2023,NL,0.003327369335603005,False,0.657,2.293
+Respiratory hospital admissions,2023,NS,0.006165305251020068,False,0.765,1.921
+Respiratory hospital admissions,2023,NT,0.004537339781863848,False,0.599,43.344
+Respiratory hospital admissions,2023,NU,0.0,False,0.0,
+Respiratory hospital admissions,2023,ON,0.34763014764760575,False,0.944,5.992
+Respiratory hospital admissions,2023,PE,0.000780016050462899,False,0.97,1.203
+Respiratory hospital admissions,2023,QC,0.18444702650234104,False,0.921,5.451
+Respiratory hospital admissions,2023,SK,0.0495904885759404,False,0.589,17.279
+Respiratory hospital admissions,2023,YT,0.00032626402455271006,False,0.775,2.419
+Respiratory hospital admissions,2024,AB,0.32832828150438764,False,0.888,7.592
+Respiratory hospital admissions,2024,BC,0.06041852774918015,False,0.948,1.113
+Respiratory hospital admissions,2024,MB,0.05720002953710524,False,0.718,5.189
+Respiratory hospital admissions,2024,NB,0.007539886873892776,False,0.801,1.06
+Respiratory hospital admissions,2024,NL,0.0066316278034243385,False,0.656,1.73
+Respiratory hospital admissions,2024,NS,0.005620714196832314,False,0.774,0.654
+Respiratory hospital admissions,2024,NT,0.003002789987599504,False,0.582,11.005
+Respiratory hospital admissions,2024,NU,0.0,False,0.0,
+Respiratory hospital admissions,2024,ON,0.27357873088918533,False,0.948,1.771
+Respiratory hospital admissions,2024,PE,0.0011231264700022415,False,0.909,0.699
+Respiratory hospital admissions,2024,QC,0.19735516819685364,False,0.925,2.191
+Respiratory hospital admissions,2024,SK,0.058746847944162406,False,0.585,7.763
+Respiratory hospital admissions,2024,YT,0.0004542688473744097,False,0.749,1.315
+Respiratory hospital admissions,2025,AB,0.18548918906096526,False,0.888,7.646
+Respiratory hospital admissions,2025,BC,0.05274051839537455,False,0.931,1.763
+Respiratory hospital admissions,2025,MB,0.051453656851459605,True,0.003,60.838
+Respiratory hospital admissions,2025,NB,0.005071019573849173,False,0.592,1.718
+Respiratory hospital admissions,2025,NL,0.005611023835749803,True,0.018,3.871
+Respiratory hospital admissions,2025,NS,0.004994268275132313,False,0.773,1.037
+Respiratory hospital admissions,2025,NT,0.0007029815098244424,True,0.0,
+Respiratory hospital admissions,2025,NU,0.0,False,0.0,
+Respiratory hospital admissions,2025,ON,0.43216584892794807,False,0.94,5.036
+Respiratory hospital admissions,2025,PE,0.0012513923191718886,False,0.958,1.318
+Respiratory hospital admissions,2025,QC,0.20895401527210392,False,0.919,4.167
+Respiratory hospital admissions,2025,SK,0.05136011524007185,False,0.601,11.797
+Respiratory hospital admissions,2025,YT,0.00020597073834919356,False,0.699,1.14
+Respiratory hospital admissions,2026,AB,0.19708545503834204,False,0.883,4.724
+Respiratory hospital admissions,2026,BC,0.13204915772348563,False,0.927,2.569
+Respiratory hospital admissions,2026,MB,0.028970183653751425,True,0.0,
+Respiratory hospital admissions,2026,NB,0.007430009349655542,False,0.803,1.075
+Respiratory hospital admissions,2026,NL,0.0036163898035465867,True,0.018,3.147
+Respiratory hospital admissions,2026,NS,0.006571523509429635,False,0.77,0.793
+Respiratory hospital admissions,2026,NT,0.0007801874522779508,True,0.0,
+Respiratory hospital admissions,2026,NU,0.0,False,0.0,
+Respiratory hospital admissions,2026,ON,0.5076021358536073,False,0.937,3.435
+Respiratory hospital admissions,2026,PE,0.001041405181085558,False,0.922,0.66
+Respiratory hospital admissions,2026,QC,0.10008730464983276,False,0.925,1.147
+Respiratory hospital admissions,2026,SK,0.014459223706575153,False,0.564,2.039
+Respiratory hospital admissions,2026,YT,0.0003070240784103829,False,0.749,0.917

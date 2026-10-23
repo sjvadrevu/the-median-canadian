@@ -23,23 +23,29 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 BASE = os.path.abspath(os.path.join(HERE, ".."))
 AN = os.path.join(BASE, "analysis")
 VERIFIED = os.path.join(BASE, "story", "verified_numbers.json")
-N_SLIDES = 8
+N_SLIDES = 9
+# receipt lines on the bill slide (keys of bill_summary.json "slide"); the site uses the same labels
+BILL_LINES = [("trees", "Trees burned, 2023 to 2026"), ("fight", "Firefighting, 2023 to 2025"),
+              ("fight26", "Firefighting, 2026 estimates"), ("build", "Homes, buildings and repairs"),
+              ("evac", "Evacuations and hospital care"), ("work", "Lost work and business")]
 PHOTO_DIR = "photos_v2"  # watermarked previews for review; swap for licensed files before posting
 # slide: (file, background-position, background-size)
 PHOTOS = {
-    1: ("s1_6188-64594005.jpg", "50% 40%", "cover"),
-    2: ("s2_6019-60231329.jpg", "50% 30%", "cover"),
-    3: ("s5_6019-67126902.jpg", "50% 20%", "cover"),
-    4: ("s6_4197-65297456.jpg", "50% 15%", "cover"),
-    5: ("s8_1848-64409449.jpg", "50% 30%", "cover"),
-    6: ("s1_6188-58552693.jpg", "50% 30%", "cover"),
-    7: ("s7_1525-22526195.jpg", "50% 40%", "cover"),
-    8: ("s9_6188-67448389.jpg", "50% 60%", "cover"),
+    1: ("s0_6188-56031079.jpg", "50% 50%", "cover"),
+    2: ("s1_6188-64594005.jpg", "50% 40%", "cover"),
+    3: ("s2_6019-60231329.jpg", "50% 30%", "cover"),
+    4: ("s5_6019-67126902.jpg", "50% 20%", "cover"),
+    5: ("s6_4197-65297456.jpg", "50% 15%", "cover"),
+    6: ("s8_1848-64409449.jpg", "50% 30%", "cover"),
+    7: ("s6b_4197-63586851.jpg", "50% 20%", "cover"),
+    8: ("s7_1525-22526195.jpg", "50% 40%", "cover"),
+    9: ("s9_6188-67448389.jpg", "50% 60%", "cover"),
 }
 # photographer or supplier as listed by All Canada Photos; check against the licence before posting
-CREDITS = {
-    1: "IMAGO / had fotos", 2: "Josephine Skinner / Cavan Images", 3: "Cavan Images", 4: "PeopleImages",
-    5: "imagoDens / imageBROKER", 6: "IMAGO / McPHOTO", 7: "Hrolens / Ingram Publishing", 8: "Mikel Bilbao / IMAGO / Zoonar",
+CREDITS = {  # credit line as listed for each asset by All Canada Photos (get_asset "credit"), typo "Peoplelmages" fixed
+    1: "IMAGO/Zoonar", 2: "IMAGO/had fotos", 3: "Josephine Skinner/Cavan Images Micro/Cavan Images",
+    4: "Cavan Images Micro/Cavan Images", 5: "PeopleImages", 6: "imagoDens/imageBROKER",
+    7: "Yuri Arcurs PeopleImages.com/PeopleImages", 8: "Hrolens/Ingram Publishing", 9: "IMAGO/Zoonar",
 }
 WAINWRIGHT_DEATHS = 4  # CAF members, CFB Wainwright fire, Oct 17, 2026 (DND release, Oct 18, 2026)
 
@@ -401,15 +407,18 @@ def waffle(n_red, n=10, size=24, gap=5):
 def germany_map(Wd=928, Hmax=580, with_germany=True, crop_top=None):
     g = json.load(open(os.path.join(AN, "graphics/canada_burned_germany_paths.json")))
     W0, H0 = g["W"], g["H"]
-    gx, gy = W0 * 0.54, H0 * 0.57   # Germany placed in Hudson Bay, same scale
+    gx, gy = W0 * 0.56, H0 * 0.53   # Germany placed in Hudson Bay, same scale
     y0 = crop_top or 0
     Hv = H0 - y0
     scale = min(Wd / W0, Hmax / Hv)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W0 * scale:.0f}" height="{Hv * scale:.0f}" viewBox="0 {y0:.0f} {W0} {Hv:.0f}" style="display:block;margin:0 auto">'
             f'<path d="{g["base"]}" fill="#3a4250" stroke="#4d5768" stroke-width="1"/>'
             f'<path d="{g["burn"]}" fill="{FIRE}" stroke="{FIRE}" stroke-width="0.6"/>'
-            + (              f'<g transform="translate({gx:.1f},{gy:.1f})"><path d="{g["germany_centred"]}" fill="rgba(255,255,255,0.12)" stroke="#fff" stroke-width="2.5" stroke-dasharray="6 4"/></g>'
-              f'<text x="{gx:.1f}" y="{gy + 8:.1f}" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" font-family="{FONT}">Germany</text>' if with_germany else '')
+            + (f'<g transform="translate({gx:.1f},{gy:.1f})"><path d="{g["germany_centred"]}" fill="{FIRE}" stroke="#fff" stroke-width="{2.5 / scale:.1f}"/></g>'
+               f'<text x="{gx + 70:.1f}" y="{gy + 10:.1f}" font-size="{26 / scale:.0f}" font-weight="800" fill="#fff" text-anchor="start" font-family="{FONT}" '
+               f'paint-order="stroke" stroke="#11151b" stroke-width="{6 / scale:.0f}">Germany</text>'
+               f'<text x="{gx + 70:.1f}" y="{gy + 10 + 26 / scale:.1f}" font-size="{20 / scale:.0f}" font-weight="600" fill="#fff" text-anchor="start" font-family="{FONT}" '
+               f'paint-order="stroke" stroke="#11151b" stroke-width="{6 / scale:.0f}">same scale</text>' if with_germany else '')
             + (fire_labels(fs=24 / scale) if crop_top is not None else '')
             + '</svg>')
 
@@ -481,13 +490,12 @@ def build(s):
                ticks={"1990", "2000", "2010", "2020"}, grid=[5, 10, 15],
                gridfmt=lambda g: f"{g}", bar_frac=0.78, lsize=22)
     slides.append(dict(
-        kicker="Canada's wildfires, 2023 to 2026",
-        head="Wildfires burned 35.9 million hectares from 2023 to 2026, about the size of Germany",
+        kicker="The fires",
+        head="35.9 million hectares burned",
+        dek="About the size of Germany, and more than double any four years since 1990.",
         body=f'''
-<div class="chart" style="margin-top:12px">{germany_equation(s["agency_run"], Hd=200)}</div>
-<div class="chart" style="margin-top:10px">{germany_map(Hmax=410, with_germany=False, crop_top=300)}</div>
-<p class="body sm">More than twice the land burned in any earlier four years since 1990.</p>
-<p class="foot">Map: NBAC and CWFIS satellite maps. Total: fire agencies.</p>''',
+<div class="chart" style="margin-top:14px">{germany_map(Hmax=600, with_germany=False, crop_top=300)}</div>
+<p class="foot">Red: land burned 2023 to 2026 (NBAC and CWFIS satellite maps). Total: fire agencies.</p>''',
         source="CCFM National Forestry Database; CWFIS · Canada, 1990 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 2 Climate ------------------------------------------------------------
@@ -538,17 +546,14 @@ def build(s):
     # merged 2 + 3 preview
     by = [y for y in range(2003, 2027)]
     pts = [(y, s["temp"][y], s["drought"][y], s["agency_year"][y]) for y in by]
-    chm = bubbles(pts, H=430, label_years=set(run) | {2021, 2010}, hot=run)
+    chm = bubbles(pts, H=560, label_years=set(run) | {2021, 2010}, hot=run)
     slides.pop(); slides.pop()
     slides.append(dict(
-        kicker="Why it happened",
-        head="A warming climate made summers 1.1°C hotter, and 2023 to 2026 were the driest four years since 1950",
+        kicker="The heat and drought",
+        head="Hotter, drier summers",
+        dek=f"Summers were 1.1°C warmer, and 1 in {round(1 / V('C9.share_attributable'))} hectares burned came from the warming.",
         body=f'''
-<div class="statrow">
-  <div><div class="stat fire">1 in {round(1 / V("C9.share_attributable"))}</div><div class="statcap">hectares burned came from the warming</div></div>
-  <div><div class="stat fire">{round(V("C10.pct_of_normal"))}%</div><div class="statcap">of usual summer rain fell</div></div>
-</div>
-<div class="note">Each circle is a year, 2003 to 2026; bigger circle, more land burned</div>
+<div class="note">Each circle is a year, 2003 to 2026. Bigger circle: more land burned. 2023 to 2026: driest four years since 1950.</div>
 <div class="chart">{chm}</div>
 <p class="foot">Canada warms twice as fast as the world, mostly from human activity (ECCC; IPCC).</p>''',
         source="ECCC climate data; AAFC Canadian Drought Monitor · Canada, 1950 to 2026 · Oct 2026 · CC BY 4.0"))
@@ -594,15 +599,18 @@ def build(s):
     exg = pd.read_csv(os.path.join(AN, "health/exposure_by_group.csv"))
     ex23 = exg[(exg.radius_km == 50) & (exg.period == "May-Sep") & (exg.dimension == "national") &
                (exg.weight == "total_pop") & (exg.year == 2023)].people_ge1day_gt27.iloc[0]
+    hc = pd.read_csv(os.path.join(AN, "health/hc_matz2026_2023.csv")).set_index("outcome")
+    hc_asthma, hc_lo, hc_hi = hc.loc["Asthma symptom days", ["central", "low", "high"]]
     slides.append(dict(
-        kicker="Who it hurt",
-        head=f"Wildfire smoke reached {round(ex23 / 1e6)} million Canadians in 2023 and led to about {fint(round(ed_tot, -3))} extra emergency room visits",
+        kicker="The smoke",
+        head=f"Smoke reached {round(ex23 / 1e6)} million people",
+        dek=f"Health Canada estimates {hc_asthma / 1e6:.1f} million days of asthma symptoms in children in 2023.",
         body=f'''
 <div class="note">Days of unhealthy smoke at each air monitor, May to September 2023</div>
 {ov.smoke_season_map()[1]}
 <div class="chart" style="margin-top:6px">{ov.smoke_season_map(W=928)[0]}</div>
-<p class="foot">Reached: at least one day of unhealthy smoke (daily fine particles above 27). Emergency visits: 2023 to 2025, from hospital records linked to daily smoke levels; 2026 not yet released.</p>''',
-        source="CIHI NACRS; NAPS and AirNow PM2.5; StatCan · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
+<p class="foot">Reached: at least one day of unhealthy smoke in 2023. Asthma: children aged 5 to 19, range {hc_lo / 1e6:.2f} to {hc_hi / 1e6:.1f} million (Matz et al. 2026).</p>''',
+        source="NAPS and AirNow PM2.5; StatCan; Health Canada · 2023 · Oct 2026 · CC BY 4.0"))
 
     # 6 Property -----------------------------------------------------------
     val = s["value"]
@@ -646,16 +654,19 @@ def build(s):
 
     # Costs (property + economy) ---------------------------------------
     ff3 = sum(s["firefight"][y] for y in (2023, 2024, 2025))
-    bill_svg, bill_total = ov.receipt([("Trees burned, 2023", V("C27.timber_2023_nominal_b")),
-                                       ("Firefighting, 2023 to 2025", ff3),
-                                       ("Homes and buildings destroyed", vtot)], "TOTAL")
+    pop26 = ov.population(2026)
+    # each dollar once, every estimate at its low end (analysis/costs-full/scripts/combine_bill.py)
+    sl_ = json.load(open(os.path.join(AN, "costs-full/bill_summary.json")))["slide"]
+    bill_svg, bill_total = ov.receipt([(lab, sl_[k] / 1e9 + (vtot if k == "build" else 0)) for k, lab in BILL_LINES], "TOTAL")
+    per_cap = int(bill_total * 1e9 / pop26 // 10 * 10)
     slides.append(dict(
-        kicker="What it cost",
-        head=f"Wildfires cost Canada at least ${bill_total:.1f} billion in trees, firefighting and buildings",
+        kicker="The bill",
+        head=f"The fires cost at least ${per_cap:,.0f} per Canadian",
+        dek=f"Yearly firefighting costs doubled, to over ${int(V('C28.mean_2023_2025_b'))} billion.",
         body=f'''
 <div class="chart" style="text-align:center;margin-top:20px">{bill_svg}</div>
-<p class="foot">Firefighting: BC, Ontario, Alberta and Saskatchewan, 2023 to 2025. Trees valued at provincial cutting fees. Buildings valued at local census home values.</p>''',
-        source="Sentinel-2; StatCan; National Forestry Database; provincial accounts · 2016 to 2026 · Oct 2026 · CC BY 4.0"))
+<p class="foot">Each cost counted once, estimates at their low end. 2026: government forecasts and estimates from area burned. Costs with no public record are not included. Per Canadian: July 2026 population.</p>''',
+        source="Public accounts; Forestry Database; StatCan; CIHI · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 8 Environment --------------------------------------------------------
     cy = list(range(2016, 2025))
@@ -667,12 +678,12 @@ def build(s):
     ch8b = hbars([("1990s", rb["1990-1999"], NEUTRAL), ("2023 to 2026", rb["2023-2026"], FIRE)],
                  row_h=56, vmax=10, fmt=lambda v: f"{f1(v)}%")
     slides.append(dict(
-        kicker="What it did to the climate",
-        head="The fires feed the warming: wildfire emissions in 2023 were larger than Canada's official total",
+        kicker="The carbon",
+        head=f"Fires released {round(ov.emissions_line()[1][1] / ov.emissions_line()[1][0] * 12)} months of Canada's emissions",
+        dek=f"In 2023, wildfires released {fint(ov.emissions_line()[1][1])} million tonnes of CO₂. Canada reports it outside its official total.",
         body=f'''
 <div class="note">Million tonnes of CO₂ each year</div>
-<div class="chart">{ov.emissions_line()[0]}</div>
-<p class="foot">Canada reports wildfire emissions separately from its official total. Official inventory 2026; 2025 and 2026 not yet reported.</p>''',
+<div class="chart">{ov.emissions_line()[0]}</div>''',
         source="ECCC National Inventory Report 2026; NBAC; SCANFI · Canada, 1990 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # Provinces ------------------------------------------------------------
@@ -682,16 +693,16 @@ def build(s):
     no_line = [r["prov"] for _, r in sc.iterrows() if pd.isna(r["budget_pct"])]
     hl = pd.read_csv(os.path.join(AN, "readiness/highlights.csv")).set_index("key")
     rows = "".join(f'<div class="find"><div class="fnum">{hl.loc[k, "value"]}</div><div class="ftxt">{hl.loc[k, "text"]}</div></div>'
-                   for k in ("fleet_age", "review_fixes", "outside_crews"))
+                   for k in ("fleet_age", "outside_crews"))
     slides.append(dict(
-        kicker="Are we ready for the next one?",
-        head="Not yet: provinces budget for quiet fire years and rely on old planes and outside crews",
+        kicker="Readiness",
+        head="Not ready for another season like these",
+        dek="Provinces budget for quiet years, fly old planes and borrow crews.",
         body=f'''
-<div class="note">Share of a typical recent fire bill that this year’s budget covers</div>
-<div class="chart" style="margin-top:6px">{ov.prov_map(cover, H=380, no_line=no_line)}</div>
-<div class="chart" style="text-align:center;margin-top:4px">{ov.cover_legend()}</div>
+{ov.circles_legend()}
+<div class="chart" style="margin-top:14px">{ov.budget_circles()}</div>
 <div class="finds">{rows}</div>''',
-        source="Provincial budgets and accounts; auditor and review reports; CIFFC · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
+        source="Provincial budgets; auditor and review reports; CIFFC · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # Coming ---------------------------------------------------------------
     pol = ov.policy_numbers()
@@ -700,36 +711,41 @@ def build(s):
     nat = pd.read_csv(os.path.join(AN, "readiness/national_ciffc.csv"))
     intl23 = int(nat.loc[nat["year"] == 2023, "international_personnel_imported"].iloc[0])
     slides.append(dict(
-        kicker="What is on the way",
-        head="New water bombers and a fire-watching satellite are due from 2029 to the early 2030s",
+        kicker="On the way",
+        head="Help is years away",
+        dek=f"Of ${j_set / 1000:.2f} billion in new federal wildfire money, ${j_paid:.0f} million was paid by March 2025.",
         body=f'''
 <div class="chart" style="margin-top:18px">{ov.timeline()}</div>
 <div class="finds">
-<div class="find"><div class="fnum">{intl23:,}</div><div class="ftxt">firefighters and staff came from other countries to help in 2023</div></div>
-<div class="find"><div class="fnum">${j_paid:.0f}M</div><div class="ftxt">paid of ${j_set / 1000:.2f} billion set aside for four new federal wildfire programs, by March 2025</div></div>
-<div class="find"><div class="fnum">{pol["n_grants"]}</div><div class="ftxt">research projects under way on fire mapping, smoke and Indigenous fire knowledge</div></div>
+<div class="find"><div class="fnum">{pol["n_grants"]}</div><div class="ftxt">research projects under way, from fuel mapping to Indigenous fire knowledge</div></div>
 </div>''',
         source="CIFFC; federal budgets; GC InfoBase; provincial budgets · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 9 Bottom line --------------------------------------------------------
     slides.append(dict(
-        kicker="What needs to change",
-        head="Canada needs to cut emissions and be ready before the next fire season starts",
+        kicker="What would help",
+        head="Spot fires early, reach them fast",
+        dek=f"{round(sum(s['escape72']) / 20)} in 10 hectares burned in remote fires that grew fast.",
         body=f'''
-<div class="finds">
-<div class="find"><div class="fnum">1 in {round(1 / V("C9.share_attributable"))}</div><div class="ftxt">hectares burned came from the warming. <b>Needed: lower emissions.</b></div></div>
-<div class="find"><div class="fnum">{round(sum(s["escape72"]) / 20)} in 10</div><div class="ftxt">hectares burned in remote fires that grew fast. <b>Needed: faster first attack.</b></div></div>
-<div class="find"><div class="fnum">{pd.read_csv(os.path.join(AN, "readiness/scorecard.csv"))["budget_pct"].min():.0f} to {pd.read_csv(os.path.join(AN, "readiness/scorecard.csv"))["budget_pct"].max():.0f}%</div><div class="ftxt">of a typical fire bill is in provincial budgets. <b>Needed: money, crews and planes ready before the season.</b></div></div>
-</div>
+<ul class="needs">
+<li>Early warning from satellites, cameras and night flights</li>
+<li>Year-round crews and newer water bombers</li>
+<li>Fire budgets that match recent seasons</li>
+<li>Plans for hotter, drier summers</li>
+</ul>
 <div class="explore"><div class="ex1">Explore the full story and the data</div>
 <div class="ex2">Link in bio · sjvadrevu.github.io/canada-wildfires-2026</div></div>
-<div class="brand"><img src="logo-dark.png" alt="The Median Canadian"></div>
-<div class="sources"><b>Data sources.</b> NRCan Canadian Wildland Fire Information System (NBAC, M3 outlines, National Fire Database, CNFDB), Land Cover 2020 and SCANFI; ECCC homogenized climate data, climate stations and National Inventory Report 2026; AAFC Canadian Drought Monitor; NAPS and AirNow air quality; Statistics Canada 2021 Census and road network; NRCan rail network; CIHI emergency department records; Copernicus Sentinel-2; Microsoft building footprints (ODbL); National Forestry Database; provincial budgets, public accounts, auditor and review reports; CIFFC; federal budgets and GC InfoBase; agency fire response records; IPCC AR6 and ECCC Canada's Changing Climate Report.</div>
-<div class="sources"><b>Licence.</b> Analysis and charts CC BY 4.0, The Median Canadian. Source data under the Open Government Licence (Canada) and each source's own licence. Photos: All Canada Photos, licensed separately and not covered by CC BY 4.0.</div>''',
-        source=None, last=True))
+''',
+        source="All data sources, methods and code: sjvadrevu.github.io/canada-wildfires-2026 · CC BY 4.0"))
+    slides.append(dict(
+        kicker="The Median Canadian · Week 2",
+        head="From the forest to our homes",
+        dek="Canada's wildfires, 2023 to 2026",
+        body="", cover=True,
+        source="NRCan; ECCC; CIHI; StatCan; government budgets · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
     by = {sl["kicker"]: sl for sl in slides}
-    return [by[k] for k in ["Canada's wildfires, 2023 to 2026", "Why it happened", "Who it hurt", "What it cost",
-                            "What it did to the climate", "Are we ready for the next one?", "What is on the way", "What needs to change"]]
+    return [by[k] for k in ["The Median Canadian · Week 2", "The fires", "The heat and drought", "The smoke", "The bill",
+                            "The carbon", "Readiness", "On the way", "What would help"]]
 
 
 CSS = f"""
@@ -737,20 +753,19 @@ CSS = f"""
 * {{ box-sizing:border-box; margin:0; padding:0; }}
 body {{ background:#0c1016; font-family:{FONT}; color:var(--text); }}
 .slide {{ position:relative; width:1080px; height:1350px; background:#0c1016; overflow:hidden; }}
-.photo {{ position:absolute; inset:0; background-size:cover; background-repeat:no-repeat; }}
-.shade {{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,11,16,0.55) 0%, rgba(8,11,16,0.30) 14%, rgba(8,11,16,0.45) 30%, rgba(8,11,16,0.62) 100%); }}
+.photo {{ position:absolute; inset:0; background-size:cover; background-repeat:no-repeat; filter:saturate(1.35) contrast(1.06); }}
+.shade {{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,11,16,0.62) 0%, rgba(8,11,16,0.40) 20%, rgba(8,11,16,0.12) 42%, rgba(8,11,16,0.10) 72%, rgba(8,11,16,0.55) 100%); }}
+.cover .shade {{ background:linear-gradient(180deg, rgba(8,11,16,0.55) 0%, rgba(8,11,16,0.30) 14%, rgba(8,11,16,0.45) 30%, rgba(8,11,16,0.62) 100%); }}
+.trail {{ position:absolute; inset:0; pointer-events:none; }}
 .content {{ position:absolute; top:80px; left:76px; right:76px; }}
 .kicker {{ font-size:27px; font-weight:700; text-transform:uppercase; letter-spacing:0.09em; color:#ffd2c7; text-shadow:0 2px 10px rgba(0,0,0,0.8); }}
 h1 {{ font-size:74px; font-weight:800; line-height:1.07; letter-spacing:-0.022em; color:#fff; margin-top:18px; text-shadow:0 3px 18px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.9); }}
+.cover .photo {{ filter:none; }}
+.cover .content {{ top:520px; }}
+.cover h1 {{ font-size:120px; margin-top:20px; }}
+.cover .dek {{ font-size:44px; line-height:1.25; margin-top:30px; max-width:900px; }}
 h1.four {{ font-size:60px; }}
-#s8 h1 {{ font-size:54px; }}
-#s8 .sources {{ font-size:15px; margin-top:10px; }}
-#s8 .needs {{ font-size:28px; }}
-#s8 .needs li {{ margin-top:8px; }}
-#s8 .brand {{ margin-top:12px; }}
-#s8 .brand img {{ height:72px; }}
-#s8 .finds {{ margin-top:6px; }}
-#s8 .fnum {{ font-size:54px; }}
+.dek {{ font-size:36px; font-weight:600; line-height:1.28; color:#fff; margin-top:16px; text-shadow:0 2px 12px rgba(0,0,0,0.85); }}
 .score {{ width:100%; border-collapse:collapse; margin-top:14px; font-size:21px; line-height:1.2; }}
 .score th {{ font-size:26px; font-weight:800; text-align:left; width:70px; padding:9px 0; }}
 .score td {{ padding:9px 8px 9px 0; vertical-align:middle; border-top:1px solid rgba(255,255,255,0.14); }}
@@ -786,8 +801,8 @@ h1.four {{ font-size:60px; }}
 .footer-logo {{ position:absolute; left:76px; bottom:64px; height:78px; filter:drop-shadow(0 2px 8px rgba(0,0,0,0.7)); }}
 .pagenum {{ position:absolute; right:76px; bottom:64px; height:78px; line-height:78px; font-size:27px; font-weight:700; color:#fff; text-shadow:0 2px 8px rgba(0,0,0,0.8); }}
 .source {{ position:absolute; left:76px; right:76px; bottom:22px; font-size:18px; color:#d5dae1; white-space:nowrap; overflow:hidden; text-shadow:0 1px 6px rgba(0,0,0,0.9); }}
-.credit {{ position:absolute; top:24px; right:30px; font-size:16px; color:rgba(255,255,255,0.85); text-shadow:0 1px 5px rgba(0,0,0,0.9); }}
-.needs {{ margin-top:22px; padding-left:34px; font-size:31px; line-height:1.32; }}
+.credit {{ position:absolute; top:24px; right:30px; font-size:15px; color:rgba(255,255,255,0.75); text-shadow:0 1px 5px rgba(0,0,0,0.9); }}
+.needs {{ margin-top:22px; padding-left:34px; font-size:34px; line-height:1.32; }}
 .needs li {{ margin-top:12px; }}
 .explore {{ margin-top:24px; border:3px solid rgba(255,255,255,0.3); border-radius:22px; padding:30px 34px; }}
 .ex1 {{ font-size:40px; font-weight:800; line-height:1.15; }}
@@ -800,19 +815,35 @@ h1.four {{ font-size:60px; }}
 """
 
 
+def trail(x0=96, y0=1050, x1=1100, y1=1130, n_stops=8):
+    """Cover only: a dashed route that leaves the slide on the right, with a dot for each stop ahead."""
+    cx, cy = 560, 1180
+    pts = [((1 - u) ** 2 * x0 + 2 * (1 - u) * u * cx + u ** 2 * x1, (1 - u) ** 2 * y0 + 2 * (1 - u) * u * cy + u ** 2 * y1)
+           for u in [k / 60 for k in range(61)]]
+    d = "M" + " L".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+    dots = "".join(f'<circle cx="{pts[round(60 * (k + 1) / (n_stops + 1))][0]:.1f}" cy="{pts[round(60 * (k + 1) / (n_stops + 1))][1]:.1f}" r="7" fill="#fff" fill-opacity="0.9"/>'
+                   for k in range(n_stops))
+    return (f'<svg class="trail" xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">'
+            f'<path d="{d}" fill="none" stroke="{FIRE}" stroke-width="6" stroke-dasharray="2 16" stroke-linecap="round"/>'
+            f'<circle cx="{x0}" cy="{y0}" r="16" fill="{FIRE}"/><circle cx="{x0}" cy="{y0}" r="30" fill="{FIRE}" fill-opacity="0.25"/>'
+            f'{dots}</svg>')
+
+
 def page(slides):
     out = [f"<!doctype html><html lang='en'><head><meta charset='utf-8'><title>Wildfires carousel</title><style>{CSS}</style></head><body>"]
     for i, sl in enumerate(slides, 1):
         f, pos, size = PHOTOS[i]
-        out.append(f'<section class="slide" id="s{i}"><div class="photo" style="background-image:url(\'{PHOTO_DIR}/{f}\');'
+        out.append(f'<section class="slide{" cover" if sl.get("cover") else ""}" id="s{i}"><div class="photo" style="background-image:url(\'{PHOTO_DIR}/{f}\');'
                    f'background-position:{pos};background-size:{size}"></div><div class="shade"></div><div class="content">')
-        out.append(f'<div class="kicker">{esc(sl["kicker"])}</div><h1>{esc(sl["head"])}</h1><div class="card">{sl["body"]}</div></div>')
+        dek = f'<p class="dek">{esc(sl["dek"])}</p>' if sl.get("dek") else ""
+        card = f'<div class="card">{sl["body"]}</div>' if sl["body"] else ""
+        out.append(f'<div class="kicker">{esc(sl["kicker"])}</div><h1>{esc(sl["head"])}</h1>{dek}{card}</div>')
         if not sl.get("last"):
             out.append('<img class="footer-logo" src="logo-dark.png" alt="The Median Canadian">')
-        out.append(f'<div class="pagenum">{"Swipe →" if i == 1 else f"{i}/{N_SLIDES}"}</div>')
+        out.append(f'<div class="pagenum">{"Swipe to start →" if i == 1 else f"{i}/{N_SLIDES}"}</div>')
         if sl["source"]:
-            out.append(f'<div class="source">{esc(sl["source"])}</div>')
-        out.append(f'<div class="credit">Photo: {esc(CREDITS[i])} / All Canada Photos, not CC BY</div>')
+            out.append(f'<div class="source">{esc(sl["source"].replace(" · CC BY 4.0", " · Charts CC BY 4.0"))}</div>')
+        out.append(f'<div class="credit">© {esc(CREDITS[i])}</div>')
         out.append("</section>")
     out.append("""<script>
 for (const h of document.querySelectorAll('h1')) {

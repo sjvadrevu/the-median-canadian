@@ -1,37 +1,39 @@
 {
- "note": "CAD; trees and firefighting in 2025 dollars; buildings at census home values (add the bill's building value separately)",
- "fight_2026_forecast_not_counted": 1440451970.98,
+ "note": "CAD, 2025 dollars; 'build' excludes buildings destroyed at census home values (added by the builders)",
+ "rules": "- Floor (\"at least\", the figure on the slide): official spending in full and every estimate at the low end of its\n  range, including the Indigenous Services Canada on-reserve estimate. Lost wages and lost output overlap, so the\n  floor counts the larger of the two groups.\n- Central and high: estimates at their central and high values; lost wages and lost output both added (they may\n  partly overlap).\n- Firefighting in the 2026 season (forecasts, budgets and estimates from area burned; the season is not closed) is\n  its own line.\n- A line whose dollar figure comes from a news report is not counted (news is used only to find documents).\n- Transfers (federal disaster assistance, income support, EI) are not added: they pay for costs already counted.",
+ "floor_work_group": "wages",
  "low": {
   "trees": 12971356067.373177,
-  "firefighting_and_response": 8546380233.906207,
-  "buildings_infrastructure_extra": 230847212.0,
-  "evacuations_and_health": 386589275.0,
-  "lost_work_and_output": 275395450.0,
-  "health_care_only": 4408977.0
+  "fight": 8568563780.036206,
+  "fight26": 1803334077.77,
+  "build": 372935322.0,
+  "evac": 1284979091.4699998,
+  "work": 310029473.0
  },
  "central": {
   "trees": 12971356067.373177,
-  "firefighting_and_response": 9738498184.366207,
-  "buildings_infrastructure_extra": 418001845.0,
-  "evacuations_and_health": 399545305.0,
-  "lost_work_and_output": 1299478608.0,
-  "health_care_only": 17365007.0
+  "fight": 8617793692.326204,
+  "fight26": 1937783182.57,
+  "build": 632161299.0,
+  "evac": 1865605969.4199998,
+  "work": 1349615289.0
  },
  "high": {
   "trees": 12971356067.373177,
-  "firefighting_and_response": 9738498184.366207,
-  "buildings_infrastructure_extra": 994770037.0,
-  "evacuations_and_health": 728275581.0,
-  "lost_work_and_output": 2456558965.0,
-  "health_care_only": 31103131.0
+  "fight": 8700051145.306204,
+  "fight26": 2077459887.8500001,
+  "build": 1429674970.0,
+  "evac": 2394730297.38,
+  "work": 2492268638.0
  },
  "slide": {
-  "trees_2023_2026": 12971356067.373177,
-  "firefighting_response_2023_2025": 8546380233.906207,
-  "firefighting_2026_forecasts": 1440451970.98,
-  "buildings_infrastructure_extra": 230847212.0,
-  "evacuations_health_incl_isc": 1578707225.46,
-  "isc_estimate": 1192117950.46,
-  "lost_work_and_output": 275395450.0
+  "trees": 12971356067.373177,
+  "fight": 8568563780.036206,
+  "fight26": 1803334077.77,
+  "build": 372935322.0,
+  "evac": 1284979091.4699998,
+  "work": 310029473.0,
+  "isc_estimate_low": 790597244.73,
+  "isc_estimate_central": 1320102759.29
  }
 }
