@@ -277,6 +277,41 @@ ol.refs li:target{background:var(--glow)}
 .burnmap .lb{font-size:17px;font-weight:700;fill:var(--text);paint-order:stroke;stroke:var(--panel2);stroke-width:5px;stroke-linejoin:round}
 .burnmap circle{fill:var(--panel);stroke:var(--text);stroke-width:2.5}
 @media (max-width:560px){.burnmap .lb{font-size:32px;stroke-width:7px}.burnmap circle{r:8}}
+/* explorable chapter graphics */
+.xbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:10px 0 2px}
+.xnote{font-size:.8rem;color:var(--muted);line-height:1.4}
+.xnote b{color:var(--text)}
+.xcard{margin-top:8px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:.9rem;line-height:1.45}
+.xcard b{color:var(--text)}
+.xcard .yrs{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:6px;font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.xcard .yrs span.on{color:var(--text);font-weight:700}
+.burnmap .fl{cursor:pointer}
+.burnmap .fl.on circle{fill:var(--fire);stroke:var(--fire)}
+.burnmap .fl.on text{fill:var(--fire)}
+.smokemap circle{cursor:pointer}
+.smokemap circle.on{stroke:var(--text);stroke-width:3}
+#chBubbles circle{cursor:pointer}
+#chBubbles circle.on{stroke:var(--text);stroke-width:2.5;fill-opacity:1}
+#chForest rect[data-k],#chReach rect[data-k],#chTemp rect[data-k],#chDrought g[data-k]{cursor:pointer}
+#chDrought g[data-k]:hover .rowhit{fill:var(--panel2)}
+#chEmis .hit{fill:transparent;cursor:pointer}
+#chEmis .sel{stroke:var(--muted);stroke-dasharray:3 3}
+.receipt .ri.x{cursor:pointer}
+@media (hover:hover){.receipt .ri.x:hover{background:var(--panel)}}
+.receipt .ri .ar{display:inline-block;width:12px;color:var(--muted);font-size:.8rem}
+.receipt .sub{padding:2px 0 8px 12px;border-bottom:1px dashed var(--line);font-size:.8rem;color:var(--muted)}
+.receipt .sub div{display:flex;justify-content:space-between;gap:10px;padding:3px 0}
+.receipt .sub div b{white-space:nowrap;color:var(--text);font-weight:600}
+.receipt .sub a{font-size:.78rem}
+.receipt .sub .subh{margin:6px 0 2px;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.needlist li{cursor:pointer}
+.needlist li.on{border-left-color:var(--text)}
+.needlist li .more{display:block;margin-top:4px;font-size:.78rem;color:var(--fire)}
+.needs-detail{margin-top:8px}
+.needs-detail ul{margin:6px 0 0;padding-left:18px;font-size:.86rem;line-height:1.45;color:var(--muted)}
+.needs-detail li{margin:3px 0}
+.needs-detail li b{color:var(--text)}
+@media (max-width:480px){.xbar .seg button{padding:7px 8px;font-size:.8rem}}
 .smokemap svg{display:block;width:100%;height:auto;margin-top:6px;background:var(--panel2);border-radius:14px;overflow:hidden}
 .smokemap .provs path{fill:var(--land);stroke:var(--muted);stroke-width:.7;vector-effect:non-scaling-stroke}
 /* Health Canada table */
@@ -390,7 +425,9 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
       <article class="ch" id="c1"><span class="chN">1</span><span class="chK">The fires</span>
         <h2 class="chH"><span data-n="@c1.total_mha" data-f="d1"></span> million hectares burned</h2>
         <p class="reveal">About the size of Germany, and <span data-n="@c1.ratio" data-f="dbl"></span> any four years since 1990.<sup class="cite" data-cite="nfd-fire,cwfif,ciffc,un-dyb"></sup></p>
+        <div class="xbar" id="bmBar"></div>
         <div class="burnmap" id="burnMap"></div>
+        <div class="xcard" id="bmCard" hidden></div>
         <div class="chart" id="chForest"></div>
         <p class="fnote">Map: fire outlines from the National Burned Area Composite (2023 to 2025) and the 2026 satellite outlines. Totals: fire agencies' official figures; Germany: <span data-n="@c1.germany_mha" data-f="d1"></span> million hectares.<sup class="cite" data-cite="nbac,cwfis-m3,nfd-fire,cwfif,un-dyb"></sup></p>
       </article>
@@ -460,11 +497,13 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
       <article class="ch" id="c3"><span class="chN">3</span><span class="chK">The smoke</span>
         <h2 class="chH">Smoke reached <span data-n="@c3.reached_2023" data-f="mil0"></span> people</h2>
         <p class="reveal">Health Canada estimates <b><span data-n="@c3.hc_asthma_days" data-f="mil1"></span> days of asthma symptoms in children</b> in 2023.<sup class="cite" data-cite="matz2026"></sup></p>
+        <div class="xbar" id="smBar"></div>
         <div class="chart smokemap" id="smokeMap"></div>
+        <div class="xcard" id="smCard" hidden></div>
         <div class="chart" id="chReach"></div>
         <div class="hct" id="hcTable"></div>
         <p class="fnote">Unhealthy smoke: a day with fine particles above 27 micrograms per cubic metre at a monitor within 50 km.<sup class="cite" data-cite="caaqs,naps,airnow"></sup> Health Canada's estimates cover wildfire smoke from May to September 2023, from its Air Quality Benefits Assessment Tool; ranges are 95% intervals.<sup class="cite" data-cite="matz2026,aqbat"></sup> A study of Ontario by Health Canada and partners found asthma emergency visits rose after the June 2023 smoke.<sup class="cite" data-cite="chen2025-cmaj"></sup></p>
-        <p class="fnote">Our own analysis of monthly hospital records hints at more emergency visits, but the signal is weak (one of six tests), so it is not used.<sup class="cite" data-cite="cihi-nacrs"></sup></p>
+        <p class="fnote">Monthly hospital records hint at more emergency visits in smoky months, but the signal is weak (one of six tests), so it is not used.<sup class="cite" data-cite="cihi-nacrs"></sup></p>
         <div class="sub">
           <h3>People on reserves were <span data-n="C21.ratio" data-f="x0"></span> as likely as other Canadians to live near large fires year after year</h3>
           <div class="chart" id="chReserve"></div>
@@ -512,6 +551,7 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
       <article class="ch" id="c4"><span class="chN">4</span><span class="chK">The cost</span>
         <h2 class="chH">Fires cost Canada at least $<span data-n="@c4.per_year_b" data-f="fl0"></span> billion a year</h2>
         <p class="reveal">Firefighting is most of it, and in four big provinces it nearly doubled.<sup class="cite" data-cite="bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi"></sup></p>
+        <div class="xbar" id="rcBar"></div>
         <div class="receipt" id="receipt"></div>
         <p class="fnote">About $<span data-n="@c4.per_canadian_year" data-f="int"></span> a year for each Canadian.<sup class="cite" data-cite="statcan-popest"></sup></p>
         <details class="how2" id="billHow"><summary>How the costs were counted</summary><div id="billDetail"></div></details>
@@ -600,12 +640,8 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
         <h2 class="chH">Catch fires while they are small</h2>
         <p class="reveal">In 2026, <b><span data-n="@c8.fast_in_10" data-f="int"></span> in 10 hectares</b> burned in fires that grew past 1,000 hectares within three days.<sup class="cite" data-cite="cwfis-m3,cwfis-hotspots,cwfif"></sup></p>
         <p class="lead3">What auditors and fire reviews call for:</p>
-        <ul class="needlist">
-          <li><b>Faster first attack</b>on new fires</li>
-          <li><b>More firefighters</b>hired and trained before the season</li>
-          <li><b>Newer water bombers</b>and pilots to fly them</li>
-          <li><b>Fire budgets</b>that match recent seasons</li>
-        </ul>
+        <ul class="needlist" id="needList"></ul>
+        <div class="needs-detail" id="needDetail"></div>
         <p class="fnote">Fast growth: share of 2026 hectares in fires that passed 1,000 hectares within 72 hours (<span data-n="@c8.fast_range.0" data-f="pct0"></span> from first satellite detection, <span data-n="@c8.fast_range.1" data-f="pct0"></span> from the start of the main burning run). Late detection explains little of the area burned: for most of it, agencies logged the fire the same day satellites first saw it. Calls for faster first attack, staff, aircraft and budgets: provincial auditors, after-action reviews and CIFFC reports (see Readiness).<sup class="cite" data-cite="rd-sk,rd-on,rd-qc,rd-nt,rd-ab,ciffc-reports"></sup></p>
       </article>
     </div>
@@ -783,7 +819,7 @@ function vbars(el, data, o = {}) {
     if (d.v == null) return;
     const y0 = y(0), y1 = y(d.v);
     obst.push({x: x(d.k), y: Math.min(y0, y1), w: x.bandwidth(), h: Math.abs(y1 - y0)});
-    g += `<rect x="${x(d.k).toFixed(2)}" y="${Math.min(y0, y1).toFixed(2)}" width="${x.bandwidth().toFixed(2)}" height="${Math.max(0.6, Math.abs(y1 - y0)).toFixed(2)}" fill="${d.fill || (d.hl ? "var(--fire)" : "var(--fireSoft)")}" ${d.pattern ? `fill-opacity=".45"` : ""}><title>${esc(d.title || (d.k + ": " + d.v))}</title></rect>`;
+    g += `<rect x="${x(d.k).toFixed(2)}" y="${Math.min(y0, y1).toFixed(2)}" width="${x.bandwidth().toFixed(2)}" height="${Math.max(0.6, Math.abs(y1 - y0)).toFixed(2)}" fill="${d.fill || (d.hl ? "var(--fire)" : "var(--fireSoft)")}" ${d.pattern ? `fill-opacity=".45"` : ""} data-k="${esc(String(d.k))}"><title>${esc(d.title || (d.k + ": " + d.v))}</title></rect>`;
   });
   g += `<line class="base" x1="${padL}" x2="${W - padR}" y1="${y(0)}" y2="${y(0)}"/>`;
   (o.xt || data.map(d => d.k)).forEach(k => {
@@ -808,6 +844,7 @@ function hrows(el, rows, o = {}) {
   const H = top + rows.length * rh + 4;
   rows.forEach((r, i) => {
     const yy = top + i * rh;
+    if (r.k != null) g += `<g data-k="${esc(String(r.k))}"><rect class="rowhit" x="0" y="${yy}" width="${W}" height="${rh}" fill="transparent"/>`;
     let lt = String(r.label);
     while (lt.length > 3 && tw(lt, 11) > labW - 8) lt = lt.slice(0, -2).trimEnd() + "\u2026";
     g += `<text class="rl ${r.hl ? "hot" : ""} ${r.m ? "m" : ""}" x="${labW - 6}" y="${yy + rh / 2 + 4}" text-anchor="end">${esc(lt)}<title>${esc(r.label)}</title></text>`;
@@ -820,6 +857,7 @@ function hrows(el, rows, o = {}) {
       end = Math.max(end, labW + w);
     });
     if (r.text) g += `<text class="lab ${r.hl ? "hot" : ""} ${r.tm ? "m" : ""}" x="${(end + 4).toFixed(1)}" y="${yy + rh / 2 + 4}">${esc(r.text)}</text>`;
+    if (r.k != null) g += `</g>`;
   });
   g += `<line class="base" x1="${labW}" x2="${labW}" y1="${top}" y2="${H - 4}"/>`;
   el.innerHTML = (o.title ? `<div class="ttl">${o.title}${o.cite ? citeHTML(o.cite) : ""}</div>` : "") + (o.legend || "") +
@@ -830,13 +868,13 @@ const sw = (c, t, extra = "") => `<span><i style="background:${c};${extra}"></i>
 /* ---------- story charts ---------- */
 function drawCharts() {
   const S = ST.series, C = ST.claims;
-  // 1. hectares burned by year
-  const hs = S.hectares, top4 = new Set([2023, 2024, 2025, 2026]);
+  // 1. hectares burned by year (fire agencies' official totals, the same measure as the headline)
+  const hs = CH.c1.yearly, top4 = new Set([2023, 2024, 2025, 2026]);
   const prevMax = [...hs].filter(d => !top4.has(d[0])).sort((a, b) => b[1] - a[1])[0];
   const wide = widthOf($("#chForest")) >= 520;
-  vbars($("#chForest"), hs.map(([k, v]) => ({k, v: v / 1e6, hl: top4.has(k), lab: (k === 2023 || (wide && k === 2025) || k === prevMax[0]) ? nf(v / 1e6, 1) : null, cls: top4.has(k) ? "hot" : "m", prio: top4.has(k) ? 2 : 1, title: `${k}: ${nf(v / 1e6, 2)} million hectares`})),
-    {cite: "nbac,cwfif", title: "Area burned in Canada each year, millions of hectares, 1972 to 2026", tick: t => nf(t, 0), xt: [1972, 1980, 1990, 2000, 2010, 2026], h: 190, pad: 0.12,
-     legend: `<div class="lg">${sw("var(--fire)", "2023 to 2026")}${sw("var(--fireSoft)", "Earlier years")}</div>`});
+  vbars($("#chForest"), hs.map(([k, v]) => ({k, v, hl: top4.has(k), lab: (k === 2023 || (wide && k === 2025) || k === prevMax[0]) ? nf(v, 1) : null, cls: top4.has(k) ? "hot" : "m", prio: top4.has(k) ? 2 : 1, title: `${k}: ${nf(v, 2)} million hectares`})),
+    {cite: "nfd-fire,cwfif", title: "Area burned in Canada each year, millions of hectares, 1990 to 2026 (fire agencies)", tick: t => nf(t, 0), xt: [1990, 2000, 2010, 2026], h: 190, pad: 0.12,
+     legend: `<div class="lg">${sw("var(--fire)", "2023 to 2026 (tap a bar to map that year)")}${sw("var(--fireSoft)", "Earlier years")}</div>`});
   burnMap();
   smokeMap();
   // 2. hot and dry bubbles, temperature, drought
@@ -848,12 +886,12 @@ function drawCharts() {
      legend: `<div class="lg">${sw("var(--fire)", "Warmer, 2016 to 2026")}${sw("var(--fireSoft)", "Warmer, earlier")}${sw("var(--cool)", "Cooler")}${w == null ? "" : sw("transparent", "2016 to 2026 average", "border-top:2px dashed var(--text);border-radius:0;height:0;vertical-align:3px")}</div>`});
   const c12 = (C.C12 && C.C12.d1_max_pct) || {};
   const dr = S.drought.map(([k, v]) => [k, c12[k] != null ? c12[k] : v]);
-  hrows($("#chDrought"), dr.map(([k, v]) => ({label: String(k), hl: k >= 2023, bars: [{v, fill: k >= 2023 ? "var(--fire)" : "var(--fireSoft)", title: `${k}: ${nf(v, 1)}%`}], text: nf(v, 0) + "%", tm: k < 2023})),
-    {cite: "cdm,landcover", title: "Most forest in drought at one time, April to September", labW: 40, rh: 14, max: 100, txtW: 40});
+  hrows($("#chDrought"), dr.map(([k, v]) => ({k, label: String(k), hl: k >= 2023, bars: [{v, fill: k >= 2023 ? "var(--fire)" : "var(--fireSoft)", title: `${k}: ${nf(v, 1)}%`}], text: nf(v, 0) + "%", tm: k < 2023})),
+    {cite: "cdm,landcover", title: "Most forest in drought at one time, April to September (tap a year to see it in the circles above)", labW: 40, rh: 14, max: 100, txtW: 40});
   // 3. smoke reach and Health Canada estimates
   const rb = CH.c3.reached_by_year;
   vbars($("#chReach"), rb.map(([k, v]) => ({k, v: v / 1e6, hl: k >= 2023, cls: k >= 2023 ? "hot" : "m", title: `${k}: ${nf(v / 1e6, 1)} million people`})),
-    {cite: "naps,airnow,statcan-da", title: "Canadians with at least one day of unhealthy smoke, May to September, millions", tick: t => nf(t, 0), h: 170, xlab: k => "'" + String(k).slice(2)});
+    {cite: "naps,airnow,statcan-da", title: "Canadians with at least one day of unhealthy smoke, May to September, millions (tap a bar to map that year)", tick: t => nf(t, 0), h: 170, xlab: k => "'" + String(k).slice(2)});
   hcTable();
   const r = C.C21 || {};
   hrows($("#chReserve"), [{label: "On reserve", hl: true, bars: [{v: r.on_reserve_pct, fill: "var(--fire)"}], text: F.pct1(r.on_reserve_pct)},
@@ -881,55 +919,86 @@ function drawCharts() {
   fillCites(document);
 }
 
-function burnMapRedraw() { const el = $("#burnMap"); if (el) { delete el.dataset.done; burnMap(); } }
+const BM = {year: "all", sel: null, provs: null};
 /* chapter 1: burned area map with labels (same pixel box as the carousel map) */
 async function burnMap() {
-  const el = $("#burnMap"); if (!el || el.dataset.done) return;
-  el.dataset.done = 1;
+  const el = $("#burnMap"); if (!el) return;
   const base = MAP.base || await fetch("data/map/base.json").then(r => r.json());
   MAP.base = base;
   const c = CH.c1, W = c.map_w, H = c.map_h, y0 = c.crop_top;
-  const provs = topojson.feature(base, base.objects.provs);
-  const path = d3.geoPath(d3.geoIdentity().reflectY(true).fitSize([W, H], provs));
-  const small = el.clientWidth < 560;
+  if (!BM.provs) {
+    const provs = topojson.feature(base, base.objects.provs);
+    const path = d3.geoPath(d3.geoIdentity().reflectY(true).fitSize([W, H], provs));
+    BM.provs = provs.features.map(f => `<path d="${path(f)}"/>`).join("");
+  }
+  const small = el.clientWidth < 560, all = BM.year === "all";
   let lab = "";
-  c.labels.forEach(l => {
+  c.labels.forEach((l, i) => {
+    if (!all && l.year !== +BM.year) return;
     const fs = small ? 32 : 17, side = l.side;
     const dx = side === "start" ? fs * 0.6 : side === "end" ? -fs * 0.6 : 0, dy = side === "above" ? -fs * 0.8 : 0;
     const an = side === "start" || side === "end" ? side : "middle";
-    const t = small ? l.text.replace("Lebel-sur-Quévillon", "Lebel") : l.text;
-    lab += `<circle cx="${l.x}" cy="${l.y}" r="${small ? 8 : 5}"/><text class="lb" x="${(l.x + dx).toFixed(1)}" y="${(l.y + dy + fs * 0.35).toFixed(1)}" text-anchor="${an}">${esc(t)}</text>`;
+    const tx = small ? l.text.replace("Lebel-sur-Quévillon", "Lebel") : l.text;
+    lab += `<g class="fl${BM.sel === i ? " on" : ""}" data-i="${i}" role="button" tabindex="0" aria-label="${esc(l.name + ", " + l.year)}"><circle cx="${l.x}" cy="${l.y}" r="${small ? 8 : 5}"/><text class="lb" x="${(l.x + dx).toFixed(1)}" y="${(l.y + dy + fs * 0.35).toFixed(1)}" text-anchor="${an}">${esc(tx)}</text></g>`;
   });
-  el.innerHTML = `<svg viewBox="0 ${y0} ${W} ${(H - y0).toFixed(0)}" role="img" aria-label="Map of land burned in Canada from 2023 to 2026, with major fires labelled">
-    <g class="provs">${provs.features.map(f => `<path d="${path(f)}"/>`).join("")}</g>
-    <image href="data/map/burn_2023_2026.png" x="0" y="0" width="${W}" height="${H.toFixed(1)}"/>
+  const img = all ? "data/map/burn_2023_2026.png" : `data/map/burn_${BM.year}.png`;
+  const tot = all ? c.total_mha : c.year_mha[BM.year], sel = BM.sel == null ? null : c.labels[BM.sel];
+  el.innerHTML = `<svg viewBox="0 ${y0} ${W} ${(H - y0).toFixed(0)}" role="img" aria-label="Map of land burned in Canada, ${all ? "2023 to 2026" : BM.year}, with major fires labelled">
+    <g class="provs">${BM.provs}</g>
+    <image href="${img}" x="0" y="0" width="${W}" height="${H.toFixed(1)}"/>
 ${lab}</svg>`;
+  $("#bmBar").innerHTML = `<div class="seg" id="bmSeg">${["all", ...c.years].map(y => `<button type="button" data-y="${y}" class="${String(BM.year) === String(y) ? "on" : ""}">${y === "all" ? "2023 to 2026" : y}</button>`).join("")}</div>
+    <span class="xnote">${all ? "Tap a year to see its fires, or a named fire for its size." : `<b>${BM.year}: ${nf(tot, 1)} million hectares burned.</b> Tap a named fire.`}</span>`;
+  $("#bmCard").hidden = !sel;
+  if (sel) $("#bmCard").innerHTML = `<b>Fire near ${esc(sel.name)}, ${sel.year}</b>: about ${nf(Math.round(sel.ha / (sel.ha >= 10000 ? 1000 : 100)) * (sel.ha >= 10000 ? 1000 : 100), 0)} hectares, mapped from satellite images.`;
+}
+function initBurnMap() {
+  $("#bmBar").addEventListener("click", e => { const b = e.target.closest("#bmSeg button"); if (!b) return; BM.year = b.dataset.y; BM.sel = null; burnMap(); });
+  $("#burnMap").addEventListener("click", e => { const g = e.target.closest("[data-i]"); if (!g) return; const i = +g.dataset.i; BM.sel = BM.sel === i ? null : i; burnMap(); });
+  $("#chForest").addEventListener("click", e => { const r = e.target.closest("rect[data-k]"); if (!r || +r.dataset.k < 2023) return; BM.year = r.dataset.k; BM.sel = null; burnMap(); $("#burnMap").scrollIntoView({block: "nearest", behavior: "smooth"}); });
 }
 
 /* chapter 3: days of unhealthy smoke at each air monitor, 2023 (the slide's map; same pixel box as the other maps) */
 async function smokeMap() {
-  const el = $("#smokeMap"); if (!el || el.dataset.done) return;
-  el.dataset.done = 1;
+  const el = $("#smokeMap"); if (!el) return;
   const base = MAP.base || await fetch("data/map/base.json").then(r => r.json());
   MAP.base = base;
-  const c = CH.c3.monitors, W = c.map_w, H = c.map_h, y0 = c.crop_top;
-  const provs = topojson.feature(base, base.objects.provs);
-  const path = d3.geoPath(d3.geoIdentity().reflectY(true).fitSize([W, H], provs));
+  const c = CH.c3.monitors, W = c.map_w, H = c.map_h, y0 = c.crop_top, yrs = Object.keys(c.days);
+  if (!SM.provs) {
+    const provs = topojson.feature(base, base.objects.provs);
+    const path = d3.geoPath(d3.geoIdentity().reflectY(true).fitSize([W, H], provs));
+    SM.provs = provs.features.map(f => `<path d="${path(f)}"/>`).join("");
+  }
   const bands = [[20, "#8e1b2c", "20 days or more"], [10, "#e0533a", "10 to 19 days"], [1, "#e9a05c", "1 to 9 days"], [0, "#7b8492", "None"]];
   const col = d => bands.find(b => d >= b[0])[1];
-  const r0 = el.clientWidth < 560 ? 9 : 6;
-  const pts = [...c.points].sort((a, b) => a[2] - b[2]);
-  el.innerHTML = `<div class="ttl">Days of unhealthy smoke, May to September 2023${citeHTML("naps,airnow,caaqs")}</div>
+  const r0 = el.clientWidth < 560 ? 9 : 6, D = c.days[SM.year];
+  const idx = c.stations.map((s, i) => i).filter(i => D[i] != null).sort((a, b) => D[a] - D[b]);
+  const reach = (CH.c3.reached_by_year.find(r => String(r[0]) === SM.year) || [0, null])[1];
+  $("#smBar").innerHTML = `<div class="seg" id="smSeg">${yrs.map(y => `<button type="button" data-y="${y}" class="${y === SM.year ? "on" : ""}">${y}</button>`).join("")}</div>
+    <span class="xnote">${reach != null ? `<b>${SM.year}: ${nf(reach / 1e6, 1)} million people</b> had at least one day of unhealthy smoke. ` : ""}Tap a dot to see that place in every year.</span>`;
+  el.innerHTML = `<div class="ttl">Days of unhealthy smoke, May to September ${SM.year}${citeHTML("naps,airnow,caaqs")}</div>
     <div class="lg">${[...bands].reverse().map(b => sw(b[1], b[2], "border-radius:50%")).join("")}</div>
-    <svg viewBox="0 ${y0} ${W} ${(H - y0).toFixed(0)}" role="img" aria-label="Map of air monitors coloured by days of unhealthy smoke, May to September 2023">
-    <g class="provs">${provs.features.map(f => `<path d="${path(f)}"/>`).join("")}</g>
-    ${pts.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="${p[2] ? r0 + 1 : r0}" fill="${col(p[2])}" stroke="var(--panel)" stroke-width="1"><title>${p[2]} ${p[2] === 1 ? "day" : "days"}</title></circle>`).join("")}
+    <svg viewBox="0 ${y0} ${W} ${(H - y0).toFixed(0)}" role="img" aria-label="Map of air monitors coloured by days of unhealthy smoke, May to September ${SM.year}">
+    <g class="provs">${SM.provs}</g>
+    ${idx.map(i => { const s = c.stations[i]; return `<circle class="${i === SM.sel ? "on" : ""}" data-i="${i}" cx="${s[0]}" cy="${s[1]}" r="${D[i] ? r0 + 1 : r0}" fill="${col(D[i])}" stroke="var(--panel)" stroke-width="1"><title>${esc(s[2] || "Air monitor")}: ${D[i]} ${D[i] === 1 ? "day" : "days"}</title></circle>`; }).join("")}
     </svg>`;
   fillCites(el);
+  const card = $("#smCard");
+  if (SM.sel == null) { card.hidden = true; return; }
+  const s = c.stations[SM.sel], here = D[SM.sel];
+  card.hidden = false;
+  card.innerHTML = `<b>${esc(s[2] || "Air monitor")}${s[3] ? ", " + esc(s[3]) : ""}</b>: ${here == null ? "no data" : `${here} ${here === 1 ? "day" : "days"} of unhealthy smoke`} in May to September ${SM.year}.
+    <div class="yrs">${yrs.map(y => `<span class="${y === SM.year ? "on" : ""}">${y}: ${c.days[y][SM.sel] == null ? "no data" : c.days[y][SM.sel]}</span>`).join("")}</div>`;
 }
-function smokeMapRedraw() { const el = $("#smokeMap"); if (el) { delete el.dataset.done; smokeMap(); } }
+function initSmokeMap() {
+  $("#smBar").addEventListener("click", e => { const b = e.target.closest("#smSeg button"); if (!b) return; SM.year = b.dataset.y; smokeMap(); });
+  $("#smokeMap").addEventListener("click", e => { const g = e.target.closest("circle[data-i]"); if (!g) return; const i = +g.dataset.i; SM.sel = SM.sel === i ? null : i; smokeMap(); });
+  $("#chReach").addEventListener("click", e => { const r = e.target.closest("rect[data-k]"); if (!r || !CH.c3.monitors.days[r.dataset.k]) return; SM.year = r.dataset.k; smokeMap(); $("#smokeMap").scrollIntoView({block: "nearest", behavior: "smooth"}); });
+}
+const SM = {year: "2023", sel: null, provs: null};
 
 /* chapter 2: bubbles, temperature against drought, size = area burned */
+const BUB = {sel: 2023};
 function bubbles(el) {
   const P = CH.c2.points, W = widthOf(el), H = Math.round(W * 0.62), pl = 40, pr = 12, pt = 10, pb = 34;
   const x = d3.scaleLinear().domain([-0.6, 2.4]).range([pl, W - pr]), y = d3.scaleLinear().domain([0, 85]).range([H - pb, pt]);
@@ -940,13 +1009,20 @@ function bubbles(el) {
   g += `<text class="ax" x="${(pl + W - pr) / 2}" y="${H - 4}" text-anchor="middle">Summer temperature against 1961 to 1990, °C</text>`;
   [...P].sort((a, b) => b.mha - a.mha).forEach(p => {
     const hot = p.year >= 2023;
-    g += `<circle cx="${x(p.temp).toFixed(1)}" cy="${y(p.drought).toFixed(1)}" r="${rs(p.mha).toFixed(1)}" fill="${hot ? "var(--fire)" : "var(--cool)"}" fill-opacity="${hot ? .78 : .45}" stroke="var(--panel)"><title>${p.year}: ${nf(p.mha, 1)} million ha, ${p.temp > 0 ? "+" : ""}${nf(p.temp, 2)} °C, ${nf(p.drought, 0)}% in drought</title></circle>`;
+    const cx = x(p.temp).toFixed(1), cy = y(p.drought).toFixed(1), r = rs(p.mha);
+    const tip = `<title>${p.year}: ${nf(p.mha, 1)} million ha, ${p.temp > 0 ? "+" : ""}${nf(p.temp, 1)} °C, ${nf(p.drought, 0)}% in drought</title>`;
+    g += `<circle class="${p.year === BUB.sel ? "on" : ""}" data-y="${p.year}" cx="${cx}" cy="${cy}" r="${r.toFixed(1)}" fill="${hot ? "var(--fire)" : "var(--cool)"}" fill-opacity="${hot ? .78 : .45}" stroke="var(--panel)">${tip}</circle>`;
+    if (r < 11) g += `<circle class="hit" data-y="${p.year}" cx="${cx}" cy="${cy}" r="11" fill="transparent">${tip}</circle>`;
   });
-  const labs = P.filter(p => p.year >= 2023 || p.year === 2021 || p.year === 2010).map(p => ({x: x(p.temp), y: y(p.drought) - rs(p.mha) - 3, t: String(p.year), cls: p.year >= 2023 ? "hot" : "m"}));
+  const labs = P.filter(p => p.year >= 2023 || p.year === 2021 || p.year === 2010 || p.year === BUB.sel).map(p => ({x: x(p.temp), y: y(p.drought) - rs(p.mha) - 3, t: String(p.year), cls: p.year >= 2023 ? "hot" : "m"}));
   const PL = placeLabels(labs, W, 10.5, []);
+  const s = P.find(p => p.year === BUB.sel);
   el.innerHTML = `<div class="ttl">Each circle is a year, 2003 to 2026; bigger circle, more land burned${citeHTML("ahccd,eccc-daily,cdm,nfd-fire,cwfif")}</div>
-    <div class="lg">${sw("var(--fire)", "2023 to 2026")}${sw("var(--cool)", "2003 to 2022")}<span>Up: more forest in drought</span></div>
-    <svg viewBox="0 ${Math.min(0, PL.top - 2)} ${W} ${H - Math.min(0, PL.top - 2)}" role="img" aria-label="Bubble chart of summer temperature against drought by year">${g}${PL.svg}</svg>`;
+    <div class="lg">${sw("var(--fire)", "2023 to 2026")}${sw("var(--cool)", "2003 to 2022")}<span>Up: more forest in drought. Tap a circle.</span></div>
+    <svg viewBox="0 ${Math.min(0, PL.top - 2)} ${W} ${H - Math.min(0, PL.top - 2)}" role="img" aria-label="Bubble chart of summer temperature against drought by year">${g}${PL.svg}</svg>
+    <div class="xcard"><b>${s.year}</b>: summer (May to August) ${s.temp > 0 ? "+" : ""}${nf(s.temp, 1)} °C against 1961 to 1990; up to ${nf(s.drought, 0)}% of the forest in drought, April to September; ${nf(s.mha, 1)} million hectares burned.</div>`;
+  fillCites(el);
+  el.onclick = e => { const c = e.target.closest("circle[data-y]"); if (c) { BUB.sel = +c.dataset.y; bubbles(el); } };
 }
 
 /* chapter 3: Health Canada's 2023 estimates */
@@ -962,13 +1038,43 @@ function hcTable() {
 }
 
 /* chapter 4: the bill */
+function shownParts(vals, d) {
+  const f = 10 ** d, tot = Math.round(vals.reduce((a, b) => a + b, 0) * f), base = vals.map(v => Math.floor(v * f));
+  const order = vals.map((v, i) => [v * f - base[i], i]).sort((a, b) => b[0] - a[0]);
+  const need = Math.max(0, tot - base.reduce((a, b) => a + b, 0));
+  for (let k = 0; k < need; k++) base[order[k % order.length][1]] += 1;
+  return {parts: base.map(b => b / f), total: tot / f};
+}
 const BIL = v => v >= 1e9 ? "$" + nf(v / 1e9, 1) + "B" : v >= 1e7 ? "$" + nf(v / 1e6, 0) + "M" : v >= 1e5 ? "$" + nf(v / 1e6, 1) + "M" : v > 0 ? "$" + nf(v / 1e3, 0) + "K" : "$0";
+const RC = {mode: "year", open: null};
 function receipt() {
   const el = $("#receipt"); if (!el) return;
   const c = CH.c4, cites = CH.cites || {};
-  el.innerHTML = `<div class="rt">Wildfire costs, 2023 to 2026</div>` +
-    c.items.map(i => `<div class="ri"><span>${esc(i.label)}${citeHTML(cites["bill_" + i.key] || "")}</span><b>$${nf(i.b, 1)}B</b></div>`).join("") +
-    `<div class="tot"><span>TOTAL</span><span>$${nf(c.total_shown_b, 1)}B</span></div>`;
+  const M = {year: {t: "Wildfire costs per year, 2023 to 2026 average", f: v => v / 4, d: 2, fmt: v => "$" + nf(v, 2) + "B"},
+             total: {t: "Wildfire costs, 2023 to 2026 in total", f: v => v, d: 1, fmt: v => "$" + nf(v, 1) + "B"},
+             person: {t: "Wildfire costs per Canadian per year", f: v => v * 1e9 / 4 / c.population_2026, d: 0, fmt: v => "$" + nf(v, 0)}}[RC.mode];
+  const sh = shownParts(c.items.map(i => M.f(i.v)), M.d);
+  const sub = k => {
+    const L = c.lines.filter(l => l.cat === k && l.counted > 0).sort((a, b) => b.counted - a.counted);
+    const top = L.slice(0, 6);
+    const amt = v => v >= 1e9 ? "$" + nf(v / 1e9, 2) + "B" : "$" + nf(v / 1e6, v < 1e7 ? 1 : 0) + "M";
+    return `<div class="sub"><p class="subh">Largest items, actual amounts</p>${top.map(l => `<div><span>${esc(l.label)}${citeHTML(l.refs.join(","))}</span><b>${amt(l.counted)}</b></div>`).join("")}` +
+      (L.length > top.length ? `<div><span>${L.length - top.length} more lines</span><b><a href="#billHow" class="openHow">see all</a></b></div>` : "") + `</div>`;
+  };
+  $("#rcBar").innerHTML = `<div class="seg" id="rcSeg">${[["year", "Per year"], ["person", "Per Canadian"], ["total", "Four years"]].map(([k, t]) => `<button type="button" data-m="${k}" class="${k === RC.mode ? "on" : ""}">${t}</button>`).join("")}</div>
+    <span class="xnote">Tap a line to see what is in it.</span>`;
+  el.innerHTML = `<div class="rt">${M.t}</div>` +
+    c.items.map((i, n) => `<div class="ri x" data-k="${i.key}" role="button" tabindex="0" aria-expanded="${RC.open === i.key}"><span><span class="ar">${RC.open === i.key ? "▾" : "▸"}</span>${esc(i.label)}${citeHTML(cites["bill_" + i.key] || "")}</span><b>${M.fmt(sh.parts[n])}</b></div>` + (RC.open === i.key ? sub(i.key) : "")).join("") +
+    `<div class="tot"><span>TOTAL</span><span>${M.fmt(sh.total)}</span></div>`;
+  fillCites(el);
+}
+function initReceipt() {
+  $("#rcBar").addEventListener("click", e => { const b = e.target.closest("#rcSeg button"); if (!b) return; RC.mode = b.dataset.m; receipt(); });
+  $("#receipt").addEventListener("click", e => {
+    const a = e.target.closest(".openHow"); if (a) { e.preventDefault(); $("#billHow").open = true; $("#billHow").scrollIntoView({behavior: "smooth"}); return; }
+    if (e.target.closest("sup.cite, a")) return;
+    const r = e.target.closest(".ri.x"); if (!r) return; RC.open = RC.open === r.dataset.k ? null : r.dataset.k; receipt();
+  });
   billDetail();
 }
 function billDetail() {
@@ -997,7 +1103,41 @@ function billDetail() {
   fillCites(el);
 }
 
+/* chapter 2: the temperature bars and drought rows pick a year in the bubble chart */
+function initHeat() {
+  const pick = k => { if (!CH.c2.points.some(p => p.year === k)) return; BUB.sel = k; bubbles($("#chBubbles")); $("#chBubbles").scrollIntoView({block: "nearest", behavior: "smooth"}); };
+  $("#chTemp").addEventListener("click", e => { const r = e.target.closest("rect[data-k]"); if (r) pick(+r.dataset.k); });
+  $("#chDrought").addEventListener("click", e => { const g = e.target.closest("g[data-k]"); if (g) pick(+g.dataset.k); });
+}
+
+/* chapter 8: what reviews call for, with the provinces and sources behind each */
+const ND = {open: null};
+function needs() {
+  const N = CH.c8.needs || [];
+  const govs = n => new Set(n.items.map(i => i.code === "PC" ? "CA" : i.code)).size;
+  $("#needList").innerHTML = N.map(n => `<li class="${ND.open === n.key ? "on" : ""}" data-k="${n.key}" role="button" tabindex="0" aria-expanded="${ND.open === n.key}"><b>${esc(n.title)}</b>${esc(n.sub)}<span class="more">${ND.open === n.key ? "Hide the findings" : `See the findings from ${govs(n)} governments`}</span></li>`).join("");
+  const n = N.find(x => x.key === ND.open), el = $("#needDetail");
+  if (!n) { el.innerHTML = ""; return; }
+  const GOV = {AB: "Alberta", BC: "British Columbia", SK: "Saskatchewan", MB: "Manitoba", ON: "Ontario", QC: "Quebec", NB: "New Brunswick",
+               NS: "Nova Scotia", PE: "Prince Edward Island", NL: "Newfoundland and Labrador", YT: "Yukon", NT: "Northwest Territories",
+               NU: "Nunavut", PC: "Parks Canada", CA: "Canada-wide"};
+  const by = new Map();
+  n.items.forEach(i => { const g = GOV[i.code] || i.agency; if (!by.has(g)) by.set(g, []); by.get(g).push(i); });
+  const one = i => `${esc(i.gap)}${i.url ? ` <a href="${esc(String(i.url).split(/\s*;\s*|\s+/)[0])}" target="_blank" rel="noopener">source</a>` : ""}`;
+  el.innerHTML = `<div class="xcard"><b>${esc(n.title)} ${esc(n.sub)}</b>: what auditors, fire reviews and government reports found.
+    <ul>${[...by].map(([g, L]) => `<li><b>${esc(g)}</b>: ${L.map(one).join("; ")}</li>`).join("")}</ul></div>`;
+}
+function initNeeds() {
+  $("#needList").addEventListener("click", e => {
+    const li = e.target.closest("li[data-k]"); if (!li) return;
+    ND.open = ND.open === li.dataset.k ? null : li.dataset.k; needs();
+    if (ND.open) $("#needDetail").scrollIntoView({block: "nearest", behavior: "smooth"});
+  });
+  needs();
+}
+
 /* chapter 5: emissions line */
+const EM = {sel: 2023};
 function emissions(el) {
   const D = CH.c5.co2, W = widthOf(el), H = 220, pl = 36, pr = 64, pt = 12, pb = 22;
   const x = d3.scaleLinear().domain([D[0].year, D[D.length - 1].year]).range([pl, W - pr]);
@@ -1005,13 +1145,20 @@ function emissions(el) {
   let g = "";
   [0, 250, 500, 750, 1000].forEach(t => { g += `<line class="grid" x1="${pl}" x2="${W - pr}" y1="${y(t)}" y2="${y(t)}"/><text class="ax" x="${pl - 4}" y="${y(t) + 3}" text-anchor="end">${nf(t, 0)}</text>`; });
   D.forEach(d => { if (d.year % 2 === 0 || d.year === D[D.length - 1].year) g += `<text class="ax" x="${x(d.year)}" y="${H - 6}" text-anchor="middle">${d.year}</text>`; });
+  g += `<line class="sel" x1="${x(EM.sel)}" x2="${x(EM.sel)}" y1="${pt}" y2="${H - pb}"/>`;
   const line = k => d3.line().x(d => x(d.year)).y(d => y(d[k]))(D);
   g += `<path d="${line("official")}" fill="none" stroke="var(--cool)" stroke-width="3"/><path d="${line("wildfire")}" fill="none" stroke="var(--fire)" stroke-width="3"/>`;
-  const p23 = D.find(d => d.year === 2023), last = D[D.length - 1];
-  g += `<circle cx="${x(2023)}" cy="${y(p23.wildfire)}" r="5" fill="var(--fire)"/><text class="lab hot" x="${x(2023)}" y="${y(p23.wildfire) - 9}" text-anchor="middle">2023</text>`;
+  const s = D.find(d => d.year === EM.sel), last = D[D.length - 1];
+  g += `<circle cx="${x(s.year)}" cy="${y(s.wildfire)}" r="5" fill="var(--fire)"/><circle cx="${x(s.year)}" cy="${y(s.official)}" r="5" fill="var(--cool)"/>`;
   g += `<text class="rl" x="${x(last.year) + 6}" y="${y(last.official) + 4}">Official</text><text class="rl" x="${x(last.year) + 6}" y="${y(last.official) + 17}">total</text>`;
   g += `<text class="rl hot" x="${x(last.year) + 6}" y="${y(last.wildfire) + 4}">Wildfires</text>`;
-  el.innerHTML = `<div class="ttl">Million tonnes of greenhouse gases each year${citeHTML("nir2026")}</div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Line chart of Canada's official emissions total and managed-forest wildfire emissions, 2016 to 2024">${g}</svg><div class="cap">Wildfires: managed-forest fires, reported separately. Official total excludes land use and forestry. 2025 and 2026 are not yet reported.</div>`;
+  const step = (x(D[1].year) - x(D[0].year));
+  D.forEach(d => { g += `<rect class="hit" data-y="${d.year}" x="${(x(d.year) - step / 2).toFixed(1)}" y="${pt}" width="${step.toFixed(1)}" height="${H - pb - pt}"><title>${d.year}</title></rect>`; });
+  el.innerHTML = `<div class="ttl">Million tonnes of greenhouse gases each year${citeHTML("nir2026")}</div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Line chart of Canada's official emissions total and managed-forest wildfire emissions, 2016 to 2024">${g}</svg>
+    <div class="xcard"><b>${s.year}</b>: wildfires ${nf(s.wildfire, 0)} million tonnes; official total ${nf(s.official, 0)} million tonnes${s.wildfire > s.official ? ". Wildfires released more than the official total" : ""}. Tap a year.</div>
+    <div class="cap">Wildfires: managed-forest fires, reported separately. Official total excludes land use and forestry. 2025 and 2026 come in the 2027 and 2028 reports.</div>`;
+  fillCites(el);
+  el.onclick = e => { const r = e.target.closest("rect[data-y]"); if (r) { EM.sel = +r.dataset.y; emissions(el); } };
 }
 
 /* chapter 6: readiness circles and cards */
@@ -1562,18 +1709,25 @@ function calendarHTML(cal) {
   return h;
 }
 
+document.addEventListener("keydown", e => {
+  if (e.key !== "Enter" && e.key !== " ") return;
+  const b = e.target.closest && e.target.closest('[role="button"]'); if (!b) return;
+  e.preventDefault(); b.dispatchEvent(new MouseEvent("click", {bubbles: true}));
+});
+
 /* ---------- boot ---------- */
 Promise.all([fetch("data/story.json").then(r => r.json()), fetch("data/chapters.json").then(r => r.json()), refsReady]).then(([d, ch]) => {
   ST = d; CH = ch;
   fillNumbers();
   drawCharts();
+  for (const f of [initBurnMap, initHeat, initSmokeMap, initReceipt, initNeeds]) { try { f(); } catch (e) { console.error(e); } }
   initMap().then(initReplay).catch(e => { console.error(e); $("#maphint").textContent = "Map could not load"; });
   initCity();
   initLargest().catch(e => { console.error(e); $("#lgHint").textContent = "Map could not load"; });
   try { initReady(); } catch (e) { console.error(e); }
   initComing();
   let rw = window.innerWidth;
-  window.addEventListener("resize", () => { if (Math.abs(window.innerWidth - rw) < 30) return; rw = window.innerWidth; clearTimeout(window._rt); window._rt = setTimeout(() => { drawCharts(); burnMapRedraw(); smokeMapRedraw(); drawCircles(); if (MAP.sel) renderCard(true); if (RP.weeks) drawReplay(); }, 200); });
+  window.addEventListener("resize", () => { if (Math.abs(window.innerWidth - rw) < 30) return; rw = window.innerWidth; clearTimeout(window._rt); window._rt = setTimeout(() => { drawCharts(); drawCircles(); if (MAP.sel) renderCard(true); if (RP.weeks) drawReplay(); }, 200); });
 });
 </script>
 </body></html>

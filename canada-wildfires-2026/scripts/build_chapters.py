@@ -78,6 +78,8 @@ def main():
                      prior_max_end=s["agency_prior_end"], ratio=s["agency_run"] / s["agency_prior_max"],
                      germany_mha=g["germany_ha"] / 1e6, germany_path=g["germany_centred"],
                      map_w=g["W"], map_h=g["H"], crop_top=300, labels=labels,
+                     years=[2023, 2024, 2025, 2026],
+                     year_mha={int(y): round(float(yearly[y]), 3) for y in (2023, 2024, 2025, 2026)},
                      roll4=[[int(y), round(float(v), 3)] for y, v in roll4.dropna().items()],
                      yearly=[[int(y), round(float(v), 3)] for y, v in yearly.items()])
 
@@ -105,7 +107,7 @@ def main():
     out["c3"] = dict(hc_2023=[dict(label=a, central=float(hc.loc[k, "central"]), low=float(hc.loc[k, "low"]), high=float(hc.loc[k, "high"]))
                               for a, k in hc_rows],
                      hc_asthma_days=float(hc.loc["Asthma symptom days", "central"]),
-                     monitors=ov.smoke_monitor_points(2023),
+                     monitors=ov.smoke_monitors_by_year(),
                      reached_2023=float(ex[ex.year == 2023].people_ge1day_gt27.iloc[0]),
                      reached_by_year=[[int(r.year), float(r.people_ge1day_gt27)] for r in ex.itertuples()],
                      ed_total=float(ed.loc[2023:2025, "extra_visits"].sum()),
@@ -138,7 +140,7 @@ def main():
         assert abs(got - v) < 0.0015, (k, got, v)
     ins = pd.read_csv(os.path.join(AN, "costs-full/work/econ_property_insured_vs_bill.csv"))
     ins_all = ins[ins.event == "Six events with both"].iloc[0]
-    out["c4"] = dict(items=[dict(key=k, label=lab, b=b) for (k, lab, _), b in zip(receipt, shown)],
+    out["c4"] = dict(items=[dict(key=k, label=lab, b=b, v=round(v, 4)) for (k, lab, v), b in zip(receipt, shown)],
                      total_b=total, total_shown_b=total_shown, per_year_b=total / 4,
                      per_canadian_year=total * 1e9 / 4 / pop["value"],
                      population_2026=pop["value"], population_source=pop["source"],
@@ -214,12 +216,28 @@ def main():
     # 8 ---------------------------------------------------------------------
     tl = pd.read_csv(os.path.join(RD, "timeline.csv"))
     bombers_ab_mb = int(tl[tl.who.str.contains("AB") & tl.item.str.contains("water bombers")].when.iloc[0])
+    NEEDS = [("attack", "Faster first attack", "on new fires",
+              r"initial attack|first attack|containment target|response-time|left unfought|within one hour"),
+             ("crews", "More firefighters", "hired and trained before the season",
+              r"firefighter|crew|staff|workforce|recruit|training|vacanc|hiring|cadre|personnel|imported|outside help|outside firefighters"),
+             ("planes", "Newer water bombers", "and pilots to fly them",
+              r"airtanker|water ?bomber|waterbomber|aircraft|aviation|pilot|scooper|fleet|tanker"),
+             ("budget", "Fire budgets", "that match recent seasons",
+              r"budget|contingency|underbudget|special warrant|appropriation|overrun|deficit|topped up")]
+    needs = []
+    for k, title, sub, pat in NEEDS:
+        items = []
+        for c in out["c6"]["cards"]:
+            for gp in c["gaps"]:
+                if re.search(pat, gp["gap"], flags=re.I):
+                    items.append(dict(agency=c["agency"], code=c.get("code"), gap=gp["gap"], source=gp["source"], url=gp["url"]))
+        needs.append(dict(key=k, title=title, sub=sub, items=items))
     out["c8"] = dict(one_in=round(1 / V("C9.share_attributable")), fast_in_10=round(sum(s["escape72"]) / 20), bombers_year=bombers_ab_mb,
+                     needs=needs,
                      fast_range=[float(s["escape72"][0]), float(s["escape72"][1])],
                      cover_min=out["c6"]["cover_min"], cover_max=out["c6"]["cover_max"])
 
     # Coverage check ----------------------------------------------------------
-    import re
     cv = pd.read_csv(os.path.join(AN, "coverage/coverage.csv"))
     walsh = cv[cv.name == "Walsh River fire"].iloc[0]
     wainwright_ha = json.load(open(os.path.join(ROOT, "data/story.json")))["claims"].get("W", {}).get("est_ha")
@@ -231,6 +249,9 @@ def main():
     json.dump(out, open(os.path.join(ROOT, "data/chapters.json"), "w"), separators=(",", ":"), default=clean)
     print("wrote data/chapters.json", os.path.getsize(os.path.join(ROOT, "data/chapters.json")) // 1024, "KB")
     burn_png(g)
+    gy = json.load(open(os.path.join(AN, "graphics/canada_burned_by_year_paths.json")))
+    for y, path in gy["burn"].items():
+        burn_png(dict(W=gy["W"], H=gy["H"], burn=path), f"burn_{y}.png")
 
 
 def ref_by_url():
@@ -285,7 +306,7 @@ def bill_lines(cb, vtot, vavg):
         d = info.get((src, item), {})
         if src.startswith("economic-value"):
             d = dict(basis="Provincial public accounts (2025 dollars)" if cat == "fight" else
-                     "Timber volume burned x provincial Crown stumpage price (2025 dollars)",
+                     "Timber volume burned x provincial Crown cutting fees (2025 dollars)",
                      source="analysis/economic-value/cost_tally_by_year.csv", urls=[])
         refs = ({"trees": ["nfd-revenue", "bc-budget", "knn2011", "nbac", "cwfis-m3", "cpi"],
                  "fight": ["bcws-cost", "bc-budget", "on-pa", "ab-ar", "sk-auditor", "cpi"]}.get(cat, [])
@@ -307,6 +328,7 @@ def bill_lines(cb, vtot, vavg):
                 l["refs"] = list(dict.fromkeys(x for s in srcs for x in refs_of(s)))
     for l in out:
         l.pop("item", None)
+        l["basis"] = plain_basis_words(l["basis"])
         assert l["refs"], ("no citation", l["label"])
         assert l["basis"], ("no basis", l["label"])
     for l in out:  # nothing internal (file names, research rounds, working labels) reaches the page
@@ -318,7 +340,8 @@ def bill_lines(cb, vtot, vavg):
 # Words from the research files that mean nothing to a reader (file names, research rounds, working labels)
 JARGON = (r"gov_|econ_|health_|gov2|econ2|health2|tier [ABC]\b|first.round|second round|this round|\.csv\b|"
           r"\bbill lines?\b|in the bill|not in bill|already in|already counted|replaces|\(revised\)|\bQ1\b|"
-          r"\bETSP\b|\bEIDS\b|\bAQBAT\b|\bMWS\b|\bHRM\b|AS-471|\bdeaths?\b")
+          r"\bETSP\b|\bEIDS\b|\bAQBAT\b|\bMWS\b|\bHRM\b|AS-471|\bdeaths?\b|\bour\b|\bours\b|\bSHOE\b|O&M|"
+          r"\bvoted?\b|presuppression|MWF-\d|\bCIHI\b| x |\bincremental\b|\bremediation\b|\bstumpage\b")
 
 
 def plain_label(t):
@@ -363,7 +386,49 @@ def plain_label(t):
         t = re.sub(a, b, t)
     t = re.sub(r",? \(estimate\)(?= \(| ?$)|, estimate(?= \(| ?$)", "", t)  # the note says estimate
     t = re.sub(r"(, (?:FY)?(20\d\d)-(\d\d)) \(\2-\3\)$", r"\1", t)  # "..., FY2024-25 (2024-25)" -> once
+    # everyday words for budget and research terms
+    plain = [(r"^Buildings beyond our satellite count: (.*?), satellite count on the official fire perimeter$",
+              r"Other buildings destroyed: \1 (satellite count inside the official fire outline)"),
+             (r"^Buildings beyond our satellite count: (.*?): official count above ours$",
+              r"Other buildings destroyed: \1 (official count above the satellite count)"),
+             (r"^Buildings beyond our satellite count: (.*?), (?:satellite|provincial) count$", r"Other buildings destroyed: \1"),
+             (r"^Buildings beyond our satellite count: ", "Other buildings destroyed: "),
+             (r"structures outside the SHOE region", "buildings outside the Shoe fire area"),
+             (r"SHOE fire, Denare Beach region", "Shoe fire, Denare Beach area"),
+             (r"\(fire presuppression, suppression, forest resources\)", "(fire preparation, firefighting and forest resources)"),
+             (r" \(Fire Management O&M\)", " (operating budget)"),
+             (r"'Fire Preparedness' core business \(separate from the Fire Management vote\)",
+              "fire preparedness spending (separate from the Fire Management budget)"),
+             (r"BC Fire Management vote, 2025-26 official actual above the early estimate",
+              "BC Fire Management, 2025-26 final spending above the earlier estimate"),
+             (r" \(gross amount voted\)", " (full amount approved)"), (r", 2026-27 budget \(gross\)", ", 2026-27 budget"),
+             (r", 2025-26 additional appropriation", ", extra funding approved for 2025-26"),
+             (r"Department of National Defence Operation LENTUS, actual incremental cost",
+              "Canadian Armed Forces help (Operation LENTUS), extra cost"),
+             (r"Department of National Defence Operation LENTUS wildfire deployments", "Canadian Armed Forces wildfire help (Operation LENTUS)"),
+             (r"\(1,500 per evacuated principal residence, each evacuation\)", "($1,500 per evacuated home, each evacuation)"),
+             (r"\(capital remediation of damaged assets and extraordinary operating costs\)",
+              "(repairs to damaged property and extra operating costs)"),
+             (r"2024 MWF-017 fire response", "2024 fire response near Fort McMurray"),
+             (r"^Health care: 2023 hospital cost adjustment for provincial unit costs \(Quebec and provincial unit costs\)",
+              "Health care: 2023 hospital stays priced at each province's own costs"),
+             (r"\(Health Canada count x CIHI cost\)", "(Health Canada count × hospital cost)"),
+             (r" \+ ", " and "), (r"\(SOPFEU total expenses, net of out-of-province billings\)",
+                                  "(SOPFEU total expenses, less billings to other provinces)"),
+             (r"net of out-of-province fire recoveries", "less amounts billed to other provinces"),
+             (r", net of budgeted recoveries", ", less expected billings to other provinces"),
+             (r"\(base fire program, net of recoveries\)", "(base fire program, less amounts recovered)"),
+             (r"public protection: 'Public safety and emergency response'", "public safety and emergency response"),
+             (r"Timber burned at Crown stumpage", "Timber burned, valued at Crown cutting fees"),
+             (r"Alberta in situ bitumen shut in", "Alberta oil sands bitumen shut in")]
+    for a, b in plain:
+        t = re.sub(a, b, t)
     return t
+
+
+def plain_basis_words(t):
+    """Display form of a basis phrase: a times sign, and no agency acronyms."""
+    return t.replace(" x ", " × ").replace("CIHI cost per", "national cost per")
 
 
 BASIS = [  # (where to match: "i" item, "b" the research file's basis, pattern, phrase shown on the page);
@@ -489,7 +554,7 @@ def population_2026():
     return dict(value=int(k.value), source=k.source)
 
 
-def burn_png(g):
+def burn_png(g, name="burn_2023_2026.png"):
     """Burned outlines 2023 to 2026 as a transparent PNG at 2x, same pixel box as CanMap(W=928)."""
     os.environ.setdefault("PLAYWRIGHT_BROWSERS_PATH", "/opt/pw-browsers")
     from playwright.sync_api import sync_playwright
@@ -503,10 +568,10 @@ def burn_png(g):
         b = p.chromium.launch()
         pg = b.new_page(viewport={"width": W * 2, "height": int(H * 2) + 1})
         pg.goto("file://" + tmp)
-        pg.locator("svg").screenshot(path=os.path.join(ROOT, "data/map/burn_2023_2026.png"), omit_background=True)
+        pg.locator("svg").screenshot(path=os.path.join(ROOT, "data/map", name), omit_background=True)
         b.close()
     os.remove(tmp)
-    print("wrote data/map/burn_2023_2026.png", os.path.getsize(os.path.join(ROOT, "data/map/burn_2023_2026.png")) // 1024, "KB")
+    print("wrote data/map/" + name, os.path.getsize(os.path.join(ROOT, "data/map", name)) // 1024, "KB")
 
 
 if __name__ == "__main__":

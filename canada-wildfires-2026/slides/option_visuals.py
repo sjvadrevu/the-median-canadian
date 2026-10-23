@@ -1,6 +1,7 @@
 """Option visuals for slides 3 (health), 4 (costs) and 5 (carbon). Every value is read from the analysis files."""
 import math
 import os
+import re
 
 import pandas as pd
 
@@ -297,12 +298,24 @@ def smoke_day_map(day="2026-07-16", W=928):
     return "".join(el), len(st), int((st.pm25 > 100).sum())
 
 
+def station_days(cols, months=("05", "09")):
+    """Daily PM2.5 per air monitor, one row per monitor and day. The daily file carries both the validated NAPS
+    value and the AirNow real-time value for the same day at many monitors (2018 to 2024); the validated value is
+    kept, as in analysis/health/scripts/02_assign_pm.py and data/smoke-cost/scripts/build_pm25.py."""
+    st = pd.read_csv(os.path.join(AN, "..", "data/smoke-cost/station_daily_pm25_2018_2026.csv"),
+                     usecols=sorted(set(cols) | {"naps_id", "date", "pm25", "source"}), dtype={"naps_id": str})
+    st = st.dropna(subset=["pm25"])
+    st = st[(st.date.str[5:7] >= months[0]) & (st.date.str[5:7] <= months[1])]
+    st["pri"] = (st.source == "NAPS_validated").astype(int)
+    st = st.sort_values(["naps_id", "date", "pri"]).drop_duplicates(["naps_id", "date"], keep="last")
+    return st.drop(columns=["pri"])
+
+
 def smoke_season_map(year=2023, W=928):
     """Air monitors coloured by the number of unhealthy smoke days (daily PM2.5 above 27), May to September."""
     m = CanMap(W)
-    st = pd.read_csv(os.path.join(AN, "..", "data/smoke-cost/station_daily_pm25_2018_2026.csv"),
-                     usecols=["naps_id", "date", "pm25", "Latitude", "Longitude"], dtype={"naps_id": str})
-    st = st[(st.date >= f"{year}-05-01") & (st.date <= f"{year}-09-30")].dropna(subset=["Latitude", "Longitude", "pm25"])
+    st = station_days(["Latitude", "Longitude"])
+    st = st[st.date.str[:4] == str(year)].dropna(subset=["Latitude", "Longitude"])
     g = st.groupby("naps_id").agg(lat=("Latitude", "first"), lon=("Longitude", "first"), n=("pm25", "size"),
                                   days=("pm25", lambda s: int((s > 27).sum())))
     g = g[g.n >= 100]
@@ -326,8 +339,8 @@ def smoke_monitor_points(year=2023, W=928):
     raw = os.path.join(AN, "..", "data/smoke-cost/station_daily_pm25_2018_2026.csv")
     keep = os.path.join(AN, "..", f"data/smoke-cost/monitor_unhealthy_days_{year}.csv")
     if os.path.exists(raw):  # the raw daily file is not kept in the repo; the derived per-monitor table is
-        st = pd.read_csv(raw, usecols=["naps_id", "date", "pm25", "Latitude", "Longitude"], dtype={"naps_id": str})
-        st = st[(st.date >= f"{year}-05-01") & (st.date <= f"{year}-09-30")].dropna(subset=["Latitude", "Longitude", "pm25"])
+        st = station_days(["Latitude", "Longitude"])
+        st = st[st.date.str[:4] == str(year)].dropna(subset=["Latitude", "Longitude"])
         g = st.groupby("naps_id").agg(lat=("Latitude", "first"), lon=("Longitude", "first"), n=("pm25", "size"),
                                       days=("pm25", lambda s: int((s > 27).sum())))
         g = g[g.n >= 100]
@@ -336,6 +349,40 @@ def smoke_monitor_points(year=2023, W=928):
     pts = [[round(x, 1), round(y, 1), int(r.days)] for (_, r), (x, y) in
            zip(g.iterrows(), (m.xy(r.lon, r.lat) for _, r in g.iterrows()))]
     return dict(map_w=W, map_h=round(m.H, 1), crop_top=round(m.xy(-96, 61.5)[1], 1), points=pts)
+
+
+def smoke_monitors_by_year(years=range(2018, 2027), W=928):
+    """Every air monitor with at least 100 days of May to September readings in a year: place, position in the
+    CanMap(W) pixel box, and the number of unhealthy smoke days (daily PM2.5 above 27) in each year (None when the
+    monitor did not report enough that year). A derived table is kept for the repo, where the raw daily file is not."""
+    m = CanMap(W)
+    raw = os.path.join(AN, "..", "data/smoke-cost/station_daily_pm25_2018_2026.csv")
+    keep = os.path.join(AN, "..", "data/smoke-cost/monitor_unhealthy_days_by_year.csv")
+    if os.path.exists(raw):
+        st = station_days(["City", "Province", "Latitude", "Longitude"]).dropna(subset=["Latitude", "Longitude"])
+        st["year"] = st.date.str[:4].astype(int)
+        g = st.groupby(["naps_id", "year"]).agg(city=("City", "first"), prov=("Province", "first"), lat=("Latitude", "first"),
+                                                lon=("Longitude", "first"), n=("pm25", "size"),
+                                                days=("pm25", lambda s: int((s > 27).sum()))).reset_index()
+        g[g.n >= 100].to_csv(keep, index=False)
+    g = pd.read_csv(keep, dtype={"naps_id": str})
+    g = g[g.year.isin(list(years))]
+    sites = g.sort_values("year").groupby("naps_id").last()
+    ids = list(sites.index)
+    stations = []
+    for i in ids:
+        r = sites.loc[i]
+        x, y = m.xy(r.lon, r.lat)
+        city = re.sub(r"\bMc([a-z])", lambda k: "Mc" + k.group(1).upper(), str(r.city).title().replace("'S", "'s")) if pd.notna(r.city) else ""
+        code = {"NEWFOUNDLAND AND LABRADOR": "NL", "PRINCE EDWARD ISLAND": "PE", "NOVA SCOTIA": "NS", "NEW BRUNSWICK": "NB",
+                "QUEBEC": "QC", "ONTARIO": "ON", "MANITOBA": "MB", "SASKATCHEWAN": "SK", "ALBERTA": "AB",
+                "BRITISH COLUMBIA": "BC", "YUKON": "YT", "NORTHWEST TERRITORIES": "NT", "NUNAVUT": "NU"}
+        stations.append([round(x, 1), round(y, 1), city, code.get(str(r.prov).upper().strip(), "") if pd.notna(r.prov) else ""])
+    days = {}
+    for yr in years:
+        d = g[g.year == yr].set_index("naps_id").days
+        days[str(yr)] = [int(d[i]) if i in d.index else None for i in ids]
+    return dict(map_w=W, map_h=round(m.H, 1), crop_top=round(m.xy(-96, 61.5)[1], 1), stations=stations, days=days)
 
 
 POLICY = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "analysis", "policy")

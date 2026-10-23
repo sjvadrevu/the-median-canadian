@@ -925,10 +925,6 @@
      "url": "https://www.gov.nt.ca/sites/flagship/files/documents/1._nwt_wildfire_response_review_report_and_appendices_final_compressed-9k.pdf"
     },
     {
-     "label": "hansard.opennwt.ca",
-     "url": "https://hansard.opennwt.ca/debates/2025/10/21/the-chair-1/"
-    },
-    {
      "label": "maca.gov.nt.ca",
      "url": "https://www.maca.gov.nt.ca/en/content/gnwt-response-2023-after-action-review-recommendations"
     },
@@ -947,6 +943,10 @@
     {
      "label": "gov.nt.ca",
      "url": "https://www.gov.nt.ca/en/newsroom/jay-macdonald-preparedness-2026-wildfire-season"
+    },
+    {
+     "label": "gov.nt.ca",
+     "url": "https://www.gov.nt.ca/en/newsroom/independent-review-recommends-improvements-wildfire-response-government-provides-responses"
     }
    ],
    "licence": "Open Government Licence or the publisher's terms",

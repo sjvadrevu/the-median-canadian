@@ -25,7 +25,7 @@ GROUPS = {
     "rd-mb": ("Government of Manitoba", "Estimates 2026/27, public accounts 2023-24 to 2025-26, Natural Resources annual reports, interim wildfire after-action report (April 2026)",
               ["gov.mb.ca", "manitoba.ca"]),
     "rd-nt": ("Government of the Northwest Territories; Legislative Assembly of the Northwest Territories", "Main Estimates 2026-27, supplementary estimates, 2023 wildfire response review (MNP), response to the 2023 after-action review, air tanker fleet pages",
-              ["nt.ca", "opennwt.ca"]),
+              ["nt.ca"]),
     "rd-yt": ("Government of Yukon", "Community Services main estimates, fall 2025 supplementary estimates and wildland fire releases",
               ["yukon.ca"]),
     "rd-nu": ("Government of Nunavut", "Nunavut and the Canadian Interagency Forest Fire Centre formalize wildfire cooperation (June 2026)",
