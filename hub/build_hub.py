@@ -7,9 +7,9 @@ site, and the build stops if a published finding no longer holds for the data.
 Usage, from the repository root:
   python3 hub/build_hub.py      writes index.html
 
-Week 1 lives in its own repository until it moves here: clone https://github.com/sjvadrevu/ab-referendum-live
-into ab-referendum-live/ at the repository root first (the folder is ignored by git until the move).
-Needs Python 3 and Pillow.
+Weeks 1 and 2 live in their own repositories: clone https://github.com/sjvadrevu/ab-referendum-live into
+ab-referendum-live/ and https://github.com/sjvadrevu/canada-turkey-oct26 into canada-turkey-oct26/ at the repository
+root first (git ignores both folders). Needs Python 3 and Pillow.
 """
 import html, json, math, re
 from decimal import Decimal, ROUND_HALF_UP
@@ -18,11 +18,11 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://sjvadrevu.github.io/the-median-canadian/"
-AB, WF = ROOT / "ab-referendum-live", ROOT / "canada-wildfires-2026"
+AB, TK = ROOT / "ab-referendum-live", ROOT / "canada-turkey-oct26"
 # where each week's site lives: (link from the hub, absolute address for sharing)
 WEEK_URL = {
     1: ("https://sjvadrevu.github.io/ab-referendum-live/", "https://sjvadrevu.github.io/ab-referendum-live/"),
-    2: ("canada-wildfires-2026/", SITE + "canada-wildfires-2026/"),
+    2: ("https://sjvadrevu.github.io/canada-turkey-oct26/", "https://sjvadrevu.github.io/canada-turkey-oct26/"),
 }
 E = html.escape
 NUMW = ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
@@ -127,49 +127,36 @@ w1_find = [
 ]
 
 # =====================================================================================
-# Week 2: Canada's wildfires (text and numbers exactly as the week 2 site renders them)
+# Week 2: Talking trade with Türkiye (text and numbers exactly as the week 2 site renders them)
 # =====================================================================================
-CH = json.load(open(WF / "data/chapters.json"))
-STORY = json.load(open(WF / "data/story.json"))
-site2 = (WF / "index.html").read_text()
-F = {  # the week 2 site's own number formats
-    "int": lambda v: nf(v, 0), "d1": lambda v: nf(v, 1), "pct0": lambda v: nf(v, 0) + "%",
-    "mil0": lambda v: nf(v / 1e6, 0) + " million", "mil1": lambda v: nf(v / 1e6, 1) + " million",
-    "fl0": lambda v: nf(math.floor(v), 0), "deg1": lambda v: nf(v, 1) + " °C",
-    "dbl": lambda v: "more than double" if v >= 2 else nf(v, 1) + " times", "b100": lambda v: nf(v / 1000, 2),
-}
-
-
-def resolve(path):
-    obj, path = (CH, path[1:]) if path.startswith("@") else (STORY["claims"], path)
-    assert "/" not in path, path
-    for part in path.split("."):
-        obj = obj[int(part)] if isinstance(obj, list) else obj[part]
-    return obj
+assert (TK / "index.html").exists(), "clone https://github.com/sjvadrevu/canada-turkey-oct26 into canada-turkey-oct26/ first"
+site2 = (TK / "index.html").read_text(encoding="utf-8")
+CH2 = json.load(open(TK / "data/chapters.json", encoding="utf-8"))
 
 
 def fill(fragment):
     fragment = re.sub(r"<sup\b.*?</sup>", "", fragment, flags=re.S)
-    fragment = re.sub(r'<span data-n="([^"]+)" data-f="([^"]+)"></span>',
-                      lambda m: F[m.group(2)](resolve(m.group(1))), fragment)
-    assert "data-n" not in fragment, fragment
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", fragment))).strip()
 
 
 w2_find = []
-for i in range(1, 9):
-    m = re.search(r'id="c%d">.*?<span class="chK">(.*?)</span>\s*<h2 class="chH">(.*?)</h2>\s*<p class="reveal">(.*?)</p>' % i,
-                  site2, re.S)
+for c in CH2:
+    i = c["n"]
+    m = re.search(r'id="c%d">.*?<span class="chK">(.*?)</span>\s*<h2 class="chH">(.*?)</h2>\s*<p class="reveal">(.*?)</p>' % i, site2, re.S)
     assert m, f"chapter {i} not found on the week 2 site"
-    w2_find.append(dict(k=fill(m.group(1)), h=fill(m.group(2)), l=fill(m.group(3)), a=f"#c{i}"))
+    f = dict(k=fill(m.group(1)), h=fill(m.group(2)), l=fill(m.group(3)), a=f"#c{i}")
+    assert f["h"] == c["h"] and f["k"] == c["k"], f"chapter {i} heading differs from the week 2 site's chapters.json"
+    w2_find.append(f)
+assert len(w2_find) == 8, len(w2_find)
 
 # =====================================================================================
 # Posts, newest first. Every week: its folder, one entry here and its cover slide in covers/.
 # =====================================================================================
 POSTS = [
-    dict(n=2, folder="canada-wildfires-2026", title="Canada's wildfires", place="Canada", period="2023 to 2026",
-         tags=["Nature", "Health", "Money"],
-         alt="Week 2 cover: From the forest to our homes. Canada's wildfires, 2023 to 2026.", find=w2_find),
+    dict(n=2, folder="canada-turkey-oct26", title="Talking trade with Türkiye", place="Canada and Türkiye", period="October 2026",
+         tags=["Trade", "Travel", "Energy"],
+         alt="Week 2 cover: Talking trade with Türkiye. A Canadian PM's first bilateral visit brought agreements on flights, energy and defence.",
+         find=w2_find),
     dict(n=1, folder="ab-referendum-live", title="Alberta's separation vote", place="Alberta", period="October 19, 2026",
          tags=["Elections"],
          alt="Week 1 cover: Albertans rejected the separation process three to one.", find=w1_find),
@@ -196,7 +183,7 @@ for p in POSTS:
             assert not re.search(b, " ".join(f.values()), re.I), (b, f)
 
 # Search suggestions shown when a search finds nothing: each must find something.
-SUGS = ["smoke", "UCP", "cost", "immigration"]
+SUGS = ["lentils", "UCP", "flights", "immigration"]
 for s in SUGS:
     assert any(s.lower() in " ".join(f["k"] + " " + f["h"] + " " + f["l"] for f in p["find"]).lower() for p in POSTS), s
 

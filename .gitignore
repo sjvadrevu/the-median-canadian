@@ -1,4 +1,5 @@
-# Week 1 lives in its own repository until it moves here; clone it to ab-referendum-live/ to build the hub (see hub/build_hub.py)
+# Weeks 1 and 2 live in their own repositories; clone them here to build the hub (see hub/build_hub.py)
 /ab-referendum-live
+/canada-turkey-oct26
 __pycache__/
 *.pyc

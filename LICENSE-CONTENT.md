@@ -8,8 +8,8 @@ You can share and adapt them, including commercially, as long as you give credit
 
 ## Photos
 
-The cover slides in `covers/` are CC BY 4.0 except for the photos in them. Those photos are licensed from
-All Canada Photos, are not covered by CC BY 4.0 and cannot be reused without a licence from the agency.
+The cover slides in `covers/` are CC BY 4.0 except for the photo in the week 2 cover, which is "Anıtkabir 2025" by
+Nicoleon on Wikimedia Commons, under CC0 1.0. The week 1 cover has no photo.
 
 ## Code and data
 
