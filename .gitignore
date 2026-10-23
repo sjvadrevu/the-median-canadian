@@ -1,0 +1,4 @@
+# Week 1 lives in its own repository until it moves here; clone it to ab-referendum-live/ to build the hub (see hub/build_hub.py)
+/ab-referendum-live
+__pycache__/
+*.pyc
