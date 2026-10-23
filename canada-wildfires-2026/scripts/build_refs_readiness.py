@@ -60,7 +60,7 @@ EXTRA = [
      "licence": "CIHI terms of use", "accessed": "2026-10-21"},
     {"id": "coverage-check", "publisher": "The Median Canadian",
      "title": "Coverage check of publicly reported major fires against NBAC and CWFIS outlines (analysis/coverage)",
-     "version": "65 fires, 2023 to 2026", "url": "https://github.com/sjvadrevu/canada-wildfires-2026/tree/main/analysis/coverage",
+     "version": "65 fires, 2023 to 2026", "url": "https://github.com/sjvadrevu/the-median-canadian/tree/main/canada-wildfires-2026/analysis/coverage",
      "licence": "Apache 2.0 (code), CC BY 4.0 (results)", "accessed": "2026-10-22"},
 ]
 

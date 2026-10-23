@@ -1,7 +1,7 @@
 # Canada's wildfires, 2023 to 2026
 
 Week 2 of The Median Canadian: an interactive page on Canada's four record fire seasons, built from raw public data.
-Published with GitHub Pages at https://sjvadrevu.github.io/canada-wildfires-2026/
+Published with GitHub Pages at https://sjvadrevu.github.io/the-median-canadian/canada-wildfires-2026/, as part of [The Median Canadian](https://sjvadrevu.github.io/the-median-canadian/). This folder holds the whole project; run every command from it.
 
 Everything behind the page is here: every analysis script, every output table, the independent check of every published number, and the steps to rebuild it from the official sources. Nothing is hidden, so anyone can reproduce or challenge any number.
 

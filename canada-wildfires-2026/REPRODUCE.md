@@ -1,5 +1,7 @@
 # Reproducing the analysis
 
+This project is the `canada-wildfires-2026/` folder of the [the-median-canadian](https://github.com/sjvadrevu/the-median-canadian) repository. "The repo root" below means this folder: run every command from it.
+
 There are three levels. Most people only need the first.
 
 | Level | What you get | Needs | Time |
