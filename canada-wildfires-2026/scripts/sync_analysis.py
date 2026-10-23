@@ -49,6 +49,12 @@ WORK_ALLOW = [
     # (C15, C12) reads climate_panel.csv from here.
     "analysis/climate/work/areas_fcd292dde04d/*.csv",
     "analysis/climate/work/areas_fcd292dde04d/*.json",
+    # Full wildfire bill (analysis/costs-full): small derived tables the econ build reads (GDP dips, oil and gas
+    # shut-ins, insured losses against building values, property top-ups, StatCan statements) and the download log.
+    "analysis/costs-full/work/*.csv",
+    "analysis/costs-full/work/*.json",
+    "analysis/costs-full/work/*.md",
+    "analysis/costs-full/work/*.tsv",
 ]
 DATA_GROUPS = ["fire", "geo", "smoke-cost", "geo/mb_qc_subareas"]
 DATA_EXTRA_DIRS = ["data/fire/reference"]

@@ -1,0 +1,37 @@
+{
+ "note": "CAD; trees and firefighting in 2025 dollars; buildings at census home values (add the bill's building value separately)",
+ "fight_2026_forecast_not_counted": 1440451970.98,
+ "low": {
+  "trees": 12971356067.373177,
+  "firefighting_and_response": 8546380233.906207,
+  "buildings_infrastructure_extra": 230847212.0,
+  "evacuations_and_health": 386589275.0,
+  "lost_work_and_output": 275395450.0,
+  "health_care_only": 4408977.0
+ },
+ "central": {
+  "trees": 12971356067.373177,
+  "firefighting_and_response": 9738498184.366207,
+  "buildings_infrastructure_extra": 418001845.0,
+  "evacuations_and_health": 399545305.0,
+  "lost_work_and_output": 1299478608.0,
+  "health_care_only": 17365007.0
+ },
+ "high": {
+  "trees": 12971356067.373177,
+  "firefighting_and_response": 9738498184.366207,
+  "buildings_infrastructure_extra": 994770037.0,
+  "evacuations_and_health": 728275581.0,
+  "lost_work_and_output": 2456558965.0,
+  "health_care_only": 31103131.0
+ },
+ "slide": {
+  "trees_2023_2026": 12971356067.373177,
+  "firefighting_response_2023_2025": 8546380233.906207,
+  "firefighting_2026_forecasts": 1440451970.98,
+  "buildings_infrastructure_extra": 230847212.0,
+  "evacuations_health_incl_isc": 1578707225.46,
+  "isc_estimate": 1192117950.46,
+  "lost_work_and_output": 275395450.0
+ }
+}

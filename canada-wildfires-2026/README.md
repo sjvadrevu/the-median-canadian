@@ -12,7 +12,7 @@ Everything behind the page is here: every analysis script, every output table, t
 
 ## What the site shows
 
-- **The story, in eight chapters:** what burned (a Germany-sized area), why (hotter, drier summers), who it hurt (smoke and emergency room visits), what it cost, what it did to the climate, whether provinces are ready for another season like these (budgets, aircraft, crews and reviews for every province and territory), what is on the way (new aircraft, a satellite, research under way), and what needs to change.
+- **The story, in eight chapters:** what burned (a Germany-sized area), why (hotter, drier summers), who it hurt (smoke, with Health Canada's health estimates), what it cost (a bill built from every public record, line by line), what it did to the climate, whether provinces are ready for another season like these (budgets, aircraft, crews and reviews for every province and territory), what is on the way (new aircraft, a satellite, research under way), and what needs to change.
 - **Fire area map:** all 186 fire management areas, coloured by the share of forest burned compared with each area's own 1991 to 2020 average, for 2023, 2024, 2025, 2026 or 2023 to 2026.
 - **Season replay:** weekly 2026 satellite fire detections, with fire outlines appearing in the week they were first seen.
 - **Largest and closest fires:** the ten largest fires of 2023 to 2026 and the ten with the most buildings nearby, on a map.

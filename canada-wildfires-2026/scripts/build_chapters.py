@@ -92,7 +92,18 @@ def main():
     ex = exg[(exg.radius_km == 50) & (exg.period == "May-Sep") & (exg.dimension == "national") &
              (exg.weight == "total_pop")]
     ed = s["ed"]
-    out["c3"] = dict(reached_2023=float(ex[ex.year == 2023].people_ge1day_gt27.iloc[0]),
+    hc = pd.read_csv(os.path.join(AN, "health/hc_matz2026_2023.csv")).set_index("outcome")
+    assert not hc.index.str.contains("death", case=False).any()
+    hc_rows = [("Asthma symptom days in children aged 5 to 19", "Asthma symptom days"),
+               ("Days with activity restricted by smoke", "Restricted activity days"),
+               ("Emergency visits for breathing problems", "Respiratory emergency room visits"),
+               ("Emergency visits for heart problems", "Cardiac emergency room visits"),
+               ("Hospital admissions for breathing problems", "Respiratory hospital admissions"),
+               ("Hospital admissions for heart problems", "Cardiac hospital admissions")]
+    out["c3"] = dict(hc_2023=[dict(label=a, central=float(hc.loc[k, "central"]), low=float(hc.loc[k, "low"]), high=float(hc.loc[k, "high"]))
+                              for a, k in hc_rows],
+                     hc_asthma_days=float(hc.loc["Asthma symptom days", "central"]),
+                     reached_2023=float(ex[ex.year == 2023].people_ge1day_gt27.iloc[0]),
                      reached_by_year=[[int(r.year), float(r.people_ge1day_gt27)] for r in ex.itertuples()],
                      ed_total=float(ed.loc[2023:2025, "extra_visits"].sum()),
                      ed_lo=float(ed.loc[2023:2025, "extra_visits_lo"].sum()),
@@ -102,38 +113,40 @@ def main():
                                  for y, r in ed.iterrows()])
 
     # 4 ---------------------------------------------------------------------
-    # The bill is a floor: three items with official records, in 2025 dollars where the tally converts them
-    # (analysis/economic-value/cost_tally_by_year.csv), plus homes and buildings at census values.
-    ct = pd.read_csv(os.path.join(AN, "economic-value/cost_tally_by_year.csv")).set_index("year")
-    trees = ct.loc[2023:2026, "E_timber_value_stumpage"].sum() / 1e9
-    ff3 = ct.loc[2023:2025, "A_provincial_firefighting"].sum() / 1e9
+    # The bill (analysis/costs-full/scripts/combine_bill.py): every line counted once. Receipt = bill_summary.json
+    # "slide": floor values, plus the 2026 government forecasts and budgets and the Indigenous Services Canada
+    # on-reserve estimate. Homes and buildings add the census-value building total to the extra building lines.
+    bs = json.load(open(os.path.join(AN, "costs-full/bill_summary.json")))
+    sl = bs["slide"]
     vtot = sum(s["value"].values()) / 1000
-    items = [("Trees burned, 2023 to 2026", trees), ("Firefighting in BC, Alberta, Saskatchewan and Ontario, 2023 to 2025", ff3),
-             ("Homes and buildings destroyed", vtot)]
+    receipt = [("trees", "Trees burned, 2023 to 2026", sl["trees_2023_2026"] / 1e9),
+               ("fight", "Firefighting, 2023 to 2025", sl["firefighting_response_2023_2025"] / 1e9),
+               ("fight26", "Firefighting, 2026 forecasts", sl["firefighting_2026_forecasts"] / 1e9),
+               ("build", "Homes, buildings and repairs", vtot + sl["buildings_infrastructure_extra"] / 1e9),
+               ("evac", "Evacuations and hospital care", sl["evacuations_health_incl_isc"] / 1e9),
+               ("work", "Lost work and business", sl["lost_work_and_output"] / 1e9)]
+    total = sum(v for _, _, v in receipt)
     pop = population_2026()
-    bill = sum(b for _, b in items)
     ff_ratio = V("C28.mean_2023_2025_b") / V("C28.mean_2016_2022_b")
     assert 1.9 <= ff_ratio <= 2.2, ff_ratio  # the page says firefighting costs "doubled"
-    # official records for items left out of the total (different bases, possible overlap)
-    meas = pd.read_csv(os.path.join(AN, "policy/measures.csv"))
-    dfaa = meas[meas.name.str.contains("Disaster Financial Assistance")].iloc[0]
-    agx = pd.concat([pd.read_csv(os.path.join(RD, "agencies_west.csv")), pd.read_csv(os.path.join(RD, "agencies_east.csv"))])
-
-    def acts(prefix):
-        r = agx[agx.agency.str.startswith(prefix)].iloc[0]
-        return dict(agency=r.agency, values=[clean(r.actual_2023_24_cad), clean(r.actual_2024_25_cad), clean(r.actual_2025_26_cad)],
-                    basis=clean(r.actual_basis))
-    out["c4"] = dict(items=[dict(label=a, b=round(float(b), 3)) for a, b in items],
-                     total_b=bill, per_canadian=bill * 1e9 / pop["value"],
+    cb = pd.read_csv(os.path.join(AN, "costs-full/combined_bill.csv"))
+    lines = bill_lines(cb, vtot)
+    # every line adds up to the receipt, category by category
+    for k, _, v in receipt:
+        got = sum(l["counted"] for l in lines if l["cat"] == k) / 1e9
+        assert abs(got - v) < 0.0015, (k, got, v)
+    ins = pd.read_csv(os.path.join(AN, "costs-full/work/econ_property_insured_vs_bill.csv"))
+    ins_all = ins[ins.event == "Six events with both"].iloc[0]
+    out["c4"] = dict(items=[dict(key=k, label=lab, b=round(v, 3)) for k, lab, v in receipt],
+                     total_b=total, per_canadian=total * 1e9 / pop["value"],
                      population_2026=pop["value"], population_source=pop["source"],
-                     not_counted=["Firefighting in other provinces and territories", "Health care and evacuations", "Lost work and wages"],
-                     records_left_out=dict(dfaa=dict(cad=float(dfaa.amount_spent_cad), label=dfaa["name"], url=dfaa.source_url),
-                                           mb=acts("Manitoba"), qc=acts("Quebec"), yt=acts("Yukon")),
+                     isc_estimate_b=sl["isc_estimate"] / 1e9, lines=lines, not_found=not_found(),
+                     dfaa_b=dfaa_total() / 1e9,
+                     insured_ratio=float(ins_all.insured_cad / ins_all.bill_building_value_cad), insured_events=int(len(ins) - 1),
                      firefight_2023_2025_b=V("C28.mean_2023_2025_b"), firefight_2016_2022_b=V("C28.mean_2016_2022_b"),
                      firefight_ratio=ff_ratio,
-                     firefight_by_year=[[int(y), round(float(v), 3)] for y, v in sorted(s["firefight"].items())],
-                     value_by_year=[[int(y), round(float(v), 1)] for y, v in sorted(s["value"].items())],
-                     buildings_by_year=[[int(y), int(v)] for y, v in sorted(s["value_bldg"].items())])
+                     firefight_by_year=[[int(y), round(float(v), 3)] for y, v in sorted(s["firefight"].items())])
+    out.setdefault("cites", {}).update(bill_cites(lines))
 
     # 5 ---------------------------------------------------------------------
     out["c5"] = dict(wildfire_2023_mt=V("C31.managed_wildfire_2023_mt"), official_2023_mt=V("C31.national_total_2023_mt"),
@@ -214,6 +227,168 @@ def main():
     json.dump(out, open(os.path.join(ROOT, "data/chapters.json"), "w"), separators=(",", ":"), default=clean)
     print("wrote data/chapters.json", os.path.getsize(os.path.join(ROOT, "data/chapters.json")) // 1024, "KB")
     burn_png(g)
+
+
+def ref_by_url():
+    refs = json.load(open(os.path.join(ROOT, "data/references.json")))["references"]
+    by_url = {}
+    for r in refs:
+        by_url.setdefault(r["url"], r["id"])
+        for l in r.get("links", []):
+            by_url.setdefault(l["url"], r["id"])
+    return by_url
+
+
+def split_urls(cell):
+    import re
+    return [u.rstrip(".,)") for u in re.split(r"\s*;\s*|\s+", str(cell or "")) if u.startswith("http")]
+
+
+def bill_lines(cb, vtot):
+    """Every line of the bill with what is counted, its range, basis and sources. Lines come from combined_bill.csv
+    (which reads gov*_costs.csv, econ*_costs.csv and health*_costs.csv, so later research rounds appear here once
+    combine_bill.py is re-run); the cost files give each line's basis and source."""
+    by_url = ref_by_url()
+    info = {}
+    import re
+    for f in sorted(os.listdir(os.path.join(AN, "costs-full"))):
+        if not re.fullmatch(r"(gov|econ|health)\d*_costs\.csv", f):
+            continue
+        for r in pd.read_csv(os.path.join(AN, "costs-full", f)).fillna("").to_dict("records"):
+            if f.startswith("gov"):
+                basis = r.get("basis", "")
+            elif f.startswith("econ"):
+                basis = "; ".join(x for x in (r.get("basis", ""), r.get("dollars_basis", "")) if x)
+            else:
+                basis = r.get("method", "")
+            d = dict(basis=str(basis), source=str(r.get("source_name", "")), urls=split_urls(r.get("url")))
+            info[(f, str(r["item"]))] = d
+            info[(f, f'{r["item"]} ({r.get("period", "")})')] = d
+            info[(f, f'{r["item"]} ({r.get("period", "")}), estimate')] = d
+    # lost wages and lost output overlap: the floor keeps the larger group
+    wages = cb.loc[cb.cat == "wages", "low"].sum()
+    output = cb.loc[cb.cat == "output", "low"].sum()
+    keep_work = "output" if output >= wages else "wages"
+    out = [dict(cat="build", label="Homes and buildings destroyed (official counts and a satellite check, at census home values)",
+                counted=vtot * 1e9, low=vtot * 1e9, high=vtot * 1e9, note="",
+                basis="Buildings destroyed x 2021 Census average value of owner-occupied dwellings",
+                source="analysis/property (official damage counts; Sentinel-2 check)",
+                refs=["jasper-damage", "hrfe", "rdco", "csrd", "tnrd", "mnp-sk", "summerland", "census-profile", "sentinel2", "msbuildings"])]
+    for _, r in cb.iterrows():
+        cat, item = r["cat"], str(r["item"])
+        isc = "Indigenous Services Canada" in item and item.endswith("estimate")
+        if cat == "trees":
+            k, counted, note = "trees", r["low"], ""
+        elif cat == "fight_2026":
+            k, counted, note = "fight26", r["ref"], "government forecast or budget"
+        elif isc:
+            k, counted, note = "evac", r["central"], "estimate; mostly First Nations evacuations"
+        elif cat == "fight":
+            k, counted, note = "fight", r["low"], ""
+        elif cat == "build":
+            k, counted, note = "build", r["low"], ""
+        elif cat in ("evac", "health"):
+            k, counted, note = "evac", r["low"], ""
+        elif cat in ("wages", "output"):
+            k = "work"
+            counted = r["low"] if cat == keep_work else 0.0
+            note = "" if cat == keep_work else "not added: overlaps lost output, the larger of the two is counted"
+        else:
+            continue
+        if counted == 0 and not note:
+            note = "not added: estimate starts at zero or appears only in the high case"
+        src = str(r["src"])
+        d = info.get((src, item), {})
+        if src.startswith("economic-value"):
+            d = dict(basis="Provincial public accounts (2025 dollars)" if cat == "fight" else
+                     "Timber volume burned x provincial Crown stumpage price (2025 dollars)",
+                     source="analysis/economic-value/cost_tally_by_year.csv", urls=[])
+        if re.search(r"death", d.get("basis", "") + d.get("source", ""), flags=re.I):
+            # the page shows no modelled smoke deaths; these lines scale Health Canada's 2023 hospital cost by smoke exposure
+            d = dict(d, basis="Health Canada's 2023 hospital cost, scaled to this year by smoke exposure where people live",
+                     source="Health Canada estimates for 2023 and air monitor smoke levels")
+        refs = ({"trees": ["nfd-revenue", "bc-budget", "knn2011", "nbac", "cwfis-m3", "cpi"],
+                 "fight": ["bcws-cost", "bc-budget", "on-pa", "ab-ar", "sk-auditor", "cpi"]}.get(cat, [])
+                if src.startswith("economic-value") else [])
+        refs += [by_url[u] for u in d.get("urls", []) if u in by_url and by_url[u] not in refs]
+        out.append(dict(cat=k, label=item, counted=float(counted), low=float(r["low"] if cat != "fight_2026" else r["ref"]),
+                        high=float(r["high"] if cat != "fight_2026" else r["ref"]), note=note,
+                        basis=d.get("basis", ""), source=d.get("source", src), refs=refs))
+    return out
+
+
+def dfaa_total():
+    """Federal Disaster Financial Assistance Arrangements orders for wildfire events (not added to the bill)."""
+    import re
+    tot = 0.0
+    for f in sorted(os.listdir(os.path.join(AN, "costs-full"))):
+        if re.fullmatch(r"gov\d*_costs\.csv", f):
+            g = pd.read_csv(os.path.join(AN, "costs-full", f))
+            tot += g[g.item.str.contains("DFAA")].amount_nominal_cad.sum()
+    return float(tot)
+
+
+def not_found():
+    """Specific items still without a public record, from the 'Not found' sections of the notes files
+    (gov*_notes.md, econ*_notes.md, health*_notes.md, so later research rounds are picked up when re-run).
+    For the page each item is shortened: asides that mention news reports and figures quoted from the news are
+    dropped (news is used only to find documents), and industry insured-loss gaps are left out (not part of the bill)."""
+    import re
+    label = {"gov": "Firefighting and emergency response", "econ": "Property, infrastructure and the economy",
+             "health": "Health care, evacuations and work"}
+    res = []
+    for f in sorted(os.listdir(os.path.join(AN, "costs-full"))):
+        m0 = re.fullmatch(r"(gov|econ|health)\d*_notes\.md", f)
+        if not m0:
+            continue
+        t = open(os.path.join(AN, "costs-full", f), encoding="utf-8").read()
+        m = re.search(r"^## (?:\d+\. )?(?:Not found|Could not find)[^\n]*\n(.*?)(?=^## |\Z)", t, flags=re.S | re.M)
+        if not m:
+            continue
+        head = None
+        for line in m.group(1).splitlines():
+            s = line.strip()
+            h = re.match(r"^\*\*(.+?)\*\*\s*$", s) or re.match(r"^([A-Z][^:]{2,40}):\s*$", s)
+            if h:
+                head = h.group(1)
+                continue
+            b = re.match(r"^- (.+)$", s)
+            if not b or b.group(1).lower().startswith("access notes") or (head or "").lower().startswith("insured"):
+                continue
+            x = b.group(1)
+            pre = re.match(r"^([^:()]{2,60}):\s", x)
+            access = r"\b(news|media|told|CBC|cited from|premier|briefing|HTTP|WebFetch|curl|downloads?|readable|refused|blocks)\b"
+            x = re.sub(r"\s*\([^()]*" + access + r"[^()]*\)", "", x, flags=re.I)
+            parts = re.split(r"(?<=[.;])\s+", x)
+            x = " ".join(p for p in parts if not re.search(access + r"|the bill flags", p, flags=re.I)).strip()
+            x = re.sub(r"\s+", " ", x).strip(" ;")
+            if x and pre and not x.startswith(pre.group(1)):
+                x = f"{pre.group(1)}: {x}"
+            if x:
+                res.append(dict(file=f, group=label[m0.group(1)] + (f": {head}" if head else ""), text=x))
+    return res
+
+
+def bill_cites(lines):
+    """Reference ids behind each receipt line and the notes beside the bill."""
+    ids = {}
+    for l in lines:
+        for r in l["refs"]:
+            ids.setdefault(l["cat"], [])
+            if r not in ids[l["cat"]]:
+                ids[l["cat"]].append(r)
+    out = {f"bill_{k}": ",".join(v) for k, v in ids.items()}
+    import re
+    out["bill_evac"] = ",".join(["matz2026"] + [x for x in out.get("bill_evac", "").split(",") if x and x != "matz2026"])
+    by_url = ref_by_url()
+    for key, pref, pat in [("bill_insured", "econ", "Insured losses"), ("bill_dfaa", "gov", "DFAA")]:
+        us = []
+        for f in sorted(os.listdir(os.path.join(AN, "costs-full"))):
+            if re.fullmatch(rf"{pref}\d*_costs\.csv", f):
+                d = pd.read_csv(os.path.join(AN, "costs-full", f)).fillna("")
+                us += [u for x in d[d.item.str.contains(pat)].url for u in split_urls(x)]
+        out[key] = ",".join(dict.fromkeys(by_url[u] for u in us if u in by_url))
+    return out
 
 
 def population_2026():

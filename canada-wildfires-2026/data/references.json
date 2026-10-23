@@ -367,11 +367,17 @@
   {
    "id": "matz2026",
    "publisher": "GeoHealth (American Geophysical Union)",
-   "title": "Matz, C.J. and others. Health Impact Analysis of Wildfire Smoke-PM2.5 in Canada (2019 to 2023). Volume 10, e2025GH001565 (AQBAT coefficients, Table S1; value of a statistical life, Table S2)",
+   "title": "Matz, C.J. and others. Health Impact Analysis of Wildfire Smoke-PM2.5 in Canada (2019 to 2023). Volume 10, e2025GH001565 (Table 1: acute health impacts in 2023; Table S1: AQBAT coefficients)",
    "version": "2026",
    "url": "https://doi.org/10.1029/2025GH001565",
    "licence": "CC BY-NC 4.0",
-   "accessed": "2026-10-21"
+   "accessed": "2026-10-22",
+   "links": [
+    {
+     "label": "Europe PMC full text",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12852501/fullTextXML"
+    }
+   ]
   },
   {
    "id": "chen2021",
@@ -1285,6 +1291,1074 @@
    "version": "65 fires, 2023 to 2026",
    "url": "https://github.com/sjvadrevu/canada-wildfires-2026/tree/main/analysis/coverage",
    "licence": "Apache 2.0 (code), CC BY 4.0 (results)",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "chen2025-cmaj",
+   "publisher": "Canadian Medical Association Journal",
+   "title": "Chen, H., Kaufman, J.S., Chen, C. and others. Impact of the 2023 wildfire smoke episodes in Ontario, Canada, on asthma and other health outcomes: an interrupted time-series analysis. 197(17): E465 to E477",
+   "version": "2025",
+   "url": "https://doi.org/10.1503/cmaj.241506",
+   "licence": "CMAJ terms (open access)",
+   "accessed": "2026-10-22",
+   "links": [
+    {
+     "label": "CMAJ article page",
+     "url": "https://www.cmaj.ca/content/197/17/E465"
+    }
+   ]
+  },
+  {
+   "id": "cost-gov-01",
+   "publisher": "SOPFEU",
+   "title": "SOPFEU Rapport annuel 2023, 2024, 2025 (audited financial statements)",
+   "version": "calendar 2023-2025",
+   "url": "https://a-ca.storyblok.com/f/2000396/x/9c87a40c30/rapport_annuel-2023-lr.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-02",
+   "publisher": "SOPFEU",
+   "title": "SOPFEU Rapport annuel 2023, 2024, 2025 (audited financial statements)",
+   "version": "calendar 2023-2025",
+   "url": "https://a-ca.storyblok.com/f/2000396/x/b3c411594f/rapport_annuel-2024-lr.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-03",
+   "publisher": "SOPFEU",
+   "title": "SOPFEU Rapport annuel 2023, 2024, 2025 (audited financial statements)",
+   "version": "calendar 2023-2025",
+   "url": "https://a-ca.storyblok.com/f/2000396/x/c22b63b6cb/8-5x11-rapport_annuel_2025-vf.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-04",
+   "publisher": "Legislative Assembly of the NWT (tabled documents)",
+   "title": "GNWT Main Estimates 2024-25, 2025-26, 2026-27",
+   "version": "FY2022-23 to FY2026-27",
+   "url": "https://www.ntlegislativeassembly.ca/sites/default/files/tabled-documents/2025-02/TD%20275-20%281%29%202025-2026%20Main%20Estimates.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-05",
+   "publisher": "Legislative Assembly of the NWT (tabled documents)",
+   "title": "GNWT Main Estimates 2024-25, 2025-26, 2026-27",
+   "version": "FY2022-23 to FY2026-27",
+   "url": "https://www.ntlegislativeassembly.ca/sites/default/files/tabled-documents/2026-02/TD%20448-20%281%29%202026-2027%20Main%20Estimates.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-06",
+   "publisher": "Legislative Assembly of the NWT",
+   "title": "GNWT Supplementary Estimates (Operations) No. 2 and No. 3 2025-26; No. 3 2024-25",
+   "version": "FY2024-25, FY2025-26",
+   "url": "https://www.ntlegislativeassembly.ca/sites/default/files/tabled-documents/2026-02/TD%20454-20%281%29%20Supplementary%20Estimates%20%28Operations%20Expenditures%29%20No%203%202025-2026.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-07",
+   "publisher": "Government of Nova Scotia",
+   "title": "Nova Scotia Estimates 2024-25, 2025-26, 2026-27",
+   "version": "FY2023-24 to FY2026-27",
+   "url": "https://www.novascotia.ca/sites/default/files/documents/7-805/estimates-and-supplementary-detail-budget-2024-2025-en.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-08",
+   "publisher": "Government of Nova Scotia",
+   "title": "Nova Scotia Estimates 2024-25, 2025-26, 2026-27",
+   "version": "FY2023-24 to FY2026-27",
+   "url": "https://www.novascotia.ca/sites/default/files/documents/7-3890/budget-estimates-2025-26-en.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-09",
+   "publisher": "Government of NL",
+   "title": "Newfoundland and Labrador Estimates 2024, 2025, 2026",
+   "version": "FY2023-24 to FY2026-27",
+   "url": "https://www.gov.nl.ca/budget/2024/wp-content/uploads/sites/8/2024/03/Estimates-2024.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-10",
+   "publisher": "Government of NL",
+   "title": "Newfoundland and Labrador Estimates 2024, 2025, 2026",
+   "version": "FY2023-24 to FY2026-27",
+   "url": "https://www.gov.nl.ca/budget/2025/wp-content/uploads/sites/9/2025/04/Estimates-2025.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-11",
+   "publisher": "Government of NL",
+   "title": "Newfoundland and Labrador Estimates 2024, 2025, 2026",
+   "version": "FY2023-24 to FY2026-27",
+   "url": "https://www.gov.nl.ca/budget/2026/wp-content/uploads/sites/10/Estimates-2026.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-12",
+   "publisher": "Government of BC",
+   "title": "BC 2026/27 Estimates; First Quarterly Report 2026/27",
+   "version": "FY2026-27",
+   "url": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/government-finances/quarterly-reports/2026-27_first_quarterly_report.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-13",
+   "publisher": "Government of Alberta",
+   "title": "Alberta 2026-27 First Quarter Fiscal Update and Economic Statement; 2026-27 Estimates",
+   "version": "FY2026-27",
+   "url": "https://open.alberta.ca/dataset/9c81a5a7-cdf1-49ad-a923-d1ecb42944e4/resource/eaeb7a75-0c9f-4964-be53-0f1cc889ffab/download/tbf-2026-27-first-quarter-fiscal-update-economic-statement.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-14",
+   "publisher": "Government of Ontario",
+   "title": "Ontario 2026-27 First Quarter Finances; MNR Expenditure Estimates 2026-27; Public Accounts",
+   "version": "FY2023-24 to FY2026-27",
+   "url": "https://www.ontario.ca/page/2026-27-first-quarter-finances",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-15",
+   "publisher": "Parks Canada Agency",
+   "title": "Parks Canada 2024-25 Departmental Results Report",
+   "version": "FY2023-24, FY2024-25",
+   "url": "https://parks.canada.ca/agence-agency/bib-lib/rapports-reports/rmr-dpr/2024-2025",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-16",
+   "publisher": "Parks Canada and Municipality of Jasper (JRCC)",
+   "title": "Jasper Recovery Coordination Centre Year Two Progress Report (DRAFT), in Municipality of Jasper Committee of the Whole agenda 2026-07-14",
+   "version": "FY2024-25 to June 2026",
+   "url": "https://jasper-alberta.ca/Home/DownloadMeeting/8bcfc306-cd8c-4a73-91ac-cbf93fdea818?isEnglish=True",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-17",
+   "publisher": "National Defence",
+   "title": "DND 2023-24 Departmental Results Report: costs of major CAF operations; 2025-26 Departmental Plan planned costs",
+   "version": "FY2023-24 to FY2025-26",
+   "url": "https://www.canada.ca/en/department-national-defence/corporate/reports-publications/departmental-results-report/2023-24-index/supp-information/costs-major-caf-ops.html",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-18",
+   "publisher": "Department of Finance Canada",
+   "title": "Federal Budget 2024, Budget 2025 and Fall Economic Statement 2023 annexes",
+   "version": "FY2023-24 to FY2029-30",
+   "url": "https://budget.canada.ca/2024/report-rapport/budget-2024.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-19",
+   "publisher": "Department of Finance Canada",
+   "title": "Federal Budget 2024, Budget 2025 and Fall Economic Statement 2023 annexes",
+   "version": "FY2023-24 to FY2029-30",
+   "url": "https://budget.canada.ca/fes-eea/2023/report-rapport/FES-EEA-2023-en.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-20",
+   "publisher": "Indigenous Services Canada",
+   "title": "ISC Emergency Management Assistance Program key statistics (modified 2026-06-30)",
+   "version": "FY2016-17 to FY2025-26",
+   "url": "https://www.sac-isc.gc.ca/eng/1685047435261",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-21",
+   "publisher": "Department of Finance Canada",
+   "title": "Federal Budget 2024, Budget 2025 and Fall Economic Statement 2023 annexes",
+   "version": "FY2023-24 to FY2029-30",
+   "url": "https://budget.canada.ca/2025/report-rapport/pdf/budget-2025.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-01",
+   "publisher": "Insurance Bureau of Canada",
+   "title": "One-Year Update Following 2023 Nova Scotia Wildfires and Flooding Lessons learned will improve recovery from catastrophic events in the future July 20",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://a.storyblok.com/f/339220/645121db60/one-year-update-following-2023-nova-scotia-wildfires-and-flooding.pdf",
+   "licence": "Industry data (CatIQ or IBC), not government; not added to the bill",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-02",
+   "publisher": "BC",
+   "title": "IBC news release, Oct 3 2023 (CatIQ)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.ibc.ca/news-insights/news/okanagan-and-shuswap-area-wildfires-cause-over-720-million-in-insured-damage",
+   "licence": "Industry data (CatIQ or IBC), not government; not added to the bill",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-03",
+   "publisher": "NT",
+   "title": "IBC news release, Nov 20 2023 (CatIQ)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.ibc.ca/news-insights/news/behchoko-yellowknife-and-hay-river-wildfires-cause-over-60-million-in-insured-damage",
+   "licence": "Industry data (CatIQ or IBC), not government; not added to the bill",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-04",
+   "publisher": "CatIQ",
+   "title": "CatIQ Discloses Final Industry Loss Estimate for Jasper Wildfire Complex of July 2024; Second Estimate for Prairies Severe Weather Outbreak of June 20",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://public.catiq.com/2026/07/23/catiq-discloses-final-industry-loss-estimate-for-jasper-wildfire-complex-of-july-2024-second-estimate-for-prairies-severe-weather-outbreak-of-june-2026/",
+   "licence": "Industry data (CatIQ or IBC), not government; not added to the bill",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-05",
+   "publisher": "MB/SK",
+   "title": "IBC news release, Sep 4 2025 (CatIQ)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.ibc.ca/news-insights/news/insured-damage-from-manitoba-and-saskatchewan-wildfires-nears-300-million",
+   "licence": "Industry data (CatIQ or IBC), not government; not added to the bill",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-06",
+   "publisher": "NL",
+   "title": "IBC news release, Sep 17 2025 (CatIQ)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.ibc.ca/news-insights/news/august-wildfire-in-newfoundland-and-labrador-causes-over-70-million-in-insured-damage",
+   "licence": "Industry data (CatIQ or IBC), not government; not added to the bill",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-07",
+   "publisher": "CatIQ",
+   "title": "CatIQ Discloses Third Loss Estimate for June/July Severe Storm Event in Ontario and Quebec, Updated Loss for Bald Range Fire - CatIQ",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://public.catiq.com/2026/10/06/catiq-discloses-third-loss-estimate-for-june-july-severe-storm-event-in-ontario-and-quebec-updated-loss-for-bald-range-fire/",
+   "licence": "Industry data (CatIQ or IBC), not government; not added to the bill",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-08",
+   "publisher": "Government of the Northwest Territories",
+   "title": "Source: ECC Northwest Territories 2023 Wildfire Response Review Final Report July, 2024 MNP LLP 1700 - 10235 101 St NW, Edmonton AB, T5J 3G1 T: 780.45",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://climatelibrary.ecc.gov.nt.ca/dataset/51b681f5-1a21-445e-8e2a-f8cd1e2aacaf/resource/40c8e28b-b886-4781-a2f0-032401888f2d/download/1._nwt_wildfire_response_review_report_and_appendices_final_compressed-9k.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-09",
+   "publisher": "AB (Municipality of Jasper)",
+   "title": "Municipality of Jasper, RFD Wildfire Utility Repairs Phase 1 (Committee of the Whole, Apr 14 2026); Bylaw #284 Wildfire Utilities Infrastructure Repairs Borrowing Bylaw (Council, Aug 4 2026)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://jasper-alberta.ca/Home/DownloadMeeting/35168787-ea6d-4c23-8065-1fb31c2dcca9?isEnglish=True",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-10",
+   "publisher": "Municipality of Jasper",
+   "title": "MUNICIPALITY OF JASPER REGULAR COUNCIL MEETING AGENDA August 4, 2026 | 1:30 pm Jasper Library & Cultural Centre - Quorum Room Municipality of Jasper S",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://jasper-alberta.ca/Home/DownloadMeeting/3ae126a2-a849-4efe-be13-ee1852ac6aaa?isEnglish=True",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-11",
+   "publisher": "Municipality of Jasper",
+   "title": "MUNICIPALITY OF JASPER CONSOLIDATED FINANCIAL STATEMENTS FOR THE YEAR ENDED DECEMBER 31, 2024",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://jasper-alberta.ca/Home/DownloadDocument?docId=0a17aca2-b078-46e6-8944-0c77ffef6a97",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-12",
+   "publisher": "Municipality of Jasper",
+   "title": "MUNICIPALITY OF JASPER CONSOLIDATED FINANCIAL STATEMENTS FOR THE YEAR ENDED DECEMBER 31, 2025",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://jasper-alberta.ca/Home/DownloadDocument?docId=8d5ff8e7-21ce-4614-8722-3b1670e439bf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-13",
+   "publisher": "Halifax Regional Municipality",
+   "title": "P.O. Box 1749 Halifax, Nova Scotia B3J 3A5 Canada Item No. 13.2.2 Audit & Finance Standing Committee September 20, 2023 TO: Chair and Members of Audit",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.halifax.ca/sites/default/files/documents/city-hall/standing-committees/230920afsc1322.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-14",
+   "publisher": "City of Kelowna",
+   "title": "When fire shut down the Glenmore Landfill ($1.4M repairs)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.kelowna.ca/node/581505",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-15",
+   "publisher": "BC Hydro",
+   "title": "BC Hydro and Power Authority 2024/25 Annual Service Plan Report August 2025",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.bcbudget.gov.bc.ca/Annual_Reports/2024_2025/pdf/agency/bchydro.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-16",
+   "publisher": "Manitoba Hydro",
+   "title": "The Manitoba Hydro‑Electric Board QUARTERLY REPORT (for the six months ended September 30, 2025)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.hydro.mb.ca/docs/corporate/quarterly-report-250930.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-17",
+   "publisher": "Manitoba Hydro",
+   "title": "Northern communities’ power restored earlier than anticipated after wildfire damage",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.hydro.mb.ca/articles/2025/09/northern-communities-power-restored-earlier-than-anticipated-after-wildfire-damage/",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-18",
+   "publisher": "Government of Saskatchewan",
+   "title": "Crown Corporations Support Northern Wildfire Recovery and Help Communities and Families | News and Media | Government of Saskatchewan",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.saskatchewan.ca/government/news-and-media/2025/november/04/crown-corporations-support-northern-wildfire-recovery-and-help-communities-and-families",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-19",
+   "publisher": "Statistics Canada",
+   "title": "Full table download",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www150.statcan.gc.ca/n1/tbl/csv/25100055-eng.zip",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-20",
+   "publisher": "Statistics Canada",
+   "title": "Full table download",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www150.statcan.gc.ca/n1/tbl/csv/25100063-eng.zip",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-21",
+   "publisher": "Government of Alberta (Energy and Minerals)",
+   "title": "Monthly reference price calculations [2023] - Open Government",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://open.alberta.ca/publications/monthly-reference-price-calculations-2023",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-22",
+   "publisher": "Alberta Energy Regulator",
+   "title": "Alberta Energy Regulator ST-3: Alberta Energy Resources Industries Monthly Statistics Table - Oil Prices - 2023 Year to Date Jan Feb Mar Apr May Jun J",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://static.aer.ca/prd/documents/sts/st3/ST3_2023-12_Oil_Prices.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-23",
+   "publisher": "Alberta Energy Regulator",
+   "title": "Alberta Energy Regulator ST-3: Alberta Energy Resources Industries Monthly Statistics Table - Oil Prices - 2025 Year to Date Jan Feb Mar Apr May Jun J",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://static.aer.ca/prd/documents/sts/st3/prices_oil_2025.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-24",
+   "publisher": "Government of Alberta (Energy and Minerals)",
+   "title": "Bitumen Valuation Methodology (BVM) components - Open Government",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://open.alberta.ca/publications/bvm-components",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-25",
+   "publisher": "Statistics Canada",
+   "title": "The Daily : Gross domestic product by industry, May 2023",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/230728/dq230728a-eng.htm",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-26",
+   "publisher": "Statistics Canada",
+   "title": "Full table download",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www150.statcan.gc.ca/n1/tbl/csv/36100434-eng.zip",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-27",
+   "publisher": "Statistics Canada",
+   "title": "The Daily : Gross domestic product by industry, June 2023",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/230901/dq230901b-eng.htm",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-28",
+   "publisher": "Statistics Canada",
+   "title": "The Daily : Gross domestic product by industry, August 2024",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/241031/dq241031a-eng.htm",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-29",
+   "publisher": "Statistics Canada",
+   "title": "The Daily : Gross domestic product by industry, July 2024",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/240927/dq240927a-eng.htm",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-30",
+   "publisher": "Statistics Canada",
+   "title": "The Daily release",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/250829/dq250829b-eng.htm",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-31",
+   "publisher": "Parks Canada",
+   "title": "Financial statements 2024-25 (revenues, Note 8 and statement of operations)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://parks.canada.ca/agence-agency/dp-pd/ef-fs/2024-2025dpr",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-32",
+   "publisher": "Gouvernement du Quebec",
+   "title": "Aide financière à la suite des feux de forêt de l'été 2023 - Bonification des programmes PAUPME et PARESAU pour soutenir les entreprises touchées Gouv",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.quebec.ca/nouvelles/actualites/details/aide-financiere-a-la-suite-des-feux-de-foret-de-lete-2023-bonification-des-programmes-paupme-et-paresau-pour-soutenir-les-entreprises-touchees-54802",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-econ-33",
+   "publisher": "Governments of BC / Canada",
+   "title": "BC Gov News",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://news.gov.bc.ca/releases/2023AF0056-001624",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-01",
+   "publisher": "Canadian Institute for Health Information",
+   "title": "Spending Trends in Health Service Delivery, 2014-2015 to 2023-2024, Data Tables (2025)",
+   "version": "FY2014-15 to FY2023-24, by province (no QC, NU)",
+   "url": "https://www.cihi.ca/sites/default/files/document/spending-trends-health-service-delivery-2014-2023-data-tables-en.xlsx",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-02",
+   "publisher": "Canadian Institute for Health Information",
+   "title": "Hospital Spending: Focus on the Emergency Department (highlights, 2020)",
+   "version": "FY2018-19",
+   "url": "https://www.cihi.ca/sites/default/files/document/hospital-spending-highlights-2020-en.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-03",
+   "publisher": "Canadian Institute for Health Information",
+   "title": "Patient Cost Estimator Results (2024)",
+   "version": "FY2017-18 to FY2021-22, by CMG",
+   "url": "https://www.cihi.ca/sites/default/files/document/patient-cost-estimator-results-en.xlsx",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-04",
+   "publisher": "Natural Resources Canada, Canadian Forest Service (CWFIS)",
+   "title": "Canadian Wildland Fire Evacuation Database (CWFEDB) Summary Stats 1980-2025, v2026-02-03",
+   "version": "1980-2025, Canada by year; provinces 1980-2025 total",
+   "url": "https://cwfis.cfs.nrcan.gc.ca/downloads/evacs/CWFEDB_1980to2025_sumstats_v20260203.xlsx",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-05",
+   "publisher": "Indigenous Services Canada",
+   "title": "Wildfire evacuation information for Indigenous peoples (modified 2026-10-05, reused)",
+   "version": "2026-04-01 to 2026-10-02",
+   "url": "https://isc.gc.ca/eng/1686078907307/1686078925161",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-06",
+   "publisher": "Government of BC; District of Summerland; Regional District of Okanagan-Similkameen",
+   "title": "BC 2026 state of emergency releases; District of Summerland Evacuation Order 2026-08-08; RDOS EOC updates 2026-08-08, 08-16, 08-25",
+   "version": "August 2026",
+   "url": "https://www.summerland.ca/docs/default-source/your-city-hall/council/council's-corner/2026/20260808-evacuation-order---entire-community.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-07",
+   "publisher": "Government of BC; District of Summerland; Regional District of Okanagan-Similkameen",
+   "title": "BC 2026 state of emergency releases; District of Summerland Evacuation Order 2026-08-08; RDOS EOC updates 2026-08-08, 08-16, 08-25",
+   "version": "August 2026",
+   "url": "https://www.rdos.bc.ca/newsandevents/rdos-news/information-releases/article/5811",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-08",
+   "publisher": "Canada",
+   "title": "ISC Wildfire evacuation information for Indigenous peoples (modified 2026-10-05); District of Summerland Evacuation Order 2026-08-08 and RDOS EOC update 2026-08-08 (5,688 Summerland properties, 416 RDOS, 38 Penticton Indian Band properties on order); Statistics Canada Census Profile 2021 (CSD 5907035)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://api.statcan.gc.ca/census-recensement/profile/sdmx/rest/data/STC_CP,DF_CSD/A5.2021A00055907035.1.1.1",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-09",
+   "publisher": "AB",
+   "title": "Alberta Seniors, Community and Social Services Annual Report 2023-2024, p. 17",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://open.alberta.ca/dataset/3a6b50d8-c1f2-4e9a-94ec-62f1e0a34e59/resource/552b6d31-c765-46b6-917a-10b24a7d97c4/download/scss-annual-report-2023-2024.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-10",
+   "publisher": "AB",
+   "title": "Alberta Seniors, Community and Social Services Annual Report 2024-2025, p. 18",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://open.alberta.ca/dataset/3a6b50d8-c1f2-4e9a-94ec-62f1e0a34e59/resource/5b876aae-aaae-4c93-a9a1-4fe1305c7b39/download/scss-annual-report-2024-2025.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-11",
+   "publisher": "Government of Alberta",
+   "title": "Public Safety and Emergency Services Annual Report 2023-2024",
+   "version": "FY2023-24",
+   "url": "https://open.alberta.ca/dataset/2b228e33-89ac-42d0-9c60-218d9ffb9f30/resource/15e58606-1375-4070-97e2-b331fc44cea2/download/pses-annual-report-2023-2024.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-12",
+   "publisher": "Government of the Northwest Territories",
+   "title": "GNWT news release 2023-09-07: Applicants now receiving full Evacuee Income Disruption Support Payments",
+   "version": "to 2023-09-05",
+   "url": "https://www.gov.nt.ca/en/newsroom/applicants-now-receiving-full-evacuee-income-disruption-support-payments",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-13",
+   "publisher": "GNWT Municipal and Community Affairs",
+   "title": "NWT Emergency Management Annual Report 2025",
+   "version": "2021-2025 events",
+   "url": "https://www.maca.gov.nt.ca/sites/maca/files/resources/nwt_emergency_management_annual_report_2025.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-14",
+   "publisher": "BC Emergency Management and Climate Readiness",
+   "title": "Payments under the Emergency and Disaster Management Act s.10(2), fiscal years ended March 31, 2024, 2025, 2026",
+   "version": "FY2023-24 to FY2025-26",
+   "url": "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/reports/emcr-annual-payment-report-2023_24.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-15",
+   "publisher": "Legislative Assembly of Saskatchewan",
+   "title": "Legislative Assembly of Saskatchewan, Standing Committee on Intergovernmental Affairs and Justice, Hansard 2025-12-01",
+   "version": "2025 season; FY2021-22 to FY2024-25",
+   "url": "https://docs.legassembly.sk.ca/legdocs/Committees/IAJ/Debates/30L/20251201Debates-IAJ-HTML.htm",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-16",
+   "publisher": "MB",
+   "title": "Government of Manitoba, Disclosure of Contracts (contracts of CAD 10,000 or more)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://web.gov.mb.ca/DisclosureOfContracts/",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-17",
+   "publisher": "Indigenous Services Canada",
+   "title": "Emergency Management Assistance Program - key statistics (modified 2026-06-30)",
+   "version": "FY2016-17 to FY2025-26",
+   "url": "https://www.sac-isc.gc.ca/eng/1685047435261/1685047540188",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-18",
+   "publisher": "Indigenous Services Canada",
+   "title": "ISC wildland fire and flood evacuation statistics (modified 2026-06-01)",
+   "version": "FY2016-17 to FY2025-26",
+   "url": "https://isc.gc.ca/eng/1583177459681/1583177553276",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-19",
+   "publisher": "Government of Canada",
+   "title": "Proactive Disclosure - Grants and Contributions, search: owner Public Safety Canada and ISC, 'Red Cross'",
+   "version": "agreements to 2026-03-30",
+   "url": "https://search.open.canada.ca/grants/?owner_org=ps-sp&search_text=%22Red%20Cross%22",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-20",
+   "publisher": "Employment and Social Development Canada",
+   "title": "Canada Gazette Part II SOR/2025-10, EI Pilot Project No. 23, Regulatory Impact Analysis Statement",
+   "version": "2024 Jasper and Bunibonibee evacuations",
+   "url": "https://gazette.gc.ca/rp-pr/p2/2025/2025-02-12/html/sor-dors10-eng.html",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-21",
+   "publisher": "Statistics Canada",
+   "title": "Survey of Employment, Payrolls and Hours: 14-10-0204-01 (annual AWE) and 14-10-0223-01 (monthly)",
+   "version": "2001-2025 annual; to July 2026 monthly",
+   "url": "https://www150.statcan.gc.ca/n1/tbl/csv/14100204-eng.zip",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-22",
+   "publisher": "Statistics Canada",
+   "title": "Labour Force Survey 14-10-0327-01 (annual)",
+   "version": "1976-2025",
+   "url": "https://www150.statcan.gc.ca/n1/tbl/csv/14100327-eng.zip",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-23",
+   "publisher": "NRCan Canadian Forest Service authors (CWFEDB)",
+   "title": "Christianson A.C. et al. 2024, Wildland fire evacuations in Canada from 1980 to 2021, Int. J. Wildland Fire 33, WF23097",
+   "version": "1980-2021",
+   "url": "https://doi.org/10.1071/WF23097",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-24",
+   "publisher": "Government of Canada (ESDC, Public Safety, ISC)",
+   "title": "Proactive Disclosure - Question Period notes (subset reused): ESDC EF_063_20260105, CSDec2024_009, EWD_JUN2025_017; PS PS-2023-QP-1--MEP-004, PS-2025-QP-005; ISC ISC-2025-QP-00780, -00808",
+   "version": "notes dated 2023-2026",
+   "url": "https://search.open.canada.ca/qpnotes/record/esdc-edsc,EF_063_20260105",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-22",
+   "publisher": "Government of Manitoba",
+   "title": "Manitoba Estimates 2026-27 and 2026/27 First Quarter Report",
+   "version": "FY2026-27",
+   "url": "https://www.gov.mb.ca/asset_library/en/proactive/20262027/first-quarter-report-september2026.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-23",
+   "publisher": "Legislative Assembly of the NWT (tabled documents)",
+   "title": "GNWT Main Estimates 2024-25, 2025-26, 2026-27",
+   "version": "FY2022-23 to FY2026-27",
+   "url": "https://www.ntlegislativeassembly.ca/sites/default/files/tabled-documents/2024-05/TD%2093-20%281%29%202024-2025%20Main%20Estimates.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-24",
+   "publisher": "Legislative Assembly of the NWT",
+   "title": "GNWT Supplementary Estimates (Operations) No. 2 and No. 3 2025-26; No. 3 2024-25",
+   "version": "FY2024-25, FY2025-26",
+   "url": "https://www.ntlegislativeassembly.ca/sites/default/files/tabled-documents/2025-10/TD%20388-20%281%29%20Supplementary%20Estimates%20%28Operations%20Expenditures%29%20No%202%202025-2026.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-25",
+   "publisher": "Legislative Assembly of the NWT",
+   "title": "NWT Hansard, October 21 2025 (official PDF), pp. 2796-2799",
+   "version": "2022-23 to 2025-26",
+   "url": "https://www.ntlegislativeassembly.ca/sites/default/files/hansard/2025-11/HN251021_0.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-26",
+   "publisher": "GNWT Department of Finance",
+   "title": "GNWT Public Accounts 2023-24 and 2024-25, Section II (Schedule 2)",
+   "version": "FY2023-24, FY2024-25",
+   "url": "https://www.fin.gov.nt.ca/sites/fin/files/resources/2023-2024_section_ii_-_non-consolidated_financial_statements.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-27",
+   "publisher": "GNWT Department of Finance",
+   "title": "GNWT Public Accounts 2023-24 and 2024-25, Section II (Schedule 2)",
+   "version": "FY2023-24, FY2024-25",
+   "url": "https://www.fin.gov.nt.ca/sites/fin/files/resources/2024-2025_public_accounts_section_ii_-_non-consolidated_financial_statements.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-28",
+   "publisher": "Legislative Assembly of the NWT",
+   "title": "NWT Hansard October 20-21 2026",
+   "version": "FY2026-27",
+   "url": "https://www.ntlegislativeassembly.ca/sites/default/files/hansard/2026-10/99HN261021.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-29",
+   "publisher": "NS Department of Finance and Treasury Board",
+   "title": "Nova Scotia Additional Appropriations Sept 2023 and Feb 2026",
+   "version": "FY2023-24, FY2025-26",
+   "url": "https://notices.novascotia.ca/files/budget-forecast-notices/additional-appropriations-budget-forecast-update-september-2023.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-30",
+   "publisher": "NS Department of Finance and Treasury Board",
+   "title": "Nova Scotia Additional Appropriations Sept 2023 and Feb 2026",
+   "version": "FY2023-24, FY2025-26",
+   "url": "https://www.novascotia.ca/sites/default/files/documents/7-4172/additional-appropriations-budget-2026-27-en.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-31",
+   "publisher": "Government of BC",
+   "title": "BC 2026/27 Estimates; First Quarterly Report 2026/27",
+   "version": "FY2026-27",
+   "url": "https://news.gov.bc.ca/releases/2026FIN0031-001066",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-32",
+   "publisher": "Government of SK; Provincial Auditor",
+   "title": "Saskatchewan 2026-27 First Quarter Financial Report; Provincial Auditor 2026 Vol 1 Ch 5",
+   "version": "2023-2026",
+   "url": "https://publications.saskatchewan.ca/api/v1/products/129712/formats/156618/download",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-33",
+   "publisher": "Government of NB / Legislative Assembly",
+   "title": "New Brunswick DNRED Annual Reports 2023-24 and 2024-25; Supplementary Appropriations Acts",
+   "version": "FY2023-24 to FY2025-26",
+   "url": "https://www.legnb.ca/content/house_business/61/2/tabled_documents/2026-03-02%20DNRED%202024-2025%20(2).pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-34",
+   "publisher": "Government of NB / Legislative Assembly",
+   "title": "New Brunswick DNRED Annual Reports 2023-24 and 2024-25; Supplementary Appropriations Acts",
+   "version": "FY2023-24 to FY2025-26",
+   "url": "https://legnb.ca/content/house_business/61/2/bills/Bill-22-e.htm",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-35",
+   "publisher": "Parks Canada Agency",
+   "title": "Parks Canada backgrounder: funding for 2024 wildfire season incl. Jasper (2025-02-06)",
+   "version": "FY2024-25",
+   "url": "https://www.canada.ca/en/parks-canada/news/2025/02/government-of-canada-funding-for-2024-wildfire-season-in-parks-canada-administered-places-including-jasper-national-park-wildfire-response-recovery.html",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-36",
+   "publisher": "National Defence",
+   "title": "DND 2023-24 Departmental Results Report: costs of major CAF operations; 2025-26 Departmental Plan planned costs",
+   "version": "FY2023-24 to FY2025-26",
+   "url": "https://www.canada.ca/en/department-national-defence/corporate/reports-publications/departmental-plans/departmental-plan-2025-26/planned-costs-major-caf-operations.html",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-37",
+   "publisher": "Indigenous Services Canada",
+   "title": "ISC Evaluation of EMAP and ICSF; 2024-25 Details on transfer payment programs",
+   "version": "FY2017-18 to FY2024-25",
+   "url": "https://sac-isc.gc.ca/eng/1781294116892/1781294141535",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-38",
+   "publisher": "Indigenous Services Canada",
+   "title": "ISC Evaluation of EMAP and ICSF; 2024-25 Details on transfer payment programs",
+   "version": "FY2017-18 to FY2024-25",
+   "url": "https://www.sac-isc.gc.ca/eng/1752155909653/1752155974370",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-39",
+   "publisher": "Treasury Board Secretariat",
+   "title": "GC InfoBase transfer payments (Public Accounts data)",
+   "version": "FY2011-12 to FY2024-25",
+   "url": "https://www.tbs-sct.canada.ca/ems-sgd/edb-bdd/index-eng.html",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-40",
+   "publisher": "Public Safety Canada",
+   "title": "DFAA Guidelines before April 1 2025, Interpretation Bulletin 10, and Guidelines from April 1 2025",
+   "version": "events 2023-2026",
+   "url": "https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/rcvr-dsstrs/gdlns-dsstr-ssstnc/index-en.aspx",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-41",
+   "publisher": "Public Safety Canada",
+   "title": "DFAA Guidelines before April 1 2025, Interpretation Bulletin 10, and Guidelines from April 1 2025",
+   "version": "events 2023-2026",
+   "url": "https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/rcvr-dsstrs/gdlns-dsstr-ssstnc/index-b10-en.aspx",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-gov-42",
+   "publisher": "Public Safety Canada",
+   "title": "DFAA Guidelines before April 1 2025, Interpretation Bulletin 10, and Guidelines from April 1 2025",
+   "version": "events 2023-2026",
+   "url": "https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/rcvr-dsstrs/dsstr-fnncl-ssstnc-rrngmnts/2025/dfaa-gdlns-en.aspx",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-25",
+   "publisher": "NRCan Canadian Forest Service authors (CWFEDB)",
+   "title": "Christianson A.C. et al. 2024, Wildland fire evacuations in Canada from 1980 to 2021, Int. J. Wildland Fire 33, WF23097",
+   "version": "1980-2021",
+   "url": "https://publish.csiro.au/WF/fulltext/WF23097",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-26",
+   "publisher": "Government of Canada (ESDC, Public Safety, ISC)",
+   "title": "Proactive Disclosure - Question Period notes (subset reused): ESDC EF_063_20260105, CSDec2024_009, EWD_JUN2025_017; PS PS-2023-QP-1--MEP-004, PS-2025-QP-005; ISC ISC-2025-QP-00780, -00808",
+   "version": "notes dated 2023-2026",
+   "url": "https://open.canada.ca/data/dataset/ecd1a913-47da-47fc-8f96-2432be420986",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-27",
+   "publisher": "Government of Alberta",
+   "title": "Seniors, Community and Social Services Annual Report 2023-2024 and 2024-2025",
+   "version": "FY2023-24, FY2024-25",
+   "url": "https://open.alberta.ca/dataset/3a6b50d8-c1f2-4e9a-94ec-62f1e0a34e59",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-28",
+   "publisher": "Government of the Northwest Territories",
+   "title": "Northwest Territories 2023 Wildfire Response Review - Dataset - NWT Climate Change Library",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://climatelibrary.ecc.gov.nt.ca/dataset/51b681f5-1a21-445e-8e2a-f8cd1e2aacaf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-29",
+   "publisher": "Legislative Assembly of the NWT",
+   "title": "NWT Supplementary Estimates (Operations Expenditures) No. 2, 2023-2024",
+   "version": "FY2023-24",
+   "url": "https://www.ntlegislativeassembly.ca/sites/default/files/legacy/tabled_document_-_fin_-_supplementary_estimates_operations_expenditures_no._2_2023-2024.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-30",
+   "publisher": "Government of British Columbia",
+   "title": "BC news release 2024-01-04: Province seeking input on support for evacuees",
+   "version": "summer 2023",
+   "url": "https://news.gov.bc.ca/releases/2024EMCR0001-000004",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-31",
+   "publisher": "Government of BC; District of Summerland; Regional District of Okanagan-Similkameen",
+   "title": "BC 2026 state of emergency releases; District of Summerland Evacuation Order 2026-08-08; RDOS EOC updates 2026-08-08, 08-16, 08-25",
+   "version": "August 2026",
+   "url": "https://news.gov.bc.ca/releases/2026EMCR0037-000977",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-32",
+   "publisher": "Statistics Canada",
+   "title": "Statistics Canada Census Profile 2021, SDMX API (DF_CSD): Summerland 12,042, Jasper 4,738, Yellowknife 20,340",
+   "version": "2021 Census",
+   "url": "https://api.statcan.gc.ca/census-recensement/profile/sdmx/rest/data/STC_CP,DF_CSD/A5.2021A00054815033+2021A00054815037+2021A00056106023+2021A00055907035.1.1.1?format=csv",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-33",
+   "publisher": "Government of Manitoba",
+   "title": "PROVINCE OF MANITOBA 2025/26 Second Quarter Report Fiscal and Economic Update HONOUR ABLE ADRIEN SAL A MINISTER OF FINANCE",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://www.manitoba.ca/asset_library/en/proactive/20252026/second-quarter-report-december2025.pdf",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-34",
+   "publisher": "Government of Manitoba",
+   "title": "Manitoba Disclosure of Contracts, vendor CANADIAN RED CROSS",
+   "version": "2023-2025",
+   "url": "https://web.gov.mb.ca/DisclosureOfContracts/json/en/contracts/Vendor/?vendor=CANADIAN%20RED%20CROSS&year=2025&month=00",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-35",
+   "publisher": "Public Safety Canada",
+   "title": "Parliamentary Committee Notes: Donation Matching Efforts in Response to Domestic Emergencies (2024-03-22)",
+   "version": "2023 appeals",
+   "url": "https://www.publicsafety.gc.ca/cnt/trnsprnc/brfng-mtrls/prlmntry-bndrs/20240322/09-en.aspx",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-36",
+   "publisher": "Public Safety Canada",
+   "title": "The Governments of Canada and Manitoba match Red Cross donations (2025-06-04)",
+   "version": "2025",
+   "url": "https://www.canada.ca/en/public-safety-canada/news/2025/06/the-governments-of-canada-and-manitoba-match-red-cross-donations-to-help-those-impacted-by-wildfires.html",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-37",
+   "publisher": "Government of Nova Scotia",
+   "title": "Nova Scotia news releases 2023-05-29, 2023-06-06, 2023-06-22",
+   "version": "2023",
+   "url": "https://news.novascotia.ca/en/2023/05/29/support-nova-scotians-impacted-wildfires-provincewide-burn-ban",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-38",
+   "publisher": "Statistics Canada",
+   "title": "Survey of Employment, Payrolls and Hours: 14-10-0204-01 (annual AWE) and 14-10-0223-01 (monthly)",
+   "version": "2001-2025 annual; to July 2026 monthly",
+   "url": "https://www150.statcan.gc.ca/n1/tbl/csv/14100223-eng.zip",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-39",
+   "publisher": "Statistics Canada",
+   "title": "Status First Nations people in Canada: A snapshot from the 2021 Census (41-20-0002, 2023-10-18)",
+   "version": "2021 Census",
+   "url": "https://www150.statcan.gc.ca/n1/pub/41-20-0002/412000022023004-eng.htm",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-40",
+   "publisher": "Statistics Canada",
+   "title": "The Daily, Labour Force Survey releases May 2023 to August 2026 (11 releases)",
+   "version": "2023-2026",
+   "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/230609/dq230609a-eng.htm",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-41",
+   "publisher": "Library of Parliament; NRCan",
+   "title": "Library of Parliament HillNotes 2025-06-27; Jain et al. 2024 Nat. Commun. (NRCan authors)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://hillnotes.ca/2025/06/27/wildfire-management-a-statistical-and-jurisdictional-portrait/",
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "cost-health-42",
+   "publisher": "Library of Parliament; NRCan",
+   "title": "Library of Parliament HillNotes 2025-06-27; Jain et al. 2024 Nat. Commun. (NRCan authors)",
+   "version": "As listed in analysis/costs-full",
+   "url": "https://essopenarchive.org/doi/full/10.22541/essoar.170914412.27504349",
+   "licence": "Open Government Licence or the publisher's terms",
    "accessed": "2026-10-22"
   }
  ]

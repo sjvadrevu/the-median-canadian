@@ -277,11 +277,38 @@ ol.refs li:target{background:var(--glow)}
 .burnmap .lb{font-size:17px;font-weight:700;fill:var(--text);paint-order:stroke;stroke:var(--panel2);stroke-width:5px;stroke-linejoin:round}
 .burnmap circle{fill:var(--panel);stroke:var(--text);stroke-width:2.5}
 @media (max-width:560px){.burnmap .lb{font-size:32px;stroke-width:7px}.burnmap circle{r:8}}
+/* Health Canada table */
+.hct{margin-top:14px}
+.hct table{width:100%;border-collapse:collapse;font-size:.86rem;font-variant-numeric:tabular-nums}
+.hct caption{text-align:left;font-size:.78rem;font-weight:700;margin-bottom:6px}
+.hct th{text-align:left;font-size:.68rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding:6px 6px 6px 0;border-bottom:1px solid var(--line)}
+.hct td{padding:8px 6px 8px 0;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.3}
+.hct td.n{text-align:right;font-weight:800;white-space:nowrap}
+.hct td.r{text-align:right;color:var(--muted);font-size:.78rem;white-space:nowrap}
+.hct th.n,.hct th.r{text-align:right}
+/* bill detail */
+details.how2{margin-top:12px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--panel2)}
+details.how2 summary{cursor:pointer;font-weight:700;font-size:.95rem}
+details.how2 h4{margin:16px 0 4px;font-size:.92rem;display:flex;justify-content:space-between;gap:10px}
+details.how2 h4 span{color:var(--muted);font-weight:700;white-space:nowrap}
+details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
+.bl2{list-style:none;margin:0;padding:0}
+.bl2 li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;padding:7px 0;border-top:1px solid var(--line);font-size:.82rem;line-height:1.35}
+.bl2 li b{font-weight:600}
+.bl2 li .a{text-align:right;font-weight:800;white-space:nowrap}
+.bl2 li .m{grid-column:1/-1;color:var(--muted);font-size:.74rem}
+.bl2 li.na .a{color:var(--muted);font-weight:600}
+.nf{margin:4px 0 0;padding-left:18px}
+.nf li{font-size:.8rem;line-height:1.45;margin:3px 0}
+.nfg{font-size:.76rem;font-weight:700;color:var(--muted);margin:10px 0 0}
 /* receipt */
 .receipt{margin-top:14px;max-width:460px;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:14px 16px;font-variant-numeric:tabular-nums;box-shadow:0 2px 0 var(--line)}
 .receipt .rt{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:center;border-bottom:1px dashed var(--line);padding-bottom:8px}
 .receipt .ri{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
 .receipt .ri b{white-space:nowrap}
+.receipt .ri span{min-width:0}
+.receipt .ri sup.cite{display:block;white-space:normal;line-height:1.35;margin:2px 0 0;vertical-align:baseline}
+.bl2 li .m sup.cite{white-space:normal}
 .receipt .tot{display:flex;justify-content:space-between;padding:10px 0 8px;font-size:1.25rem;font-weight:800;color:var(--fire);border-bottom:2px solid var(--line)}
 .receipt .rt2{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:10px}
 .receipt .ri.nc{color:var(--muted);border-bottom-style:dotted}
@@ -430,10 +457,11 @@ ol.refs li:target{background:var(--glow)}
     <div class="story2">
       <article class="ch" id="c3"><span class="chN">3</span><span class="chK">The smoke</span>
         <h2 class="chH">Smoke reached <span data-n="@c3.reached_2023" data-f="mil0"></span> people</h2>
-        <p class="reveal">About <b><span data-n="@c3.ed_total" data-f="r1000"></span> extra emergency room visits</b>, 2023 to 2025.<sup class="cite" data-cite="cihi-nacrs,naps,airnow"></sup></p>
+        <p class="reveal">Health Canada estimates <b><span data-n="@c3.hc_asthma_days" data-f="mil1"></span> days of asthma symptoms in children</b> in 2023.<sup class="cite" data-cite="matz2026"></sup></p>
         <div class="chart" id="chReach"></div>
-        <div class="chart" id="chED"></div>
-        <p class="fnote">Unhealthy smoke: a day with fine particles above 27 micrograms per cubic metre at a monitor within 50 km. Emergency visits: monthly hospital records (April 2021 to March 2026) linked to monthly smoke levels; one of several tests, so the range is wide. 2026 hospital data are not yet released.<sup class="cite" data-cite="caaqs,naps,airnow,cihi-nacrs"></sup></p>
+        <div class="hct" id="hcTable"></div>
+        <p class="fnote">Unhealthy smoke: a day with fine particles above 27 micrograms per cubic metre at a monitor within 50 km.<sup class="cite" data-cite="caaqs,naps,airnow"></sup> Health Canada's estimates cover wildfire smoke from May to September 2023, from its Air Quality Benefits Assessment Tool; ranges are 95% intervals.<sup class="cite" data-cite="matz2026,aqbat"></sup> A study of Ontario by Health Canada and partners found asthma emergency visits rose after the June 2023 smoke.<sup class="cite" data-cite="chen2025-cmaj"></sup></p>
+        <p class="fnote">Our own analysis of monthly hospital records hints at more emergency visits, but the signal is weak (one of six tests), so it is not used.<sup class="cite" data-cite="cihi-nacrs"></sup></p>
         <div class="sub">
           <h3>People on reserves were <span data-n="C21.ratio" data-f="x0"></span> as likely as other Canadians to live near large fires year after year</h3>
           <div class="chart" id="chReserve"></div>
@@ -482,12 +510,8 @@ ol.refs li:target{background:var(--glow)}
         <h2 class="chH">The fires cost at least $<span data-n="@c4.per_canadian" data-f="f10"></span> per Canadian</h2>
         <p class="reveal">Yearly firefighting costs doubled, to <span data-n="@c4.firefight_2023_2025_b" data-f="overb"></span>.<sup class="cite" data-cite="bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi"></sup></p>
         <div class="receipt" id="receipt"></div>
-        <p class="fnote">Per Canadian: the total so far divided by Canada's population on July 1, 2026, rounded down. Trees: the value of the timber at what provinces charge to cut it, a measure of the size of the loss. Trees and firefighting are in 2025 dollars. Buildings: events with official damage counts, at local census home values.<sup class="cite" data-cite="statcan-popest,nfd-revenue,bc-budget,knn2011,nbac,cwfis-m3,bcws-cost,on-pa,ab-ar,sk-auditor,cpi,jasper-damage,hrfe,rdco,csrd,tnrd,mnp-sk,summerland,census-profile"></sup></p>
-        <div class="sub">
-          <h3>Records for what is not yet counted</h3>
-          <p class="chP">Official records exist for some of these, but they are kept out of the total: they are counted on different bases (fiscal or calendar years, some still forecasts), and they may overlap with what is already counted, since federal disaster payments repay part of what provinces spent.</p>
-          <ul class="rdl" id="leftOut"></ul>
-        </div>
+        <p class="fnote">Each cost counted once, estimates at their low end; 2026 from government forecasts. Costs with no public record are not included. Evacuations include Indigenous Services Canada's estimate for on-reserve emergency response. Per Canadian: the total divided by Canada's population on July 1, 2026, rounded down.<sup class="cite" data-cite="statcan-popest"></sup></p>
+        <details class="how2" id="billHow"><summary>How the bill was counted</summary><div id="billDetail"></div></details>
         <div class="sub">
           <h3>Firefighting costs each year in BC, Ontario, Alberta and Saskatchewan</h3>
           <div class="chart" id="chCost"></div>
@@ -610,7 +634,8 @@ ol.refs li:target{background:var(--glow)}
       <h3>Caveats</h3>
       <ul>
         <li><b>2026 outlines</b> are drawn around satellite heat detections and include unburned patches; hectares for 2026 are scaled to official totals province by province.</li>
-        <li><b>Emergency room visits</b> come from monthly records linked to monthly smoke levels; the range is wide and 2026 is not yet released.</li>
+        <li><b>Smoke and health</b> numbers are Health Canada's estimates for 2023; Health Canada has not published estimates for 2024 to 2026.</li>
+        <li><b>The bill</b> counts only costs with a public record, each once, estimates at their low end. The list under "How the bill was counted" names what is still missing.</li>
         <li><b>The share of land burned from the warming</b> compares hotter and cooler years within each area. It is a statistical estimate.</li>
         <li><b>Budget cover</b> compares a 2026-27 budget with what was spent in three recent years. Budget bases differ by province, as noted on each card.</li>
         <li><b>2026 is preliminary.</b> Official totals are as of October 20, 2026.</li>
@@ -667,9 +692,10 @@ function renderRefs() {
   const link = u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>`;
   $("#refList").innerHTML = REF.list.map((r, i) => `<li id="ref-${i + 1}">${esc(r.publisher)}. <i>${esc(r.title)}</i>. ${esc(r.version)}. ${link(r.url)}${(r.links || []).map(l => ` <span class="m">(${esc(l.label)}:</span> ${link(l.url)}<span class="m">)</span>`).join("")}. <span class="m">Licence: ${esc(r.licence)}. Accessed ${esc(dl(r.accessed))}.</span></li>`).join("");
 }
-const refsReady = fetch("data/references.json").then(r => r.json()).then(d => {
-  // number only the references this page cites (the file also lists sources used elsewhere in the repo)
-  const src = document.documentElement.innerHTML;
+const refsReady = Promise.all([fetch("data/references.json").then(r => r.json()), fetch("data/chapters.json").then(r => r.json())]).then(([d, ch]) => {
+  // number only the references this page cites (the file also lists sources used elsewhere in the repo);
+  // citations built from data (the bill's lines) are listed in data/chapters.json
+  const src = document.documentElement.innerHTML + JSON.stringify(ch.cites || {}) + JSON.stringify(((ch.c4 || {}).lines || []).map(l => l.refs.join(",")));
   REF.list = d.references.filter(r => new RegExp(`["',]\\s*${r.id.replace(/[-]/g, "\\-")}\\s*[",']`).test(src));
   REF.list.forEach((r, i) => { REF.num[r.id] = i + 1; });
   renderRefs(); fillCites(document);
@@ -819,14 +845,11 @@ function drawCharts() {
   const dr = S.drought.map(([k, v]) => [k, c12[k] != null ? c12[k] : v]);
   hrows($("#chDrought"), dr.map(([k, v]) => ({label: String(k), hl: k >= 2023, bars: [{v, fill: k >= 2023 ? "var(--fire)" : "var(--fireSoft)", title: `${k}: ${nf(v, 1)}%`}], text: nf(v, 0) + "%", tm: k < 2023})),
     {cite: "cdm,landcover", title: "Most forest in drought at one time, April to September", labW: 40, rh: 14, max: 100, txtW: 40});
-  // 3. smoke reach and ER visits
+  // 3. smoke reach and Health Canada estimates
   const rb = CH.c3.reached_by_year;
   vbars($("#chReach"), rb.map(([k, v]) => ({k, v: v / 1e6, hl: k >= 2023, cls: k >= 2023 ? "hot" : "m", title: `${k}: ${nf(v / 1e6, 1)} million people`})),
     {cite: "naps,airnow,statcan-da", title: "Canadians with at least one day of unhealthy smoke, May to September, millions", tick: t => nf(t, 0), h: 170, xlab: k => "'" + String(k).slice(2)});
-  const ed = CH.c3.ed_by_year;
-  hrows($("#chED"), ed.map(d => ({label: String(d.year), hl: d.year >= 2023, bars: [{v: d.hi, fill: "var(--fireDim)", title: `${d.year}: up to ${nf(d.hi, 0)}`}, {v: d.visits, fill: d.year >= 2023 ? "var(--fire)" : "var(--fireSoft)", h: 8, title: `${d.year}: about ${nf(d.visits, 0)} extra visits`}], text: nf(Math.round(d.visits / 1000) * 1000, 0), tm: d.year < 2023})),
-    {cite: "cihi-nacrs,naps,airnow", title: "Extra emergency room visits linked to smoke, May to September", labW: 40, rh: 20, txtW: 58,
-     legend: `<div class="lg">${sw("var(--fire)", "Best estimate")}${sw("var(--fireDim)", "Upper end of range")}</div>`});
+  hcTable();
   const r = C.C21 || {};
   hrows($("#chReserve"), [{label: "On reserve", hl: true, bars: [{v: r.on_reserve_pct, fill: "var(--fire)"}], text: F.pct1(r.on_reserve_pct)},
     {label: "Off reserve", bars: [{v: r.off_reserve_pct, fill: "var(--fireSoft)"}], text: F.pct2(r.off_reserve_pct)}],
@@ -898,21 +921,48 @@ function bubbles(el) {
     <svg viewBox="0 ${Math.min(0, PL.top - 2)} ${W} ${H - Math.min(0, PL.top - 2)}" role="img" aria-label="Bubble chart of summer temperature against drought by year">${g}${PL.svg}</svg>`;
 }
 
-/* chapter 4: receipt (a floor) and the records left out */
+/* chapter 3: Health Canada's 2023 estimates */
+function hcTable() {
+  const el = $("#hcTable"); if (!el) return;
+  const big = v => v >= 1e6, fm = v => big(v) ? nf(v / 1e6, 1) + " million" : nf(v, 0);
+  const rg = d => big(d.high) ? `${nf(d.low / 1e6, d.low < 1e6 ? 2 : 1)} to ${nf(d.high / 1e6, 1)} million` : `${nf(d.low, 0)} to ${nf(d.high, 0)}`;
+  el.innerHTML = `<table><caption>Health Canada's estimates for wildfire smoke in 2023${citeHTML("matz2026")}</caption>
+    <thead><tr><th>Effect</th><th class="n">Estimate</th><th class="r">Range</th></tr></thead><tbody>` +
+    CH.c3.hc_2023.map(d => `<tr><td>${esc(d.label)}</td><td class="n">${fm(d.central)}</td><td class="r">${rg(d)}</td></tr>`).join("") + `</tbody></table>`;
+}
+
+/* chapter 4: the bill */
+const BIL = v => v >= 1e9 ? "$" + nf(v / 1e9, 1) + "B" : v >= 1e7 ? "$" + nf(v / 1e6, 0) + "M" : v > 0 ? "$" + nf(v / 1e6, 1) + "M" : "$0";
 function receipt() {
   const el = $("#receipt"); if (!el) return;
-  const c = CH.c4;
-  el.innerHTML = `<div class="rt">Wildfire bill, 2023 to 2026</div>` + c.items.map(i => `<div class="ri"><span>${esc(i.label)}</span><b>$${nf(i.b, 1)}B</b></div>`).join("") +
-    `<div class="tot"><span>Total so far</span><span>$${nf(c.total_b, 1)}B</span></div>` +
-    `<div class="rt2">Not yet counted</div>` + c.not_counted.map(x => `<div class="ri nc"><span>${esc(x)}</span><b>?</b></div>`).join("");
-  const R = c.records_left_out, m = v => v == null ? "n/a" : "$" + nf(v / 1e6, 0) + "M";
-  const yrs = (a, lab) => a.values.map((v, i) => `${m(v)} (${lab[i]})`).join(", ");
-  $("#leftOut").innerHTML = [
-    `<li><b>Federal disaster payments to provinces</b>$${nf(R.dfaa.cad / 1e9, 1)} billion for wildfire events in 2023 to 2025${citeHTML("grants,cdd")}</li>`,
-    `<li><b>Manitoba wildfire spending</b>${yrs(R.mb, ["2023-24", "2024-25", "2025-26"])}${citeHTML("rd-mb")}</li>`,
-    `<li><b>Quebec, SOPFEU spending</b>${yrs(R.qc, ["2023", "2024", "2025"])}${citeHTML("rd-qc")}</li>`,
-    `<li><b>Yukon wildfire spending</b>${yrs(R.yt, ["2023-24", "2024-25", "2025-26 forecast"])}${citeHTML("rd-yt")}</li>`,
-    `<li><b>Other provinces and territories</b>See each one's record in the readiness chapter.</li>`].join("");
+  const c = CH.c4, cites = CH.cites || {};
+  el.innerHTML = `<div class="rt">Wildfire bill, 2023 to 2026</div>` +
+    c.items.map(i => `<div class="ri"><span>${esc(i.label)}${citeHTML(cites["bill_" + i.key] || "")}</span><b>$${nf(i.b, 1)}B</b></div>`).join("") +
+    `<div class="tot"><span>TOTAL</span><span>$${nf(c.total_b, 1)}B</span></div>`;
+  billDetail();
+}
+function billDetail() {
+  const el = $("#billDetail"); if (!el) return;
+  const c = CH.c4, cites = CH.cites || {};
+  let h = `<p>Every line below is in the total once. Official spending is counted in full. Estimates are counted at the low end of their range, except Indigenous Services Canada's on-reserve response, an estimate counted at its central value. Firefighting for 2026 uses government forecasts and budgets, since final costs are not yet published. Trees and firefighting are in 2025 dollars.</p>`;
+  c.items.forEach(i => {
+    const L = c.lines.filter(l => l.cat === i.key).sort((a, b) => b.counted - a.counted);
+    h += `<h4>${esc(i.label)} <span>$${nf(i.b, 1)}B</span></h4><ul class="bl2">` + L.map(l => {
+      const range = l.high > l.low ? ` · range ${BIL(l.low)} to ${BIL(l.high)}` : "";
+      const meta = [l.basis, l.source].filter(Boolean).map(esc).join(" · ");
+      return `<li class="${l.counted > 0 ? "" : "na"}"><b>${esc(l.label)}</b><span class="a">${l.counted > 0 ? BIL(l.counted) : "not added"}</span>` +
+        `<span class="m">${l.note ? esc(l.note) + " · " : ""}${meta}${range}${citeHTML(l.refs.join(","))}</span></li>`;
+    }).join("") + `</ul>`;
+  });
+  h += `<h4>Not added</h4><ul class="nf">
+    <li>Federal disaster payments to provinces ($${nf(c.dfaa_b, 1)} billion for 2023 to 2025 events) add nothing: they repay provinces for costs already counted above.${citeHTML(cites.bill_dfaa || "")}</li>
+    <li>Insured losses run about ${nf(c.insured_ratio, 1)} times the census home values used here, for the ${c.insured_events} events where both exist. They are industry figures and are not added.${citeHTML(cites.bill_insured || "")}</li>
+    <li>Lost wages and lost business output overlap, so only the larger of the two is counted.</li></ul>`;
+  const groups = [...new Set(c.not_found.map(x => x.group))];
+  h += `<h4>Still without a public record</h4><p>These costs are real but no government or agency has published a figure, so they are not in the total.</p>` +
+    groups.map(g => `<div class="nfg">${esc(g)}</div><ul class="nf">` + c.not_found.filter(x => x.group === g).map(x => `<li>${esc(x.text)}</li>`).join("") + `</ul>`).join("");
+  el.innerHTML = h;
+  fillCites(el);
 }
 
 /* chapter 5: emissions line */

@@ -125,18 +125,18 @@ def main():
     S = scripts_text()
     rows = []
     mans = (sorted(ROOT.glob("data/**/manifest.csv")) + sorted(ROOT.glob("analysis/*/manifest.csv"))
-            + sorted(ROOT.glob("analysis/*/manifest_*.csv")))
+            + sorted(ROOT.glob("analysis/*/manifest_*.csv")) + sorted(ROOT.glob("analysis/*/*_manifest.csv")))
     for m in mans:
         scope = str(m.parent.relative_to(ROOT))
         mname = f"{scope}/{m.name}"
-        idscope = scope if m.stem == "manifest" else f"{scope}/{m.stem.replace('manifest_', '')}"
+        idscope = scope if m.stem == "manifest" else f"{scope}/{m.stem.replace('manifest_', '').replace('_manifest', '')}"
         with open(m, encoding="utf-8") as f:
             for i, r in enumerate(csv.DictReader(f), 1):
-                dataset = g(r, "dataset", "description", "source", "file")
+                dataset = g(r, "dataset", "description", "source", "title_or_description", "file")
                 publisher = g(r, "publisher", "source")
                 url_field = g(r, "source_url", "url")
-                local = g(r, "local_path", "path")
-                date = g(r, "date_downloaded", "date_accessed", "downloaded")
+                local = g(r, "local_path", "path", "local_file")
+                date = g(r, "date_downloaded", "date_accessed", "downloaded", "accessed", "accessed_utc")
                 lic = g(r, "licence")
                 if not lic and "licence" not in r:
                     lic = next((v for k, v in PUBLISHER_LICENCE if k.lower() in publisher.lower()), "")
