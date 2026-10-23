@@ -25,9 +25,9 @@ AN = os.path.join(BASE, "analysis")
 VERIFIED = os.path.join(BASE, "story", "verified_numbers.json")
 N_SLIDES = 9
 # receipt lines on the bill slide (keys of bill_summary.json "slide"); the site uses the same labels
-BILL_LINES = [("trees", "Trees burned, 2023 to 2026"), ("fight", "Firefighting, 2023 to 2025"),
-              ("fight26", "Firefighting, 2026 estimates"), ("build", "Homes, buildings and repairs"),
-              ("evac", "Evacuations and hospital care"), ("work", "Lost work and business")]
+BILL_LINES = [("fight", "Firefighting, 2023 to 2025"), ("fight26", "Firefighting, 2026 estimates"),
+              ("build", "Homes, buildings and repairs"), ("evac", "Evacuations and hospital care"),
+              ("work", "Lost wages of evacuees")]
 PHOTO_DIR = "photos_v2"  # watermarked previews for review; swap for licensed files before posting
 # slide: (file, background-position, background-size)
 PHOTOS = {
@@ -82,7 +82,7 @@ DEFAULTS = {
     "C25.roads_km": 9503, "C25.rail_km": 686,
     "C27.timber_2023_nominal_b": 7.44, "C27.stumpage_collected_2023_b": 1.03,
     "C27.ratio": 7.2,
-    "C28.mean_2016_2022_b": 1.05, "C28.mean_2023_2025_b": 2.15, "C28.ratio": 2.04,
+    "C28.mean_2016_2022_b": 1.05, "C28.mean_2023_2025_b": 2.15, "C28.ratio": 2.04, "C28.mean_2016_2021_b": 1.13,
     "C31.managed_wildfire_2023_mt": 870, "C31.national_total_2023_mt": 686.9,
     "C32.share_1990s_pct": 2.3, "C32.share_2023_2026_pct": 7.5,
 }
@@ -158,6 +158,7 @@ def series():
     ev = {2023: ["tantallon2023", "barrington2023", "mcdougall2023", "bushcreek2023"], 2024: ["jasper2024"],
           2025: ["denare2025", "lacdubonnet2025"], 2026: ["2026 all outlines"]}
     s["value"] = {y: pv[pv.event.isin(e)].proxy_value_avg_cad.sum() / 1e6 for y, e in ev.items()}
+    s["value_low"] = {y: pv[pv.event.isin(e)].proxy_value_median_cad.sum() / 1e6 for y, e in ev.items()}
     s["value_bldg"] = {y: int(pv[pv.event.isin(e)].flagged_500m.sum()) for y, e in ev.items()}
     cs = pd.read_csv(os.path.join(AN, "climate-change/climate_series.csv"))
     t = cs[(cs.scope == "Canada") & (cs.variable == "t_mjja")]
@@ -335,7 +336,7 @@ def bubbles(pts, W=928, H=490, xmin=-0.6, xmax=2.4, ymin=0, ymax=85, label_years
         el.append(f'<text x="{left - 10}" y="{sy(g) + 7:.1f}" font-size="20" fill="{MUTED}" text-anchor="end">{g}%</text>')
     for g in (0, 1, 2):
         el.append(f'<line x1="{sx(g):.1f}" x2="{sx(g):.1f}" y1="{top}" y2="{H - bottom}" stroke="{GRID}" stroke-width="2"/>')
-        el.append(f'<text x="{sx(g):.1f}" y="{H - bottom + 26}" font-size="20" fill="{MUTED}" text-anchor="middle">{g:+d}°C</text>')
+        el.append(f'<text x="{sx(g):.1f}" y="{H - bottom + 26}" font-size="20" fill="{MUTED}" text-anchor="middle">{g:+d}°C</text>'.replace(">+0°C<", ">0°C<"))
     el.append(f'<text x="{(left + W - right) / 2:.1f}" y="{H - 4}" font-size="20" fill="{MUTED}" text-anchor="middle">Summer temperature, compared with 1961 to 1990</text>')
     el.append(f'<text x="0" y="18" font-size="20" fill="{MUTED}" text-anchor="start">Share of forest in drought</text>')
     labs = []
@@ -495,7 +496,7 @@ def build(s):
         dek="About the size of Germany, and more than double any four years since 1990.",
         body=f'''
 <div class="chart" style="margin-top:14px">{germany_map(Hmax=600, with_germany=False, crop_top=300)}</div>
-<p class="foot">Red: land burned 2023 to 2026 (NBAC and CWFIS satellite maps). Total: fire agencies.</p>''',
+<p class="foot">Red: land burned, 2023 to 2026.</p>''',
         source="CCFM National Forestry Database; CWFIS · Canada, 1990 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 2 Climate ------------------------------------------------------------
@@ -551,9 +552,9 @@ def build(s):
     slides.append(dict(
         kicker="The heat and drought",
         head="Hotter, drier summers",
-        dek=f"Summers were 1.1°C warmer, and 1 in {round(1 / V('C9.share_attributable'))} hectares burned came from the warming.",
+        dek=f"Summers ran {sum(s['temp'][y] for y in run) / 4:.1f}°C above 1961 to 1990, and 1 in {round(1 / V('C9.share_attributable'))} hectares burned is linked to that heat.",
         body=f'''
-<div class="note">Each circle is a year, 2003 to 2026. Bigger circle: more land burned. 2023 to 2026: driest four years since 1950.</div>
+<div class="note">Each circle is a year; bigger circles burned more land. 2023 to 2026: driest four fire seasons since 1950.</div>
 <div class="chart">{chm}</div>
 <p class="foot">Canada warms twice as fast as the world, mostly from human activity (ECCC; IPCC).</p>''',
         source="ECCC climate data; AAFC Canadian Drought Monitor · Canada, 1950 to 2026 · Oct 2026 · CC BY 4.0"))
@@ -606,10 +607,10 @@ def build(s):
         head=f"Smoke reached {round(ex23 / 1e6)} million people",
         dek=f"Health Canada estimates {hc_asthma / 1e6:.1f} million days of asthma symptoms in children in 2023.",
         body=f'''
-<div class="note">Days of unhealthy smoke at each air monitor, May to September 2023</div>
+<div class="note">Days of unhealthy smoke, May to September 2023</div>
 {ov.smoke_season_map()[1]}
 <div class="chart" style="margin-top:6px">{ov.smoke_season_map(W=928)[0]}</div>
-<p class="foot">Reached: at least one day of unhealthy smoke in 2023. Asthma: children aged 5 to 19, range {hc_lo / 1e6:.2f} to {hc_hi / 1e6:.1f} million (Matz et al. 2026).</p>''',
+<p class="foot">Reached: at least one day of unhealthy smoke in 2023.</p>''',
         source="NAPS and AirNow PM2.5; StatCan; Health Canada · 2023 · Oct 2026 · CC BY 4.0"))
 
     # 6 Property -----------------------------------------------------------
@@ -652,21 +653,28 @@ def build(s):
 <p class="foot">Trees valued at provincial cutting fees. 2026 not yet reported.</p>''',
         source="National Forestry Database; BC, ON, AB, SK public accounts · 2016 to 2025 · Oct 2026 · CC BY 4.0"))
 
-    # Costs (property + economy) ---------------------------------------
-    ff3 = sum(s["firefight"][y] for y in (2023, 2024, 2025))
-    pop26 = ov.population(2026)
-    # each dollar once, every estimate at its low end (analysis/costs-full/scripts/combine_bill.py)
-    sl_ = json.load(open(os.path.join(AN, "costs-full/bill_summary.json")))["slide"]
-    bill_svg, bill_total = ov.receipt([(lab, sl_[k] / 1e9 + (vtot if k == "build" else 0)) for k, lab in BILL_LINES], "TOTAL")
-    per_cap = int(bill_total * 1e9 / pop26 // 10 * 10)
+    # The cost ---------------------------------------------------------------
+    # every cost at the low end of its range, each counted once (analysis/costs-full/scripts/combine_bill.py);
+    # buildings at median census home values (the low end); the value of standing timber burned and the on-reserve
+    # estimate are reference lines outside the total
+    bs_ = json.load(open(os.path.join(AN, "costs-full/bill_summary.json")))
+    sl_ = bs_["slide"]
+    vlow = sum(s["value_low"].values()) / 1000
+    assert bs_["floor_work_group"] == "wages", "the work line label says wages"
+    cost_lines = [(lab, sl_[k] / 1e9 + (vlow if k == "build" else 0)) for k, lab in BILL_LINES]
+    cost_total = sum(v for _, v in cost_lines)
+    per_year = cost_total / 4
+    fight_share = (sl_["fight"] + sl_["fight26"]) / 1e9 / cost_total
+    ff_ratio = V("C28.mean_2023_2025_b") / V("C28.mean_2016_2021_b")
+    assert fight_share > 0.5 and 1.8 <= ff_ratio < 2.0, (fight_share, ff_ratio)  # "most of it", "nearly doubled"
+    bill_svg, _ = ov.receipt(cost_lines, "TOTAL")
     slides.append(dict(
-        kicker="The bill",
-        head=f"The fires cost at least ${per_cap:,.0f} per Canadian",
-        dek=f"Yearly firefighting costs doubled, to over ${int(V('C28.mean_2023_2025_b'))} billion.",
+        kicker="The cost",
+        head=f"Fires cost Canada at least ${int(per_year)} billion a year",
+        dek="Firefighting is most of it, and in four big provinces it nearly doubled.",
         body=f'''
-<div class="chart" style="text-align:center;margin-top:20px">{bill_svg}</div>
-<p class="foot">Each cost counted once, estimates at their low end. 2026: government forecasts and estimates from area burned. Costs with no public record are not included. Per Canadian: July 2026 population.</p>''',
-        source="Public accounts; Forestry Database; StatCan; CIHI · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
+<div class="chart" style="text-align:center;margin-top:20px">{bill_svg}</div>''',
+        source="Government public accounts; StatCan; CIHI; Sentinel-2 · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 8 Environment --------------------------------------------------------
     cy = list(range(2016, 2025))
@@ -679,12 +687,12 @@ def build(s):
                  row_h=56, vmax=10, fmt=lambda v: f"{f1(v)}%")
     slides.append(dict(
         kicker="The carbon",
-        head=f"Fires released {round(ov.emissions_line()[1][1] / ov.emissions_line()[1][0] * 12)} months of Canada's emissions",
-        dek=f"In 2023, wildfires released {fint(ov.emissions_line()[1][1])} million tonnes of CO₂. Canada reports it outside its official total.",
+        head=f"2023 fires: {round(ov.emissions_line()[1][1] / ov.emissions_line()[1][0] * 12)} months of Canada's emissions",
+        dek=f"That is {fint(ov.emissions_line()[1][1])} million tonnes of greenhouse gases, which Canada reports outside its official total.",
         body=f'''
-<div class="note">Million tonnes of CO₂ each year</div>
+<div class="note">Million tonnes of greenhouse gases each year</div>
 <div class="chart">{ov.emissions_line()[0]}</div>''',
-        source="ECCC National Inventory Report 2026; NBAC; SCANFI · Canada, 1990 to 2026 · Oct 2026 · CC BY 4.0"))
+        source="ECCC National Inventory Report 2026 · Canada, 2016 to 2024 · Oct 2026 · CC BY 4.0"))
 
     # Provinces ------------------------------------------------------------
     score_tbl, sc = ov.scorecard_html()
@@ -696,8 +704,8 @@ def build(s):
                    for k in ("fleet_age", "outside_crews"))
     slides.append(dict(
         kicker="Readiness",
-        head="Not ready for another season like these",
-        dek="Provinces budget for quiet years, fly old planes and borrow crews.",
+        head="Provinces are not ready for seasons like these",
+        dek="They budget for mild fire seasons, fly old planes and borrow crews.",
         body=f'''
 {ov.circles_legend()}
 <div class="chart" style="margin-top:14px">{ov.budget_circles()}</div>
@@ -713,7 +721,7 @@ def build(s):
     slides.append(dict(
         kicker="On the way",
         head="Help is years away",
-        dek=f"Of ${j_set / 1000:.2f} billion in new federal wildfire money, ${j_paid:.0f} million was paid by March 2025.",
+        dek=f"Of ${j_set / 1000:.2f} billion in new federal wildfire money, at least ${j_paid:.0f} million was paid by March 2025.",
         body=f'''
 <div class="chart" style="margin-top:18px">{ov.timeline()}</div>
 <div class="finds">
@@ -724,14 +732,15 @@ def build(s):
     # 9 Bottom line --------------------------------------------------------
     slides.append(dict(
         kicker="What would help",
-        head="Spot fires early, reach them fast",
-        dek=f"{round(sum(s['escape72']) / 20)} in 10 hectares burned in remote fires that grew fast.",
+        head="Catch fires while they are small",
+        dek=f"In 2026, {round(sum(s['escape72']) / 20)} in 10 hectares burned in fires that grew past 1,000 hectares within three days.",
         body=f'''
+<div class="note">What auditors and fire reviews call for</div>
 <ul class="needs">
-<li>Early warning from satellites, cameras and night flights</li>
-<li>Year-round crews and newer water bombers</li>
+<li>Faster first attack on new fires</li>
+<li>More firefighters, hired and trained before the season</li>
+<li>Newer water bombers, and pilots to fly them</li>
 <li>Fire budgets that match recent seasons</li>
-<li>Plans for hotter, drier summers</li>
 </ul>
 <div class="explore"><div class="ex1">Explore the full story and the data</div>
 <div class="ex2">Link in bio · sjvadrevu.github.io/canada-wildfires-2026</div></div>
@@ -744,7 +753,7 @@ def build(s):
         body="", cover=True,
         source="NRCan; ECCC; CIHI; StatCan; government budgets · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
     by = {sl["kicker"]: sl for sl in slides}
-    return [by[k] for k in ["The Median Canadian · Week 2", "The fires", "The heat and drought", "The smoke", "The bill",
+    return [by[k] for k in ["The Median Canadian · Week 2", "The fires", "The heat and drought", "The smoke", "The cost",
                             "The carbon", "Readiness", "On the way", "What would help"]]
 
 

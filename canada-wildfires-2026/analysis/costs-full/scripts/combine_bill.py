@@ -9,8 +9,11 @@ Inputs
 
 Rules
 - Floor ("at least", the figure on the slide): official spending in full and every estimate at the low end of its
-  range, including the Indigenous Services Canada on-reserve estimate. Lost wages and lost output overlap, so the
-  floor counts the larger of the two groups.
+  range. Lost wages and lost output overlap, so the floor counts the larger of the two groups.
+- Not in the floor: the value of standing timber burned (a valuation, not a cost: most burned forest is outside
+  harvest plans, much can be salvaged and harvest is capped by the allowable cut; economic-value/results.md), and the
+  Indigenous Services Canada on-reserve estimate (it partly repays provinces' evacuation costs that are counted, and
+  the overlap is not published; gov_notes.md, health_notes.md). Both stay in the file as reference lines.
 - Central and high: estimates at their central and high values; lost wages and lost output both added (they may
   partly overlap).
 - Firefighting in the 2026 season (forecasts, budgets and estimates from area burned; the season is not closed) is
@@ -47,8 +50,14 @@ REPLACED = [
 NEWS = (r"ctvnews|ctv\.ca|cbc\.ca|radio-canada|globalnews|citynews|thestar|theglobeandmail|nationalpost|cp24|saltwire|"
         r"chronicleherald|lapresse|ledevoir|journaldemontreal|calgaryherald|edmontonjournal|vancouversun|"
         r"winnipegfreepress|cabinradio|nnsl|panow|sasktoday|castanet|infonews|kelownanow|reuters|bloomberg|apnews")
-# receipt lines, in slide order
+# Low-end corrections where one research file's floor overlaps another's: (file, item starts with, reason)
+FLOOR_ZERO = [
+    ("gov2_costs.csv", "Parks Canada 2024 season: suppression and response beyond",
+     "Parks Canada's 2024-25 response spending, counted in another line, covers these fires too"),
+]
+# receipt lines, in slide order (trees: reference line, not part of the floor)
 RECEIPT = ["trees", "fight", "fight26", "build", "evac", "work"]
+FLOOR = ["fight", "fight26", "build", "evac", "work"]
 dropped = []
 
 
@@ -81,6 +90,10 @@ rows = []
 
 
 def add(line, cat, item, lo, ce, hi, src, note=""):
+    for f, start, why in FLOOR_ZERO:
+        if src == f and item.startswith(start):
+            lo = 0.0
+            note = "not added in the floor: " + why + ("; " + note if note else "")
     rows.append(dict(line=line, cat=cat, item=item, low=float(lo or 0), central=float(ce or 0), high=float(hi or 0),
                      src=src, note=note))
 
@@ -157,9 +170,16 @@ skip = df.cat.isin(["wages", "output"]) & (df.cat != keep_work)
 df.loc[skip, "counted"] = 0.0
 df.loc[skip, "note"] = ("not added in the floor: overlaps lost " + ("output" if keep_work == "output" else "wages") +
                         ", the larger of the two is counted")
-z = (df.counted == 0) & (df.high != 0) & ~skip
+z = (df.counted == 0) & (df.high != 0) & ~skip & ~df.note.str.startswith("not added in the floor")
 zero = "not added in the floor: estimate starts at zero or appears only in the high case"
 df.loc[z, "note"] = [zero + (f"; {n}" if n else "") for n in df.loc[z, "note"]]
+# reference lines outside the floor
+df.loc[df.cat == "trees", "counted"] = 0.0
+df.loc[df.cat == "trees", "note"] = ("not a cost: the value of standing timber burned, most of it outside harvest plans; "
+                                     "much can be salvaged")
+df.loc[df.cat == "isc", "counted"] = 0.0
+df.loc[df.cat == "isc", "note"] = ("not added: an estimate that partly repays provinces' evacuation costs counted above; "
+                                   "mostly First Nations evacuations")
 assert not set(df.line) - set(RECEIPT)
 df.to_csv(os.path.join(D, "combined_bill.csv"), index=False)
 pd.DataFrame(dropped).to_csv(os.path.join(D, "work", "combine_bill_dropped.csv"), index=False)
@@ -177,10 +197,13 @@ for k in ("low", "central", "high"):
 out["low"]["work"] = max(wages, output)
 for k in ("central", "high"):
     out[k]["work"] = tot("work", k)
-out["slide"] = {ln: float(df.loc[df.line == ln, "counted"].sum()) for ln in RECEIPT}
+out["slide"] = {ln: float(df.loc[df.line == ln, "counted"].sum()) for ln in FLOOR}
+out["slide"]["trees_reference"] = float(df.loc[df.cat == "trees", "low"].sum())
 out["slide"]["isc_estimate_low"] = float(df.loc[df.cat == "isc", "low"].sum())
 out["slide"]["isc_estimate_central"] = float(df.loc[df.cat == "isc", "central"].sum())
+out["slide"]["isc_estimate_high"] = float(df.loc[df.cat == "isc", "high"].sum())
 assert abs(out["slide"]["work"] - out["low"]["work"]) < 1
+assert abs(out["slide"]["evac"] + out["slide"]["isc_estimate_low"] - out["low"]["evac"]) < 1
 json.dump(out, open(os.path.join(D, "bill_summary.json"), "w"), indent=1)
 for k in ("low", "central", "high"):
     print(k, {a: round(b / 1e9, 3) for a, b in out[k].items()}, "total", round(sum(out[k].values()) / 1e9, 2))

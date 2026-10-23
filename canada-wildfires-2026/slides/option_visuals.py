@@ -139,16 +139,32 @@ def loss_map(W=928):
     return "".join(el), vals, other
 
 
-def receipt(items, total_label, W=560, unknown=()):
-    """A paper bill: items (label, dollars in billions); unknown: costs not yet counted, shown with a question mark."""
+def shown(values, d=1):
+    """Round values to d decimals so that they add up to the rounded total (largest remainder; values are only ever
+    rounded down or up by less than one unit, so an "at least" total is never overstated)."""
+    import math
+    f = 10 ** d
+    tot = round(sum(values) * f)
+    base = [math.floor(v * f) for v in values]
+    order = sorted(range(len(values)), key=lambda i: -(values[i] * f - base[i]))
+    for i in order[:max(0, tot - sum(base))]:
+        base[i] += 1
+    return [b / f for b in base], tot / f
+
+
+def receipt(items, total_label, W=560, unknown=(), title="WILDFIRE COSTS", sub="Canada, 2023 to 2026"):
+    """A paper bill: items (label, dollars in billions); unknown: costs not yet counted, shown with a question mark.
+    Lines are rounded so that they add up to the total shown."""
+    vals, tot_shown = shown([v for _, v in items])
+    items = [(lab, v) for (lab, _), v in zip(items, vals)]
     rows = len(items) + len(unknown)
     H = 140 + rows * 58 + 110
     el = _svg(W, H)
     el.append(f'<path d="M0,0 H{W} V{H - 14} ' + " ".join(f"L{W - (i + 0.5) * W / 14:.1f},{H if i % 2 == 0 else H - 14}" for i in range(14)) +
               f' L0,{H - 14} Z" fill="#f4efe6"/>')
     ink = "#1b2330"
-    el.append(f'<text x="{W / 2}" y="52" font-size="30" font-weight="800" fill="{ink}" text-anchor="middle">WILDFIRE BILL</text>')
-    el.append(f'<text x="{W / 2}" y="84" font-size="20" fill="#5b6575" text-anchor="middle">Canada, 2023 to 2026</text>')
+    el.append(f'<text x="{W / 2}" y="52" font-size="30" font-weight="800" fill="{ink}" text-anchor="middle">{title}</text>')
+    el.append(f'<text x="{W / 2}" y="84" font-size="20" fill="#5b6575" text-anchor="middle">{sub}</text>')
     el.append(f'<line x1="30" x2="{W - 30}" y1="106" y2="106" stroke="{ink}" stroke-dasharray="4 4"/>')
     y = 148
     for lab, v in items:
@@ -160,7 +176,7 @@ def receipt(items, total_label, W=560, unknown=()):
         el.append(f'<text x="{W - 34}" y="{y}" font-size="25" font-weight="700" fill="#7a8290" text-anchor="end">?</text>')
         y += 58
     el.append(f'<line x1="30" x2="{W - 30}" y1="{y - 32}" y2="{y - 32}" stroke="{ink}" stroke-width="2"/>')
-    tot = sum(v for _, v in items)
+    tot = tot_shown
     el.append(f'<text x="34" y="{y + 12}" font-size="26" font-weight="800" fill="{ink}">{total_label}</text>')
     el.append(f'<text x="{W - 34}" y="{y + 12}" font-size="36" font-weight="800" fill="#c0392b" text-anchor="end">${tot:.1f}B{"+" if unknown else ""}</text>')
     el.append("</svg>")
@@ -301,6 +317,25 @@ def smoke_season_map(year=2023, W=928):
     el.append("</svg>")
     legend = "".join(f'<span><i style="background:{c};border-radius:50%"></i>{lab}</span>' for _, c, lab in bands)
     return "".join(el), f'<div class="legend">{legend}</div>', len(g)
+
+
+def smoke_monitor_points(year=2023, W=928):
+    """The slide's smoke map as data for the site: each monitor's x, y in the CanMap(W) pixel box and its number of
+    unhealthy smoke days (daily PM2.5 above 27), May to September."""
+    m = CanMap(W)
+    raw = os.path.join(AN, "..", "data/smoke-cost/station_daily_pm25_2018_2026.csv")
+    keep = os.path.join(AN, "..", f"data/smoke-cost/monitor_unhealthy_days_{year}.csv")
+    if os.path.exists(raw):  # the raw daily file is not kept in the repo; the derived per-monitor table is
+        st = pd.read_csv(raw, usecols=["naps_id", "date", "pm25", "Latitude", "Longitude"], dtype={"naps_id": str})
+        st = st[(st.date >= f"{year}-05-01") & (st.date <= f"{year}-09-30")].dropna(subset=["Latitude", "Longitude", "pm25"])
+        g = st.groupby("naps_id").agg(lat=("Latitude", "first"), lon=("Longitude", "first"), n=("pm25", "size"),
+                                      days=("pm25", lambda s: int((s > 27).sum())))
+        g = g[g.n >= 100]
+        g.reset_index().to_csv(keep, index=False)
+    g = pd.read_csv(keep, dtype={"naps_id": str})
+    pts = [[round(x, 1), round(y, 1), int(r.days)] for (_, r), (x, y) in
+           zip(g.iterrows(), (m.xy(r.lon, r.lat) for _, r in g.iterrows()))]
+    return dict(map_w=W, map_h=round(m.H, 1), crop_top=round(m.xy(-96, 61.5)[1], 1), points=pts)
 
 
 POLICY = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "analysis", "policy")
@@ -488,6 +523,12 @@ def timeline(W=928, row=74):
     return "".join(el)
 
 
+def hu(x):
+    """Round half up (Python's round() and format() round half to even: 18.5 -> 18)."""
+    import math
+    return int(math.floor(float(x) + 0.5))
+
+
 def budget_circles(W=928, R=104, per_row=4):
     """Outer circle: average yearly fire spending 2023-24 to 2025-26. Filled inner circle: 2026-27 budget. Area to scale."""
     import math
@@ -513,11 +554,12 @@ def budget_circles(W=928, R=104, per_row=4):
         el.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{ro:.1f}" fill="rgba(255,255,255,0.06)" stroke="{MUTED}" stroke-width="2.5"/>')
         if pd.isna(r["budget_2026_27_m"]):
             el.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{ro:.1f}" fill="url(#hatch2)"/>')
-            pct, sub = "No line", f'${r["avg_actual_m"]:.0f}M spent'
+            pct, sub = "", f'No separate budget</text><text x="{cx:.1f}" y="{base + 80:.0f}" font-size="20" fill="{MUTED}" text-anchor="middle">${hu(r["avg_actual_m"])}M spent'
         else:
             ri = R * math.sqrt(r["budget_2026_27_m"] / vmax)
             el.append(f'<circle cx="{cx:.1f}" cy="{base - ri:.1f}" r="{ri:.1f}" fill="{FIRE}"/>')
-            pct, sub = f'{r["budget_pct"]:.0f}%', f'${r["budget_2026_27_m"]:.0f}M of ${r["avg_actual_m"]:.0f}M'
+            pct = f'{hu(100 * r["budget_2026_27_m"] / r["avg_actual_m"])}%'
+            sub = f'${hu(r["budget_2026_27_m"])}M of ${hu(r["avg_actual_m"])}M'
         el.append(f'<text x="{cx:.1f}" y="{base + 30:.0f}" font-size="27" font-weight="800" fill="{TEXT}" text-anchor="middle">{r["prov"]} '
                   f'<tspan fill="{FIRE}">{pct}</tspan></text>'
                   f'<text x="{cx:.1f}" y="{base + 56:.0f}" font-size="20" fill="{MUTED}" text-anchor="middle">{sub}</text>')
@@ -526,7 +568,7 @@ def budget_circles(W=928, R=104, per_row=4):
 
 
 def circles_legend():
-    return (f'<div class="legend"><span><i style="background:transparent;border:2.5px solid {MUTED};border-radius:50%"></i>Spent on fires in a typical recent year</span>'
+    return (f'<div class="legend"><span><i style="background:transparent;border:2.5px solid {MUTED};border-radius:50%"></i>Average spent on fires, 2023 to 2025</span>'
             f'<span><i style="background:{FIRE};border-radius:50%"></i>Budget for 2026-27</span></div>')
 
 

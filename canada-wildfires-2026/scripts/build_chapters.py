@@ -85,6 +85,7 @@ def main():
     pts = [dict(year=y, temp=round(float(s["temp"][y]), 3), drought=round(float(s["drought"][y]), 2),
                 mha=round(float(s["agency_year"][y]), 3)) for y in range(2003, 2027)]
     out["c2"] = dict(warming_c=V("C6.warming_c"), share_from_warming=V("C9.share_attributable"),
+                     warm_2023_2026=sum(s["temp"][y] for y in (2023, 2024, 2025, 2026)) / 4,
                      one_in=round(1 / V("C9.share_attributable")), rain_pct=V("C10.pct_of_normal"),
                      d1_max_2003_2022=V("C12.max_2003_2022"), points=pts)
 
@@ -104,6 +105,7 @@ def main():
     out["c3"] = dict(hc_2023=[dict(label=a, central=float(hc.loc[k, "central"]), low=float(hc.loc[k, "low"]), high=float(hc.loc[k, "high"]))
                               for a, k in hc_rows],
                      hc_asthma_days=float(hc.loc["Asthma symptom days", "central"]),
+                     monitors=ov.smoke_monitor_points(2023),
                      reached_2023=float(ex[ex.year == 2023].people_ge1day_gt27.iloc[0]),
                      reached_by_year=[[int(r.year), float(r.people_ge1day_gt27)] for r in ex.itertuples()],
                      ed_total=float(ed.loc[2023:2025, "extra_visits"].sum()),
@@ -114,33 +116,38 @@ def main():
                                  for y, r in ed.iterrows()])
 
     # 4 ---------------------------------------------------------------------
-    # The bill (analysis/costs-full/scripts/combine_bill.py): every line counted once. Receipt = bill_summary.json
-    # "slide": floor values, plus the 2026 government forecasts and budgets and the Indigenous Services Canada
-    # on-reserve estimate. Homes and buildings add the census-value building total to the extra building lines.
+    # The cost (analysis/costs-full/scripts/combine_bill.py): every cost at the low end of its range, each counted once.
+    # Receipt = bill_summary.json "slide" plus buildings destroyed at median census home values (the low end), shown
+    # with the slide's rounding (lines add up to the total). The value of standing timber burned and the on-reserve
+    # estimate are reference lines outside the total.
     bs = json.load(open(os.path.join(AN, "costs-full/bill_summary.json")))
     sl = bs["slide"]
-    vtot = sum(s["value"].values()) / 1000
+    vtot = sum(s["value_low"].values()) / 1000
+    vavg = sum(s["value"].values()) / 1000
     receipt = [(k, lab, sl[k] / 1e9 + (vtot if k == "build" else 0)) for k, lab in ms.BILL_LINES]
+    shown, total_shown = ov.shown([v for _, _, v in receipt])
     total = sum(v for _, _, v in receipt)
     pop = population_2026()
-    ff_ratio = V("C28.mean_2023_2025_b") / V("C28.mean_2016_2022_b")
-    assert 1.9 <= ff_ratio <= 2.2, ff_ratio  # the page says firefighting costs "doubled"
+    ff_ratio = V("C28.mean_2023_2025_b") / V("C28.mean_2016_2021_b")
+    assert 1.8 <= ff_ratio < 2.0, ff_ratio  # the page says firefighting costs "nearly doubled"
     cb = pd.read_csv(os.path.join(AN, "costs-full/combined_bill.csv"))
-    lines = bill_lines(cb, vtot)
+    lines = bill_lines(cb, vtot, vavg)
     # every line adds up to the receipt, category by category
     for k, _, v in receipt:
         got = sum(l["counted"] for l in lines if l["cat"] == k) / 1e9
         assert abs(got - v) < 0.0015, (k, got, v)
     ins = pd.read_csv(os.path.join(AN, "costs-full/work/econ_property_insured_vs_bill.csv"))
     ins_all = ins[ins.event == "Six events with both"].iloc[0]
-    out["c4"] = dict(items=[dict(key=k, label=lab, b=round(v, 3)) for k, lab, v in receipt],
-                     total_b=total, per_canadian=total * 1e9 / pop["value"],
+    out["c4"] = dict(items=[dict(key=k, label=lab, b=b) for (k, lab, _), b in zip(receipt, shown)],
+                     total_b=total, total_shown_b=total_shown, per_year_b=total / 4,
+                     per_canadian_year=total * 1e9 / 4 / pop["value"],
                      population_2026=pop["value"], population_source=pop["source"],
-                     isc_low_b=sl["isc_estimate_low"] / 1e9, isc_central_b=sl["isc_estimate_central"] / 1e9,
+                     trees_b=sl["trees_reference"] / 1e9,
+                     isc_low_b=sl["isc_estimate_low"] / 1e9, isc_high_b=sl["isc_estimate_high"] / 1e9,
                      lines=lines, not_found=not_found(),
                      dfaa_b=dfaa_total() / 1e9,
                      insured_ratio=float(ins_all.insured_cad / ins_all.bill_building_value_cad), insured_events=int(len(ins) - 1),
-                     firefight_2023_2025_b=V("C28.mean_2023_2025_b"), firefight_2016_2022_b=V("C28.mean_2016_2022_b"),
+                     firefight_2023_2025_b=V("C28.mean_2023_2025_b"), firefight_2016_2021_b=V("C28.mean_2016_2021_b"),
                      firefight_ratio=ff_ratio,
                      firefight_by_year=[[int(y), round(float(v), 3)] for y, v in sorted(s["firefight"].items())])
     out.setdefault("cites", {}).update(bill_cites(lines))
@@ -241,7 +248,7 @@ def split_urls(cell):
     return [u.rstrip(".,)") for u in re.split(r"\s*;\s*|\s+", str(cell or "")) if u.startswith("http")]
 
 
-def bill_lines(cb, vtot):
+def bill_lines(cb, vtot, vavg):
     """Every line of the bill with what is counted, its range, basis and sources. Lines come from combined_bill.csv
     (which reads gov*_costs.csv, econ*_costs.csv and health*_costs.csv, so later research rounds appear here once
     combine_bill.py is re-run); the cost files give each line's basis and source."""
@@ -264,9 +271,9 @@ def bill_lines(cb, vtot):
             info[(f, f'{r["item"]} ({r.get("period", "")})')] = d
             info[(f, f'{r["item"]} ({r.get("period", "")}), estimate')] = d
     # combine_bill.py sets, for each line, the receipt line it belongs to, the amount counted in the floor and a note
-    out = [dict(cat="build", label="Homes and buildings destroyed (official counts and a satellite check, at census home values)",
-                counted=vtot * 1e9, low=vtot * 1e9, high=vtot * 1e9, note="",
-                basis="buildings destroyed x 2021 census home values (average value of owner-occupied dwellings)",
+    out = [dict(cat="build", label="Homes and buildings destroyed (satellite counts, checked against official counts where they exist)",
+                counted=vtot * 1e9, low=vtot * 1e9, high=vavg * 1e9, note="",
+                basis="buildings destroyed x 2021 census home values (median; the range goes up to the average value)",
                 source="",
                 refs=["jasper-damage", "hrfe", "rdco", "csrd", "tnrd", "mnp-sk", "summerland", "census-profile", "sentinel2", "msbuildings"])]
     for _, r in cb.fillna({"note": ""}).iterrows():

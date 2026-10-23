@@ -277,6 +277,8 @@ ol.refs li:target{background:var(--glow)}
 .burnmap .lb{font-size:17px;font-weight:700;fill:var(--text);paint-order:stroke;stroke:var(--panel2);stroke-width:5px;stroke-linejoin:round}
 .burnmap circle{fill:var(--panel);stroke:var(--text);stroke-width:2.5}
 @media (max-width:560px){.burnmap .lb{font-size:32px;stroke-width:7px}.burnmap circle{r:8}}
+.smokemap svg{display:block;width:100%;height:auto;margin-top:6px;background:var(--panel2);border-radius:14px;overflow:hidden}
+.smokemap .provs path{fill:var(--land);stroke:var(--muted);stroke-width:.7;vector-effect:non-scaling-stroke}
 /* Health Canada table */
 .hct{margin-top:14px}
 .hct table{width:100%;border-collapse:collapse;font-size:.86rem;font-variant-numeric:tabular-nums}
@@ -436,7 +438,7 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
     <div class="story2">
       <article class="ch" id="c2"><span class="chN">2</span><span class="chK">The heat and drought</span>
         <h2 class="chH">Hotter, drier summers</h2>
-        <p class="reveal">Summers were <b><span data-n="@c2.warming_c" data-f="deg1"></span> warmer</b>, and <b>1 in <span data-n="@c2.one_in" data-f="int"></span> hectares</b> burned came from the warming.<sup class="cite" data-cite="ahccd,eccc-daily,nbac,cwfif"></sup></p>
+        <p class="reveal">Summers ran <b><span data-n="@c2.warm_2023_2026" data-f="deg1"></span> above 1961 to 1990</b>, and <b>1 in <span data-n="@c2.one_in" data-f="int"></span> hectares</b> burned is linked to that heat.<sup class="cite" data-cite="ahccd,eccc-daily,nbac,cwfif"></sup></p>
         <p class="chP">Canada is warming about twice as fast as the world, mostly from human activity. 2023 to 2026 were the driest four fire seasons since 1950, with <span data-n="@c2.rain_pct" data-f="pct0"></span> of usual summer rain.<sup class="cite" data-cite="cccr,ipcc,ahccd,eccc-daily"></sup></p>
         <div class="chart" id="chBubbles"></div>
         <div class="sub">
@@ -458,6 +460,7 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
       <article class="ch" id="c3"><span class="chN">3</span><span class="chK">The smoke</span>
         <h2 class="chH">Smoke reached <span data-n="@c3.reached_2023" data-f="mil0"></span> people</h2>
         <p class="reveal">Health Canada estimates <b><span data-n="@c3.hc_asthma_days" data-f="mil1"></span> days of asthma symptoms in children</b> in 2023.<sup class="cite" data-cite="matz2026"></sup></p>
+        <div class="chart smokemap" id="smokeMap"></div>
         <div class="chart" id="chReach"></div>
         <div class="hct" id="hcTable"></div>
         <p class="fnote">Unhealthy smoke: a day with fine particles above 27 micrograms per cubic metre at a monitor within 50 km.<sup class="cite" data-cite="caaqs,naps,airnow"></sup> Health Canada's estimates cover wildfire smoke from May to September 2023, from its Air Quality Benefits Assessment Tool; ranges are 95% intervals.<sup class="cite" data-cite="matz2026,aqbat"></sup> A study of Ontario by Health Canada and partners found asthma emergency visits rose after the June 2023 smoke.<sup class="cite" data-cite="chen2025-cmaj"></sup></p>
@@ -506,16 +509,16 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
   <!-- 4. What it cost -->
   <section class="panel">
     <div class="story2">
-      <article class="ch" id="c4"><span class="chN">4</span><span class="chK">The bill</span>
-        <h2 class="chH">The fires cost at least $<span data-n="@c4.per_canadian" data-f="f10"></span> per Canadian</h2>
-        <p class="reveal">Yearly firefighting costs doubled, to <span data-n="@c4.firefight_2023_2025_b" data-f="overb"></span>.<sup class="cite" data-cite="bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi"></sup></p>
+      <article class="ch" id="c4"><span class="chN">4</span><span class="chK">The cost</span>
+        <h2 class="chH">Fires cost Canada at least $<span data-n="@c4.per_year_b" data-f="fl0"></span> billion a year</h2>
+        <p class="reveal">Firefighting is most of it, and in four big provinces it nearly doubled.<sup class="cite" data-cite="bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi"></sup></p>
         <div class="receipt" id="receipt"></div>
-        <p class="fnote">Each cost counted once, estimates at their low end. 2026: government forecasts and estimates from area burned. Costs with no public record are not included. Evacuations include the low end of an estimate for Indigenous Services Canada's on-reserve emergency response. Per Canadian: the total divided by Canada's population on July 1, 2026, rounded down.<sup class="cite" data-cite="statcan-popest"></sup></p>
-        <details class="how2" id="billHow"><summary>How the bill was counted</summary><div id="billDetail"></div></details>
+        <p class="fnote">About $<span data-n="@c4.per_canadian_year" data-f="int"></span> a year for each Canadian.<sup class="cite" data-cite="statcan-popest"></sup></p>
+        <details class="how2" id="billHow"><summary>How the costs were counted</summary><div id="billDetail"></div></details>
         <div class="sub">
           <h3>Firefighting costs each year in BC, Ontario, Alberta and Saskatchewan</h3>
           <div class="chart" id="chCost"></div>
-          <p class="fnote">2016 to 2022 average: <span data-n="C28.mean_2016_2022_b" data-f="b2"></span> a year, in 2025 dollars. Each province's own definition; 2022 has no Alberta figure.<sup class="cite" data-cite="bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi"></sup></p>
+          <p class="fnote">2016 to 2021 average: <span data-n="C28.mean_2016_2021_b" data-f="b2"></span> a year, in 2025 dollars. Each province's own definition; 2022 has no Alberta figure.<sup class="cite" data-cite="bcws-cost,bc-budget,on-pa,ab-ar,sk-auditor,cpi"></sup></p>
         </div>
       </article>
     </div>
@@ -525,8 +528,8 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
   <section class="panel">
     <div class="story2">
       <article class="ch" id="c5"><span class="chN">5</span><span class="chK">The carbon</span>
-        <h2 class="chH">Fires released <span data-n="@c5.months_of_emissions" data-f="int"></span> months of Canada's emissions</h2>
-        <p class="reveal">In 2023, wildfires released <span data-n="@c5.wildfire_2023_mt" data-f="int"></span> million tonnes of CO₂. Canada reports it outside its official total.<sup class="cite" data-cite="nir2026"></sup></p>
+        <h2 class="chH">2023 fires: <span data-n="@c5.months_of_emissions" data-f="int"></span> months of Canada's emissions</h2>
+        <p class="reveal">That is <span data-n="@c5.wildfire_2023_mt" data-f="int"></span> million tonnes of greenhouse gases, which Canada reports outside its official total.<sup class="cite" data-cite="nir2026"></sup></p>
         <div class="chart" id="chEmis"></div>
         <div class="sub">
           <h3>Forests are burning again before they can grow back</h3>
@@ -546,8 +549,8 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
   <section class="panel" id="ready">
     <div class="story2 wide">
       <article class="ch" id="c6"><span class="chN">6</span><span class="chK">Readiness</span>
-        <h2 class="chH">Not ready for another season like these</h2>
-        <p class="reveal">Provinces budget for quiet years, fly old planes and borrow crews.<sup class="cite" data-cite="rd-bc,rd-ab,rd-sk,rd-mb,rd-on,rd-nt,rd-ns,ciffc-reports"></sup></p>
+        <h2 class="chH">Provinces are not ready for seasons like these</h2>
+        <p class="reveal">They budget for mild fire seasons, fly old planes and borrow crews.<sup class="cite" data-cite="rd-bc,rd-ab,rd-sk,rd-mb,rd-on,rd-nt,rd-ns,ciffc-reports"></sup></p>
         <div class="kf" id="readyHl"></div>
       </article>
     </div>
@@ -560,7 +563,7 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
       </div>
       <div class="card rdcard" id="readyCard"></div>
     </div>
-    <p class="fnote">Budget covers: 2026-27 base wildfire budget divided by the average of actual spending in 2023-24, 2024-25 and 2025-26. Saskatchewan's budget is for the whole public safety agency; Manitoba and the Northwest Territories mix budget lines; Quebec has no separate wildfire line; Yukon's 2026-27 figure could not be read. Each card says which numbers are forecasts. Sources: provincial and territorial estimates, public accounts, auditor and after-action reports, CIFFC reports.<sup class="cite" data-cite="rd-bc,rd-ab,rd-sk,rd-mb,rd-nt,rd-yt,rd-nu,rd-on,rd-qc,rd-nb,rd-ns,rd-nl,rd-pe,rd-pc,ciffc-reports"></sup></p>
+    <p class="fnote">Budget covers: 2026-27 base wildfire budget divided by the average of actual spending in 2023-24, 2024-25 and 2025-26. Saskatchewan's budget is for the whole public safety agency; Manitoba and the Northwest Territories mix budget lines; Quebec has no separate wildfire budget; Yukon's 2026-27 figure could not be read. Each card says which numbers are forecasts. Sources: provincial and territorial estimates, public accounts, auditor and after-action reports, CIFFC reports.<sup class="cite" data-cite="rd-bc,rd-ab,rd-sk,rd-mb,rd-nt,rd-yt,rd-nu,rd-on,rd-qc,rd-nb,rd-ns,rd-nl,rd-pe,rd-pc,ciffc-reports"></sup></p>
   </section>
 
   <!-- 7. What is on the way -->
@@ -568,7 +571,7 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
     <div class="story2">
       <article class="ch" id="c7"><span class="chN">7</span><span class="chK">On the way</span>
         <h2 class="chH">Help is years away</h2>
-        <p class="reveal">Of $<span data-n="@c7.set_total_m" data-f="b100"></span> billion in new federal wildfire money, $<span data-n="@c7.paid_total_m" data-f="int"></span> million was paid by March 2025.<sup class="cite" data-cite="fed-budgets,gc-infobase,nrcan-programs"></sup></p>
+        <p class="reveal">Of $<span data-n="@c7.set_total_m" data-f="b100"></span> billion in new federal wildfire money, at least $<span data-n="@c7.paid_total_m" data-f="int"></span> million was paid by March 2025.<sup class="cite" data-cite="fed-budgets,gc-infobase,nrcan-programs"></sup></p>
         <ol class="tl" id="timeline"></ol>
         <div class="kf">
           <div><b data-n="@c7.intl_2023" data-f="int"></b><span>firefighters and staff came from other countries to help in 2023<sup class="cite" data-cite="ciffc-reports"></sup></span></div>
@@ -594,15 +597,16 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
   <section class="panel">
     <div class="story2">
       <article class="ch" id="c8"><span class="chN">8</span><span class="chK">What would help</span>
-        <h2 class="chH">Spot fires early, reach them fast</h2>
-        <p class="reveal"><b><span data-n="@c8.fast_in_10" data-f="int"></span> in 10 hectares</b> burned in remote fires that grew fast.</p>
+        <h2 class="chH">Catch fires while they are small</h2>
+        <p class="reveal">In 2026, <b><span data-n="@c8.fast_in_10" data-f="int"></span> in 10 hectares</b> burned in fires that grew past 1,000 hectares within three days.<sup class="cite" data-cite="cwfis-m3,cwfis-hotspots,cwfif"></sup></p>
+        <p class="lead3">What auditors and fire reviews call for:</p>
         <ul class="needlist">
-          <li><b>Early warning</b>from satellites, cameras and night flights</li>
-          <li><b>Year-round crews</b>and newer water bombers</li>
+          <li><b>Faster first attack</b>on new fires</li>
+          <li><b>More firefighters</b>hired and trained before the season</li>
+          <li><b>Newer water bombers</b>and pilots to fly them</li>
           <li><b>Fire budgets</b>that match recent seasons</li>
-          <li><b>Plans</b>for hotter, drier summers</li>
         </ul>
-        <p class="fnote">Fast-growing fires: share of 2026 hectares in fires that passed 1,000 hectares within 72 hours of first detection (<span data-n="@c8.fast_range.0" data-f="pct0"></span> to <span data-n="@c8.fast_range.1" data-f="pct0"></span> depending on the start time used).<sup class="cite" data-cite="cwfis-m3,cwfis-hotspots,cwfif"></sup></p>
+        <p class="fnote">Fast growth: share of 2026 hectares in fires that passed 1,000 hectares within 72 hours (<span data-n="@c8.fast_range.0" data-f="pct0"></span> from first satellite detection, <span data-n="@c8.fast_range.1" data-f="pct0"></span> from the start of the main burning run). Late detection explains little of the area burned: for most of it, agencies logged the fire the same day satellites first saw it. Calls for faster first attack, staff, aircraft and budgets: provincial auditors, after-action reviews and CIFFC reports (see Readiness).<sup class="cite" data-cite="rd-sk,rd-on,rd-qc,rd-nt,rd-ab,ciffc-reports"></sup></p>
       </article>
     </div>
   </section>
@@ -635,8 +639,8 @@ details.how2 p{font-size:.84rem;line-height:1.5;margin:8px 0 0}
       <ul>
         <li><b>2026 outlines</b> are drawn around satellite heat detections and include unburned patches; hectares for 2026 are scaled to official totals province by province.</li>
         <li><b>Smoke and health</b> numbers are Health Canada's estimates for 2023; Health Canada has not published estimates for 2024 to 2026.</li>
-        <li><b>The bill</b> counts only costs with a public record, each once, estimates at their low end. The list under "How the bill was counted" names what is still missing.</li>
-        <li><b>The share of land burned from the warming</b> compares hotter and cooler years within each area. It is a statistical estimate.</li>
+        <li><b>The cost</b> counts only costs with a public record, estimates at their low end. The list under "How the costs were counted" names what is still missing.</li>
+        <li><b>The share of land burned linked to the heat</b> compares hotter and cooler years within each area. It is a statistical estimate, not proof of cause.</li>
         <li><b>Budget cover</b> compares a 2026-27 budget with what was spent in three recent years. Budget bases differ by province, as noted on each card.</li>
         <li><b>2026 is preliminary.</b> Official totals are as of October 20, 2026.</li>
       </ul>
@@ -717,7 +721,7 @@ const F = {
   r100: v => nf(Math.round(v / 100) * 100, 0), ord: v => ORD(Math.round(v)), nth: v => NTH(Math.round(v)),
   mha1: v => nf(v, 1) + " million", mha2: v => nf(v, 2) + " million", mil1: v => nf(v / 1e6, 1) + " million",
   deg: v => nf(v, 2) + " °C", b1: v => "$" + nf(v, 1) + " billion", b2: v => "$" + nf(v, 2) + " billion",
-  musd: v => "$" + nf(v, 0) + " million", deg1: v => Number(v).toFixed(1) + " °C", mil0: v => nf(v / 1e6, 0) + " million",
+  fl0: v => nf(Math.floor(v), 0), musd: v => "$" + nf(v, 0) + " million", deg1: v => Number(v).toFixed(1) + " °C", mil0: v => nf(v / 1e6, 0) + " million",
   yr: v => String(Math.round(v)), dbl: v => v >= 2 ? "more than double" : nf(v, 1) + " times", overb: v => "over $" + Math.floor(v) + " billion", f10: v => nf(Math.floor(v / 10) * 10, 0), r1000: v => nf(Math.round(v / 1000) * 1000, 0), r10: v => nf(Math.round(v / 10) * 10, 0), b100: v => nf(v / 1000, 2), oneIn: v => "1 in " + nf(v, 0), word: v => WORDS[v] || nf(v, 0), date: v => dateLong(v), dmd: v => MONTHS[+v.slice(5, 7) - 1] + " " + (+v.slice(8, 10)),
 };
 let CH = null;
@@ -834,6 +838,7 @@ function drawCharts() {
     {cite: "nbac,cwfif", title: "Area burned in Canada each year, millions of hectares, 1972 to 2026", tick: t => nf(t, 0), xt: [1972, 1980, 1990, 2000, 2010, 2026], h: 190, pad: 0.12,
      legend: `<div class="lg">${sw("var(--fire)", "2023 to 2026")}${sw("var(--fireSoft)", "Earlier years")}</div>`});
   burnMap();
+  smokeMap();
   // 2. hot and dry bubbles, temperature, drought
   bubbles($("#chBubbles"));
   const ta = S.temp_anom, w = C.C6 && C.C6.warming_c;
@@ -901,6 +906,29 @@ async function burnMap() {
 ${lab}</svg>`;
 }
 
+/* chapter 3: days of unhealthy smoke at each air monitor, 2023 (the slide's map; same pixel box as the other maps) */
+async function smokeMap() {
+  const el = $("#smokeMap"); if (!el || el.dataset.done) return;
+  el.dataset.done = 1;
+  const base = MAP.base || await fetch("data/map/base.json").then(r => r.json());
+  MAP.base = base;
+  const c = CH.c3.monitors, W = c.map_w, H = c.map_h, y0 = c.crop_top;
+  const provs = topojson.feature(base, base.objects.provs);
+  const path = d3.geoPath(d3.geoIdentity().reflectY(true).fitSize([W, H], provs));
+  const bands = [[20, "#8e1b2c", "20 days or more"], [10, "#e0533a", "10 to 19 days"], [1, "#e9a05c", "1 to 9 days"], [0, "#7b8492", "None"]];
+  const col = d => bands.find(b => d >= b[0])[1];
+  const r0 = el.clientWidth < 560 ? 9 : 6;
+  const pts = [...c.points].sort((a, b) => a[2] - b[2]);
+  el.innerHTML = `<div class="ttl">Days of unhealthy smoke, May to September 2023${citeHTML("naps,airnow,caaqs")}</div>
+    <div class="lg">${[...bands].reverse().map(b => sw(b[1], b[2], "border-radius:50%")).join("")}</div>
+    <svg viewBox="0 ${y0} ${W} ${(H - y0).toFixed(0)}" role="img" aria-label="Map of air monitors coloured by days of unhealthy smoke, May to September 2023">
+    <g class="provs">${provs.features.map(f => `<path d="${path(f)}"/>`).join("")}</g>
+    ${pts.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="${p[2] ? r0 + 1 : r0}" fill="${col(p[2])}" stroke="var(--panel)" stroke-width="1"><title>${p[2]} ${p[2] === 1 ? "day" : "days"}</title></circle>`).join("")}
+    </svg>`;
+  fillCites(el);
+}
+function smokeMapRedraw() { const el = $("#smokeMap"); if (el) { delete el.dataset.done; smokeMap(); } }
+
 /* chapter 2: bubbles, temperature against drought, size = area burned */
 function bubbles(el) {
   const P = CH.c2.points, W = widthOf(el), H = Math.round(W * 0.62), pl = 40, pr = 12, pt = 10, pb = 34;
@@ -938,15 +966,15 @@ const BIL = v => v >= 1e9 ? "$" + nf(v / 1e9, 1) + "B" : v >= 1e7 ? "$" + nf(v /
 function receipt() {
   const el = $("#receipt"); if (!el) return;
   const c = CH.c4, cites = CH.cites || {};
-  el.innerHTML = `<div class="rt">Wildfire bill, 2023 to 2026</div>` +
+  el.innerHTML = `<div class="rt">Wildfire costs, 2023 to 2026</div>` +
     c.items.map(i => `<div class="ri"><span>${esc(i.label)}${citeHTML(cites["bill_" + i.key] || "")}</span><b>$${nf(i.b, 1)}B</b></div>`).join("") +
-    `<div class="tot"><span>TOTAL</span><span>$${nf(c.total_b, 1)}B</span></div>`;
+    `<div class="tot"><span>TOTAL</span><span>$${nf(c.total_shown_b, 1)}B</span></div>`;
   billDetail();
 }
 function billDetail() {
   const el = $("#billDetail"); if (!el) return;
   const c = CH.c4, cites = CH.cites || {};
-  let h = `<p>Every line below is in the total once. Official spending is counted in full and every estimate at the low end of its range. Final 2026 costs are not yet published, so firefighting for 2026 uses government forecasts and budgets and, where there is no forecast or a season ran far past its budget, estimates from the area burned. Trees, firefighting, evacuations and health care are in 2025 dollars; homes and buildings at 2021 census values; other losses as reported.</p>`;
+  let h = `<p>Official spending is counted in full and every estimate at the low end of its range. Firefighting for 2026 uses government forecasts and budgets and, where there is no forecast or a season ran far past its budget, estimates from the area burned. Amounts are in 2025 dollars, except homes and buildings (2021 census values) and other losses as reported.</p>`;
   c.items.forEach(i => {
     const L = c.lines.filter(l => l.cat === i.key).sort((a, b) => b.counted - a.counted);
     h += `<h4>${esc(i.label)} <span>$${nf(i.b, 1)}B</span></h4><ul class="bl2">` + L.map(l => {
@@ -959,7 +987,9 @@ function billDetail() {
   h += `<h4>Not added</h4><ul class="nf">
     <li>Federal disaster payments to provinces ($${nf(c.dfaa_b, 1)} billion for 2023 to 2025 events) add nothing: they repay provinces for costs already counted above.${citeHTML(cites.bill_dfaa || "")}</li>
     <li>Insured losses run about ${nf(c.insured_ratio, 1)} times the census home values used here, for the ${c.insured_events} events where both exist. They are industry figures and are not added.${citeHTML(cites.bill_insured || "")}</li>
-    <li>Lost wages and lost business output overlap, so only the larger of the two is counted.</li></ul>`;
+    <li>Trees burned: $${nf(c.trees_b, 1)} billion of standing timber at Crown cutting fees. It is a value, not a cost: most of it stood outside harvest plans, and much can be salvaged.</li>
+    <li>Indigenous Services Canada's on-reserve emergency costs, estimated at $${nf(c.isc_low_b, 1)} to $${nf(c.isc_high_b, 1)} billion: part of this money repays provinces for evacuation costs already counted above, and the overlap is not published.</li>
+    <li>Lost business output overlaps lost wages, so only the larger of the two is counted.</li></ul>`;
   const groups = [...new Set(c.not_found.map(x => x.group))];
   h += `<h4>Still without a public record</h4><p>No government or agency has published these costs, so they are not in the total. Where a published figure is missing but official data allow an estimate, the line above says estimate.</p>` +
     groups.map(g => `<div class="nfg">${esc(g)}</div><ul class="nf">` + c.not_found.filter(x => x.group === g).map(x => `<li>${esc(x.text)}</li>`).join("") + `</ul>`).join("");
@@ -1016,7 +1046,7 @@ function drawCircles() {
         <rect x="${cx - cw / 2 + 2}" y="${y - 2}" width="${cw - 4}" height="${ch}" rx="12" class="hit"/>
         <circle cx="${cx}" cy="${base - ro}" r="${ro.toFixed(1)}" class="out"/>
         ${ri ? `<circle cx="${cx}" cy="${base - ri}" r="${ri.toFixed(1)}" class="in"/>` : ""}
-        <text x="${cx}" y="${base + 18}" class="nm">${esc(r.prov)} · ${r.budget_pct == null ? "no wildfire line" : nf(r.budget_pct, 0) + (nar ? "% in budget" : "% budgeted")}</text>
+        <text x="${cx}" y="${base + 18}" class="nm">${esc(r.prov)} · ${r.budget_pct == null ? "no separate budget" : nf(r.budget_pct, 0) + (nar ? "% in budget" : "% budgeted")}</text>
 </g>`;
     });
     y += ch + 6;
@@ -1543,7 +1573,7 @@ Promise.all([fetch("data/story.json").then(r => r.json()), fetch("data/chapters.
   try { initReady(); } catch (e) { console.error(e); }
   initComing();
   let rw = window.innerWidth;
-  window.addEventListener("resize", () => { if (Math.abs(window.innerWidth - rw) < 30) return; rw = window.innerWidth; clearTimeout(window._rt); window._rt = setTimeout(() => { drawCharts(); burnMapRedraw(); drawCircles(); if (MAP.sel) renderCard(true); if (RP.weeks) drawReplay(); }, 200); });
+  window.addEventListener("resize", () => { if (Math.abs(window.innerWidth - rw) < 30) return; rw = window.innerWidth; clearTimeout(window._rt); window._rt = setTimeout(() => { drawCharts(); burnMapRedraw(); smokeMapRedraw(); drawCircles(); if (MAP.sel) renderCard(true); if (RP.weeks) drawReplay(); }, 200); });
 });
 </script>
 </body></html>

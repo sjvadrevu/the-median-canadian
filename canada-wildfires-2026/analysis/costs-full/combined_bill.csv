@@ -1,5 +1,5 @@
 line,cat,item,low,central,high,src,note,counted
-trees,trees,"Timber burned at Crown stumpage, 2023 to 2026",12971356067.373177,12971356067.373177,12971356067.373177,economic-value/cost_tally_by_year.csv,,12971356067.373177
+trees,trees,"Timber burned at Crown stumpage, 2023 to 2026",12971356067.373177,12971356067.373177,12971356067.373177,economic-value/cost_tally_by_year.csv,"not a cost: the value of standing timber burned, most of it outside harvest plans; much can be salvaged",0.0
 fight,fight,"Firefighting, BC, AB, SK and ON, 2023 to 2025",6446739072.666205,6446739072.666205,6446739072.666205,economic-value/cost_tally_by_year.csv,,6446739072.666205
 fight,fight,"Quebec forest firefighting (SOPFEU total expenses, net of out-of-province billings) (2023 season (calendar year))",259710230.94,259710230.94,259710230.94,gov_costs.csv,,259710230.94
 fight,fight,"Quebec forest firefighting (SOPFEU total expenses, net of out-of-province billings) (2024 season (calendar year))",155122589.52,155122589.52,155122589.52,gov_costs.csv,,155122589.52
@@ -56,16 +56,16 @@ fight,fight,Manitoba Emergency Expenditures 2023-24: wildfire suppression share 
 fight26,fight_2026,Manitoba 2026 wildfire costs above the budget already in gov_ (estimate) (FY2026-27 (2026 season)),652650.8,26123369.85,35355696.39,gov2_costs.csv,,652650.8
 fight26,fight_2026,Quebec SOPFEU 2026 season cost (estimate; annual report due spring 2027) (2026 season (calendar year)),155734296.9,175712435.22,195690573.54,gov2_costs.csv,,155734296.9
 fight26,fight_2026,Saskatchewan SPSA 2026 season wildfire cost (estimate) (2026 season (calendar year)),17300000.0,38200000.0,73200000.0,gov2_costs.csv,,17300000.0
-fight,fight,Parks Canada 2024 season: suppression and response beyond the 59.8M already counted (2024 season),7859567.1,31234123.8,55221114.3,gov2_costs.csv,,7859567.1
+fight,fight,Parks Canada 2024 season: suppression and response beyond the 59.8M already counted (2024 season),0.0,31234123.8,55221114.3,gov2_costs.csv,"not added in the floor: Parks Canada's 2024-25 response spending, counted in another line, covers these fires too",0.0
 fight,fight,"Parks Canada wildfire response, 2025 season (estimate) (FY2025-26 (2025 season))",2581752.68,14694534.88,26807317.07,gov2_costs.csv,,2581752.68
 fight26,fight_2026,"Parks Canada wildfire response, 2026 season (estimate) (FY2026-27 (2026 season))",4582688.04,15668619.84,26754551.65,gov2_costs.csv,,4582688.04
 fight,fight,"Department of National Defence Operation LENTUS wildfire deployments, FY2024-25 (estimate) (FY2024-25 (2024 season))",263190.46,636356.21,1272712.41,gov2_costs.csv,,263190.46
 fight,fight,"Department of National Defence Operation LENTUS wildfire deployments, FY2025-26 (estimate) (FY2025-26 (2025 season))",313788.98,858197.19,2114398.88,gov2_costs.csv,,313788.98
 fight26,fight_2026,"Department of National Defence Operation LENTUS wildfire deployments, FY2026-27 (estimate) (FY2026-27 (2026 season))",32620.81,78872.38,157744.75,gov2_costs.csv,,32620.81
 evac,evac,"Public Safety Canada: match of Red Cross donations for the 2025 Saskatchewan, Manitoba and NL wildfires (2025 season)",1564823.0,1564823.0,1564823.0,gov2_costs.csv,,1564823.0
-evac,isc,"Indigenous Services Canada EMAP response, wildfire share (refined range; replaces the gov_ tier C rows) (FY2023-24 (2023 season))",208851817.84,322400392.16,364455419.69,gov2_costs.csv,mostly First Nations evacuations,208851817.84
-evac,isc,"Indigenous Services Canada EMAP response, wildfire share (refined range; replaces the gov_ tier C rows) (FY2024-25 (2024 season))",167261570.55,250424672.12,298888018.02,gov2_costs.csv,mostly First Nations evacuations,167261570.55
-evac,isc,"Indigenous Services Canada EMAP response, wildfire share (refined range; replaces the gov_ tier C rows) (FY2025-26 (2025 season))",414483856.34,619292944.01,687307585.0,gov2_costs.csv,mostly First Nations evacuations,414483856.34
+evac,isc,"Indigenous Services Canada EMAP response, wildfire share (refined range; replaces the gov_ tier C rows) (FY2023-24 (2023 season))",208851817.84,322400392.16,364455419.69,gov2_costs.csv,not added: an estimate that partly repays provinces' evacuation costs counted above; mostly First Nations evacuations,0.0
+evac,isc,"Indigenous Services Canada EMAP response, wildfire share (refined range; replaces the gov_ tier C rows) (FY2024-25 (2024 season))",167261570.55,250424672.12,298888018.02,gov2_costs.csv,not added: an estimate that partly repays provinces' evacuation costs counted above; mostly First Nations evacuations,0.0
+evac,isc,"Indigenous Services Canada EMAP response, wildfire share (refined range; replaces the gov_ tier C rows) (FY2025-26 (2025 season))",414483856.34,619292944.01,687307585.0,gov2_costs.csv,not added: an estimate that partly repays provinces' evacuation costs counted above; mostly First Nations evacuations,0.0
 evac,evac,City of West Kelowna 2023 McDougall Creek response (provincial reimbursements in the audited statements) (2023 season (calendar year)),0.0,0.0,2445377.22,gov2_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
 evac,evac,Town of Hay River 2023 wildfire civil emergency costs (2023 season (calendar year)),998263.59,998263.59,0.0,gov2_costs.csv,,998263.59
 evac,evac,City of Yellowknife 2023 wildfire response costs (claimed under disaster financial assistance) (2023 season),13941785.25,13941785.25,0.0,gov2_costs.csv,,13941785.25
@@ -154,7 +154,7 @@ evac,evac,"Evacuations: NWT Evacuation Travel Support Program, final (2023 (FY20
 evac,evac,Evacuations and relief: GNWT grant to United Way NWT for fire relief (2023 (FY2023-24)),418013.0,418013.0,0.0,health2_costs.csv,,418013.0
 evac,evac,"Evacuations: NWT Emergency Evacuation Relief Program, FY2024-25 (Fort Good Hope 2024 evacuation) (2024 (FY2024-25))",216393.0,216393.0,0.0,health2_costs.csv,,216393.0
 evac,evac,Evacuations and response: high-case adjustment to the first-round GNWT 2023 remainder (final ETSP and EIDS larger than the partial 3.1 M) (2023),0.0,0.0,-6995448.0,health2_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case,0.0
-evac,isc,"Evacuations and response on reserve 2026: ISC wildfire response cost, estimate (2026 (FY2026-27))",0.0,127984751.0,137103829.0,health2_costs.csv,not added in the floor: estimate starts at zero or appears only in the high case; mostly First Nations evacuations,0.0
+evac,isc,"Evacuations and response on reserve 2026: ISC wildfire response cost, estimate (2026 (FY2026-27))",0.0,127984751.0,137103829.0,health2_costs.csv,not added: an estimate that partly repays provinces' evacuation costs counted above; mostly First Nations evacuations,0.0
 evac,evac,"Evacuations 2026 off reserve (BC, NWT): evacuee support and local response, estimate (2026)",16704773.0,42096928.0,50180346.0,health2_costs.csv,,16704773.0
 work,wages,Lost work and wages of evacuated workers (revised) (2023),179278386.0,265811196.0,338884918.0,health2_costs.csv,,179278386.0
 work,wages,Lost work and wages of evacuated workers (revised) (2024),33783899.0,47899123.0,93161046.0,health2_costs.csv,,33783899.0

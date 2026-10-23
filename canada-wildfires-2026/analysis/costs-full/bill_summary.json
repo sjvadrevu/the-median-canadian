@@ -1,10 +1,10 @@
 {
  "note": "CAD, 2025 dollars; 'build' excludes buildings destroyed at census home values (added by the builders)",
- "rules": "- Floor (\"at least\", the figure on the slide): official spending in full and every estimate at the low end of its\n  range, including the Indigenous Services Canada on-reserve estimate. Lost wages and lost output overlap, so the\n  floor counts the larger of the two groups.\n- Central and high: estimates at their central and high values; lost wages and lost output both added (they may\n  partly overlap).\n- Firefighting in the 2026 season (forecasts, budgets and estimates from area burned; the season is not closed) is\n  its own line.\n- A line whose dollar figure comes from a news report is not counted (news is used only to find documents).\n- Transfers (federal disaster assistance, income support, EI) are not added: they pay for costs already counted.",
+ "rules": "- Floor (\"at least\", the figure on the slide): official spending in full and every estimate at the low end of its\n  range. Lost wages and lost output overlap, so the floor counts the larger of the two groups.\n- Not in the floor: the value of standing timber burned (a valuation, not a cost: most burned forest is outside\n  harvest plans, much can be salvaged and harvest is capped by the allowable cut; economic-value/results.md), and the\n  Indigenous Services Canada on-reserve estimate (it partly repays provinces' evacuation costs that are counted, and\n  the overlap is not published; gov_notes.md, health_notes.md). Both stay in the file as reference lines.\n- Central and high: estimates at their central and high values; lost wages and lost output both added (they may\n  partly overlap).\n- Firefighting in the 2026 season (forecasts, budgets and estimates from area burned; the season is not closed) is\n  its own line.\n- A line whose dollar figure comes from a news report is not counted (news is used only to find documents).\n- Transfers (federal disaster assistance, income support, EI) are not added: they pay for costs already counted.",
  "floor_work_group": "wages",
  "low": {
   "trees": 12971356067.373177,
-  "fight": 8568563780.036206,
+  "fight": 8560704212.936206,
   "fight26": 1803334077.77,
   "build": 372935322.0,
   "evac": 1284979091.4699998,
@@ -27,13 +27,14 @@
   "work": 2492268638.0
  },
  "slide": {
-  "trees": 12971356067.373177,
-  "fight": 8568563780.036206,
+  "fight": 8560704212.936206,
   "fight26": 1803334077.77,
   "build": 372935322.0,
-  "evac": 1284979091.4699998,
+  "evac": 494381846.74,
   "work": 310029473.0,
+  "trees_reference": 12971356067.373177,
   "isc_estimate_low": 790597244.73,
-  "isc_estimate_central": 1320102759.29
+  "isc_estimate_central": 1320102759.29,
+  "isc_estimate_high": 1487754851.71
  }
 }
