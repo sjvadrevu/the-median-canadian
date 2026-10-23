@@ -1,0 +1,72 @@
+scope,prov,n_cd,employed_all,forestry_jobs,accommodation_jobs,n_cd_high_forestry,forestry_jobs_in_high_forestry_cd,employed_in_high_forestry_cd,n_cd_high_accommodation,accommodation_jobs_in_high_accommodation_cd,employed_in_high_accommodation_cd,cd_high_forestry,cd_high_accommodation
+touched_2026,AB,6,152390.0,3070.0,1395.0,1,2475.0,24065.0,0,0.0,0.0,Division No. 17,
+touched_2026,BC,16,633685.0,24560.0,8855.0,11,19565.0,304810.0,7,4140.0,148980.0,Bulkley-Nechako;Cariboo;Mount Waddington;Central Kootenay;Columbia-Shuswap;Strathcona;North Okanagan;East Kootenay;Peace River;Kitimat-Stikine;Thompson-Nicola,Squamish-Lillooet;Northern Rockies;Columbia-Shuswap;East Kootenay;Mount Waddington;Okanagan-Similkameen;Strathcona
+touched_2026,MB,10,150975.0,1315.0,1445.0,1,320.0,8455.0,3,330.0,14445.0,Division No. 21,Division No. 21;Division No. 23;Division No. 16
+touched_2026,NB,2,17880.0,625.0,85.0,1,340.0,4055.0,0,0.0,0.0,Queens,
+touched_2026,NL,2,12460.0,15.0,160.0,0,0.0,0.0,1,20.0,750.0,,Division No. 11
+touched_2026,NS,1,215125.0,730.0,1050.0,0,0.0,0.0,0,0.0,0.0,,
+touched_2026,NT,6,20605.0,85.0,305.0,0,0.0,0.0,1,45.0,1150.0,,Region 4
+touched_2026,NU,2,5130.0,0.0,80.0,0,0.0,0.0,0,0.0,0.0,,
+touched_2026,ON,6,186610.0,7330.0,1925.0,5,6535.0,141205.0,0,0.0,0.0,Sudbury;Rainy River;Cochrane;Kenora;Thunder Bay,
+touched_2026,QC,7,153905.0,4535.0,1220.0,3,2920.0,47335.0,0,0.0,0.0,Témiscamingue;Nord-du-Québec;La Vallée-de-l'Or,
+touched_2026,SK,7,234455.0,1095.0,1710.0,0,0.0,0.0,0,0.0,0.0,,
+touched_2026,YT,1,21905.0,65.0,315.0,0,0.0,0.0,0,0.0,0.0,,
+touched_2026,Canada,66,1805125.0,43425.0,18545.0,22,32155.0,529925.0,12,4535.0,165325.0,Bulkley-Nechako;Cariboo;Témiscamingue;Mount Waddington;Division No. 17;Sudbury;Queens;Central Kootenay;Columbia-Shuswap;Nord-du-Québec;Strathcona;Rainy River;Cochrane;Kenora;North Okanagan;East Kootenay;La Vallée-de-l'Or;Peace River;Kitimat-Stikine;Thompson-Nicola;Division No. 21;Thunder Bay,Squamish-Lillooet;Region 4;Northern Rockies;Columbia-Shuswap;Division No. 11;East Kootenay;Division No. 21;Division No. 23;Division No. 16;Mount Waddington;Okanagan-Similkameen;Strathcona
+burned_ge1pct_2026,BC,4,282430.0,6480.0,3725.0,1,2525.0,65635.0,2,2075.0,64930.0,Thompson-Nicola,Squamish-Lillooet;Okanagan-Similkameen
+burned_ge1pct_2026,MB,1,1560.0,0.0,35.0,0,0.0,0.0,1,35.0,1560.0,,Division No. 23
+burned_ge1pct_2026,NB,1,4055.0,340.0,45.0,1,340.0,4055.0,0,0.0,0.0,Queens,
+burned_ge1pct_2026,NT,5,18045.0,75.0,285.0,0,0.0,0.0,1,45.0,1150.0,,Region 4
+burned_ge1pct_2026,ON,2,71575.0,2710.0,755.0,2,2710.0,71575.0,0,0.0,0.0,Rainy River;Thunder Bay,
+burned_ge1pct_2026,QC,1,19110.0,1095.0,240.0,1,1095.0,19110.0,0,0.0,0.0,Nord-du-Québec,
+burned_ge1pct_2026,SK,1,9015.0,75.0,110.0,0,0.0,0.0,0,0.0,0.0,,
+burned_ge1pct_2026,Canada,15,405790.0,10775.0,5195.0,5,6670.0,160375.0,4,2155.0,67640.0,Queens;Nord-du-Québec;Rainy River;Thompson-Nicola;Thunder Bay,Squamish-Lillooet;Region 4;Division No. 23;Okanagan-Similkameen
+near_2026_25km,AB,11,1092985.0,8155.0,8035.0,1,2475.0,24065.0,1,1665.0,18950.0,Division No. 17,Division No. 15
+near_2026_25km,BC,18,649120.0,25200.0,9090.0,12,20170.0,318790.0,8,4180.0,150435.0,Bulkley-Nechako;Cariboo;Mount Waddington;Central Kootenay;Columbia-Shuswap;Strathcona;North Okanagan;East Kootenay;Kootenay Boundary;Peace River;Kitimat-Stikine;Thompson-Nicola,Squamish-Lillooet;Northern Rockies;Columbia-Shuswap;Central Coast;East Kootenay;Mount Waddington;Okanagan-Similkameen;Strathcona
+near_2026_25km,MB,20,586735.0,3115.0,4205.0,1,320.0,8455.0,3,330.0,14445.0,Division No. 21,Division No. 21;Division No. 23;Division No. 16
+near_2026_25km,NB,5,113820.0,3000.0,1115.0,2,1535.0,37320.0,1,245.0,11165.0,Queens;Kings,Charlotte
+near_2026_25km,NL,2,12460.0,15.0,160.0,0,0.0,0.0,1,20.0,750.0,,Division No. 11
+near_2026_25km,NS,1,215125.0,730.0,1050.0,0,0.0,0.0,0,0.0,0.0,,
+near_2026_25km,NT,6,20605.0,85.0,305.0,0,0.0,0.0,1,45.0,1150.0,,Region 4
+near_2026_25km,NU,3,11945.0,0.0,170.0,0,0.0,0.0,0,0.0,0.0,,
+near_2026_25km,ON,12,899705.0,10995.0,4690.0,5,6535.0,141205.0,0,0.0,0.0,Sudbury;Rainy River;Cochrane;Kenora;Thunder Bay,
+near_2026_25km,QC,10,186425.0,7125.0,1515.0,5,5165.0,66255.0,0,0.0,0.0,Maria-Chapdelaine;Témiscamingue;La Vallée-de-la-Gatineau;Nord-du-Québec;La Vallée-de-l'Or,
+near_2026_25km,SK,12,453670.0,1435.0,3530.0,0,0.0,0.0,0,0.0,0.0,,
+near_2026_25km,YT,1,21905.0,65.0,315.0,0,0.0,0.0,0,0.0,0.0,,
+near_2026_25km,Canada,101,4264500.0,59920.0,34180.0,26,36200.0,596090.0,15,6485.0,196895.0,Bulkley-Nechako;Maria-Chapdelaine;Cariboo;Témiscamingue;Mount Waddington;Division No. 17;Sudbury;Queens;La Vallée-de-la-Gatineau;Central Kootenay;Columbia-Shuswap;Nord-du-Québec;Strathcona;Rainy River;Cochrane;Kenora;North Okanagan;East Kootenay;Kootenay Boundary;La Vallée-de-l'Or;Peace River;Kitimat-Stikine;Thompson-Nicola;Division No. 21;Kings;Thunder Bay,Division No. 15;Squamish-Lillooet;Region 4;Northern Rockies;Columbia-Shuswap;Central Coast;Division No. 11;East Kootenay;Division No. 21;Division No. 23;Charlotte;Division No. 16;Mount Waddington;Okanagan-Similkameen;Strathcona
+near_2026_large_25km,AB,7,972925.0,6275.0,6840.0,1,2475.0,24065.0,1,1665.0,18950.0,Division No. 17,Division No. 15
+near_2026_large_25km,BC,13,574395.0,21510.0,7935.0,8,16500.0,246250.0,5,3650.0,123195.0,Bulkley-Nechako;Cariboo;Central Kootenay;Columbia-Shuswap;North Okanagan;East Kootenay;Kootenay Boundary;Thompson-Nicola,Squamish-Lillooet;Columbia-Shuswap;Central Coast;East Kootenay;Okanagan-Similkameen
+near_2026_large_25km,MB,14,520245.0,2945.0,3525.0,1,320.0,8455.0,3,330.0,14445.0,Division No. 21,Division No. 21;Division No. 23;Division No. 16
+near_2026_large_25km,NB,5,113820.0,3000.0,1115.0,2,1535.0,37320.0,1,245.0,11165.0,Queens;Kings,Charlotte
+near_2026_large_25km,NL,2,12460.0,15.0,160.0,0,0.0,0.0,1,20.0,750.0,,Division No. 11
+near_2026_large_25km,NT,5,18045.0,75.0,285.0,0,0.0,0.0,1,45.0,1150.0,,Region 4
+near_2026_large_25km,NU,3,11945.0,0.0,170.0,0,0.0,0.0,0,0.0,0.0,,
+near_2026_large_25km,ON,5,141205.0,6535.0,1650.0,5,6535.0,141205.0,0,0.0,0.0,Sudbury;Rainy River;Cochrane;Kenora;Thunder Bay,
+near_2026_large_25km,QC,6,148170.0,4420.0,1190.0,3,2920.0,47335.0,0,0.0,0.0,Témiscamingue;Nord-du-Québec;La Vallée-de-l'Or,
+near_2026_large_25km,SK,8,249855.0,1105.0,1840.0,0,0.0,0.0,0,0.0,0.0,,
+near_2026_large_25km,YT,1,21905.0,65.0,315.0,0,0.0,0.0,0,0.0,0.0,,
+near_2026_large_25km,Canada,69,2784970.0,45945.0,25025.0,20,30285.0,504630.0,12,5955.0,169655.0,Bulkley-Nechako;Cariboo;Témiscamingue;Division No. 17;Sudbury;Queens;Central Kootenay;Columbia-Shuswap;Nord-du-Québec;Rainy River;Cochrane;Kenora;North Okanagan;East Kootenay;Kootenay Boundary;La Vallée-de-l'Or;Thompson-Nicola;Division No. 21;Kings;Thunder Bay,Division No. 15;Squamish-Lillooet;Region 4;Columbia-Shuswap;Central Coast;Division No. 11;East Kootenay;Division No. 21;Division No. 23;Charlotte;Division No. 16;Okanagan-Similkameen
+touched_2023_2026,AB,16,1074975.0,11340.0,9380.0,4,5635.0,74570.0,3,2115.0,38395.0,Division No. 17;Division No. 14;Division No. 13;Division No. 18,Division No. 15;Division No. 18;Division No. 14
+touched_2023_2026,BC,26,1022345.0,34285.0,13335.0,16,26590.0,402620.0,10,4850.0,173335.0,Bulkley-Nechako;Cariboo;Mount Waddington;Fraser-Fort George;Central Kootenay;Columbia-Shuswap;Powell River;Alberni-Clayoquot;Strathcona;North Okanagan;East Kootenay;Kootenay Boundary;Peace River;Sunshine Coast;Kitimat-Stikine;Thompson-Nicola,Squamish-Lillooet;Northern Rockies;Alberni-Clayoquot;Columbia-Shuswap;Central Coast;East Kootenay;Skeena-Queen Charlotte;Mount Waddington;Okanagan-Similkameen;Strathcona
+touched_2023_2026,MB,13,194075.0,1590.0,1790.0,1,320.0,8455.0,3,330.0,14445.0,Division No. 21,Division No. 21;Division No. 23;Division No. 16
+touched_2023_2026,NB,6,71640.0,2910.0,595.0,3,1920.0,33350.0,1,245.0,11165.0,Restigouche;Queens;Northumberland,Charlotte
+touched_2023_2026,NL,7,173740.0,545.0,1300.0,0,0.0,0.0,1,20.0,750.0,,Division No. 11
+touched_2023_2026,NS,6,273005.0,1270.0,1410.0,0,0.0,0.0,0,0.0,0.0,,
+touched_2023_2026,NT,6,20605.0,85.0,305.0,0,0.0,0.0,1,45.0,1150.0,,Region 4
+touched_2023_2026,NU,3,11945.0,0.0,170.0,0,0.0,0.0,0,0.0,0.0,,
+touched_2023_2026,ON,8,243700.0,9045.0,2435.0,6,7130.0,154440.0,0,0.0,0.0,Sudbury;Rainy River;Cochrane;Kenora;Timiskaming;Thunder Bay,
+touched_2023_2026,QC,16,238550.0,11830.0,2220.0,11,9870.0,118380.0,2,245.0,9935.0,La Tuque;Maria-Chapdelaine;Témiscamingue;Le Domaine-du-Roy;La Haute-Côte-Nord;La Vallée-de-la-Gatineau;Abitibi-Ouest;Antoine-Labelle;Nord-du-Québec;Mékinac;La Vallée-de-l'Or,La Haute-Côte-Nord;La Tuque
+touched_2023_2026,SK,12,464985.0,2070.0,3685.0,0,0.0,0.0,0,0.0,0.0,,
+touched_2023_2026,YT,1,21905.0,65.0,315.0,0,0.0,0.0,0,0.0,0.0,,
+touched_2023_2026,Canada,120,3811470.0,75035.0,36940.0,41,51465.0,791815.0,21,7850.0,249175.0,La Tuque;Bulkley-Nechako;Maria-Chapdelaine;Cariboo;Témiscamingue;Mount Waddington;Division No. 17;Le Domaine-du-Roy;La Haute-Côte-Nord;Sudbury;Fraser-Fort George;Division No. 14;Restigouche;Queens;La Vallée-de-la-Gatineau;Abitibi-Ouest;Central Kootenay;Columbia-Shuswap;Powell River;Alberni-Clayoquot;Antoine-Labelle;Nord-du-Québec;Strathcona;Rainy River;Mékinac;Division No. 13;Cochrane;Kenora;North Okanagan;Timiskaming;Division No. 18;East Kootenay;Kootenay Boundary;La Vallée-de-l'Or;Peace River;Sunshine Coast;Kitimat-Stikine;Thompson-Nicola;Division No. 21;Thunder Bay;Northumberland,Division No. 15;Squamish-Lillooet;Region 4;Northern Rockies;Alberni-Clayoquot;La Haute-Côte-Nord;Columbia-Shuswap;Central Coast;Division No. 11;East Kootenay;Division No. 18;Division No. 21;Division No. 14;Division No. 23;Charlotte;Division No. 16;Skeena-Queen Charlotte;Mount Waddington;La Tuque;Okanagan-Similkameen;Strathcona
+burned_ge1pct_2023_2026,AB,8,201310.0,6395.0,3830.0,3,3990.0,43510.0,3,2115.0,38395.0,Division No. 17;Division No. 14;Division No. 18,Division No. 15;Division No. 18;Division No. 14
+burned_ge1pct_2023_2026,BC,13,552195.0,20325.0,7715.0,7,15330.0,223005.0,5,3690.0,123925.0,Bulkley-Nechako;Cariboo;Central Kootenay;Columbia-Shuswap;East Kootenay;Peace River;Thompson-Nicola,Squamish-Lillooet;Northern Rockies;Columbia-Shuswap;East Kootenay;Okanagan-Similkameen
+burned_ge1pct_2023_2026,MB,6,58550.0,570.0,720.0,1,320.0,8455.0,2,235.0,10015.0,Division No. 21,Division No. 21;Division No. 23
+burned_ge1pct_2023_2026,NB,2,17880.0,625.0,85.0,1,340.0,4055.0,0,0.0,0.0,Queens,
+burned_ge1pct_2023_2026,NL,2,132905.0,250.0,845.0,0,0.0,0.0,0,0.0,0.0,,
+burned_ge1pct_2023_2026,NS,2,14095.0,115.0,80.0,0,0.0,0.0,0,0.0,0.0,,
+burned_ge1pct_2023_2026,NT,5,18045.0,75.0,285.0,0,0.0,0.0,1,45.0,1150.0,,Region 4
+burned_ge1pct_2023_2026,ON,3,98290.0,4020.0,1190.0,3,4020.0,98290.0,0,0.0,0.0,Rainy River;Kenora;Thunder Bay,
+burned_ge1pct_2023_2026,QC,6,79145.0,5130.0,875.0,5,5065.0,60965.0,2,245.0,9935.0,La Tuque;Maria-Chapdelaine;La Haute-Côte-Nord;Nord-du-Québec;La Vallée-de-l'Or,La Haute-Côte-Nord;La Tuque
+burned_ge1pct_2023_2026,SK,2,25025.0,425.0,235.0,0,0.0,0.0,0,0.0,0.0,,
+burned_ge1pct_2023_2026,YT,1,21905.0,65.0,315.0,0,0.0,0.0,0,0.0,0.0,,
+burned_ge1pct_2023_2026,Canada,50,1219345.0,37995.0,16175.0,20,29065.0,438280.0,13,6330.0,183420.0,La Tuque;Bulkley-Nechako;Maria-Chapdelaine;Cariboo;Division No. 17;La Haute-Côte-Nord;Division No. 14;Queens;Central Kootenay;Columbia-Shuswap;Nord-du-Québec;Rainy River;Kenora;Division No. 18;East Kootenay;La Vallée-de-l'Or;Peace River;Thompson-Nicola;Division No. 21;Thunder Bay,Division No. 15;Squamish-Lillooet;Region 4;Northern Rockies;La Haute-Côte-Nord;Columbia-Shuswap;East Kootenay;Division No. 18;Division No. 21;Division No. 14;Division No. 23;La Tuque;Okanagan-Similkameen

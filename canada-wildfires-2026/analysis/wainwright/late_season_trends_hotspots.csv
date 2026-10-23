@@ -1,0 +1,9 @@
+source,scope,sensor_set,metric,years,n_years,theil_sen_per_decade,kendall_tau,p_value,value_2026
+CWFIS hotspots,Canada,MODIS,share_sep1_oct22_of_to_date,2003-2026,24,0.001,0.007,0.9804,0.0153
+CWFIS hotspots,Canada,MODIS,share_oct1_22_of_to_date,2003-2026,24,-0.0076,-0.145,0.3371,0.0077
+CWFIS hotspots,Canada,MODIS,oct1_22,2003-2026,24,131.5,0.072,0.641,590.0
+CWFIS hotspots,Canada,MODIS,sep1_oct22,2003-2026,24,1582.5,0.268,0.0698,1176.0
+CWFIS hotspots,Canada,all,share_sep1_oct22_of_to_date,2018-2026,9,-0.061,-0.278,0.3585,0.0122
+CWFIS hotspots,Canada,all,share_oct1_22_of_to_date,2018-2026,9,-0.0408,-0.333,0.2595,0.0061
+CWFIS hotspots,Canada,all,oct1_22,2018-2026,9,-6897.5,-0.5,0.0752,6153.0
+CWFIS hotspots,Canada,all,sep1_oct22,2018-2026,9,119711.25,0.333,0.2595,12212.0

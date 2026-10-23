@@ -1,0 +1,7 @@
+layer,rows,province_km2,rows_sum_km2,diff_pct,residual_gap_km2,residual_overlap_km2,source_overlap_resolved_km2,source_outside_province_clipped_km2,slivers_merged_km2,slivers_merged_n,remainder_km2,all_valid,note
+mb_fire_restriction_areas,23,649753.5,649753.5,-0.0,0.0,-0.0,441.2,506.6,541.5,862,97191.8,True,
+mb_fire_regions,6,649753.5,649753.5,-0.0,0.0,-0.0,13.0,506.6,541.5,862,97191.8,True,
+mb_forest_sections,14,649753.5,649753.5,-0.0,0.0,-0.0,0.0,507.4,313.3,346,0.0,True,
+qc_sopfeu_fire_danger_zones,66,1508806.3,1508806.3,-0.0,0.0,-0.0,0.0,36512.3,3420.6,21262,518831.9,True,
+qc_sopfeu_protection_zones,2,1508806.3,1508806.3,0.0,0.0,0.0,0.0,0.0,0.0,1,0.0,True,SOPFEU northern-zone polygon vs built northern zone: symmetric difference 1233.3 km2
+qc_admin_regions,17,1508806.3,1508806.3,-0.0,0.0,-0.0,0.0,189001.7,1656.7,3291,0.0,True,

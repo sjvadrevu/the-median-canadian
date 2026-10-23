@@ -1,0 +1,7 @@
+months,outcome,n_province_months,provinces,max_monthly_increment,pct_per10,lo,hi,p,dispersion
+all_months,all ages,504,AB BC MB NS ON PE QC SK YT,32.555,-0.177,-1.624,1.291,0.812,253.015
+all_months,age 0-4,504,AB BC MB NS ON PE QC SK YT,32.555,-2.275,-7.393,3.126,0.402,246.021
+all_months,age 65+,504,AB BC MB NS ON PE QC SK YT,32.555,-0.527,-1.703,0.664,0.384,39.204
+May-Sep,all ages,213,AB BC MB NS ON PE QC SK YT,32.555,1.707,0.16,3.278,0.03,179.243
+May-Sep,age 0-4,213,AB BC MB NS ON PE QC SK YT,32.555,2.101,-3.153,7.64,0.44,143.6
+May-Sep,age 65+,213,AB BC MB NS ON PE QC SK YT,32.555,1.193,-0.098,2.5,0.07,29.879

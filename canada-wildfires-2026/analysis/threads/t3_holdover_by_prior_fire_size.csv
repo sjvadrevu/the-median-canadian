@@ -1,0 +1,16 @@
+winter,prev_fire_ge_1000ha,cls,clusters,detections,det_days
+2023-24,False,April only,15,41,21
+2023-24,False,November only,11,30,15
+2023-24,False,deep winter (Dec-Mar detection),12,88,27
+2023-24,True,April only,14,33,20
+2023-24,True,November only,9,37,15
+2023-24,True,deep winter (Dec-Mar detection),20,53,27
+2024-25,False,April only,15,59,22
+2024-25,False,November only,12,35,15
+2024-25,False,deep winter (Dec-Mar detection),8,31,13
+2024-25,True,April only,4,12,5
+2024-25,True,deep winter (Dec-Mar detection),3,8,3
+2025-26,False,November only,15,39,22
+2025-26,False,deep winter (Dec-Mar detection),3,4,4
+2025-26,True,November only,3,9,5
+2025-26,True,deep winter (Dec-Mar detection),2,4,3

@@ -1,0 +1,7 @@
+fold,rule,train_f1,n_test
+0,dndvi_bmax>=180 & dnbr_r10_30>=40,0.849,142
+1,dndvi_bmax>=210 & dnbr_r10_30>=30,0.857,254
+2,dndvi_bmax>=180 & dnbr_r20_60>=40,0.834,89
+3,dndvi_bmax>=170 & dnbr_r10_30>=30,0.912,630
+4,dndvi_bmax>=180 & dnbr_r20_60>=40,0.86,32
+all,dndvi_bmax >= 180 AND dnbr_r20_60 >= 40,0.859,1147

@@ -1,0 +1,7 @@
+source,year,prov,fires,total_ha,top1pct_fires,top1pct_share,top5pct_fires,top5pct_share,share_from_fires_ge_10000ha,share_from_fires_ge_1000ha
+agency records (CNFDB / 2026 list),2023,Canada,6540,17606416.1678,66,0.6563,327,0.9414,0.9116,0.9888
+agency records (CNFDB / 2026 list),2024,Canada,5584,5372515.7190,56,0.6817,280,0.9635,0.8388,0.9746
+agency records (CNFDB / 2026 list),2025,Canada,5829,8705159.2914,59,0.7386,292,0.9777,0.8990,0.9871
+agency records (CNFDB / 2026 list),2026,Canada,5296,4493606.3271,53,0.6425,265,0.9401,0.7768,0.9651
+agency records (CNFDB / 2026 list),2023-2026,Canada,23249,36177697.5054,233,0.6973,1163,0.9611,0.8810,0.9834
+CWFIS M3 outlines,2026,Canada,705,5300678.1860,8,0.3181,36,0.5788,0.8200,0.9807

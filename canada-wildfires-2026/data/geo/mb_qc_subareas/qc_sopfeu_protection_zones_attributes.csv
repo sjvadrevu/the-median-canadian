@@ -1,0 +1,3 @@
+fma_id,agency,area_name,province,area_level,boundary_status,source,area_km2_equal_area
+2101,SOPFEU,Intensive protection zone (zone de protection intensive),QC,protection zone,official agency boundary (SOPFEU web map GeoJSON),"SOPFEU https://www.sopfeu.qc.ca/layers/limite-intensive.json, retrieved 2026-10-21",524224.7239278148
+2102,SOPFEU,Northern zone (zone nordique),QC,protection zone,official agency boundary (SOPFEU web map GeoJSON),"SOPFEU https://www.sopfeu.qc.ca/layers/limite-nordique.json (built as province minus intensive zone), retrieved 2026-10-21",984581.5841919109

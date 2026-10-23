@@ -1,0 +1,24 @@
+year,place,prov,people,start,end,days_low,days,days_high,source
+2023,Hay River (May),NT,3169,2023-05-15,2023-05-25,10.0,10.0,10.0,TD 1007-19(2)
+2023,Kátł'odeeche First Nation (May),NT,259,2023-05-14,2023-06-06,23.0,23.0,23.0,TD 1007-19(2)
+2023,Sambaa K'e,NT,97,2023-05-31,2023-06-30,30.0,30.0,30.0,TD 1007-19(2)
+2023,Wekweètì,NT,109,2023-06-29,2023-07-04,5.0,5.0,5.0,TD 1007-19(2) (return July 4 and 5)
+2023,Behchokǫ̀,NT,1746,2023-07-24,2023-08-03,10.0,10.0,10.0,TD 1007-19(2)
+2023,Fort Smith,NT,2248,2023-08-12,2023-09-18,37.0,37.0,37.0,TD 1007-19(2)
+2023,Hay River (August),NT,3169,2023-08-13,2023-09-17,35.0,35.0,35.0,TD 1007-19(2)
+2023,Kátł'odeeche First Nation (August),NT,259,2023-08-13,2023-09-17,35.0,35.0,35.0,TD 1007-19(2) (own hosting; Hay River re-entry date assumed)
+2023,Enterprise,NT,75,2023-08-13,2023-09-22,40.0,40.0,40.0,TD 1007-19(2)
+2023,Jean Marie River,NT,63,2023-08-13,2023-08-24,11.0,11.0,11.0,TD 1007-19(2)
+2023,"Yellowknife, N'dilo, Dettah",NT,20532,2023-08-16,2023-09-06,21.0,21.0,21.0,TD 1007-19(2)
+2023,Kakisa,NT,39,2023-08-17,2023-09-09,23.0,23.0,23.0,TD 1007-19(2)
+2023,Drayton Valley,AB,7291,2023-05-04,2023-05-16,12.0,12.0,12.0,"Alberta Emergency Alerts (Brazeau County) 2023-05-04 23:09, 05-16 09:45 and 13:54; Census 2021"
+2023,Fox Creek,AB,1639,2023-05-06,2023-05-24,18.0,18.0,18.0,Alberta Emergency Alerts (MD of Greenview) 2023-05-06 08:33 and 2023-05-24 11:55; Census 2021
+2023,Edson (May),AB,8374,2023-05-05,2023-05-08,3.0,3.0,3.0,Alberta Emergency Alerts (Yellowhead County) 2023-05-05 17:37 and 05-08 08:16; Census 2021
+2023,Edson (June),AB,8374,2023-06-09,2023-06-15,6.0,6.0,6.0,Alberta Emergency Alerts (Yellowhead County) 2023-06-09 18:22 to 06-15 18:05; Census 2021
+2023,Upper Tantallon area (Halifax),NS,16400,2023-05-28,2023-06-06,9.0,9.0,17.0,"HRFE Post Incident Analysis (HRM Regional Council 2024-08-06): ordered May 28, 'All properties open to residents' June 14 (high); NS release 2023-06-06: many returned as orders were lifted (central)"
+2023,Shelburne County (Barrington Lake fire),NS,7000,2023-05-29,2023-06-09,11.0,11.0,11.0,"NS releases 2023-05-29 12:49 (evacuations under way), 06-08 17:17 (order remains for part of the county), 06-09 12:27 (orders lifted); HRFE report (nearly 7,000)"
+2023,"British Columbia, August surge (aggregate of all orders)",BC,30000,2023-08-18,2023-09-14,7.17,9.17,9.17,"BC EMCR and Premier releases 2023-08-18, 08-20 (30,000 on order), 08-26 (15,000), 08-31 (4,200), 09-14 (370); days = person-days (straight lines between counts) / 30,000"
+2024,Jasper (residents),AB,4738,2024-07-22,2024-08-17,26.0,26.0,26.0,Canada Gazette SOR/2025-10 RIAS; Census 2021
+2024,Labrador City,NL,9600,2024-07-12,2024-07-22,10.0,10.0,10.0,NL releases 2024-07-20 and 07-23
+2024,Bunibonibee Cree Nation,MB,2400,2024-08-13,2024-09-12,30.0,30.0,30.0,Canada Gazette SOR/2025-10 RIAS
+2024,Fort Good Hope,NT,380,2024-06-15,2024-07-06,21.0,21.0,21.0,NWT Emergency Management Annual Report 2025

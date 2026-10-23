@@ -1,0 +1,12 @@
+group,cmg,cmg_description,typical_cases_fy2021_22,avg_hospital_cost_fy2021_22
+respiratory,097,Influenza/Acute Upper Respiratory Infection,2627,3482
+respiratory,136,Bacterial Pneumonia,4318,10491
+respiratory,138,Viral/Unspecified Pneumonia,27048,8189
+respiratory,139,Chronic Obstructive Pulmonary Disease,41499,8202
+respiratory,141,Upper/Lower Respiratory Infection,8741,4555
+respiratory,147,Asthma,7172,3964
+cardiac,194,Myocardial Infarction/Shock/Arrest without Coronary Angiogram,9561,8300
+cardiac,196,Heart Failure without Coronary Angiogram,48254,9797
+cardiac,202,Arrhythmia without Coronary Angiogram,25415,5702
+cardiac,204,Unstable Angina/Atherosclerotic Heart Disease without Coronary Angiogram,3765,4723
+cardiac,208,Angina (except Unstable)/Chest Pain without Coronary Angiogram,7956,2742

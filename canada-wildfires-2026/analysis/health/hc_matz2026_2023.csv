@@ -1,0 +1,10 @@
+outcome,year,central,low,high,source
+Acute respiratory symptom days,2023,12000000.0,0.0,25000000.0,"Matz et al. 2026, GeoHealth, doi:10.1029/2025GH001565, Table 1 (Health Canada AQBAT)"
+Asthma symptom days,2023,1100000.0,240000.0,2000000.0,"Matz et al. 2026, GeoHealth, doi:10.1029/2025GH001565, Table 1 (Health Canada AQBAT)"
+Child acute bronchitis episodes,2023,22000.0,0.0,50000.0,"Matz et al. 2026, GeoHealth, doi:10.1029/2025GH001565, Table 1 (Health Canada AQBAT)"
+Respiratory emergency room visits,2023,1700.0,1200.0,2300.0,"Matz et al. 2026, GeoHealth, doi:10.1029/2025GH001565, Table 1 (Health Canada AQBAT)"
+Respiratory hospital admissions,2023,350.0,230.0,460.0,"Matz et al. 2026, GeoHealth, doi:10.1029/2025GH001565, Table 1 (Health Canada AQBAT)"
+Cardiac emergency room visits,2023,610.0,320.0,890.0,"Matz et al. 2026, GeoHealth, doi:10.1029/2025GH001565, Table 1 (Health Canada AQBAT)"
+Cardiac hospital admissions,2023,460.0,250.0,680.0,"Matz et al. 2026, GeoHealth, doi:10.1029/2025GH001565, Table 1 (Health Canada AQBAT)"
+Restricted activity days,2023,6800000.0,4100000.0,9400000.0,"Matz et al. 2026, GeoHealth, doi:10.1029/2025GH001565, Table 1 (Health Canada AQBAT)"
+Acute morbidity valuation (2023 CAD),2023,820000000.0,150000000.0,2000000000.0,"Matz et al. 2026, GeoHealth, doi:10.1029/2025GH001565, Table 1 (Health Canada AQBAT)"

@@ -1,0 +1,1777 @@
+kind,cls,year,band,prov,km
+power_line,all,2016,inside,AB,182.04623668659372
+power_line,all,2016,inside,BC,14.471024339608299
+power_line,all,2016,inside,MB,5.715025503338867
+power_line,all,2016,inside,NS,2.410157201342611
+power_line,all,2016,inside,NT,21.515184339322353
+power_line,all,2016,inside,ON,2.8367398151087175
+power_line,all,2016,within_1km,AB,252.95201290045443
+power_line,all,2016,within_1km,BC,77.32533472999864
+power_line,all,2016,within_1km,MB,20.71509445072252
+power_line,all,2016,within_1km,NS,22.407024320662778
+power_line,all,2016,within_1km,NT,32.08067920326148
+power_line,all,2016,within_1km,ON,10.837664932019702
+power_line,all,2016,within_1km,QC,2.0040536575439813
+power_line,all,2017,inside,AB,0.27423797058128846
+power_line,all,2017,inside,BC,61.98460669056886
+power_line,all,2017,inside,MB,13.000192685167649
+power_line,all,2017,inside,NS,0.25755778684129543
+power_line,all,2017,inside,ON,0.8021766163955381
+power_line,all,2017,inside,QC,0.11765495011903801
+power_line,all,2017,inside,SK,11.050848443014832
+power_line,all,2017,within_1km,AB,12.948863585471326
+power_line,all,2017,within_1km,BC,182.34088143791857
+power_line,all,2017,within_1km,MB,37.738693885939654
+power_line,all,2017,within_1km,NS,14.492329043557719
+power_line,all,2017,within_1km,ON,6.169206991153821
+power_line,all,2017,within_1km,QC,10.950900476008535
+power_line,all,2017,within_1km,SK,16.13626420288965
+power_line,all,2018,inside,AB,2.4874693717917875
+power_line,all,2018,inside,BC,27.436452149268042
+power_line,all,2018,inside,MB,55.25213756365325
+power_line,all,2018,inside,NS,0.7596160986640565
+power_line,all,2018,inside,ON,1.502080011746005
+power_line,all,2018,inside,QC,24.61296689297425
+power_line,all,2018,within_1km,AB,20.69662640152114
+power_line,all,2018,within_1km,BC,119.28134879801027
+power_line,all,2018,within_1km,MB,115.30954749554854
+power_line,all,2018,within_1km,NS,12.384737118119855
+power_line,all,2018,within_1km,ON,10.124365827060428
+power_line,all,2018,within_1km,QC,62.28780843179019
+power_line,all,2018,within_1km,SK,2.095572103268709
+power_line,all,2018,within_1km,YT,0.2692322593022967
+power_line,all,2019,inside,AB,79.414154547921
+power_line,all,2019,inside,BC,4.0088458676345
+power_line,all,2019,inside,MB,14.395983899189142
+power_line,all,2019,inside,NT,5.206570847143006
+power_line,all,2019,inside,ON,4.40392280263057
+power_line,all,2019,inside,QC,0.7662875021325295
+power_line,all,2019,inside,YT,0.061035326393016495
+power_line,all,2019,within_1km,AB,121.31181446104354
+power_line,all,2019,within_1km,BC,36.948635627577794
+power_line,all,2019,within_1km,MB,55.343050290071076
+power_line,all,2019,within_1km,NT,8.773897892322514
+power_line,all,2019,within_1km,ON,22.16954240019821
+power_line,all,2019,within_1km,QC,12.482290857035418
+power_line,all,2019,within_1km,SK,0.6029987630252178
+power_line,all,2019,within_1km,YT,4.993098523303144
+power_line,all,2019,within_1km,outside,0.9585625257755246
+power_line,all,2020,inside,AB,0.2614899973385487
+power_line,all,2020,inside,BC,1.470197404891871
+power_line,all,2020,inside,MB,7.145875913430505
+power_line,all,2020,inside,NS,2.8384225780988266
+power_line,all,2020,inside,ON,2.990904897902353
+power_line,all,2020,inside,QC,16.038349937980325
+power_line,all,2020,within_1km,AB,5.927890176713464
+power_line,all,2020,within_1km,BC,24.86374328778186
+power_line,all,2020,within_1km,MB,27.955699753331036
+power_line,all,2020,within_1km,NS,19.89868484362933
+power_line,all,2020,within_1km,ON,5.352719665734042
+power_line,all,2020,within_1km,QC,44.364159610707354
+power_line,all,2021,inside,AB,2.95295762078708
+power_line,all,2021,inside,BC,152.40788656951054
+power_line,all,2021,inside,MB,77.76130235174358
+power_line,all,2021,inside,NS,0.23534860031395075
+power_line,all,2021,inside,ON,3.34093244555314
+power_line,all,2021,inside,QC,3.751170973395848
+power_line,all,2021,inside,SK,9.679262361464081
+power_line,all,2021,within_1km,AB,26.327812236353793
+power_line,all,2021,within_1km,BC,314.93474492434115
+power_line,all,2021,within_1km,MB,222.8051676577816
+power_line,all,2021,within_1km,NS,4.501270631684942
+power_line,all,2021,within_1km,ON,10.84960747189308
+power_line,all,2021,within_1km,QC,26.96288556853256
+power_line,all,2021,within_1km,SK,21.95716109780169
+power_line,all,2022,inside,BC,26.923839820284236
+power_line,all,2022,inside,NL,12.39380138800966
+power_line,all,2022,inside,NS,0.30871798497678127
+power_line,all,2022,inside,NT,14.834198433044543
+power_line,all,2022,inside,ON,5.602756408763341
+power_line,all,2022,inside,QC,0.7916834956292611
+power_line,all,2022,inside,SK,8.179976716790083
+power_line,all,2022,within_1km,AB,2.1939145227743495
+power_line,all,2022,within_1km,BC,76.24735901760134
+power_line,all,2022,within_1km,MB,0.9633145286496203
+power_line,all,2022,within_1km,NL,18.40268433867759
+power_line,all,2022,within_1km,NS,3.0737059423507573
+power_line,all,2022,within_1km,NT,23.144985154152636
+power_line,all,2022,within_1km,ON,18.38488833955452
+power_line,all,2022,within_1km,QC,24.563393405392592
+power_line,all,2022,within_1km,SK,16.342394051616147
+power_line,all,2023,inside,AB,97.51514600824262
+power_line,all,2023,inside,BC,126.50448632513564
+power_line,all,2023,inside,MB,4.49231355031354
+power_line,all,2023,inside,NB,1.5522964134465154
+power_line,all,2023,inside,NS,16.42421598761541
+power_line,all,2023,inside,NT,122.17427460609234
+power_line,all,2023,inside,ON,2.648476319964529
+power_line,all,2023,inside,QC,477.713593365267
+power_line,all,2023,inside,SK,4.385506371267721
+power_line,all,2023,within_1km,AB,178.109935646948
+power_line,all,2023,within_1km,BC,277.5843946067238
+power_line,all,2023,within_1km,MB,28.45368775861854
+power_line,all,2023,within_1km,NB,5.861839559966775
+power_line,all,2023,within_1km,NS,54.48299302520539
+power_line,all,2023,within_1km,NT,178.4333247184033
+power_line,all,2023,within_1km,ON,13.425465608437582
+power_line,all,2023,within_1km,QC,699.7291752940926
+power_line,all,2023,within_1km,SK,13.980342115996196
+power_line,all,2023,within_1km,outside,0.4521439494720705
+power_line,all,2024,inside,AB,30.505209290775106
+power_line,all,2024,inside,BC,3.6281036129768482
+power_line,all,2024,inside,MB,30.618006578726106
+power_line,all,2024,inside,NL,11.200963693222173
+power_line,all,2024,inside,NS,0.11641508024994528
+power_line,all,2024,inside,NT,0.24704921156513304
+power_line,all,2024,inside,ON,1.0293656133217766
+power_line,all,2024,inside,QC,0.7063893827991019
+power_line,all,2024,inside,SK,0.12129660393432479
+power_line,all,2024,within_1km,AB,53.67114354370442
+power_line,all,2024,within_1km,BC,31.79477161033166
+power_line,all,2024,within_1km,MB,74.34678898301242
+power_line,all,2024,within_1km,NL,23.223711597625528
+power_line,all,2024,within_1km,NS,1.466837835291975
+power_line,all,2024,within_1km,NT,1.9173847215865265
+power_line,all,2024,within_1km,ON,14.224633272338659
+power_line,all,2024,within_1km,QC,16.07158220872615
+power_line,all,2024,within_1km,SK,4.722062344833893
+power_line,all,2025,inside,AB,12.429853141080672
+power_line,all,2025,inside,BC,4.6406946381626915
+power_line,all,2025,inside,MB,376.29193122828747
+power_line,all,2025,inside,NB,7.3976290763364965
+power_line,all,2025,inside,NL,2.7726625260440105
+power_line,all,2025,inside,NS,0.3123213501446655
+power_line,all,2025,inside,ON,20.56485684520842
+power_line,all,2025,inside,QC,2.71978547629501
+power_line,all,2025,inside,SK,54.0861351060337
+power_line,all,2025,within_1km,AB,30.359359270460374
+power_line,all,2025,within_1km,BC,45.985886530963334
+power_line,all,2025,within_1km,MB,655.9718451250592
+power_line,all,2025,within_1km,NB,14.359552996219811
+power_line,all,2025,within_1km,NL,16.80519552167934
+power_line,all,2025,within_1km,NS,11.199017512876646
+power_line,all,2025,within_1km,NT,0.7665562388765597
+power_line,all,2025,within_1km,ON,39.8285453256911
+power_line,all,2025,within_1km,QC,25.32582939001046
+power_line,all,2025,within_1km,SK,80.86302460823804
+power_line,all,2026,inside,AB,1.7581009953662412
+power_line,all,2026,inside,BC,193.40666620586578
+power_line,all,2026,inside,MB,30.495207916411058
+power_line,all,2026,inside,NL,2.010492148470883
+power_line,all,2026,inside,NT,10.08628427600097
+power_line,all,2026,inside,ON,10.085287246527248
+power_line,all,2026,inside,QC,4.313148071646411
+power_line,all,2026,inside,SK,17.148693260834268
+power_line,all,2026,within_1km,AB,3.9610876829934374
+power_line,all,2026,within_1km,BC,243.84088916614812
+power_line,all,2026,within_1km,MB,66.10148944268435
+power_line,all,2026,within_1km,NL,4.945230228583341
+power_line,all,2026,within_1km,NT,10.08628427600097
+power_line,all,2026,within_1km,ON,19.118078774745374
+power_line,all,2026,within_1km,QC,14.782223996181525
+power_line,all,2026,within_1km,SK,24.839237860326637
+power_line,all,2023_2026,inside,AB,142.20830943546466
+power_line,all,2023_2026,inside,BC,325.69111343391296
+power_line,all,2023_2026,inside,MB,438.82449599665136
+power_line,all,2023_2026,inside,NB,8.949925489783013
+power_line,all,2023_2026,inside,NL,15.984118367737066
+power_line,all,2023_2026,inside,NS,16.85295241801002
+power_line,all,2023_2026,inside,NT,132.50760809365843
+power_line,all,2023_2026,inside,ON,33.525809408626436
+power_line,all,2023_2026,inside,QC,485.4529162960075
+power_line,all,2023_2026,inside,SK,75.49903813420137
+power_line,all,2023_2026,within_1km,AB,266.10152614410623
+power_line,all,2023_2026,within_1km,BC,588.0752772482883
+power_line,all,2023_2026,within_1km,MB,790.9209017253295
+power_line,all,2023_2026,within_1km,NB,20.221392556186586
+power_line,all,2023_2026,within_1km,NL,44.97413734788821
+power_line,all,2023_2026,within_1km,NS,67.14884837337401
+power_line,all,2023_2026,within_1km,NT,191.20354995486736
+power_line,all,2023_2026,within_1km,ON,77.81400576268675
+power_line,all,2023_2026,within_1km,QC,755.9088108890106
+power_line,all,2023_2026,within_1km,SK,119.76696045661559
+power_line,all,2023_2026,within_1km,outside,0.4521439494720705
+rail,Connecting,2018,within_1km,BC,0.2869526955590459
+rail,Connecting,2021,within_1km,BC,2.024572860024978
+rail,Connecting,2023,inside,QC,0.2139737012660722
+rail,Connecting,2023,within_1km,BC,0.37244220284013185
+rail,Connecting,2023,within_1km,QC,0.6226591489849314
+rail,Connecting,2024,inside,MB,0.1213830160305334
+rail,Connecting,2024,within_1km,MB,0.29639714683183127
+rail,Connecting,2025,within_1km,BC,1.9517242278172466
+rail,Connecting,2023_2026,inside,MB,0.1213830160305334
+rail,Connecting,2023_2026,inside,QC,0.2139737012660722
+rail,Connecting,2023_2026,within_1km,BC,2.3241664306573786
+rail,Connecting,2023_2026,within_1km,MB,0.29639714683183127
+rail,Connecting,2023_2026,within_1km,QC,0.6226591489849314
+rail,Crossover,2016,within_1km,BC,0.05480606992845957
+rail,Crossover,2018,within_1km,BC,0.2658494101354977
+rail,Crossover,2023,inside,QC,0.04834272221881563
+rail,Crossover,2023,within_1km,BC,0.2365354203177182
+rail,Crossover,2023,within_1km,QC,0.1470481400773938
+rail,Crossover,2024,inside,AB,0.08347081930513132
+rail,Crossover,2024,within_1km,AB,0.3589718237485845
+rail,Crossover,2026,inside,BC,0.16226958695821553
+rail,Crossover,2026,within_1km,BC,0.16226958695821553
+rail,Crossover,2023_2026,inside,AB,0.08347081930513132
+rail,Crossover,2023_2026,inside,BC,0.16226958695821553
+rail,Crossover,2023_2026,inside,QC,0.04834272221881563
+rail,Crossover,2023_2026,within_1km,AB,0.3589718237485845
+rail,Crossover,2023_2026,within_1km,BC,0.3988050072759337
+rail,Crossover,2023_2026,within_1km,QC,0.1470481400773938
+rail,Main,2016,inside,AB,52.93617318563735
+rail,Main,2016,inside,BC,9.207969115829934
+rail,Main,2016,inside,MB,11.09119697577875
+rail,Main,2016,inside,ON,0.4298585846693506
+rail,Main,2016,within_1km,AB,88.87828854512026
+rail,Main,2016,within_1km,BC,79.97761425420777
+rail,Main,2016,within_1km,MB,28.22532070781091
+rail,Main,2016,within_1km,NS,3.6917330536714665
+rail,Main,2016,within_1km,ON,8.447201816025377
+rail,Main,2016,within_1km,QC,5.423343454994344
+rail,Main,2016,within_1km,outside,0.49110161837495825
+rail,Main,2017,inside,AB,2.2853662675859376
+rail,Main,2017,inside,BC,12.78411546358206
+rail,Main,2017,inside,MB,2.4705251087013114
+rail,Main,2017,inside,NS,0.16565192136058304
+rail,Main,2017,within_1km,AB,7.566970426414105
+rail,Main,2017,within_1km,BC,76.15238084027075
+rail,Main,2017,within_1km,MB,9.40171016858706
+rail,Main,2017,within_1km,NS,2.211338106639192
+rail,Main,2018,inside,AB,0.842953645090091
+rail,Main,2018,inside,BC,3.7813630936159055
+rail,Main,2018,inside,MB,1.701646675442058
+rail,Main,2018,inside,NS,0.16565192136058304
+rail,Main,2018,inside,ON,5.904910560060877
+rail,Main,2018,inside,QC,0.26128096255350197
+rail,Main,2018,within_1km,AB,16.269389020368624
+rail,Main,2018,within_1km,BC,77.26057689378945
+rail,Main,2018,within_1km,MB,10.85381289751947
+rail,Main,2018,within_1km,NB,0.015606068927430458
+rail,Main,2018,within_1km,NS,2.101456274552131
+rail,Main,2018,within_1km,ON,14.275963937960027
+rail,Main,2018,within_1km,QC,5.515067373972768
+rail,Main,2018,within_1km,SK,3.220884733280082
+rail,Main,2018,within_1km,outside,0.3850997954427103
+rail,Main,2019,inside,AB,73.96078921987117
+rail,Main,2019,inside,BC,2.46663446887283
+rail,Main,2019,inside,ON,4.387088404084326
+rail,Main,2019,within_1km,AB,111.73834292977871
+rail,Main,2019,within_1km,BC,34.978981557312174
+rail,Main,2019,within_1km,MB,2.4889207549903736
+rail,Main,2019,within_1km,ON,8.778053567377166
+rail,Main,2019,within_1km,outside,0.2148935897985003
+rail,Main,2020,inside,QC,0.19902280589795743
+rail,Main,2020,within_1km,BC,1.8165749584990971
+rail,Main,2020,within_1km,MB,2.2767231695991024
+rail,Main,2020,within_1km,QC,14.619817758396799
+rail,Main,2020,within_1km,SK,3.237198315745874
+rail,Main,2021,inside,AB,2.6957536438243603
+rail,Main,2021,inside,BC,49.679491844503396
+rail,Main,2021,inside,MB,24.72734436196177
+rail,Main,2021,inside,ON,1.2253729700081246
+rail,Main,2021,inside,SK,8.336116462670212
+rail,Main,2021,within_1km,AB,24.26280504248408
+rail,Main,2021,within_1km,BC,212.78664236256344
+rail,Main,2021,within_1km,MB,55.94200126916801
+rail,Main,2021,within_1km,ON,6.15777086272741
+rail,Main,2021,within_1km,QC,5.660087149004317
+rail,Main,2021,within_1km,SK,12.255668014192823
+rail,Main,2022,inside,AB,8.342169687782091
+rail,Main,2022,inside,BC,1.6135010871640587
+rail,Main,2022,inside,MB,6.020953857893496
+rail,Main,2022,inside,ON,0.344311868808332
+rail,Main,2022,inside,QC,0.029219806125029734
+rail,Main,2022,within_1km,AB,32.57742821579347
+rail,Main,2022,within_1km,BC,35.93829344231959
+rail,Main,2022,within_1km,MB,17.442429298305438
+rail,Main,2022,within_1km,ON,4.768303372071429
+rail,Main,2022,within_1km,QC,2.2357193139066043
+rail,Main,2023,inside,AB,22.719642204935873
+rail,Main,2023,inside,BC,109.5547363718785
+rail,Main,2023,inside,NT,44.741240896339384
+rail,Main,2023,inside,ON,1.4968476228202952
+rail,Main,2023,inside,QC,60.12626235154763
+rail,Main,2023,within_1km,AB,55.746946050505194
+rail,Main,2023,within_1km,BC,252.82682612050286
+rail,Main,2023,within_1km,MB,8.184033750989146
+rail,Main,2023,within_1km,NS,1.204343033022708
+rail,Main,2023,within_1km,NT,68.7527390704867
+rail,Main,2023,within_1km,ON,8.860378257263674
+rail,Main,2023,within_1km,QC,129.9698152173472
+rail,Main,2023,within_1km,SK,0.9023021930938502
+rail,Main,2024,inside,AB,16.57935168708696
+rail,Main,2024,inside,BC,10.568088896755334
+rail,Main,2024,inside,MB,11.832428047172812
+rail,Main,2024,inside,NL,0.5758252507066255
+rail,Main,2024,inside,NT,16.060654458948317
+rail,Main,2024,inside,ON,2.360692742566863
+rail,Main,2024,inside,QC,0.5042328409253685
+rail,Main,2024,within_1km,AB,59.297230273785395
+rail,Main,2024,within_1km,BC,93.17887380763949
+rail,Main,2024,within_1km,MB,19.939201103111024
+rail,Main,2024,within_1km,NL,7.773382309311757
+rail,Main,2024,within_1km,NT,31.623620536172382
+rail,Main,2024,within_1km,ON,11.842226342508102
+rail,Main,2024,within_1km,QC,7.477796230522105
+rail,Main,2024,within_1km,YT,0.4120089247268495
+rail,Main,2025,inside,AB,0.578319164672492
+rail,Main,2025,inside,BC,3.384854825100934
+rail,Main,2025,inside,MB,95.66718835109141
+rail,Main,2025,inside,NL,0.14581132171075614
+rail,Main,2025,inside,NS,0.027336787370731475
+rail,Main,2025,inside,ON,15.691294811695863
+rail,Main,2025,inside,SK,0.9746307247191086
+rail,Main,2025,within_1km,AB,18.086748826035336
+rail,Main,2025,within_1km,BC,53.99279183909629
+rail,Main,2025,within_1km,MB,209.08636504318213
+rail,Main,2025,within_1km,NL,4.3314352605549935
+rail,Main,2025,within_1km,NS,2.0179457930567004
+rail,Main,2025,within_1km,ON,52.155972881766466
+rail,Main,2025,within_1km,QC,10.745555874251306
+rail,Main,2025,within_1km,SK,3.934583452361881
+rail,Main,2026,inside,AB,0.8831777447908591
+rail,Main,2026,inside,BC,144.68016458394737
+rail,Main,2026,inside,MB,1.4539032024195586
+rail,Main,2026,inside,ON,59.90765250314137
+rail,Main,2026,within_1km,AB,3.8034962279586217
+rail,Main,2026,within_1km,BC,180.15479613485192
+rail,Main,2026,within_1km,MB,5.27734069600151
+rail,Main,2026,within_1km,NL,2.9966583894633914
+rail,Main,2026,within_1km,ON,73.4003151058415
+rail,Main,2026,within_1km,QC,0.4902923216618007
+rail,Main,2023_2026,inside,AB,40.760490801486185
+rail,Main,2023_2026,inside,BC,267.4672029859534
+rail,Main,2023_2026,inside,MB,108.95351960068379
+rail,Main,2023_2026,inside,NL,0.7216365724173817
+rail,Main,2023_2026,inside,NS,0.027336787370731475
+rail,Main,2023_2026,inside,NT,60.8018953552877
+rail,Main,2023_2026,inside,ON,79.4564876802244
+rail,Main,2023_2026,inside,QC,60.630495192473
+rail,Main,2023_2026,inside,SK,0.9746307247191086
+rail,Main,2023_2026,within_1km,AB,136.93442137828455
+rail,Main,2023_2026,within_1km,BC,563.5523508416397
+rail,Main,2023_2026,within_1km,MB,240.44621770894346
+rail,Main,2023_2026,within_1km,NL,15.101475959330143
+rail,Main,2023_2026,within_1km,NS,3.2222888260794087
+rail,Main,2023_2026,within_1km,NT,98.65142896598621
+rail,Main,2023_2026,within_1km,ON,140.29328870691222
+rail,Main,2023_2026,within_1km,QC,148.6834596437824
+rail,Main,2023_2026,within_1km,SK,4.836885645455731
+rail,Main,2023_2026,within_1km,YT,0.4120089247268495
+rail,Siding,2016,inside,AB,2.966890233736962
+rail,Siding,2016,inside,BC,0.38948304636763004
+rail,Siding,2016,inside,MB,0.5290026516456565
+rail,Siding,2016,within_1km,AB,11.560509768988606
+rail,Siding,2016,within_1km,BC,12.202946247588857
+rail,Siding,2016,within_1km,MB,1.5120687598353573
+rail,Siding,2016,within_1km,ON,0.2770264068140283
+rail,Siding,2017,inside,BC,0.628838250491442
+rail,Siding,2017,inside,MB,0.410135569119694
+rail,Siding,2017,within_1km,BC,22.357815010203527
+rail,Siding,2017,within_1km,MB,5.020310125776296
+rail,Siding,2018,inside,BC,0.21176389079616867
+rail,Siding,2018,inside,MB,0.8846738783463926
+rail,Siding,2018,inside,ON,1.4299108770648001
+rail,Siding,2018,within_1km,BC,13.879366037443502
+rail,Siding,2018,within_1km,MB,3.962361179885227
+rail,Siding,2018,within_1km,ON,2.7399575613042626
+rail,Siding,2019,inside,AB,1.5652511279687864
+rail,Siding,2019,inside,BC,0.38634669847995584
+rail,Siding,2019,inside,ON,1.5528819595020158
+rail,Siding,2019,within_1km,AB,10.978439689167725
+rail,Siding,2019,within_1km,BC,10.052027734719692
+rail,Siding,2019,within_1km,MB,1.1680796867578056
+rail,Siding,2019,within_1km,ON,2.069630706659443
+rail,Siding,2021,inside,BC,12.789528210030939
+rail,Siding,2021,inside,SK,2.290149632306762
+rail,Siding,2021,within_1km,AB,0.46852370783966546
+rail,Siding,2021,within_1km,BC,41.978319712354605
+rail,Siding,2021,within_1km,MB,0.5713252318004596
+rail,Siding,2021,within_1km,ON,1.5561009109034738
+rail,Siding,2021,within_1km,QC,0.5082813532131734
+rail,Siding,2021,within_1km,SK,2.290149632306762
+rail,Siding,2022,within_1km,BC,4.204794415252738
+rail,Siding,2023,inside,BC,7.233696648715052
+rail,Siding,2023,inside,NT,0.21983197856795006
+rail,Siding,2023,inside,QC,3.939756496081742
+rail,Siding,2023,within_1km,BC,28.933795132195115
+rail,Siding,2023,within_1km,MB,1.7537466536185689
+rail,Siding,2023,within_1km,NT,5.4771879642667605
+rail,Siding,2023,within_1km,ON,0.5400526079466119
+rail,Siding,2023,within_1km,QC,12.619548988641332
+rail,Siding,2024,inside,BC,1.539669735235316
+rail,Siding,2024,within_1km,AB,1.0875355023670719
+rail,Siding,2024,within_1km,BC,14.588083526905812
+rail,Siding,2024,within_1km,QC,0.7722979342877138
+rail,Siding,2025,inside,MB,0.40628736291681444
+rail,Siding,2025,inside,NS,0.047161861812025294
+rail,Siding,2025,inside,ON,1.9499469138502086
+rail,Siding,2025,inside,SK,1.438475237498492
+rail,Siding,2025,within_1km,BC,6.924329167256301
+rail,Siding,2025,within_1km,MB,6.559103355698798
+rail,Siding,2025,within_1km,NS,1.7276461116970556
+rail,Siding,2025,within_1km,ON,4.462409481571503
+rail,Siding,2025,within_1km,QC,0.14821657162513768
+rail,Siding,2025,within_1km,SK,1.9461562619483128
+rail,Siding,2026,inside,BC,15.577811488894381
+rail,Siding,2026,inside,ON,12.73349254111923
+rail,Siding,2026,within_1km,BC,23.718686974498688
+rail,Siding,2026,within_1km,ON,14.877017834537414
+rail,Siding,2023_2026,inside,BC,24.236741778935897
+rail,Siding,2023_2026,inside,MB,0.40628736291681444
+rail,Siding,2023_2026,inside,NS,0.047161861812025294
+rail,Siding,2023_2026,inside,NT,0.21983197856795006
+rail,Siding,2023_2026,inside,ON,14.683439454969438
+rail,Siding,2023_2026,inside,QC,3.939756496081742
+rail,Siding,2023_2026,inside,SK,1.438475237498492
+rail,Siding,2023_2026,within_1km,AB,1.0875355023670719
+rail,Siding,2023_2026,within_1km,BC,72.06839742399434
+rail,Siding,2023_2026,within_1km,MB,8.312850009317367
+rail,Siding,2023_2026,within_1km,NS,1.7276461116970556
+rail,Siding,2023_2026,within_1km,NT,5.4771879642667605
+rail,Siding,2023_2026,within_1km,ON,19.339427316108917
+rail,Siding,2023_2026,within_1km,QC,13.540063494554184
+rail,Siding,2023_2026,within_1km,SK,1.9461562619483128
+rail,Spur,2016,inside,AB,3.494791010844265
+rail,Spur,2016,inside,NL,0.24370499660124606
+rail,Spur,2016,within_1km,AB,14.29130738428729
+rail,Spur,2016,within_1km,BC,3.505068582487481
+rail,Spur,2016,within_1km,NL,2.629051120269367
+rail,Spur,2017,inside,AB,0.13936043725272565
+rail,Spur,2017,inside,BC,0.11308167936442481
+rail,Spur,2017,within_1km,AB,0.9009317254481078
+rail,Spur,2017,within_1km,BC,3.980598197851255
+rail,Spur,2018,inside,BC,0.2377758244861574
+rail,Spur,2018,within_1km,AB,2.4656362520675525
+rail,Spur,2018,within_1km,BC,3.7255954274267777
+rail,Spur,2018,within_1km,QC,0.6308130503372736
+rail,Spur,2019,within_1km,AB,1.5992445924209961
+rail,Spur,2019,within_1km,BC,0.030553927818052478
+rail,Spur,2019,within_1km,MB,1.3915898529982689
+rail,Spur,2019,within_1km,QC,1.0487956747501164
+rail,Spur,2021,inside,SK,1.4049475898952501
+rail,Spur,2021,within_1km,BC,8.346904622327356
+rail,Spur,2021,within_1km,MB,0.19071629934858578
+rail,Spur,2021,within_1km,QC,3.233724684742016
+rail,Spur,2021,within_1km,SK,2.9529952882315347
+rail,Spur,2022,within_1km,BC,3.6270333846848932
+rail,Spur,2022,within_1km,QC,16.973898747278227
+rail,Spur,2022,within_1km,outside,0.042962928819593744
+rail,Spur,2023,inside,BC,0.11855823119169168
+rail,Spur,2023,inside,NT,0.006831024875654463
+rail,Spur,2023,inside,QC,2.140124730823507
+rail,Spur,2023,within_1km,BC,2.116449383496181
+rail,Spur,2023,within_1km,NT,5.589892441008229
+rail,Spur,2023,within_1km,QC,9.40957506224772
+rail,Spur,2024,inside,BC,0.2834975870814705
+rail,Spur,2024,inside,NL,0.5019173485602079
+rail,Spur,2024,inside,QC,0.1302945712852399
+rail,Spur,2024,within_1km,AB,0.649173602138293
+rail,Spur,2024,within_1km,BC,2.311828017819677
+rail,Spur,2024,within_1km,NL,6.92023273240241
+rail,Spur,2024,within_1km,QC,3.6098402573456365
+rail,Spur,2025,inside,MB,0.2397483522053282
+rail,Spur,2025,inside,QC,0.15425170905696492
+rail,Spur,2025,within_1km,AB,0.49196446728761634
+rail,Spur,2025,within_1km,BC,1.6792263604395936
+rail,Spur,2025,within_1km,MB,1.7358826771127776
+rail,Spur,2025,within_1km,QC,3.6436048069776965
+rail,Spur,2025,within_1km,SK,6.366923638512926
+rail,Spur,2025,within_1km,outside,0.27666895699758454
+rail,Spur,2026,inside,BC,1.3516228826569552
+rail,Spur,2026,inside,NL,0.15693119844711173
+rail,Spur,2026,within_1km,BC,1.3516228826569552
+rail,Spur,2026,within_1km,NL,2.066250254516786
+rail,Spur,2023_2026,inside,BC,1.7536787009301174
+rail,Spur,2023_2026,inside,MB,0.2397483522053282
+rail,Spur,2023_2026,inside,NL,0.6588485470073197
+rail,Spur,2023_2026,inside,NT,0.006831024875654463
+rail,Spur,2023_2026,inside,QC,2.424671011165712
+rail,Spur,2023_2026,within_1km,AB,1.1411380694259092
+rail,Spur,2023_2026,within_1km,BC,7.4591266444124065
+rail,Spur,2023_2026,within_1km,MB,1.7358826771127776
+rail,Spur,2023_2026,within_1km,NL,6.92023273240241
+rail,Spur,2023_2026,within_1km,NT,5.589892441008229
+rail,Spur,2023_2026,within_1km,QC,16.663020126571052
+rail,Spur,2023_2026,within_1km,SK,6.366923638512926
+rail,Spur,2023_2026,within_1km,outside,0.27666895699758454
+rail,Wye,2017,within_1km,BC,0.4528394362371997
+rail,Wye,2019,within_1km,MB,1.0175352732037573
+rail,Wye,2022,within_1km,BC,0.40870722863626124
+rail,Wye,2023,inside,NT,0.07310491807338293
+rail,Wye,2023,within_1km,NT,1.4007781492034828
+rail,Wye,2024,inside,AB,0.15555454092496143
+rail,Wye,2024,within_1km,AB,0.8291279888905664
+rail,Wye,2024,within_1km,BC,0.6441908643155271
+rail,Wye,2025,inside,MB,0.44446461693271355
+rail,Wye,2025,within_1km,MB,1.5599799334854114
+rail,Wye,2026,inside,BC,0.7296715900984013
+rail,Wye,2026,within_1km,BC,0.7296715900984013
+rail,Wye,2023_2026,inside,AB,0.15555454092496143
+rail,Wye,2023_2026,inside,BC,0.7296715900984013
+rail,Wye,2023_2026,inside,MB,0.44446461693271355
+rail,Wye,2023_2026,inside,NT,0.07310491807338293
+rail,Wye,2023_2026,within_1km,AB,0.8291279888905664
+rail,Wye,2023_2026,within_1km,BC,1.3738624544139284
+rail,Wye,2023_2026,within_1km,MB,1.5599799334854114
+rail,Wye,2023_2026,within_1km,NT,1.4007781492034828
+rail,Yard,2017,within_1km,BC,8.588113664740241
+rail,Yard,2018,within_1km,BC,6.373253419465844
+rail,Yard,2021,inside,BC,1.7348433073312428
+rail,Yard,2021,within_1km,BC,2.811831698789998
+rail,Yard,2022,within_1km,BC,2.8784981612660503
+rail,Yard,2023,within_1km,BC,5.402599042653989
+rail,Yard,2024,within_1km,AB,18.435178333911505
+rail,Yard,2026,inside,BC,14.54264599459528
+rail,Yard,2026,within_1km,BC,14.54264599459528
+rail,Yard,2023_2026,inside,BC,14.54264599459528
+rail,Yard,2023_2026,within_1km,AB,18.435178333911505
+rail,Yard,2023_2026,within_1km,BC,19.94524503724927
+road,Alleyway / Lane,2016,inside,AB,0.20774771234725986
+road,Alleyway / Lane,2016,within_1km,AB,0.20774771234725986
+road,Alleyway / Lane,2016,within_1km,BC,0.6011864204041634
+road,Alleyway / Lane,2017,inside,BC,0.30364425575271753
+road,Alleyway / Lane,2017,within_1km,BC,1.1402563871297846
+road,Alleyway / Lane,2017,within_1km,SK,0.18824458167342534
+road,Alleyway / Lane,2018,inside,BC,0.31668843670114427
+road,Alleyway / Lane,2018,within_1km,BC,1.9123834593689244
+road,Alleyway / Lane,2018,within_1km,SK,0.3085647122504212
+road,Alleyway / Lane,2019,within_1km,BC,0.017015046933014456
+road,Alleyway / Lane,2019,within_1km,SK,0.3938932937555008
+road,Alleyway / Lane,2021,inside,BC,0.981437111538224
+road,Alleyway / Lane,2021,within_1km,BC,2.6546623658836332
+road,Alleyway / Lane,2021,within_1km,SK,0.21487062221291214
+road,Alleyway / Lane,2022,within_1km,BC,1.0300447140740083
+road,Alleyway / Lane,2022,within_1km,SK,0.9535505687288207
+road,Alleyway / Lane,2023,inside,BC,0.21849028896434816
+road,Alleyway / Lane,2023,within_1km,BC,2.9632812202106518
+road,Alleyway / Lane,2023,within_1km,SK,0.36016999089407886
+road,Alleyway / Lane,2024,within_1km,BC,8.087543724566881
+road,Alleyway / Lane,2024,within_1km,SK,1.2260609839060712
+road,Alleyway / Lane,2025,inside,SK,0.43853556287403594
+road,Alleyway / Lane,2025,within_1km,BC,0.8054513021122848
+road,Alleyway / Lane,2025,within_1km,SK,11.951546821025032
+road,Alleyway / Lane,2026,inside,BC,0.861379041692494
+road,Alleyway / Lane,2026,within_1km,BC,0.9178219838345064
+road,Alleyway / Lane,2023_2026,inside,BC,1.079869330656842
+road,Alleyway / Lane,2023_2026,inside,SK,0.43853556287403594
+road,Alleyway / Lane,2023_2026,within_1km,BC,12.774098230724325
+road,Alleyway / Lane,2023_2026,within_1km,SK,11.951546821025032
+road,Arterial,2016,inside,AB,19.020683993122194
+road,Arterial,2016,inside,BC,0.2730022255609261
+road,Arterial,2016,inside,NS,1.883784269839903
+road,Arterial,2016,inside,ON,4.284102690243625
+road,Arterial,2016,within_1km,AB,71.11194174625558
+road,Arterial,2016,within_1km,BC,4.2966512880149255
+road,Arterial,2016,within_1km,NS,18.16387981017458
+road,Arterial,2016,within_1km,ON,23.125371101108517
+road,Arterial,2016,within_1km,outside,0.21148951148031767
+road,Arterial,2017,inside,AB,16.082557230210288
+road,Arterial,2017,inside,BC,3.45025871524569
+road,Arterial,2017,inside,NS,0.13709885988785506
+road,Arterial,2017,inside,ON,1.093100874357066
+road,Arterial,2017,within_1km,AB,41.435941023736426
+road,Arterial,2017,within_1km,BC,17.142749717886993
+road,Arterial,2017,within_1km,NS,7.983755898410147
+road,Arterial,2017,within_1km,ON,6.334527349260118
+road,Arterial,2017,within_1km,outside,0.44225248590280214
+road,Arterial,2018,inside,AB,0.9358689193895376
+road,Arterial,2018,inside,BC,46.65338814026018
+road,Arterial,2018,inside,NS,0.16898178331973976
+road,Arterial,2018,inside,ON,0.8595999775696113
+road,Arterial,2018,within_1km,AB,24.104595868153844
+road,Arterial,2018,within_1km,BC,94.19066595351632
+road,Arterial,2018,within_1km,NS,5.421744516934753
+road,Arterial,2018,within_1km,ON,8.377374011279263
+road,Arterial,2018,within_1km,QC,2.8389007691690673
+road,Arterial,2018,within_1km,outside,0.3355676544954358
+road,Arterial,2019,inside,AB,166.12742337290146
+road,Arterial,2019,inside,BC,0.24498055149586212
+road,Arterial,2019,inside,ON,3.738321414235389
+road,Arterial,2019,within_1km,AB,231.75970801493037
+road,Arterial,2019,within_1km,BC,16.28685499858032
+road,Arterial,2019,within_1km,ON,12.059273658658014
+road,Arterial,2020,inside,AB,0.24347345319530306
+road,Arterial,2020,inside,ON,2.701127308560672
+road,Arterial,2020,within_1km,AB,4.881474741512495
+road,Arterial,2020,within_1km,NS,6.6235613740735015
+road,Arterial,2020,within_1km,ON,5.673831601607297
+road,Arterial,2021,inside,AB,7.603376000426395
+road,Arterial,2021,inside,BC,23.648296275821902
+road,Arterial,2021,inside,NS,0.16898178331973976
+road,Arterial,2021,inside,ON,0.822246149342512
+road,Arterial,2021,within_1km,AB,45.883119751500075
+road,Arterial,2021,within_1km,BC,54.096112942055115
+road,Arterial,2021,within_1km,NS,3.7911839209011906
+road,Arterial,2021,within_1km,ON,9.745781535295423
+road,Arterial,2021,within_1km,QC,1.3979217414011182
+road,Arterial,2022,inside,AB,1.295246840522863
+road,Arterial,2022,inside,BC,0.14642022055405687
+road,Arterial,2022,inside,ON,3.501718965198228
+road,Arterial,2022,within_1km,AB,23.281453675743712
+road,Arterial,2022,within_1km,BC,8.409389267062986
+road,Arterial,2022,within_1km,NS,1.3482632660076848
+road,Arterial,2022,within_1km,ON,12.007405613462254
+road,Arterial,2022,within_1km,QC,1.5027231435586903
+road,Arterial,2023,inside,AB,97.33562439450334
+road,Arterial,2023,inside,BC,19.39503545504059
+road,Arterial,2023,inside,NS,0.24863295614200073
+road,Arterial,2023,inside,ON,6.141687156914559
+road,Arterial,2023,within_1km,AB,217.67269516084133
+road,Arterial,2023,within_1km,BC,61.04562136933105
+road,Arterial,2023,within_1km,NS,8.083233202364152
+road,Arterial,2023,within_1km,ON,22.553233677212894
+road,Arterial,2023,within_1km,outside,0.536310824774906
+road,Arterial,2024,inside,AB,7.773719292018117
+road,Arterial,2024,inside,BC,0.8289693194015096
+road,Arterial,2024,inside,ON,1.093100874357066
+road,Arterial,2024,within_1km,AB,59.108856544006805
+road,Arterial,2024,within_1km,BC,16.6626495579529
+road,Arterial,2024,within_1km,NS,1.8190602435952488
+road,Arterial,2024,within_1km,ON,7.132389524010199
+road,Arterial,2024,within_1km,QC,1.3979217414011182
+road,Arterial,2025,inside,AB,43.639314549689246
+road,Arterial,2025,inside,BC,6.236011219131324
+road,Arterial,2025,inside,ON,4.983345736745565
+road,Arterial,2025,within_1km,AB,159.3408414065547
+road,Arterial,2025,within_1km,BC,33.034413570208706
+road,Arterial,2025,within_1km,ON,27.80156892477081
+road,Arterial,2026,inside,AB,5.475337250494107
+road,Arterial,2026,inside,BC,5.844416036884951
+road,Arterial,2026,inside,ON,47.57792636515299
+road,Arterial,2026,within_1km,AB,20.69447858233032
+road,Arterial,2026,within_1km,BC,7.214211262757304
+road,Arterial,2026,within_1km,ON,63.17462862373991
+road,Arterial,2023_2026,inside,AB,154.2239954867048
+road,Arterial,2023_2026,inside,BC,32.30443203045837
+road,Arterial,2023_2026,inside,NS,0.24863295614200073
+road,Arterial,2023_2026,inside,ON,58.97381398382767
+road,Arterial,2023_2026,within_1km,AB,453.75484164617404
+road,Arterial,2023_2026,within_1km,BC,117.95689576024996
+road,Arterial,2023_2026,within_1km,NS,9.902293445959401
+road,Arterial,2023_2026,within_1km,ON,114.32729340047369
+road,Arterial,2023_2026,within_1km,QC,1.3979217414011182
+road,Arterial,2023_2026,within_1km,outside,0.536310824774906
+road,Collector,2016,inside,AB,93.50390424171498
+road,Collector,2016,inside,BC,5.854711590766115
+road,Collector,2016,inside,MB,7.772696732674704
+road,Collector,2016,inside,SK,5.796029119787505
+road,Collector,2016,within_1km,AB,344.37978821932484
+road,Collector,2016,within_1km,BC,59.87491241767366
+road,Collector,2016,within_1km,MB,79.45853200259582
+road,Collector,2016,within_1km,NS,6.557937170794447
+road,Collector,2016,within_1km,QC,6.466995322186604
+road,Collector,2016,within_1km,SK,32.619038658629144
+road,Collector,2016,within_1km,outside,0.054746310673354476
+road,Collector,2017,inside,AB,65.12735044957431
+road,Collector,2017,inside,BC,10.379622193078118
+road,Collector,2017,inside,MB,4.855532836555851
+road,Collector,2017,inside,QC,0.6541527980531201
+road,Collector,2017,inside,SK,14.035055205453682
+road,Collector,2017,within_1km,AB,160.515150409429
+road,Collector,2017,within_1km,BC,43.089093448813465
+road,Collector,2017,within_1km,MB,51.40511167753727
+road,Collector,2017,within_1km,NS,5.457717888163831
+road,Collector,2017,within_1km,QC,7.003872386121151
+road,Collector,2017,within_1km,SK,30.962899521319557
+road,Collector,2017,within_1km,outside,0.2886584223437887
+road,Collector,2018,inside,AB,16.632887733572034
+road,Collector,2018,inside,BC,29.79135533647313
+road,Collector,2018,inside,MB,67.17588657543895
+road,Collector,2018,inside,QC,0.27264796586410733
+road,Collector,2018,inside,SK,7.2997461435817455
+road,Collector,2018,within_1km,AB,149.2950840325931
+road,Collector,2018,within_1km,BC,91.91365160299263
+road,Collector,2018,within_1km,MB,282.7887771272876
+road,Collector,2018,within_1km,NS,1.9610667858125603
+road,Collector,2018,within_1km,ON,1.9455859648441087
+road,Collector,2018,within_1km,QC,8.239366243903971
+road,Collector,2018,within_1km,SK,50.29642357715001
+road,Collector,2019,inside,AB,105.40178102618054
+road,Collector,2019,inside,MB,15.224920035280613
+road,Collector,2019,inside,SK,18.70794812883795
+road,Collector,2019,within_1km,AB,276.21506434449003
+road,Collector,2019,within_1km,BC,12.56828286545435
+road,Collector,2019,within_1km,MB,131.23409465514362
+road,Collector,2019,within_1km,QC,2.77960261019685
+road,Collector,2019,within_1km,SK,75.24967486676194
+road,Collector,2020,inside,AB,4.542974215804147
+road,Collector,2020,inside,MB,28.373077458170837
+road,Collector,2020,inside,NS,0.06241255790399314
+road,Collector,2020,inside,QC,0.2789408578421608
+road,Collector,2020,inside,SK,27.370113940317843
+road,Collector,2020,within_1km,AB,54.50092549887335
+road,Collector,2020,within_1km,BC,14.084380710156982
+road,Collector,2020,within_1km,MB,95.5158227294291
+road,Collector,2020,within_1km,NS,4.080583864351087
+road,Collector,2020,within_1km,QC,28.581935078591716
+road,Collector,2020,within_1km,SK,69.47727533383244
+road,Collector,2021,inside,AB,46.16737426711483
+road,Collector,2021,inside,BC,25.47825575096471
+road,Collector,2021,inside,MB,59.625517234773405
+road,Collector,2021,inside,SK,40.58885877293545
+road,Collector,2021,within_1km,AB,225.40279805244916
+road,Collector,2021,within_1km,BC,91.87237266833512
+road,Collector,2021,within_1km,MB,312.9011346011998
+road,Collector,2021,within_1km,NS,1.4263166658310595
+road,Collector,2021,within_1km,QC,4.1779846117128185
+road,Collector,2021,within_1km,SK,169.84967323306847
+road,Collector,2022,inside,AB,29.357594096129837
+road,Collector,2022,inside,BC,9.704763386904402
+road,Collector,2022,inside,MB,6.6769854523162016
+road,Collector,2022,inside,NL,12.506026713227008
+road,Collector,2022,inside,QC,0.17296419399746604
+road,Collector,2022,inside,SK,1.2791022645028978
+road,Collector,2022,within_1km,AB,109.48693873937688
+road,Collector,2022,within_1km,BC,32.333899841359205
+road,Collector,2022,within_1km,MB,20.854080633467056
+road,Collector,2022,within_1km,NL,20.782881532077155
+road,Collector,2022,within_1km,NS,2.239191267141181
+road,Collector,2022,within_1km,QC,23.44413401834749
+road,Collector,2022,within_1km,SK,13.875323555340078
+road,Collector,2023,inside,AB,1096.6057686468946
+road,Collector,2023,inside,BC,56.818889269814534
+road,Collector,2023,inside,MB,14.431136907840822
+road,Collector,2023,inside,NS,4.820032394401362
+road,Collector,2023,inside,ON,0.15972323832354143
+road,Collector,2023,inside,QC,229.00449705873575
+road,Collector,2023,inside,SK,39.84996200165483
+road,Collector,2023,within_1km,AB,2153.0651374627037
+road,Collector,2023,within_1km,BC,171.1759178786819
+road,Collector,2023,within_1km,MB,90.57695911352506
+road,Collector,2023,within_1km,NB,4.4210432550640215
+road,Collector,2023,within_1km,NS,25.77801584038606
+road,Collector,2023,within_1km,ON,5.41957180633868
+road,Collector,2023,within_1km,QC,372.24786074484626
+road,Collector,2023,within_1km,SK,169.20869243277514
+road,Collector,2023,within_1km,outside,0.7349385462145236
+road,Collector,2024,inside,AB,89.12115056531248
+road,Collector,2024,inside,BC,0.33355728282518177
+road,Collector,2024,inside,MB,35.428353021420904
+road,Collector,2024,inside,NL,0.6214777065938425
+road,Collector,2024,inside,QC,0.2910224983575451
+road,Collector,2024,inside,SK,30.746814380385192
+road,Collector,2024,within_1km,AB,290.6245600316889
+road,Collector,2024,within_1km,BC,28.528392615144913
+road,Collector,2024,within_1km,MB,130.04658749090183
+road,Collector,2024,within_1km,NB,1.3510131437166177
+road,Collector,2024,within_1km,NL,10.291770701776715
+road,Collector,2024,within_1km,QC,9.797896964793999
+road,Collector,2024,within_1km,SK,147.42173035403084
+road,Collector,2025,inside,AB,100.24578446563203
+road,Collector,2025,inside,BC,1.296776419293823
+road,Collector,2025,inside,MB,243.2525059565727
+road,Collector,2025,inside,NB,0.7561217020647939
+road,Collector,2025,inside,NL,18.759342835064373
+road,Collector,2025,inside,NS,0.14417727178561493
+road,Collector,2025,inside,QC,0.0533504546621805
+road,Collector,2025,inside,SK,381.40154962794907
+road,Collector,2025,within_1km,AB,395.7089313508078
+road,Collector,2025,within_1km,BC,36.98275812588664
+road,Collector,2025,within_1km,MB,588.9775679981693
+road,Collector,2025,within_1km,NB,4.379000851426776
+road,Collector,2025,within_1km,NL,49.57128701410832
+road,Collector,2025,within_1km,NS,6.585366970069678
+road,Collector,2025,within_1km,QC,24.197857535668046
+road,Collector,2025,within_1km,SK,738.9785518664504
+road,Collector,2025,within_1km,outside,1.7585958674630073
+road,Collector,2026,inside,AB,4.933498641547608
+road,Collector,2026,inside,BC,33.17661801485359
+road,Collector,2026,inside,MB,34.37786439039321
+road,Collector,2026,inside,NL,0.02082042770822303
+road,Collector,2026,inside,QC,26.71464074166234
+road,Collector,2026,inside,SK,15.284449356334665
+road,Collector,2026,within_1km,AB,38.04542342308054
+road,Collector,2026,within_1km,BC,50.407293379249474
+road,Collector,2026,within_1km,MB,124.9974987157265
+road,Collector,2026,within_1km,NL,1.8456253595479257
+road,Collector,2026,within_1km,QC,30.666344899463294
+road,Collector,2026,within_1km,SK,59.820269742427584
+road,Collector,2023_2026,inside,AB,1290.9062023193867
+road,Collector,2023_2026,inside,BC,91.62584098678713
+road,Collector,2023_2026,inside,MB,324.7750317208764
+road,Collector,2023_2026,inside,NB,0.7561217020647939
+road,Collector,2023_2026,inside,NL,19.40164096936644
+road,Collector,2023_2026,inside,NS,4.964209666186977
+road,Collector,2023_2026,inside,ON,0.15972323832354143
+road,Collector,2023_2026,inside,QC,256.06351075341786
+road,Collector,2023_2026,inside,SK,461.86203374962827
+road,Collector,2023_2026,within_1km,AB,2848.859988850255
+road,Collector,2023_2026,within_1km,BC,285.06006267687667
+road,Collector,2023_2026,within_1km,MB,861.1063279185504
+road,Collector,2023_2026,within_1km,NB,9.415244075593598
+road,Collector,2023_2026,within_1km,NL,61.708683075432965
+road,Collector,2023_2026,within_1km,NS,32.36338281045574
+road,Collector,2023_2026,within_1km,ON,5.41957180633868
+road,Collector,2023_2026,within_1km,QC,436.9099601447716
+road,Collector,2023_2026,within_1km,SK,1039.0498694687044
+road,Collector,2023_2026,within_1km,outside,2.493534413677531
+road,Expressway / Highway,2016,inside,AB,47.60058215990747
+road,Expressway / Highway,2016,inside,BC,12.73413168112813
+road,Expressway / Highway,2016,inside,MB,4.164051179689199
+road,Expressway / Highway,2016,inside,NS,0.234120590847747
+road,Expressway / Highway,2016,inside,NT,0.3858594994468698
+road,Expressway / Highway,2016,inside,ON,1.6650306337052738
+road,Expressway / Highway,2016,inside,SK,0.6393837069908439
+road,Expressway / Highway,2016,within_1km,AB,122.0863275449237
+road,Expressway / Highway,2016,within_1km,BC,101.90742832721507
+road,Expressway / Highway,2016,within_1km,MB,39.95495127066846
+road,Expressway / Highway,2016,within_1km,NS,5.953452484746379
+road,Expressway / Highway,2016,within_1km,NT,5.33738137406787
+road,Expressway / Highway,2016,within_1km,ON,12.245849909092211
+road,Expressway / Highway,2016,within_1km,QC,4.468968938936876
+road,Expressway / Highway,2016,within_1km,SK,4.948537791927819
+road,Expressway / Highway,2016,within_1km,outside,0.4854538149672772
+road,Expressway / Highway,2017,inside,AB,1.091761490247924
+road,Expressway / Highway,2017,inside,BC,59.695619679265455
+road,Expressway / Highway,2017,inside,MB,11.282241001993505
+road,Expressway / Highway,2017,inside,QC,0.07064918261501443
+road,Expressway / Highway,2017,inside,SK,38.264432048012935
+road,Expressway / Highway,2017,inside,YT,32.02787567467755
+road,Expressway / Highway,2017,within_1km,AB,5.407049026448006
+road,Expressway / Highway,2017,within_1km,BC,244.91038083656878
+road,Expressway / Highway,2017,within_1km,MB,44.48384583668864
+road,Expressway / Highway,2017,within_1km,NS,5.3131383095394416
+road,Expressway / Highway,2017,within_1km,NT,0.7115287748948278
+road,Expressway / Highway,2017,within_1km,QC,2.1855478177872265
+road,Expressway / Highway,2017,within_1km,SK,79.29070498685788
+road,Expressway / Highway,2017,within_1km,YT,58.893502731774255
+road,Expressway / Highway,2018,inside,BC,18.310562069251063
+road,Expressway / Highway,2018,inside,MB,22.91798728802354
+road,Expressway / Highway,2018,inside,SK,14.881726557681503
+road,Expressway / Highway,2018,inside,YT,3.6279734470835012
+road,Expressway / Highway,2018,within_1km,AB,1.7196407602591617
+road,Expressway / Highway,2018,within_1km,BC,134.50053120373812
+road,Expressway / Highway,2018,within_1km,MB,107.14892259050906
+road,Expressway / Highway,2018,within_1km,NB,7.646882667937852
+road,Expressway / Highway,2018,within_1km,NS,7.097784439614585
+road,Expressway / Highway,2018,within_1km,ON,2.659987468541389
+road,Expressway / Highway,2018,within_1km,QC,3.867803512178893
+road,Expressway / Highway,2018,within_1km,SK,58.57020712637784
+road,Expressway / Highway,2018,within_1km,YT,11.654288675152886
+road,Expressway / Highway,2019,inside,AB,0.9844710184622831
+road,Expressway / Highway,2019,inside,BC,2.5245660131301224
+road,Expressway / Highway,2019,inside,MB,8.150462732753178
+road,Expressway / Highway,2019,inside,QC,0.09795830682375378
+road,Expressway / Highway,2019,inside,SK,0.5911764856437672
+road,Expressway / Highway,2019,inside,YT,6.847631815415139
+road,Expressway / Highway,2019,within_1km,AB,9.970037985660248
+road,Expressway / Highway,2019,within_1km,BC,51.08750686505644
+road,Expressway / Highway,2019,within_1km,MB,68.48276829311374
+road,Expressway / Highway,2019,within_1km,ON,7.703562970481161
+road,Expressway / Highway,2019,within_1km,QC,8.984964341340378
+road,Expressway / Highway,2019,within_1km,SK,10.923087251184224
+road,Expressway / Highway,2019,within_1km,YT,27.654517389204578
+road,Expressway / Highway,2019,within_1km,outside,0.24221931922642428
+road,Expressway / Highway,2020,inside,BC,1.8843283701958768
+road,Expressway / Highway,2020,inside,MB,38.3210594231589
+road,Expressway / Highway,2020,inside,NS,0.5080926626910107
+road,Expressway / Highway,2020,inside,ON,3.1303148036812227
+road,Expressway / Highway,2020,inside,QC,0.08258547456323967
+road,Expressway / Highway,2020,inside,SK,1.0200874033735674
+road,Expressway / Highway,2020,inside,YT,0.2852486599612283
+road,Expressway / Highway,2020,within_1km,BC,25.553978334167542
+road,Expressway / Highway,2020,within_1km,MB,110.15672036219657
+road,Expressway / Highway,2020,within_1km,NS,5.898524410356368
+road,Expressway / Highway,2020,within_1km,NT,3.1159662366560297
+road,Expressway / Highway,2020,within_1km,ON,6.241469687960152
+road,Expressway / Highway,2020,within_1km,QC,15.58736774215367
+road,Expressway / Highway,2020,within_1km,SK,3.4228062120098834
+road,Expressway / Highway,2020,within_1km,YT,9.096560423096111
+road,Expressway / Highway,2021,inside,AB,5.141220005393395
+road,Expressway / Highway,2021,inside,BC,62.74545614981636
+road,Expressway / Highway,2021,inside,MB,76.43135813146446
+road,Expressway / Highway,2021,inside,QC,1.2458092133231178
+road,Expressway / Highway,2021,inside,SK,67.56941962545663
+road,Expressway / Highway,2021,inside,YT,4.439911524670287
+road,Expressway / Highway,2021,within_1km,AB,36.65868844991785
+road,Expressway / Highway,2021,within_1km,BC,270.20899465893956
+road,Expressway / Highway,2021,within_1km,MB,227.7098904859717
+road,Expressway / Highway,2021,within_1km,NS,6.034523452526309
+road,Expressway / Highway,2021,within_1km,NT,4.473572167892446
+road,Expressway / Highway,2021,within_1km,ON,3.7787666653000636
+road,Expressway / Highway,2021,within_1km,QC,9.468424271002128
+road,Expressway / Highway,2021,within_1km,SK,201.325393628294
+road,Expressway / Highway,2021,within_1km,YT,8.364995466823808
+road,Expressway / Highway,2022,inside,AB,2.5013799425234953
+road,Expressway / Highway,2022,inside,BC,5.440622005870213
+road,Expressway / Highway,2022,inside,MB,2.616317764649428
+road,Expressway / Highway,2022,inside,NL,6.397203044869424
+road,Expressway / Highway,2022,inside,NS,0.11483198491102245
+road,Expressway / Highway,2022,inside,NT,26.241416106796123
+road,Expressway / Highway,2022,inside,QC,0.4812499817470578
+road,Expressway / Highway,2022,inside,SK,13.419193716183115
+road,Expressway / Highway,2022,inside,YT,39.641401160818745
+road,Expressway / Highway,2022,within_1km,AB,11.929809799481873
+road,Expressway / Highway,2022,within_1km,BC,77.2331757748978
+road,Expressway / Highway,2022,within_1km,MB,8.94834780849386
+road,Expressway / Highway,2022,within_1km,NL,12.609530709967748
+road,Expressway / Highway,2022,within_1km,NS,2.253503765232338
+road,Expressway / Highway,2022,within_1km,NT,44.70182049390951
+road,Expressway / Highway,2022,within_1km,QC,26.656743580741328
+road,Expressway / Highway,2022,within_1km,SK,31.223396371963524
+road,Expressway / Highway,2022,within_1km,YT,78.87605384902187
+road,Expressway / Highway,2022,within_1km,outside,0.8242791662657584
+road,Expressway / Highway,2023,inside,AB,34.359487722379015
+road,Expressway / Highway,2023,inside,BC,53.97343333325263
+road,Expressway / Highway,2023,inside,MB,5.574331887796267
+road,Expressway / Highway,2023,inside,NS,10.420275682087034
+road,Expressway / Highway,2023,inside,NT,144.15937650583393
+road,Expressway / Highway,2023,inside,ON,0.19148685723784487
+road,Expressway / Highway,2023,inside,QC,12.380784543143308
+road,Expressway / Highway,2023,inside,SK,132.99125382865878
+road,Expressway / Highway,2023,inside,YT,16.409701432671785
+road,Expressway / Highway,2023,within_1km,AB,102.69826512179185
+road,Expressway / Highway,2023,within_1km,BC,223.61411130193414
+road,Expressway / Highway,2023,within_1km,MB,35.70040257412895
+road,Expressway / Highway,2023,within_1km,NB,6.551096077943302
+road,Expressway / Highway,2023,within_1km,NS,21.0174292680137
+road,Expressway / Highway,2023,within_1km,NT,296.4927429913767
+road,Expressway / Highway,2023,within_1km,ON,5.120626635148053
+road,Expressway / Highway,2023,within_1km,QC,54.90985511750177
+road,Expressway / Highway,2023,within_1km,SK,267.57183683234234
+road,Expressway / Highway,2023,within_1km,YT,45.72378252626588
+road,Expressway / Highway,2024,inside,AB,62.828509092512526
+road,Expressway / Highway,2024,inside,BC,16.51558239566547
+road,Expressway / Highway,2024,inside,MB,9.394649806576364
+road,Expressway / Highway,2024,inside,NL,2.9327959831465185
+road,Expressway / Highway,2024,inside,NT,37.67384700981807
+road,Expressway / Highway,2024,inside,QC,0.5071201777509093
+road,Expressway / Highway,2024,inside,SK,33.00261455314687
+road,Expressway / Highway,2024,inside,YT,9.166952969360668
+road,Expressway / Highway,2024,within_1km,AB,87.7564793746919
+road,Expressway / Highway,2024,within_1km,BC,131.8605478686779
+road,Expressway / Highway,2024,within_1km,MB,40.36094412577291
+road,Expressway / Highway,2024,within_1km,NL,16.36038813170514
+road,Expressway / Highway,2024,within_1km,NT,82.47904639800151
+road,Expressway / Highway,2024,within_1km,ON,5.182494044258656
+road,Expressway / Highway,2024,within_1km,QC,13.490582211278616
+road,Expressway / Highway,2024,within_1km,SK,111.3148183477049
+road,Expressway / Highway,2024,within_1km,YT,30.30939618546112
+road,Expressway / Highway,2025,inside,BC,38.601456618409514
+road,Expressway / Highway,2025,inside,MB,282.2781096067414
+road,Expressway / Highway,2025,inside,NB,3.6103692328091537
+road,Expressway / Highway,2025,inside,NL,15.476286843686664
+road,Expressway / Highway,2025,inside,NT,32.13703822746633
+road,Expressway / Highway,2025,inside,ON,1.3574259533181496
+road,Expressway / Highway,2025,inside,SK,834.013034925221
+road,Expressway / Highway,2025,inside,YT,4.311393158776934
+road,Expressway / Highway,2025,within_1km,AB,0.6320365616434944
+road,Expressway / Highway,2025,within_1km,BC,160.31177311998738
+road,Expressway / Highway,2025,within_1km,MB,593.3879331230619
+road,Expressway / Highway,2025,within_1km,NB,15.955732986950874
+road,Expressway / Highway,2025,within_1km,NL,44.82581379684041
+road,Expressway / Highway,2025,within_1km,NS,1.6660509324733748
+road,Expressway / Highway,2025,within_1km,NT,97.86113805511437
+road,Expressway / Highway,2025,within_1km,ON,12.598714407650823
+road,Expressway / Highway,2025,within_1km,QC,23.32306702955843
+road,Expressway / Highway,2025,within_1km,SK,1247.1054556526965
+road,Expressway / Highway,2025,within_1km,YT,40.468741145332345
+road,Expressway / Highway,2025,within_1km,outside,0.38788154365351174
+road,Expressway / Highway,2026,inside,BC,83.4181453055752
+road,Expressway / Highway,2026,inside,MB,1.2571743275049936
+road,Expressway / Highway,2026,inside,NL,2.1693604336298433
+road,Expressway / Highway,2026,inside,NT,86.18623097886325
+road,Expressway / Highway,2026,inside,ON,1.198884483545605
+road,Expressway / Highway,2026,inside,SK,16.7585617557509
+road,Expressway / Highway,2026,within_1km,BC,139.02448626544145
+road,Expressway / Highway,2026,within_1km,MB,21.190656352305265
+road,Expressway / Highway,2026,within_1km,NL,4.2297605421866775
+road,Expressway / Highway,2026,within_1km,NT,98.2724659007235
+road,Expressway / Highway,2026,within_1km,ON,7.786579479954596
+road,Expressway / Highway,2026,within_1km,QC,4.52183204695346
+road,Expressway / Highway,2026,within_1km,SK,21.885172940095995
+road,Expressway / Highway,2023_2026,inside,AB,97.18799681489155
+road,Expressway / Highway,2023_2026,inside,BC,192.3893622828955
+road,Expressway / Highway,2023_2026,inside,MB,298.2412647104627
+road,Expressway / Highway,2023_2026,inside,NB,3.6103692328091537
+road,Expressway / Highway,2023_2026,inside,NL,20.578443260463025
+road,Expressway / Highway,2023_2026,inside,NS,10.420275682087034
+road,Expressway / Highway,2023_2026,inside,NT,299.4205452924049
+road,Expressway / Highway,2023_2026,inside,ON,2.2778652392437304
+road,Expressway / Highway,2023_2026,inside,QC,12.887904720894216
+road,Expressway / Highway,2023_2026,inside,SK,1011.3571097703209
+road,Expressway / Highway,2023_2026,inside,YT,29.888047560809387
+road,Expressway / Highway,2023_2026,within_1km,AB,191.08678105812723
+road,Expressway / Highway,2023_2026,within_1km,BC,625.3517302360707
+road,Expressway / Highway,2023_2026,within_1km,MB,680.5376156249764
+road,Expressway / Highway,2023_2026,within_1km,NB,16.390235141116854
+road,Expressway / Highway,2023_2026,within_1km,NL,65.41596247073223
+road,Expressway / Highway,2023_2026,within_1km,NS,22.683480200487075
+road,Expressway / Highway,2023_2026,within_1km,NT,556.9898885324839
+road,Expressway / Highway,2023_2026,within_1km,ON,24.60785008885971
+road,Expressway / Highway,2023_2026,within_1km,QC,93.11716651146256
+road,Expressway / Highway,2023_2026,within_1km,SK,1599.6586314545495
+road,Expressway / Highway,2023_2026,within_1km,YT,116.50191985705935
+road,Expressway / Highway,2023_2026,within_1km,outside,0.38788154365351174
+road,Freeway,2016,within_1km,QC,2.8322061519398303
+road,Freeway,2017,within_1km,BC,3.7379870533914175
+road,Freeway,2017,within_1km,NB,0.20240518617089368
+road,Freeway,2018,within_1km,BC,3.697338001564529
+road,Freeway,2020,inside,QC,0.21591690595157595
+road,Freeway,2020,within_1km,BC,4.64216760328668
+road,Freeway,2020,within_1km,QC,17.282290923220334
+road,Freeway,2021,inside,BC,14.588002496620659
+road,Freeway,2021,inside,QC,0.02566843604848609
+road,Freeway,2021,within_1km,BC,80.66069787647378
+road,Freeway,2021,within_1km,QC,7.292155736807944
+road,Freeway,2022,inside,BC,2.907491214019537
+road,Freeway,2022,within_1km,BC,29.196041874572604
+road,Freeway,2022,within_1km,QC,2.4718874117812257
+road,Freeway,2023,inside,BC,0.5148085840319041
+road,Freeway,2023,within_1km,BC,8.161796639101265
+road,Freeway,2024,inside,QC,0.2940780703105101
+road,Freeway,2024,within_1km,QC,3.6158891077328734
+road,Freeway,2025,inside,BC,6.0555765582939385
+road,Freeway,2025,inside,QC,0.3949995590494399
+road,Freeway,2025,within_1km,BC,25.121517264573253
+road,Freeway,2025,within_1km,NL,6.2197001557939675
+road,Freeway,2025,within_1km,QC,4.290172657285621
+road,Freeway,2026,within_1km,BC,19.30163407232461
+road,Freeway,2023_2026,inside,BC,6.570385142325843
+road,Freeway,2023_2026,inside,QC,0.68907762935995
+road,Freeway,2023_2026,within_1km,BC,50.0064805828246
+road,Freeway,2023_2026,within_1km,NL,6.2197001557939675
+road,Freeway,2023_2026,within_1km,QC,7.906061765018494
+road,Local / Strata,2016,inside,AB,2.879424927431053
+road,Local / Strata,2016,within_1km,AB,12.911697420714917
+road,Local / Strata,2016,within_1km,BC,4.7632247401343
+road,Local / Strata,2016,within_1km,QC,0.7148383304015739
+road,Local / Strata,2017,inside,BC,0.3899942588731983
+road,Local / Strata,2017,within_1km,BC,4.4622700563014375
+road,Local / Strata,2018,inside,BC,0.11483461269419554
+road,Local / Strata,2018,inside,ON,13.740684948708026
+road,Local / Strata,2018,within_1km,AB,0.2862872379618958
+road,Local / Strata,2018,within_1km,BC,23.672929573732976
+road,Local / Strata,2018,within_1km,ON,20.102671651036513
+road,Local / Strata,2018,within_1km,QC,0.8944445962188401
+road,Local / Strata,2019,inside,ON,0.42797748012464915
+road,Local / Strata,2019,inside,YT,0.19502792127720914
+road,Local / Strata,2019,within_1km,BC,1.9351397571949693
+road,Local / Strata,2019,within_1km,ON,8.751752536381435
+road,Local / Strata,2019,within_1km,QC,0.5499773161482576
+road,Local / Strata,2019,within_1km,YT,0.6808300613503264
+road,Local / Strata,2020,within_1km,AB,0.7851149899531931
+road,Local / Strata,2020,within_1km,BC,3.702323749858087
+road,Local / Strata,2021,inside,BC,1.500829373951655
+road,Local / Strata,2021,inside,ON,0.2386705184659118
+road,Local / Strata,2021,within_1km,AB,0.17142479034839903
+road,Local / Strata,2021,within_1km,BC,12.08766688804111
+road,Local / Strata,2021,within_1km,ON,0.4943694023586056
+road,Local / Strata,2022,inside,BC,0.19426419890929822
+road,Local / Strata,2022,inside,ON,1.8384030216038636
+road,Local / Strata,2022,within_1km,BC,1.7831787530906285
+road,Local / Strata,2022,within_1km,ON,8.98278644582282
+road,Local / Strata,2022,within_1km,QC,4.556321520051959
+road,Local / Strata,2023,inside,BC,4.576549139996863
+road,Local / Strata,2023,inside,ON,0.8445407052954166
+road,Local / Strata,2023,inside,QC,7.4644675328146075
+road,Local / Strata,2023,within_1km,AB,2.1260557307104526
+road,Local / Strata,2023,within_1km,BC,20.47911244351259
+road,Local / Strata,2023,within_1km,ON,6.189326986719603
+road,Local / Strata,2023,within_1km,QC,13.34630216892388
+road,Local / Strata,2023,within_1km,YT,1.106710012322675
+road,Local / Strata,2023,within_1km,outside,0.19250904928098073
+road,Local / Strata,2024,inside,AB,24.89514662757142
+road,Local / Strata,2024,inside,BC,5.038190489829597
+road,Local / Strata,2024,inside,ON,2.377385174753273
+road,Local / Strata,2024,within_1km,AB,26.41240616191573
+road,Local / Strata,2024,within_1km,BC,11.739951833602172
+road,Local / Strata,2024,within_1km,ON,30.18722418191886
+road,Local / Strata,2024,within_1km,QC,1.171115505770235
+road,Local / Strata,2024,within_1km,outside,0.08094288160007258
+road,Local / Strata,2025,inside,BC,0.5986563203716568
+road,Local / Strata,2025,inside,ON,14.236228488947154
+road,Local / Strata,2025,within_1km,AB,0.6915498178360897
+road,Local / Strata,2025,within_1km,BC,3.1538540404165483
+road,Local / Strata,2025,within_1km,ON,32.69995662299495
+road,Local / Strata,2025,within_1km,QC,0.199964549952504
+road,Local / Strata,2025,within_1km,YT,3.444024940469758
+road,Local / Strata,2026,inside,BC,2.6075341503431835
+road,Local / Strata,2026,inside,ON,4.544580924537357
+road,Local / Strata,2026,within_1km,BC,7.1979384796094426
+road,Local / Strata,2026,within_1km,ON,15.551265885164756
+road,Local / Strata,2023_2026,inside,AB,24.89514662757142
+road,Local / Strata,2023_2026,inside,BC,12.8209301005413
+road,Local / Strata,2023_2026,inside,ON,21.653674407627562
+road,Local / Strata,2023_2026,inside,QC,7.4644675328146075
+road,Local / Strata,2023_2026,within_1km,AB,29.23001171046227
+road,Local / Strata,2023_2026,within_1km,BC,42.570856797140756
+road,Local / Strata,2023_2026,within_1km,ON,70.43613248758659
+road,Local / Strata,2023_2026,within_1km,QC,14.71738222464662
+road,Local / Strata,2023_2026,within_1km,YT,4.550734952792433
+road,Local / Strata,2023_2026,within_1km,outside,0.2734519308810533
+road,Local / Street,2016,inside,AB,42.966577885268734
+road,Local / Street,2016,inside,BC,20.537962352329036
+road,Local / Street,2016,inside,MB,0.8014331511017929
+road,Local / Street,2016,inside,NS,0.7933713384648177
+road,Local / Street,2016,inside,ON,2.403831825373145
+road,Local / Street,2016,inside,SK,0.06945270941461198
+road,Local / Street,2016,within_1km,AB,271.07925616449285
+road,Local / Street,2016,within_1km,BC,234.17553817862617
+road,Local / Street,2016,within_1km,MB,37.151276152362094
+road,Local / Street,2016,within_1km,NL,0.24723624895806687
+road,Local / Street,2016,within_1km,NS,75.57815973801392
+road,Local / Street,2016,within_1km,ON,18.73540855457481
+road,Local / Street,2016,within_1km,SK,4.730218566026879
+road,Local / Street,2016,within_1km,YT,3.370335072093576
+road,Local / Street,2016,within_1km,outside,0.3498036765552919
+road,Local / Street,2017,inside,AB,1.5363001828082092
+road,Local / Street,2017,inside,BC,273.5033623298706
+road,Local / Street,2017,inside,NS,1.6254414127305508
+road,Local / Street,2017,inside,ON,3.148879812405837
+road,Local / Street,2017,within_1km,AB,22.247988197423965
+road,Local / Street,2017,within_1km,BC,722.5685782641954
+road,Local / Street,2017,within_1km,MB,20.222625768462752
+road,Local / Street,2017,within_1km,NS,66.44108116342692
+road,Local / Street,2017,within_1km,ON,19.36008199693696
+road,Local / Street,2017,within_1km,SK,5.463524875302385
+road,Local / Street,2017,within_1km,YT,0.20208498309507608
+road,Local / Street,2017,within_1km,outside,0.2901342679135088
+road,Local / Street,2018,inside,AB,0.7289516439419247
+road,Local / Street,2018,inside,BC,38.1180501555267
+road,Local / Street,2018,inside,MB,6.150048334185357
+road,Local / Street,2018,inside,NS,1.86808189669925
+road,Local / Street,2018,inside,ON,14.55139531763567
+road,Local / Street,2018,inside,SK,2.5832074636713855
+road,Local / Street,2018,inside,YT,0.7141100086162276
+road,Local / Street,2018,within_1km,AB,39.5278842948323
+road,Local / Street,2018,within_1km,BC,307.6933706558611
+road,Local / Street,2018,within_1km,MB,86.41194322404293
+road,Local / Street,2018,within_1km,NB,0.8353349926339656
+road,Local / Street,2018,within_1km,NS,65.27643363422101
+road,Local / Street,2018,within_1km,ON,47.22690432756241
+road,Local / Street,2018,within_1km,SK,29.061199233905015
+road,Local / Street,2018,within_1km,YT,0.8502908112376899
+road,Local / Street,2018,within_1km,outside,2.3379128350591194
+road,Local / Street,2019,inside,AB,2.381385482387389
+road,Local / Street,2019,inside,BC,2.842714734758482
+road,Local / Street,2019,inside,MB,3.0638173404343108
+road,Local / Street,2019,inside,ON,21.88049276515537
+road,Local / Street,2019,inside,SK,0.11031792160517014
+road,Local / Street,2019,inside,YT,28.835950179702593
+road,Local / Street,2019,within_1km,AB,30.430297318905158
+road,Local / Street,2019,within_1km,BC,93.695580479059
+road,Local / Street,2019,within_1km,MB,49.9159956564729
+road,Local / Street,2019,within_1km,NB,2.687974385642927
+road,Local / Street,2019,within_1km,ON,50.274577961241675
+road,Local / Street,2019,within_1km,SK,2.9872233874204848
+road,Local / Street,2019,within_1km,YT,57.831452056370665
+road,Local / Street,2019,within_1km,outside,0.5276721733905048
+road,Local / Street,2020,inside,AB,0.5259822863755981
+road,Local / Street,2020,inside,BC,3.6321916753891945
+road,Local / Street,2020,inside,MB,4.112032628849964
+road,Local / Street,2020,inside,NB,2.5847654453473257
+road,Local / Street,2020,inside,NS,2.197703337102084
+road,Local / Street,2020,inside,SK,0.22342335608513814
+road,Local / Street,2020,within_1km,AB,9.768268471264921
+road,Local / Street,2020,within_1km,BC,78.60156915637089
+road,Local / Street,2020,within_1km,MB,15.443578843872917
+road,Local / Street,2020,within_1km,NB,6.5059938816358756
+road,Local / Street,2020,within_1km,NS,47.02187296677365
+road,Local / Street,2020,within_1km,ON,1.682406916502197
+road,Local / Street,2020,within_1km,SK,8.348328860489122
+road,Local / Street,2020,within_1km,outside,0.18992531590129438
+road,Local / Street,2021,inside,BC,235.53255219801594
+road,Local / Street,2021,inside,MB,3.302305264416101
+road,Local / Street,2021,inside,NB,0.6991554678558015
+road,Local / Street,2021,inside,NS,0.4493012540542212
+road,Local / Street,2021,inside,ON,12.280998020946273
+road,Local / Street,2021,inside,SK,2.518618105118197
+road,Local / Street,2021,within_1km,AB,13.715806176652011
+road,Local / Street,2021,within_1km,BC,772.925617620697
+road,Local / Street,2021,within_1km,MB,52.40884635850906
+road,Local / Street,2021,within_1km,NB,5.919577360188382
+road,Local / Street,2021,within_1km,NS,15.967417804525978
+road,Local / Street,2021,within_1km,ON,31.48833390141389
+road,Local / Street,2021,within_1km,SK,18.230657050108768
+road,Local / Street,2021,within_1km,outside,0.5140947217496866
+road,Local / Street,2022,inside,AB,0.41945248761671183
+road,Local / Street,2022,inside,BC,14.22360999847377
+road,Local / Street,2022,inside,NS,0.32068262845112105
+road,Local / Street,2022,inside,ON,2.154126975863716
+road,Local / Street,2022,inside,YT,2.8664963534615
+road,Local / Street,2022,within_1km,AB,17.86021023420669
+road,Local / Street,2022,within_1km,BC,127.59089304225867
+road,Local / Street,2022,within_1km,MB,8.912562919637327
+road,Local / Street,2022,within_1km,NS,12.365389967443594
+road,Local / Street,2022,within_1km,ON,18.14268159934086
+road,Local / Street,2022,within_1km,SK,3.1209940607591036
+road,Local / Street,2022,within_1km,YT,19.309577636235073
+road,Local / Street,2023,inside,AB,15.124078839466577
+road,Local / Street,2023,inside,BC,144.45329391802224
+road,Local / Street,2023,inside,MB,0.4911039615088132
+road,Local / Street,2023,inside,NS,46.49289227844128
+road,Local / Street,2023,inside,ON,10.43514843894588
+road,Local / Street,2023,inside,SK,2.1355354027343414
+road,Local / Street,2023,inside,outside,0.15565650831211897
+road,Local / Street,2023,within_1km,AB,99.51874719601525
+road,Local / Street,2023,within_1km,BC,698.710994771451
+road,Local / Street,2023,within_1km,MB,26.005292399842
+road,Local / Street,2023,within_1km,NB,6.875777970137244
+road,Local / Street,2023,within_1km,NS,209.45125952816542
+road,Local / Street,2023,within_1km,ON,33.17509760398053
+road,Local / Street,2023,within_1km,SK,24.40026642934557
+road,Local / Street,2023,within_1km,YT,4.87422898901681
+road,Local / Street,2023,within_1km,outside,2.0078666030209833
+road,Local / Street,2024,inside,AB,3.0272367110873364
+road,Local / Street,2024,inside,BC,12.899427175607855
+road,Local / Street,2024,inside,MB,0.2605629534985141
+road,Local / Street,2024,inside,NS,0.2394706046490342
+road,Local / Street,2024,inside,ON,2.5292291578376638
+road,Local / Street,2024,inside,SK,5.07706840007461
+road,Local / Street,2024,inside,YT,11.589643378900165
+road,Local / Street,2024,within_1km,AB,33.12691950864796
+road,Local / Street,2024,within_1km,BC,212.8847206351037
+road,Local / Street,2024,within_1km,MB,10.880961907972392
+road,Local / Street,2024,within_1km,NB,1.2248133926914448
+road,Local / Street,2024,within_1km,NL,2.846436633957029
+road,Local / Street,2024,within_1km,NS,9.325709339203847
+road,Local / Street,2024,within_1km,ON,14.046297691037804
+road,Local / Street,2024,within_1km,SK,39.16267458105137
+road,Local / Street,2024,within_1km,YT,22.817980889344195
+road,Local / Street,2025,inside,AB,6.804630135770093
+road,Local / Street,2025,inside,BC,9.569911647719655
+road,Local / Street,2025,inside,MB,16.135154437853352
+road,Local / Street,2025,inside,NB,4.521066493201869
+road,Local / Street,2025,inside,NL,24.595904909993695
+road,Local / Street,2025,inside,NS,15.833998942211606
+road,Local / Street,2025,inside,ON,37.81287582085879
+road,Local / Street,2025,inside,SK,21.900258240625217
+road,Local / Street,2025,inside,YT,18.921664730393186
+road,Local / Street,2025,within_1km,AB,38.02674862243422
+road,Local / Street,2025,within_1km,BC,184.23834431521072
+road,Local / Street,2025,within_1km,MB,127.38699741816981
+road,Local / Street,2025,within_1km,NB,25.63367877552188
+road,Local / Street,2025,within_1km,NL,43.57866824349343
+road,Local / Street,2025,within_1km,NS,63.095476903679526
+road,Local / Street,2025,within_1km,ON,84.83117351799002
+road,Local / Street,2025,within_1km,SK,137.17784693476324
+road,Local / Street,2025,within_1km,YT,43.08654697612156
+road,Local / Street,2025,within_1km,outside,1.9223245677805234
+road,Local / Street,2026,inside,BC,333.8693449703533
+road,Local / Street,2026,inside,NS,1.0872524657621467
+road,Local / Street,2026,inside,ON,33.65929098211422
+road,Local / Street,2026,inside,SK,0.13261000750638377
+road,Local / Street,2026,within_1km,BC,494.44603559162863
+road,Local / Street,2026,within_1km,MB,4.813339015248696
+road,Local / Street,2026,within_1km,NS,3.3700050191873863
+road,Local / Street,2026,within_1km,ON,47.43540835708372
+road,Local / Street,2026,within_1km,SK,2.1521208863412413
+road,Local / Street,2023_2026,inside,AB,24.85744802290802
+road,Local / Street,2023_2026,inside,BC,497.4775177281841
+road,Local / Street,2023_2026,inside,MB,16.88682135286068
+road,Local / Street,2023_2026,inside,NB,4.521066493201869
+road,Local / Street,2023_2026,inside,NL,24.595904909993695
+road,Local / Street,2023_2026,inside,NS,63.65361429106407
+road,Local / Street,2023_2026,inside,ON,82.14801416791796
+road,Local / Street,2023_2026,inside,SK,28.930300002889044
+road,Local / Street,2023_2026,inside,YT,30.247000096291856
+road,Local / Street,2023_2026,inside,outside,0.15565650831211897
+road,Local / Street,2023_2026,within_1km,AB,163.59704485438036
+road,Local / Street,2023_2026,within_1km,BC,1565.3306939575439
+road,Local / Street,2023_2026,within_1km,MB,161.5835530421867
+road,Local / Street,2023_2026,within_1km,NB,33.73427013835057
+road,Local / Street,2023_2026,within_1km,NL,46.42510487745046
+road,Local / Street,2023_2026,within_1km,NS,283.9440291157404
+road,Local / Street,2023_2026,within_1km,ON,166.2695621304761
+road,Local / Street,2023_2026,within_1km,SK,184.49019653977078
+road,Local / Street,2023_2026,within_1km,YT,65.95154820766363
+road,Local / Street,2023_2026,within_1km,outside,3.9301911708015065
+road,Local / Unknown,2016,inside,AB,0.030124836495888176
+road,Local / Unknown,2016,inside,QC,0.6251455412271607
+road,Local / Unknown,2016,within_1km,AB,1.7474545034453188
+road,Local / Unknown,2016,within_1km,BC,3.7422568244133365
+road,Local / Unknown,2016,within_1km,QC,24.947452425099556
+road,Local / Unknown,2017,inside,BC,23.45866888350441
+road,Local / Unknown,2017,inside,QC,0.560048170543462
+road,Local / Unknown,2017,within_1km,BC,46.274982010084734
+road,Local / Unknown,2017,within_1km,NT,2.0648515478381992
+road,Local / Unknown,2017,within_1km,QC,11.282529472152222
+road,Local / Unknown,2018,inside,BC,3.6400252788991856
+road,Local / Unknown,2018,inside,NB,2.19467918725883
+road,Local / Unknown,2018,inside,QC,0.8429890403648688
+road,Local / Unknown,2018,within_1km,BC,24.26412572566822
+road,Local / Unknown,2018,within_1km,NB,4.124138151978217
+road,Local / Unknown,2018,within_1km,QC,65.60427201237351
+road,Local / Unknown,2018,within_1km,SK,0.2108465517155712
+road,Local / Unknown,2019,inside,QC,0.5971932519862363
+road,Local / Unknown,2019,within_1km,BC,4.722627373832165
+road,Local / Unknown,2019,within_1km,QC,19.688222171271498
+road,Local / Unknown,2020,inside,BC,0.3888006282184182
+road,Local / Unknown,2020,inside,QC,2.495861724698414
+road,Local / Unknown,2020,within_1km,BC,15.688145052442042
+road,Local / Unknown,2020,within_1km,NB,0.8548171774060713
+road,Local / Unknown,2020,within_1km,QC,111.47835411707159
+road,Local / Unknown,2020,within_1km,outside,0.21307091330423972
+road,Local / Unknown,2021,inside,BC,20.51255102703404
+road,Local / Unknown,2021,inside,NB,0.517608691933955
+road,Local / Unknown,2021,inside,QC,3.667421814046983
+road,Local / Unknown,2021,within_1km,AB,0.5274229439608625
+road,Local / Unknown,2021,within_1km,BC,59.4854830790897
+road,Local / Unknown,2021,within_1km,NB,1.4131822562986611
+road,Local / Unknown,2021,within_1km,QC,59.20689246135149
+road,Local / Unknown,2022,inside,QC,2.8839784264039943
+road,Local / Unknown,2022,within_1km,AB,0.22442006441993906
+road,Local / Unknown,2022,within_1km,BC,1.4470047368645322
+road,Local / Unknown,2022,within_1km,QC,142.42250865490226
+road,Local / Unknown,2022,within_1km,outside,0.9179746653752917
+road,Local / Unknown,2023,inside,AB,0.632183810432207
+road,Local / Unknown,2023,inside,BC,24.958491700413095
+road,Local / Unknown,2023,inside,NB,2.0349844798836485
+road,Local / Unknown,2023,inside,NT,44.03501519206349
+road,Local / Unknown,2023,inside,QC,58.759434996862446
+road,Local / Unknown,2023,within_1km,AB,4.443973647019828
+road,Local / Unknown,2023,within_1km,BC,52.39860418761533
+road,Local / Unknown,2023,within_1km,NB,3.860613187651509
+road,Local / Unknown,2023,within_1km,NT,146.2918083502713
+road,Local / Unknown,2023,within_1km,QC,184.53892761477653
+road,Local / Unknown,2023,within_1km,outside,0.21307091330423972
+road,Local / Unknown,2024,inside,BC,12.460274803127424
+road,Local / Unknown,2024,inside,NB,0.2168955962599384
+road,Local / Unknown,2024,inside,NT,3.3955144202975176
+road,Local / Unknown,2024,inside,QC,14.68739294300244
+road,Local / Unknown,2024,within_1km,AB,2.41144479006119
+road,Local / Unknown,2024,within_1km,BC,46.286394834105614
+road,Local / Unknown,2024,within_1km,NB,1.8322778035776426
+road,Local / Unknown,2024,within_1km,NT,18.30693736388794
+road,Local / Unknown,2024,within_1km,QC,85.26873348241818
+road,Local / Unknown,2024,within_1km,SK,3.2006179977589277
+road,Local / Unknown,2024,within_1km,outside,0.21307091330423972
+road,Local / Unknown,2025,inside,AB,0.4300094948446481
+road,Local / Unknown,2025,inside,BC,12.825409689826406
+road,Local / Unknown,2025,inside,NB,2.244587185276764
+road,Local / Unknown,2025,inside,NT,0.2879517938499641
+road,Local / Unknown,2025,inside,QC,0.4573966167105591
+road,Local / Unknown,2025,inside,SK,1.0276859793410922
+road,Local / Unknown,2025,within_1km,AB,1.4622282516893732
+road,Local / Unknown,2025,within_1km,BC,38.292491825545156
+road,Local / Unknown,2025,within_1km,NB,7.905441421410223
+road,Local / Unknown,2025,within_1km,NT,18.26187037063175
+road,Local / Unknown,2025,within_1km,QC,107.58656959536609
+road,Local / Unknown,2025,within_1km,SK,6.138344480979886
+road,Local / Unknown,2025,within_1km,outside,0.49479530860647947
+road,Local / Unknown,2026,inside,BC,0.4270369202112686
+road,Local / Unknown,2026,inside,NB,0.2889345480495429
+road,Local / Unknown,2026,inside,NT,14.018672294971278
+road,Local / Unknown,2026,inside,ON,0.15231691969122732
+road,Local / Unknown,2026,within_1km,BC,2.794493990926057
+road,Local / Unknown,2026,within_1km,NB,0.3785739434046105
+road,Local / Unknown,2026,within_1km,NT,33.612316773351324
+road,Local / Unknown,2026,within_1km,ON,0.15231691969122732
+road,Local / Unknown,2026,within_1km,QC,5.1180985743309035
+road,Local / Unknown,2023_2026,inside,AB,1.062193305276855
+road,Local / Unknown,2023_2026,inside,BC,49.742513927505165
+road,Local / Unknown,2023_2026,inside,NB,2.6506568747867294
+road,Local / Unknown,2023_2026,inside,NT,61.737153701182244
+road,Local / Unknown,2023_2026,inside,ON,0.15231691969122732
+road,Local / Unknown,2023_2026,inside,QC,73.90422455657544
+road,Local / Unknown,2023_2026,inside,SK,1.0276859793410922
+road,Local / Unknown,2023_2026,within_1km,AB,8.317646688770392
+road,Local / Unknown,2023_2026,within_1km,BC,117.2854221249402
+road,Local / Unknown,2023_2026,within_1km,NB,8.453227090773618
+road,Local / Unknown,2023_2026,within_1km,NT,216.47293285814231
+road,Local / Unknown,2023_2026,within_1km,ON,0.15231691969122732
+road,Local / Unknown,2023_2026,within_1km,QC,374.22656854744133
+road,Local / Unknown,2023_2026,within_1km,SK,6.138344480979886
+road,Local / Unknown,2023_2026,within_1km,outside,0.49479530860647947
+road,Ramp,2016,inside,AB,2.2971354802745743
+road,Ramp,2016,inside,BC,0.15348574377655627
+road,Ramp,2016,within_1km,AB,20.330394402384673
+road,Ramp,2016,within_1km,BC,0.35612648089669163
+road,Ramp,2016,within_1km,NS,0.19929189883592172
+road,Ramp,2016,within_1km,QC,0.303258042133274
+road,Ramp,2017,inside,BC,0.6484949224257903
+road,Ramp,2017,within_1km,BC,3.9032772999937015
+road,Ramp,2017,within_1km,NS,1.8939012510303677
+road,Ramp,2018,within_1km,AB,0.14575556307205018
+road,Ramp,2018,within_1km,BC,5.119726324281671
+road,Ramp,2018,within_1km,NB,2.4779689674500256
+road,Ramp,2018,within_1km,NS,1.1061436979141965
+road,Ramp,2018,within_1km,QC,0.2854961230009343
+road,Ramp,2019,inside,AB,0.3937919720784705
+road,Ramp,2019,within_1km,AB,0.3937919720784705
+road,Ramp,2019,within_1km,BC,1.2973302150611044
+road,Ramp,2020,inside,NS,0.5052927069467015
+road,Ramp,2020,within_1km,BC,1.6650062431562316
+road,Ramp,2020,within_1km,NS,1.4364090407275587
+road,Ramp,2020,within_1km,QC,1.1385841996705872
+road,Ramp,2021,inside,AB,0.2613153797992064
+road,Ramp,2021,inside,BC,1.0549809916069202
+road,Ramp,2021,within_1km,AB,2.101776347053196
+road,Ramp,2021,within_1km,BC,10.956637822780426
+road,Ramp,2021,within_1km,NB,0.04885320794765094
+road,Ramp,2021,within_1km,NS,0.42957253699604714
+road,Ramp,2021,within_1km,QC,0.48672703111182414
+road,Ramp,2022,inside,BC,0.48341639833226513
+road,Ramp,2022,within_1km,BC,3.1770233540913098
+road,Ramp,2022,within_1km,QC,1.674982950397588
+road,Ramp,2023,inside,AB,0.11734968046690283
+road,Ramp,2023,inside,BC,0.1151146650886964
+road,Ramp,2023,within_1km,AB,4.145084371270846
+road,Ramp,2023,within_1km,BC,2.143750550188725
+road,Ramp,2023,within_1km,NB,1.3491530936423308
+road,Ramp,2023,within_1km,NS,0.0327474653845442
+road,Ramp,2024,inside,AB,0.2540790148129282
+road,Ramp,2024,within_1km,AB,0.6021358350983944
+road,Ramp,2024,within_1km,BC,0.598003172036111
+road,Ramp,2024,within_1km,QC,0.6204019098627567
+road,Ramp,2025,inside,SK,0.3308805293179895
+road,Ramp,2025,within_1km,BC,3.0617828074870834
+road,Ramp,2025,within_1km,MB,0.4515921838248935
+road,Ramp,2025,within_1km,NB,2.4779689674500256
+road,Ramp,2025,within_1km,NL,0.1197763120012123
+road,Ramp,2025,within_1km,NS,1.160631854843815
+road,Ramp,2025,within_1km,QC,3.7680697011246216
+road,Ramp,2025,within_1km,SK,0.3308805293179895
+road,Ramp,2026,inside,BC,0.28852251517303346
+road,Ramp,2026,within_1km,BC,1.1316553803378557
+road,Ramp,2023_2026,inside,AB,0.3714286952798311
+road,Ramp,2023_2026,inside,BC,0.40363718026172984
+road,Ramp,2023_2026,inside,SK,0.3308805293179895
+road,Ramp,2023_2026,within_1km,AB,4.74722020636924
+road,Ramp,2023_2026,within_1km,BC,6.935191910049775
+road,Ramp,2023_2026,within_1km,MB,0.4515921838248935
+road,Ramp,2023_2026,within_1km,NB,2.4779689674500256
+road,Ramp,2023_2026,within_1km,NL,0.1197763120012123
+road,Ramp,2023_2026,within_1km,NS,1.1933793202283594
+road,Ramp,2023_2026,within_1km,QC,4.2547967322364455
+road,Ramp,2023_2026,within_1km,SK,0.3308805293179895
+road,Resource / Recreation,2016,inside,AB,28.552803902540976
+road,Resource / Recreation,2016,inside,BC,0.4257247995316724
+road,Resource / Recreation,2016,inside,NS,2.593493293745994
+road,Resource / Recreation,2016,inside,NT,15.722146236578519
+road,Resource / Recreation,2016,inside,ON,24.96779103572593
+road,Resource / Recreation,2016,inside,SK,0.5958917442419455
+road,Resource / Recreation,2016,within_1km,AB,87.98314104456671
+road,Resource / Recreation,2016,within_1km,BC,13.401520384349372
+road,Resource / Recreation,2016,within_1km,NS,38.70033774987143
+road,Resource / Recreation,2016,within_1km,NT,25.14367906206904
+road,Resource / Recreation,2016,within_1km,ON,95.94363814223088
+road,Resource / Recreation,2016,within_1km,QC,2.4925234365991566
+road,Resource / Recreation,2016,within_1km,SK,2.61665859285337
+road,Resource / Recreation,2016,within_1km,outside,0.14140488316579827
+road,Resource / Recreation,2017,inside,BC,480.34958389025354
+road,Resource / Recreation,2017,inside,NB,1.2569807408649638
+road,Resource / Recreation,2017,inside,NS,0.6704077349788655
+road,Resource / Recreation,2017,inside,ON,3.3375372108741312
+road,Resource / Recreation,2017,inside,SK,9.411074085124115
+road,Resource / Recreation,2017,within_1km,AB,14.464189757899602
+road,Resource / Recreation,2017,within_1km,BC,799.0634279261186
+road,Resource / Recreation,2017,within_1km,NB,9.24619550903817
+road,Resource / Recreation,2017,within_1km,NS,17.26480709648837
+road,Resource / Recreation,2017,within_1km,ON,19.038631680502334
+road,Resource / Recreation,2017,within_1km,SK,19.619228505054366
+road,Resource / Recreation,2017,within_1km,YT,2.20158766625974
+road,Resource / Recreation,2017,within_1km,outside,0.024289404955791155
+road,Resource / Recreation,2018,inside,AB,4.2379436336334395
+road,Resource / Recreation,2018,inside,BC,210.05595025744168
+road,Resource / Recreation,2018,inside,NB,11.214878193327275
+road,Resource / Recreation,2018,inside,NS,0.07855683964548103
+road,Resource / Recreation,2018,inside,ON,46.46107684248533
+road,Resource / Recreation,2018,inside,QC,6.257558971049818
+road,Resource / Recreation,2018,inside,SK,23.541824958989277
+road,Resource / Recreation,2018,within_1km,AB,33.2454164965209
+road,Resource / Recreation,2018,within_1km,BC,486.3507835476346
+road,Resource / Recreation,2018,within_1km,NB,24.30914107127736
+road,Resource / Recreation,2018,within_1km,NS,13.88049432834675
+road,Resource / Recreation,2018,within_1km,ON,158.74763065586527
+road,Resource / Recreation,2018,within_1km,QC,12.925206416075454
+road,Resource / Recreation,2018,within_1km,SK,52.44179449476903
+road,Resource / Recreation,2018,within_1km,YT,5.846630240611984
+road,Resource / Recreation,2018,within_1km,outside,0.16853938080639194
+road,Resource / Recreation,2019,inside,AB,37.887038382287976
+road,Resource / Recreation,2019,inside,BC,0.26004863394362693
+road,Resource / Recreation,2019,inside,NT,0.2946750090515461
+road,Resource / Recreation,2019,inside,ON,30.427066537865905
+road,Resource / Recreation,2019,inside,SK,12.810639369311792
+road,Resource / Recreation,2019,inside,YT,0.35784885226990276
+road,Resource / Recreation,2019,within_1km,AB,98.14678958399227
+road,Resource / Recreation,2019,within_1km,BC,11.450498166246163
+road,Resource / Recreation,2019,within_1km,NT,4.9145736724736775
+road,Resource / Recreation,2019,within_1km,ON,59.99907752861486
+road,Resource / Recreation,2019,within_1km,SK,24.42138014918227
+road,Resource / Recreation,2019,within_1km,YT,3.3351063330946475
+road,Resource / Recreation,2020,inside,AB,0.9760187714524375
+road,Resource / Recreation,2020,inside,BC,10.581342990975818
+road,Resource / Recreation,2020,inside,NS,1.1905666395037762
+road,Resource / Recreation,2020,inside,SK,61.409701679658006
+road,Resource / Recreation,2020,within_1km,AB,9.161726497959316
+road,Resource / Recreation,2020,within_1km,BC,25.315314438860778
+road,Resource / Recreation,2020,within_1km,NB,0.27569649964480025
+road,Resource / Recreation,2020,within_1km,NS,24.30778249182879
+road,Resource / Recreation,2020,within_1km,ON,1.3759124470203237
+road,Resource / Recreation,2020,within_1km,QC,4.658636497759202
+road,Resource / Recreation,2020,within_1km,SK,82.57226396248488
+road,Resource / Recreation,2021,inside,AB,7.62797732847756
+road,Resource / Recreation,2021,inside,BC,151.95692519880052
+road,Resource / Recreation,2021,inside,NT,0.16924886241810902
+road,Resource / Recreation,2021,inside,ON,25.84951585884334
+road,Resource / Recreation,2021,inside,SK,67.73580531241113
+road,Resource / Recreation,2021,within_1km,AB,58.165394013402015
+road,Resource / Recreation,2021,within_1km,BC,367.12148130016925
+road,Resource / Recreation,2021,within_1km,NS,12.262806746829206
+road,Resource / Recreation,2021,within_1km,NT,1.4733591547939513
+road,Resource / Recreation,2021,within_1km,ON,87.4183557295384
+road,Resource / Recreation,2021,within_1km,QC,0.5248519096690833
+road,Resource / Recreation,2021,within_1km,SK,158.14239770259238
+road,Resource / Recreation,2022,inside,AB,8.811595693321255
+road,Resource / Recreation,2022,inside,BC,2.335871643818014
+road,Resource / Recreation,2022,inside,NB,3.177380305436885
+road,Resource / Recreation,2022,inside,NS,0.9155388495518282
+road,Resource / Recreation,2022,inside,NT,3.0936060248883854
+road,Resource / Recreation,2022,inside,ON,3.411770349821505
+road,Resource / Recreation,2022,within_1km,AB,38.24419107885234
+road,Resource / Recreation,2022,within_1km,BC,47.65672625517271
+road,Resource / Recreation,2022,within_1km,NB,18.362962394653252
+road,Resource / Recreation,2022,within_1km,NS,14.387097551005962
+road,Resource / Recreation,2022,within_1km,NT,3.711687793380446
+road,Resource / Recreation,2022,within_1km,ON,11.509286817903444
+road,Resource / Recreation,2022,within_1km,QC,0.19939122490010938
+road,Resource / Recreation,2022,within_1km,SK,0.4554159547482868
+road,Resource / Recreation,2023,inside,AB,1433.2762539163868
+road,Resource / Recreation,2023,inside,BC,198.03831972705302
+road,Resource / Recreation,2023,inside,NB,10.029091818859914
+road,Resource / Recreation,2023,inside,NS,29.231174366856497
+road,Resource / Recreation,2023,inside,NT,61.3947398230737
+road,Resource / Recreation,2023,inside,ON,168.39019136750252
+road,Resource / Recreation,2023,inside,QC,122.05002942493854
+road,Resource / Recreation,2023,inside,SK,27.429800482153883
+road,Resource / Recreation,2023,inside,YT,6.521927718517219
+road,Resource / Recreation,2023,within_1km,AB,2325.713527523087
+road,Resource / Recreation,2023,within_1km,BC,531.7586576480719
+road,Resource / Recreation,2023,within_1km,NB,28.237227258740834
+road,Resource / Recreation,2023,within_1km,NS,78.30580065934573
+road,Resource / Recreation,2023,within_1km,NT,92.50640325030679
+road,Resource / Recreation,2023,within_1km,ON,280.6011383006931
+road,Resource / Recreation,2023,within_1km,QC,203.1224726095376
+road,Resource / Recreation,2023,within_1km,SK,87.6733711272185
+road,Resource / Recreation,2023,within_1km,YT,26.840071036997756
+road,Resource / Recreation,2023,within_1km,outside,0.23317595226680693
+road,Resource / Recreation,2024,inside,AB,28.51597140194437
+road,Resource / Recreation,2024,inside,BC,131.13301186331682
+road,Resource / Recreation,2024,inside,NB,40.970774632667364
+road,Resource / Recreation,2024,inside,NT,4.1535815030861665
+road,Resource / Recreation,2024,inside,ON,0.7419231306444266
+road,Resource / Recreation,2024,inside,SK,12.261824150571085
+road,Resource / Recreation,2024,within_1km,AB,93.77008602132834
+road,Resource / Recreation,2024,within_1km,BC,326.3441884346174
+road,Resource / Recreation,2024,within_1km,NB,110.61314076711166
+road,Resource / Recreation,2024,within_1km,NS,4.036999451081186
+road,Resource / Recreation,2024,within_1km,NT,12.939021278491849
+road,Resource / Recreation,2024,within_1km,ON,14.54020581762544
+road,Resource / Recreation,2024,within_1km,QC,3.3875603855098877
+road,Resource / Recreation,2024,within_1km,SK,61.28856886670287
+road,Resource / Recreation,2025,inside,AB,175.91295715619302
+road,Resource / Recreation,2025,inside,BC,27.298697148634314
+road,Resource / Recreation,2025,inside,MB,0.8773062738460331
+road,Resource / Recreation,2025,inside,NB,25.974278386157568
+road,Resource / Recreation,2025,inside,NL,8.912328344714412
+road,Resource / Recreation,2025,inside,NS,43.343211731629566
+road,Resource / Recreation,2025,inside,NT,14.170163552324244
+road,Resource / Recreation,2025,inside,ON,71.85111382824515
+road,Resource / Recreation,2025,inside,SK,295.48459020351544
+road,Resource / Recreation,2025,inside,YT,0.10636004562238097
+road,Resource / Recreation,2025,within_1km,AB,408.0716398046639
+road,Resource / Recreation,2025,within_1km,BC,93.2819525654681
+road,Resource / Recreation,2025,within_1km,MB,1.081914180131816
+road,Resource / Recreation,2025,within_1km,NB,92.78756889604627
+road,Resource / Recreation,2025,within_1km,NL,11.440076725803264
+road,Resource / Recreation,2025,within_1km,NS,87.18125670832079
+road,Resource / Recreation,2025,within_1km,NT,24.187337824281904
+road,Resource / Recreation,2025,within_1km,ON,174.64383432064963
+road,Resource / Recreation,2025,within_1km,SK,428.98486683006115
+road,Resource / Recreation,2025,within_1km,YT,12.009664840996331
+road,Resource / Recreation,2025,within_1km,outside,0.32839807838894375
+road,Resource / Recreation,2026,inside,AB,3.6466260575205087
+road,Resource / Recreation,2026,inside,BC,56.21836650357558
+road,Resource / Recreation,2026,inside,NB,30.521269730872536
+road,Resource / Recreation,2026,inside,NS,1.094355918916118
+road,Resource / Recreation,2026,inside,NT,6.29105124779938
+road,Resource / Recreation,2026,inside,ON,308.0172665797196
+road,Resource / Recreation,2026,inside,SK,62.26668416721564
+road,Resource / Recreation,2026,within_1km,AB,7.035068911244154
+road,Resource / Recreation,2026,within_1km,BC,100.60770621778357
+road,Resource / Recreation,2026,within_1km,NB,68.06028826198332
+road,Resource / Recreation,2026,within_1km,NS,4.178173325081192
+road,Resource / Recreation,2026,within_1km,NT,8.406475032270867
+road,Resource / Recreation,2026,within_1km,ON,403.4537834177128
+road,Resource / Recreation,2026,within_1km,QC,2.333441179549214
+road,Resource / Recreation,2026,within_1km,SK,90.8661772358282
+road,Resource / Recreation,2023_2026,inside,AB,1641.0981910284254
+road,Resource / Recreation,2023_2026,inside,BC,411.2528032873999
+road,Resource / Recreation,2023_2026,inside,MB,0.8773062738460331
+road,Resource / Recreation,2023_2026,inside,NB,70.74429596097009
+road,Resource / Recreation,2023_2026,inside,NL,8.912328344714412
+road,Resource / Recreation,2023_2026,inside,NS,73.66874201740218
+road,Resource / Recreation,2023_2026,inside,NT,86.00953612628349
+road,Resource / Recreation,2023_2026,inside,ON,548.7704995932029
+road,Resource / Recreation,2023_2026,inside,QC,122.05002942493854
+road,Resource / Recreation,2023_2026,inside,SK,395.6894446578969
+road,Resource / Recreation,2023_2026,inside,YT,6.6282877641396
+road,Resource / Recreation,2023_2026,within_1km,AB,2772.0198023342864
+road,Resource / Recreation,2023_2026,within_1km,BC,1016.8727684514863
+road,Resource / Recreation,2023_2026,within_1km,MB,1.081914180131816
+road,Resource / Recreation,2023_2026,within_1km,NB,167.77427732245533
+road,Resource / Recreation,2023_2026,within_1km,NL,11.440076725803264
+road,Resource / Recreation,2023_2026,within_1km,NS,173.7022301438289
+road,Resource / Recreation,2023_2026,within_1km,NT,135.61170900208208
+road,Resource / Recreation,2023_2026,within_1km,ON,865.4955486407733
+road,Resource / Recreation,2023_2026,within_1km,QC,208.8434741745967
+road,Resource / Recreation,2023_2026,within_1km,SK,646.3523339060919
+road,Resource / Recreation,2023_2026,within_1km,YT,36.53869390571715
+road,Resource / Recreation,2023_2026,within_1km,outside,0.5615740306557506
+road,Service Lane,2016,inside,AB,1.4905096195218623
+road,Service Lane,2016,inside,BC,0.08870976198299865
+road,Service Lane,2016,within_1km,AB,2.531482278348183
+road,Service Lane,2016,within_1km,BC,2.2745979397082725
+road,Service Lane,2016,within_1km,QC,0.03768087669330963
+road,Service Lane,2017,inside,AB,0.0042406536490065
+road,Service Lane,2017,inside,BC,1.462777471687659
+road,Service Lane,2017,inside,YT,0.1320901567877983
+road,Service Lane,2017,within_1km,AB,0.0042406536490065
+road,Service Lane,2017,within_1km,BC,8.823073408123818
+road,Service Lane,2017,within_1km,YT,0.15178896844414738
+road,Service Lane,2018,inside,BC,0.44363256644573035
+road,Service Lane,2018,within_1km,BC,2.617865289457303
+road,Service Lane,2018,within_1km,NB,0.03737139999555775
+road,Service Lane,2018,within_1km,NS,0.029095122370654026
+road,Service Lane,2019,inside,AB,0.016870783641583845
+road,Service Lane,2019,within_1km,AB,0.11591106809251212
+road,Service Lane,2019,within_1km,BC,1.4697135868997018
+road,Service Lane,2019,within_1km,YT,0.12125347497255605
+road,Service Lane,2020,within_1km,BC,0.10314485214007738
+road,Service Lane,2020,within_1km,QC,0.8196631820210928
+road,Service Lane,2021,inside,BC,1.1231677724666604
+road,Service Lane,2021,within_1km,AB,0.11062459675152929
+road,Service Lane,2021,within_1km,BC,7.20531817286772
+road,Service Lane,2021,within_1km,QC,0.07812498259495561
+road,Service Lane,2022,inside,QC,0.04966053867257212
+road,Service Lane,2022,within_1km,AB,0.16589509715103967
+road,Service Lane,2022,within_1km,BC,1.543208636438603
+road,Service Lane,2022,within_1km,QC,0.4268206645157916
+road,Service Lane,2023,inside,BC,2.376640659802546
+road,Service Lane,2023,inside,NT,2.3248046610173856
+road,Service Lane,2023,within_1km,AB,0.9663881119583759
+road,Service Lane,2023,within_1km,BC,6.975939521775543
+road,Service Lane,2023,within_1km,NB,0.03737139999555775
+road,Service Lane,2023,within_1km,NT,3.778006503700383
+road,Service Lane,2023,within_1km,YT,0.13691754477310522
+road,Service Lane,2024,inside,AB,1.226585355791708
+road,Service Lane,2024,inside,NT,0.1327622255687422
+road,Service Lane,2024,within_1km,AB,1.3308885437813618
+road,Service Lane,2024,within_1km,BC,2.8015502256778806
+road,Service Lane,2024,within_1km,NT,0.1327622255687422
+road,Service Lane,2025,inside,BC,0.7215808757840959
+road,Service Lane,2025,within_1km,AB,1.8550638390151095
+road,Service Lane,2025,within_1km,BC,5.173930815421084
+road,Service Lane,2025,within_1km,NB,0.03737139999555775
+road,Service Lane,2025,within_1km,NS,1.3791080607726505
+road,Service Lane,2025,within_1km,NT,0.26954317611436734
+road,Service Lane,2025,within_1km,QC,0.02503343622716414
+road,Service Lane,2025,within_1km,YT,0.10054257045628777
+road,Service Lane,2026,inside,BC,1.5281743120600615
+road,Service Lane,2026,within_1km,BC,2.473100595042666
+road,Service Lane,2023_2026,inside,AB,1.226585355791708
+road,Service Lane,2023_2026,inside,BC,4.6263958476467035
+road,Service Lane,2023_2026,inside,NT,2.457566886586128
+road,Service Lane,2023_2026,within_1km,AB,4.1523404947548475
+road,Service Lane,2023_2026,within_1km,BC,17.299138796977697
+road,Service Lane,2023_2026,within_1km,NB,0.03737139999555775
+road,Service Lane,2023_2026,within_1km,NS,1.3791080607726505
+road,Service Lane,2023_2026,within_1km,NT,4.04754967981475
+road,Service Lane,2023_2026,within_1km,QC,0.02503343622716414
+road,Service Lane,2023_2026,within_1km,YT,0.23746011522939298
+road,Unknown,2022,within_1km,NT,0.06508224847246147
+road,Unknown,2023,inside,NS,0.5279144009692511
+road,Unknown,2023,inside,NT,7.467217296244279
+road,Unknown,2023,within_1km,NS,0.5744612333697791
+road,Unknown,2023,within_1km,NT,16.803872232196206
+road,Unknown,2024,inside,NT,4.158416406433445
+road,Unknown,2024,within_1km,NT,6.376729118695377
+road,Unknown,2025,inside,NT,0.29521024617505615
+road,Unknown,2025,within_1km,NS,0.12395229224477744
+road,Unknown,2025,within_1km,NT,14.774564066132573
+road,Unknown,2026,inside,NT,5.527920535557422
+road,Unknown,2026,within_1km,NT,8.971752413305552
+road,Unknown,2023_2026,inside,NS,0.5279144009692511
+road,Unknown,2023_2026,inside,NT,17.4487644844102
+road,Unknown,2023_2026,within_1km,NS,0.6984135256145565
+road,Unknown,2023_2026,within_1km,NT,46.91484740678946
+road,Winter,2016,inside,AB,56.912744110175105
+road,Winter,2016,inside,NT,12.001382620828206
+road,Winter,2016,within_1km,AB,84.7273989542531
+road,Winter,2016,within_1km,NT,40.32979196581117
+road,Winter,2016,within_1km,SK,0.1115242509128429
+road,Winter,2017,inside,MB,10.200231940631616
+road,Winter,2017,inside,ON,10.287535969743775
+road,Winter,2017,within_1km,MB,47.06570756142803
+road,Winter,2017,within_1km,NT,5.604194499225289
+road,Winter,2017,within_1km,ON,31.802072163175033
+road,Winter,2018,inside,MB,3.6422301244431474
+road,Winter,2018,inside,ON,3.4634998840475197
+road,Winter,2018,within_1km,MB,17.236670755130234
+road,Winter,2018,within_1km,ON,22.432966995444605
+road,Winter,2019,inside,AB,9.999508629852242
+road,Winter,2019,inside,MB,0.6417303523526793
+road,Winter,2019,inside,NT,0.11064068815015934
+road,Winter,2019,inside,ON,27.5092030752501
+road,Winter,2019,within_1km,AB,21.198746432602174
+road,Winter,2019,within_1km,MB,11.696398887594393
+road,Winter,2019,within_1km,NT,1.9227638129109337
+road,Winter,2019,within_1km,ON,45.86725457360194
+road,Winter,2020,within_1km,MB,1.8048117710197094
+road,Winter,2021,inside,MB,111.0810865419258
+road,Winter,2021,inside,ON,7.847587185618619
+road,Winter,2021,inside,SK,5.157571492022
+road,Winter,2021,within_1km,AB,0.030713415974092623
+road,Winter,2021,within_1km,MB,203.56176016127648
+road,Winter,2021,within_1km,NT,9.85988579850209
+road,Winter,2021,within_1km,ON,23.407006105770886
+road,Winter,2021,within_1km,SK,19.596821181955704
+road,Winter,2022,inside,MB,0.3934331545008153
+road,Winter,2022,inside,NT,19.093678546556852
+road,Winter,2022,inside,SK,2.309524722410833
+road,Winter,2022,within_1km,MB,10.095771703030747
+road,Winter,2022,within_1km,NT,26.93575512689767
+road,Winter,2022,within_1km,SK,12.890002904783156
+road,Winter,2023,inside,AB,2.2964148746663344
+road,Winter,2023,inside,MB,1.5667035568043972
+road,Winter,2023,inside,NT,92.7468199229425
+road,Winter,2023,inside,SK,7.038534796481483
+road,Winter,2023,within_1km,AB,6.22884526938072
+road,Winter,2023,within_1km,MB,9.31992716360635
+road,Winter,2023,within_1km,NT,171.2914775546417
+road,Winter,2023,within_1km,SK,15.374245623324759
+road,Winter,2024,inside,AB,3.4450187375011105
+road,Winter,2024,inside,MB,45.09065319505283
+road,Winter,2024,inside,NT,45.58819977419215
+road,Winter,2024,within_1km,AB,7.221102310209161
+road,Winter,2024,within_1km,MB,80.6234199196184
+road,Winter,2024,within_1km,NT,96.2910889733928
+road,Winter,2024,within_1km,ON,0.34519701130110875
+road,Winter,2024,within_1km,SK,3.2425730969020945
+road,Winter,2025,inside,MB,65.26699168513318
+road,Winter,2025,inside,NT,8.869504702750175
+road,Winter,2025,inside,ON,77.75058568113606
+road,Winter,2025,within_1km,MB,142.1486157608966
+road,Winter,2025,within_1km,NT,38.312077436071476
+road,Winter,2025,within_1km,ON,164.38745161609486
+road,Winter,2025,within_1km,SK,2.202520393074053
+road,Winter,2026,inside,MB,18.648997936142308
+road,Winter,2026,inside,NT,27.75502890329834
+road,Winter,2026,inside,ON,2.091162744155644
+road,Winter,2026,within_1km,MB,30.75918602018686
+road,Winter,2026,within_1km,NT,44.84887983744306
+road,Winter,2026,within_1km,ON,3.778480859416663
+road,Winter,2023_2026,inside,AB,5.7414336121674445
+road,Winter,2023_2026,inside,MB,128.13978461181603
+road,Winter,2023_2026,inside,NT,174.95955330318316
+road,Winter,2023_2026,inside,ON,79.8417484252917
+road,Winter,2023_2026,inside,SK,7.038534796481483
+road,Winter,2023_2026,within_1km,AB,13.44994757958988
+road,Winter,2023_2026,within_1km,MB,248.32736287524298
+road,Winter,2023_2026,within_1km,NT,348.8128339836839
+road,Winter,2023_2026,within_1km,ON,168.51112948681262
+road,Winter,2023_2026,within_1km,SK,20.819339113300906

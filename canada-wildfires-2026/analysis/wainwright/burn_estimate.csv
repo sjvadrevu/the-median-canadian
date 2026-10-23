@@ -1,0 +1,5 @@
+threshold,components,area_ha,inside_base_ha,outside_base_ha,max_dist_beyond_base_m,post_masked_share_500m_ring,share_burn_clear_on_1014,share_of_clear_1014_already_dNBR_ge_T,median_dNBR
+0.1,3,13903.7,9369.2,4534.5,5406,0.16,0.639,0.164,0.143
+0.2,1,1161.3,1051.0,110.3,1407,0.042,0.627,0.016,0.464
+0.27,11,1089.0,993.9,95.2,1088,0.039,0.619,0.003,0.472
+0.44,30,673.0,651.6,21.4,947,0.028,0.524,0.0,0.516

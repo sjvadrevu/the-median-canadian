@@ -1,0 +1,88 @@
+component,prov,year,value_nominal,value_2025d,status,source,kind,low_2025d,high_2025d
+A_provincial_firefighting,AB,2016,323782000.0,414096265.108731,"actual (voted actuals, unaudited)",All wildfire program lines (management + presuppression/response),spending,,
+A_provincial_firefighting,AB,2017,294190000.0,370336168.9348923,"actual (voted actuals, unaudited)",All wildfire program lines (management + presuppression/response),spending,,
+A_provincial_firefighting,AB,2018,284058000.0,349650800.69973767,"actual (voted actuals, unaudited)",All wildfire program lines (management + presuppression/response),spending,,
+A_provincial_firefighting,AB,2019,575727000.0,695120318.2988112,"actual (voted actuals, unaudited)",All wildfire program lines (management + presuppression/response),spending,,
+A_provincial_firefighting,AB,2020,200703000.0,240599361.48463643,"actual (voted actuals, unaudited)",All wildfire program lines (management + presuppression/response),spending,,
+A_provincial_firefighting,AB,2021,247728000.0,287220447.0075914,"actual (voted actuals, unaudited)",All wildfire program lines (management + presuppression/response),spending,,
+A_provincial_firefighting,AB,2023,953605000.0,996548332.3608977,"actual (voted actuals, unaudited)",All wildfire program lines (management + presuppression/response),spending,,
+A_provincial_firefighting,AB,2024,858747000.0,876543021.137706,"actual (voted actuals, unaudited)",All wildfire program lines (management + presuppression/response),spending,,
+A_provincial_firefighting,AB,2025,925549000.0,925549000.0,"actual (voted actuals, unaudited)",All wildfire program lines (management + presuppression/response),spending,,
+A_provincial_firefighting,BC,2016,129000000.0,164982667.96494645,"estimated actual (BCWS total cost, fire year)",BCWS total wildfire cost,spending,,
+A_provincial_firefighting,BC,2017,649000000.0,816982812.5998338,"estimated actual (BCWS total cost, fire year)",BCWS total wildfire cost,spending,,
+A_provincial_firefighting,BC,2018,615000000.0,757011745.5954019,"estimated actual (BCWS total cost, fire year)",BCWS total wildfire cost,spending,,
+A_provincial_firefighting,BC,2019,182500000.0,220346549.82228217,"estimated actual (BCWS total cost, fire year)",BCWS total wildfire cost,spending,,
+A_provincial_firefighting,BC,2020,193700000.0,232204283.541223,"estimated actual (BCWS total cost, fire year)",BCWS total wildfire cost,spending,,
+A_provincial_firefighting,BC,2021,718800000.0,833390078.2675221,"estimated actual (BCWS total cost, fire year)",BCWS total wildfire cost,spending,,
+A_provincial_firefighting,BC,2022,411900000.0,447146057.63402945,"estimated actual (BCWS total cost, fire year)",BCWS total wildfire cost,spending,,
+A_provincial_firefighting,BC,2023,1094800000.0,1144101713.2551851,"estimated actual (BCWS total cost, fire year)",BCWS total wildfire cost,spending,,
+A_provincial_firefighting,BC,2024,769400000.0,785344461.7138121,"estimated actual (BCWS total cost, fire year)",BCWS total wildfire cost,spending,,
+A_provincial_firefighting,BC,2025,510000000.0,510000000.0,estimate as of 2025-11-01,BCWS estimated suppression cost,spending,,
+A_provincial_firefighting,BC,2026,849702000.0,828972771.8869668,forecast (Budget 2026 vote 235.702 + Q1 2026-09-14 overspend 614.0),Fire Management fiscal-year forecast (different line from BCWS total cost),spending,,
+A_provincial_firefighting,ON,2016,107200000.0,137101876.0142811,actual (Public Accounts),"Emergency Fire Fighting, net of recoveries",spending,,
+A_provincial_firefighting,ON,2017,117289000.0,147647299.08632034,actual (Public Accounts),"Emergency Fire Fighting, net of recoveries",spending,,
+A_provincial_firefighting,ON,2018,207844000.0,255837966.26265156,actual (Public Accounts),"Emergency Fire Fighting, net of recoveries",spending,,
+A_provincial_firefighting,ON,2019,136040000.0,164251751.4401275,actual (Public Accounts),"Emergency Fire Fighting, net of recoveries",spending,,
+A_provincial_firefighting,ON,2020,121071000.0,145137866.86948586,actual (Public Accounts),"Emergency Fire Fighting, net of recoveries",spending,,
+A_provincial_firefighting,ON,2021,248883000.0,288559575.4722533,actual (Public Accounts),"Emergency Fire Fighting, net of recoveries",spending,,
+A_provincial_firefighting,ON,2022,95897000.0,104102853.82114717,actual (Public Accounts),"Emergency Fire Fighting, net of recoveries",spending,,
+A_provincial_firefighting,ON,2023,206473000.0,215771020.31506926,actual (Public Accounts),"Emergency Fire Fighting, net of recoveries",spending,,
+A_provincial_firefighting,ON,2024,171041000.0,174585523.88353541,actual (Public Accounts),"Emergency Fire Fighting, net of recoveries",spending,,
+A_provincial_firefighting,ON,2025,272996000.0,272996000.0,actual (Public Accounts),"Emergency Fire Fighting, net of recoveries",spending,,
+A_provincial_firefighting,SK,2016,,24300000.0,"actual, restated in 2025 dollars",SPSA season wildfire costs (calendar year),spending,,
+A_provincial_firefighting,SK,2017,,46800000.0,"actual, restated in 2025 dollars",SPSA season wildfire costs (calendar year),spending,,
+A_provincial_firefighting,SK,2018,,38100000.0,"actual, restated in 2025 dollars",SPSA season wildfire costs (calendar year),spending,,
+A_provincial_firefighting,SK,2019,,11900000.0,"actual, restated in 2025 dollars",SPSA season wildfire costs (calendar year),spending,,
+A_provincial_firefighting,SK,2020,,24200000.0,"actual, restated in 2025 dollars",SPSA season wildfire costs (calendar year),spending,,
+A_provincial_firefighting,SK,2021,,110000000.0,"actual, restated in 2025 dollars",SPSA season wildfire costs (calendar year),spending,,
+A_provincial_firefighting,SK,2022,,51000000.0,"actual, restated in 2025 dollars",SPSA season wildfire costs (calendar year),spending,,
+A_provincial_firefighting,SK,2023,,98500000.0,"actual, restated in 2025 dollars",SPSA season wildfire costs (calendar year),spending,,
+A_provincial_firefighting,SK,2024,,95200000.0,"actual, restated in 2025 dollars",SPSA season wildfire costs (calendar year),spending,,
+A_provincial_firefighting,SK,2025,,351600000.0,"actual, restated in 2025 dollars",SPSA season wildfire costs (calendar year),spending,,
+B_federal_nrcan_wildfire_programs,Canada,2019,849385.75,1025529.9697573233,agreement values spread evenly over agreement term (allocation),"Grants and Contributions disclosure, NRCan",spending,,
+B_federal_nrcan_wildfire_programs,Canada,2020,1315491.32,1576988.742722239,agreement values spread evenly over agreement term (allocation),"Grants and Contributions disclosure, NRCan",spending,,
+B_federal_nrcan_wildfire_programs,Canada,2021,2589498.82,3002313.055472254,agreement values spread evenly over agreement term (allocation),"Grants and Contributions disclosure, NRCan",spending,,
+B_federal_nrcan_wildfire_programs,Canada,2022,32460408.65333333,35238028.061489515,agreement values spread evenly over agreement term (allocation),"Grants and Contributions disclosure, NRCan",spending,,
+B_federal_nrcan_wildfire_programs,Canada,2023,55753318.1575,58264036.1925988,agreement values spread evenly over agreement term (allocation),"Grants and Contributions disclosure, NRCan",spending,,
+B_federal_nrcan_wildfire_programs,Canada,2024,87416163.12333333,89227709.34907852,agreement values spread evenly over agreement term (allocation),"Grants and Contributions disclosure, NRCan",spending,,
+B_federal_nrcan_wildfire_programs,Canada,2025,144480646.6233333,144480646.6233333,agreement values spread evenly over agreement term (allocation),"Grants and Contributions disclosure, NRCan",spending,,
+B_federal_nrcan_wildfire_programs,Canada,2026,142453179.95666668,138977909.25852934,agreement values spread evenly over agreement term (allocation),"Grants and Contributions disclosure, NRCan",spending,,
+C_federal_DFAA_wildfire,Canada,2016,468678000.0,599408890.3602726,CDD federal DFAA payments,Canadian Disaster Database,spending,,
+C_federal_DFAA_wildfire,Canada,2022,24749259.0,26867039.551380243,DFAA order values at agreement date (interim; 2025 incomplete),"Grants disclosure, Provincial Emergency Financial Assistance Orders",spending,,
+C_federal_DFAA_wildfire,Canada,2023,793290412.0,829014358.3102956,DFAA order values at agreement date (interim; 2025 incomplete),"Grants disclosure, Provincial Emergency Financial Assistance Orders",spending,,
+C_federal_DFAA_wildfire,Canada,2024,183941983.0,187753857.06486377,DFAA order values at agreement date (interim; 2025 incomplete),"Grants disclosure, Provincial Emergency Financial Assistance Orders",spending,,
+C_federal_DFAA_wildfire,Canada,2025,12503476.0,12503476.0,DFAA order values at agreement date (interim; 2025 incomplete),"Grants disclosure, Provincial Emergency Financial Assistance Orders",spending,,
+D_insured_losses,Canada,2016,3600000000.0,4604167478.091529,"CDD insurance payments, Fort McMurray",CDD / CatIQ,loss,,
+D_insured_losses,Canada,2017,130000000.0,163648329.18024406,"CDD insurance payments, BC 2017",CDD / CatIQ,loss,,
+D_insured_losses,Canada,2021,179000000.0,207535926.5579945,"CDD insurance payments, Lytton 102 M + Central Okanagan 77 M",CDD / CatIQ,loss,,
+D_insured_losses,Canada,2024,1304000000.0,1331023106.4138434,"CatIQ final estimate, Jasper wildfire complex (industry)",CDD / CatIQ,loss,,
+D_insured_losses,Canada,2026,293000000.0,285852007.1305955,"CatIQ 45-day estimate, Bald Range fire, Summerland (industry, early)",CDD / CatIQ,loss,,
+E_timber_value_stumpage,Canada,2016,149444021.4795095,191129250.96976933,value of standing merchantable timber burned at Crown stumpage,NFD / BC Budget; kNN 2011 volume,valuation,,
+E_timber_value_stumpage,Canada,2017,1842928880.4866023,2319940246.843463,value of standing merchantable timber burned at Crown stumpage,NFD / BC Budget; kNN 2011 volume,valuation,,
+E_timber_value_stumpage,Canada,2018,3990861509.536375,4912404939.453059,value of standing merchantable timber burned at Crown stumpage,NFD / BC Budget; kNN 2011 volume,valuation,,
+E_timber_value_stumpage,Canada,2019,323329065.511298,390380515.30234057,value of standing merchantable timber burned at Crown stumpage,NFD / BC Budget; kNN 2011 volume,valuation,,
+E_timber_value_stumpage,Canada,2020,164559828.83355418,197271539.2563848,value of standing merchantable timber burned at Crown stumpage,NFD / BC Budget; kNN 2011 volume,valuation,,
+E_timber_value_stumpage,Canada,2021,5936741070.983646,6883167926.8239765,value of standing merchantable timber burned at Crown stumpage,NFD / BC Budget; kNN 2011 volume,valuation,,
+E_timber_value_stumpage,Canada,2022,792311212.5127252,860108849.464197,value of standing merchantable timber burned at Crown stumpage,NFD / BC Budget; kNN 2011 volume,valuation,,
+E_timber_value_stumpage,Canada,2023,7441925350.727013,7777054753.090947,value of standing merchantable timber burned at Crown stumpage,NFD / BC Budget; kNN 2011 volume,valuation,,
+E_timber_value_stumpage,Canada,2024,1535521242.0207317,1567342218.9561942,value of standing merchantable timber burned at Crown stumpage,NFD / BC Budget; kNN 2011 volume,valuation,,
+E_timber_value_stumpage,Canada,2025,2072775402.7693112,2072775402.7693112,value of standing merchantable timber burned at Crown stumpage,NFD / BC Budget; kNN 2011 volume,valuation,,
+E_timber_value_stumpage,Canada,2026,1593047488.0698483,1554183692.5567222,value of standing merchantable timber burned at Crown stumpage,NFD / BC Budget; kNN 2011 volume,valuation,,
+F_health_valuation_AQBAT,Canada,2018,,1145614953.0951257,"120 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,0.0,2460484218.6888986
+F_health_valuation_AQBAT,Canada,2019,,151217345.5213282,"16 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,0.0,323122145.8312312
+F_health_valuation_AQBAT,Canada,2020,,420154523.3155891,"44 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,0.0,893831390.4162627
+F_health_valuation_AQBAT,Canada,2021,,1220266554.0486927,"128 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,0.0,2624143487.356665
+F_health_valuation_AQBAT,Canada,2022,,235439664.54586545,"25 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,0.0,509162169.1886066
+F_health_valuation_AQBAT,Canada,2023,,3629216292.5118766,"379 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,0.0,7787103834.815862
+F_health_valuation_AQBAT,Canada,2024,,943672801.7976556,"99 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,0.0,2031053488.082024
+F_health_valuation_AQBAT,Canada,2025,,2094073113.9282665,"219 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 9",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,0.0,4512519664.292432
+F_health_valuation_AQBAT,Canada,2026,,941758658.1834618,"98 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 9",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,0.0,2012869124.896717
+F_health_valuation_Chen,Canada,2018,,2988935253.5639744,"312 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,1368759883.2635658,5010491456.136233
+F_health_valuation_Chen,Canada,2019,,385699938.26009655,"40 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,177794487.84861827,642047900.1581606
+F_health_valuation_Chen,Canada,2020,,1061392634.0705885,"111 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,489579024.510688,1765282026.1429164
+F_health_valuation_Chen,Canada,2021,,3202362266.546609,"335 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,1464098956.4577522,5376976314.178582
+F_health_valuation_Chen,Canada,2022,,627839105.455641,"66 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,286017219.5825598,1056091861.9159286
+F_health_valuation_Chen,Canada,2023,,9455869454.118498,"988 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,4330455308.382433,15846973117.411333
+F_health_valuation_Chen,Canada,2024,,2485515483.030945,"260 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 12",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,1135307990.523206,4175409546.7801948
+F_health_valuation_Chen,Canada,2025,,5530917973.213643,"578 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 9",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,2525197073.79197,9297804776.364475
+F_health_valuation_Chen,Canada,2026,,2425219959.183833,"253 modelled acute deaths (net) x VSL 9,158,296 (2023 CAD); provinces reported 9",analysis/health; Health Canada AQBAT VSL (Matz et al. 2026 Table S2),valuation,1113663444.1764176,4052315395.9873447

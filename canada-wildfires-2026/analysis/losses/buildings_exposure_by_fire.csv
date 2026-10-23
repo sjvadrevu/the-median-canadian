@@ -1,0 +1,41 @@
+fire_uid,inside,within_100m,inside_or_100m,prov,class,first_date,last_date,area_ha,agency_match,main_communities,fire_area
+36077449,863,41,904,BC,wildfire,2026-05-09,2026-09-02,172458.7,True,no named community within 25 km 733; near Ts'kw'aylaxw First Nation (First Nation) 116; near High Bar (First Nation) 26,BC Wildfire Service Cariboo Fire Centre
+36076584,738,78,816,BC,wildfire,2026-08-07,2026-09-18,25501.9,True,near Summerland 613; Summerland 145; near Peachland 57,BC Wildfire Service Kamloops Fire Centre
+36076686,420,4,424,BC,wildfire,2026-04-23,2026-10-16,87384.8,True,near Boston Bar First Nation (First Nation) 285; KAHMOOSE 4 (reserve/settlement) 32; KOPCHITCHIN 2 (reserve/settlement) 30,BC Wildfire Service Coastal Fire Centre
+36077461,145,9,154,NT,wildfire,2026-06-27,2026-10-20,97021.0,True,near Liidlii Kue First Nation (First Nation) 154,GNWT Forest Management Division (ECC) Deh Cho
+36077765,119,5,124,ON,wildfire,2026-05-31,2026-08-31,351688.2,True,near Whitesand (First Nation) 103; no named community within 25 km 21,Ontario Forest Fires (MNR AFFES) Thunder Bay
+36077743,76,26,102,ON,wildfire,2026-06-30,2026-07-29,66678.9,True,near Lac Des Mille Lacs (First Nation) 97; no named community within 25 km 5,Ontario Forest Fires (MNR AFFES) Thunder Bay
+36076592,34,15,49,BC,wildfire,2026-08-01,2026-09-18,2113.6,True,near Okanagan (First Nation) 25; OKANAGAN 1 (reserve/settlement) 24,BC Wildfire Service Kamloops Fire Centre
+36076642,34,1,35,BC,unclear,2026-06-20,2026-06-22,871.4,True,NICKEYEAH 25 (reserve/settlement) 13; near Skuppah (First Nation) 11; KITZOWIT 20 (reserve/settlement) 7,BC Wildfire Service Kamloops Fire Centre
+36076650,10,16,26,MB,unclear,2026-05-29,2026-05-30,107.6,True,NORWAY HOUSE 17 (reserve/settlement) 26,Manitoba Wildfire Service Area 22 (North)
+36077800,9,0,9,QC,wildfire,2026-06-26,2026-08-10,148314.8,True,no named community within 25 km 9,SOPFEU 01 Matagami
+36077742,4,4,8,ON,unclear,2026-07-14,2026-07-14,74.2,True,near Atikokan 8,Ontario Forest Fires (MNR AFFES) Fort Frances
+36077829,8,0,8,QC,wildfire,2026-06-20,2026-07-12,63836.0,True,no named community within 25 km 8,SOPFEU 58 LG-4
+36077523,5,1,6,SK,wildfire,2026-05-02,2026-06-19,14679.2,True,near Beardy's and Okemasis (First Nation) 4; near Shellbrook 2,Saskatchewan Public Safety Agency Prince Albert
+36076759,6,0,6,BC,wildfire,2026-07-04,2026-09-18,59657.3,True,near Stswecem'c Xget'tem First Nation  (First Nation) 4; near High Bar (First Nation) 2,BC Wildfire Service Cariboo Fire Centre
+36076675,2,2,4,BC,wildfire,2026-06-25,2026-08-27,4161.6,True,near Cayoose Creek (First Nation) 4,BC Wildfire Service Kamloops Fire Centre
+36077524,4,0,4,SK,wildfire (unreported in agency lists),2026-05-29,2026-06-02,3009.2,False,near Shellbrook 4,Saskatchewan Public Safety Agency Prince Albert
+36077818,1,2,3,QC,wildfire,2026-06-23,2026-08-01,3083.5,True,no named community within 25 km 3,SOPFEU 57 LG-3
+36076565,3,0,3,BC,wildfire,2026-07-20,2026-10-17,12368.6,True,no named community within 25 km 3,BC Wildfire Service Coastal Fire Centre
+36077014,1,2,3,AB,wildfire (unreported in agency lists),2026-07-03,2026-07-07,87.2,False,near Beaverlodge 3,Alberta Wildfire Grande Prairie Forest Area
+36076991,2,1,3,BC,wildfire,2026-08-26,2026-08-29,246.2,True,near Stellat'en First Nation (First Nation) 3,BC Wildfire Service Prince George Fire Centre
+36076329,1,1,2,ON,unclear,2026-05-12,2026-08-01,91.0,False,near Winchester 1; near Kemptville 1,Ontario Forest Fires (MNR AFFES) ON outside mapped areas
+36077591,2,0,2,SK,wildfire,2026-06-02,2026-08-30,27919.5,True,no named community within 25 km 2,Saskatchewan Public Safety Agency Denare Beach
+36077448,1,1,2,BC,wildfire,2026-07-20,2026-09-08,3824.4,True,near Lil'wat Nation (First Nation) 2,BC Wildfire Service Coastal Fire Centre
+36077762,1,1,2,ON,wildfire,2026-07-13,2026-08-29,52848.6,True,no named community within 25 km 2,Ontario Forest Fires (MNR AFFES) Dryden
+36077146,1,1,2,AB,wildfire,2026-08-20,2026-09-06,305.8,True,near Beaver First Nation (First Nation) 2,Alberta Wildfire High Level Forest Area
+36076684,2,0,2,SK,wildfire,2026-05-26,2026-06-03,7796.8,True,no named community within 25 km 2,Saskatchewan Public Safety Agency Hudson Bay
+36077450,2,0,2,BC,wildfire,2026-08-02,2026-08-12,1733.2,True,near Duck Lake 2,BC Wildfire Service Kamloops Fire Centre
+36076551,0,1,1,BC,wildfire,2026-07-18,2026-08-29,1493.2,True,near Kimberley 1,BC Wildfire Service Southeast Fire Centre
+36076578,1,0,1,BC,wildfire,2026-07-28,2026-08-28,1412.7,True,no named community within 25 km 1,BC Wildfire Service Southeast Fire Centre
+36076392,1,0,1,QC,wildfire,2026-06-27,2026-07-17,5863.8,True,no named community within 25 km 1,SOPFEU 10 Réserve La Vérendrye
+36076414,0,1,1,MB,unclear,2026-05-01,2026-05-02,88.7,False,no named community within 25 km 1,Manitoba Wildfire Service Southern Manitoba outside fire and travel restriction areas
+36076627,1,0,1,BC,wildfire,2026-08-03,2026-09-25,1448.9,True,no named community within 25 km 1,BC Wildfire Service Southeast Fire Centre
+36077462,1,0,1,NT,wildfire,2026-06-26,2026-10-02,7056.2,True,no named community within 25 km 1,GNWT Forest Management Division (ECC) Deh Cho
+36076712,0,1,1,SK,unclear,2026-05-10,2026-05-14,430.8,False,LITTLE BLACK BEAR I.R. 84 (reserve/settlement) 1,Saskatchewan Public Safety Agency Hudson Bay
+36077607,1,0,1,MB,unclear,2026-07-03,2026-07-04,104.6,True,no named community within 25 km 1,Manitoba Wildfire Service Area 15 (North)
+36077508,1,0,1,NT,wildfire,2026-07-16,2026-07-23,70.6,True,no named community within 25 km 1,GNWT Forest Management Division (ECC) North Slave
+36077705,1,0,1,MB,wildfire,2026-06-28,2026-07-13,8393.2,True,no named community within 25 km 1,Manitoba Wildfire Service Area 19 (North)
+36077652,1,0,1,MB,wildfire,2026-06-27,2026-07-19,19715.2,True,near O-Pipon-Na-Piwin Cree Nation (First Nation) 1,Manitoba Wildfire Service Area 17 (North)
+36077764,1,0,1,ON,wildfire,2026-07-13,2026-08-05,32782.7,True,no named community within 25 km 1,Ontario Forest Fires (MNR AFFES) Thunder Bay
+36077897,1,0,1,QC,wildfire,2026-06-30,2026-07-12,7077.9,True,no named community within 25 km 1,SOPFEU 65 Fermont-Scherfferville

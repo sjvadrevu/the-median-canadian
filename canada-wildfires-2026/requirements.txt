@@ -1,0 +1,21 @@
+# Python 3.13.16. Versions are the ones installed in the environment that ran the analysis (pip freeze, 2026-10-22).
+# Only packages that the scripts import (or that pandas needs to read the formats the scripts read).
+affine==3.0.1
+geopandas==1.2.0
+h5py==3.16.0
+lxml==6.1.3
+matplotlib==3.11.2
+numpy==2.5.3
+openpyxl==3.1.5
+pandas==3.0.5
+pillow==12.3.0
+pyogrio==0.13.0
+pyproj==3.8.0
+rasterio==1.5.2
+requests==2.34.2
+scikit-learn==1.9.1
+scipy==1.18.1
+shapely==2.2.0
+xlrd==2.0.2
+# Only for rendering the carousel PNGs (slides/); also run: python -m playwright install chromium
+playwright==1.56.0

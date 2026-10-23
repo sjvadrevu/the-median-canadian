@@ -1,0 +1,201 @@
+level,area_id,area_name,province,n_cells,grid_mean_extreme_2026,grid_mean_extreme_2018_2025,grid_ratio_of_means,grid_mean_anom_days,grid_share_cells_2026_highest_2018_2026
+national,CA,CA,CA,1652859.0,4.431,6.676,0.664,-2.246,0.019
+province,AB,AB,AB,159136.0,11.835,18.537,0.638,-6.702,0.005
+province,BC,BC,BC,225061.0,8.307,10.694,0.777,-2.387,0.025
+province,MB,MB,MB,148845.0,1.824,4.903,0.372,-3.079,0.001
+province,NB,NB,NB,17936.0,0.202,0.538,0.375,-0.336,0.002
+province,NL,NL,NL,72512.0,0.136,0.125,1.09,0.011,0.044
+province,NS,NS,NS,13203.0,0.262,0.401,0.653,-0.139,0.043
+province,NT,NT,NT,201765.0,5.15,3.605,1.429,1.545,0.054
+province,NU,NU,NU,3838.0,0.36,1.311,0.275,-0.951,0.0
+province,ON,ON,ON,242412.0,0.646,0.905,0.714,-0.259,0.019
+province,PE,PE,PE,1186.0,0.005,0.73,0.007,-0.725,0.0
+province,QC,QC,QC,302903.0,0.337,0.598,0.562,-0.262,0.011
+province,SK,SK,SK,157854.0,12.335,23.208,0.532,-10.873,0.0
+province,YT,YT,YT,106208.0,0.338,1.195,0.283,-0.857,0.019
+fma,1,Cariboo Fire Centre,BC,20166.0,23.154,21.908,1.057,1.246,0.028
+fma,2,Coastal Fire Centre,BC,29666.0,2.745,3.674,0.747,-0.929,0.015
+fma,3,Kamloops Fire Centre,BC,17668.0,41.267,28.725,1.437,12.543,0.24
+fma,4,Northwest Fire Centre,BC,56761.0,0.661,2.241,0.295,-1.581,0.001
+fma,5,Prince George Fire Centre,BC,80499.0,1.81,9.164,0.198,-7.354,0.0
+fma,6,Southeast Fire Centre,BC,20301.0,20.14,23.824,0.845,-3.684,0.013
+fma,7,Calgary Forest Area,AB,3039.0,17.266,16.603,1.04,0.663,0.131
+fma,8,Edson Forest Area,AB,7150.0,0.755,3.018,0.25,-2.263,0.0
+fma,9,Fort McMurray Forest Area,AB,14132.0,2.826,10.435,0.271,-7.609,0.0
+fma,10,Grande Prairie Forest Area,AB,9217.0,7.771,15.737,0.494,-7.966,0.0
+fma,11,High Level Forest Area,AB,19596.0,5.075,8.412,0.603,-3.336,0.0
+fma,12,Lac La Biche Forest Area,AB,9676.0,0.419,6.319,0.066,-5.899,0.0
+fma,13,Peace River Forest Area,AB,12687.0,2.809,15.38,0.183,-12.571,0.0
+fma,14,Rocky Mountain House Forest Area,AB,5139.0,3.781,3.938,0.96,-0.156,0.057
+fma,15,Slave Lake Forest Area,AB,13466.0,0.458,6.848,0.067,-6.39,0.0
+fma,16,Whitecourt Forest Area,AB,3996.0,1.315,2.884,0.456,-1.568,0.002
+fma,17,Big River,SK,6141.0,5.0,13.405,0.373,-8.405,0.0
+fma,18,Buffalo Narrows,SK,12291.0,3.873,8.933,0.434,-5.06,0.0
+fma,19,Cypress Hills,SK,26474.0,34.362,65.86,0.522,-31.498,0.0
+fma,20,Denare Beach,SK,5799.0,3.366,3.58,0.94,-0.214,0.0
+fma,21,Dorintosh,SK,8017.0,5.09,15.244,0.334,-10.154,0.0
+fma,22,Hudson Bay,SK,24830.0,12.923,25.858,0.5,-12.935,0.0
+fma,23,La Ronge,SK,17992.0,5.097,4.084,1.248,1.013,0.002
+fma,24,Lower Fishing Lake,SK,3592.0,7.676,9.019,0.851,-1.343,0.0
+fma,25,Prince Albert,SK,17724.0,17.972,37.471,0.48,-19.499,0.0
+fma,26,Stony Rapids,SK,21929.0,3.98,4.158,0.957,-0.178,0.0
+fma,27,Weyakwin,SK,2320.0,5.603,7.007,0.8,-1.404,0.0
+fma,28,Île-à-la-Crosse,SK,9780.0,3.898,6.143,0.635,-2.245,0.0
+fma,29,Chapleau,ON,10135.0,0.296,0.222,1.336,0.075,0.173
+fma,30,Cochrane,ON,71699.0,0.227,0.698,0.325,-0.471,0.0
+fma,31,Dryden,ON,5680.0,2.026,2.116,0.957,-0.09,0.016
+fma,32,Fort Frances,ON,5676.0,1.964,1.716,1.145,0.248,0.115
+fma,33,Haliburton,ON,10406.0,0.006,0.122,0.048,-0.116,0.0
+fma,34,Kenora,ON,4201.0,0.312,3.373,0.093,-3.061,0.0
+fma,35,Nipigon,ON,33259.0,0.425,0.518,0.821,-0.093,0.012
+fma,36,North Bay,ON,5498.0,0.094,0.343,0.275,-0.248,0.0
+fma,37,Red Lake,ON,16229.0,1.11,2.424,0.458,-1.314,0.01
+fma,38,Sioux Lookout,ON,26754.0,2.007,1.697,1.183,0.31,0.01
+fma,39,Sudbury,ON,6681.0,0.144,0.322,0.448,-0.177,0.0
+fma,40,Thunder Bay,ON,10031.0,1.053,0.417,2.523,0.636,0.114
+fma,41,Timmins,ON,7895.0,1.149,0.887,1.296,0.262,0.0
+fma,42,Wawa,ON,8743.0,0.0,0.025,0.0,-0.025,0.0
+fma,43,Deh Cho,NT,34361.0,1.117,2.175,0.514,-1.057,0.003
+fma,44,Inuvik,NT,15329.0,0.0,0.364,0.0,-0.364,0.0
+fma,45,North Slave,NT,51779.0,13.189,4.858,2.715,8.331,0.195
+fma,46,Sahtu,NT,51931.0,0.599,1.633,0.367,-1.034,0.0
+fma,47,South Slave,NT,48218.0,5.94,6.437,0.923,-0.497,0.015
+fma,48,Beaver Creek,YT,5999.0,0.214,1.481,0.145,-1.267,0.0
+fma,49,Carmacks,YT,6959.0,2.1,3.899,0.539,-1.799,0.012
+fma,50,Dawson,YT,15689.0,0.068,1.519,0.045,-1.451,0.0
+fma,51,Haines Junction,YT,4092.0,0.444,1.266,0.351,-0.822,0.0
+fma,52,Ivvavik National Park,YT,1381.0,0.017,0.084,0.206,-0.067,0.0
+fma,53,Kluane National Park,YT,5168.0,0.031,0.195,0.161,-0.164,0.0
+fma,54,Mayo,YT,18359.0,0.015,0.823,0.018,-0.808,0.0
+fma,55,Old Crow,YT,12120.0,0.062,0.32,0.194,-0.258,0.0
+fma,56,Ross River,YT,9616.0,1.171,0.343,3.419,0.829,0.202
+fma,57,Teslin,YT,6275.0,0.077,0.953,0.081,-0.876,0.0
+fma,58,Vuntut National Park,YT,1016.0,0.0,0.144,0.0,-0.144,0.0
+fma,59,Watson Lake,YT,13144.0,0.102,1.42,0.072,-1.317,0.0
+fma,60,Whitehorse,YT,6233.0,0.452,2.197,0.206,-1.745,0.004
+fma,61,Forest Management District 01,NL,1777.0,1.065,0.41,2.595,0.655,0.214
+fma,62,Forest Management District 02,NL,1047.0,0.223,0.327,0.684,-0.103,0.004
+fma,63,Forest Management District 03,NL,1274.0,0.012,0.024,0.5,-0.012,0.005
+fma,64,Forest Management District 04,NL,754.0,0.011,0.453,0.023,-0.443,0.007
+fma,65,Forest Management District 05,NL,1153.0,0.0,1.551,0.0,-1.551,0.0
+fma,66,Forest Management District 050,NL,516.0,0.0,0.121,0.0,-0.121,0.0
+fma,67,Forest Management District 06,NL,1138.0,0.333,0.655,0.508,-0.322,0.119
+fma,68,Forest Management District 07,NL,2693.0,0.274,0.0,985.333,0.274,0.135
+fma,69,Forest Management District 08,NL,525.0,0.242,0.928,0.261,-0.686,0.055
+fma,70,Forest Management District 09,NL,1410.0,0.111,0.024,4.601,0.087,0.057
+fma,71,Forest Management District 10,NL,503.0,0.241,0.0,,0.241,0.113
+fma,72,Forest Management District 11,NL,742.0,0.286,0.01,29.241,0.276,0.097
+fma,73,Forest Management District 12,NL,1211.0,0.002,0.0,16.0,0.002,0.001
+fma,74,Forest Management District 13,NL,694.0,0.108,0.0,,0.108,0.092
+fma,75,Forest Management District 14,NL,3610.0,0.002,0.001,2.732,0.001,0.001
+fma,76,Forest Management District 15,NL,1364.0,0.0,0.068,0.0,-0.068,0.0
+fma,77,Forest Management District 16,NL,1619.0,0.002,0.064,0.039,-0.061,0.001
+fma,78,Forest Management District 17,NL,1208.0,0.04,0.0,,0.04,0.04
+fma,79,Forest Management District 18,NL,237.0,0.0,0.001,0.0,-0.001,0.0
+fma,80,Forest Management District 19a,NL,4896.0,0.303,0.403,0.752,-0.1,0.067
+fma,81,Forest Management District 19b,NL,7165.0,0.325,0.01,33.841,0.315,0.102
+fma,82,Forest Management District 19c,NL,5115.0,0.001,0.012,0.115,-0.011,0.001
+fma,83,Forest Management District 20,NL,3457.0,0.212,0.008,25.892,0.204,0.156
+fma,84,Forest Management District 21,NL,3352.0,0.0,0.006,0.0,-0.006,0.0
+fma,85,Forest Management District 22,NL,17188.0,0.073,0.097,0.755,-0.024,0.018
+fma,86,Forest Management District 23,NL,2871.0,0.0,0.128,0.0,-0.128,0.0
+fma,87,Forest Management District 24,NL,4635.0,0.0,0.006,0.0,-0.006,0.0
+fma,88,NL outside mapped areas,NL,358.0,0.162,0.258,0.627,-0.096,0.039
+fma,89,Prince Edward Island (whole province/territory),PE,1186.0,0.005,0.73,0.007,-0.725,0.0
+fma,90,Nova Scotia (whole province/territory),NS,13203.0,0.262,0.401,0.653,-0.139,0.043
+fma,91,New Brunswick (whole province/territory),NB,17936.0,0.202,0.538,0.375,-0.336,0.002
+fma,93,ON outside mapped areas,ON,19525.0,0.326,0.644,0.506,-0.318,0.0
+fma,95,SK outside mapped areas,SK,965.0,1.767,5.388,0.328,-3.621,0.0
+fma,96,AB outside mapped areas,AB,61038.0,25.294,33.427,0.757,-8.132,0.001
+fma,97,YT outside mapped areas,YT,157.0,0.204,0.309,0.66,-0.105,0.0
+fma,98,NT outside mapped areas,NT,147.0,1.122,1.901,0.59,-0.779,0.0
+fma,99,Nunavut (whole province/territory),NU,3838.0,0.36,1.311,0.275,-0.951,0.0
+fma,1001,Area 1 (East),MB,1731.0,2.921,8.333,0.351,-5.412,0.0
+fma,1002,Area 2 (East),MB,2014.0,1.653,8.665,0.191,-7.011,0.0
+fma,1003,Area 3 (East),MB,1751.0,2.261,8.35,0.271,-6.089,0.0
+fma,1004,Area 4 (East),MB,6349.0,1.936,7.319,0.264,-5.383,0.0
+fma,1005,Area 5 (East),MB,3372.0,0.814,7.469,0.109,-6.654,0.0
+fma,1006,Area 6 (West),MB,44.0,11.455,15.682,0.73,-4.227,0.0
+fma,1007,Area 7 (West),MB,271.0,14.387,21.395,0.672,-7.008,0.0
+fma,1008,Area 8 (East/West),MB,7433.0,0.47,5.062,0.093,-4.592,0.0
+fma,1009,Area 9 (West),MB,2884.0,2.538,9.414,0.27,-6.876,0.0
+fma,1010,Area 10 (West),MB,923.0,2.179,7.289,0.299,-5.111,0.0
+fma,1011,Area 11 (West),MB,518.0,3.766,7.179,0.525,-3.413,0.0
+fma,1012,Area 12 (West),MB,5067.0,1.304,5.573,0.234,-4.269,0.0
+fma,1013,Area 13 (West),MB,3020.0,0.903,3.838,0.235,-2.934,0.0
+fma,1014,Area 14 (West/North),MB,4847.0,1.139,3.204,0.356,-2.065,0.0
+fma,1015,Area 15 (North),MB,4025.0,0.28,2.457,0.114,-2.177,0.0
+fma,1016,Area 16 (North),MB,1882.0,0.498,1.686,0.295,-1.188,0.0
+fma,1017,Area 17 (North),MB,20830.0,0.101,0.803,0.126,-0.701,0.0
+fma,1018,Area 18 (North),MB,16925.0,1.149,0.832,1.38,0.316,0.007
+fma,1019,Area 19 (North),MB,11863.0,0.166,0.44,0.377,-0.274,0.0
+fma,1020,Area 20 (North),MB,1858.0,0.576,1.305,0.442,-0.729,0.0
+fma,1021,Area 21 (North),MB,23009.0,0.603,0.893,0.676,-0.29,0.0
+fma,1022,Area 22 (North),MB,4240.0,0.221,1.939,0.114,-1.718,0.0
+fma,1023,Southern Manitoba outside fire and travel restriction areas,MB,23989.0,7.029,16.44,0.428,-9.411,0.0
+fma,2001,01 Matagami,QC,6652.0,1.19,1.618,0.736,-0.428,0.0
+fma,2002,02 La Sarre-Amos,QC,3506.0,0.21,0.886,0.237,-0.676,0.0
+fma,2003,03 Quévillon-Waswanipi,QC,4918.0,0.071,1.552,0.046,-1.481,0.0
+fma,2004,04 Rouyn-Noranda,QC,1191.0,2.217,1.345,1.649,0.873,0.0
+fma,2005,05 Val d'Or-Senneterre,QC,2677.0,0.892,0.966,0.923,-0.074,0.0
+fma,2006,06 Mégiscane-Gouin,QC,5443.0,0.0,0.393,0.0,-0.393,0.0
+fma,2007,07 Témiscamingue,QC,3303.0,0.229,0.451,0.507,-0.223,0.0
+fma,2008,08 Maganasipi-Dumoine,QC,1099.0,0.076,0.027,2.788,0.049,0.076
+fma,2009,10 Réserve La Vérendrye,QC,5697.0,0.096,0.248,0.386,-0.152,0.036
+fma,2010,11 Parent-Windigo,QC,3224.0,0.0,0.2,0.0,-0.2,0.0
+fma,2011,12 Pontiac,QC,3072.0,0.016,0.096,0.166,-0.08,0.005
+fma,2012,13 Outaouais-Labelle,QC,2996.0,0.169,0.194,0.869,-0.025,0.014
+fma,2013,14 Manawan,QC,3248.0,0.0,0.142,0.0,-0.142,0.0
+fma,2014,15 Gatineau,QC,1547.0,0.013,0.208,0.062,-0.195,0.0
+fma,2015,16 Laurentides,QC,3042.0,0.0,0.173,0.0,-0.173,0.0
+fma,2016,17 Nord de Montréal,QC,1394.0,0.05,1.348,0.037,-1.297,0.0
+fma,2017,20 Montérégie,QC,1534.0,0.257,1.32,0.195,-1.063,0.0
+fma,2018,21 Estrie,QC,2305.0,0.0,0.247,0.0,-0.247,0.0
+fma,2019,22 Centre du Québec,QC,3197.0,0.054,0.798,0.068,-0.744,0.0
+fma,2020,23 Beauce-Appalaches,QC,2784.0,0.0,0.022,0.0,-0.022,0.0
+fma,2021,24 Maskinongé - Les Chenaux,QC,1052.0,0.291,1.264,0.23,-0.973,0.0
+fma,2022,25 St-Maurice-Mastigouche,QC,1594.0,0.0,0.304,0.0,-0.304,0.0
+fma,2023,26 La Tuque,QC,2592.0,0.0,0.291,0.0,-0.291,0.0
+fma,2024,27 Portneuf,QC,1103.0,0.0,0.057,0.0,-0.057,0.0
+fma,2025,28 Québec,QC,1267.0,0.0,0.095,0.0,-0.095,0.0
+fma,2026,29 Charlevoix,QC,749.0,0.015,0.112,0.131,-0.098,0.0
+fma,2027,30 Réserve Laurentides,QC,3173.0,0.008,0.044,0.174,-0.036,0.0
+fma,2028,31 Saguenay,QC,1316.0,0.494,0.703,0.702,-0.209,0.0
+fma,2029,32 Lac Saint-Jean,QC,2448.0,0.438,0.765,0.572,-0.327,0.0
+fma,2030,33 Réserve Ashuapmushuan,QC,2832.0,0.016,0.364,0.045,-0.347,0.0
+fma,2031,34 Rivière Mistassini,QC,3578.0,0.0,0.396,0.0,-0.396,0.0
+fma,2032,35 Monts-Valin,QC,2598.0,0.0,0.144,0.003,-0.143,0.0
+fma,2033,36 Chibougamau-Rte du Nord,QC,6278.0,0.069,1.394,0.05,-1.324,0.0
+fma,2034,37 Lac Albanel,QC,4121.0,0.0,0.567,0.0,-0.567,0.0
+fma,2035,38 Chute-des-Passes,QC,4020.0,0.0,0.296,0.0,-0.296,0.0
+fma,2036,40 Forestville-Labrieville,QC,3105.0,0.112,0.479,0.234,-0.367,0.01
+fma,2037,41 Baie-Comeau-Manicouagan,QC,6998.0,0.0,0.336,0.0,-0.336,0.0
+fma,2038,42 Sept-Iles,QC,2030.0,0.0,0.11,0.0,-0.11,0.0
+fma,2039,43 Manic 5-nord SM3,QC,9623.0,0.012,0.166,0.075,-0.154,0.0
+fma,2040,44 Minganie,QC,1560.0,0.0,0.028,0.0,-0.028,0.0
+fma,2041,45 Kamouraska-RDL-Témis,QC,2496.0,0.019,0.297,0.063,-0.278,0.0
+fma,2042,46 Rimouski-Matapédia,QC,2225.0,0.016,0.082,0.198,-0.065,0.0
+fma,2043,47 Matane-Chics-Chocs,QC,2747.0,0.0,0.069,0.0,-0.069,0.0
+fma,2044,48 Baie des Chaleurs,QC,2184.0,0.0,0.089,0.0,-0.089,0.0
+fma,2045,49 Gaspé,QC,1055.0,0.0,0.354,0.0,-0.354,0.0
+fma,2046,50 Waskaganish,QC,6261.0,1.641,1.581,1.038,0.06,0.0
+fma,2047,51 Eastmain,QC,1811.0,2.572,2.812,0.915,-0.24,0.0
+fma,2048,52 Wemindji,QC,1560.0,0.047,2.108,0.023,-2.06,0.0
+fma,2049,53 Chisasibi,QC,3418.0,0.777,2.523,0.308,-1.746,0.0
+fma,2050,54 Némaska,QC,5087.0,0.796,1.875,0.425,-1.079,0.0
+fma,2051,55 Sarcelle,QC,6119.0,0.162,1.865,0.087,-1.702,0.0
+fma,2052,56 Radisson,QC,3473.0,0.544,2.158,0.252,-1.613,0.0
+fma,2053,57 LG-3,QC,9802.0,1.094,1.414,0.774,-0.32,0.0
+fma,2054,58 LG-4,QC,7382.0,1.43,1.009,1.417,0.421,0.0
+fma,2055,59 Laforge-2,QC,7332.0,0.408,0.485,0.843,-0.076,0.0
+fma,2056,60 Île d'Anticosti,QC,1752.0,0.0,0.355,0.0,-0.355,0.0
+fma,2057,61 Îles de la Madeleine,QC,16.0,0.0,1.406,0.0,-1.406,0.0
+fma,2058,62 Tichégami,QC,6554.0,0.015,0.943,0.016,-0.928,0.007
+fma,2059,63 Monts-Otish,QC,5622.0,0.0,0.318,0.001,-0.317,0.0
+fma,2060,64 Caniapiscau,QC,6360.0,0.526,0.189,2.783,0.337,0.035
+fma,2061,65 Fermont-Scherfferville,QC,7586.0,0.263,0.293,0.899,-0.03,0.0
+fma,2062,66 Rivière Moisie,QC,6390.0,0.039,0.215,0.18,-0.176,0.013
+fma,2063,67 Rivière Romaine,QC,9240.0,0.0,0.08,0.0,-0.08,0.0
+fma,2064,68 Rivière du Petit Mécatina,QC,9369.0,0.029,0.187,0.157,-0.157,0.0
+fma,2065,69 Le Golfe-du-St-Laurent,QC,1323.0,0.022,0.196,0.112,-0.174,0.0
+fma,2066,"Far north outside SOPFEU fire danger zones (northern zone, no ZDI)",QC,60873.0,0.449,0.263,1.71,0.187,0.042

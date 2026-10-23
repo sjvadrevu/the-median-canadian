@@ -1,0 +1,6 @@
+rule,actual,predicted,tp,fp,fn,tn,precision,recall,f1
+"calibrated, 5-fold spatial CV (rule re-fit per fold)",374,372,311,61,63,712,0.836,0.832,0.834
+"calibrated, in-sample: dndvi_bmax >= 180 AND dnbr_r20_60 >= 40",374,376,322,54,52,719,0.856,0.861,0.859
+uncalibrated (analysis/losses): dnbr_bmax>=440 AND dnbr_r20_60>=270,374,16,14,2,360,771,0.875,0.037,0.072
+uncalibrated lenient: dnbr_bmax>=270 AND dnbr_r20_60>=100,374,176,162,14,212,759,0.92,0.433,0.589
+calibrated rule vs destroyed+visible damage,384,376,322,54,62,709,0.856,0.839,0.847

@@ -1,0 +1,187 @@
+fma_id,province,agency,area_name,area_level,area_km2,burned_2026_mapped_km2,share_burned_2026_pct
+40,ON,Ontario Forest Fires (MNR AFFES),Thunder Bay,fire management headquarters area,40785.8,4964.85,12.17
+2046,QC,SOPFEU,50 Waskaganish,fire danger zone (ZDI),25356.3,1895.03,7.47
+43,NT,GNWT Forest Management Division (ECC),Deh Cho,administrative region,158316.6,7321.17,4.62
+2054,QC,SOPFEU,58 LG-4,fire danger zone (ZDI),30451.5,1275.44,4.19
+32,ON,Ontario Forest Fires (MNR AFFES),Fort Frances,fire management headquarters area,22844.7,869.63,3.81
+1016,MB,Manitoba Wildfire Service,Area 16 (North),fire and travel restriction area,7819.7,269.0,3.44
+2055,QC,SOPFEU,59 Laforge-2,fire danger zone (ZDI),30321.0,850.66,2.81
+20,SK,Saskatchewan Public Safety Agency,Denare Beach,protection area,24109.0,673.6,2.79
+45,NT,GNWT Forest Management Division (ECC),North Slave,administrative region,320733.0,8857.74,2.76
+1,BC,BC Wildfire Service,Cariboo Fire Centre,fire centre,82480.1,2280.49,2.76
+2053,QC,SOPFEU,57 LG-3,fire danger zone (ZDI),40537.9,1093.3,2.7
+2001,QC,SOPFEU,01 Matagami,fire danger zone (ZDI),26834.1,560.01,2.09
+1018,MB,Manitoba Wildfire Service,Area 18 (North),fire and travel restriction area,95391.1,1795.21,1.88
+1017,MB,Manitoba Wildfire Service,Area 17 (North),fire and travel restriction area,88715.3,1650.34,1.86
+2060,QC,SOPFEU,64 Caniapiscau,fire danger zone (ZDI),26162.0,410.45,1.57
+3,BC,BC Wildfire Service,Kamloops Fire Centre,fire centre,71577.5,1077.54,1.51
+1015,MB,Manitoba Wildfire Service,Area 15 (North),fire and travel restriction area,16823.7,253.62,1.51
+38,ON,Ontario Forest Fires (MNR AFFES),Sioux Lookout,fire management headquarters area,109636.5,1589.35,1.45
+2049,QC,SOPFEU,53 Chisasibi,fire danger zone (ZDI),14727.6,209.17,1.42
+26,SK,Saskatchewan Public Safety Agency,Stony Rapids,protection area,92643.5,1293.59,1.4
+46,NT,GNWT Forest Management Division (ECC),Sahtu,administrative region,280114.6,3866.23,1.38
+23,SK,Saskatchewan Public Safety Agency,La Ronge,protection area,75255.5,1039.89,1.38
+85,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 22,forest management district,79926.4,827.35,1.04
+1014,MB,Manitoba Wildfire Service,Area 14 (West/North),fire and travel restriction area,20205.9,210.43,1.04
+2061,QC,SOPFEU,65 Fermont-Scherfferville,fire danger zone (ZDI),31338.6,303.64,0.97
+47,NT,GNWT Forest Management Division (ECC),South Slave,administrative region,207818.5,1888.25,0.91
+2052,QC,SOPFEU,56 Radisson,fire danger zone (ZDI),17731.6,149.48,0.84
+2,BC,BC Wildfire Service,Coastal Fire Centre,fire centre,131243.6,900.5,0.69
+31,ON,Ontario Forest Fires (MNR AFFES),Dryden,fire management headquarters area,22823.5,136.54,0.6
+1007,MB,Manitoba Wildfire Service,Area 7 (West),fire and travel restriction area,1096.1,5.46,0.5
+2051,QC,SOPFEU,55 Sarcelle,fire danger zone (ZDI),25107.9,124.37,0.5
+28,SK,Saskatchewan Public Safety Agency,Île-à-la-Crosse,protection area,40873.8,191.39,0.47
+35,ON,Ontario Forest Fires (MNR AFFES),Nipigon,fire management headquarters area,135969.9,532.92,0.39
+37,ON,Ontario Forest Fires (MNR AFFES),Red Lake,fire management headquarters area,66363.6,256.07,0.39
+2048,QC,SOPFEU,52 Wemindji,fire danger zone (ZDI),6488.8,21.59,0.33
+80,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 19a,forest management district,20591.3,65.22,0.32
+1019,MB,Manitoba Wildfire Service,Area 19 (North),fire and travel restriction area,58069.5,168.67,0.29
+1013,MB,Manitoba Wildfire Service,Area 13 (West),fire and travel restriction area,12498.5,32.1,0.26
+2009,QC,SOPFEU,10 Réserve La Vérendrye,fire danger zone (ZDI),22479.0,58.64,0.26
+25,SK,Saskatchewan Public Safety Agency,Prince Albert,protection area,72439.5,178.52,0.25
+87,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 24,forest management district,76420.3,186.18,0.24
+81,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 19b,forest management district,29575.1,62.16,0.21
+18,SK,Saskatchewan Public Safety Agency,Buffalo Narrows,protection area,51545.7,109.85,0.21
+2066,QC,SOPFEU,"Far north outside SOPFEU fire danger zones (northern zone, no ZDI)",remainder,519551.0,1022.49,0.2
+82,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 19c,forest management district,21010.9,42.19,0.2
+6,BC,BC Wildfire Service,Southeast Fire Centre,fire centre,82296.5,150.89,0.18
+48,YT,Yukon Wildland Fire Management,Beaver Creek,fire district,25491.3,44.21,0.17
+11,AB,Alberta Wildfire,High Level Forest Area,forest area,82679.7,144.43,0.17
+24,SK,Saskatchewan Public Safety Agency,Lower Fishing Lake,protection area,14845.0,24.84,0.17
+88,NL,NL Forestry and Agrifoods Agency (Wildfire),NL outside mapped areas,remainder,3975.5,5.15,0.13
+2039,QC,SOPFEU,43 Manic 5-nord SM3,fire danger zone (ZDI),39161.9,49.89,0.13
+2035,QC,SOPFEU,38 Chute-des-Passes,fire danger zone (ZDI),16298.9,19.74,0.12
+2058,QC,SOPFEU,62 Tichégami,fire danger zone (ZDI),26738.5,32.01,0.12
+2064,QC,SOPFEU,68 Rivière du Petit Mécatina,fire danger zone (ZDI),38083.8,37.13,0.1
+91,NB,NB Department of Natural Resources (Forest Fire),New Brunswick (whole province/territory),province,72725.2,71.26,0.1
+22,SK,Saskatchewan Public Safety Agency,Hudson Bay,protection area,101102.3,87.02,0.09
+41,ON,Ontario Forest Fires (MNR AFFES),Timmins,fire management headquarters area,31333.4,28.09,0.09
+2059,QC,SOPFEU,63 Monts-Otish,fire danger zone (ZDI),22959.4,17.3,0.08
+14,AB,Alberta Wildfire,Rocky Mountain House Forest Area,forest area,21060.1,14.28,0.07
+83,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 20,forest management district,20581.8,13.71,0.07
+30,ON,Ontario Forest Fires (MNR AFFES),Cochrane,fire management headquarters area,295585.6,195.91,0.07
+96,AB,Alberta Wildfire,AB outside mapped areas,remainder,251937.5,139.48,0.06
+2062,QC,SOPFEU,66 Rivière Moisie,fire danger zone (ZDI),26009.3,12.66,0.05
+95,SK,Saskatchewan Public Safety Agency,SK outside mapped areas,remainder,4033.5,1.9,0.05
+86,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 23,forest management district,24687.2,10.69,0.04
+1012,MB,Manitoba Wildfire Service,Area 12 (West),fire and travel restriction area,20937.2,8.37,0.04
+1021,MB,Manitoba Wildfire Service,Area 21 (North),fire and travel restriction area,95519.0,33.29,0.03
+1001,MB,Manitoba Wildfire Service,Area 1 (East),fire and travel restriction area,6965.5,2.43,0.03
+50,YT,Yukon Wildland Fire Management,Dawson,fire district,66806.9,10.9,0.02
+1023,MB,Manitoba Wildfire Service,Southern Manitoba outside fire and travel restriction areas,remainder,97191.8,15.72,0.02
+55,YT,Yukon Wildland Fire Management,Old Crow,fire district,71103.5,15.06,0.02
+2011,QC,SOPFEU,12 Pontiac,fire danger zone (ZDI),12029.6,1.03,0.01
+60,YT,Yukon Wildland Fire Management,Whitehorse,fire district,26462.0,2.68,0.01
+90,NS,NS Department of Natural Resources (Wildfire),Nova Scotia (whole province/territory),province,55402.0,4.45,0.01
+1022,MB,Manitoba Wildfire Service,Area 22 (North),fire and travel restriction area,17566.9,1.08,0.01
+99,NU,Government of Nunavut (no organised wildfire suppression),Nunavut (whole province/territory),province,2092670.5,187.15,0.01
+1008,MB,Manitoba Wildfire Service,Area 8 (East/West),fire and travel restriction area,30506.7,1.99,0.01
+13,AB,Alberta Wildfire,Peace River Forest Area,forest area,53155.5,2.74,0.01
+12,AB,Alberta Wildfire,Lac La Biche Forest Area,forest area,40283.0,2.69,0.01
+2063,QC,SOPFEU,67 Rivière Romaine,fire danger zone (ZDI),37539.9,3.24,0.01
+1004,MB,Manitoba Wildfire Service,Area 4 (East),fire and travel restriction area,25882.6,2.81,0.01
+2050,QC,SOPFEU,54 Némaska,fire danger zone (ZDI),20726.3,1.31,0.01
+21,SK,Saskatchewan Public Safety Agency,Dorintosh,protection area,33045.1,0.0,0.0
+16,AB,Alberta Wildfire,Whitecourt Forest Area,forest area,16567.9,0.0,0.0
+19,SK,Saskatchewan Public Safety Agency,Cypress Hills,protection area,107309.2,0.64,0.0
+15,AB,Alberta Wildfire,Slave Lake Forest Area,forest area,56231.5,0.0,0.0
+17,SK,Saskatchewan Public Safety Agency,Big River,protection area,25410.2,0.87,0.0
+4,BC,BC Wildfire Service,Northwest Fire Centre,fire centre,243356.0,4.53,0.0
+5,BC,BC Wildfire Service,Prince George Fire Centre,fire centre,336629.1,9.94,0.0
+7,AB,Alberta Wildfire,Calgary Forest Area,forest area,12710.8,0.01,0.0
+58,YT,Yukon Wildland Fire Management,Vuntut National Park,fire district,4344.0,0.0,0.0
+57,YT,Yukon Wildland Fire Management,Teslin,fire district,26607.6,0.0,0.0
+56,YT,Yukon Wildland Fire Management,Ross River,fire district,48779.4,0.0,0.0
+54,YT,Yukon Wildland Fire Management,Mayo,fire district,78152.4,1.36,0.0
+52,YT,Yukon Wildland Fire Management,Ivvavik National Park,fire district,9696.2,0.0,0.0
+53,YT,Yukon Wildland Fire Management,Kluane National Park,fire district,22030.5,0.0,0.0
+51,YT,Yukon Wildland Fire Management,Haines Junction,fire district,17331.9,0.0,0.0
+49,YT,Yukon Wildland Fire Management,Carmacks,fire district,29589.9,0.0,0.0
+44,NT,GNWT Forest Management Division (ECC),Inuvik,administrative region,377254.7,15.48,0.0
+33,ON,Ontario Forest Fires (MNR AFFES),Haliburton,fire management headquarters area,40386.2,1.1,0.0
+27,SK,Saskatchewan Public Safety Agency,Weyakwin,protection area,9595.3,0.0,0.0
+29,ON,Ontario Forest Fires (MNR AFFES),Chapleau,fire management headquarters area,40350.4,0.0,0.0
+34,ON,Ontario Forest Fires (MNR AFFES),Kenora,fire management headquarters area,17348.3,0.0,0.0
+36,ON,Ontario Forest Fires (MNR AFFES),North Bay,fire management headquarters area,21543.7,0.0,0.0
+39,ON,Ontario Forest Fires (MNR AFFES),Sudbury,fire management headquarters area,27273.4,0.0,0.0
+42,ON,Ontario Forest Fires (MNR AFFES),Wawa,fire management headquarters area,34987.0,0.71,0.0
+10,AB,Alberta Wildfire,Grande Prairie Forest Area,forest area,38306.3,0.87,0.0
+9,AB,Alberta Wildfire,Fort McMurray Forest Area,forest area,60810.3,0.0,0.0
+8,AB,Alberta Wildfire,Edson Forest Area,forest area,29499.2,0.0,0.0
+76,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 15,forest management district,5601.2,0.0,0.0
+89,PE,"PEI Forests, Fish and Wildlife",Prince Edward Island (whole province/territory),province,5735.9,0.0,0.0
+84,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 21,forest management district,19174.0,0.0,0.0
+79,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 18,forest management district,6152.4,0.0,0.0
+66,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 050,forest management district,2325.4,0.0,0.0
+67,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 06,forest management district,4518.5,0.0,0.0
+68,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 07,forest management district,12347.8,0.0,0.0
+69,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 08,forest management district,2819.3,0.0,0.0
+75,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 14,forest management district,14974.0,0.0,0.0
+78,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 17,forest management district,6405.3,0.0,0.0
+77,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 16,forest management district,6788.1,0.0,0.0
+61,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 01,forest management district,9664.2,0.0,0.0
+59,YT,Yukon Wildland Fire Management,Watson Lake,fire district,56169.3,0.0,0.0
+2002,QC,SOPFEU,02 La Sarre-Amos,fire danger zone (ZDI),14014.3,0.0,0.0
+1020,MB,Manitoba Wildfire Service,Area 20 (North),fire and travel restriction area,7726.2,0.09,0.0
+1010,MB,Manitoba Wildfire Service,Area 10 (West),fire and travel restriction area,3757.5,0.0,0.0
+1011,MB,Manitoba Wildfire Service,Area 11 (West),fire and travel restriction area,2128.7,0.0,0.0
+1005,MB,Manitoba Wildfire Service,Area 5 (East),fire and travel restriction area,13775.8,0.0,0.0
+1003,MB,Manitoba Wildfire Service,Area 3 (East),fire and travel restriction area,7031.9,0.0,0.0
+1006,MB,Manitoba Wildfire Service,Area 6 (West),fire and travel restriction area,194.1,0.0,0.0
+1009,MB,Manitoba Wildfire Service,Area 9 (West),fire and travel restriction area,11838.4,0.0,0.0
+97,YT,Yukon Wildland Fire Management,YT outside mapped areas,remainder,1275.9,0.0,0.0
+98,NT,GNWT Forest Management Division (ECC),NT outside mapped areas,remainder,4495.0,0.18,0.0
+93,ON,Ontario Forest Fires (MNR AFFES),ON outside mapped areas,remainder,78577.6,0.91,0.0
+1002,MB,Manitoba Wildfire Service,Area 2 (East),fire and travel restriction area,8111.5,0.0,0.0
+63,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 03,forest management district,6843.3,0.0,0.0
+64,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 04,forest management district,3022.4,0.0,0.0
+65,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 05,forest management district,5768.6,0.0,0.0
+62,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 02,forest management district,4762.7,0.0,0.0
+74,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 13,forest management district,2764.1,0.0,0.0
+73,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 12,forest management district,4854.4,0.0,0.0
+72,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 11,forest management district,2968.0,0.0,0.0
+71,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 10,forest management district,2018.4,0.0,0.0
+70,NL,NL Forestry and Agrifoods Agency (Wildfire),Forest Management District 09,forest management district,6190.6,0.0,0.0
+2006,QC,SOPFEU,06 Mégiscane-Gouin,fire danger zone (ZDI),21721.2,0.0,0.0
+2005,QC,SOPFEU,05 Val d'Or-Senneterre,fire danger zone (ZDI),10653.7,0.0,0.0
+2003,QC,SOPFEU,03 Quévillon-Waswanipi,fire danger zone (ZDI),19739.2,0.0,0.0
+2010,QC,SOPFEU,11 Parent-Windigo,fire danger zone (ZDI),12813.5,0.0,0.0
+2012,QC,SOPFEU,13 Outaouais-Labelle,fire danger zone (ZDI),11724.7,0.0,0.0
+2013,QC,SOPFEU,14 Manawan,fire danger zone (ZDI),12812.7,0.0,0.0
+2014,QC,SOPFEU,15 Gatineau,fire danger zone (ZDI),6018.7,0.0,0.0
+2015,QC,SOPFEU,16 Laurentides,fire danger zone (ZDI),11912.4,0.0,0.0
+2007,QC,SOPFEU,07 Témiscamingue,fire danger zone (ZDI),13075.9,0.0,0.0
+2008,QC,SOPFEU,08 Maganasipi-Dumoine,fire danger zone (ZDI),4305.3,0.0,0.0
+2004,QC,SOPFEU,04 Rouyn-Noranda,fire danger zone (ZDI),4729.4,0.0,0.0
+2034,QC,SOPFEU,37 Lac Albanel,fire danger zone (ZDI),16709.6,0.0,0.0
+2033,QC,SOPFEU,36 Chibougamau-Rte du Nord,fire danger zone (ZDI),25357.9,0.0,0.0
+2032,QC,SOPFEU,35 Monts-Valin,fire danger zone (ZDI),10408.4,0.0,0.0
+2031,QC,SOPFEU,34 Rivière Mistassini,fire danger zone (ZDI),14383.6,0.0,0.0
+2030,QC,SOPFEU,33 Réserve Ashuapmushuan,fire danger zone (ZDI),11356.1,0.0,0.0
+2029,QC,SOPFEU,32 Lac Saint-Jean,fire danger zone (ZDI),9782.1,0.0,0.0
+2028,QC,SOPFEU,31 Saguenay,fire danger zone (ZDI),5488.4,0.0,0.0
+2027,QC,SOPFEU,30 Réserve Laurentides,fire danger zone (ZDI),12565.7,0.0,0.0
+2026,QC,SOPFEU,29 Charlevoix,fire danger zone (ZDI),3716.7,0.0,0.0
+2025,QC,SOPFEU,28 Québec,fire danger zone (ZDI),5462.8,0.0,0.0
+2024,QC,SOPFEU,27 Portneuf,fire danger zone (ZDI),4341.9,0.0,0.0
+2023,QC,SOPFEU,26 La Tuque,fire danger zone (ZDI),10254.5,0.0,0.0
+2022,QC,SOPFEU,25 St-Maurice-Mastigouche,fire danger zone (ZDI),6282.5,0.0,0.0
+2021,QC,SOPFEU,24 Maskinongé - Les Chenaux,fire danger zone (ZDI),4522.2,0.0,0.0
+2020,QC,SOPFEU,23 Beauce-Appalaches,fire danger zone (ZDI),11508.4,0.0,0.0
+2019,QC,SOPFEU,22 Centre du Québec,fire danger zone (ZDI),12469.9,0.0,0.0
+2018,QC,SOPFEU,21 Estrie,fire danger zone (ZDI),9113.2,0.0,0.0
+2017,QC,SOPFEU,20 Montérégie,fire danger zone (ZDI),6092.7,0.0,0.0
+2016,QC,SOPFEU,17 Nord de Montréal,fire danger zone (ZDI),6463.0,0.0,0.0
+2043,QC,SOPFEU,47 Matane-Chics-Chocs,fire danger zone (ZDI),11296.9,0.0,0.0
+2047,QC,SOPFEU,51 Eastmain,fire danger zone (ZDI),7443.2,0.0,0.0
+2040,QC,SOPFEU,44 Minganie,fire danger zone (ZDI),6549.9,0.0,0.0
+2041,QC,SOPFEU,45 Kamouraska-RDL-Témis,fire danger zone (ZDI),10012.2,0.0,0.0
+2042,QC,SOPFEU,46 Rimouski-Matapédia,fire danger zone (ZDI),8865.6,0.0,0.0
+2036,QC,SOPFEU,40 Forestville-Labrieville,fire danger zone (ZDI),12792.2,0.0,0.0
+2037,QC,SOPFEU,41 Baie-Comeau-Manicouagan,fire danger zone (ZDI),28376.0,0.0,0.0
+2044,QC,SOPFEU,48 Baie des Chaleurs,fire danger zone (ZDI),8916.8,0.0,0.0
+2045,QC,SOPFEU,49 Gaspé,fire danger zone (ZDI),4698.7,0.0,0.0
+2038,QC,SOPFEU,42 Sept-Iles,fire danger zone (ZDI),8658.5,0.0,0.0
+2056,QC,SOPFEU,60 Île d'Anticosti,fire danger zone (ZDI),7931.8,0.0,0.0
+2057,QC,SOPFEU,61 Îles de la Madeleine,fire danger zone (ZDI),194.2,0.0,0.0
+2065,QC,SOPFEU,69 Le Golfe-du-St-Laurent,fire danger zone (ZDI),6634.9,0.0,0.0

@@ -1,0 +1,147 @@
+source,base,year,season,n_fires,ha_inside_base
+CNFDB points,Gagetown,1989,summer,1,0.0
+CNFDB points,Gagetown,1990,fall,1,0.0
+CNFDB points,Gagetown,1990,summer,3,0.0
+CNFDB points,Gagetown,1991,spring,3,0.0
+CNFDB points,Gagetown,1991,summer,3,0.0
+CNFDB points,Gagetown,1994,spring,2,0.0
+CNFDB points,Gagetown,1994,summer,1,0.0
+CNFDB points,Gagetown,1995,summer,1,0.0
+CNFDB points,Gagetown,1996,fall,1,0.0
+CNFDB points,Gagetown,1996,spring,2,0.0
+CNFDB points,Gagetown,1997,spring,1,0.0
+CNFDB points,Gagetown,1997,summer,1,0.0
+CNFDB points,Gagetown,1999,summer,1,0.0
+CNFDB points,Gagetown,2000,spring,1,0.0
+CNFDB points,Gagetown,2000,summer,1,0.0
+CNFDB points,Gagetown,2001,summer,1,0.0
+CNFDB points,Gagetown,2003,spring,1,0.0
+CNFDB points,Gagetown,2007,spring,1,0.0
+CNFDB points,Petawawa,1975,summer,1,0.0
+CNFDB points,Petawawa,1977,spring,4,0.0
+CNFDB points,Petawawa,1978,spring,1,0.0
+CNFDB points,Petawawa,1979,spring,1,0.0
+CNFDB points,Petawawa,1979,summer,1,0.0
+CNFDB points,Petawawa,1980,spring,1,0.0
+CNFDB points,Petawawa,1981,spring,1,0.0
+CNFDB points,Petawawa,1982,summer,1,0.0
+CNFDB points,Petawawa,1984,summer,1,0.0
+CNFDB points,Petawawa,1985,spring,3,0.0
+CNFDB points,Petawawa,1987,spring,2,0.0
+CNFDB points,Petawawa,1988,summer,1,0.0
+CNFDB points,Petawawa,1990,spring,1,0.0
+CNFDB points,Petawawa,1991,spring,1,0.0
+CNFDB points,Petawawa,1992,summer,1,0.0
+CNFDB points,Petawawa,1994,summer,2,0.0
+CNFDB points,Petawawa,1995,spring,1,0.0
+CNFDB points,Petawawa,1999,spring,2,0.0
+CNFDB points,Petawawa,2000,spring,1,0.0
+CNFDB points,Petawawa,2001,spring,2,0.0
+CNFDB points,Petawawa,2002,spring,1,0.0
+CNFDB points,Petawawa,2002,summer,1,0.0
+CNFDB points,Petawawa,2007,spring,1,0.0
+CNFDB points,Petawawa,2012,summer,1,0.0
+CNFDB points,Shilo,1961,summer,1,0.0
+CNFDB points,Shilo,1971,spring,1,0.0
+CNFDB points,Shilo,1980,spring,3,0.0
+CNFDB points,Shilo,1980,summer,1,0.0
+CNFDB points,Shilo,1997,summer,1,0.0
+CNFDB points,Shilo,1998,spring,1,0.0
+CNFDB points,Shilo,2001,unknown,1,0.0
+CNFDB points,Shilo,2002,unknown,1,0.0
+CNFDB points,Shilo,2015,spring,1,0.0
+CNFDB points,Shilo,2021,spring,1,0.0
+CNFDB points,Valcartier,1973,summer,1,0.0
+CNFDB points,Valcartier,1974,spring,3,0.0
+CNFDB points,Valcartier,1975,spring,2,0.0
+CNFDB points,Valcartier,1976,fall,1,0.0
+CNFDB points,Valcartier,1976,spring,1,0.0
+CNFDB points,Valcartier,1976,summer,1,0.0
+CNFDB points,Valcartier,1977,spring,1,0.0
+CNFDB points,Valcartier,1978,spring,1,0.0
+CNFDB points,Valcartier,1979,spring,1,0.0
+CNFDB points,Valcartier,1980,spring,1,0.0
+CNFDB points,Valcartier,1981,spring,1,0.0
+CNFDB points,Valcartier,1982,spring,2,0.0
+CNFDB points,Valcartier,1983,summer,2,0.0
+CNFDB points,Valcartier,1984,spring,1,0.0
+CNFDB points,Valcartier,1987,spring,4,0.0
+CNFDB points,Valcartier,1988,spring,1,0.0
+CNFDB points,Valcartier,1991,summer,1,0.0
+CNFDB points,Valcartier,1992,spring,3,0.0
+CNFDB points,Valcartier,1993,spring,1,0.0
+CNFDB points,Valcartier,2002,fall,1,0.0
+CNFDB points,Valcartier,2003,spring,1,0.0
+CNFDB points,Valcartier,2004,spring,1,0.0
+CNFDB points,Valcartier,2017,summer,1,0.0
+CWFIS M3 2026 (2026-10-22 file),Gagetown,2026,spring,2,7125.8
+CWFIS M3 2026 (2026-10-22 file),Petawawa,2026,spring,1,110.0
+CWFIS M3 2026 (2026-10-22 file),Shilo,2026,spring,1,479.6
+CWFIS M3 2026 (2026-10-22 file),Suffield,2026,summer,1,193.3
+CWFIS M3 2026 (2026-10-22 file),Wainwright,2026,spring,1,113.4
+NBAC,Dundurn,2023,unknown,1,1013.6
+NBAC,Gagetown,1986,spring,1,7735.5
+NBAC,Gagetown,1993,unknown,3,529.6
+NBAC,Gagetown,1994,unknown,1,451.4
+NBAC,Gagetown,1998,unknown,1,52.4
+NBAC,Gagetown,1999,fall,1,184.6
+NBAC,Gagetown,2002,unknown,1,743.3
+NBAC,Gagetown,2003,unknown,1,2250.1
+NBAC,Gagetown,2017,fall,1,354.0
+NBAC,Gagetown,2018,spring,1,1440.3
+NBAC,Gagetown,2018,unknown,1,207.9
+NBAC,Gagetown,2022,spring,1,576.6
+NBAC,Gagetown,2023,spring,2,2277.9
+NBAC,Gagetown,2024,spring,2,7731.2
+NBAC,Gagetown,2025,spring,7,3998.1
+NBAC,Petawawa,1990,spring,2,418.5
+NBAC,Petawawa,1999,spring,2,1988.9
+NBAC,Petawawa,2000,spring,1,17.5
+NBAC,Petawawa,2001,spring,2,468.3
+NBAC,Petawawa,2002,summer,1,538.5
+NBAC,Petawawa,2012,summer,1,209.9
+NBAC,Petawawa,2022,spring,1,119.6
+NBAC,Petawawa,2024,spring,2,1437.0
+NBAC,Petawawa,2025,spring,1,57.4
+NBAC,Petawawa,2025,summer,1,172.9
+NBAC,Shilo,1977,unknown,1,2209.7
+NBAC,Shilo,1980,spring,1,5881.6
+NBAC,Shilo,1997,summer,1,2418.3
+NBAC,Shilo,1998,unknown,1,22.8
+NBAC,Shilo,2001,unknown,1,633.8
+NBAC,Shilo,2002,unknown,1,3.7
+NBAC,Shilo,2012,fall,1,16.8
+NBAC,Shilo,2015,spring,1,0.1
+NBAC,Shilo,2021,spring,1,4220.2
+NBAC,Shilo,2023,spring,1,103.3
+NBAC,Suffield,2018,unknown,1,557.9
+NBAC,Suffield,2022,unknown,1,500.0
+NBAC,Valcartier,2017,summer,1,2.2
+NBAC,Wainwright,1991,unknown,4,5298.5
+NBAC,Wainwright,1994,unknown,1,503.9
+NBAC,Wainwright,1996,unknown,1,428.7
+NBAC,Wainwright,1998,unknown,1,15754.6
+NBAC,Wainwright,2001,unknown,7,12837.900000000001
+NBAC,Wainwright,2002,unknown,1,14145.4
+NBAC,Wainwright,2004,unknown,1,4128.9
+NBAC,Wainwright,2005,unknown,2,4173.5
+NBAC,Wainwright,2007,unknown,1,3431.2
+NBAC,Wainwright,2008,unknown,2,2812.6
+NBAC,Wainwright,2009,unknown,1,1343.2
+NBAC,Wainwright,2011,unknown,1,1223.3
+NBAC,Wainwright,2012,unknown,2,2157.5
+NBAC,Wainwright,2013,unknown,2,5229.8
+NBAC,Wainwright,2014,unknown,1,2230.5
+NBAC,Wainwright,2015,unknown,4,8102.5
+NBAC,Wainwright,2016,unknown,3,1567.1000000000001
+NBAC,Wainwright,2017,unknown,3,2503.9
+NBAC,Wainwright,2018,unknown,6,10362.999999999998
+NBAC,Wainwright,2019,unknown,2,2344.1
+NBAC,Wainwright,2020,unknown,3,2204.7
+NBAC,Wainwright,2022,unknown,2,3709.8999999999996
+NBAC,Wainwright,2023,unknown,4,3791.6
+NBAC,Wainwright,2024,fall,1,173.3
+NBAC,Wainwright,2024,spring,1,1743.2
+NBAC,Wainwright,2024,unknown,3,505.8
+NBAC,Wainwright,2025,fall,1,3051.4
+NBAC,Wainwright,2025,spring,3,5976.2

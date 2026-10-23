@@ -1,0 +1,5 @@
+province,years,n_years,slope_cost_cad_m_per_year,slope_log_cost_pct_per_year,median_cost_per_ha,slope_log_cost_per_ha_pct_per_year,pearson_r_cost_vs_area,mean_cost_first_half,first_half_years,mean_cost_second_half,second_half_years,max_cost_year,max_cost_cad_m
+AB,2015-2025,10,61.47,10.7,1161,0.8,0.74,391.0,2015-2019,637.3,2020-2025,2023,953.605
+BC,2008-2025,18,36.35,11.5,1135,-4.4,0.92,187.7,2008-2016,571.7,2017-2025,2023,1094.8
+ON,2015-2025,11,11.84,7.5,1039,-1.3,0.89,132.6,2015-2019,199.1,2021-2025,2025,272.996
+SK,2016-2025,10,22.97,27.2,118,-4.8,0.93,29.1,2016-2020,141.3,2021-2025,2025,351.6

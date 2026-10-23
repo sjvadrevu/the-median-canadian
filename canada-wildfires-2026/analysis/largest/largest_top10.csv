@@ -1,0 +1,11 @@
+key,year,source,nbac_id,m3_uid,outline_class,ha,rank_area,rank_area_in_year,rank_buildings,agency_id,agency_name,name_source,agency_size_ha,agency_points,agency_points_1000ha,cause,cause_mixed,start,start_basis,agency_fire_year,carryover,bldg_inside,bldg_within_100m,bldg_inside_or_100m,provinces,fire_area,nearest_pc,nearest_pc_km,nbac_admin
+2023_310,2023,NBAC,310.0,,,1146936.7,1,1,584,NT FS001-23,,,541766.0,14,4,lightning,False,2023-05-11,agency,,False,0,1,1,NT/BC/AB,South Slave,Hay River,103,"AB,BC,NT"
+2023_346,2023,NBAC,346.0,,,969354.0,2,2,108,QC 20231080218,,,885388.2,4,3,lightning,False,2023-05-27,agency,,False,6,6,12,QC,55 Sarcelle,Wemindji,155,QC
+2025_273,2025,NBAC,273.0,,,632231.5,3,1,14,SK 25LF-SHOE,,,592985.0,5,3,human,False,2025-05-07,agency,,False,146,67,213,SK,Lower Fishing Lake,La Ronge,17,SK
+2023_354,2023,NBAC,354.0,,,546160.7,4,3,45,BC 2023-G92498,2023 Holdover Ekwan Tower,CNFDB FIRENAME,275054.7,23,4,lightning,False,2023-05-03,agency,,False,13,27,40,BC/AB,Prince George Fire Centre,Fort Nelson,85,"AB,BC"
+2023_313,2023,NBAC,313.0,,,475756.9,5,4,0,NT SS022-23,,,641421.0,13,1,lightning,False,2023-07-05,agency,,False,0,0,0,NT,South Slave,Fort Smith,17,NT
+2023_359,2023,NBAC,359.0,,,465678.6,6,5,49,BC 2023-G80280,2023 Holdover DONNIE CREEK,CNFDB FIRENAME,619072.5,11,1,lightning,False,2023-05-12,agency,,False,17,18,35,BC,Prince George Fire Centre,Fort St. John,104,BC
+2023_321,2023,NBAC,321.0,,,458985.1,7,6,19,NT SS052-23,,,252253.0,3,2,lightning,False,2023-08-02,agency,,False,60,66,126,NT,South Slave,Hay River,0,"NT,PC"
+2024_160,2024,NBAC,160.0,,,451987.2,8,1,54,BC 2024-G90228,Nogah Creek,CNFDB FIRENAME,508453.3,11,2,lightning,False,2023-06-28,agency,,True,4,28,32,BC,Prince George Fire Centre,Fort Nelson,44,BC
+2023_349,2023,NBAC,349.0,,,445960.7,9,7,158,SK 23LX-SMITH,,,543976.0,8,5,lightning,False,2023-05-11,agency,,False,6,3,9,SK,Île-à-la-Crosse,Stanley Mission 157,85,SK
+2023_347,2023,NBAC,347.0,,,441429.2,10,8,136,QC 20231080602,,,174992.0,7,5,lightning,False,2023-07-05,agency,,False,8,2,10,QC,55 Sarcelle,Wemindji,25,QC

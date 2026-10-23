@@ -1,0 +1,665 @@
+OBJECTID,Mill Type,Mill Ownership,Mill Location,Province,Source,dist_2026_km,band
+520,Saw,West Fraser Timber Co. Ltd.,Chasm,BC,FEA,0.0,inside
+467,Saw,Kalesnikoff,Thrums,BC,FEA,3.4145441015258844,1-10 km
+72,Pellets,Whitesand First Nation,Armstrong,ON,,5.211759999118411,1-10 km
+98,Plywood,Tolko,Armstrong,BC,FEA,6.041241040845413,1-10 km
+506,Saw,Tolko Industries Ltd.,Armstrong,BC,FEA,6.265714011244703,1-10 km
+143,Pulp,Mercer,Castlegar,BC,Fisher,7.383471344181575,1-10 km
+465,Saw,Interfor,Castledgar,BC,FEA,9.267204918483749,1-10 km
+498,Saw,Oyama Forest Products Inc.,Oyama,BC,Brandt,10.232799606258803,10-25 km
+262,Saw,Carson Lake Lumber Ltd.,Pembroke,ON,Brandt,10.271195977827643,10-25 km
+73,Pellets,Pinnacle Pellet,Armstrong,BC,,10.391528801749285,10-25 km
+526,Saw,Linde Brothers Lumber Ltd.,Williams Lake,BC,Brandt,12.741659497818112,10-25 km
+519,Saw,Spray Lake Sawmills,Cochrane Sawmill,AB,Sawmilldatabase.com,12.774615639453039,10-25 km
+263,Saw,Herb Shaw & Son,Petawawa,ON,FEA,12.90671128625962,10-25 km
+476,Saw,South East Forest Products,Blumenort,MB,FEA,15.24371783207517,10-25 km
+487,Saw,Gorman Bros. Lumber Ltd.,Westbank Gorman,BC,FEA,15.741419334825514,10-25 km
+189,Pulp,Tembec,Skookumchuck,BC,Fisher,15.911453701107577,10-25 km
+482,Saw,Springer Creek Forest Products,Slocan Springer Creek,BC,Sawmilldatabase.com,16.25836704300695,10-25 km
+522,Saw,Canfor,Vavenby Sawmill,BC,Sawmilldatabase.com,16.751986854907013,10-25 km
+490,Saw,Tolko Industries Ltd.,Kelowna,BC,FEA,17.07760595954664,10-25 km
+65,Pellets,Wagner Ontario Forest Management,Ignace,ON,,18.720711212320495,10-25 km
+70,Pellets,Okanagan Pellet Company,Kelowna,BC,,19.52045403848103,10-25 km
+45,Pellets,Marwood,Tracyville,NB,,20.106413346293365,10-25 km
+503,Saw,Cooper Creek Cedar Ltd.,Meadow Creek,BC,Brandt,20.270734193123914,10-25 km
+109,Plywood,Commonwealth Plywood Ltd.,Pembroke,ON,Krigstin,20.573657628451013,10-25 km
+501,Saw,Tolko Industries Ltd.,Lavington,BC,FEA,20.969311067729826,10-25 km
+527,Saw,Tolko Industries Ltd.,Williams Lake Tolko,BC,FEA,21.142822762890894,10-25 km
+258,Saw,Dament & Charles Lumber - Manufacturing Limited,Pembroke,ON,Brandt,21.165627879954542,10-25 km
+77,Pellets,Pinnacle Pellet,Williams Lake,BC,,21.565030280787227,10-25 km
+496,Saw,Tolko Industries Ltd.,Merritt,BC,FEA,21.613204538316285,10-25 km
+61,Pellets,Atikokan Renewable Fuels,Atikokan,ON,,21.851251032575412,10-25 km
+497,Saw,Aspen Planers Ltd.,Merritt Mill,BC,Sawmilldatabase.com,21.99419305378821,10-25 km
+495,Saw,Ardew,Merrit,BC,FEA,22.295833630957564,10-25 km
+71,Pellets,Woodville Pellet Corpotation,Merritt,BC,,22.295833630957564,10-25 km
+270,Saw,Devon Lumber Co.,Fredericton,NB,FEA,22.311639406039465,10-25 km
+535,Saw,West Chilcotin Forest Products Ltd.,Anahim Lake,BC,FEA,22.646741271719574,10-25 km
+566,Saw,West Fraser Timber Co. Ltd.,Fraser Lake,BC,FEA,23.438967194971713,10-25 km
+516,Saw,Downie Timber,Revelstoke Downie,BC,FEA,23.457535580981492,10-25 km
+509,Saw,North Enderby Timber,Enderby,BC,FEA,23.91894172581033,10-25 km
+500,Saw,Meadow Creek Cedar Ltd,Kaslo,BC,FEA,24.485471774162388,10-25 km
+529,Saw,Tolko Industries Ltd.,Soda Creek,BC,FEA,25.018916281742587,>25 km
+104,Plywood,West Fraser,Williams Lake,BC,FEA,25.018916281742587,>25 km
+69,Pellets,Industries Lacwood,Hearst,ON,,26.308028008168137,>25 km
+531,Saw,West Fraser Timber Co. Ltd.,Williams Lake,BC,FEA,26.31412849074057,>25 km
+103,Plywood,Lousiana-Pacific,Golden,BC,FEA,26.524542726938368,>25 km
+530,Saw,Chilcotin Forest Products,Williams Lake,BC,Brandt,26.75269927729694,>25 km
+34,PB,Columbia Forest Products,Hearst,ON,madison,27.062294351878137,>25 km
+478,Saw,Tembec,Hearst,ON,FEA,27.062294351878137,>25 km
+108,Plywood,Columbia Forest Products,Hearst,ON,madison,27.062294351878137,>25 km
+525,Saw,West Fraser Timber Co. Ltd.,Sundre,AB,FEA,27.398635100595246,>25 km
+600,Saw,Manning Diversified Forest Products Ltd,Manning Sawmill,AB,FEA,27.64955196615063,>25 km
+502,Saw,Paragon Wood Prod (Lumby),Lumby,BC,FEA,27.851555447684145,>25 km
+488,Saw,Winnipeg Forest Products Inc.,Winnipeg,MB,Brandt,27.857807683782045,>25 km
+473,Saw,Weyerhaeuser,Princeton,BC,FEA,28.080470326567795,>25 km
+66,Pellets,Eagle Valley Wood Fuel Pellets - Princeton Co-Generation,Princeton,BC,,28.160324471992087,>25 km
+521,Saw,Roblin Forest Products,Roblin,MB,Brandt,28.632797738364086,>25 km
+470,Saw,Bear Lumber Ltd.,Cranbrook,BC,Brandt,28.987384668597297,>25 km
+507,Saw,Larry Buff Sawmills Ltd,Westwold,BC,FEA,29.446876466225763,>25 km
+453,Saw,Porcupine Wood Prod,Salmo,BC,FEA,29.47161830067717,>25 km
+38,Pellets,Protocol Biomass,Prescott,ON,,31.114751342167995,>25 km
+523,Saw,Wadlegger Logging & Construction Ltd.,Clearwater,BC,Brandt,31.448269795388157,>25 km
+491,Saw,Select Forest Products,Winnipeg,MB,Brandt,32.74064890577468,>25 km
+341,Saw,EACOM Timber Corporation,Gogama Sawmill,ON,Sawmilldatabase.com,34.28419796832103,>25 km
+32,PB,DeFehr Furniture,Winnipeg,MB,,34.86866283584526,>25 km
+508,Saw,North Star Planing,Athalmer,BC,FEA,35.131330299065894,>25 km
+16,OSB,Ainsworth Engineered,100 Mile House,BC,FEA,35.15743105831864,>25 km
+605,Saw,Tolko Industries Ltd.,High Level,AB,FEA,36.05058359308014,>25 km
+139,Pulp,J.D. Irving,Saint John,NB,Fisher,36.07308013055623,>25 km
+138,Pulp,J.D. Irving,Saint John,NB,Fisher,36.07308013055623,>25 km
+524,Saw,West Fraser Timber Co. Ltd.,100 Mile House,BC,FEA,36.09589154946159,>25 km
+604,Saw,Precision Lumber Products Inc.,La Crete,AB,Brandt,36.4259632415537,>25 km
+518,Saw,Gilbert Smith Forest Products Ltd.,Barriere,BC,FEA,36.51563954927876,>25 km
+227,Saw,Taylor Lumber Co,Middle Musquodoboit,NS,FEA,37.08392728619359,>25 km
+244,Saw,Ben Hokum & Son,Killaloe,ON,FEA,37.11869742422343,>25 km
+89,Pellets,La Crete Sawmills,La Crete,AB,,37.54030722366087,>25 km
+41,Pellets,Scotia Atlantic Biomass,Middle Musquodoboit,NS,,37.804402275233464,>25 km
+603,Saw,Evergreen Lumber Inc.,La Crete,AB,FEA,38.5874106248806,>25 km
+510,Saw,Canfor,Radium Sawmill,BC,Sawmilldatabase.com,39.039341554305366,>25 km
+259,Saw,Cedar Valley Mill,Smithfield,NB,Brandt,39.092706177861075,>25 km
+291,Saw,Commonwealth Plywood Ltd.,Rapides des Joachims,QC,FEA,39.294924427906935,>25 km
+485,Saw,Probyn Group - A.J. Forest Products Ltd.,Garibaldi Highlands,BC,Brandt,39.49871018422215,>25 km
+271,Saw,Ridge Cedar Ltd.,Keswick Ridge,NB,Brandt,39.55024538955354,>25 km
+233,Saw,Edwin Blaikie Lumber Ltd.,Upper Stewiacke,NS,Brandt,40.16218960664011,>25 km
+547,Saw,Edgewood Forest Products,Carrot River,SK,FEA,40.541661717562725,>25 km
+30,PB,"Uniboard Canada, Inc.",Val-d'Or,QC,,40.67974228783665,>25 km
+367,Saw,EACOM Timber Corporation,Val d Or Sawmill,QC,FEA,40.67974228783665,>25 km
+11,OSB,Norbord,Val-d'Or,QC,FEA,40.67974228783665,>25 km
+26,OSB,Ainsworth Engineered,High Level,AB,FEA,40.92026045490981,>25 km
+601,Saw,Crestview Sawmills Ltd.,La Crete,AB,FEA,41.2910117068534,>25 km
+602,Saw,La Crete Sawmills Ltd,La Crete Sawmills,AB,FEA,41.2910117068534,>25 km
+100,Plywood,Gorman Bros. Lumber,Canoe,BC,FEA,41.54428304639874,>25 km
+546,Saw,Tobin Lake Farms Ltd.,Carrot River,SK,Brandt,41.68492064105825,>25 km
+584,Saw,Zelensky-LaRonge,"LaRonge,SAS",SK,FEA,41.74968806511643,>25 km
+86,Pellets,Tahtsa Pellets Limited,Burns Lake,BC,,41.829388857197635,>25 km
+85,Pellets,Pinnacle Pellet,Burns Lake,BC,,41.829388857197635,>25 km
+544,Saw,Carrier Lumber Co.,Prince Albert Carrier,SK,Sawmilldatabase.com,42.014146712176625,>25 km
+499,Saw,Canfor,Canal Flats,BC,Sawmilldatabase.com,42.09763110597006,>25 km
+512,Saw,Lakeside Timber,Tappen,BC,,43.033339036097814,>25 km
+511,Saw,Seel Forest Products,Edgewater,BC,FEA,43.664049937742085,>25 km
+484,Saw,Lecours Lumber,Calstock,ON,FEA,43.82839290117825,>25 km
+581,Saw,Leptick Sawmill Ltd.,Cranberry Portage,MB,Brandt,45.688569588750326,>25 km
+534,Saw,C & C Wood Prod,Bella Coola,BC,Brandt,45.84600801386786,>25 km
+606,Saw,Trans North Timber,Fort Nelson,BC,Brandt,46.121618483577535,>25 km
+436,Saw,Wynndel Box & Lumber,Wynndel Sawmill,BC,FEA,46.365383852173935,>25 km
+241,Saw,L Heidemann & Sons,Eganville,ON,FEA,46.76938806951402,>25 km
+587,Saw,Canfor,Grande Prairie Sawmill,AB,Sawmilldatabase.com,46.90120048105707,>25 km
+287,Saw,J.D. Irving Limited,Grand Lake Timber,NB,FEA,47.95226594199443,>25 km
+615,Saw,Etmanskie Sawmill & Lumber Yard,Wilno,ON,Krigstin,48.25098173666134,>25 km
+265,Saw,Scierie Lefebvre & Pharand,Davidson,QC,FEA,48.34561901735884,>25 km
+289,Saw,Chipman Sawmill Inc.,Chipman,NB,Brandt,48.8573658118917,>25 km
+18,OSB,Weyerhaeuser,Hudson Bay,SK,FEA,49.36784958732422,>25 km
+565,Saw,Canfor,Plateau Sawmill,BC,Sawmilldatabase.com,50.91370051375866,>25 km
+596,Saw,Paul's Sawmill & Planer,Peace River,AB,Brandt,51.51235238665823,>25 km
+132,Pulp,Daishowa-Marubeni,Peace River,AB,Fisher,51.51235238665823,>25 km
+515,Saw,Eagle River Industries Inc.,Malakwa,BC,Brandt,53.04176390607666,>25 km
+513,Saw,Interfor,Adams lake,BC,FEA,53.12380608953495,>25 km
+261,Saw,Produits For Coulonge,Fort Coulonge,QC,FEA,53.207456204529855,>25 km
+532,Saw,Strachan Forest Products,Rocky Mountain House,AB,Brandt,53.61485683054337,>25 km
+533,Saw,Rocky Wood Preservers,Rocky Mtn Hse,AB,FEA,53.766409137086846,>25 km
+101,Plywood,Savona Specialty Plywood Co.,Savona,BC,FEA,53.985915732056185,>25 km
+252,Saw,J.D. Irving Limited,Sussex Sawmill,NB,FEA,54.14336915246675,>25 km
+643,Saw,Commonwealth Plywood Ltd.,La Croche,QC,QMNR,54.21898284690329,>25 km
+514,Saw,Cambie Cedar Products Ltd.,Sicamous,BC,Brandt,55.16309149207647,>25 km
+466,Saw,Galloway Lumber Ltd.,Galloway,BC,FEA,55.68525020888773,>25 km
+424,Saw,J H Huscroft,Creston,BC,FEA,56.2895288651624,>25 km
+21,OSB,Ainsworth Engineered,Grande Prairie,AB,FEA,56.44400469253632,>25 km
+68,Pellets,"Bingwi Neyaashi Anishinaabek First Nation, formerly Sand Point First Nation",Beardmore,ON,,56.650913005272386,>25 km
+571,Saw,Hamton Affiliates,Decker Lake Forest Products,BC,FEA,56.76907719112455,>25 km
+585,Saw,Weyerhaeuser,Grande Praire Weyerhauser,AB,FEA,58.209406739777826,>25 km
+116,Pulp,WY,Grande Prairie,AB,Fisher,58.209406739777826,>25 km
+549,Saw,Goose Bay Lumber and Sawmill Company,Goose Bay,NL,Brandt,59.17837585928262,>25 km
+276,Saw,Hainesville Sawmill Ltd.,Middle Hainesville,NB,Brandt,59.235835312373176,>25 km
+153,Pulp,BD White Birch,Gatineau,QC,Fisher,59.51754055454367,>25 km
+99,Plywood,Thompson River Veneer Products,Kamloops,BC,FEA,60.24804728883664,>25 km
+597,Saw,Canfor,Fort St. John Sawmill,BC,Sawmilldatabase.com,60.253105415804754,>25 km
+280,Saw,Bishop Lumber Co. Ltd.,Fredericton,NB,Brandt,60.755643430799424,>25 km
+561,Saw,BC Custom Timber Products Ltd.,Vanderhoof,BC,Brandt,60.75988256532498,>25 km
+25,OSB,Louisiana-Pacific,Peace Valley Ft St John,BC,FEA,61.17229542898665,>25 km
+654,Saw,Sherbrooke Village Sawmill,Sherbrooke,NS,Krigstin,61.48825202271612,>25 km
+632,Saw,Norman Burkholder (Norlaine Forest Products),Mine Centre,ON,Krigstin,62.788238167379035,>25 km
+137,Pulp,J.D. Irving,Utopia,NB,Fisher,63.077980853094715,>25 km
+43,Pellets,Trebio,Portage-du-Fort,QC,,64.06658318531261,>25 km
+224,Saw,Elmsdale Lumber Co.,Elmsdale,NS,FEA,64.09961426928393,>25 km
+235,Saw,J.D. Irving Limited,Truro Sawmill,NS,FEA,64.19465120044158,>25 km
+576,Saw,Conifex Timber Inc.,Fort St. James Conifex,BC,Sawmilldatabase.com,64.50634844135892,>25 km
+223,Saw,Ledwidge Lumber Ltd.,Enfield,NS,FEA,64.67587945608066,>25 km
+240,Saw,Murray Brothers Lum Co,Madawaska,ON,FEA,65.55159813980059,>25 km
+83,Pellets,Vanderhoof Specialty Wood Products,Vanderhoof,BC,,66.11146194593768,>25 km
+82,Pellets,Premium Pellet,Vanderhoof,BC,,66.11146194593768,>25 km
+555,Saw,Waugh's Wood Ltd.,The Pas,MB,FEA,66.20115048795519,>25 km
+198,Pulp,Tolko,The Pas,MB,Fisher,66.20115048795519,>25 km
+564,Saw,Sinclar Group,Vanderhoof Nechako,BC,FEA,66.25936893406099,>25 km
+118,Pulp,Aditya Birla,Nackawic,NB,Fisher,66.53020828055071,>25 km
+91,Pellets,Atlantic Fibre Resources/GreatWestern Forestry,Goose Bay,NL,,66.90324845605265,>25 km
+176,Pulp,Fortress,Thurso,QC,Fisher,67.47066453459614,>25 km
+616,Saw,George Stein Ltd.,Palmer Rapids,ON,Krigstin,67.7615927765666,>25 km
+446,Saw,Olav Haavaldsrud Tim Co,Hornepayne,ON,FEA,67.96264133144959,>25 km
+631,Saw,New Arbor Products Ltd.,Truro,NS,Krigstin,67.99748833723865,>25 km
+242,Saw,Groupe Savoie,Westville,NS,Krigstin,69.23449067621927,>25 km
+628,Saw,M. J. Umpherson Lumber Company Ltd.,Lanark,ON,Krigstin,70.08341820055271,>25 km
+128,Pulp,Canfor Co.,Taylor,BC,Fisher,70.10233428426277,>25 km
+458,Saw,Canfor,Elko,BC,Sawmilldatabase.com,70.20707081123717,>25 km
+630,Saw,Middle River Contracting Ltd.,Westville,NS,Krigstin,70.33279962594827,>25 km
+577,Saw,Sinclar Group,Fort St. James Apollo,BC,FEA,70.65358111671134,>25 km
+558,Saw,Canfor,Isle Pierre Sawmill,BC,Sawmilldatabase.com,71.29895547811154,>25 km
+102,Plywood,Tolko,Heffley Creek,BC,FEA,72.07253255556216,>25 km
+480,Saw,Eacom Timber Corporation - Matagami Sawmill,Matagami,QC,Brandt,72.30124717388952,>25 km
+479,Saw,EACOM Timber Corporation,Matagami Sawmill,QC,Sawmilldatabase.com,72.30124717388952,>25 km
+74,Pellets,Biosource Power Inc.,Kamloops,BC,,72.45708667000653,>25 km
+595,Saw,Boucher Bros.,Nampa,AB,FEA,72.52533677435513,>25 km
+377,Saw,Tembec,Senneterre,QC,FEA,72.85683634081825,>25 km
+464,Saw,Cowichan Lumber Ltd.,North Vancouver,BC,Brandt,73.22833782192035,>25 km
+151,Pulp,Paper Excellence,New Glasgow,NS,Fisher,73.74154893071874,>25 km
+133,Pulp,Domtar,Kamloops,BC,Fisher,74.24141552418227,>25 km
+381,Saw,Resolute Forest Products,Senneterre,QC,FEA,74.37328477191329,>25 km
+454,Saw,Delta Cedar,Halo Sawmill,BC,Sawmilldatabase.com,74.43314743073422,>25 km
+302,Saw,Resolute Forest Products,Maniwaki,QC,FEA,74.65987095255359,>25 km
+7,OSB,Louisiana-Pacific,Maniwaki,QC,FEA,74.9287681247541,>25 km
+150,Pulp,Paper Excellence,Port Mellon,BC,Fisher,75.30113501644726,>25 km
+383,Saw,Norbord-Optibois Inc.,Barraute,QC,Brandt,75.3023342064242,>25 km
+24,OSB,Louisiana-Pacific,Dawson Creek,BC,FEA,75.32565448489983,>25 km
+44,Pellets,Lauzon Recycled Wood Energy,Papineauville,QC,,75.50965519016931,>25 km
+363,Saw,EACOM Timber Corp. - Liskeard Lumber Ltd,Elk Lake,ON,Brandt,75.78978766687304,>25 km
+300,Saw,Scierie Ced-Or Inc,Maniwaki,QC,FEA,75.92237267125361,>25 km
+489,Saw,West Forest Timber Inc.,Black Creek,BC,Brandt,76.59406955206506,>25 km
+386,Saw,Little John Enterprises Ltd.,Timmins,ON,FEA,77.25940939905077,>25 km
+110,Plywood,Commonwealth Plywood Ltd.,Belleterre,QC,QMNR,77.88845139450697,>25 km
+409,Saw,Tembec,La Sarre,QC,FEA,78.2805752108114,>25 km
+221,Saw,Barret Lumber Company,Lower Sackville,NS,FEA,78.48535829642724,>25 km
+443,Saw,Interfor,Hammond,BC,FEA,78.6076099474697,>25 km
+448,Saw,MacKenzie Sawmill Ltd,Surrey,BC,FEA,79.07428974429656,>25 km
+15,OSB,Kruger,Longlac,ON,FEA,79.24927098097406,>25 km
+14,OSB,Norbord,La Sarre,QC,FEA,79.88999843371013,>25 km
+220,Saw,Hefler Forest Products Ltd.,Sackville,NS,FEA,80.25243875074969,>25 km
+447,Saw,Mill & Tim Prod,Surrey,BC,FEA,80.3079881228325,>25 km
+140,Pulp,Kruger,New Westminster,BC,Fisher,80.95084958022791,>25 km
+438,Saw,Edge Grain Cedar,Maple Ridge,BC,Brandt,80.95416181380224,>25 km
+440,Saw,Teal-Jones Group,Surrey,BC,Sawmilldatabase.com,81.07181722985692,>25 km
+439,Saw,Teal-Jones Group - Stag Timber Sawmill,Surrey,BC,Brandt,81.07181722985692,>25 km
+245,Saw,Williams Bros Ltd,"Barney's River, NS",NS,FEA,81.86657812813225,>25 km
+437,Saw,S and R Sawmills Ltd,Surrey,BC,FEA,82.04024272014817,>25 km
+247,Saw,Ligni Bel Ltd.,Scotsburn Ligni Bel,NS,FEA,82.16017403250405,>25 km
+96,Plywood,Commonwealth Plywood Ltd.,Riviere-Kipawa,QC,FEA,82.34224531153158,>25 km
+598,Saw,Zavisha Sawmills,Hines Creek,AB,FEA,82.40272598531155,>25 km
+310,Saw,J.D. Irving Limited,Doaktown Sawmill,NB,FEA,82.85906925500234,>25 km
+145,Pulp,Neucel,Port Alice,BC,Fisher,83.24538238597589,>25 km
+435,Saw,Silvermere Forest Products,Maple Ridge,BC,FEA,83.25418234840176,>25 km
+432,Saw,Pac-Deck Wood Specialties Ltd.,Maple Ridge,BC,Brandt,83.25418234840176,>25 km
+434,Saw,Anderson Pacific Forest Products,Ruskin,BC,FEA,83.25418234840176,>25 km
+430,Saw,Noble Custom Cut Ltd.,Maple Ridge,BC,Brandt,83.55031841196313,>25 km
+431,Saw,Twin River Cedar Products,Maple Ridge,BC,FEA,84.34776390840925,>25 km
+433,Saw,Interfor,Acorn,BC,FEA,84.35903180533667,>25 km
+444,Saw,"Goldwood Industries, Ltd",Richmond,BC,FEA,84.73978951939579,>25 km
+239,Saw,McRae Lumber Company,Whitney,ON,Brandt,85.02817053943603,>25 km
+629,Saw,Marwood Ltd. (Evergreen Forest Products),Glenholme,NS,Krigstin,85.38759725930997,>25 km
+97,Plywood,Richmond Plywood,Richmond,BC,FEA,85.50712205255431,>25 km
+445,Saw,Terminal FP Ltd (Mainland Div),Mainland Sawmill,BC,FEA,85.57500711984056,>25 km
+442,Saw,Terminal FP Ltd (Woodlands Div),Woodlands Sawmill,BC,FEA,86.04170892491483,>25 km
+553,Saw,Halland Farms Inc.,Love,SK,Brandt,87.64714260355682,>25 km
+313,Saw,Rojac Enterprises,Blissfield,NB,Brandt,89.20696851048523,>25 km
+90,Pellets,Alterna Energy Inc. (Briquettes/Biochar),Prince George,BC,,90.84126292946308,>25 km
+395,Saw,Scierie Landrienne,Landrienne,QC,FEA,90.9992283352769,>25 km
+556,Saw,Carrier Lumber Co.,Tabor Mill,BC,Sawmilldatabase.com,91.4388277423179,>25 km
+422,Saw,McDonald Ranch & Lumber Ltd.,Grasmere,BC,Brandt,91.59607200048009,>25 km
+134,Pulp,Domtar,Dryden,ON,Fisher,92.54080304355573,>25 km
+656,Saw,SWP Industries Inc.,St. Stephen,NB,Krigstin,92.63167147579728,>25 km
+471,Saw,Suncoast Lumber & Milling,Sechelt,BC,Brandt,92.79458512601907,>25 km
+57,Pellets,Resolute Forest Products,Thunder Bay,ON,,92.83148233298584,>25 km
+562,Saw,West Hill Lumber Ltd.,Prince George,BC,Brandt,93.2556755067015,>25 km
+599,Saw,Northland F P,Fort McMurray,AB,FEA,94.15730394047883,>25 km
+5,MDF,West Fraser Ltd.,Quesnel,BC,,94.1669019274508,>25 km
+58,Pellets,Boreal Pellet,Amos,QC,,94.47872709068811,>25 km
+81,Pellets,Pacific Bioenergy,Prince George,BC,,94.66855853654087,>25 km
+2,MDF,Flakeboard Company Ltd.,St. Stephen,NB,,94.74475942763354,>25 km
+27,PB,Flakeboard Company Ltd.,St. Stephen,NB,,94.74475942763354,>25 km
+642,Saw,River's Bend Wood Products Inc.,St. Andrews,NS,Krigstin,94.7690379116057,>25 km
+250,Saw,Bonnyman & Byers Ltd.,Tatamagouche,NS,Brandt,94.7751395101375,>25 km
+541,Saw,C & C Wood Products Ltd.,Quesnel,BC,FEA,94.82100682133188,>25 km
+477,Saw,Natal Forest Products Ltd.,Coleman,AB,Brandt,94.98342647174037,>25 km
+539,Saw,Tolko Industries Ltd.,Quesnel Tolko,BC,FEA,95.04534790038103,>25 km
+538,Saw,West Fraser Timber Co. Ltd.,Quensel West Fraser,BC,FEA,95.04534790038103,>25 km
+540,Saw,Canfor,Quesnel Sawmill Canfor,BC,Sawmilldatabase.com,95.04534790038103,>25 km
+560,Saw,Sinclar Group,Lakeland Mills,BC,FEA,95.32480119171879,>25 km
+559,Saw,Woodland Lumber,Prince George,BC,FEA,95.32480119171879,>25 km
+79,Pellets,Pinnacle Pellet,Strathnaver,BC,,95.50567549445766,>25 km
+192,Pulp,Resolute,Amos,QC,Fisher,95.51670288654013,>25 km
+257,Saw,Les Enterprises Atlas,Low,QC,FEA,95.66509510957971,>25 km
+645,Saw,Commonwealth Plywood Ltd.,Low,QC,QMNR,95.66509510957971,>25 km
+78,Pellets,Pinnacle Pellet,Quesnel,BC,,95.69823987009602,>25 km
+537,Saw,M&K Sawmills,Quesnel,BC,FEA,95.93376287863806,>25 km
+396,Saw,Matériaux Blanchet,Amos,QC,FEA,96.13512472325914,>25 km
+545,Saw,Dunkley,Dunkley Sawmill,BC,Sawmilldatabase.com,96.15979004115879,>25 km
+397,Saw,Amexfor 2002 Inc.,Amos,QC,Brandt,96.3132724436916,>25 km
+352,Saw,EACOM Timber Corporation,Elk Lake,ON,FEA,96.63151971513409,>25 km
+204,Pulp,West Fraser,Quesnel,BC,Fisher,97.64463446909284,>25 km
+105,Plywood,West Fraser,Quesnel,BC,FEA,97.64463446909284,>25 km
+205,Pulp,West Fraser,Quesnel,BC,Fisher,97.64463446909284,>25 km
+62,Pellets,Protocol Biomass,Marathon,ON,,97.67179570097275,>25 km
+159,Pulp,Resolute,Thunder Bay,ON,Fisher,97.75770069851878,>25 km
+657,Saw,Trijec Lumber Ltd.,Tatamagouche,NS,Krigstin,98.54797882991816,>25 km
+125,Pulp,Canfor Co.,Prince George,BC,Fisher,98.62471505188185,>25 km
+127,Pulp,Canfor Co.,Prince George,BC,Fisher,98.62471505188185,>25 km
+126,Pulp,Canfor Co.,Prince George,BC,Fisher,98.62471505188185,>25 km
+379,Saw,Resolute Forest Products,Thunder Bay,ON,FEA,99.64061052397166,>25 km
+469,Saw,Tembec,Kapuskasing,ON,FEA,100.13274346698748,>25 km
+190,Pulp,Tembec,Kapuskasing,ON,Fisher,100.13274346698748,>25 km
+87,Pellets,Pinnacle Pellet,Houston,BC,,102.89511029931317,>25 km
+563,Saw,Canfor,Prince George Sawmill,BC,Sawmilldatabase.com,103.18513754663668,>25 km
+156,Pulp,Resolute,Fort Frances,ON,Fisher,103.23947667971649,>25 km
+311,Saw,Commonwealth Plywood Ltd.,Mont-Laurier,QC,Brandt,103.77062256141393,>25 km
+226,Saw,Freymond Lumber Ltd.,Bancroft,ON,FEA,104.3090317031039,>25 km
+655,Saw,Skene Lumber and Sawmill (Oxdrift Tractor Sales Ltd.),Oxdrift,ON,Krigstin,104.35670673743037,>25 km
+4,MDF,"Uniboard Canada, Inc.",Mont-Laurier,QC,,104.52310261998701,>25 km
+634,Saw,Parsons Lumber Company Ltd.,Black Point,NS,Krigstin,104.61894842639768,>25 km
+319,Saw,Forex,Ferme-Neuve,QC,FEA,105.04705414866125,>25 km
+573,Saw,Canfor,Houston,BC,Sawmilldatabase.com,106.64922923242298,>25 km
+574,Saw,West Fraser Timber Co. Ltd.,Houston,BC,FEA,106.93353621287564,>25 km
+594,Saw,West Fraser Timber Co. Ltd.,Chetwynd -West Fraser,BC,FEA,108.15491415924504,>25 km
+593,Saw,Canfor,Chetwynd Sawmill,BC,Sawmilldatabase.com,109.76908163258256,>25 km
+17,OSB,Louisiana-Pacific,Swan Valley,MB,FEA,110.03575827844142,>25 km
+142,Pulp,L-P,Hubbards,NS,Fisher,110.33959048542552,>25 km
+614,Saw,Conway Workshop Association,Digby,NS,Krigstin,111.25973233775592,>25 km
+76,Pellets,Valley Lions Recycling,Swan River,MB,,113.02098611802253,>25 km
+278,Saw,Caledonia Forest Products Inc.,Moncton,NB,Brandt,113.61966897953904,>25 km
+174,Pulp,Cascades,Lachute,QC,Fisher,114.08962528644933,>25 km
+517,Saw,LKGH Contracting Ltd,Red Lake,ON,FEA,114.18806132623996,>25 km
+49,Pellets,Crabbe Lumber,Bristol,NB,,115.01995550959619,>25 km
+304,Saw,Crabbe Lumber,Bristol,NB,FEA,115.01995550959619,>25 km
+658,Saw,Scierie C. Meilleur & Fils Inc.,Kiamika,QC,Krigstin,116.3857447568915,>25 km
+528,Saw,Spruce Products Limited,Spruce prod Swan River,MB,Sawmilldatabase.com,116.43910816056528,>25 km
+622,Saw,John W. Tyynela,Matheson,ON,Krigstin,117.00968482307678,>25 km
+633,Saw,North Range Forest Products,Barton,NS,Krigstin,117.23732199828133,>25 km
+131,Pulp,Catalyst,Powell River,BC,Fisher,118.47699785401798,>25 km
+493,Saw,Les Chantiers Chibougamau,Chibougamau Sawmill,QC,FEA,119.82626173216438,>25 km
+492,Saw,Les Chantiers de Chibogamou,Chibougamou,QC,FEA,119.82626173216438,>25 km
+157,Pulp,Resolute,Iroquois Falls,ON,Fisher,121.57217771743066,>25 km
+368,Saw,Rosko Forestry Ops,Kirkland Lake,ON,FEA,123.2241573600665,>25 km
+617,Saw,Haliburton Forest & Wild Life Reserve Ltd.,Haliburton,ON,Krigstin,123.82447535876979,>25 km
+428,Saw,Western Forest Products,Nanaimo/Duke Pt.,BC,FEA,124.1806636578207,>25 km
+46,Pellets,TP Downey,Hillsborough,NB,,124.23640465997266,>25 km
+423,Saw,Tembec,Cochrane Tembec,ON,FEA,124.4819690325609,>25 km
+144,Pulp,Nanaimo,Nanaimo,BC,Fisher,125.33333478805099,>25 km
+354,Saw,Devon Mills Ltd.,Chapleau,ON,Brandt,125.52011760302936,>25 km
+429,Saw,Western Forest Products,Nanaimo,BC,FEA,125.54340824380988,>25 km
+309,Saw,Delco Forest Products,West Branch,NB,FEA,126.70400793586568,>25 km
+355,Saw,Tembec,Chapleau,ON,FEA,127.05819794449198,>25 km
+335,Saw,Tembec,Béarn,QC,FEA,127.72793755282228,>25 km
+356,Saw,Niska North,Chapleau,ON,FEA,127.8102113637172,>25 km
+218,Saw,Lester D. Collicutt Forest Products Ltd.,Chester,NS,Brandt,128.88129363623673,>25 km
+459,Saw,Nagaard Sawmills Ltd.,Port Alberni,BC,Brandt,129.9172032755096,>25 km
+10,OSB,Georgia-Pacific,Englehart,ON,FEA,129.93747459975987,>25 km
+627,Saw,Lewis Mouldings & Wood Specialties,Weymouth,NS,Krigstin,130.4297089609584,>25 km
+148,Pulp,Pacific West,Port Hawkesbury,NS,Fisher,130.60486339226355,>25 km
+635,Saw,Portelance Lumber Ltd.,Capreol,ON,Krigstin,131.66681027143352,>25 km
+40,Pellets,Direct Pellet Industries,Haliburton,ON,,132.01200449591533,>25 km
+644,Saw,S. G. Levy & Sons Ltd.,Wolfville,NS,Krigstin,132.4468207167243,>25 km
+419,Saw,Western Forest Products,Ladysmith,BC,FEA,132.9611074582713,>25 km
+420,Saw,Western Forest Products,Ladysmith/Saltair,BC,FEA,133.42724201934112,>25 km
+548,Saw,L&M Wood Products,Glaslyn,SK,Brandt,134.16476194826606,>25 km
+504,Saw,GDS Industries,Rivière-Saint-Jean,QC,FEA,134.34845594027183,>25 km
+505,Saw,Scierie Rivière Saint-Jean Inc.,Rivière-Saint-Jean,QC,Brandt,134.34845594027183,>25 km
+457,Saw,Coulson Group,Coulson Lumber,BC,Sawmilldatabase.com,134.75853326967984,>25 km
+542,Saw,Tall Pine Timber Co.,Lodgepole,AB,FEA,134.92705004456178,>25 km
+456,Saw,Franklin Forest Products Inc.,Port Alberni,BC,FEA,135.0440059519867,>25 km
+417,Saw,Western Forest Products,Chemainus,BC,FEA,135.2169421473899,>25 km
+455,Saw,Western Forest Products,Port Alberni/Somass,BC,FEA,135.3415840534185,>25 km
+130,Pulp,Catalyst,Port Alberni,BC,Fisher,135.3415840534185,>25 km
+228,Saw,Clifford Long & Sons Ltd.,Wolfville,NS,Brandt,135.85616026679583,>25 km
+129,Pulp,Catalyst,Crofton,BC,Fisher,136.50715944803488,>25 km
+662,Saw,Webster Farms Ltd.,Cambridge Station,NS,Krigstin,137.03341405485233,>25 km
+415,Saw,Bill Smith Forest Products,Chemainus,BC,Brandt,137.38335022967294,>25 km
+452,Saw,Western Forest Products,Port Alberni/APD,BC,FEA,137.77705778458505,>25 km
+222,Saw,M.W. Hunter Lumber Ltd.,Gooderham,ON,Brandt,138.32788566213495,>25 km
+297,Saw,Goguen Lumber,Cocagne,NB,FEA,138.5950775765795,>25 km
+219,Saw,Murray Reeves,"New Ross, NS",NS,FEA,139.64865903042374,>25 km
+625,Saw,L. E. Elliott Lumber Ltd.,New Ross,NS,Krigstin,140.44422989402122,>25 km
+463,Saw,Longhouse Trading Co Ltd,Qualicum Beach,BC,FEA,140.5020660770795,>25 km
+483,Saw,Barrette-Chapais Ltd.,Chapais,QC,FEA,140.60153545722633,>25 km
+332,Saw,Miramichi Lum Prod,Boiestown,NB,FEA,140.7517648593801,>25 km
+328,Saw,Twin Rivers Paper Company,"Plaster Rock, Sawmill",NB,FEA,141.24908201503644,>25 km
+400,Saw,Manitou Forest Products,Emo,ON,FEA,142.03724498122807,>25 km
+461,Saw,Errington Cedar,Errington,BC,FEA,142.87305069646945,>25 km
+124,Pulp,Atlas,Napanee,ON,Fisher,143.7412262278456,>25 km
+305,Saw,Forex,Sainte-Veronique,QC,FEA,143.9711609920951,>25 km
+51,Pellets,Miramichi Premium Pellet,Miramichi,NB,,144.1256113398254,>25 km
+246,Saw,Hoeg Bros Lumber Ltd.,Southampton,NS,FEA,144.4882299312751,>25 km
+9,OSB,Arbec Forest Products,Miramichi,NB,FEA,144.86689148712378,>25 km
+13,OSB,Ainsworth Engineered,Barwick,ON,FEA,144.92364714494423,>25 km
+481,Saw,Prendiville Industries,Kenora Sawmill,ON,Sawmilldatabase.com,144.95600253902782,>25 km
+366,Saw,Cheminis Lumber,Larder Lake,ON,FEA,144.98416651973224,>25 km
+53,Pellets,KD Quality Pellets,New Liskeard,ON,,145.28092459742942,>25 km
+344,Saw,EACOM,New Liskeard,ON,FEA,145.69554976702202,>25 km
+249,Saw,Simon Lussier Ltee.,Blainville,QC,Brandt,146.3249533371152,>25 km
+281,Saw,Scierie Claude Forget Inc.,Saint-Faustin-Lac-CarrÚ,QC,Brandt,146.33643997569385,>25 km
+578,Saw,Canfor,Polar Sawmill,BC,Sawmilldatabase.com,146.47079043494523,>25 km
+543,Saw,Weyerhaeuser,Drayton Valley,AB,FEA,146.53786221823162,>25 km
+636,Saw,André Gagnon,Saint-Rémi-d'Amherst,QC,Krigstin,146.60294032971834,>25 km
+111,Plywood,Commonwealth Plywood Ltd.,Sainte-Therese,QC,QMNR,146.84588192808766,>25 km
+119,Pulp,Aditya Birla,Terrace Bay,ON,Fisher,147.0910308308597,>25 km
+282,Saw,Groupe Crête,Saint-Faustin,QC,FEA,147.25139931673806,>25 km
+408,Saw,Western Forest Products,Duncan,BC,FEA,147.60040572383866,>25 km
+248,Saw,Jointfor,Blainville,QC,Brandt,147.7046901909031,>25 km
+583,Saw,West Fraser Timber Co. Ltd.,Smithers,BC,FEA,147.89721822375716,>25 km
+202,Pulp,Tembec,Témiscaming,QC,Fisher,148.0451607227092,>25 km
+206,Pulp,Tembec,Témiscaming,QC,Fisher,148.0451607227092,>25 km
+243,Saw,Scierie Carrière,Lachute,QC,Spencer group,148.22549739155366,>25 km
+33,PB,Northern Engineered Wood Products,Smithers,BC,,148.46346204644664,>25 km
+23,OSB,Tolko,High Prairie,AB,FEA,148.7413881234805,>25 km
+421,Saw,Resolute Forest Products,Comtois,QC,FEA,149.1073972590351,>25 km
+536,Saw,Hauer Bros Lum Ltd.,Valemount,BC,FEA,149.5996263891099,>25 km
+592,Saw,Buchanan,High Prairie,AB,FEA,152.87843370918748,>25 km
+216,Saw,Resolute Forest Products,Oakhill,NS,FEA,153.29571944739394,>25 km
+211,Saw,Comeau Lumber,Meteghan,NS,Brandt,154.44981350589595,>25 km
+80,Pellets,Foothills Forest Products,Grande Cache,AB,,155.41697380278606,>25 km
+20,OSB,Tolko,Meadow Lake,SK,FEA,156.11670481202927,>25 km
+486,Saw,Nabakatuk Forest Products,Waswanipi,QC,Brandt,156.3413020550102,>25 km
+557,Saw,Foothills Forest products,Grande Cache,AB,FEA,156.85613140521139,>25 km
+607,Saw,Almaguin Forest Products,South River,ON,Krigstin,157.30685863465098,>25 km
+620,Saw,J. A. Turner & Sons (1987) Ltd.,West Northfield,NS,Krigstin,157.7294094523235,>25 km
+217,Saw,Turner & Turner Lumber Ltd.,West Northfield,NS,Brandt,157.7294094523235,>25 km
+214,Saw,Elmer M. Lohnes Lumbering Ltd.,Wileville,NS,Brandt,158.20084572395461,>25 km
+298,Saw,EACOM Timber Corporation,Nairn Sawmill,ON,Sawmilldatabase.com,158.57395178371587,>25 km
+63,Pellets,Biomass Secure Power,Cowichan Lake,BC,,158.7311491245265,>25 km
+410,Saw,Cowichan Lake Timber,Youbou,BC,FEA,159.30896783475538,>25 km
+163,Pulp,Cascades,Candiac,QC,Fisher,161.03873516634323,>25 km
+178,Pulp,Kruger,Montreal,QC,Fisher,162.28370173539437,>25 km
+213,Saw,Chisholm Roslin Ltd.,Roslin,ON,Brandt,163.20032985884035,>25 km
+215,Saw,N F Douglas Lumber Co,"Caledonia, NS",NS,FEA,163.3221550462213,>25 km
+135,Pulp,Domtar,Espanola,ON,Fisher,166.24841759360592,>25 km
+28,PB,Panolam Industries Ltd.,Huntsville,ON,,168.41328538983365,>25 km
+570,Saw,NorSask Forest Products,Dillon Sawmill,SK,Sawmilldatabase.com,170.52843950248192,>25 km
+569,Saw,NorSask Forest Products,Meadow Lake Sawmill,SK,Sawmilldatabase.com,171.01410015886395,>25 km
+277,Saw,Groupe Crête,Saint-Theodore-de-Chertsy,QC,FEA,171.06188349256956,>25 km
+94,Plywood,Danzer Groupe - Interforest Lumber Inc.,Boucherville,QC,Brandt,173.05483513813516,>25 km
+649,Saw,Interforest Lumber Inc.,Boucherville,QC,Krigstin,173.45423108867755,>25 km
+152,Pulp,Paper Excellence,Meadow Lake,SK,Fisher,175.81434244022117,>25 km
+84,Pellets,Meadow Lake Tribal Council,Meadow Lake,SK,,175.81434244022117,>25 km
+619,Saw,Isidore Roy Ltd.,Hagar,ON,Krigstin,176.22434292569824,>25 km
+586,Saw,St. Jean Lumber (1984) Ltd.,Breynat,AB,Brandt,178.63686524182282,>25 km
+212,Saw,Harry Freeman & Son,Harry Freeman Greenfield,NS,Sawmilldatabase.com,180.7495835885666,>25 km
+106,Plywood,West Fraser,AB Plywood Ltd.,AB,FEA,180.82216634929145,>25 km
+590,Saw,Conifex Timber Inc.,MacKenzie,BC,FEA,181.31941708553157,>25 km
+591,Saw,Canfor,Mackenzie Sawmill,BC,Sawmilldatabase.com,182.462466337065,>25 km
+39,Pellets,Muskoka Timber Mills,Bracebridge,ON,,182.469235011583,>25 km
+307,Saw,Arseanult Sawmill Ltd,St. Chrysostome,PEI,FEA,184.2221302194803,>25 km
+149,Pulp,Paper Excellence,Mackenzie,BC,Fisher,184.49577552634133,>25 km
+340,Saw,Bathurst Lumber,Bathurst,NB,FEA,186.39746494181918,>25 km
+582,Saw,Ed Bobocel Lumber Ltd.,Lac La Biche,AB,FEA,188.79129384935695,>25 km
+177,Pulp,Kruger,Crabtree,QC,Fisher,189.68027605572308,>25 km
+337,Saw,J.D. Irving Limited,Veneer Sawmill,NB,Sawmilldatabase.com,192.5821606240826,>25 km
+147,Pulp,Norampac,Trenton,ON,Fisher,195.04229269133182,>25 km
+187,Pulp,Sonoco,Trenton,ON,Fisher,195.60410888109527,>25 km
+37,Pellets,Woodville Pellet Corpotation,Kirkfield,ON,,197.2604952565045,>25 km
+52,Pellets,Groupe Savoie,St-Quentin,NB,,199.76247537020674,>25 km
+342,Saw,North American Forest Products Ltd. - St. Quentin Division,Saint-Quentin,NB,Brandt,200.36251417187714,>25 km
+343,Saw,Groupe Savoie,St-Quentin,NB,Brandt,200.48451490942847,>25 km
+92,Pellets,Finewood Flooring,Baddeck,NS,,200.78152183934841,>25 km
+47,Pellets,Shaw Resources,Shubenacadie,NS,,200.93288567013332,>25 km
+462,Saw,Produit For Labrieville,Lac au Brochet,QC,FEA,201.89812885855483,>25 km
+230,Saw,Duhamel,Saint-Ignace-de-Stanbridge,QC,FEA,202.54094475073515,>25 km
+293,Saw,Scierie Rivest,Saint-Jean-de-Matha,QC,FEA,202.90171925756326,>25 km
+301,Saw,Goulard Lumber (1971) Ltd.,Sturgeon Falls,ON,FEA,203.65104417906701,>25 km
+286,Saw,R. Fryer Forest Products Ltd.,Monetville,ON,Brandt,205.16075730777516,>25 km
+285,Saw,H&R Chartrand,Noelville,ON,FEA,206.20570483577825,>25 km
+626,Saw,Larch Wood Enterprises Inc.,Margaree,NS,Krigstin,206.79582617207254,>25 km
+572,Saw,Millar Western Forest Products Ltd.,Fox Creek,AB,FEA,207.40916635715973,>25 km
+19,OSB,Weyerhaeuser,Edson,AB,FEA,207.67135597870825,>25 km
+299,Saw,B.A. Fraser Lumber Ltd.,Margaree Valley,NS,Brandt,208.10228943958907,>25 km
+550,Saw,West Fraser Timber Co. Ltd.,Hinton,AB,FEA,208.31400306371225,>25 km
+113,Pulp,West Fraser,Hinton,AB,Fisher,208.46942430965953,>25 km
+361,Saw,Kruger,Parent Kruger,QC,FEA,208.9027569805764,>25 km
+551,Saw,West Fraser,Sundance Edson,AB,FEA,210.09458231167667,>25 km
+115,Pulp,Alberta-Pacific,Boyle,AB,Fisher,210.30238044498054,>25 km
+552,Saw,Yellowhead Wood Products Inc.,Edson,AB,Brandt,210.78487935439523,>25 km
+350,Saw,J.D. Irving Limited,Kedgwick Sawmill,NB,FEA,214.79708690030378,>25 km
+651,Saw,Kebois Ltd,Saint-Dominique,QC,Krigstin,216.79845435192132,>25 km
+296,Saw,Midway Lum Mills,Thessalon,ON,FEA,216.9018302193148,>25 km
+260,Saw,Taylor Sawmill,Manitoulin Island,ON,Brandt,217.45059477871305,>25 km
+107,Plywood,Birchland Plywood-Veneer Ltd.,Thessalon,ON,madison,218.60412175020733,>25 km
+403,Saw,Scierie Opitciwan,ResoluteFP/Obedjiwan,QC,FEA,223.10465496281503,>25 km
+618,Saw,Hugh MacInis Lumber Ltd.,Frenchvale,NS,Krigstin,224.52306573775806,>25 km
+494,Saw,Arbec Forest Products,Port Cartier,QC,FEA,225.47899414632758,>25 km
+54,Pellets,Shaw Resources,Belledune,NB,,225.95164820226302,>25 km
+200,Pulp,Twin Rivers,Edmundston,NB,Fisher,226.1315669472195,>25 km
+3,MDF,Flakeboard Company Ltd.,Sault Ste. Marie,ON,,227.8439152945897,>25 km
+579,Saw,ROC Holdings,Terrace,BC,FEA,228.01710613523477,>25 km
+93,Pellets,General Biofuels,Terrace,BC,,228.19950564188824,>25 km
+336,Saw,J.D. Irving Limited,Baker Brook,NB,Sawmilldatabase.com,228.33071063180225,>25 km
+589,Saw,West Fraser Timber Co. Ltd.,Slave Lake,AB,FEA,228.82409834200823,>25 km
+610,Saw,Boniferro Mill Works U.L.C.,Sault Ste Marie,ON,Krigstin,228.9945933752189,>25 km
+359,Saw,North American Forest Products Ltd. - St. Arthur Division,Saint-Arthur,NB,Brandt,229.38047631395747,>25 km
+203,Pulp,West Fraser,Slave Lake,AB,Fisher,230.0554751743662,>25 km
+580,Saw,Millar Western Forest Products Ltd.,Boyle Sawmill,AB,FEA,230.29851884502924,>25 km
+232,Saw,Scierie West Brome Inc.,Lac-Brome,QC,Brandt,230.65174199633347,>25 km
+88,Pellets,Vanderwell Contractors,Slave Lake,AB,,231.28763947442258,>25 km
+360,Saw,Chaleur Sawmills,Chaleur Belledune,NB,Sawmilldatabase.com,231.65427907360112,>25 km
+427,Saw,Resolute Forest Products,Girardville,QC,FEA,234.13498048847305,>25 km
+364,Saw,Scierie Adrien Arseneault Ltd.,Balmoral,NB,Brandt,237.41065931191935,>25 km
+588,Saw,Vanderwell,Slave Lake Vanderwell,AB,FEA,239.40170979205584,>25 km
+22,OSB,Tolko,Slave Lake/Athabasca,AB,FEA,239.86613128032823,>25 km
+117,Pulp,Aditya Birla,Atholville,NB,Fisher,239.98797794166651,>25 km
+183,Pulp,Matériaux Spécialisés,Louiseville,QC,Fisher,241.73159716043648,>25 km
+660,Saw,Scierie Maski Inc.,Louiseville,QC,Krigstin,242.38051420635958,>25 km
+295,Saw,Maski Hardwood Products,Louiseville,QC,Brandt,243.07873238390937,>25 km
+365,Saw,GDS Industries,Pointe-à-la-Croix,QC,FEA,244.22257832471033,>25 km
+664,Saw,Woodley's Sawmill,Bowmanville,ON,Krigstin,245.08286877081065,>25 km
+75,Pellets,Holson Forest Products,Roddickton,NL,,245.8441304210156,>25 km
+48,Pellets,Lauzon Recycled Wood Energy,Saint-Paulin,QC,,246.30179265711567,>25 km
+611,Saw,Brouwer Wood Inc.,Keswick,ON,Krigstin,250.17988431328138,>25 km
+414,Saw,Resolute Forest Products,Produits Forestiers Petit-Paris,QC,Sawmilldatabase.com,250.21946161234735,>25 km
+6,MDF,West Fraser Ltd.,Whitecourt,AB,,251.32410464729628,>25 km
+567,Saw,West Fraser Timber Co. Ltd.,Blue Ridge,AB,FEA,251.32410464729628,>25 km
+120,Pulp,Alberta Newsprint,Whitecourt,AB,Fisher,252.46304843064743,>25 km
+264,Saw,Foresbec Inc.,Drummondville,QC,Brandt,252.47925487328132,>25 km
+416,Saw,Resolute Forest Products,Saint-Thomas,QC,FEA,252.66943968003224,>25 km
+568,Saw,Millar Western Forest Products Ltd.,Whitecourt,AB,FEA,253.77316514483564,>25 km
+114,Pulp,Millar,Whitecourt,AB,Fisher,253.8761256734453,>25 km
+426,Saw,Kruger,Manic Scierie,QC,Sawmilldatabase.com,253.93464881685537,>25 km
+182,Pulp,Marlboro,Drummondville,QC,Fisher,254.33897789993102,>25 km
+369,Saw,Tembec,Nouvelle-Ouest,QC,Sawmilldatabase.com,256.21048627278356,>25 km
+370,Saw,Produits forestiers Temrex Inc. - Nouvelle-Ouest Division,Nouvelle-Ouest,QC,Brandt,256.21048627278356,>25 km
+371,Saw,Produits Forestier Temrex,Nouvelle-Ouest,QC,FEA,256.21048627278356,>25 km
+346,Saw,Groupe Lebel,Dégelis,QC,FEA,256.6595855725086,>25 km
+122,Pulp,Atlantic Pkg,Whitby,ON,Fisher,257.6071793080863,>25 km
+450,Saw,Resolute Forest Products,Baie Comeau/Pt Outardes,QC,FEA,261.42664082099867,>25 km
+451,Saw,Resolute Forest Products,Baie Comeau/Pt Outardes,QC,FEA,261.42664082099867,>25 km
+193,Pulp,Resolute,Baie-Comeau,QC,Fisher,261.42664082099867,>25 km
+407,Saw,Arbec Forest Products,L'Ascension,QC,FEA,262.27048846098353,>25 km
+413,Saw,Resolute Forest Products,Dolbeau-Mistassini,QC,FEA,263.08912594903853,>25 km
+412,Saw,Scierie Gaston Morin,Mistassini,QC,FEA,264.73163414767265,>25 km
+373,Saw,Rosario Poirier Inc.,Saint-Alphonse,QC,Brandt,265.3290457747038,>25 km
+195,Pulp,Resolute,Dolbeau-Mistassini,QC,Fisher,265.7108703829413,>25 km
+411,Saw,Produits For Canbo,Dolbeau,QC,FEA,266.7034289114718,>25 km
+372,Saw,Association Coop Forestière de St-Elzéar,Bonaventure,QC,FEA,266.8569105754163,>25 km
+449,Saw,GDS Industries,Grand Vallee,QC,FEA,267.07809505017326,>25 km
+406,Saw,Thomas-Louis Tremblay Sawmill Inc.,Sainte-Monique,QC,http://www.tlbhardwood.com,267.8639010603106,>25 km
+351,Saw,Bégin & Bégin Inc.,Saint-Juste-du-Lac,QC,Krigstin,268.03800533780105,>25 km
+637,Saw,André Ouellet,Saint-Juste-du-Lac,QC,Krigstin,270.22573502303726,>25 km
+349,Saw,Groupe Lebel,Notre-Dame-du-Lac,QC,Brandt,270.31335694786037,>25 km
+345,Saw,GDS Industries,Saint-Eusèbe,QC,FEA,270.55885271054177,>25 km
+338,Saw,Groupe NBG Inc,Rivière-Bleue,QC,FEA,271.29590910564764,>25 km
+50,Pellets,Granules de la Mauricie,Shawinigan-Sud,QC,,271.54043832325465,>25 km
+638,Saw,Appro-For Inc.,Grande-Vallée,QC,Krigstin,272.22557838443674,>25 km
+181,Pulp,Kruger,Trois Rivieres,QC,Fisher,273.39360052727847,>25 km
+180,Pulp,Kruger,Trois Rivieres,QC,Fisher,273.39360052727847,>25 km
+405,Saw,Resolute Forest Products,La Doré,QC,FEA,273.9560079938455,>25 km
+112,Plywood,Commonwealth Plywood Ltd.,Shawinigan,QC,QMNR,274.1881246279445,>25 km
+185,Pulp,Norampac,Cabano,QC,Fisher,278.7609651958685,>25 km
+391,Saw,Scierie Girard Enr.,Shipshaw,QC,Brandt,280.3357861382409,>25 km
+575,Saw,Timeu Forest Products,Fort Assinibone,AB,FEA,280.62907908982936,>25 km
+123,Pulp,Atlantic Pkg,Scarborough,ON,Fisher,281.2364140969037,>25 km
+121,Pulp,Atlantic Pkg,Scarborough,ON,Fisher,281.2364140969037,>25 km
+196,Pulp,Resolute,Grand-Mère,QC,Fisher,281.28348188017196,>25 km
+1,Cogeneration,Domtar,Windsor,QC,,282.6687087622776,>25 km
+175,Pulp,Domtar,Windsor,QC,Fisher,282.6687087622776,>25 km
+191,Pulp,Resolute,Alma,QC,Fisher,284.3756540927314,>25 km
+375,Saw,Cedrico Lumber Inc.,Causapscal,QC,FEA,284.8925287764374,>25 km
+8,OSB,Arbec Forest Products,Saint-Georges,QC,FEA,285.0143892529616,>25 km
+172,Pulp,Cascades,Kingsey Falls,QC,Fisher,285.0794789238669,>25 km
+171,Pulp,Cascades,Kingsey Falls,QC,Fisher,285.0794789238669,>25 km
+188,Pulp,Norampac,Kingsey Falls,QC,Fisher,285.0794789238669,>25 km
+173,Pulp,Cascades,Kingsey Falls,QC,Fisher,285.0794789238669,>25 km
+255,Saw,A. T. R. Bois Inc.,Danville,QC,Krigstin,285.5474820162996,>25 km
+197,Pulp,Resolute,Saint-Félicien,QC,Fisher,286.0073716732669,>25 km
+60,Pellets,Granules LG,Saint-Felicien,QC,,286.0073716732669,>25 km
+472,Saw,R & R Lumber Ltd.,Trout River,NL,Brandt,286.45503903615446,>25 km
+388,Saw,Scierie Martel Ltee,Alma,QC,FEA,286.7805789161793,>25 km
+330,Saw,Matériaux Blanchet,Saint-Pamphile,QC,FEA,287.02862012028703,>25 km
+331,Saw,Industries Maibec,Saint-Pamphile,QC,,287.02862012028703,>25 km
+401,Saw,Resolute Forest Products,Saint-Félicien,QC,FEA,287.3199205491003,>25 km
+387,Saw,Scierie E. Tremblay & Fils Ltee.,Alma,QC,FEA,287.46486622082733,>25 km
+362,Saw,Groupe Lebel,Biencourt,QC,MNRQ,287.57049085865907,>25 km
+357,Saw,Groupe Lebel (lebel vallée-des-lacs),Saint-Michel-du-Squatec,QC,FEA,288.72700820339867,>25 km
+358,Saw,Groupe Lebel,Saint-Michel du Squatec,QC,FEA,288.72700820339867,>25 km
+179,Pulp,Kruger,Sherbrooke,QC,Fisher,288.8693499613705,>25 km
+647,Saw,Groupe C. A. Spencer Inc. (Bois Hunting),Sherbrooke,QC,Krigstin,288.8693499613705,>25 km
+322,Saw,Kruger,Saint-Roch de Mékinac,QC,FEA,289.2520094470189,>25 km
+234,Saw,Bois Hunting Inc.,Lennoxville,QC,Brandt,290.496842932579,>25 km
+169,Pulp,Cascades,Jonquiere,QC,Fisher,290.82502390920877,>25 km
+170,Pulp,Cascades,Jonquiere,QC,Fisher,290.82502390920877,>25 km
+640,Saw,Bernier Bois Franc inc.,Cte Meg-Compton,QC,Krigstin,291.19279406986664,>25 km
+385,Saw,Scierie Lachance Ltee.,Saint-Bruno,QC,Brandt,292.4515637137203,>25 km
+229,Saw,Beaubois Coaticook Inc.,Coaticook,QC,FEA,293.1711004469447,>25 km
+661,Saw,Scierie Préverco Inc.,Daveluyville,QC,Krigstin,293.63597707083665,>25 km
+315,Saw,Preparabois,Lac Frontiere,QC,FEA,294.0703484189438,>25 km
+314,Saw,Preparabois Inc.,Lac-Frontiere,QC,Brandt,294.0703484189438,>25 km
+399,Saw,Industries Bois Lamontagne Inc.,Saint-Prime,QC,Brandt,294.40341539398946,>25 km
+376,Saw,Scierie Gauthier Ltee,La Baie,QC,FEA,295.42431991340897,>25 km
+318,Saw,Kruger,Saint-Séverin-de-Proulxville Sawmill,QC,FEA,295.7230621776942,>25 km
+312,Saw,Groupe Lebel,Saint-Just-de-Bretenieres,QC,FEA,296.0639767023434,>25 km
+59,Pellets,Granules LG,Mashteuiatsh,QC,,297.8669761258903,>25 km
+441,Saw,GDS Industries,Marsoui,QC,FEA,297.90220849721305,>25 km
+394,Saw,Les Ind Piékougame,Mashteuiatsh,QC,FEA,301.8024647558356,>25 km
+393,Saw,Leggett & Platt Inc. - Division LeggettWood Inc. - Roberval,Roberval,QC,Brandt,301.8024647558356,>25 km
+384,Saw,Scierie de Sainte-Irène Ltée.,Sainte-Irène-de-Matapedia,QC,Brandt,302.48257256996544,>25 km
+56,Pellets,Atlantic Fibre Resources,Chandler,QC,,303.3581328183052,>25 km
+353,Saw,Industries Masse et D'Amours Inc.,Saint-Hubert-de-Riviere-du-Loup,QC,Brandt,304.8487731979992,>25 km
+333,Saw,Bois de Sciage Lafontaine,Sainte-Perpétue,QC,FEA,305.59455321189085,>25 km
+374,Saw,Boisaco Inc.,Boisaco,QC,Krigstin,306.34660359237137,>25 km
+167,Pulp,Cascades,East Angus,QC,Fisher,306.52139965399715,>25 km
+164,Pulp,Cascades,East Angus,QC,Fisher,306.52139965399715,>25 km
+168,Pulp,Cascades,East Angus,QC,Fisher,306.52139965399715,>25 km
+166,Pulp,Cascades,East Angus,QC,Fisher,306.52139965399715,>25 km
+165,Pulp,Cascades,East Angus,QC,Fisher,306.52139965399715,>25 km
+146,Pulp,Norampac,Mississauga,ON,Fisher,306.83454062112537,>25 km
+380,Saw,Scieries du Lac St Jean,Metabechouan,QC,FEA,307.59164372266207,>25 km
+290,Saw,Les Produits Forestiers D.G. ltée,Sainte-Aurélie,QC,FEA,308.46927291889915,>25 km
+12,OSB,Louisiana-Pacific,Chambord,QC,FEA,309.1100154093845,>25 km
+283,Saw,Irenee Grondin & Fils,Saint- Zacharie,QC,FEA,309.51441640230314,>25 km
+288,Saw,Francois Giguere Inc.,Sainte Aurelie,QC,FEA,310.7969400150424,>25 km
+55,Pellets,Granulco,Sacre-Coeur,QC,,312.74917301016717,>25 km
+382,Saw,GDS Industries,Grand Riviere,QC,FEA,313.09695351140726,>25 km
+468,Saw,Wiltondale Lumber Company,Wiltondale,NL,Brandt,313.11117324196664,>25 km
+641,Saw,Bersaco Inc.,Les Bergeronnes,QC,Krigstin,315.22650224189726,>25 km
+339,Saw,Resolute Forest Products,La Tuque -,QC,FEA,315.61516571876996,>25 km
+348,Saw,Groupe Lebel,Saint-Joseph de Kamouraska,QC,FEA,315.96221304759143,>25 km
+199,Pulp,RockTenn,La Tuque,QC,Fisher,316.1299876580446,>25 km
+266,Saw,Wilfred Paquet and Sons,Saint-Theophile,QC,FEA,316.33260798048144,>25 km
+268,Saw,Maibec Industries Inc. - St-Theophile Mill,Armstrong,QC,Brandt,316.35366085566756,>25 km
+231,Saw,Les Entreprises J.M. Champeau Inc.,Saint-Malo,QC,Brandt,316.40079287020814,>25 km
+31,PB,"Uniboard Canada, Inc.",Sayabec,QC,,316.7343628709693,>25 km
+225,Saw,Marcel Lauzon Inc.,East Hereford,QC,FEA,317.0323970223581,>25 km
+390,Saw,Lulumco,Luceville,QC,FEA,317.0703377691709,>25 km
+389,Saw,Félix Huard Inc.,Félix Huard,QC,Sawmilldatabase.com,318.04072915540104,>25 km
+648,Saw,Groupe Lebel,Price,QC,FEA,318.24558279639757,>25 km
+273,Saw,GDS Industries,Saint-Côme-Linière,QC,FEA,318.86256006439174,>25 km
+274,Saw,Portbec/D.G. Forest Products,Portbec /D.G. Forest Products/ St-Come-Liniére,QC,Sawmilldatabase.com,318.86256006439174,>25 km
+272,Saw,Les Produits Forestiers D.G. ltée. - Saint-Come-Liniere Division,Saint-Côme-Linière,QC,Brandt,318.86256006439174,>25 km
+398,Saw,Cedrico Lumber Inc.,Price Mill,QC,FEA,319.5775116426899,>25 km
+652,Saw,Les Produits Forestiers D.G. ltée,Saint-Côme-Linière,QC,Krigstin,322.2390466273396,>25 km
+201,Pulp,Tembec,Matane,QC,Fisher,322.94894399864313,>25 km
+475,Saw,Burton's Cove Logging & Lumber,Hampden,NL,Brandt,323.12405484348363,>25 km
+327,Saw,Scierie Montauban Inc.,Notre-Dame-De-Montauban,QC,Brandt,323.29980284719016,>25 km
+155,Pulp,BD White Birch,Rivière-du-Loup,QC,Fisher,325.0843323636247,>25 km
+292,Saw,Le Spécialiste du Bardeau de Cèdre Inc. (SBC Inc.) (SBC Cedar),Saint-Prosper,QC,Brandt,325.0941130994067,>25 km
+425,Saw,Groupe Lebel,Cap Chat,QC,FEA,325.21517810752306,>25 km
+392,Saw,Adalbert Blais,Percé,QC,Krigstin,330.28846416594575,>25 km
+284,Saw,Vexco Veneer Inc.,Saint-Ferdinand,QC,Brandt,330.2942660384732,>25 km
+663,Saw,Vexco Inc.,Saint-Ferdinand,QC,Krigstin,330.67659875933066,>25 km
+321,Saw,Eloi Moisan Inc. - Scierie St-Gilbert,Saint-Gilbert,QC,Brandt,331.61064762760014,>25 km
+650,Saw,Jacques Beaudoin,Norbertville,QC,Krigstin,332.2830774382596,>25 km
+254,Saw,Blanchette & Blanchette Inc.,Weedon,QC,FEA,333.0506800051654,>25 km
+253,Saw,Les Bois Poulin Inc.,Saint-ludger,QC,Brandt,335.63367675231854,>25 km
+334,Saw,Les Moulures Hudon & Fils Inc.,Saint-Jean-Port-Joli,QC,Brandt,335.6466765035556,>25 km
+639,Saw,Bardeaux & Cèdres St-Honoré Inc.,Saint-Honoré-de-Shenley,QC,Krigstin,336.72084827080334,>25 km
+184,Pulp,Metro Paper,Portneuf,QC,Fisher,337.0369038936965,>25 km
+269,Saw,Usine Sartigan,Saint-Honore,QC,FEA,339.8544157572966,>25 km
+136,Pulp,G-P,Thorold,ON,Fisher,342.2834911285056,>25 km
+158,Pulp,Resolute,Thorold,ON,Fisher,342.2834911285056,>25 km
+141,Pulp,Kruger,Corner Brook,NL,Fisher,343.53060219705367,>25 km
+279,Saw,Clermond Hamel,Saint-Benoit-Labre,QC,MRNQ (FEA not updated yet),344.21215707864496,>25 km
+267,Saw,Carrier & Begin Inc.,Saint-Honore-de-Shenley,QC,FEA,346.12165338025045,>25 km
+294,Saw,Rene Bernard Inc.,Bernard,QC,FEA,346.3595570785505,>25 km
+653,Saw,Moisan & Morasse Inc.,Saint-Léonard,QC,Krigstin,346.7130940954116,>25 km
+329,Saw,Eloi Moisan Inc. - Scierie St-Leonard,Saint-Leonard-de-Portneuf,QC,Brandt,346.7130940954116,>25 km
+251,Saw,Scierie Tech Inc.,Lac-Drolet,QC,Sawmilldatabase.com,347.5517770197539,>25 km
+624,Saw,Klemmer Lumber Ltd.,Elmwood,ON,Krigstin,347.7047084009927,>25 km
+207,Saw,Cherry Forest Products,Cherry Forest Products,ON,Sawmilldatabase.com,350.19889594152914,>25 km
+613,Saw,Cherry Forest Products Inc.,Puslinch,ON,Krigstin,351.05527497579754,>25 km
+160,Pulp,Building Products of Canada,Pont Rouge,QC,Fisher,351.0838564038122,>25 km
+29,PB,Tafisa Canada inc,Lac-Mégantic,QC,,351.09117200483115,>25 km
+95,Plywood,Les Bois Traites M.G. Inc.,Montmagny,QC,Brandt,351.5898545219462,>25 km
+42,Pellets,Energex Pellet Fuel,Lac-Megantic,QC,,351.9912026643404,>25 km
+659,Saw,Scierie Dion & Fils Inc.,Saint-Raymond,QC,FEA,352.36999570595555,>25 km
+326,Saw,Gestofor,Saint Raymond,QC,FEA,353.0041801586494,>25 km
+238,Saw,Multibois,Saint-Augustin-de-Woburn,QC,FEA,353.2446389948745,>25 km
+237,Saw,J A Fontaine & Fils (Fontaine inc.),Saint-Augustin-de-Woburn,QC,FEA,353.2446389948745,>25 km
+236,Saw,Les Manufacturiers Warwick ltée,Saint-Augustin-de-Woburn,QC,FEA,353.2446389948745,>25 km
+646,Saw,Fontaine Inc.,Saint-Augustin-de-Woburn,QC,Krigstin,353.4267049135702,>25 km
+303,Saw,Les Industries Picard & Poulin Inc.,Saints-Anges,QC,Brandt,354.3201684936859,>25 km
+275,Saw,Clermond Hamel,St. Ephrem de Beauce,QC,MRNQ (FEA not updated yet),355.86817649013335,>25 km
+256,Saw,A. Lapointe et Fils Ltd.,Saint-Romain,QC,Krigstin,358.1153054813623,>25 km
+194,Pulp,Resolute,Clermont,QC,Fisher,358.20788977591457,>25 km
+209,Saw,B.E. Grein Lumber Ltd.,Ayton,ON,Brandt,359.7957471133881,>25 km
+609,Saw,Bester Forest Products,Walkerton,ON,Krigstin,360.5163786581574,>25 km
+347,Saw,Resolute Forest Products,Saint-Hilarion,QC,FEA,362.04202866923777,>25 km
+210,Saw,Bernie McGlynn Lumber Ltd.,Wingham,ON,Brandt,362.995462534017,>25 km
+323,Saw,Gagnon Bois Industriel Inc. (QC Palettes D.D. Inc.),Sainte-Catherine-de-la-Jacques-Cartier,QC,Brandt,363.5039217258238,>25 km
+608,Saw,Bauman Sawmill Inc.,Wallenstein,ON,Krigstin,365.9799319571598,>25 km
+208,Saw,Edgewood Lumber Ltd.,Hawkesville,ON,Brandt,369.108115371607,>25 km
+306,Saw,Alexandre Cote,Scott,QC,FEA,370.2885805685841,>25 km
+316,Saw,Leggett & Platt Inc. - Division LeggettWood Inc. - St-Nicolas,Saint-Nicolas,QC,Brandt,372.2455026848628,>25 km
+621,Saw,J.H. Keeso & Sons Ltd.,Listowel,ON,Krigstin,374.6686806791645,>25 km
+317,Saw,Perfect-Bois Inc.,Saint-Henri-de-Levis,QC,Brandt,375.67365551131195,>25 km
+308,Saw,Alexandre Lemay et fils,Saint-Bernard,QC,FEA,376.00678440976793,>25 km
+623,Saw,Kitchener Forest Products Inc.,Petersburg,ON,Krigstin,379.3904876308249,>25 km
+320,Saw,GDS Industries,Charny,QC,Brandt,379.5912373404321,>25 km
+162,Pulp,Cascades,Breakeyville,QC,Fisher,380.9797623208982,>25 km
+161,Pulp,Cascades,Breakeyville,QC,Fisher,380.9797623208982,>25 km
+324,Saw,White Birch Paper - Stadacona Paper - Scierie Leduc,Saint-Emile,QC,Brandt,383.06922090575137,>25 km
+325,Saw,Scierie LeDuc,Saint-Emile,QC,FEA,383.06922090575137,>25 km
+186,Pulp,Sonoco,Brantford,ON,Fisher,383.982466897944,>25 km
+154,Pulp,BD White Birch,Quebec City,QC,Fisher,386.8895762098505,>25 km
+554,Saw,Abfam Enterprises Ltd.,Port Clements,BC,FEA,403.81611877995397,>25 km
+67,Pellets,Cottles Island Lumber Company,Summerford,NL,,418.6020668071654,>25 km
+474,Saw,Cottle's Island Lumber Co.,Summerford,NL,FEA,421.44030978459426,>25 km
+36,Pellets,Gildale Farms,St. Marys,ON,,421.5334543540647,>25 km
+35,Pellets,Canadian Biofuel,Springford,ON,,423.96909165087817,>25 km
+64,Pellets,Exploits Pelletizing,Bishop's Falls,NL,,425.3866432228449,>25 km
+460,Saw,Rideout & Milley (1994) Ltd.,Campbellton,NL,Brandt,425.4319783952513,>25 km
+418,Saw,A.L. Stuckless & Sons,Glenwood,NL,FEA,453.47452016840475,>25 km
+404,Saw,Cashin's Pond Chipping Ltd.,Glovertown,NL,Brandt,514.3155474674716,>25 km
+402,Saw,Sutreen Hardwoods & Moldings Ltd.,Hawkes Bay,NL,Brandt,533.943679242803,>25 km
+612,Saw,Brown’s Lumber Co. Ltd.,Lethbridge,NL,Krigstin,555.0720531549396,>25 km
+378,Saw,Sexton Lumber Co. Ltd.,Bloomfield,NL,FEA,555.3303908714955,>25 km

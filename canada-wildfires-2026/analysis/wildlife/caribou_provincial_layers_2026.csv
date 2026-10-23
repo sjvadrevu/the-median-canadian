@@ -1,0 +1,23 @@
+layer,id,name,area_km2,share_burned_2026_pct,burned_2026_mapped_km2,fire_share_1987_2025_pct,fire_share_1987_2026_pct,change_from_2026_pts,pct_of_2026_burn_not_burned_since_1987,fire_alone_over_35pct,forest_2020_km2,forest_burned_2026_mapped_km2,forest_share_burned_2026_pct
+Quebec forest-ecotype populations (2022),82487,Nottaway,43026.78,5.61,2414.92,16.18,21.54,5.37,95.65,False,21091.01,1522.28,7.22
+Quebec forest-ecotype populations (2022),82488,Detour,64514.37,2.81,1813.58,5.19,7.94,2.74,97.63,False,38119.0,1257.08,3.3
+Quebec forest-ecotype populations (2022),82486,Caniapiscau,122622.17,2.31,2834.08,12.47,14.71,2.24,97.05,False,74459.29,2100.15,2.82
+Quebec forest-ecotype populations (2022),82485,Secteur Baie-James,90680.99,0.66,594.05,46.59,47.19,0.6,91.07,True,35777.53,379.32,1.06
+Quebec forest-ecotype populations (2022),82499,Val-d'Or,9139.57,0.64,58.64,1.13,1.78,0.64,100.0,False,6803.52,46.01,0.68
+Quebec forest-ecotype populations (2022),82493,Outardes,45730.47,0.62,282.19,7.22,7.82,0.61,98.61,False,30653.12,246.86,0.81
+Quebec forest-ecotype populations (2022),82498,Joir River,26958.23,0.21,55.76,4.66,4.84,0.19,89.92,False,19611.36,29.44,0.15
+Quebec forest-ecotype populations (2022),82494,Manicouagan,42873.58,0.19,83.04,6.44,6.63,0.19,98.31,False,29628.51,71.74,0.24
+Quebec forest-ecotype populations (2022),82496,Lac Joseph,70390.68,0.19,134.36,11.26,11.42,0.17,86.69,False,45328.3,91.77,0.2
+Quebec forest-ecotype populations (2022),82490,Témiscamie,99939.25,0.05,54.53,21.72,21.76,0.04,79.55,False,55138.48,32.39,0.06
+Quebec forest-ecotype populations (2022),82489,Assinica,66928.98,0.03,18.64,23.66,23.68,0.01,45.9,False,32476.34,6.47,0.02
+Quebec forest-ecotype populations (2022),82497,Basse-Côte-Nord,39798.25,0.01,3.24,9.34,9.35,0.01,100.0,False,28037.94,2.58,0.01
+Quebec forest-ecotype populations (2022),82491,Charlevoix,7487.25,0.0,0.0,1.55,1.55,0.0,,False,6537.18,0.0,0.0
+Quebec forest-ecotype populations (2022),82492,Pipmuacan,20171.78,0.0,0.0,12.17,12.17,0.0,,False,13959.33,0.0,0.0
+Quebec forest-ecotype populations (2022),82495,Secteur Matamec,20292.34,0.0,0.0,9.67,9.67,0.0,,False,14814.7,0.0,0.0
+Quebec union,ALL,All Quebec forest-ecotype caribou populations (union),660445.45,0.94,6196.0,16.94,17.83,0.9,95.54,False,386374.95,4244.41,1.1
+Saskatchewan caribou units,SK1|Not Applicable|Not Applicable,SK1 Not Applicable Not Applicable,176833.01,1.29,2282.6,55.44,56.0,0.56,43.5,True,64496.31,1114.28,1.73
+Saskatchewan caribou units,SK2|SK2 Central|Not Applicable,SK2 SK2 Central Not Applicable,36075.83,0.37,134.97,40.66,40.83,0.17,45.6,True,18241.12,54.67,0.3
+Saskatchewan caribou units,SK2|SK2 East|Not Applicable,SK2 SK2 East Not Applicable,25342.91,0.31,77.97,7.27,7.29,0.02,7.18,False,12064.67,76.36,0.63
+Saskatchewan caribou units,SK2|SK2 West|SK2 West Northern,SK2 SK2 West SK2 West Northern,12738.05,0.0,0.0,66.72,66.72,0.0,,True,4536.73,0.0,0.0
+Saskatchewan caribou units,SK2|SK2 West|SK2 West Southern,SK2 SK2 West SK2 West Southern,35559.52,0.0,0.0,42.31,42.31,0.0,,True,17090.44,0.0,0.0
+Saskatchewan union,ALL,All Saskatchewan caribou units (union),286549.28,0.87,2495.54,48.19,48.56,0.37,42.48,True,116429.26,1245.32,1.07
