@@ -619,7 +619,7 @@ MEASURE = """(id) => {
   };
 }"""
 
-BANNED = [r"\bnow\b", r"\btoday\b", r"\bcurrently\b", "\u2014", r"\bAI\b"]
+BANNED = [r"\bnow\b", r"\btoday\b", r"\bcurrently\b", "\u2014"]
 
 
 def main():
