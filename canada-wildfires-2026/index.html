@@ -926,9 +926,11 @@ function hcTable() {
   const el = $("#hcTable"); if (!el) return;
   const big = v => v >= 1e6, fm = v => big(v) ? nf(v / 1e6, 1) + " million" : nf(v, 0);
   const rg = d => big(d.high) ? `${nf(d.low / 1e6, d.low < 1e6 ? 2 : 1)} to ${nf(d.high / 1e6, 1)} million` : `${nf(d.low, 0)} to ${nf(d.high, 0)}`;
-  el.innerHTML = `<table><caption>Health Canada's estimates for wildfire smoke in 2023${citeHTML("matz2026")}</caption>
+  // the asthma figure is in the line above the table, so the table lists the other effects
+  el.innerHTML = `<table><caption>Other effects of the 2023 smoke, Health Canada estimates${citeHTML("matz2026")}</caption>
     <thead><tr><th>Effect</th><th class="n">Estimate</th><th class="r">Range</th></tr></thead><tbody>` +
-    CH.c3.hc_2023.map(d => `<tr><td>${esc(d.label)}</td><td class="n">${fm(d.central)}</td><td class="r">${rg(d)}</td></tr>`).join("") + `</tbody></table>`;
+    CH.c3.hc_2023.filter(d => !/asthma/i.test(d.label)).map(d => `<tr><td>${esc(d.label)}</td><td class="n">${fm(d.central)}</td><td class="r">${rg(d)}</td></tr>`).join("") + `</tbody></table>
+    <p class="fnote">Asthma symptom days: children aged 5 to 19, range ${rg(CH.c3.hc_2023.find(d => /asthma/i.test(d.label)) || {low: 0, high: 0})}.</p>`;
 }
 
 /* chapter 4: the bill */

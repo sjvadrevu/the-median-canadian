@@ -83,7 +83,7 @@ Decision: additive part of DFAA = $0. DFAA is the federal share of costs that pr
 - Nova Scotia: program-level actuals for any year.
 - New Brunswick: any wildfire-only spending, 2023-24 to 2026-27. The Forest Protection component (fire, insects, disease; $29.1M estimate 2026-27) has no published actuals; the 2025-26 Supplementary Appropriations Act gives Natural Resources $14M without saying what for.
 - Newfoundland and Labrador: final actuals (only revised estimates); water bomber operating costs (mixed with air ambulance).
-- Prince Edward Island: estimates book refused (HTTP 403, partial WebFetch text only); PEI has no aircraft and burns 8 to 15 ha a year.
+- Prince Edward Island: wildfire spending for 2023 to 2025 (no published figure found; PEI has no aircraft and burns 8 to 15 ha a year).
 - Nunavut: no wildfire suppression program or budget line (joined CIFFC June 2026).
 - Quebec: 2026 SOPFEU results (annual report not yet out); any SAG cost outside SOPFEU (none identified).
 - Saskatchewan: 2026 season cost (Q1 report of August 27, 2026 shows no wildfire variance).
