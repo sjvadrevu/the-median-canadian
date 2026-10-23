@@ -747,6 +747,545 @@
    "url": "https://www.alberta.ca/canadian-ambient-air-quality-standards",
    "licence": "Government of Alberta terms of use",
    "accessed": "2026-10-22"
+  },
+  {
+   "id": "nt-fires",
+   "publisher": "Government of the Northwest Territories, Environment and Climate Change",
+   "title": "NWT wildfire update: 2026 fire list (fire numbers, discovery dates, causes)",
+   "version": "2026 season, read October 20, 2026",
+   "url": "https://www.gov.nt.ca/ecc/services/wildfire-update/sites/default/files/firedata/fires.json",
+   "licence": "Open Government Licence - Northwest Territories",
+   "accessed": "2026-10-20"
+  },
+  {
+   "id": "ab-mutual-aid",
+   "publisher": "Government of Alberta, Forestry and Parks (Alberta Wildfire)",
+   "title": "Active mutual aid wildfires (record RMD-001-2026, CFB Wainwright, area estimate 40 ha)",
+   "version": "Read October 22, 2026",
+   "url": "https://services.arcgis.com/Eb8P5h4CJk8utIBz/arcgis/rest/services/Active_Mutual_Aid_Wildfires/FeatureServer/0",
+   "licence": "Open Government Licence - Alberta",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "dnd-wainwright",
+   "publisher": "Department of National Defence",
+   "title": "Four Canadian Armed Forces members killed during training in CFB Wainwright (news release)",
+   "version": "October 18, 2026",
+   "url": "https://www.canada.ca/en/department-national-defence/news/2026/10/four-canadian-armed-forces-members-killed-during-training-in-cfb-wainwright.html",
+   "licence": "Government of Canada terms (canada.ca)",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-bc",
+   "publisher": "Government of British Columbia",
+   "title": "Fire Management budget and actual spending, BC Wildfire Service season summaries, Premier's Task Force on Emergencies (2024), 2026 readiness release",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://www.bcbudget.gov.bc.ca/Annual_Reports/2023_2024/pdf/ministry/for.pdf",
+   "links": [
+    {
+     "label": "bcbudget.gov.bc.ca",
+     "url": "https://www.bcbudget.gov.bc.ca/Annual_Reports/2024_2025/pdf/ministry/for.pdf"
+    },
+    {
+     "label": "bcbudget.gov.bc.ca",
+     "url": "https://www.bcbudget.gov.bc.ca/Annual_Reports/2025_2026/pdf/ministry/for.pdf"
+    },
+    {
+     "label": "www2.gov.bc.ca",
+     "url": "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/reports/premiers_task_force_on_emergencies_report-april2024.pdf"
+    },
+    {
+     "label": "news.gov.bc.ca",
+     "url": "https://news.gov.bc.ca/releases/2026FOR0005-000267"
+    },
+    {
+     "label": "www2.gov.bc.ca",
+     "url": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status/about-bcws/wildfire-history/wildfire-season-summary"
+    },
+    {
+     "label": "www2.gov.bc.ca",
+     "url": "https://www2.gov.bc.ca/gov/content/safety/emergency-management/emergency-management/about/em-taskforce"
+    },
+    {
+     "label": "bcbudget.gov.bc.ca",
+     "url": "https://www.bcbudget.gov.bc.ca/2026/pdf/2026_Estimates.pdf"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-ab",
+   "publisher": "Government of Alberta; Legislative Assembly of Alberta; Office of the Auditor General of Alberta",
+   "title": "Wildfire Management estimates 2026-27, Forestry and Parks annual reports, Resource Stewardship committee transcript (2026), wildfire audit follow-up",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://open.alberta.ca/dataset/65514c30-e9f9-4951-9bae-7134edbe293c/resource/71713b5f-01ab-4ec5-9c01-7e49aec66fc1/download/budget-2026-estimates-government-2026-27.pdf",
+   "links": [
+    {
+     "label": "docs.assembly.ab.ca",
+     "url": "https://docs.assembly.ab.ca/LADDAR_files/docs/committees/rs/legislature_31/session_2/20260309_1900_01_rs.pdf"
+    },
+    {
+     "label": "open.alberta.ca",
+     "url": "https://open.alberta.ca/dataset/2dedbb29-e005-4802-bf6e-03bf77536add/resource/db36b97e-fca3-4082-950b-4943de30687d/download/fp-annual-report-2025-2026.pdf"
+    },
+    {
+     "label": "oag.ab.ca",
+     "url": "https://www.oag.ab.ca/reports/wildfire-management-processes-for-prevention-and-review-and-improvement-aoi/"
+    },
+    {
+     "label": "open.alberta.ca",
+     "url": "https://open.alberta.ca/dataset/2dedbb29-e005-4802-bf6e-03bf77536add/resource/b86465e8-a8e3-45de-91d8-3fec19c700db/download/fp-annual-report-2023-2024.pdf"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-sk",
+   "publisher": "Provincial Auditor of Saskatchewan; Government of Saskatchewan",
+   "title": "SPSA resource planning for wildfire response (2026 Report Volume 1, Chapter 5), MNP review of the 2025 season and the province's response, Budget 2026 release",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://auditor.sk.ca/pub/publications/public_reports/2026/Volume%201/ch-05----saskatchewan-public-safety-agencyresource-planning-for-wildfire-response.pdf",
+   "links": [
+    {
+     "label": "publications.saskatchewan.ca",
+     "url": "https://publications.saskatchewan.ca/api/v1/products/128921/formats/154702/download"
+    },
+    {
+     "label": "publications.saskatchewan.ca",
+     "url": "https://publications.saskatchewan.ca/api/v1/products/128921/formats/154732/download"
+    },
+    {
+     "label": "saskatchewan.ca",
+     "url": "https://www.saskatchewan.ca/government/news-and-media/2026/march/18/$880-million-to-protect-saskatchewan-and-strengthen-community-safety"
+    },
+    {
+     "label": "auditor.sk.ca",
+     "url": "https://auditor.sk.ca/pub/publications/public_reports/2026/Volume%201/2026-report-v1__resource-planning-for-wildfire-response--news-release.pdf"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-mb",
+   "publisher": "Government of Manitoba",
+   "title": "Estimates 2026/27, public accounts 2023-24 to 2025-26, Natural Resources annual reports, interim wildfire after-action report (April 2026)",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://www.gov.mb.ca/asset_library/en/budget2026/estimates_budget2026.pdf",
+   "links": [
+    {
+     "label": "gov.mb.ca",
+     "url": "https://www.gov.mb.ca/asset_library/en/finances/annual-report-and-public-accounts-2025-26.pdf"
+    },
+    {
+     "label": "gov.mb.ca",
+     "url": "https://www.gov.mb.ca/asset_library/en/finances/reesi-2025-26.pdf"
+    },
+    {
+     "label": "gov.mb.ca",
+     "url": "https://www.gov.mb.ca/asset_library/en/proactive/20242025/publicaccounts/AnnualReportPublicAccounts2024-25.pdf"
+    },
+    {
+     "label": "manitoba.ca",
+     "url": "https://manitoba.ca/asset_library/en/proactive/20232024/publicaccounts/AnnualReportPublicAccounts2023-2024.pdf"
+    },
+    {
+     "label": "gov.mb.ca",
+     "url": "https://www.gov.mb.ca/asset_library/en/annualreports/2024_2025/annual-report-nrif-24-25.pdf"
+    },
+    {
+     "label": "gov.mb.ca",
+     "url": "https://www.gov.mb.ca/asset_library/en/annualreports/2025_2026/annual-report-nrif-25-26.pdf"
+    },
+    {
+     "label": "manitoba.ca",
+     "url": "https://manitoba.ca/asset_library/en/wildfire/wildfire-report-april-2026.pdf"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-nt",
+   "publisher": "Government of the Northwest Territories; Legislative Assembly of the Northwest Territories",
+   "title": "Main Estimates 2026-27, supplementary estimates, 2023 wildfire response review (MNP), response to the 2023 after-action review, air tanker fleet pages",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://www.fin.gov.nt.ca/sites/fin/files/budget_2026-27_fiscal_review_paper.pdf",
+   "links": [
+    {
+     "label": "gov.nt.ca",
+     "url": "https://www.gov.nt.ca/sites/flagship/files/documents/1._nwt_wildfire_response_review_report_and_appendices_final_compressed-9k.pdf"
+    },
+    {
+     "label": "hansard.opennwt.ca",
+     "url": "https://hansard.opennwt.ca/debates/2025/10/21/the-chair-1/"
+    },
+    {
+     "label": "maca.gov.nt.ca",
+     "url": "https://www.maca.gov.nt.ca/en/content/gnwt-response-2023-after-action-review-recommendations"
+    },
+    {
+     "label": "gov.nt.ca",
+     "url": "https://www.gov.nt.ca/ecc/en/services/wildfire-operations/air-tanker-fleet"
+    },
+    {
+     "label": "gov.nt.ca",
+     "url": "https://www.gov.nt.ca/ecc/en/services/wildfire-operations/detecting-wildfire"
+    },
+    {
+     "label": "gov.nt.ca",
+     "url": "https://www.gov.nt.ca/en/newsroom/jay-macdonald-preparations-2026-wildfire-season"
+    },
+    {
+     "label": "gov.nt.ca",
+     "url": "https://www.gov.nt.ca/en/newsroom/jay-macdonald-preparedness-2026-wildfire-season"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-yt",
+   "publisher": "Government of Yukon",
+   "title": "Community Services main estimates, fall 2025 supplementary estimates and wildland fire releases",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://yukon.ca/sites/default/files/fin-2026-27-budget-main-estimates-community-services.pdf",
+   "links": [
+    {
+     "label": "open.yukon.ca",
+     "url": "https://open.yukon.ca/information/2c63636e-348f-4529-8fe6-2c267e48e5b2/resource/55d25146-fef3-48fb-8266-3185baee5d67/download/fin-2025-26-budget-main-estimates-community-services.pdf"
+    },
+    {
+     "label": "open.yukon.ca",
+     "url": "https://open.yukon.ca/information/1f39f8cb-c1ce-4fd9-85c1-f859fc636456/resource/8749bd2c-6f4b-44dc-8996-4b896279a219/download/fin_fall_2025.pdf"
+    },
+    {
+     "label": "yukon.ca",
+     "url": "https://yukon.ca/en/news/supplementary-estimates-provide-update-previous-government-spending-and-plan-remainder-fiscal-year"
+    },
+    {
+     "label": "open.yukon.ca",
+     "url": "https://open.yukon.ca/information/4bf375ef-ff94-444e-b951-d0b3fccc1b1a/resource/e221bc58-c562-4f92-b6eb-d26c5da9de6f/download/fin_spring_2026.pdf"
+    },
+    {
+     "label": "yukon.ca",
+     "url": "https://yukon.ca/en/news/yukon-wildland-fire-management-ready-2026-fire-season"
+    },
+    {
+     "label": "open.yukon.ca",
+     "url": "https://open.yukon.ca/information/1c3bd405-4e15-4b2d-9054-4e23c7eacaa4/resource/02114668-b64a-487c-b902-39990c65dfe2/download/cs-imported-initial-attack-crews-aircraft-assist-yukon-fire-response-06-21-2025.pdf"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-nu",
+   "publisher": "Government of Nunavut",
+   "title": "Nunavut and the Canadian Interagency Forest Fire Centre formalize wildfire cooperation (June 2026)",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://gov.nu.ca/en/newsroom/government-nunavut-and-canadian-interagency-forest-fire-centre-formalize-wildfire",
+   "links": [],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-on",
+   "publisher": "Government of Ontario; Auditor General of Ontario; Legislative Assembly of Ontario",
+   "title": "Expenditure estimates, Ministry of Natural Resources 2026-27; public accounts (emergency fire fighting); follow-up on management of hazards and emergencies (2024); estimates committee transcript (2024); newsroom releases",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://api.news.ontario.ca/api/v1/releases",
+   "links": [
+    {
+     "label": "auditor.on.ca",
+     "url": "https://www.auditor.on.ca/en/content/annualreports/arreports/en24/1-10FU_mgmthazards_en24.pdf"
+    },
+    {
+     "label": "ontario.ca",
+     "url": "https://www.ontario.ca/page/expenditure-estimates-ministry-natural-resources-2026-2027"
+    },
+    {
+     "label": "data.ontario.ca",
+     "url": "https://data.ontario.ca/dataset/public-accounts-ministry-statements-and-schedules"
+    },
+    {
+     "label": "ola.org",
+     "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-43/transcripts/committee-transcript-2024-jun-10"
+    },
+    {
+     "label": "ontario.ca",
+     "url": "https://www.ontario.ca/page/published-plans-and-annual-reports-2025-2026-ministry-natural-resources"
+    },
+    {
+     "label": "news.ontario.ca",
+     "url": "https://news.ontario.ca/en/release/1006689/ontarios-2025-wildland-fire-season-officially-ends"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-qc",
+   "publisher": "SOPFEU; Gouvernement du Québec",
+   "title": "SOPFEU annual reports 2022 to 2025; Budget 2026-2027; Service aérien gouvernemental airtanker fleet",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://sopfeu.qc.ca/en/about-us/unique-organization",
+   "links": [
+    {
+     "label": "finances.gouv.qc.ca",
+     "url": "https://www.finances.gouv.qc.ca/Budget_et_mise_a_jour/budget/documents/Budget2627_PlanBudgetaire.pdf"
+    },
+    {
+     "label": "quebec.ca",
+     "url": "https://www.quebec.ca/gouvernement/services-organisations-publiques/service-aerien-gouvernemental/incendies-de-foret"
+    },
+    {
+     "label": "cdn-contenu.quebec.ca",
+     "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/2_plans_annuels_gestion_depenses_mo.pdf"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-nb",
+   "publisher": "Government of New Brunswick",
+   "title": "Wildfire Management Preparedness Plan 2025-2030; Main Estimates 2026-27; wildfire releases 2026",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://www.gnb.ca/content/dam/GNB3/t/ls/em/ep/fs-fw/docs/wildfire-management-preparedness-plan-2025-2030-en.pdf",
+   "links": [
+    {
+     "label": "gnb.ca",
+     "url": "https://www.gnb.ca/content/dam/GNB3/gov/budget/docs/main-estimates-budget-principal-2026-2027.pdf"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-ns",
+   "publisher": "Government of Nova Scotia",
+   "title": "2023 Wildfires After-Action Report; estimates 2024-25 to 2026-27 and additional appropriations; wildfire releases",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://www.gov.ns.ca/natr/forestprotection/wildfire/nova-scotia-wildfires-2023-after-action-report.pdf",
+   "links": [
+    {
+     "label": "novascotia.ca",
+     "url": "https://www.novascotia.ca/documents/budget-documents-2026-2027"
+    },
+    {
+     "label": "news.novascotia.ca",
+     "url": "https://news.novascotia.ca/search/all?field_topics=225"
+    },
+    {
+     "label": "news.novascotia.ca",
+     "url": "https://news.novascotia.ca/en/2023/12/15/province-purchasing-new-helicopter-water-bombers"
+    },
+    {
+     "label": "novascotia.ca",
+     "url": "https://www.novascotia.ca/sites/default/files/documents/7-4172/budget-estimates-2026-27-en.pdf"
+    },
+    {
+     "label": "news.novascotia.ca",
+     "url": "https://news.novascotia.ca/en/2024/04/29/wildfire-report-highlights-strengths-areas-improvement"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-nl",
+   "publisher": "Government of Newfoundland and Labrador",
+   "title": "News releases 2025 and 2026 on water bombers, Labrador, Budget 2026 and the Auditor General's emergency management report",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://www.gov.nl.ca/releases/",
+   "links": [
+    {
+     "label": "gov.nl.ca",
+     "url": "https://www.gov.nl.ca/releases/?p=56169"
+    },
+    {
+     "label": "gov.nl.ca",
+     "url": "https://www.gov.nl.ca/releases/2026/fal/0714n01/"
+    },
+    {
+     "label": "gov.nl.ca",
+     "url": "https://www.gov.nl.ca/releases/2026/fal/0423n07/"
+    },
+    {
+     "label": "gov.nl.ca",
+     "url": "https://www.gov.nl.ca/releases/2026/fal/0604n02/"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-pe",
+   "publisher": "Government of Prince Edward Island",
+   "title": "Wildfire response page",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://www.princeedwardisland.ca/en/information/land-and-environment/wildfire-response-in-pei",
+   "links": [],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "rd-pc",
+   "publisher": "Parks Canada",
+   "title": "Question period notes and wildfire management pages",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://search.open.canada.ca/qpnotes/record/ec%2CSOS-QP-00001",
+   "links": [],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "ciffc-reports",
+   "publisher": "Canadian Interagency Forest Fire Centre",
+   "title": "Canada Reports 2022 to 2025, annual reports 2023-24 and 2024-25, Strategic Plan 2024-2029, Aviation Challenges Workshop Report (2023), financial statements",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://ciffc.ca/publications/",
+   "links": [
+    {
+     "label": "ciffc.ca",
+     "url": "https://ciffc.ca/publications/canada-reports/"
+    },
+    {
+     "label": "ciffc.ca",
+     "url": "https://ciffc.ca/publications/strategic-planning/"
+    },
+    {
+     "label": "ciffc.ca",
+     "url": "https://ciffc.ca/publications/ciffc-research-and-innovation-need/"
+    },
+    {
+     "label": "ciffc.ca",
+     "url": "https://ciffc.ca/download/canada-reports/?wpdmdl=1585&filename=Canada-Report-2025_EN_Version.pdf"
+    },
+    {
+     "label": "ciffc.ca",
+     "url": "https://ciffc.ca/download/canada-reports/?wpdmdl=1585&filename=CIFFC_2023CanadaReport_FINAL.pdf"
+    },
+    {
+     "label": "ciffc.ca",
+     "url": "https://ciffc.ca/download/ciffc-annual-reports-2/?wpdmdl=3479&filename=ENG-FINAL-Annual-Report-2023-24.pdf"
+    },
+    {
+     "label": "ciffc.ca",
+     "url": "https://ciffc.ca/download/ciffc-annual-reports-2/?wpdmdl=3479&filename=1783523083wpdm_2024-2025-CIFFC-Annual-Report.pdf"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "ps-pcaa",
+   "publisher": "Public Safety Canada",
+   "title": "Pan-Canadian Aerial Asset Program: backgrounder and releases (2025, 2026)",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://www.canada.ca/en/public-safety-canada/news/2026/05/pan-canadian-aerial-asset-program.html",
+   "links": [],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "senate-agfo",
+   "publisher": "Senate of Canada, Standing Committee on Agriculture and Forestry",
+   "title": "Canada on fire (June 2026)",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://sencanada.ca/en/info-page/parl-45-1/agfo-canada-on-fire/",
+   "links": [],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "fed-budgets",
+   "publisher": "Department of Finance Canada",
+   "title": "Federal budgets 2019 to 2025, fall economic statements and the 2026 Economic and Fiscal Update",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://www.budget.canada.ca/",
+   "links": [
+    {
+     "label": "budget.canada.ca",
+     "url": "https://budget.canada.ca/update-miseajour/2026/report-rapport/toc-tdm-en.html"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "gc-infobase",
+   "publisher": "Treasury Board of Canada Secretariat",
+   "title": "GC InfoBase open data: program spending, results and transfer payments",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://open.canada.ca/data/en/dataset/a35cf382-690c-4221-a971-cf0fd189a46f",
+   "links": [],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "nrcan-programs",
+   "publisher": "Natural Resources Canada",
+   "title": "Departmental Results Report 2024-25 and wildfire program pages (Fighting and Managing Wildfires in a Changing Climate, Wildfire Resilient Futures Initiative, WildFireSat)",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://natural-resources.canada.ca/corporate/planning-reporting/departmental-results-reports",
+   "links": [
+    {
+     "label": "natural-resources.canada.ca",
+     "url": "https://natural-resources.canada.ca/forests-forestry/wildland-fires"
+    },
+    {
+     "label": "canada.ca",
+     "url": "https://www.canada.ca/en/natural-resources-canada/news/2025/08/canada-invests-in-firefighting-training.html"
+    },
+    {
+     "label": "canada.ca",
+     "url": "https://www.canada.ca/fr/ressources-naturelles-canada/nouvelles/2025/01/le-canada-et-le-quebec-annoncent-un-investissement-majeur-dans-des-equipements-de-lutte-contre-les-feux-de-foret.html"
+    }
+   ],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "nas",
+   "publisher": "Government of Canada",
+   "title": "National Adaptation Strategy",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://www.canada.ca/en/services/environment/weather/climatechange/climate-plan/national-adaptation-strategy/full-strategy.html",
+   "links": [],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-22"
+  },
+  {
+   "id": "grants-disclosure",
+   "publisher": "Government of Canada",
+   "title": "Proactive disclosure of grants and contributions (wildfire agreements active after October 22, 2026)",
+   "version": "Documents listed in analysis/readiness and analysis/policy manifests",
+   "url": "https://open.canada.ca/data/en/dataset/432527ab-7aac-45b5-81d6-7597107a7013",
+   "links": [],
+   "licence": "Open Government Licence or the publisher's terms",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "cihi-nacrs",
+   "publisher": "Canadian Institute for Health Information",
+   "title": "NACRS emergency department visits data tables, April 2021 to March 2026",
+   "version": "Monthly, by province and age group",
+   "url": "https://www.cihi.ca/sites/default/files/document/emergency-department-visits-apr-2025-mar-2026-data-tables-en.xlsx",
+   "licence": "CIHI terms of use",
+   "accessed": "2026-10-21"
+  },
+  {
+   "id": "coverage-check",
+   "publisher": "The Median Canadian",
+   "title": "Coverage check of publicly reported major fires against NBAC and CWFIS outlines (analysis/coverage)",
+   "version": "65 fires, 2023 to 2026",
+   "url": "https://github.com/sjvadrevu/canada-wildfires-2026/tree/main/analysis/coverage",
+   "licence": "Apache 2.0 (code), CC BY 4.0 (results)",
+   "accessed": "2026-10-22"
   }
  ]
 }

@@ -1,0 +1,11 @@
+key,year,source,nbac_id,m3_uid,outline_class,ha,rank_area,rank_area_in_year,rank_buildings,agency_id,agency_name,name_source,agency_size_ha,agency_points,agency_points_1000ha,cause,cause_mixed,start,start_basis,agency_fire_year,carryover,bldg_inside,bldg_within_100m,bldg_inside_or_100m,provinces,fire_area,nearest_pc,nearest_pc_km,nbac_admin
+2023_834,2023,NBAC,834.0,,,12969.4,415,150,1,BC 2023-K52767,McDougall Creek,CNFDB FIRENAME,13970.4,8,1,lightning,False,2023-07-01,agency,,False,372,785,1157,BC,Kamloops Fire Centre,Kelowna,0,BC
+2026_36077449,2026,CWFIS M3,,36077449.0,wildfire,172458.7,33,5,2,BC 2026-C40983,,,165909.4,16,3,lightning,False,2026-07-17,agency,2026.0,False,863,41,904,BC,Cariboo Fire Centre,Lillooet,23,
+2025_684,2025,NBAC,684.0,,,9541.7,520,119,3,NL 2025-234,Kingston,CNFDB FIRENAME,10095.0,11,1,human,False,2025-05-13,agency,,False,686,153,839,NL,Forest Management District 01,Carbonear,6,NL
+2026_36076584,2026,CWFIS M3,,36076584.0,wildfire,25501.9,229,41,4,BC 2026-K51490,Bald Range,official event document,25163.2,2,1,human,False,2026-08-07,agency,2026.0,False,738,78,816,BC,Kamloops Fire Centre,Summerland,0,
+2025_433,2025,NBAC,433.0,,,423940.8,11,2,5,MB WE017,,,311315.0,16,4,lightning,False,2025-05-19,agency,,False,475,283,758,MB/SK,Denare Beach,Flin Flon,1,"MB,SK"
+2023_897,2023,NBAC,897.0,,,35112.6,169,71,6,BC 2023-K21633,Bush Creek East,CNFDB FIRENAME,45613.0,5,2,lightning,False,2023-07-12,agency,,False,301,359,660,BC,Kamloops Fire Centre,Blind Bay,4,BC
+2023_581,2023,NBAC,581.0,,,817.8,1549,548,7,NS 09-011-2023,,,969.5,1,0,human,False,2023-05-28,agency,,False,342,252,594,NS,Nova Scotia (whole province/territory),Still Water Lake,0,NS
+2024_451,2024,NBAC,451.0,,,31644.6,189,31,8,PC 2024JA010,Jasper Wildfire Complex (Leech Lake),CNFDB FIRENAME,33311.0,6,1,lightning,False,2024-07-22,agency,,False,99,440,539,AB,AB outside mapped areas,Jasper,0,PC
+2026_36076686,2026,CWFIS M3,,36076686.0,wildfire,87384.8,71,11,9,BC 2026-V10755,,,69705.0,9,3,human,False,2026-07-04,agency,2026.0,False,420,4,424,BC,Coastal Fire Centre,Merritt,20,
+2025_428,2025,NBAC,428.0,,,180522.9,30,7,10,SK 25LA-PISEW,,,219891.0,3,1,human,False,2025-05-21,agency,,False,120,290,410,SK,La Ronge,La Ronge,0,SK

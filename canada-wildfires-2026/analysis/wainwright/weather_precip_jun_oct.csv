@@ -1,0 +1,6 @@
+station,climate_id,note,days_2026,precip_2026_jun1_oct16_mm,baseline_years,n_baseline_years,baseline_mean_mm,pct_of_baseline,rank_driest_of_all_years,n_all_years,all_years,jun_2026_mm,jun_baseline_mm,jul_2026_mm,jul_baseline_mm,aug_2026_mm,aug_baseline_mm,sep_2026_mm,sep_baseline_mm,oct1_16_2026_mm,oct1_16_baseline_mm
+FABYAN,3012515,2026 window incomplete (<95% of days),109.0,,,,,,,,,,,,,,,,,,
+LLOYDMINSTER A,3013961,,,355.4,1991-2020,28.0,263.5,135.0,39.0,43.0,1982-2026,138.6,83.8,127.0,78.3,61.599999999999994,57.1,21.8,33.7,6.4,10.5
+MONITOR,3014600,2026 window incomplete (<95% of days),130.0,,,,,,,,,,,,,,,,,,
+WAINWRIGHT CFB AIRFIELD 21,301S001,,,236.1,1998-2018,17.0,195.7,121.0,17.0,22.0,1998-2026,106.5,56.3,51.2,55.7,36.9,48.8,38.0,25.2,3.5,9.7
+CORONATION CLIMATE,3011887,2026 window incomplete (<95% of days),131.0,,,,,,,,,,,,,,,,,,

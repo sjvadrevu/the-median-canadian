@@ -12,10 +12,13 @@ Everything behind the page is here: every analysis script, every output table, t
 
 ## What the site shows
 
-- **The story, in nine parts:** how much burned against every year since 1972, the warming and the drought behind it, how far the fires went past what the usual drivers predict, smoke deaths against deaths in the fires, buildings and roads, the cost, and carbon, reburns and caribou.
+- **The story, in eight chapters:** what burned (a Germany-sized area), why (hotter, drier summers), who it hurt (smoke and emergency room visits), what it cost, what it did to the climate, whether provinces are ready for another season like these (budgets, aircraft, crews and reviews for every province and territory), what is on the way (new aircraft, a satellite, research under way), and what needs to change.
 - **Fire area map:** all 186 fire management areas, coloured by the share of forest burned compared with each area's own 1991 to 2020 average, for 2023, 2024, 2025, 2026 or 2023 to 2026.
 - **Season replay:** weekly 2026 satellite fire detections, with fire outlines appearing in the week they were first seen.
-- **Find your city:** for 1,031 places, the nearest 2026 wildfire, smoky days from 2018 to 2026, and the province's firefighting cost per resident where one is published.
+- **Largest and closest fires:** the ten largest fires of 2023 to 2026 and the ten with the most buildings nearby, on a map.
+- **Province readiness:** spending against budget for each province, with aircraft, crews, reviews and the gaps on record, each linked to its source.
+- **Research under way:** a searchable list of the federal wildfire research projects active now.
+- **Find your city:** for 1,031 places, the nearest 2026 wildfire, smoky days in the fire season (May to November) from 2018 to 2026, and the province's firefighting cost per resident where one is published.
 
 ## Files
 
@@ -23,6 +26,7 @@ Everything behind the page is here: every analysis script, every output table, t
 |---|---|
 | `index.html` | The page (plain HTML, CSS and JavaScript) |
 | `data/story.json` | Every number in the story and charts, keyed by claim ID |
+| `data/chapters.json` | Chapter numbers shared with the carousel (`scripts/build_chapters.py`), readiness cards, timeline, programs and research list |
 | `data/map/`, `data/cities.json`, `data/smoke2026.json` | Map geometry and attributes, city search table, 2026 smoke calendar |
 | `analysis/<topic>/` | One folder per analysis: `scripts/`, `results.md` (findings and method), `manifest.csv` (sources), output CSVs |
 | `analysis/REBUILD.md` | The 2026-10-21 rebuild onto the final area layer, with before and after values |

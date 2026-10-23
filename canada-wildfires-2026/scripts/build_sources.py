@@ -124,12 +124,15 @@ def used_by(local, scope, S):
 def main():
     S = scripts_text()
     rows = []
-    mans = sorted(ROOT.glob("data/**/manifest.csv")) + sorted(ROOT.glob("analysis/*/manifest.csv"))
+    mans = (sorted(ROOT.glob("data/**/manifest.csv")) + sorted(ROOT.glob("analysis/*/manifest.csv"))
+            + sorted(ROOT.glob("analysis/*/manifest_*.csv")))
     for m in mans:
         scope = str(m.parent.relative_to(ROOT))
+        mname = f"{scope}/{m.name}"
+        idscope = scope if m.stem == "manifest" else f"{scope}/{m.stem.replace('manifest_', '')}"
         with open(m, encoding="utf-8") as f:
             for i, r in enumerate(csv.DictReader(f), 1):
-                dataset = g(r, "dataset", "description")
+                dataset = g(r, "dataset", "description", "source", "file")
                 publisher = g(r, "publisher", "source")
                 url_field = g(r, "source_url", "url")
                 local = g(r, "local_path", "path")
@@ -142,7 +145,7 @@ def main():
                 status, via = classify(dataset, publisher, url_field, local, date, scope, S)
                 u = urls(url_field)
                 rows.append({
-                    "id": f"{scope.replace('/', '.')}.{i:02d}", "manifest": f"{scope}/manifest.csv", "row": i,
+                    "id": f"{idscope.replace('/', '.')}.{i:02d}", "manifest": mname, "row": i,
                     "dataset": dataset, "publisher": publisher, "url": u[0].rstrip(".") if u else "",
                     "url_field": url_field, "licence": lic, "date_accessed": date,
                     "used_for": g(r, "used_in") or used_by(local, scope, S),

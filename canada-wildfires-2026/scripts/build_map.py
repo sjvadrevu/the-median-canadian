@@ -51,13 +51,29 @@ def sig(x, n=3):
     return round(x, max(0, n - 1 - int(math.floor(math.log10(abs(x))))))
 
 
+def largest_layer(A, q):
+    """7. Outlines of the fires in the largest and closest tables, and the CFB Wainwright estimated scar."""
+    with tempfile.TemporaryDirectory() as td:
+        src = json.load(open(A / "largest/largest_outlines.geojson", encoding="utf-8"))
+        for ft in src["features"]:
+            ft["properties"] = {"k": ft["properties"]["key"]}
+        tmp = Path(td) / "largest.geojson"
+        tmp.write_text(json.dumps(src))
+        ms("-i", tmp, "name=largest", "-proj", "from=wgs84", PROJ, "-simplify", "interval=400", "keep-shapes",
+           "-filter-slivers", "min-area=0.5km2", "-clean", "-o", OUT / "largest.json", "format=topojson", q)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", type=Path, default=DEFAULT_SRC)
+    ap.add_argument("--only", choices=["largest"], help="build only this layer")
     a = ap.parse_args()
     A = a.src / "analysis"
     OUT.mkdir(parents=True, exist_ok=True)
     q = "quantization=40000"
+    largest_layer(A, q)
+    if a.only:
+        return
 
     # 1. Fire management areas + provinces dissolved from them (shared arcs, so borders match)
     ms("-i", A / "forest/fma_2026.geojson", "name=areas", "-proj", PROJ,

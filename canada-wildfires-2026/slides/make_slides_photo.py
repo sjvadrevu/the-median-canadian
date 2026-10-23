@@ -63,7 +63,7 @@ DEFAULTS = {
     "C12.mean_2003_2022": 14.8, "C12.max_2003_2022": 34.9,
     "C13.lightning_2026_nfd": 2960, "C13.lightning_mean_1991_2020": 3245,
     "C13.human_2026": 2190,
-    "C15.ratio_after": 16.3, "C15.beyond_calibration": 5.2,
+    "C15.ratio_after": 16.3, "C14.area_share_pct": 95.0, "C15.beyond_calibration": 5.2,
     "C16.popw_pm25": 67.0, "C16.previous_high": 52.5,
     "C18.2023.aqbat": 379, "C18.2023.chen": 988,
     "C18.2026.aqbat": 98, "C18.2026.chen": 253,
@@ -146,6 +146,14 @@ def series():
     ag4 = ag.groupby("year").area_burned_ha.sum().rolling(4).sum() / 1e6
     s["agency_run"], s["agency_prior_max"] = float(ag4.loc[2026]), float(ag4.loc[:2022].max())
     s["agency_prior_end"] = int(ag4.loc[:2022].idxmax())
+    s["agency_year"] = (ag.groupby("year").area_burned_ha.sum() / 1e6).to_dict()
+    ed = pd.read_csv(os.path.join(AN, "health/ed_extra_visits_by_year.csv")).set_index("year")
+    s["ed"] = ed
+    pv = pd.read_csv(os.path.join(AN, "property/destroyed_value_estimates.csv"))
+    ev = {2023: ["tantallon2023", "barrington2023", "mcdougall2023", "bushcreek2023"], 2024: ["jasper2024"],
+          2025: ["denare2025", "lacdubonnet2025"], 2026: ["2026 all outlines"]}
+    s["value"] = {y: pv[pv.event.isin(e)].proxy_value_avg_cad.sum() / 1e6 for y, e in ev.items()}
+    s["value_bldg"] = {y: int(pv[pv.event.isin(e)].flagged_500m.sum()) for y, e in ev.items()}
     cs = pd.read_csv(os.path.join(AN, "climate-change/climate_series.csv"))
     t = cs[(cs.scope == "Canada") & (cs.variable == "t_mjja")]
     s["temp"] = dict(zip(t.year.astype(int), t.value))
@@ -172,6 +180,12 @@ def series():
     rb = pd.read_csv(os.path.join(AN, "threads/t2_reburn_by_period.csv"))
     rb = rb[(rb.k == 15) & (rb.basis == "SCANFI BS/JP")]
     s["reburn"] = dict(zip(rb.period, rb.reburn_share * 100))
+    rs = os.path.join(AN, "response")
+    es = pd.read_csv(os.path.join(rs, "escape_speed_2026_summary.csv")).set_index("prov").loc["Canada"]
+    s["escape72"] = (es.share_area_fires_1000ha_within_72h * 100, es.main_run_share_area_fires_1000ha_within_72h * 100)
+    zs = pd.read_csv(os.path.join(rs, "zone_share_national.csv")).set_index("year").loc["2023-2026"]
+    s["monitored"] = (zs.iloc[list(zs.index).index("not_suppression_share_low")] * 100,
+                      zs.iloc[len(zs) - 1] * 100)
     return s
 
 
@@ -314,34 +328,30 @@ def build(s):
     slides = []
 
     # 1 Result -------------------------------------------------------------
-    pe = s["area_prior_end"]
+    ay = list(range(1990, 2027))
+    pe = s["agency_prior_end"]
     prior = set(range(pe - 3, pe + 1))
-    ratio = s["area_run"] / s["area_prior_max"]
-    ch1 = bars([str(y) for y in yrs], [s["area"][y] for y in yrs], H=330, ymax=17.5,
-               colors=[FIRE if y in run else (MUTED if y in prior else NEUTRAL) for y in yrs],
-               fan=[([yrs.index(y) for y in sorted(prior)], f"{pe - 3} to {pe}: {f1(s['area_prior_max'])}", MUTED),
-                    ([yrs.index(y) for y in sorted(run)], f"2023 to 2026: {f1(s['area_run'])}", FIRE)],
-               ticks={"1972", "1980", "1990", "2000", "2010", "2020"}, grid=[5, 10, 15],
+    ch1 = bars([str(y) for y in ay], [s["agency_year"][y] for y in ay], H=300, ymax=19,
+               colors=[FIRE if y in run else NEUTRAL for y in ay],
+               fan=[([ay.index(y) for y in sorted(run)], f"2023 to 2026: {f1(s['agency_run'])}", FIRE)],
+               ticks={"1990", "2000", "2010", "2020"}, grid=[5, 10, 15],
                gridfmt=lambda g: f"{g}", bar_frac=0.78, lsize=22)
-    more = "more than twice" if 2 <= ratio < 3 else f"{ratio_words(ratio)}"
     slides.append(dict(
         kicker="Canada's wildfires, 2023 to 2026",
-        head=f"Canada's last four fire seasons burned {more} the area of any four years since 1972",
+        head="Wildfires burned 35.9 million hectares from 2023 to 2026, about the size of Germany",
         body=f'''
-<div class="statrow">
-  <div><div class="big fire">{f1(s["area_run"])}</div><div class="statcap">million hectares burned in 2023 to 2026</div></div>
-  <div><div class="big" style="color:{MUTED}">{f1(s["area_prior_max"])}</div><div class="statcap">in {pe - 3} to {pe}, the most in any earlier four years</div></div>
-</div>
-<div class="note">Area burned each year, million hectares, 1972 to 2026</div>
+<div class="bigrow"><div class="big fire">2×</div>
+<div class="bigcap">the land burned in any earlier four years since 1990</div></div>
+<div class="note">Land burned each year, million hectares</div>
 <div class="chart">{ch1}</div>
-<p class="body sm">That includes about {round(V("C2.union_pct"))}% of Canada's forest, 1 hectare in every {int(V("C2.one_in"))}.</p>
-<p class="foot">1972 to 2025: NBAC satellite-mapped burned area; 2026: official agency total ({f1(V("S1.official_2026_ha") / 1e6)} million ha). Official agency totals since 1990 show the same: {f1(s["agency_run"])} vs {f1(s["agency_prior_max"])} million ha ({s["agency_prior_end"] - 3} to {s["agency_prior_end"]}).</p>''',
-        source="NRCan NBAC, National Fire Database and CWFIS · Canada, 1972 to 2026 · Oct 2026 · CC BY 4.0"))
+<p class="body sm">This is about {round(V("C2.union_pct"))}% of Canada's forest.</p>
+<p class="foot">Totals reported by provincial, territorial and Parks Canada fire agencies, 1990 to 2026.</p>''',
+        source="CCFM National Forestry Database; CWFIS · Canada, 1990 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 2 Climate ------------------------------------------------------------
     ty = list(range(1950, 2027))
     tlab = [("+" + f1(s["temp"][y]) + "°C") if y == 2023 else None for y in ty]
-    ch2 = bars([str(y) for y in ty], [s["temp"][y] for y in ty], H=280, ymin=-1.5, ymax=2.6,
+    ch2 = bars([str(y) for y in ty], [s["temp"][y] for y in ty], H=236, ymin=-1.5, ymax=2.6,
                colors=[FIRE if y in run else NEUTRAL for y in ty], labels=tlab,
                ticks={"1950", "1970", "1990", "2010", "2026"}, grid=[-1, 1, 2],
                gridfmt=lambda g: f"{g:+d}°C", bar_frac=0.8, lsize=22,
@@ -350,14 +360,15 @@ def build(s):
     third = "about a third" if 0.29 <= share <= 0.38 else f"about {round(share * 100)}%"
     slides.append(dict(
         kicker="Climate",
-        head="The fire season is more than a degree warmer than in 1961 to 1990",
+        head="Summers in Canada's forests are 1.1°C warmer than in the 1960s to 1980s",
         body=f'''
-<div class="bigrow"><div class="big fire">+{f1(V("C6.warming_c"))}°C</div>
-<div class="bigcap">May to August, 2016 to 2026 vs 1961 to 1990. All {fint(V("C7.stations"))} long-record weather stations warmed.</div></div>
-<div class="note">May to August temperature vs 1961 to 1990; dashed line: 2016 to 2026 average</div>
+<div class="statrow">
+  <div><div class="stat fire">1 in {round(1 / V("C9.share_attributable"))}</div><div class="statcap">hectares burned in 2023 to 2026 came from the warming</div></div>
+  <div><div class="stat fire">2×</div><div class="statcap">Canada warms twice as fast as the world, mostly from human activity</div></div>
+</div>
+<div class="note">Summer temperature each year, compared with 1961 to 1990</div>
 <div class="chart">{ch2}</div>
-<p class="body">Each extra degree has gone with about {round(V("C8.pct_per_degree"))}% more area burned. On that link, warming alone accounts for {third} of what burned in 2023 to 2026.</p>
-<p class="foot">Statistical counterfactual, not a physical attribution: the 1972 to 2025 link between fire-season temperature and area burned within each area, rerun with temperatures set back to 1961 to 1990. Warming multiplied expected area burned by {V("C9.ratio"):.2f} (range {V("C9.lo"):.2f} to {V("C9.hi"):.2f}).</p>''',
+<p class="foot">Sources: ECCC climate data; Canada's Changing Climate Report (2019); IPCC AR6.</p>''',
         source="ECCC homogenized climate data and station records · forested Canada, 1950 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 3 Drought ------------------------------------------------------------
@@ -372,78 +383,82 @@ def build(s):
                           label=f"2003 to 2022 average {round(V('C12.mean_2003_2022'))}%")])
     slides.append(dict(
         kicker="Drought",
-        head="On top of the heat came the driest four years since 1950",
+        head="2023 to 2026 were the driest four years since 1950",
         body=f'''
 <div class="bigrow"><div class="big">{round(V("C10.pct_of_normal"))}%</div>
-<div class="bigcap">of normal April to September rain, 2023 to 2026 average. Rain shows no long-term trend since 1950.</div></div>
-<div class="note">Share of forest in moderate or worse drought, April to September, 2003 to 2026</div>
+<div class="bigcap">of usual April to September rain fell, on average, from 2023 to 2026</div></div>
+<div class="note">Share of the forest in drought, April to September</div>
 <div class="chart">{ch3}</div>
-<p class="body">Every year from 2023 to 2026 had more forest in drought than any year from 2003 to 2022, when the highest was {round(V("C12.max_2003_2022"))}%.</p>
-<p class="foot">Drought map: AAFC Canadian Drought Monitor; the territories were assessed only from 2015. Rain: forested-region weather stations, % of each station's 1961 to 1990 average.</p>''',
+<p class="body">Each of these years had more forest in drought than any year from 2003 to 2022.</p>
+<p class="foot">Sources: Canadian Drought Monitor; ECCC weather stations.</p>''',
         source="AAFC Canadian Drought Monitor; ECCC climate data · Canada, 1950 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 4 Expected vs actual -------------------------------------------------
     ry = [2023, 2024, 2025, 2026]
-    ch4a = bars([str(y) for y in ry], [s["fires"][y] for y in ry], H=200, ymax=8200,
+    ch4a = bars([str(y) for y in ry], [s["fires"][y] for y in ry], H=260, ymax=8200,
                 colors=[NEUTRAL] * 4, labels=[fint(s["fires"][y]) for y in ry], grid=[4000, 8000],
                 gridfmt=lambda g: f"{g // 1000}k", bar_frac=0.5,
                 refs=[dict(value=s["fires_avg"], span=(0, 3))])
-    ch4b = bars([str(y) for y in ry], [list(s["model"][y]) for y in ry], H=230, ymax=3.0,
+    ch4b = bars([str(y) for y in ry], [list(s["model"][y]) for y in ry], H=180, ymax=3.0,
                 group=[FIRE, NEUTRAL], grid=[1, 2, 3], gridfmt=lambda g: f"{g}%",
                 labels=[[f"{s['model'][y][0]:.1f}%", f"{s['model'][y][1]:.2f}%"] for y in ry], bar_frac=0.6)
     slides.append(dict(
-        kicker="Expected vs actual",
-        head="Fewer fires, yet far more burned than expected",
+        kicker="Causes",
+        head="Fewer fires started than average, and they burned more land than predicted",
         body=f'''
-<div class="note">Fires started by lightning and people; dashed line: 1991 to 2020 average, {fint(s["fires_avg"])}</div>
+<div class="note">Number of fires each year; dashed line: the 1991 to 2020 average, {fint(s["fires_avg"])}</div>
 <div class="chart">{ch4a}</div>
-<p class="body sm">In 2026 lightning started {fint(V("C13.lightning_2026_nfd"))} fires (average {fint(V("C13.lightning_mean_1991_2020"))}) and people {fint(V("C13.human_2026"))}, the fewest in 37 years.</p>
-{legend([("Forest burned", FIRE), ("Expected from 2003 to 2022 conditions", NEUTRAL)])}
-<div class="chart">{ch4b}</div>
-<p class="body sm">In all, about {round(V("C15.ratio_after"))} times as much burned as expected.</p>
-<p class="foot">Expected: area-by-area model of drought, fire weather, fire counts and past burns, trained on 2003 to 2022. It under-predicts ordinary years too; beyond that usual miss the gap is about {round(V("C15.beyond_calibration"))} times.</p>''',
+<p class="body sm">People started {fint(V("C13.human_2026"))} fires in 2026, the lowest number in 37 years.</p>
+<div class="statrow">
+  <div><div class="stat fire">{round(V("C14.area_share_pct"))}%</div><div class="statcap">of the land burned in 2026 was from fires started by lightning</div></div>
+  <div><div class="stat fire">{round(V("C15.ratio_after"))} times</div><div class="statcap">the forest area predicted from drought and weather</div></div>
+</div>
+<p class="foot">Prediction from 2003 to 2022 drought, weather and fire records.</p>''',
         source="NRCan Fire Database, CWFIS; AAFC Drought Monitor · Canada, 1991 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 5 People -------------------------------------------------------------
     direct = {y: int(V(f"C19.direct_deaths.{y}")) + (WAINWRIGHT_DEATHS if y == 2026 else 0) for y in ry}
     sm = {y: (V(f"C18.{y}.aqbat"), V(f"C18.{y}.chen")) if y in (2023, 2026) else
           (round(s["smoke"][y][0]), round(s["smoke"][y][1])) for y in ry}
-    ch5 = bars([str(y) for y in ry], [[sm[y][0], direct[y]] for y in ry], H=230, ymax=1100,
+    ch5 = bars([str(y) for y in ry], [[sm[y][0], direct[y]] for y in ry], H=215, ymax=1100,
                group=[MUTED, FIRE], ranges=[[sm[y][1], None] for y in ry],
                labels=[[f"{fint(sm[y][0])} to {fint(sm[y][1])}", str(direct[y])] for y in ry],
                grid=[500, 1000], gridfmt=lambda g: fint(g), bar_frac=0.62)
     lo_r = sum(sm[y][0] for y in ry) / sum(direct.values())
     hi_r = sum(sm[y][1] for y in ry) / sum(direct.values())
     lo_w, hi_w = int(round(lo_r, -1)), int(round(hi_r, -1))
+    ed = s["ed"]
+    ed_tot = ed.loc[2023:2025, "extra_visits"].sum()
+    ed_lo, ed_hi = ed.loc[2023:2025, "extra_visits_lo"].sum(), ed.loc[2023:2025, "extra_visits_hi"].sum()
+    sd_lo, sd_hi = sum(sm[y][0] for y in ry), sum(sm[y][1] for y in ry)
     slides.append(dict(
-        kicker="People",
-        head="Smoke is estimated to kill far more people than the flames do",
+        kicker="Health",
+        head=f"Wildfire smoke caused about {fint(round(ed_tot, -3))} extra emergency room visits and {fint(round(sd_lo, -2))} to {fint(round(sd_hi, -2))} early deaths",
         body=f'''
-{legend([("Smoke deaths, low estimate", MUTED), ("high estimate", NEUTRAL), ("Deaths in the fires", FIRE)])}
+{legend([("Smoke deaths, low", MUTED), ("high", NEUTRAL), ("Deaths in the fires", FIRE)])}
 <div class="chart">{ch5}</div>
-<p class="body">That is roughly {lo_w} to {hi_w} smoke deaths for every death in the fires, 2023 to 2026. July 16, 2026 was the smokiest day in the 2018 to 2026 record.</p>
-<p class="body sm">People on reserves were about {round(V("C21.ratio"))} times as likely as others to live within 10 km of a fire of 1,000 hectares or more in two or more of the four years.</p>
-<p class="foot">Smoke deaths are modelled, not counted: short-term deaths from fire-season fine particles, Health Canada coefficient (low) and a wildfire-specific study coefficient (high); 2025 and 2026 exclude MB, NL, NT and NU. Deaths in the fires: TSB aviation records and federal statements; 2026 includes 4 Canadian Armed Forces members at CFB Wainwright, October 17.</p>''',
-        source="NAPS and AirNow PM2.5; StatCan; TSB; Public Safety Canada · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
+<p class="body sm">Smoke caused {lo_w} to {hi_w} early deaths for each death in the fires.</p>
+<p class="foot">Emergency visits: 2023 to 2025; 2026 data not yet released. Early deaths: range from two health studies. Deaths in the fires include 4 soldiers at CFB Wainwright.</p>''',
+        source="CIHI NACRS; NAPS and AirNow PM2.5; StatCan; TSB; DND · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 6 Property -----------------------------------------------------------
-    cover = {2023: "4 events", 2024: "Jasper", 2025: "2 events", 2026: "all fires"}
-    ch6 = bars([f"{y}: {cover[y]}" for y in ry], [V(f"C23.flagged.{y}") for y in ry], H=320, ymax=1000,
-               colors=[FIRE] * 4, labels=[fint(V(f"C23.flagged.{y}")) for y in ry],
-               grid=[500, 1000], gridfmt=lambda g: fint(g), bar_frac=0.5, tick_size=22)
-    total = int(round(V("C23.total"), -2))
+    val = s["value"]
+    ch6 = bars([str(y) for y in ry], [val[y] for y in ry], H=300, ymax=720,
+               colors=[FIRE] * 4, labels=[f"${fint(val[y])}M" for y in ry],
+               grid=[250, 500], gridfmt=lambda g: f"${g}M", bar_frac=0.5, tick_size=22)
+    vtot = sum(val.values()) / 1000
     slides.append(dict(
         kicker="Property",
-        head=f"At the fires we checked, about {fint(total)} buildings were likely destroyed",
+        head=f"Fires destroyed homes and buildings worth about ${vtot:.1f} billion",
         body=f'''
-<div class="note">Buildings likely destroyed at the events checked, by year</div>
+<div class="note">Value of homes and buildings destroyed, by year</div>
 <div class="chart">{ch6}</div>
 <div class="statrow">
-  <div><div class="stat">{fint(V("C25.roads_km"))} km</div><div class="statcap">of roads inside burned areas, 2023 to 2026</div></div>
-  <div><div class="stat">{fint(V("C25.rail_km"))} km</div><div class="statcap">of railway inside burned areas, 2023 to 2026</div></div>
+  <div><div class="stat">{fint(V("C25.roads_km"))} km</div><div class="statcap">of roads ran through burned land</div></div>
+  <div><div class="stat">{fint(V("C25.rail_km"))} km</div><div class="statcap">of railway ran through burned land</div></div>
 </div>
-<p class="foot">Our estimate from Sentinel-2 imagery, buildings flagged within 500 m of a fire. Counts cover only the events checked, not national totals: 4 events in 2023, Jasper in 2024 (the event the method was calibrated on), 2 events in 2025, all 2026 fires. On Jasper's official damage map, {round(V("C23.precision") * 100)}% of flagged buildings were destroyed and {round(V("C23.recall") * 100)}% of destroyed buildings were found. Roads and rail: length inside burned areas, not damage.</p>''',
-        source="Sentinel-2; Microsoft footprints; StatCan roads; NRCan rail · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
+<p class="foot">About {fint(round(sum(s["value_bldg"].values()), -2))} buildings, found in satellite photos and valued at local census home values.</p>''',
+        source="Sentinel-2; Microsoft footprints; StatCan Census, roads; NRCan rail · 2023 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 7 Economy ------------------------------------------------------------
     fy = list(range(2016, 2026))
@@ -452,24 +467,23 @@ def build(s):
                labels=[f"${s['firefight'][y]:.1f}B" if y in run or y == 2021 else None for y in fy],
                grid=[1, 2], gridfmt=lambda g: f"${g}B", bar_frac=0.66, lsize=22,
                refs=[dict(value=V("C28.mean_2016_2022_b"), span=(0, 6),
-                          label=f"2016 to 2022 average ${V('C28.mean_2016_2022_b'):.2f}B", dy=-38)])
+                          label=f"2016 to 2022 average ${V('C28.mean_2016_2022_b'):.1f}B", dy=-38)])
     slides.append(dict(
         kicker="Economy",
-        head=f"Fire burned timber worth {ratio_words(V('C27.ratio'))} the stumpage Canada collected in 2023",
+        head=f"Fires burned ${f1(V('C27.timber_2023_nominal_b'))} billion of trees in 2023, and firefighting costs doubled",
         body=f'''
 <div class="statrow">
-  <div><div class="stat fire">${f1(V("C27.timber_2023_nominal_b"))}B</div><div class="statcap">standing timber burned in 2023, at Crown stumpage rates</div></div>
-  <div><div class="stat">${f1(V("C27.stumpage_collected_2023_b"))}B</div><div class="statcap">stumpage Crown forests raised in 2023</div></div>
+  <div><div class="stat fire">${f1(V("C27.timber_2023_nominal_b"))}B</div><div class="statcap">value of the trees burned in 2023</div></div>
+  <div><div class="stat fire">${V("C28.mean_2023_2025_b"):.1f}B</div><div class="statcap">firefighting a year in 2023 to 2025, up from ${V("C28.mean_2016_2022_b"):.1f}B</div></div>
 </div>
-<div class="note">Provincial firefighting cost, BC, Ontario, Alberta and Saskatchewan, 2025 dollars</div>
+<div class="note">Firefighting cost each year, BC, Ontario, Alberta and Saskatchewan, 2025 dollars</div>
 <div class="chart">{ch7}</div>
-<p class="body sm">Firefighting cost about {ratio_words(V("C28.ratio"))} as much a year in 2023 to 2025 as in 2016 to 2022.</p>
-<p class="foot">Timber is valued standing, not as lost harvest; much burned forest lies outside harvest plans. 2022 excludes Alberta (not published); 2026 is left out because only BC has reported.</p>''',
+<p class="foot">Trees valued at provincial cutting fees. 2026 not yet reported.</p>''',
         source="National Forestry Database; BC, ON, AB, SK public accounts · 2016 to 2025 · Oct 2026 · CC BY 4.0"))
 
     # 8 Environment --------------------------------------------------------
     cy = list(range(2016, 2025))
-    ch8 = bars([str(y) for y in cy], [list(s["co2"][y]) for y in cy], H=300, ymax=1000,
+    ch8 = bars([str(y) for y in cy], [list(s["co2"][y]) for y in cy], H=420, ymax=1000,
                group=[NEUTRAL, FIRE], grid=[500, 1000], gridfmt=lambda g: fint(g),
                labels=[[fint(s["co2"][y][0]) if y == 2023 else None, fint(s["co2"][y][1])] for y in cy],
                bar_frac=0.78, lsize=21)
@@ -478,26 +492,29 @@ def build(s):
                  row_h=56, vmax=10, fmt=lambda v: f"{f1(v)}%")
     slides.append(dict(
         kicker="Environment",
-        head="Wildfire CO₂ is left out of Canada's emissions total, and in 2023 it was bigger",
+        head="Wildfire emissions in 2023 were larger than Canada's official emissions total",
         body=f'''
-{legend([("Canada's counted emissions", NEUTRAL), ("Managed-forest wildfire, not counted", FIRE)])}
-<div class="note">Million tonnes of CO₂ equivalent, 2016 to 2024</div>
+{legend([("Canada's official total", NEUTRAL), ("Wildfires", FIRE)])}
+<div class="note">Million tonnes of CO₂ each year</div>
 <div class="chart">{ch8}</div>
-<div class="sub">Black spruce and jack pine forest is burning again sooner</div>
-<div class="note">Share of burned area that had already burned within 15 years</div>
-<div class="chart">{ch8b}</div>
-<p class="foot">Official inventory (NIR 2026): wildfire in managed forest is a memo item outside the total; fires in unmanaged forest are not estimated. Rounded to 2 significant figures; 2025 and 2026 not yet reported.</p>''',
+<p class="body sm">Canada reports wildfire emissions separately from its official total.</p>
+<p class="foot">Official inventory 2026, forests managed for timber only; 2025 and 2026 not yet reported.</p>''',
         source="ECCC National Inventory Report 2026; NBAC; SCANFI · Canada, 1990 to 2026 · Oct 2026 · CC BY 4.0"))
 
     # 9 Bottom line --------------------------------------------------------
     slides.append(dict(
         kicker="Bottom line",
-        head="Hotter is the trend, dry was the luck, and most of the cost is not counted",
-        body='''
+        head="Most land burned in remote fires that grew fast, in hotter and drier seasons from global warming",
+        body=f'''
+<ul class="needs">
+<li><b>About {round(sum(s["escape72"]) / 20)} in 10</b> hectares burned in fires that grew past 1,000 hectares within 3 days. Needed: faster response to remote fires.</li>
+<li><b>{"At least half" if s["monitored"][0] >= 45 else str(round(s["monitored"][0])) + "%"}</b> of the land burned in fires that agencies chose to monitor. Needed: a review of which fires to fight.</li>
+<li><b>Smoke illness, smoke deaths and wildfire carbon</b> are outside official counts. Needed: count them.</li>
+</ul>
 <div class="explore"><div class="ex1">Explore the full story and the data</div>
 <div class="ex2">Link in bio · sjvadrevu.github.io/canada-wildfires-2026</div></div>
-<div class="brand"><img src="logo-dark.png" alt="The Median Canadian"><div class="tagline">A curious Canadian explaining Canada through numbers, every week.</div></div>
-<div class="sources"><b>Data sources.</b> NRCan Canadian Wildland Fire Information System (NBAC, M3 outlines, National Fire Database, CNFDB), Land Cover 2020 and SCANFI; ECCC homogenized climate data, climate stations and National Inventory Report 2026; AAFC Canadian Drought Monitor; NAPS and AirNow air quality; Statistics Canada 2021 Census and road network; NRCan rail network; Transportation Safety Board; Public Safety Canada; Health Canada AQBAT and Chen et al. 2021 coefficients; Copernicus Sentinel-2; Microsoft building footprints (ODbL); National Forestry Database; provincial public accounts (BC, ON, AB, SK).</div>
+<div class="brand"><img src="logo-dark.png" alt="The Median Canadian"></div>
+<div class="sources"><b>Data sources.</b> NRCan Canadian Wildland Fire Information System (NBAC, M3 outlines, National Fire Database, CNFDB), Land Cover 2020 and SCANFI; ECCC homogenized climate data, climate stations and National Inventory Report 2026; AAFC Canadian Drought Monitor; NAPS and AirNow air quality; Statistics Canada 2021 Census and road network; NRCan rail network; Transportation Safety Board; Public Safety Canada; Health Canada AQBAT and Chen et al. 2021 coefficients; Copernicus Sentinel-2; Microsoft building footprints (ODbL); National Forestry Database; provincial public accounts (BC, ON, AB, SK); agency fire response records; IPCC AR6 and ECCC Canada's Changing Climate Report.</div>
 <div class="sources"><b>Licence.</b> Analysis and charts CC BY 4.0, The Median Canadian. Source data under the Open Government Licence (Canada) and each source's own licence. Photos: All Canada Photos, licensed separately and not covered by CC BY 4.0.</div>''',
         source=None, last=True))
     return slides
@@ -514,6 +531,13 @@ body {{ background:#0c1016; font-family:{FONT}; color:var(--text); }}
 .kicker {{ font-size:27px; font-weight:700; text-transform:uppercase; letter-spacing:0.09em; color:#ffd2c7; text-shadow:0 2px 10px rgba(0,0,0,0.8); }}
 h1 {{ font-size:74px; font-weight:800; line-height:1.07; letter-spacing:-0.022em; color:#fff; margin-top:18px; text-shadow:0 3px 18px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.9); }}
 h1.four {{ font-size:60px; }}
+#s9 h1 {{ font-size:54px; }}
+#s9 .sources {{ font-size:16px; margin-top:14px; }}
+#s9 .needs {{ font-size:30px; }}
+#s9 .needs li {{ margin-top:8px; }}
+#s9 .brand {{ margin-top:24px; }}
+#s9 .brand img {{ height:84px; }}
+#s9 .explore {{ margin-top:20px; padding:22px 30px; }}
 .card {{ margin:26px -34px 0; padding:4px 34px 26px; background:rgba(10,13,19,0.78); border-radius:26px; backdrop-filter:blur(3px); }}
 .body {{ font-size:33px; line-height:1.42; margin-top:22px; }}
 .body.sm {{ margin-top:14px; }}
@@ -535,6 +559,8 @@ h1.four {{ font-size:60px; }}
 .pagenum {{ position:absolute; right:76px; bottom:64px; height:78px; line-height:78px; font-size:27px; font-weight:700; color:#fff; text-shadow:0 2px 8px rgba(0,0,0,0.8); }}
 .source {{ position:absolute; left:76px; right:76px; bottom:22px; font-size:18px; color:#d5dae1; white-space:nowrap; overflow:hidden; text-shadow:0 1px 6px rgba(0,0,0,0.9); }}
 .credit {{ position:absolute; top:24px; right:30px; font-size:16px; color:rgba(255,255,255,0.85); text-shadow:0 1px 5px rgba(0,0,0,0.9); }}
+.needs {{ margin-top:22px; padding-left:34px; font-size:31px; line-height:1.32; }}
+.needs li {{ margin-top:12px; }}
 .explore {{ margin-top:24px; border:3px solid rgba(255,255,255,0.3); border-radius:22px; padding:30px 34px; }}
 .ex1 {{ font-size:40px; font-weight:800; line-height:1.15; }}
 .ex2 {{ font-size:28px; color:var(--muted); margin-top:12px; }}

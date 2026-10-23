@@ -9,7 +9,7 @@ Rerunnable. Every run applies the same rules:
 - data/<group>/: manifest.csv, scripts/ and top-level derived files (plus data/fire/reference and
   data/geo/mb_qc_subareas, same rules). Raw downloads are skipped; scripts/download_data.py fetches them.
 - story/: claims_draft.md and verified_numbers.json; story/verification.md goes to methods/verification.md.
-- slides/: the two carousel builders. site-build/: the per-area union table the map reads.
+- slides/: the carousel builders (make_slides_merge.py builds the final 8 slides). site-build/: the per-area union table the map reads.
 - Any file over MAX_MB, any *.log, __pycache__ and *.pyc are skipped.
 
 Machine-specific absolute paths are rewritten on the way in:
@@ -65,7 +65,8 @@ DATA_SKIP = {
 STORY = {"story/claims_draft.md": "story/claims_draft.md",
          "story/verified_numbers.json": "story/verified_numbers.json",
          "story/verification.md": "methods/verification.md"}
-SLIDES = ["slides/make_slides.py", "slides/make_slides_photo.py"]
+SLIDES = ["slides/make_slides.py", "slides/make_slides_photo.py", "slides/make_slides_merge.py",
+          "slides/option_visuals.py", "slides/canmap.py"]
 SITE_BUILD = ["site-build/fma_union_2023_2026.csv"]
 SHARED_DOCS = ["analysis/REBUILD.md"]
 # Snapshots of live official feeds (NRCan CIFFC/CWFIS API, NFD tables, SOPFEU points) that the cause and forest

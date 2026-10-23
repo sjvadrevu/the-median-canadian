@@ -66,6 +66,14 @@ DRAFT = {
 }
 
 
+# Deaths in the fires that are not in the TSB aviation records C19 is built from. Each entry is an official count
+# with its source; the build adds it to C19 and recomputes C20 from the result.
+WAINWRIGHT_DEATHS = 4  # Canadian Armed Forces members killed in the fire at CFB Wainwright, Alberta, on Oct 17, 2026
+WAINWRIGHT_SOURCE = ("Department of National Defence, news release of Oct 18, 2026, 'Four Canadian Armed Forces members "
+                     "killed during training in CFB Wainwright': https://www.canada.ca/en/department-national-defence/news/"
+                     "2026/10/four-canadian-armed-forces-members-killed-during-training-in-cfb-wainwright.html")
+
+
 def rows(path):
     with open(path, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
@@ -144,6 +152,17 @@ def series(A, claims, warn):
         sm[int(x["year"])]["provinces_not_reported"] = x["provinces_not_reported"]
     dd = claims.get("C19", {}).get("direct_deaths", {})
     S["deaths"] = [[y, sm[y]["aqbat"], sm[y]["chen"], dd.get(str(y)), sm[y]["provinces_not_reported"]] for y in (2023, 2024, 2025, 2026)]
+    # C20: smoke deaths for each death in the fires, pooled over 2023 to 2026 from the same series, rounded to 10
+    lo_sum, hi_sum = sum(r[1] for r in S["deaths"]), sum(r[2] for r in S["deaths"])
+    d_sum = sum(r[3] or 0 for r in S["deaths"])
+    claims["C20"] = {
+        "status": "derived", "basis": "sum of modelled smoke deaths 2023 to 2026 / sum of direct deaths (C19, including Wainwright)",
+        "smoke_lo_sum": lo_sum, "smoke_hi_sum": hi_sum, "direct_sum": d_sum,
+        "pooled_ratio_lo_exact": round(lo_sum / d_sum, 1), "pooled_ratio_hi_exact": round(hi_sum / d_sum, 1),
+        "pooled_ratio_lo": int(round(lo_sum / d_sum, -1)), "pooled_ratio_hi": int(round(hi_sum / d_sum, -1)),
+        "by_year": {str(r[0]): [round(r[1] / r[3]), round(r[2] / r[3])] for r in S["deaths"] if r[3]},
+        "verified_before_wainwright": {"pooled_ratio_lo": 114, "pooled_ratio_hi": 297},
+    }
     # 6. Roads inside burned area by year (km), 2016 to 2026
     r = rows(A / "property" / "infrastructure_by_year.csv")
     S["roads"] = [[int(x["year"]), round(float(x["roads_all_km"]))] for x in r if x["band"] == "inside" and x["year"].isdigit()]
@@ -228,14 +247,94 @@ def series(A, claims, warn):
     return S
 
 
+def largest(A, claims, S):
+    """L: the largest and closest fires (analysis/largest); W: the CFB Wainwright fire (analysis/wainwright)."""
+    F = rows(A / "largest" / "fires_2023_2026.csv")
+
+    def rec(x):
+        g = lambda k: x[k] if x[k] not in ("", "nan") else None
+        return {"k": x["key"], "y": int(x["year"]), "n": g("agency_name"), "id": g("agency_id"), "p": g("provinces"),
+                "ha": round(float(x["ha"])), "c": x["cause"], "s": g("start"), "sb": x["start_basis"],
+                "co": x["carryover"] == "True", "b": int(x["bldg_inside_or_100m"]), "bi": int(x["bldg_inside"]),
+                "fa": g("fire_area"), "pc": g("nearest_pc"), "km": None if g("nearest_pc_km") is None else round(float(x["nearest_pc_km"])),
+                "a1k": int(x["agency_points_1000ha"]), "ra": int(x["rank_area"]), "ry": int(x["rank_area_in_year"]),
+                "src": x["source"]}
+    S["largest"] = [rec(x) for x in sorted(F, key=lambda x: int(x["rank_area"]))[:10]]
+    S["closest"] = [rec(x) for x in sorted((x for x in F if 1 <= int(x["rank_buildings"]) <= 10), key=lambda x: int(x["rank_buildings"]))]
+    big26 = min((x for x in F if x["year"] == "2026"), key=lambda x: int(x["rank_area"]))
+    co = {int(x["year"]): x for x in rows(A / "largest" / "carryover_by_year.csv")}
+    ca = {int(x["year"]): x for x in rows(A / "largest" / "cause_area_by_year.csv")}
+    tot = sum(float(co[y]["total_ha"]) for y in co)
+    hum = {y: float(ca[y].get("human", 0) or 0) for y in ca}
+    top_co = max((x for x in F if x["carryover"] == "True"), key=lambda x: float(x["ha"]))
+    top_h = {y: max((x for x in F if x["year"] == str(y) and x["cause"] == "human"), key=lambda x: float(x["ha"]), default=None) for y in co}
+    claims["L"] = {
+        "status": "derived", "basis": "mapped hectares: NBAC 2023 to 2025, CWFIS M3 outlines 2026 (wildfire classes)",
+        "fires": len(F), "total_mha": round(tot / 1e6, 2),
+        "top_ha": S["largest"][0]["ha"], "top_bldg": S["closest"][0]["b"],
+        "largest_2026": rec(big26),
+        "carryover_fires": sum(int(float(co[y]["carryover_fires"])) for y in co),
+        "carryover_ha": round(sum(float(co[y]["carryover_ha"]) for y in co)),
+        "carryover_share_pct": round(sum(float(co[y]["carryover_ha"]) for y in co) / tot * 100, 1),
+        "carryover_by_year": {str(y): {"fires": int(float(co[y]["carryover_fires"])), "ha": round(float(co[y]["carryover_ha"]))} for y in sorted(co)},
+        "carryover_largest": rec(top_co),
+        "human_share_pct": {str(y): round(hum[y] / float(ca[y]["total_ha"]) * 100, 1) for y in sorted(ca)},
+        "human_share_2023_2026_pct": round(sum(hum.values()) / tot * 100, 1),
+        "human_largest": {str(y): rec(top_h[y]) for y in sorted(top_h) if top_h[y]},
+        "no_agency_2026_ha": round(float(ca[2026].get("no agency record", 0) or 0)),
+        "buildings_years": "2023 to 2026",
+    }
+    # W: CFB Wainwright, Oct 17, 2026
+    Wd = A / "wainwright"
+    be = {x["threshold"]: x for x in rows(Wd / "burn_estimate.csv")}
+    off = rows(A / "largest" / "wainwright_official.csv")[0]
+    hr = {x["local_standard_time"][11:16]: x for x in rows(Wd / "weather_oct17_hourly.csv") if x["climate_id"] == "301S001"}
+    rk = next(x for x in rows(Wd / "weather_oct17_ranks.csv") if x["station"].startswith("WAINWRIGHT") and x["metric"] == "daily max wind gust"
+              and x["comparison"].startswith("mid-October"))
+    by = [x for x in rows(Wd / "base_burns_by_year.csv") if x["base"] == "Wainwright" and x["source"] == "NBAC"]
+    yrs = {int(x["year"]) for x in by if 1991 <= int(x["year"]) <= 2025 and float(x["ha_inside_base"]) > 0}
+    geo = rows(Wd / "burn_geometry.csv")[0]
+    pre, post = hr["14:00"], hr["15:00"]  # local standard time = MDT minus 1 hour: 3 p.m. and 4 p.m. MDT
+    claims["W"] = {
+        "status": "derived", "note": "area estimated from Sentinel-2 images (no official perimeter); deaths from DND",
+        "est_ha": round(float(be["0.27"]["area_ha"]), -1), "est_lo_ha": round(float(be["0.44"]["area_ha"]), -1),
+        "est_hi_ha": round(float(be["0.2"]["area_ha"]), -1), "est_ha_exact": float(be["0.27"]["area_ha"]),
+        "outside_base_ha": round(float(be["0.27"]["outside_base_ha"])), "length_km": float(geo["length_km"]),
+        "official_ha": float(off["AREA_ESTIMATE"]), "official_id": off["LABEL"],
+        "deaths": WAINWRIGHT_DEATHS,
+        "wind_3pm_kmh": float(pre["wind_kmh"]), "wind_4pm_kmh": float(post["wind_kmh"]),
+        "dir_3pm_deg": float(pre["wind_dir_10deg"]) * 10, "dir_4pm_deg": float(post["wind_dir_10deg"]) * 10,
+        "temp_drop_c": round(float(pre["temp_c"]) - float(post["temp_c"]), 1), "rh_3pm": float(pre["rh_pct"]), "rh_4pm": float(post["rh_pct"]),
+        "gust_kmh": float(rk["oct17_value"]), "gust_rank": int(rk["rank_of_oct17"]), "gust_days": int(rk["n_days"]),
+        "gust_prev_max": float(rk["max_in_set"]), "gust_years": rk["years"],
+        "base_years_burned": len(yrs), "base_years_of": 35,
+        "ratio_to_largest": round(float(S["largest"][0]["ha"]) / float(be["0.27"]["area_ha"])),
+    }
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", type=Path, default=DEFAULT_SRC)
     a = ap.parse_args()
     A = a.src / "analysis"
     claims, source = load_claims(a.src)
+    # C19 counts TSB aviation deaths (and 2025's two Public Safety deaths); add the Wainwright deaths to 2026
+    c19 = claims.setdefault("C19", {})
+    dd = c19.setdefault("direct_deaths", {})
+    c19["tsb_2026"] = dd.get("2026", 0)
+    c19["wainwright_2026"] = WAINWRIGHT_DEATHS
+    c19["wainwright_source"] = WAINWRIGHT_SOURCE
+    dd["2026"] = c19["tsb_2026"] + WAINWRIGHT_DEATHS
     warn = []
     S = series(A, claims, warn)
+    largest(A, claims, S)
+    # The page shows no modelled smoke deaths (deaths are counted by coroners, and no study reports wildfire
+    # smoke deaths for 2023 to 2026). The modelled series stays in analysis/health/ for the record only.
+    for k in ("C18", "C20"):
+        claims.pop(k, None)
+    for k in [k for k in claims.get("C29", {}) if k.startswith("all_components") or k == "basis"]:
+        claims["C29"].pop(k, None)
+    S.pop("deaths", None)
     out = {
         "meta": {"built": dt.date.today().isoformat(), "claims_source": source,
                  "note": "Every number on the page comes from this file. Claims are keyed C1 to C40."},

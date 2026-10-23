@@ -1,0 +1,5 @@
+station,climate_id,years,n_earlier_years,lowest_min_2026,days_with_data_2026,rank_mildest,median_lowest_earlier,share_earlier_years_le0,share_earlier_years_le_minus2,share_earlier_years_le_minus5,note
+WAINWRIGHT CFB AIRFIELD 21,301S001,1996-2025,27,-1.6,63.0,1.0,-7.5,1.0,1.0,0.852,
+FABYAN,3012515,1981-2025,44,,,,,,,,2026 window < 90% complete
+CORONATION CLIMATE,3011887,1997-2025,29,-5.8,61.0,4.0,-9.1,1.0,1.0,0.966,
+LLOYDMINSTER A,3013961,1982-2025,43,-1.5,64.0,1.0,-7.2,1.0,1.0,0.814,

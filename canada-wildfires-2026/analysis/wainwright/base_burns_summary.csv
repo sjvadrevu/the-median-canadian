@@ -1,0 +1,17 @@
+source,base,boundary_source,base_area_ha,years_covered,n_fires,n_years_with_fire,ha_inside_total,n_spring,n_summer,n_fall,n_winter,n_unknown,fall_share_of_dated_fires,ha_spring,ha_summer,ha_fall,ha_winter,ha_unknown,fall_share_of_dated_area
+CNFDB points,Gagetown,official: GeoNB Military Bases (PWGSC source),109815,1972-2025,26,12,0.0,11,13,2,0,0,0.077,,,,,,
+CNFDB points,Petawawa,official: Ontario LIO Federal Land Other (Military Base),37843,1972-2025,33,22,0.0,23,10,0,0,0,0.0,,,,,,
+CNFDB points,Shilo,PROXY: DFRP parcel point + equal-area circle,34687,1972-2025,12,9,0.0,7,3,0,0,2,0.0,,,,,,
+CNFDB points,Valcartier,PROXY: DFRP parcel point + equal-area circle,15867,1972-2025,33,21,0.0,25,6,2,0,0,0.061,,,,,,
+CWFIS M3 2026 (2026-10-22 file),Gagetown,official: GeoNB Military Bases (PWGSC source),109815,2026,2,1,7126.0,2,0,0,0,0,0.0,7126.0,0.0,0.0,0.0,0.0,0.0
+CWFIS M3 2026 (2026-10-22 file),Petawawa,official: Ontario LIO Federal Land Other (Military Base),37843,2026,1,1,110.0,1,0,0,0,0,0.0,110.0,0.0,0.0,0.0,0.0,0.0
+CWFIS M3 2026 (2026-10-22 file),Shilo,PROXY: DFRP parcel point + equal-area circle,34687,2026,1,1,480.0,1,0,0,0,0,0.0,480.0,0.0,0.0,0.0,0.0,0.0
+CWFIS M3 2026 (2026-10-22 file),Suffield,official: Government of Alberta DND Military Base layer,265594,2026,1,1,193.0,0,1,0,0,0,0.0,0.0,193.0,0.0,0.0,0.0,0.0
+CWFIS M3 2026 (2026-10-22 file),Wainwright,official: Government of Alberta DND Military Base layer,61384,2026,1,1,113.0,1,0,0,0,0,0.0,113.0,0.0,0.0,0.0,0.0,0.0
+NBAC,Dundurn,PROXY: DFRP parcel point + equal-area circle,23591,1972-2025,1,1,1014.0,0,0,0,0,1,,0.0,0.0,0.0,0.0,1014.0,
+NBAC,Gagetown,official: GeoNB Military Bases (PWGSC source),109815,1972-2025,24,13,28533.0,14,0,2,0,8,0.125,23760.0,0.0,539.0,0.0,4235.0,0.022
+NBAC,Petawawa,official: Ontario LIO Federal Land Other (Military Base),37843,1972-2025,14,9,5428.0,11,3,0,0,0,0.0,4507.0,921.0,0.0,0.0,0.0,0.0
+NBAC,Shilo,PROXY: DFRP parcel point + equal-area circle,34687,1972-2025,10,10,15510.0,4,1,1,0,4,0.167,10205.0,2418.0,17.0,0.0,2870.0,0.001
+NBAC,Suffield,official: Government of Alberta DND Military Base layer,265594,1972-2025,2,2,1058.0,0,0,0,0,2,,0.0,0.0,0.0,0.0,1058.0,
+NBAC,Valcartier,PROXY: DFRP parcel point + equal-area circle,15867,1972-2025,1,1,2.0,0,1,0,0,0,0.0,0.0,2.0,0.0,0.0,0.0,0.0
+NBAC,Wainwright,official: Government of Alberta DND Military Base layer,61384,1972-2025,64,25,121736.0,4,0,2,0,58,0.333,7719.0,0.0,3225.0,0.0,110792.0,0.295

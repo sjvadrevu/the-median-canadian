@@ -1,0 +1,6 @@
+station,climate_id,last_day_ge_0.2mm,days_since_ge_0.2mm,last_day_ge_1mm,days_since_ge_1mm,last_day_ge_5mm,days_since_ge_5mm,last_day_ge_10mm,days_since_ge_10mm,missing_precip_days_aug1_oct16,first_fall_min_le_0C_2026,first_fall_min_le_-2C_2026,first_fall_min_le_-5C_2026,snow_cm_sep1_oct17,max_snow_on_ground_sep1_oct17,median_first_le_0C_doy_earlier_years,n_years_0,median_first_le_-2C_doy_earlier_years,n_years_-2,median_first_le_-5C_doy_earlier_years,n_years_-5
+WAINWRIGHT CFB AIRFIELD 21,301S001,2026-10-12,5,2026-10-08,9,2026-09-10,37,2026-09-07,40,1,2026-09-27,,,,,265.0,26.0,274.5,26.0,281.5,26.0
+FABYAN,3012515,2026-10-10,7,2026-10-10,7,2026-09-25,22,2026-09-07,40,22,2026-09-28,2026-10-01,,0.0,0.0,256.0,44.0,265.0,44.0,278.0,44.0
+LLOYDMINSTER,3013959,2026-10-14,3,2026-10-10,7,2026-08-23,55,2026-08-23,55,0,2026-10-01,,,,,264.0,12.0,277.0,12.0,286.0,12.0
+CORONATION CLIMATE,3011887,2026-10-11,6,2026-10-11,6,2026-09-07,40,2026-09-07,40,4,2026-09-13,2026-09-28,2026-10-13,,0.0,253.0,28.0,264.0,28.0,276.5,28.0
+MONITOR,3014600,2026-10-11,6,2026-10-11,6,2026-09-07,40,2026-09-07,40,7,,,,0.8,0.0,,,,,,
