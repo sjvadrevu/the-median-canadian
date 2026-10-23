@@ -164,14 +164,21 @@ for i in range(1, 9):
     w2_find.append(dict(k=fill(m.group(1)), h=fill(m.group(2)), l=fill(m.group(3)), a=f"#c{i}"))
 
 # =====================================================================================
-# Posts, newest first. To add a week: its folder, one entry here and its cover in covers/.
+# Posts, newest first. Every week: its folder, one entry here and its cover slide in covers/.
 # =====================================================================================
 POSTS = [
-    dict(n=2, title="Canada's wildfires", place="Canada", period="2023 to 2026", tags=["Nature", "Health", "Money"],
+    dict(n=2, folder="canada-wildfires-2026", title="Canada's wildfires", place="Canada", period="2023 to 2026",
+         tags=["Nature", "Health", "Money"],
          alt="Week 2 cover: From the forest to our homes. Canada's wildfires, 2023 to 2026.", find=w2_find),
-    dict(n=1, title="Alberta's separation vote", place="Alberta", period="October 19, 2026", tags=["Elections"],
+    dict(n=1, folder="ab-referendum-live", title="Alberta's separation vote", place="Alberta", period="October 19, 2026",
+         tags=["Elections"],
          alt="Week 1 cover: Albertans rejected the separation process three to one.", find=w1_find),
 ]
+# Every week's folder in the repository needs its card here and its cover slide in covers/.
+week_dirs = sorted(x.name for x in ROOT.iterdir() if x.is_dir() and (x / "index.html").exists())
+missing = [w for w in week_dirs if w not in {p["folder"] for p in POSTS}]
+assert not missing, f"week folders without a hub card (add them to POSTS with their cover in covers/): {missing}"
+assert [p["n"] for p in POSTS] == sorted((p["n"] for p in POSTS), reverse=True), "POSTS must be newest first"
 for p in POSTS:
     p["href"], p["share"] = WEEK_URL[p["n"]]
     found = sorted((ROOT / "covers").glob(f"week-{p['n']:02d}-cover.*"))

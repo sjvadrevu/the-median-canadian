@@ -22,7 +22,7 @@ To rebuild it:
 2. `pip install pillow`
 3. `python3 hub/build_hub.py`
 
-To add a week: put its page in a new folder, its cover slide in `covers/` as `week-NN-cover.jpg`, and one entry in the `POSTS` list in `hub/build_hub.py`.
+Every week: put its page in a new folder, its cover slide (the first image of the Instagram post) in `covers/` as `week-NN-cover.jpg`, and one entry in the `POSTS` list in `hub/build_hub.py`. The build stops if a week's folder has no entry or no cover.
 
 ## Licence
 
