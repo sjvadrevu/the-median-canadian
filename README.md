@@ -1,3 +1,7 @@
+# The Median Canadian (moved)
+
+The hub moved to https://mediancanadian.ca/ and its source to https://github.com/mediancanadian/mediancanadian.github.io. This repository only forwards the old address (sjvadrevu.github.io/the-median-canadian), which appears on posted slides.
+
 # The Median Canadian
 
 A curious Canadian explaining Canada through numbers, every week.
